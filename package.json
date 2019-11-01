@@ -1,0 +1,41 @@
+{
+  "name": "@tailwindcss/typography",
+  "version": "0.1.0",
+  "description": "A component for automatically styling plain HTML content with sensible typographic defaults.",
+  "main": "src/index.js",
+  "repository": "https://github.com/tailwindcss/typography",
+  "author": "Adam Wathan",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev docs",
+    "build": "next build docs",
+    "export": "next export docs",
+    "deploy": "npm run build && npm run export",
+    "start": "next start docs",
+    "prepare": "node scripts/build.js"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^1.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@mdx-js/loader": "^1.0.19",
+    "@next/mdx": "^8.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "autoprefixer": "^9.6.1",
+    "clean-css": "^4.2.1",
+    "cssnano": "^4.1.10",
+    "dedent": "^0.7.0",
+    "highlight.js": "^9.15.6",
+    "next": "^9.1.1",
+    "postcss": "^7.0.17",
+    "postcss-custom-properties": "^8.0.10",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-highlight": "^0.12.0",
+    "react-markdown": "^4.2.2",
+    "tailwindcss": "canary"
+  }
+}
