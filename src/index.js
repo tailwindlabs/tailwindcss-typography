@@ -157,6 +157,7 @@ module.exports = {
         },
         'pre code': {
           fontSize: defaultTheme.fontSize.sm,
+          padding: 0,
         }
       }
     },
