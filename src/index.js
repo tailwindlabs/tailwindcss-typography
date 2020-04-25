@@ -180,7 +180,7 @@ module.exports = {
   },
   handler: function ({ addComponents, theme }) {
     addComponents({
-      '.rich-text': theme('typography')
+      '.prose': theme('typography')
     })
   }
 }

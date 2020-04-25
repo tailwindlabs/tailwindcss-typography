@@ -3,7 +3,7 @@ import MarkdownSample from '../components/MarkdownSample.mdx'
 
 export default () => (
   <Layout meta={{ title: 'Tailwind CSS Typography' }}>
-    <div className="rich-text">
+    <div className="prose">
       <MarkdownSample />
     </div>
   </Layout>
