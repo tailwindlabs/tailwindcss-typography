@@ -76,7 +76,7 @@ module.exports = {
           textDecoration: 'underline',
         },
         code: {
-          backgroundColor: "#edf2f7",
+          backgroundColor: defaultTheme.colors.gray[200],
           fontSize: '.875em', // Use `em` so change is relative to current font size
           paddingLeft: defaultTheme.spacing[1],
           paddingRight: defaultTheme.spacing[1],
@@ -144,12 +144,16 @@ module.exports = {
         },
         pre: {
           borderRadius: defaultTheme.borderRadius.md,
-          backgroundColor: defaultTheme.colors.gray[200],
+          backgroundColor: defaultTheme.colors.gray[800],
+          color: defaultTheme.colors.white,
+          fontSize: '.875em', // Use `em` so change is relative to current font size
           paddingTop: defaultTheme.spacing[3],
           paddingRight: defaultTheme.spacing[4],
           paddingBottom: defaultTheme.spacing[3],
           paddingLeft: defaultTheme.spacing[4],
           overflowX: "auto",
+          '-webkit-font-smoothing': 'subpixel-antialiased',
+          '-moz-osx-font-smoothing': 'auto',
         },
         '* + pre': {
           marginTop: defaultTheme.spacing[4],
@@ -158,12 +162,16 @@ module.exports = {
           marginTop: defaultTheme.spacing[4],
         },
         'pre code': {
-          fontSize: defaultTheme.fontSize.xs,
+          backgroundColor: defaultTheme.colors.transparent,
+          color: 'currentColor',
+          fontSize: '.875em', // Use `em` so change is relative to current font size
           padding: 0,
+          '-webkit-font-smoothing': 'subpixel-antialiased',
+          '-moz-osx-font-smoothing': 'auto',
         },
         hr: {
           borderTopWidth: defaultTheme.borderWidth.default,
-          borderColor: defaultTheme.colors.gray[200],
+          borderColor: defaultTheme.colors.gray[500],
           marginTop: defaultTheme.spacing[10],
           marginBottom: defaultTheme.spacing[10],
         }
