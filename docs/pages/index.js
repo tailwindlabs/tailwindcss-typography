@@ -1,10 +1,28 @@
+import { useState } from 'react'
 import Layout from '../components/Layout'
 import MarkdownSample from '../components/MarkdownSample.mdx'
 
-export default () => (
-  <Layout meta={{ title: 'Tailwind CSS Typography' }}>
-    <div className="prose mx-auto">
-      <MarkdownSample />
-    </div>
-  </Layout>
-)
+export default () => {
+  const [size, setSize] = useState('default')
+
+  return (
+    <Layout meta={{ title: 'Tailwind CSS Typography' }}>
+      <div className="fixed top-0 left-0 flex flex-col ml-3">
+        {['default', 'sm', 'lg', 'xl'].map((s) => (
+          <button
+            type="button"
+            className={`border mt-3 px-4 focus:outline-none ${
+              size === s ? 'border-black' : ''
+            }`}
+            onClick={() => setSize(s)}
+          >
+            {s}
+          </button>
+        ))}
+      </div>
+      <div className={`prose prose-${size} mx-auto`}>
+        <MarkdownSample />
+      </div>
+    </Layout>
+  )
+}

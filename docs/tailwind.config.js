@@ -1,9 +1,12 @@
 module.exports = {
   theme: {
-    extend: {},
+    typography: {
+      default: {
+        // bulletColor: 'red',
+        css: {},
+      },
+    },
   },
   variants: {},
-  plugins: [
-    require('../src/index.js'),
-  ],
+  plugins: [require('../src/index.js')],
 }
