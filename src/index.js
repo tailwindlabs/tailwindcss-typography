@@ -1,6 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 const merge = require('lodash/merge')
 const styles = require('./styles')
+// const union = require('lodash/union')
 
 const computed = {
   // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
@@ -18,21 +19,24 @@ function configToCss(config) {
 }
 
 module.exports = plugin.withOptions(
-  ({ modifiers = ['default', 'sm', 'lg', 'xl'] } = {}) => {
+  ({ modifiers = ['default', 'sm', 'lg', 'xl', '2xl'] } = {}) => {
     return function ({ addComponents, theme, variants }) {
       const config = theme('typography', {})
 
-      // addComponents(
-      //   union(
-      //     ['default', 'sm', 'lg', 'xl'].filter(modifiers.includes),
+      // addComponents({
+      //   [`@variants ${variants('typography').join(', ')}`]: union(
+      //     ['default', 'sm', 'lg', 'xl', '2xl'].filter((x) =>
+      //       modifiers.includes(x)
+      //     ),
       //     Object.keys(config)
       //   ).map((modifier) => ({
       //     [`.prose${modifier === 'default' ? '' : `-${modifier}`}`]: merge(
-      //       styles.modifiers[modifier] || {},
+      //       modifier === 'default' ? styles.shared : {},
+      //       styles.modifiers[modifier] ? styles.modifiers[modifier].css : {},
       //       configToCss(config[modifier] || {})
       //     ),
-      //   }))
-      // )
+      //   })),
+      // })
 
       addComponents({
         [`@variants ${variants('typography').join(', ')}`]: [
@@ -68,9 +72,17 @@ module.exports = plugin.withOptions(
                     configToCss(config.xl || {})
                   ),
                 }),
+            ...(!modifiers.includes('2xl')
+              ? {}
+              : {
+                  '.prose-2xl': merge(
+                    styles.modifiers['2xl'].css,
+                    configToCss(config['2xl'] || {})
+                  ),
+                }),
           },
           ...Object.keys(config)
-            .filter((x) => !['default', 'sm', 'lg', 'xl'].includes(x))
+            .filter((x) => !['default', 'sm', 'lg', 'xl', '2xl'].includes(x))
             .map((modifier) => ({
               [`.prose-${modifier}`]: configToCss(config[modifier]),
             })),

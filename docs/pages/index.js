@@ -8,7 +8,7 @@ export default () => {
   return (
     <Layout meta={{ title: 'Tailwind CSS Typography' }}>
       <div className="fixed top-0 left-0 flex flex-col ml-3">
-        {['default', 'sm', 'lg', 'xl'].map((s) => (
+        {['sm', 'default', 'lg', 'xl', '2xl'].map((s) => (
           <button
             key={s}
             type="button"

@@ -45,6 +45,10 @@ module.exports = {
       left: '0',
       backgroundColor: defaultTheme.colors.gray[500],
     },
+    h1: {
+      color: defaultTheme.colors.gray[900],
+      fontWeight: '800',
+    },
     h2: {
       color: defaultTheme.colors.gray[900],
       fontWeight: '700',
@@ -88,6 +92,12 @@ module.exports = {
         p: {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
+        },
+        h1: {
+          fontSize: em(36, 16),
+          marginTop: '0',
+          marginBottom: em(32, 36),
+          lineHeight: round(40 / 36),
         },
         h2: {
           fontSize: em(24, 16),
@@ -155,8 +165,8 @@ module.exports = {
         },
         'ul > li::before': {
           // TODO: ask Steve about sizing
-          height: em(2, 16),
           width: em(12, 16),
+          height: em(2, 16),
           top: 'calc(0.875em - 0.0625em)', // TODO: track line-height
         },
         '> ul > li p': {
@@ -197,6 +207,12 @@ module.exports = {
         p: {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
+        },
+        h1: {
+          fontSize: em(30, 14),
+          marginTop: '0',
+          marginBottom: em(24, 30),
+          lineHeight: round(36 / 30),
         },
         h2: {
           fontSize: em(20, 14),
@@ -307,6 +323,12 @@ module.exports = {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
         },
+        h1: {
+          fontSize: em(48, 18),
+          marginTop: '0',
+          marginBottom: em(40, 48),
+          lineHeight: round(48 / 48),
+        },
         h2: {
           fontSize: em(30, 18),
           marginTop: em(56, 30),
@@ -369,8 +391,8 @@ module.exports = {
           paddingLeft: em(32, 18),
         },
         'ul > li::before': {
-          height: '0.111em',
-          width: '0.666em',
+          width: em(12, 18),
+          height: em(2, 18),
           top: 'calc(0.888em - 0.0555em)',
         },
         '> ul > li p': {
@@ -411,6 +433,12 @@ module.exports = {
         p: {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
+        },
+        h1: {
+          fontSize: em(56, 20),
+          marginTop: '0',
+          marginBottom: em(48, 56),
+          lineHeight: round(56 / 56),
         },
         h2: {
           fontSize: em(36, 20),
@@ -488,8 +516,8 @@ module.exports = {
           paddingLeft: em(40, 20),
         },
         'ul > li::before': {
-          height: '0.111em',
-          width: '0.666em',
+          width: em(12, 20),
+          height: em(2, 20),
           top: 'calc(0.888em - 0.0555em)',
         },
         '> ul > li p': {
@@ -511,6 +539,131 @@ module.exports = {
         'ul ul, ul ol, ol ul, ol ol': {
           marginTop: em(16, 20),
           marginBottom: em(16, 20),
+        },
+        'h2 + *': {
+          marginTop: '0',
+        },
+        'h3 + *': {
+          marginTop: '0',
+        },
+        'h4 + *': {
+          marginTop: '0',
+        },
+      },
+    },
+    '2xl': {
+      css: {
+        fontSize: rem(24),
+        lineHeight: round(40 / 24),
+        p: {
+          marginTop: em(32, 24),
+          marginBottom: em(32, 24),
+        },
+        h1: {
+          fontSize: em(64, 24),
+          marginTop: '0',
+          marginBottom: em(56, 64),
+          lineHeight: round(64 / 64),
+        },
+        h2: {
+          fontSize: em(48, 24),
+          marginTop: em(64, 48),
+          marginBottom: em(40, 48),
+          lineHeight: round(40 / 48),
+        },
+        h3: {
+          fontSize: em(36, 24),
+          marginTop: em(56, 36),
+          marginBottom: em(24, 36),
+          lineHeight: round(40 / 36),
+        },
+        h4: {}, // TODO
+        img: {
+          marginTop: em(48, 24),
+          marginBottom: em(48, 24),
+        },
+        video: {
+          marginTop: em(48, 24),
+          marginBottom: em(48, 24),
+        },
+        figure: {
+          marginTop: em(48, 24),
+          marginBottom: em(48, 24),
+        },
+        code: {
+          fontSize: em(20, 24),
+          lineHeight: round(40 / 20),
+          borderRadius: rem(6),
+          paddingTop: em(8, 20),
+          paddingRight: em(10, 20),
+          paddingBottom: em(8, 20),
+          paddingLeft: em(10, 20),
+        },
+        'h2 code': {
+          lineHeight: round(40 / 32.4),
+          paddingTop: em(6, 36),
+          paddingRight: em(8, 36),
+          paddingBottom: em(6, 36),
+          paddingLeft: em(8, 36),
+        },
+        'h3 code': {
+          lineHeight: round(40 / 27),
+          paddingTop: em(4, 30),
+          paddingRight: em(6, 30),
+          paddingBottom: em(4, 30),
+          paddingLeft: em(6, 30),
+        },
+        pre: {
+          fontSize: em(20, 24),
+          lineHeight: round(36 / 20),
+          borderRadius: rem(6),
+          paddingTop: em(32, 20),
+          paddingRight: em(32, 20),
+          paddingBottom: em(32, 20),
+          paddingLeft: em(32, 20),
+        },
+        ol: {
+          marginTop: em(32, 24),
+          marginBottom: em(32, 24),
+        },
+        ul: {
+          marginTop: em(32, 24),
+          marginBottom: em(32, 24),
+        },
+        li: {
+          marginTop: em(16, 24),
+          marginBottom: em(16, 24),
+        },
+        'ol > li': {
+          paddingLeft: em(48, 24),
+        },
+        'ul > li': {
+          paddingLeft: em(48, 24),
+        },
+        'ul > li::before': {
+          width: em(12, 24),
+          height: em(2, 24),
+          top: 'calc(0.888em - 0.0555em)',
+        },
+        '> ul > li p': {
+          marginTop: em(20, 24),
+          marginBottom: em(20, 24),
+        },
+        '> ul > li > *:first-child': {
+          marginTop: em(32, 24),
+        },
+        '> ul > li > *:last-child': {
+          marginBottom: em(32, 24),
+        },
+        '> ol > li > *:first-child': {
+          marginTop: em(32, 24),
+        },
+        '> ol > li > *:last-child': {
+          marginBottom: em(32, 24),
+        },
+        'ul ul, ul ol, ol ul, ol ol': {
+          marginTop: em(20, 24),
+          marginBottom: em(20, 24),
         },
         'h2 + *': {
           marginTop: '0',
