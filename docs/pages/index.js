@@ -10,6 +10,7 @@ export default () => {
       <div className="fixed top-0 left-0 flex flex-col ml-3">
         {['default', 'sm', 'lg', 'xl'].map((s) => (
           <button
+            key={s}
             type="button"
             className={`border mt-3 px-4 focus:outline-none ${
               size === s ? 'border-black' : ''
