@@ -24,21 +24,6 @@ module.exports = plugin.withOptions(
     return function ({ addComponents, theme, variants }) {
       const config = theme('typography', {})
 
-      // addComponents({
-      //   [`@variants ${variants('typography').join(', ')}`]: union(
-      //     ['default', 'sm', 'lg', 'xl', '2xl'].filter((x) =>
-      //       modifiers.includes(x)
-      //     ),
-      //     Object.keys(config)
-      //   ).map((modifier) => ({
-      //     [`.prose${modifier === 'default' ? '' : `-${modifier}`}`]: merge(
-      //       modifier === 'default' ? styles.shared : {},
-      //       styles.modifiers[modifier] ? styles.modifiers[modifier].css : {},
-      //       configToCss(config[modifier] || {})
-      //     ),
-      //   })),
-      // })
-
       addComponents({
         [`@variants ${variants('typography').join(', ')}`]: [
           {
@@ -46,41 +31,15 @@ module.exports = plugin.withOptions(
               ...castArray(styles.default.css),
               configToCss(config.default || {})
             ),
-            ...(!modifiers.includes('sm')
-              ? {}
-              : {
-                  '.prose-sm': merge(
-                    ...castArray(styles.sm.css),
-                    configToCss(config.sm || {})
-                  ),
-                }),
-            ...(!modifiers.includes('lg')
-              ? {}
-              : {
-                  '.prose-lg': merge(
-                    ...castArray(styles.lg.css),
-                    configToCss(config.lg || {})
-                  ),
-                }),
-            ...(!modifiers.includes('xl')
-              ? {}
-              : {
-                  '.prose-xl': merge(
-                    ...castArray(styles.xl.css),
-                    configToCss(config.xl || {})
-                  ),
-                }),
-            ...(!modifiers.includes('2xl')
-              ? {}
-              : {
-                  '.prose-2xl': merge(
-                    ...castArray(styles['2xl'].css),
-                    configToCss(config['2xl'] || {})
-                  ),
-                }),
           },
+          ...modifiers.map((modifier) => ({
+            [`.prose-${modifier}`]: merge(
+              ...castArray(styles[modifier].css),
+              configToCss(config[modifier] || {})
+            ),
+          })),
           ...Object.keys(config)
-            .filter((x) => !['default', 'sm', 'lg', 'xl', '2xl'].includes(x))
+            .filter((key) => !['default', ...modifiers].includes(key))
             .map((modifier) => ({
               [`.prose-${modifier}`]: configToCss(config[modifier]),
             })),
