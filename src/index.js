@@ -9,14 +9,12 @@ const computed = {
 }
 
 function configToCss(config) {
-  return {
+  return merge(
     ...Object.keys(config)
-      .filter((x) => computed[x])
-      .reduce((acc, cur) => {
-        return { ...acc, ...computed[cur](config[cur]) }
-      }, {}),
-    ...merge(...castArray(config.css || {})),
-  }
+      .filter((key) => computed[key])
+      .map((key) => computed[key](config[key])),
+    ...castArray(config.css || {})
+  )
 }
 
 module.exports = plugin.withOptions(
