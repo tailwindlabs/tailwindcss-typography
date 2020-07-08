@@ -45,6 +45,19 @@ module.exports = {
       left: '0',
       backgroundColor: defaultTheme.colors.gray[500],
     },
+    blockquote: {
+      fontWeight: '500',
+      fontStyle: 'italic',
+      borderLeftWidth: '0.25rem',
+      borderLeftColor: defaultTheme.colors.gray[300],
+      quotes: '"\\201C""\\201D""\\2018""\\2019"',
+    },
+    'blockquote p:first-of-type::before': {
+      content: 'open-quote',
+    },
+    'blockquote p:last-of-type::after': {
+      content: 'close-quote',
+    },
     h1: {
       color: defaultTheme.colors.gray[900],
       fontWeight: '800',
@@ -92,6 +105,13 @@ module.exports = {
         p: {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
+        },
+        blockquote: {
+          fontSize: em(20, 16),
+          lineHeight: round(32 / 20),
+          marginTop: em(32, 20),
+          marginBottom: em(32, 20),
+          paddingLeft: em(20, 20),
         },
         h1: {
           fontSize: em(36, 16),
@@ -208,6 +228,13 @@ module.exports = {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
         },
+        blockquote: {
+          fontSize: em(18, 14),
+          lineHeight: round(32 / 18),
+          marginTop: em(24, 18),
+          marginBottom: em(24, 18),
+          paddingLeft: em(16, 18),
+        },
         h1: {
           fontSize: em(30, 14),
           marginTop: '0',
@@ -323,6 +350,13 @@ module.exports = {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
         },
+        blockquote: {
+          fontSize: em(24, 18),
+          lineHeight: round(36 / 24),
+          marginTop: em(40, 24),
+          marginBottom: em(40, 24),
+          paddingLeft: em(20, 24),
+        },
         h1: {
           fontSize: em(48, 18),
           marginTop: '0',
@@ -433,6 +467,13 @@ module.exports = {
         p: {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
+        },
+        blockquote: {
+          fontSize: em(32, 20),
+          lineHeight: round(40 / 32),
+          marginTop: em(48, 32),
+          marginBottom: em(48, 32),
+          paddingLeft: em(20, 32),
         },
         h1: {
           fontSize: em(56, 20),
@@ -558,6 +599,13 @@ module.exports = {
         p: {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
+        },
+        blockquote: {
+          fontSize: em(36, 24),
+          lineHeight: round(48 / 36),
+          marginTop: em(56, 36),
+          marginBottom: em(56, 36),
+          paddingLeft: em(20, 36),
         },
         h1: {
           fontSize: em(64, 24),
