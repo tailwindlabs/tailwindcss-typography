@@ -74,6 +74,9 @@ module.exports = {
       color: defaultTheme.colors.gray[900],
       fontWeight: '600',
     },
+    'figure figcaption': {
+      color: defaultTheme.colors.gray[600],
+    },
     code: {
       fontFamily: defaultTheme.fontFamily.mono.join(', '),
       backgroundColor: defaultTheme.colors.gray[100],
@@ -146,6 +149,15 @@ module.exports = {
         figure: {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        'figure figcaption': {
+          fontSize: em(14, 16),
+          lineHeight: round(20 / 14),
+          marginTop: em(12, 14),
         },
         code: {
           fontSize: em(14, 16),
@@ -269,6 +281,15 @@ module.exports = {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
         },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        'figure figcaption': {
+          fontSize: em(12, 14),
+          lineHeight: round(16 / 12),
+          marginTop: em(8, 12),
+        },
         code: {
           fontSize: em(12, 14),
           lineHeight: round(24 / 12),
@@ -388,6 +409,15 @@ module.exports = {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
         },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        'figure figcaption': {
+          fontSize: em(16, 18),
+          lineHeight: round(24 / 16),
+          marginTop: em(16, 16),
+        },
         code: {
           fontSize: em(16, 18),
           lineHeight: round(32 / 16),
@@ -505,6 +535,15 @@ module.exports = {
         figure: {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        'figure figcaption': {
+          fontSize: em(18, 20),
+          lineHeight: round(24 / 18),
+          marginTop: em(18, 18),
         },
         code: {
           fontSize: em(18, 20),
@@ -637,6 +676,15 @@ module.exports = {
         figure: {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        'figure figcaption': {
+          fontSize: em(20, 24),
+          lineHeight: round(32 / 20),
+          marginTop: em(20, 20),
         },
         code: {
           fontSize: em(20, 24),
