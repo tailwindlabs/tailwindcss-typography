@@ -16,6 +16,9 @@ module.exports = {
         '> :last-child': {
           marginBottom: '0',
         },
+        '.lead': {
+          color: defaultTheme.colors.gray[600],
+        },
         a: {
           color: defaultTheme.colors.gray[900],
           textDecoration: 'underline',
@@ -34,8 +37,7 @@ module.exports = {
         'ol > li::before': {
           content: 'counter(list-counter) "."',
           position: 'absolute',
-          left: '0',
-          fontWeight: '600',
+          fontWeight: '400',
           color: defaultTheme.colors.gray[600],
         },
         'ul > li': {
@@ -44,7 +46,6 @@ module.exports = {
         'ul > li::before': {
           content: '""',
           position: 'absolute',
-          left: '0',
           backgroundColor: defaultTheme.colors.gray[400],
           borderRadius: '50%',
         },
@@ -201,15 +202,19 @@ module.exports = {
           marginBottom: em(8, 16),
         },
         'ol > li': {
-          paddingLeft: em(32, 16),
+          paddingLeft: em(28, 16),
+        },
+        'ol > li:before': {
+          left: '0',
         },
         'ul > li': {
-          paddingLeft: em(24, 16),
+          paddingLeft: em(28, 16),
         },
         'ul > li::before': {
           width: em(6, 16),
           height: em(6, 16),
           top: `calc(${em(28 / 2, 16)} - ${em(3, 16)})`,
+          left: em(4, 16),
         },
         '> ul > li p': {
           marginTop: em(12, 16),
@@ -344,15 +349,19 @@ module.exports = {
         marginBottom: em(4, 14),
       },
       'ol > li': {
-        paddingLeft: em(32, 16),
+        paddingLeft: em(22, 14),
+      },
+      'ol > li:before': {
+        left: '0',
       },
       'ul > li': {
-        paddingLeft: em(24, 16),
+        paddingLeft: em(22, 14),
       },
       'ul > li::before': {
         height: em(5, 14),
         width: em(5, 14),
         top: `calc(${em(24 / 2, 14)} - ${em(2.5, 14)})`,
+        left: em(3, 14),
       },
       '> ul > li p': {
         marginTop: em(8, 14),
@@ -486,15 +495,19 @@ module.exports = {
         marginBottom: em(12, 18),
       },
       'ol > li': {
-        paddingLeft: em(32, 16),
+        paddingLeft: em(30, 18),
+      },
+      'ol > li:before': {
+        left: '0',
       },
       'ul > li': {
-        paddingLeft: em(24, 16),
+        paddingLeft: em(30, 18),
       },
       'ul > li::before': {
         width: em(6, 18),
         height: em(6, 18),
         top: `calc(${em(32 / 2, 18)} - ${em(3, 18)})`,
+        left: em(4, 18),
       },
       '> ul > li p': {
         marginTop: em(16, 18),
@@ -640,15 +653,19 @@ module.exports = {
         marginBottom: em(12, 20),
       },
       'ol > li': {
-        paddingLeft: em(32, 16),
+        paddingLeft: em(32, 18),
+      },
+      'ol > li:before': {
+        left: '0',
       },
       'ul > li': {
-        paddingLeft: em(24, 16),
+        paddingLeft: em(32, 18),
       },
       'ul > li::before': {
-        width: em(6, 20),
-        height: em(6, 20),
-        top: `calc(${em(36 / 2, 20)} - ${em(3, 20)})`,
+        width: em(7, 20),
+        height: em(7, 20),
+        top: `calc(${em(36 / 2, 20)} - ${em(3.5, 20)})`,
+        left: em(5, 20),
       },
       '> ul > li p': {
         marginTop: em(16, 20),
@@ -794,15 +811,19 @@ module.exports = {
         marginBottom: em(16, 24),
       },
       'ol > li': {
-        paddingLeft: em(32, 16),
+        paddingLeft: em(40, 24),
+      },
+      'ol > li:before': {
+        left: '0',
       },
       'ul > li': {
-        paddingLeft: em(24, 16),
+        paddingLeft: em(40, 24),
       },
       'ul > li::before': {
         width: em(8, 24),
         height: em(8, 24),
         top: `calc(${em(40 / 2, 24)} - ${em(4, 24)})`,
+        left: em(6, 24),
       },
       '> ul > li p': {
         marginTop: em(20, 24),
