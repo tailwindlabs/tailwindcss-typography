@@ -173,7 +173,6 @@ module.exports = {
         },
         code: {
           fontSize: em(14, 16),
-          lineHeight: round(28 / 14),
           borderRadius: rem(6),
           paddingTop: em(4, 14),
           paddingRight: em(6, 14),
@@ -317,7 +316,6 @@ module.exports = {
       },
       code: {
         fontSize: em(12, 14),
-        lineHeight: round(24 / 12),
         borderRadius: rem(4),
         paddingTop: em(2, 12),
         paddingRight: em(4, 12),
@@ -460,7 +458,6 @@ module.exports = {
       },
       code: {
         fontSize: em(16, 18),
-        lineHeight: round(32 / 16),
         borderRadius: rem(6),
         paddingTop: rem(4),
         paddingRight: rem(6),
@@ -603,7 +600,6 @@ module.exports = {
       },
       code: {
         fontSize: em(18, 20),
-        lineHeight: round(36 / 18),
         borderRadius: rem(8),
         paddingTop: em(4, 18),
         paddingRight: em(6, 18),
@@ -611,14 +607,12 @@ module.exports = {
         paddingLeft: em(6, 18),
       },
       'h2 code': {
-        lineHeight: round(40 / 32.4),
         paddingTop: em(6, 36),
         paddingRight: em(8, 36),
         paddingBottom: em(6, 36),
         paddingLeft: em(8, 36),
       },
       'h3 code': {
-        lineHeight: round(40 / 27),
         paddingTop: em(4, 30),
         paddingRight: em(6, 30),
         paddingBottom: em(4, 30),
@@ -760,7 +754,6 @@ module.exports = {
       },
       code: {
         fontSize: em(20, 24),
-        lineHeight: round(40 / 20),
         borderRadius: rem(8),
         paddingTop: em(6, 20),
         paddingRight: em(8, 20),
@@ -768,14 +761,12 @@ module.exports = {
         paddingLeft: em(8, 20),
       },
       'h2 code': {
-        lineHeight: round(40 / 32.4),
         paddingTop: em(6, 36),
         paddingRight: em(8, 36),
         paddingBottom: em(6, 36),
         paddingLeft: em(8, 36),
       },
       'h3 code': {
-        lineHeight: round(40 / 27),
         paddingTop: em(4, 30),
         paddingRight: em(6, 30),
         paddingBottom: em(4, 30),
