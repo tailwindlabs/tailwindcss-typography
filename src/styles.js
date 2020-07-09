@@ -197,6 +197,8 @@ module.exports = {
         pre: {
           fontSize: em(14, 16),
           lineHeight: round(24 / 14),
+          marginTop: em(32, 14),
+          marginBottom: em(32, 14),
           borderRadius: rem(6),
           paddingTop: em(12, 14),
           paddingRight: em(16, 14),
@@ -358,6 +360,8 @@ module.exports = {
       pre: {
         fontSize: em(12, 14),
         lineHeight: round(20 / 12),
+        marginTop: em(24, 12),
+        marginBottom: em(24, 12),
         borderRadius: rem(4),
         paddingTop: em(8, 12),
         paddingRight: em(12, 12),
@@ -518,6 +522,8 @@ module.exports = {
       pre: {
         fontSize: em(16, 18),
         lineHeight: round(28 / 16),
+        marginTop: em(32, 16),
+        marginBottom: em(32, 16),
         borderRadius: rem(6),
         paddingTop: em(20, 16),
         paddingRight: em(20, 16),
@@ -678,6 +684,8 @@ module.exports = {
       pre: {
         fontSize: em(18, 20),
         lineHeight: round(32 / 18),
+        marginTop: em(40, 18),
+        marginBottom: em(40, 18),
         borderRadius: rem(8),
         paddingTop: em(24, 18),
         paddingRight: em(24, 18),
@@ -838,6 +846,8 @@ module.exports = {
       pre: {
         fontSize: em(20, 24),
         lineHeight: round(36 / 20),
+        marginTop: em(48, 20),
+        marginBottom: em(48, 20),
         borderRadius: rem(8),
         paddingTop: em(32, 20),
         paddingRight: em(32, 20),
