@@ -17,7 +17,7 @@ module.exports = {
           marginBottom: '0',
         },
         '.lead': {
-          color: defaultTheme.colors.gray[600],
+          color: defaultTheme.colors.gray[700],
         },
         a: {
           color: defaultTheme.colors.gray[900],
@@ -122,7 +122,7 @@ module.exports = {
         },
         table: {
           width: '100%',
-          tableLayout: 'fixed',
+          tableLayout: 'auto',
           textAlign: 'left',
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
@@ -130,8 +130,8 @@ module.exports = {
         thead: {
           color: defaultTheme.colors.gray[900],
           fontWeight: '600',
-          borderBottomWidth: '2px',
-          borderBottomColor: defaultTheme.colors.gray[300],
+          borderBottomWidth: '1px',
+          borderBottomColor: defaultTheme.colors.gray[400],
         },
         'thead th': {
           verticalAlign: 'bottom',
@@ -139,6 +139,9 @@ module.exports = {
         'tbody tr': {
           borderBottomWidth: '1px',
           borderBottomColor: defaultTheme.colors.gray[300],
+        },
+        'tbody tr:last-child': {
+          borderBottomWidth: '0',
         },
         'tbody td': {
           verticalAlign: 'top',
@@ -181,8 +184,9 @@ module.exports = {
           lineHeight: round(32 / 20),
         },
         h4: {
-          marginTop: em(32, 16),
-          marginBottom: em(12, 16),
+          marginTop: em(24, 16),
+          marginBottom: em(8, 16),
+          lineHeight: round(24 / 16),
         },
         img: {
           marginTop: em(32, 16),
@@ -217,8 +221,8 @@ module.exports = {
         pre: {
           fontSize: em(14, 16),
           lineHeight: round(24 / 14),
-          marginTop: em(32, 14),
-          marginBottom: em(32, 14),
+          marginTop: em(24, 14),
+          marginBottom: em(24, 14),
           borderRadius: rem(6),
           paddingTop: em(12, 14),
           paddingRight: em(16, 14),
@@ -293,9 +297,9 @@ module.exports = {
           lineHeight: round(24 / 14),
         },
         'thead th': {
-          paddingRight: em(12, 14),
+          paddingRight: em(8, 14),
           paddingBottom: em(8, 14),
-          paddingLeft: em(12, 14),
+          paddingLeft: em(8, 14),
         },
         'thead th:first-child': {
           paddingLeft: '0',
@@ -305,9 +309,9 @@ module.exports = {
         },
         'tbody td': {
           paddingTop: em(8, 14),
-          paddingRight: em(12, 14),
+          paddingRight: em(8, 14),
           paddingBottom: em(8, 14),
-          paddingLeft: em(12, 14),
+          paddingLeft: em(8, 14),
         },
         'tbody td:first-child': {
           paddingLeft: '0',
@@ -329,8 +333,8 @@ module.exports = {
       '.lead': {
         fontSize: em(18, 14),
         lineHeight: round(28 / 18),
-        marginTop: em(20, 18),
-        marginBottom: em(20, 18),
+        marginTop: em(16, 18),
+        marginBottom: em(16, 18),
       },
       blockquote: {
         marginTop: em(24, 18),
@@ -351,13 +355,14 @@ module.exports = {
       },
       h3: {
         fontSize: em(18, 14),
-        marginTop: em(24, 18),
+        marginTop: em(28, 18),
         marginBottom: em(8, 18),
         lineHeight: round(28 / 18),
       },
       h4: {
-        marginTop: em(24, 14),
+        marginTop: em(20, 14),
         marginBottom: em(8, 14),
+        lineHeight: round(20 / 14),
       },
       img: {
         marginTop: em(24, 14),
@@ -392,8 +397,8 @@ module.exports = {
       pre: {
         fontSize: em(12, 14),
         lineHeight: round(20 / 12),
-        marginTop: em(24, 12),
-        marginBottom: em(24, 12),
+        marginTop: em(20, 12),
+        marginBottom: em(20, 12),
         borderRadius: rem(4),
         paddingTop: em(8, 12),
         paddingRight: em(12, 12),
@@ -501,10 +506,10 @@ module.exports = {
         marginBottom: em(24, 18),
       },
       '.lead': {
-        fontSize: em(24, 18),
-        lineHeight: round(36 / 24),
-        marginTop: em(28, 24),
-        marginBottom: em(28, 24),
+        fontSize: em(22, 18),
+        lineHeight: round(32 / 22),
+        marginTop: em(24, 22),
+        marginBottom: em(24, 22),
       },
       blockquote: {
         marginTop: em(40, 24),
@@ -530,8 +535,9 @@ module.exports = {
         lineHeight: round(36 / 24),
       },
       h4: {
-        marginTop: em(36, 18),
-        marginBottom: em(16, 18),
+        marginTop: em(32, 18),
+        marginBottom: em(8, 18),
+        lineHeight: round(28 / 18),
       },
       img: {
         marginTop: em(32, 18),
@@ -677,8 +683,8 @@ module.exports = {
       '.lead': {
         fontSize: em(24, 20),
         lineHeight: round(36 / 24),
-        marginTop: em(28, 24),
-        marginBottom: em(28, 24),
+        marginTop: em(24, 24),
+        marginBottom: em(24, 24),
       },
       blockquote: {
         marginTop: em(48, 30),
@@ -704,8 +710,9 @@ module.exports = {
         lineHeight: round(40 / 30),
       },
       h4: {
-        marginTop: em(40, 20),
-        marginBottom: em(16, 20),
+        marginTop: em(36, 20),
+        marginBottom: em(12, 20),
+        lineHeight: round(32 / 20),
       },
       img: {
         marginTop: em(40, 20),
@@ -740,8 +747,8 @@ module.exports = {
       pre: {
         fontSize: em(18, 20),
         lineHeight: round(32 / 18),
-        marginTop: em(40, 18),
-        marginBottom: em(40, 18),
+        marginTop: em(36, 18),
+        marginBottom: em(36, 18),
         borderRadius: rem(8),
         paddingTop: em(20, 18),
         paddingRight: em(24, 18),
@@ -851,8 +858,8 @@ module.exports = {
       '.lead': {
         fontSize: em(30, 24),
         lineHeight: round(44 / 30),
-        marginTop: em(36, 30),
-        marginBottom: em(36, 30),
+        marginTop: em(32, 30),
+        marginBottom: em(32, 30),
       },
       blockquote: {
         marginTop: em(64, 36),
@@ -878,8 +885,9 @@ module.exports = {
         lineHeight: round(44 / 36),
       },
       h4: {
-        marginTop: em(48, 24),
-        marginBottom: em(20, 24),
+        marginTop: em(40, 24),
+        marginBottom: em(16, 24),
+        lineHeight: round(36 / 24),
       },
       img: {
         marginTop: em(48, 24),
@@ -914,8 +922,8 @@ module.exports = {
       pre: {
         fontSize: em(20, 24),
         lineHeight: round(36 / 20),
-        marginTop: em(48, 20),
-        marginBottom: em(48, 20),
+        marginTop: em(40, 20),
+        marginBottom: em(40, 20),
         borderRadius: rem(8),
         paddingTop: em(24, 20),
         paddingRight: em(32, 20),
