@@ -274,7 +274,7 @@ module.exports = {
         lineHeight: round(28 / 18),
         marginTop: em(24, 18),
         marginBottom: em(24, 18),
-        paddingLeft: em(16, 14),
+        paddingLeft: em(20, 18),
       },
       h1: {
         fontSize: em(30, 14),
@@ -284,8 +284,8 @@ module.exports = {
       },
       h2: {
         fontSize: em(20, 14),
-        marginTop: em(40, 24),
-        marginBottom: em(20, 24),
+        marginTop: em(32, 20),
+        marginBottom: em(16, 20),
         lineHeight: round(28 / 20),
       },
       h3: {
@@ -653,13 +653,13 @@ module.exports = {
         marginBottom: em(12, 20),
       },
       'ol > li': {
-        paddingLeft: em(32, 18),
+        paddingLeft: em(36, 20),
       },
       'ol > li:before': {
         left: '0',
       },
       'ul > li': {
-        paddingLeft: em(32, 18),
+        paddingLeft: em(36, 20),
       },
       'ul > li::before': {
         width: em(7, 20),
@@ -778,10 +778,10 @@ module.exports = {
         paddingLeft: em(8, 20),
       },
       'h2 code': {
-        paddingTop: em(6, 36),
-        paddingRight: em(8, 36),
-        paddingBottom: em(6, 36),
-        paddingLeft: em(8, 36),
+        paddingTop: em(6, 40),
+        paddingRight: em(8, 40),
+        paddingBottom: em(6, 40),
+        paddingLeft: em(8, 40),
       },
       'h3 code': {
         paddingTop: em(4, 30),
