@@ -88,9 +88,14 @@ module.exports = {
         },
         code: {
           fontFamily: defaultTheme.fontFamily.mono.join(', '),
-          backgroundColor: defaultTheme.colors.gray[100],
-          borderColor: defaultTheme.colors.gray[300],
-          borderWidth: defaultTheme.borderWidth.default,
+          color: defaultTheme.colors.gray[900],
+          fontWeight: '600',
+        },
+        'code::before': {
+          content: '"`"',
+        },
+        'code::after': {
+          content: '"`"',
         },
         pre: {
           color: defaultTheme.colors.gray[300],
@@ -103,10 +108,17 @@ module.exports = {
           borderWidth: '0',
           borderRadius: '0',
           padding: '0',
+          fontWeight: '400',
           color: 'inherit',
           fontSize: 'inherit',
           fontFamily: 'inherit',
           lineHeight: 'inherit',
+        },
+        'pre code::before': {
+          content: '""',
+        },
+        'pre code::after': {
+          content: '""',
         },
       },
       {
@@ -123,8 +135,6 @@ module.exports = {
           marginBottom: em(24, 20),
         },
         blockquote: {
-          fontSize: em(20, 16),
-          lineHeight: round(32 / 20),
           marginTop: em(32, 20),
           marginBottom: em(32, 20),
           paddingLeft: em(20, 20),
@@ -174,25 +184,12 @@ module.exports = {
         },
         code: {
           fontSize: em(14, 16),
-          borderRadius: rem(6),
-          paddingTop: em(4, 14),
-          paddingRight: em(6, 14),
-          paddingBottom: em(4, 14),
-          paddingLeft: em(6, 14),
         },
         'h2 code': {
           fontSize: em(21, 24),
-          paddingTop: em(4, 21),
-          paddingRight: em(6, 21),
-          paddingBottom: em(4, 21),
-          paddingLeft: em(6, 21),
         },
         'h3 code': {
           fontSize: em(18, 20),
-          paddingTop: em(3, 18),
-          paddingRight: em(5, 18),
-          paddingBottom: em(3, 18),
-          paddingLeft: em(5, 18),
         },
         pre: {
           fontSize: em(14, 16),
@@ -286,8 +283,6 @@ module.exports = {
         marginBottom: em(20, 18),
       },
       blockquote: {
-        fontSize: em(18, 14),
-        lineHeight: round(28 / 18),
         marginTop: em(24, 18),
         marginBottom: em(24, 18),
         paddingLeft: em(20, 18),
@@ -337,25 +332,12 @@ module.exports = {
       },
       code: {
         fontSize: em(12, 14),
-        borderRadius: rem(4),
-        paddingTop: em(2, 12),
-        paddingRight: em(4, 12),
-        paddingBottom: em(2, 12),
-        paddingLeft: em(4, 12),
       },
       'h2 code': {
         fontSize: em(18, 20),
-        paddingTop: em(3, 18),
-        paddingRight: em(6, 18),
-        paddingBottom: em(3, 18),
-        paddingLeft: em(6, 18),
       },
       'h3 code': {
         fontSize: em(16, 18),
-        paddingTop: em(3, 16),
-        paddingRight: em(4, 16),
-        paddingBottom: em(3, 16),
-        paddingLeft: em(4, 16),
       },
       pre: {
         fontSize: em(12, 14),
@@ -448,8 +430,6 @@ module.exports = {
         marginBottom: em(28, 24),
       },
       blockquote: {
-        fontSize: em(24, 18),
-        lineHeight: round(36 / 24),
         marginTop: em(40, 24),
         marginBottom: em(40, 24),
         paddingLeft: em(24, 24),
@@ -499,25 +479,12 @@ module.exports = {
       },
       code: {
         fontSize: em(16, 18),
-        borderRadius: rem(6),
-        paddingTop: rem(4),
-        paddingRight: rem(6),
-        paddingBottom: rem(4),
-        paddingLeft: rem(6),
       },
       'h2 code': {
         fontSize: em(26, 30),
-        paddingTop: em(4, 26),
-        paddingRight: em(6, 26),
-        paddingBottom: em(4, 26),
-        paddingLeft: em(6, 26),
       },
       'h3 code': {
         fontSize: em(21, 24),
-        paddingTop: em(4, 21),
-        paddingRight: em(6, 21),
-        paddingBottom: em(4, 21),
-        paddingLeft: em(6, 21),
       },
       pre: {
         fontSize: em(16, 18),
@@ -525,10 +492,10 @@ module.exports = {
         marginTop: em(32, 16),
         marginBottom: em(32, 16),
         borderRadius: rem(6),
-        paddingTop: em(20, 16),
-        paddingRight: em(20, 16),
-        paddingBottom: em(20, 16),
-        paddingLeft: em(20, 16),
+        paddingTop: em(16, 16),
+        paddingRight: em(24, 16),
+        paddingBottom: em(16, 16),
+        paddingLeft: em(24, 16),
       },
       ol: {
         marginTop: em(24, 18),
@@ -610,8 +577,6 @@ module.exports = {
         marginBottom: em(28, 24),
       },
       blockquote: {
-        fontSize: em(30, 20),
-        lineHeight: round(40 / 30),
         marginTop: em(48, 30),
         marginBottom: em(48, 30),
         paddingLeft: em(32, 30),
@@ -661,25 +626,12 @@ module.exports = {
       },
       code: {
         fontSize: em(18, 20),
-        borderRadius: rem(8),
-        paddingTop: em(4, 18),
-        paddingRight: em(6, 18),
-        paddingBottom: em(4, 18),
-        paddingLeft: em(6, 18),
       },
       'h2 code': {
         fontSize: em(31, 36),
-        paddingTop: em(4, 31),
-        paddingRight: em(6, 31),
-        paddingBottom: em(4, 31),
-        paddingLeft: em(6, 31),
       },
       'h3 code': {
         fontSize: em(27, 30),
-        paddingTop: em(4, 27),
-        paddingRight: em(6, 27),
-        paddingBottom: em(4, 27),
-        paddingLeft: em(6, 27),
       },
       pre: {
         fontSize: em(18, 20),
@@ -687,9 +639,9 @@ module.exports = {
         marginTop: em(40, 18),
         marginBottom: em(40, 18),
         borderRadius: rem(8),
-        paddingTop: em(24, 18),
+        paddingTop: em(20, 18),
         paddingRight: em(24, 18),
-        paddingBottom: em(24, 18),
+        paddingBottom: em(20, 18),
         paddingLeft: em(24, 18),
       },
       ol: {
@@ -767,15 +719,13 @@ module.exports = {
       },
       '.lead': {
         fontSize: em(30, 24),
-        lineHeight: round(48 / 30),
+        lineHeight: round(44 / 30),
         marginTop: em(36, 30),
         marginBottom: em(36, 30),
       },
       blockquote: {
-        fontSize: em(36, 24),
-        lineHeight: round(48 / 36),
-        marginTop: em(56, 36),
-        marginBottom: em(56, 36),
+        marginTop: em(64, 36),
+        marginBottom: em(64, 36),
         paddingLeft: em(40, 36),
       },
       h1: {
@@ -786,15 +736,15 @@ module.exports = {
       },
       h2: {
         fontSize: em(48, 24),
-        marginTop: em(64, 48),
+        marginTop: em(72, 48),
         marginBottom: em(40, 48),
-        lineHeight: round(40 / 48),
+        lineHeight: round(52 / 48),
       },
       h3: {
         fontSize: em(36, 24),
         marginTop: em(56, 36),
         marginBottom: em(24, 36),
-        lineHeight: round(40 / 36),
+        lineHeight: round(44 / 36),
       },
       h4: {
         marginTop: em(48, 24),
@@ -823,25 +773,12 @@ module.exports = {
       },
       code: {
         fontSize: em(20, 24),
-        borderRadius: rem(8),
-        paddingTop: em(6, 20),
-        paddingRight: em(8, 20),
-        paddingBottom: em(6, 20),
-        paddingLeft: em(8, 20),
       },
       'h2 code': {
         fontSize: em(42, 48),
-        paddingTop: em(6, 42),
-        paddingRight: em(8, 42),
-        paddingBottom: em(6, 42),
-        paddingLeft: em(8, 42),
       },
       'h3 code': {
         fontSize: em(32, 36),
-        paddingTop: em(4, 32),
-        paddingRight: em(6, 32),
-        paddingBottom: em(4, 32),
-        paddingLeft: em(6, 32),
       },
       pre: {
         fontSize: em(20, 24),
@@ -849,9 +786,9 @@ module.exports = {
         marginTop: em(48, 20),
         marginBottom: em(48, 20),
         borderRadius: rem(8),
-        paddingTop: em(32, 20),
+        paddingTop: em(24, 20),
         paddingRight: em(32, 20),
-        paddingBottom: em(32, 20),
+        paddingBottom: em(24, 20),
         paddingLeft: em(32, 20),
       },
       ol: {
@@ -863,8 +800,8 @@ module.exports = {
         marginBottom: em(32, 24),
       },
       li: {
-        marginTop: em(16, 24),
-        marginBottom: em(16, 24),
+        marginTop: em(12, 24),
+        marginBottom: em(12, 24),
       },
       'ol > li': {
         paddingLeft: em(40, 24),
@@ -898,12 +835,12 @@ module.exports = {
         marginBottom: em(32, 24),
       },
       'ul ul, ul ol, ol ul, ol ol': {
-        marginTop: em(20, 24),
-        marginBottom: em(20, 24),
+        marginTop: em(16, 24),
+        marginBottom: em(16, 24),
       },
       hr: {
-        marginTop: em(64, 24),
-        marginBottom: em(64, 24),
+        marginTop: em(72, 24),
+        marginBottom: em(72, 24),
       },
       'hr + *': {
         marginTop: '0',

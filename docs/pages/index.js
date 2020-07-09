@@ -8,7 +8,7 @@ import MarkdownSampleE from '../components/MarkdownSampleE.mdx'
 
 export default () => {
   const [size, setSize] = useState('default')
-  const [sample, setSample] = useState('A')
+  const [sample, setSample] = useState('B')
 
   const SampleComponent = {
     A: MarkdownSample,
