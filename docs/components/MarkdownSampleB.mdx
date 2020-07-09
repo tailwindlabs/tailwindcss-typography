@@ -1,0 +1,505 @@
+# Next.js 9.3
+
+We are excited today to introduce Next.js 9.3, featuring:
+
+- **[Next-gen Static Site Generation (SSG) Support](#next-gen-static-site-generation-ssg-support)**: Built-in optimized static generation through new data fetching methods.
+- **[Preview Mode](#preview-mode)**: Bypass statically generated pages to display drafts from a CMS.
+- **[Built-In Sass Support for Global Stylesheets](#built-in-sass-support-for-global-stylesheets)**: Applications can now directly import `.scss` files as global stylesheets.
+- **[Built-In Sass CSS Module Support for Component-Level Styles](#built-in-sass-css-module-support-for-component-level-styles)**: Leveraging the `.module.scss` convention, locally scoped CSS can be imported and used anywhere in your application.
+- **[Automatic Static Optimization for 404](#automatic-static-optimization-for-404)**: Improved speed and reliability by serving the 404 page statically.
+- **[32 kB Smaller Runtime](#32-kb-smaller-runtime-15-kb-gzip)**: Smaller runtime size for all Next.js applications through powerful optimizations.
+- **[Next.js Community on GitHub Discussions](#community)**: You can now discuss and ask questions right from the Next.js repository on GitHub.
+
+All of these benefits are non-breaking and fully backwards compatible. All you need to do to update is run:
+
+```sh
+npm i next@latest react@latest react-dom@latest
+```
+
+## Next-gen Static Site Generation (SSG) Support
+
+When building websites or web applications you generally have to choose between 2 strategies: Static generation (**SSG**) or server-side rendering (**SSR**).
+
+Next.js is the first hybrid framework, allowing you to choose the technique that fits your use case best on a per-page basis.
+
+Next.js 9.0 introduced the concept of [Automatic Static Optimization](https://nextjs.org/blog/next-9#automatic-static-optimization). When a page does not have blocking data fetching requirements like `getInitialProps`, it will be automatically rendered to HTML at build time.
+
+There are more cases where you might want to render a page to static HTML at build time, even with blocking data fetching requirements. An example of this is marketing pages powered by a (headless) Content Management System (**CMS**) or a blog section of the site.
+
+We've collaborated with heavy users of SSG and `next export` like HashiCorp and extensively discussed the right constraints with the community in the [most commented on RFC](https://github.com/vercel/next.js/issues/9524) in the history of Next.js to create a new unified way to do data fetching and static generation.
+
+Today we're incredibly excited to announce two new data fetching methods: [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching) and [`getServerSideProps`](https://nextjs.org/docs/basic-features/data-fetching). We also include a way to provide parameters to statically generate static pages for dynamic routes: [`getStaticPaths`](https://nextjs.org/docs/basic-features/data-fetching).
+
+These new methods have many advantages over the `getInitialProps` model as there is a clear distinction between what will become SSG vs SSR.
+
+- `getStaticProps` (Static Generation): Fetch data at **build-time**.
+- `getStaticPaths` (Static Generation): Specify [dynamic routes](https://nextjs.org/docs/routing/dynamic-routes) to prerender based on data.
+- `getServerSideProps` (Server-Side Rendering): Fetch data on **each request**.
+
+- These improvements are API additions. All new functionality is completely backwards compatible and can be incrementally adopted. No deprecations are introduced and `getInitialProps` will continue to function as it currently does. We do encourage adopting these new methods on new pages and projects.
+
+### getStaticProps
+
+If you export an `async` function called `getStaticProps` from a page, Next.js will pre-render this page at build time. This is especially useful when you want to render specific static pages from a CMS.
+
+`getStaticProps` always runs in the Node.js context and the code is automatically tree-shaken from browser bundles, ensuring that less code is sent to the browser. This way you don't have to worry about the execution of data fetching code in both Node.js and browser environments, which have some inconsistencies.
+
+This allows you to use any asynchronous or even synchronous data fetching technique, including `fetch`, REST, GraphQL, or even directly accessing a database.
+
+```jsx
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+```
+
+The `context` parameter is an object containing the following keys:
+
+- `params`: `params` contains the route parameters for pages using dynamic routes. For example, if the page name is `[id].js` , then `params` will look like `{ id: ... }`. To learn more, take a look at the [Dynamic Routing documentation](https://nextjs.org/docs/routing/dynamic-routes). You should use this together with `getStaticPaths`, which we’ll explain later.
+
+Here’s an example which uses `getStaticProps` to fetch a list of blog posts from a CMS:
+
+```jsx
+// You can use any data fetching library
+import fetch from 'node-fetch'
+
+// posts will be populated at build time by getStaticProps()
+function Blog({ posts }) {
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li>{post.title}</li>
+      ))}
+    </ul>
+  )
+}
+
+// This function gets called at build time in the Node.js environment.
+// It won't be called on client-side, so you can even do
+// direct database queries. See the "Technical details" section.
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  const res = await fetch('https://.../posts')
+  const posts = await res.json()
+
+  // By returning { props: posts }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      posts,
+    },
+  }
+}
+
+export default Blog
+```
+
+### When should I use getStaticProps?
+
+You should use `getStaticProps` if:
+
+- The data required to render the page is available at build time ahead of a user’s request.
+- The data comes from a headless CMS.
+- The data can be publicly cached (not user-specific).
+- The page must be pre-rendered (for SEO) and be very fast — `getStaticProps` generates HTML and JSON files, both of which can be cached by a CDN for performance.
+
+To learn more about `getStaticProps` refer to the [Data Fetching Documentation](https://nextjs.org/docs/basic-features/data-fetching).
+
+### getStaticPaths
+
+If a page has [dynamic routes](https://nextjs.org/docs/routing/dynamic-routes) and uses `getStaticProps` it needs to define a list of paths that have to be rendered to HTML at build time.
+
+If you export an `async` function called `getStaticPaths` from a page that uses dynamic routes, Next.js will statically pre-render all the paths specified by `getStaticPaths`.
+
+```jsx
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { ... } } // See the "paths" section below
+    ],
+    fallback: true or false // See the "fallback" section below
+  };
+}
+```
+
+### The paths key (required)
+
+The paths key determines which paths will be pre-rendered. For example, suppose that you have a page that uses dynamic routes named `pages/posts/[id].js`. If you export `getStaticPaths` from this page and return the following for paths:
+
+```jsx
+return {
+  paths: [
+    { params: { id: 1 } },
+    { params: { id: 2 } }
+  ],
+  fallback: ...
+}
+```
+
+Then Next.js will statically generate `posts/1` and `posts/2` at build time using the page component in `pages/posts/[id].js`.
+
+Note that the value for each `params` must match the parameters used in the page name:
+
+- If the page name is `pages/posts/[postId]/[commentId]`, then `params` should contain `postId` and `commentId`.
+- If the page name uses catch-all routes, for example, `pages/[...slug]`, then `params` should contain `slug` which is an array. For example, if this array is `['foo', 'bar']`, then Next.js will statically generate the page at `/foo/bar`.
+
+### The fallback key (required)
+
+The object returned by getStaticPaths must contain a boolean fallback key.
+
+### Fallback: false
+
+If `fallback` is `false`, then any paths not returned by `getStaticPaths` will result in a **404 page**. This is useful if you know that all paths will be known at build time.
+
+Here’s an example which pre-renders one blog post per page called `pages/posts/[id].js`. The list of blog posts will be fetched from a CMS and returned by `getStaticPaths` . Then, for each page, it fetches the post data from a CMS using `getStaticProps`.
+
+```jsx
+// pages/posts/[id].js
+import fetch from 'node-fetch'
+
+function Post({ post }) {
+  // Render post...
+}
+
+// This function gets called at build time
+export async function getStaticPaths() {
+  // Call an external API endpoint to get posts
+  const res = await fetch('https://.../posts')
+  const posts = await res.json()
+
+  // Get the paths we want to pre-render based on posts
+  const paths = posts.map((post) => `/posts/${post.id}`)
+
+  // We'll pre-render only these paths at build time.
+  // { fallback: false } means other routes should 404.
+  return { paths, fallback: false }
+}
+
+// This also gets called at build time
+export async function getStaticProps({ params }) {
+  // params contains the post `id`.
+  // If the route is like /posts/1, then params.id is 1
+  const res = await fetch(`https://.../posts/${params.id}`)
+  const post = await res.json()
+
+  // Pass post data to the page via props
+  return { props: { post } }
+}
+
+export default Post
+```
+
+### Fallback: true
+
+If `fallback` is `true`, then the behavior of `getStaticProps` changes, Next.js will render the provided paths to HTML at build time. When a path was not generated at build time it will be generated on-demand when a user requests the page.
+
+**This is useful when your application has many routes that can be statically generated but you don't want to incur increased build times for pages by only generating a subset at build time.**
+
+The user that triggers the generation of the page will be served a fallback HTML, this is generally a page with a loading state. The reason for this is that static HTML can be served from a CDN, ensuring that the page is always fast, even when it hasn't been generated yet.
+
+An example of on-demand statically generating additional pages:
+
+```jsx
+// pages/posts/[id].js
+import { useRouter } from 'next/router'
+import fetch from 'node-fetch'
+
+function Post({ post }) {
+  const router = useRouter()
+
+  // If the page is not yet generated, this will be displayed
+  // initially until getStaticProps() finishes running
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
+
+  // Render post...
+}
+
+// This function gets called at build time
+export async function getStaticPaths() {
+  return {
+    // Only `/posts/1` and `/posts/2` are generated at build time
+    paths: [{ params: { id: 1 } }, { params: { id: 2 } }],
+    // Enable statically generating additional pages
+    // For example: `/posts/3`
+    fallback: true,
+  }
+}
+
+// This also gets called at build time
+export async function getStaticProps({ params }) {
+  // params contains the post `id`.
+  // If the route is like /posts/1, then params.id is 1
+  const res = await fetch(`https://.../posts/${params.id}`)
+  const post = await res.json()
+
+  // Pass post data to the page via props
+  return { props: { post } }
+}
+
+export default Post
+```
+
+To learn more about `getStaticPaths` refer to the [Data Fetching Documentation](https://nextjs.org/docs/basic-features/data-fetching).
+
+### getServerSideProps
+
+If you export an `async` function called `getServerSideProps` from a page, Next.js will render this page on each request (SSR).
+
+`getServerSideProps` always runs server-side and the code is automatically tree-shaken from browser bundles, ensuring that less code is sent to the browser. This way you don't have to worry about the execution of data fetching code in both server and browser environments, which have some inconsistencies. This increases performance in many cases as the server will generally have a faster connection to the data source. It also increases security by exposing less of the data fetching logic.
+
+This allows you to use any asynchronous or even synchronous data fetching technique, including `fetch`, REST, GraphQL, or even directly accessing a database.
+
+When navigating between pages using `next/link` instead of executing `getServerSideProps` in the browser Next.js will do a fetch to the server which will return the result of calling `getServerSideProps`.
+
+```jsx
+export async function getServerSideProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+```
+
+The `context` parameter is an object containing the following keys:
+
+- `params`: If this page uses a dynamic route, `params` contains the route parameters. If the page name is `[id].js` , then `params` will look like `{ id: ... }`. To learn more, take a look at the [Dynamic Routing documentation](https://nextjs.org/docs/routing/dynamic-routes).
+- `req`: [The HTTP request object](https://nodejs.org/api/http.html#http_class_http_incomingmessage).
+- `res`: [The HTTP response object](https://nodejs.org/api/http.html#http_class_http_serverresponse).
+- `query`: The query string.
+
+Here’s an example which uses `getServerSideProps` to fetch data at request time and renders it:
+
+```jsx
+function Page({ data }) {
+  // Render data...
+}
+
+// This gets called on every request
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://.../data`)
+  const data = await res.json()
+
+  // Pass data to the page via props
+  return { props: { data } }
+}
+
+export default Page
+```
+
+To learn more about `getServerSideProps` refer to the [Data Fetching Documentation](https://nextjs.org/docs/basic-features/data-fetching).
+
+## Preview Mode
+
+As discussed earlier in this post, Static Generation is useful when your pages fetch data from a headless CMS. However, it’s not ideal when you’re writing a draft on your headless CMS and want to preview the draft immediately on your page. As the output is static previewing changes becomes harder as you'd have to regenerate that static page.
+
+The introduction of `getStaticProps` in Next.js opens up new possibilities like leveraging Next.js' on-demand rendering capabilities under certain conditions.
+
+For example, when previewing a draft from your headless CMS you'd want bypass the static rendering and on-demand render the page with the draft content instead of the published content. You’d want Next.js to bypass Static Generation only for this specific case.
+
+**We are happy to announce a new built-in feature of Next.js to address this need: Preview Mode.**
+
+Preview Mode allows users to bypass the statically generated page to on-demand render (SSR) a draft page from for example a CMS.
+
+However, you're not just limited to certain CMS systems. Preview Mode integrates directly with both `getStaticProps` and `getServerSideProps` so it can be used with any type of data fetching solution.
+
+Preview Mode is already available when using `next start`, or seamlessly by [deploying](https://nextjs.org/docs/deployment) to the platform.
+
+Try it out preview mode yourself on [https://next-preview.now.sh/](https://next-preview.now.sh/)
+
+Learn more about [Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode) by referencing [the documentation](https://nextjs.org/docs/advanced-features/preview-mode).
+
+## Collaboration with CMS providers
+
+`getStaticProps` allows you to fetch data from any data source, including CMS systems
+
+We're actively collaborating with many of the key players in the CMS ecosystem to provide examples and guides on integrating with Next.js.
+
+Examples which are currently being actively worked on include:
+
+- [Agility CMS](https://agilitycms.com/)
+- [Craft CMS](https://craftcms.com/)
+- [Crystallize](https://crystallize.com/)
+- [DatoCMS](http://datocms.com)
+- [Elliot](https://elliot.store/)
+- [TinaCMS](https://tinacms.org/blog/introducing-visual-open-authoring)
+- [Prismic](http://prismic.io/)
+- [Sanity](http://sanity.io/)
+- [Storyblok](http://storyblok.com)
+- [Strapi](https://strapi.io/)
+- [TakeShape](https://www.takeshape.io/)
+
+If your company is active in the CMS ecosystem, we'd love to work with you! Feel free to reach out on [email](https://zeit.co/support/request) or [Twitter](https://twitter.com/timneutkens).
+
+## Built-in Sass Support for Global Stylesheets
+
+[Next.js 9.2](https://nextjs.org/blog/next-9-2) introduced [built-in support for Global CSS Stylesheets](https://nextjs.org/blog/next-9-2#built-in-css-support-for-global-stylesheets) to replace the `next-css` plugin with better defaults to provide a more optimized result.
+
+Right after the release we increasingly got asked to integrate Sass support as many businesses moving to Next.js have an existing design system based on Sass.
+
+Upon investigating Next.js plugin usage we found that approximately 30% of Next.js applications use `next-sass` today. Compared to 44% using vanilla CSS and 6% using Less.
+
+Furthermore, `next-sass` had the same missing constraints as `next-css`. Meaning that you could import a Sass file in every file of the project, however, this imported Sass file would be global for the whole application.
+
+After considering these statistics and feedback we're delighted to announce that Next.js now has built-in support for importing Sass stylesheets.
+
+To get started using global Sass imports in your application, install [`sass`](https://github.com/sass/sass):
+
+```bash
+npm install sass
+```
+
+Then, import the Sass file within `pages/_app.js`.
+
+For example, consider the following stylesheet named `styles.scss` in the root of your project:
+
+```scss
+$primary-color: #333;
+
+body {
+  padding: 20px 20px 60px;
+  margin: 0;
+  color: $primary-color;
+}
+```
+
+Create a `pages/_app.js` file if not already present. Then, import the `styles.scss` file:
+
+```jsx
+import '../styles.scss'
+
+// This default export is required in a new `pages/_app.js` file.
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+```
+
+Since stylesheets are global by nature, they must be imported in the [Custom `<App>` component](https://nextjs.org/docs/advanced-features/custom-app). This is necessary to avoid class name and ordering conflicts for global styles.
+
+In development, expressing stylesheets this way allows your styles to be automatically updated on the page as you edit them.
+
+In production, all Sass and CSS files will be automatically concatenated into a single minified `.css` file. This CSS file will be loaded via a `<link>` tag and automatically injected into the default HTML markup Next.js generates.
+
+This new feature is fully backwards compatible. If you are using `@zeit/next-sass` or other CSS related plugins the feature is disabled to avoid conflicts.
+
+If you are currently using `@zeit/next-sass` we recommend removing the plugin from your `next.config.js` and `package.json`, thereby moving to the built-in Sass support upon upgrading.
+
+## Built-in Sass CSS Module Support for Component-Level Styles
+
+Next.js now supports [CSS Modules](https://github.com/css-modules/css-modules) with Sass files using the `[name].module.scss` file naming convention.
+
+Unlike the support previously available in Next.js 5+ using `next-sass`, global Sass and CSS modules can now **coexist** — `next-sass` required all `.scss` files in your application be handled as global or local, but not both.
+
+CSS Modules locally scope Sass by automatically creating unique class names. This allows you to use the same Sass class name in different files without worrying about collisions.
+
+This behavior makes CSS Modules the ideal way to include component-level Sass. CSS Module files **can be imported anywhere in your application**.
+
+To get started using Sass CSS Modules in your application, make sure you have [`sass`](https://github.com/sass/sass) installed:
+
+```bash
+npm install sass
+```
+
+Now, consider a reusable `Button` component in the `components/` folder:
+
+First, create `components/Button.module.scss` with the following content:
+
+```scss
+/*
+You do not need to worry about .error {} colliding with any other `.css` or
+`.module.css` files!
+*/
+$color: white;
+
+.error {
+  color: $color;
+  background-color: red;
+}
+```
+
+Then, create `components/Button.js`, importing and using the above CSS file:
+
+```jsx
+import styles from './Button.module.scss'
+
+export function Button() {
+  return (
+    <button
+      type="button"
+      // Note how the "error" class is accessed as a property on the imported
+      // `styles` object.
+      className={styles.error}
+    >
+      Destroy
+    </button>
+  )
+}
+```
+
+CSS Modules for Sass files are an _optional_ feature and are only enabled for files with the `.module.scss` extension. Regular [`<link>` stylesheets](https://nextjs.org/docs/api-reference/next/head) and [global Sass styles](https://nextjs.org/blog/next-9-2#built-in-css-support-for-global-stylesheets) are still supported.
+
+In production, all CSS Module files are automatically concatenated into **many minified and code-split `.css` files**. These `.css` files represent hot execution paths in your application, ensuring the minimal amount of CSS is loaded per-page for your application to paint.
+
+Like above, this new feature is fully backwards compatible. If you are using `@zeit/next-sass` or other CSS related plugins the feature is disabled to avoid conflicts.
+
+If you are currently using `@zeit/next-sass` we recommend removing the plugin from your `next.config.js` and `package.json`, thereby moving to the built-in Sass support.
+
+## Automatic Static Optimization for 404
+
+The release of Next.js 9 introduced the concept of [Automatic Static Optimization](https://nextjs.org/blog/next-9#automatic-static-optimization) when a page does not have blocking data requirements Next.js will automatically generate the page as static HTML at build-time. However, there was one page that wasn't automatically rendered as static HTML: the 404 page. The main reason that the 404 page wasn't made static automatically was that the `/_error` page powering 404 was handling more than just 404, for example, errors.
+
+Given that the 404 pages get rendered for non-existent routes rendering the page on-demand could cause increased cost and server load.
+
+We set out to put you in the pit of success in 2 ways:
+
+- The default Next.js experience generates a static 404 page
+- When customizing the 404 page it still makes sure you end up with a static page
+
+This feature is fully backwards compatible so if you currently have a custom `pages/_error.js` it will continue to be used for the 404 page until you add `pages/404.js`.
+
+### Static 404 page by default
+
+When your application doesn't have a custom `pages/_error.js` page Next.js will automatically statically generate the 404 page and use that when a 404 has to be served. This happens automatically and no changes are needed.
+
+### Custom 404 page using pages/404.js
+
+To override the default 404 page you can now create a `pages/404.js` which will still be automatically statically optimized at build time. This page is used instead of `pages/_error.js` to render a 404 if your application has one.
+
+```jsx
+// pages/404.js
+export default () => <h1>This is the 404 page</h1>
+```
+
+## 32+ kB **Smaller Runtime (15 kB+ Gzip)**
+
+Next.js supports the [same browsers as React itself](https://reactjs.org/docs/react-dom.html#browser-support), with no required configuration. This includes Internet Explorer 11 (IE11) and all popular browsers (Edge, Firefox, Chrome, Safari, Opera, et al).
+
+As part of this compatibility, we also compile your application to be IE11 compatible: this allows you to safely use [ES6](https://github.com/lukehoban/es6features)+ syntax features, Async/Await, Object Rest/Spread Properties, and more—all with zero configuration necessary.
+
+Part of this compilation process also involves transparently injecting the necessary feature polyfills (e.g. `Array.from` or `Symbol`). However, these polyfills are only necessary for [less than 10% of web traffic](https://caniuse.com/#feat=es6-module), in most cases to support IE11.
+
+Starting in Next.js 9.3, Next.js will automatically load the polyfills needed to support legacy browsers, and only loads the polyfills in these legacy browsers.
+
+In practice, this means 32 kB or more will be eliminated from your _First Load_ size for [90%+ of your users](https://caniuse.com/#feat=es6-module).
+
+These size savings are even greater for larger applications that rely on even more browser features.
+
+This optimization is fully automatic and no application changes are necessary to take advantage of it!
+
+## Community
+
+We're very excited to see the continued growth in Next.js adoption:
+
+- We have had over **927** independent contributors.
+- On GitHub, the project has been starred over **46,600** times.
+- The [examples directory](https://github.com/vercel/next.js/tree/canary/examples) has over **226 examples.**
+
+The Next.js community now has over **15,250** members. The community can now be found on GitHub discussions, a new place for the community to discuss and ask questions! [Join us!](https://github.com/vercel/next.js/discussions)
+
+We are thankful to our community and all the external feedback and contributions that helped shape this release.
+
+Special thanks to [Jeff Escalante](https://twitter.com/jescalan) for significant feedback on the new data fetching methods.
+
+Huge thanks to everyone who contributed to this release: @arcanis, @lgordey, @ijjk, @martpie, @jaywink, @fabianishere, @dijs, @TheRusskiy, @quinnturner, @timneutkens, @lfades, @vvo, @adithwip, @rafaelalmeidatk, @bmathews, @Spy-Seth, @EvgeniyKumachev, @chibicode, @piglovesyou, @HaNdTriX, @Timer, @janicklas-ralph, @devknoll, @prateekbh, @ethanryan, @MoOx, @rifaidev, @msweeneydev, @motiko, and @balazsorban44 for helping!
