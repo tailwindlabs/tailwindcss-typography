@@ -1,4 +1,4 @@
-import '../assets/css/tailwind.css'
+import 'tailwindcss/tailwind.css'
 import React from 'react'
 import App from 'next/app'
 

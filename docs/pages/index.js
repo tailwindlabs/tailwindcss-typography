@@ -1,24 +1,9 @@
 import { useState } from 'react'
 import Layout from '../components/Layout'
 import MarkdownSample from '../components/MarkdownSample.mdx'
-import MarkdownSampleB from '../components/MarkdownSampleB.mdx'
-import MarkdownSampleC from '../components/MarkdownSampleC.mdx'
-import MarkdownSampleD from '../components/MarkdownSampleD.mdx'
-import MarkdownSampleE from '../components/MarkdownSampleE.mdx'
-import MarkdownSampleF from '../components/MarkdownSampleF.mdx'
 
 export default () => {
   const [size, setSize] = useState('default')
-  const [sample, setSample] = useState('A')
-
-  const SampleComponent = {
-    A: MarkdownSample,
-    B: MarkdownSampleB,
-    C: MarkdownSampleC,
-    D: MarkdownSampleD,
-    E: MarkdownSampleE,
-    F: MarkdownSampleF,
-  }[sample]
 
   return (
     <Layout meta={{ title: 'Tailwind CSS Typography' }}>
@@ -33,19 +18,9 @@ export default () => {
             {s}
           </button>
         ))}
-        {['A', 'B', 'C', 'D', 'E', 'F'].map((s) => (
-          <button
-            key={s}
-            type="button"
-            className={`border mt-3 px-4 focus:outline-none ${sample === s ? 'border-black' : ''}`}
-            onClick={() => setSample(s)}
-          >
-            Sample {s}
-          </button>
-        ))}
       </div>
       <div className={`prose prose-${size} mx-auto`}>
-        <SampleComponent />
+        <MarkdownSample />
       </div>
     </Layout>
   )
