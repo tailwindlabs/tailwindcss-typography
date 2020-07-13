@@ -7,11 +7,11 @@
   "author": "Adam Wathan",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev docs",
-    "build": "next build docs",
-    "export": "next export docs",
+    "dev": "next dev demo",
+    "build": "next build demo",
+    "export": "next export demo",
     "deploy": "npm run build && npm run export",
-    "start": "next start docs",
+    "start": "next start demo",
     "prepare": "node scripts/build.js"
   },
   "peerDependencies": {
