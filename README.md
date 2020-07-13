@@ -41,7 +41,6 @@ module.exports = {
 
 Now you can use the `prose` classes to add sensible typography styles to any vanilla HTML:
 
-````html
 ```html
 <article class="prose lg:prose-xl">
   <h1>Garlic bread with cheese: What the science tells us</h1>
@@ -56,7 +55,7 @@ Now you can use the `prose` classes to add sensible typography styles to any van
   </p>
   <!-- ... -->
 </article>
-````
+```
 
 ### Size modifiers
 
