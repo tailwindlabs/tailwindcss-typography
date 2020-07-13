@@ -3,6 +3,11 @@ const merge = require('lodash/merge')
 const castArray = require('lodash/castArray')
 const styles = require('./styles')
 
+const computed = {
+  // Reserved for future "magic properties", for example:
+  // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
+}
+
 function configToCss(config) {
   return merge(
     ...Object.keys(config)
