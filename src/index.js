@@ -2,11 +2,6 @@ const plugin = require('tailwindcss/plugin')
 const merge = require('lodash/merge')
 const castArray = require('lodash/castArray')
 const styles = require('./styles')
-// const union = require('lodash/union')
-
-const computed = {
-  // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
-}
 
 function configToCss(config) {
   return merge(
@@ -25,10 +20,7 @@ module.exports = plugin.withOptions(
       addComponents({
         [`@variants ${variants('typography').join(', ')}`]: [
           {
-            '.prose': merge(
-              ...castArray(styles.default.css),
-              configToCss(config.default || {})
-            ),
+            '.prose': merge(...castArray(styles.default.css), configToCss(config.default || {})),
           },
           ...modifiers.map((modifier) => ({
             [`.prose-${modifier}`]: merge(
