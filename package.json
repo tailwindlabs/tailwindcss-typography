@@ -4,7 +4,6 @@
   "description": "A component for automatically styling plain HTML content with sensible typographic defaults.",
   "main": "src/index.js",
   "repository": "https://github.com/tailwindcss/typography",
-  "author": "Adam Wathan",
   "license": "MIT",
   "scripts": {
     "dev": "next dev demo",
