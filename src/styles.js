@@ -85,7 +85,6 @@ module.exports = {
           color: defaultTheme.colors.gray[600],
         },
         code: {
-          fontFamily: defaultTheme.fontFamily.mono.join(', '),
           color: defaultTheme.colors.gray[900],
           fontWeight: '600',
         },
