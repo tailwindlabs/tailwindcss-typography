@@ -85,7 +85,6 @@ module.exports = {
           color: defaultTheme.colors.gray[600],
         },
         code: {
-          fontFamily: defaultTheme.fontFamily.mono.join(', '),
           color: defaultTheme.colors.gray[900],
           fontWeight: '600',
         },
@@ -97,7 +96,6 @@ module.exports = {
         },
         pre: {
           color: defaultTheme.colors.gray[300],
-          fontFamily: defaultTheme.fontFamily.mono.join(', '),
           backgroundColor: defaultTheme.colors.gray[800],
           overflowX: 'auto',
         },
