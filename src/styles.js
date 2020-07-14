@@ -14,7 +14,7 @@ module.exports = {
       {
         color: defaultTheme.colors.gray[700],
         maxWidth: '65ch',
-        '.lead': {
+        '[class~="lead"]': {
           color: defaultTheme.colors.gray[700],
         },
         a: {
@@ -150,7 +150,7 @@ module.exports = {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
         },
-        '.lead': {
+        '[class~="lead"]': {
           fontSize: em(20, 16),
           lineHeight: round(32 / 20),
           marginTop: em(24, 20),
@@ -335,7 +335,7 @@ module.exports = {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
         },
-        '.lead': {
+        '[class~="lead"]': {
           fontSize: em(18, 14),
           lineHeight: round(28 / 18),
           marginTop: em(16, 18),
@@ -520,7 +520,7 @@ module.exports = {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
         },
-        '.lead': {
+        '[class~="lead"]': {
           fontSize: em(22, 18),
           lineHeight: round(32 / 22),
           marginTop: em(24, 22),
@@ -705,7 +705,7 @@ module.exports = {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
         },
-        '.lead': {
+        '[class~="lead"]': {
           fontSize: em(24, 20),
           lineHeight: round(36 / 24),
           marginTop: em(24, 24),
@@ -890,7 +890,7 @@ module.exports = {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
         },
-        '.lead': {
+        '[class~="lead"]': {
           fontSize: em(30, 24),
           lineHeight: round(44 / 30),
           marginTop: em(32, 30),
