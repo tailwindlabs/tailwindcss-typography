@@ -134,7 +134,7 @@ module.exports = {
 }
 ```
 
-Additionally, if you want to use the `theme()` helper function for customization, you can do so:
+Additionally, if you want to use the `theme()` helper function to customize this plugin's styles, you can do so by bringing it into scope:
 
 ```js
 // tailwind.config.js
