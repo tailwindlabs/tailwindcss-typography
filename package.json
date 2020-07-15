@@ -14,7 +14,7 @@
     "prepare": "node scripts/build.js"
   },
   "peerDependencies": {
-    "tailwindcss": "^1.0"
+    "tailwindcss": "^1.5.0"
   },
   "devDependencies": {
     "@mdx-js/loader": "^1.0.19",
@@ -29,6 +29,6 @@
     "postcss": "^7.0.17",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.5"
   }
 }

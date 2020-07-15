@@ -22,8 +22,8 @@ module.exports = plugin.withOptions(
     return function ({ addComponents, theme, variants }) {
       const config = theme('typography', {})
 
-      addComponents({
-        [`@variants ${variants('typography').join(', ')}`]: [
+      addComponents(
+        [
           {
             '.prose': merge(...castArray(styles.default.css), configToCss(config.default || {})),
           },
@@ -39,7 +39,8 @@ module.exports = plugin.withOptions(
               [`.prose-${modifier}`]: configToCss(config[modifier]),
             })),
         ],
-      })
+        variants('typography')
+      )
     }
   },
   () => ({ variants: { typography: ['responsive'] } })
