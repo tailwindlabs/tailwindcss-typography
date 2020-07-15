@@ -79,7 +79,7 @@ Five different typography sizes are included out of the box:
 
 Everything about the provided size modifiers has been hand-tuned to look as beautiful as possible, including the relationships between font sizes, heading spacing, code block padding, etc. Just like the Tailwind color palettes, none of these styles are based on naive mathematical formulas, and have been hand-crafted by professional designers.
 
-Size modifiers are designed to be used with the [multi-class modifier pattern](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers) and **must be used in conjuction with the base `prose` class**:
+Size modifiers are designed to be used with the [multi-class modifier pattern](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers) and **must be used in conjunction with the base `prose` class**:
 
 ```html
 <!-- Will not work -->
