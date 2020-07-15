@@ -16,6 +16,9 @@
   "peerDependencies": {
     "tailwindcss": "^1.0"
   },
+  "dependencies": {
+    "lodash.merge": "^4.6.2"
+  },
   "devDependencies": {
     "@mdx-js/loader": "^1.0.19",
     "@mdx-js/mdx": "^1.6.6",

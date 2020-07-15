@@ -1,11 +1,14 @@
 const plugin = require('tailwindcss/plugin')
-const merge = require('lodash/merge')
-const castArray = require('lodash/castArray')
+const merge = require('lodash.merge')
 const styles = require('./styles')
 
 const computed = {
   // Reserved for future "magic properties", for example:
   // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
+}
+
+function castArray(x) {
+  return Array.isArray(x) ? x : [x]
 }
 
 function configToCss(config) {
