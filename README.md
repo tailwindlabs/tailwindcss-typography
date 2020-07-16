@@ -134,7 +134,7 @@ module.exports = {
 }
 ```
 
-Additionally, if you want to use the `theme()` helper function to customize this plugin's styles, you can do so by bringing it into scope:
+Like with all theme customizations in Tailwind, you can also define the `typography` key as a function if you need access to the `theme` helper:
 
 ```js
 // tailwind.config.js
