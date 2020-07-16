@@ -134,6 +134,29 @@ module.exports = {
 }
 ```
 
+Like with all theme customizations in Tailwind, you can also define the `typography` key as a function if you need access to the `theme` helper:
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme('colors.gray.800'),
+
+          // ...
+        }
+      }
+    })
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+}
+```
+
 Customizations should be applied to a specific modifier like `default` or `xl`, and must be added under the `css` property. Customizations are authored in the same [CSS-in-JS syntax](https://tailwindcss.com/docs/plugins#css-in-js-syntax) used to write Tailwind plugins.
 
 It's important to note that all customizations are **merged** with the defaults. If you'd like to completely override a provided size modifier, you can do so by disabling that modifier so the default styles are not included.
