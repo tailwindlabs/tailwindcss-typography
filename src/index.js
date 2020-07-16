@@ -18,17 +18,17 @@ function configToCss(config) {
 }
 
 module.exports = plugin.withOptions(
-  ({ modifiers = ['sm', 'lg', 'xl', '2xl'] } = {}) => {
+  ({ modifiers = ['sm', 'lg', 'xl', '2xl'], className = 'prose' } = {}) => {
     return function ({ addComponents, theme, variants }) {
       const config = theme('typography', {})
 
       addComponents(
         [
           {
-            '.prose': merge(...castArray(styles.default.css), configToCss(config.default || {})),
+            [`.${className}`]: merge(...castArray(styles.default.css), configToCss(config.default || {})),
           },
           ...modifiers.map((modifier) => ({
-            [`.prose-${modifier}`]: merge(
+            [`.${className}-${modifier}`]: merge(
               ...castArray(styles[modifier].css),
               configToCss(config[modifier] || {})
             ),
@@ -36,7 +36,7 @@ module.exports = plugin.withOptions(
           ...Object.keys(config)
             .filter((key) => !['default', ...modifiers].includes(key))
             .map((modifier) => ({
-              [`.prose-${modifier}`]: configToCss(config[modifier]),
+              [`.${className}-${modifier}`]: configToCss(config[modifier]),
             })),
         ],
         variants('typography')
