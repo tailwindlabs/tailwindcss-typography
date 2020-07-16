@@ -12,7 +12,8 @@ A plugin that provides a set of `prose` classes you can use to add beautiful typ
 </article>
 ```
 
-## Usage
+## Installation
+
 
 Install the plugin from npm:
 
@@ -38,6 +39,29 @@ module.exports = {
   ],
 }
 ```
+
+### Using a CDN
+
+If you need to pull in these styles via CDN, you can do so using services like UNPKG or jsDeliver:
+  
+```html
+<!-- From UNPKG -->
+<link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css">
+
+<!-- From jsDelivr -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.2.x/dist/typography.min.css">
+```
+
+To use these styles alongside the rest of Tailwind via CDN, we recommend pulling in each layer separately so you can put the styles in the correct order:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/base.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/components.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css">
+```
+
+## Usage
 
 Now you can use the `prose` classes to add sensible typography styles to any vanilla HTML:
 
