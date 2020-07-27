@@ -14,6 +14,7 @@ A plugin that provides a set of `prose` classes you can use to add beautiful typ
 
 ## Installation
 
+**_NOTE:_**  Typography plugin requires tailwindcss >= v1.5.0
 
 Install the plugin from npm:
 
