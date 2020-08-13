@@ -31,6 +31,7 @@ module.exports = {
         'ol > li': {
           position: 'relative',
           counterIncrement: 'list-counter',
+          listStyle: "none",
         },
         'ol > li::before': {
           content: 'counter(list-counter) "."',
@@ -40,6 +41,7 @@ module.exports = {
         },
         'ul > li': {
           position: 'relative',
+          listStyle: "none",
         },
         'ul > li::before': {
           content: '""',
