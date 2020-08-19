@@ -14,7 +14,6 @@ A plugin that provides a set of `prose` classes you can use to add beautiful typ
 
 ## Installation
 
-
 Install the plugin from npm:
 
 ```sh
@@ -43,22 +42,31 @@ module.exports = {
 ### Using a CDN
 
 If you need to pull in these styles via CDN, you can do so using services like UNPKG or jsDeliver:
-  
+
 ```html
 <!-- From UNPKG -->
-<link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+/>
 
 <!-- From jsDelivr -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.2.x/dist/typography.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+/>
 ```
 
 To use these styles alongside the rest of Tailwind via CDN, we recommend pulling in each layer separately so you can put the styles in the correct order:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/base.min.css">
-<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/components.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css">
-<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/base.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/components.min.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+/>
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css" />
 ```
 
 ## Usage
@@ -127,6 +135,49 @@ None of the sizes are automatically responsive, but responsive variants are prov
 </article>
 ```
 
+## Purging unused styles
+
+Since the typography styles are added to the `components` layer and Tailwind only purges `utilities` by default, you will notice that even with the `purge` option configured in your `tailwind.config.js` file, all of the typography styles still remain in your final CSS.
+
+If you'd like to purge unused typography styles, you'll need to use the `mode: 'all'` option in your `purge` configuration:
+
+```js
+// tailwind.config.js
+module.exports = {
+  purge: {
+    mode: 'all',
+    content: [
+      // Paths to your templates here...
+    ],
+  },
+}
+```
+
+It's important to note that if you are using markdown for any of your source files (perhaps you're working on a blog or similar), that you need to be careful not to accidentally purge styles you actually need.
+
+Markdown files for example contain no actual `h2`, `blockquote`, `strong`, etc. elements, so PurgeCSS will remove those styles because it doesn't think you need them.
+
+You have two options for solving this:
+
+1. Safelist all of the plain HTML elements you need in your config file:
+
+   ```js
+   // tailwind.config.js
+   module.exports = {
+     purge: {
+       mode: 'all',
+       content: [
+         // Paths to your templates here...
+       ],
+       options: {
+         whitelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong' /* etc. */],
+       },
+     },
+   }
+   ```
+
+2. Use a custom extractor to compile your markdown files _before_ scanning them for tokens. This is more complicated but it is [what we do for the Tailwind blog](https://github.com/tailwindlabs/blog.tailwindcss.com/blob/eb2a0ff80c8e56a79f6514c8dc4253ef84ac5548/tailwind.config.js#L13) for example.
+
 ## Customization
 
 > The customization API is currently extremely low-level in order to be as flexible as possible. We will be introducing higher-level configuration options over time as we learn what types of customizations are most common.
@@ -170,9 +221,9 @@ module.exports = {
           color: theme('colors.gray.800'),
 
           // ...
-        }
-      }
-    })
+        },
+      },
+    }),
   },
   plugins: [
     require('@tailwindcss/typography'),
