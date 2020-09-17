@@ -11,7 +11,8 @@
     "export": "next export demo",
     "deploy": "npm run build && npm run export",
     "start": "next start demo",
-    "prepare": "node scripts/build.js"
+    "prepare": "node scripts/build.js",
+    "test": "jest"
   },
   "peerDependencies": {
     "tailwindcss": "^1.5.0"
@@ -25,6 +26,7 @@
     "cssnano": "^4.1.10",
     "dedent": "^0.7.0",
     "highlight.js": "^9.15.6",
+    "jest": "^26.4.2",
     "next": "^9.4.4",
     "postcss": "^7.0.17",
     "react": "^16.8.6",
