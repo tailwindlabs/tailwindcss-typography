@@ -26,17 +26,20 @@ module.exports = {
           fontWeight: '600',
         },
         ol: {
-          counterReset: 'list-counter',
+          listStyleType: 'decimal',
+          listStylePosition: 'inside',
         },
         'ol > li': {
+          display: 'block',
           position: 'relative',
-          counterIncrement: 'list-counter',
         },
         'ol > li::before': {
-          content: 'counter(list-counter) "."',
+          content: '""',
+          display: 'list-item',
           position: 'absolute',
           fontWeight: '400',
           color: defaultTheme.colors.gray[600],
+          letterSpacing: defaultTheme.letterSpacing.tight
         },
         'ul > li': {
           position: 'relative',
