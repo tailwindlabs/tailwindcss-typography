@@ -5,6 +5,9 @@
   "main": "src/index.js",
   "repository": "https://github.com/tailwindcss/typography",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "next dev demo",
     "build": "next build demo",
