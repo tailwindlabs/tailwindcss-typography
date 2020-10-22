@@ -8,6 +8,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "scripts": {
     "dev": "next dev demo",
     "build": "next build demo",
