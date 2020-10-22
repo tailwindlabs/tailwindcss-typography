@@ -5,13 +5,22 @@
   "main": "src/index.js",
   "repository": "https://github.com/tailwindcss/typography",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "scripts": {
     "dev": "next dev demo",
     "build": "next build demo",
     "export": "next export demo",
     "deploy": "npm run build && npm run export",
     "start": "next start demo",
-    "prepare": "node scripts/build.js"
+    "prepublishOnly": "node scripts/build.js"
   },
   "peerDependencies": {
     "tailwindcss": "^1.5.0"
@@ -29,6 +38,6 @@
     "postcss": "^7.0.17",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "tailwindcss": "^1.5"
+    "tailwindcss": "^2.0.0-alpha.1"
   }
 }

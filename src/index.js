@@ -25,7 +25,10 @@ module.exports = plugin.withOptions(
       addComponents(
         [
           {
-            [`.${className}`]: merge(...castArray(styles.default.css), configToCss(config.default || {})),
+            [`.${className}`]: merge(
+              ...castArray(styles.default.css),
+              configToCss(config.default || {})
+            ),
           },
           ...modifiers.map((modifier) => ({
             [`.${className}-${modifier}`]: merge(
