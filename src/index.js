@@ -28,8 +28,8 @@ module.exports = plugin.withOptions(
           {
             [`.${className}`]: merge(
               {},
-              ...castArray(styles.default.css),
-              configToCss(config.default || {})
+              ...castArray(styles.DEFAULT.css),
+              configToCss(config.DEFAULT || {})
             ),
           },
           ...modifiers.map((modifier) => ({
@@ -40,7 +40,7 @@ module.exports = plugin.withOptions(
             ),
           })),
           ...Object.keys(config)
-            .filter((key) => !['default', ...modifiers].includes(key))
+            .filter((key) => !['DEFAULT', ...modifiers].includes(key))
             .map((modifier) => ({
               [`.${className}-${modifier}`]: configToCss(config[modifier]),
             })),

@@ -1484,7 +1484,7 @@ it('should be possible to merge values', () => {
     diffOnly(
       {},
       {
-        default: {
+        DEFAULT: {
           css: [{ a: { backgroundColor: 'red' } }, { a: { color: 'green' } }],
         },
       }
@@ -1505,7 +1505,7 @@ it('should be possible to only update a single value from an existing definition
     diffOnly(
       {},
       {
-        default: {
+        DEFAULT: {
           css: {
             blockquote: {
               fontWeight: '600',

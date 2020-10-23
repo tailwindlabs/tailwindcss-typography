@@ -9,7 +9,7 @@ const rem = (px) => `${round(px / 16)}rem`
 const em = (px, base) => `${round(px / base)}em`
 
 module.exports = {
-  default: {
+  DEFAULT: {
     css: [
       {
         color: defaultTheme.colors.gray[700],
