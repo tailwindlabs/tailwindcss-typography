@@ -10,6 +10,7 @@ const computed = {
 
 function configToCss(config) {
   return merge(
+    {},
     ...Object.keys(config)
       .filter((key) => computed[key])
       .map((key) => computed[key](config[key])),
@@ -26,18 +27,20 @@ module.exports = plugin.withOptions(
         [
           {
             [`.${className}`]: merge(
-              ...castArray(styles.default.css),
-              configToCss(config.default || {})
+              {},
+              ...castArray(styles.DEFAULT.css),
+              configToCss(config.DEFAULT || {})
             ),
           },
           ...modifiers.map((modifier) => ({
             [`.${className}-${modifier}`]: merge(
+              {},
               ...castArray(styles[modifier].css),
               configToCss(config[modifier] || {})
             ),
           })),
           ...Object.keys(config)
-            .filter((key) => !['default', ...modifiers].includes(key))
+            .filter((key) => !['DEFAULT', ...modifiers].includes(key))
             .map((modifier) => ({
               [`.${className}-${modifier}`]: configToCss(config[modifier]),
             })),
