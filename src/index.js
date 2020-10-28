@@ -22,7 +22,6 @@ module.exports = plugin.withOptions(
   ({ modifiers = ['sm', 'lg', 'xl', '2xl'], className = 'prose' } = {}) => {
     return function ({ addComponents, theme, variants }) {
       const config = theme('typography', {})
-
       addComponents(
         [
           {
