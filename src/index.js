@@ -1,6 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 const merge = require('lodash/merge')
 const castArray = require('lodash/castArray')
+const uniq = require('lodash/uniq')
 const styles = require('./styles')
 
 const computed = {
@@ -8,7 +9,7 @@ const computed = {
   // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
 }
 
-function configToCss(config) {
+function configToCss(config = {}) {
   return merge(
     {},
     ...Object.keys(config)
@@ -18,35 +19,27 @@ function configToCss(config) {
   )
 }
 
+const DEFAULT_MODIFIERS = ['DEFAULT', 'sm', 'lg', 'xl', '2xl']
 module.exports = plugin.withOptions(
-  ({ modifiers = ['sm', 'lg', 'xl', '2xl'], className = 'prose' } = {}) => {
+  ({ modifiers = DEFAULT_MODIFIERS, className = 'prose' } = {}) => {
     return function ({ addComponents, theme, variants }) {
-      const config = theme('typography', {})
+      const config = theme('typography')
+
+      const all = uniq([
+        'DEFAULT',
+        ...modifiers,
+        ...Object.keys(config).filter((modifier) => !DEFAULT_MODIFIERS.includes(modifier)),
+      ])
+
       addComponents(
-        [
-          {
-            [`.${className}`]: merge(
-              {},
-              ...castArray(styles.DEFAULT.css),
-              configToCss(config.DEFAULT || {})
-            ),
-          },
-          ...modifiers.map((modifier) => ({
-            [`.${className}-${modifier}`]: merge(
-              {},
-              ...castArray(styles[modifier].css),
-              configToCss(config[modifier] || {})
-            ),
-          })),
-          ...Object.keys(config)
-            .filter((key) => !['DEFAULT', ...modifiers].includes(key))
-            .map((modifier) => ({
-              [`.${className}-${modifier}`]: configToCss(config[modifier]),
-            })),
-        ],
+        all.map((modifier) => ({
+          [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
+            config[modifier]
+          ),
+        })),
         variants('typography')
       )
     }
   },
-  () => ({ variants: { typography: ['responsive'] } })
+  () => ({ theme: { typography: styles }, variants: { typography: ['responsive'] } })
 )

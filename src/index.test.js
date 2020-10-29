@@ -15752,7 +15752,7 @@ it('should be possilbe to change the default modifiers', async () => {
 })
 
 it('should be possilbe to change the default modifiers and change the className', async () => {
-  expect(await diffOnly({ modifiers: [, /** 'sm', */ 'lg', 'xl', '2xl'], className: 'markdown' }))
+  expect(await diffOnly({ modifiers: [/** 'sm', */ 'lg', 'xl', '2xl'], className: 'markdown' }))
     .toMatchInlineSnapshot(`
     "
 
