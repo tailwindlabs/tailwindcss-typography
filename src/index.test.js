@@ -23028,3 +23028,93 @@ it('should be possible to only update a single value from a different modifier',
     "
   `)
 })
+
+it('should be possilbe to override backticks for the inline `code` tag', async () => {
+  expect(
+    await diffOnly(
+      {},
+      {
+        theme: {
+          extend: {
+            typography: {
+              DEFAULT: {
+                css: [
+                  {
+                    'code::before': {
+                      content: '""',
+                    },
+                    'code::after': {
+                      content: '""',
+                    },
+                  },
+                ],
+              },
+            },
+          },
+        },
+      }
+    )
+  ).toMatchInlineSnapshot(`
+    "
+
+      -   content: '\`';
+      +   content: '';
+
+      ---
+
+      -   content: '\`';
+      +   content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+      ---
+
+      -     content: '\`';
+      +     content: '';
+
+    "
+  `)
+})
