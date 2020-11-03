@@ -307,19 +307,19 @@ it('should generate the default classes for the typography components', async ()
       margin-bottom: 0.75em;
     }
 
-    .prose > ul > li > *:first-child {
+    .prose > ul > li > *:first-child :not(br) {
       margin-top: 1.25em;
     }
 
-    .prose > ul > li > *:last-child {
+    .prose > ul > li > *:last-child :not(br) {
       margin-bottom: 1.25em;
     }
 
-    .prose > ol > li > *:first-child {
+    .prose > ol > li > *:first-child :not(br) {
       margin-top: 1.25em;
     }
 
-    .prose > ol > li > *:last-child {
+    .prose > ol > li > *:last-child :not(br) {
       margin-bottom: 1.25em;
     }
 

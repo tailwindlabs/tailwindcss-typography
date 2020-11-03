@@ -261,16 +261,16 @@ module.exports = (theme) => ({
           marginTop: em(12, 16),
           marginBottom: em(12, 16),
         },
-        '> ul > li > *:first-child': {
+        '> ul > li > *:first-child :not(br)': {
           marginTop: em(20, 16),
         },
-        '> ul > li > *:last-child': {
+        '> ul > li > *:last-child :not(br)': {
           marginBottom: em(20, 16),
         },
-        '> ol > li > *:first-child': {
+        '> ol > li > *:first-child :not(br)': {
           marginTop: em(20, 16),
         },
-        '> ol > li > *:last-child': {
+        '> ol > li > *:last-child :not(br)': {
           marginBottom: em(20, 16),
         },
         'ul ul, ul ol, ol ul, ol ol': {
