@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const { isUsableColor } = require('./utils')
 
 const round = (num) =>
   num
@@ -8,7 +9,7 @@ const round = (num) =>
 const rem = (px) => `${round(px / 16)}rem`
 const em = (px, base) => `${round(px / base)}em`
 
-module.exports = {
+module.exports = (theme) => ({
   DEFAULT: {
     css: [
       {
@@ -20,6 +21,7 @@ module.exports = {
         a: {
           color: defaultTheme.colors.gray[900],
           textDecoration: 'underline',
+          fontWeight: '500',
         },
         strong: {
           color: defaultTheme.colors.gray[900],
@@ -93,6 +95,9 @@ module.exports = {
         },
         'code::after': {
           content: '"`"',
+        },
+        'a code': {
+          color: defaultTheme.colors.gray[900],
         },
         pre: {
           color: defaultTheme.colors.gray[200],
@@ -1066,4 +1071,23 @@ module.exports = {
       },
     ],
   },
-}
+
+  // Add color modifiers
+  ...Object.entries(theme('colors')).reduce((reduced, [color, values]) => {
+    if (!isUsableColor(color, values)) {
+      return {}
+    }
+
+    return {
+      ...reduced,
+      [color]: {
+        css: [
+          {
+            a: { color: values[600] },
+            'a code': { color: values[600] },
+          },
+        ],
+      },
+    }
+  }, {}),
+})
