@@ -1,5 +1,5 @@
-const isPlainObject = require('lodash/isPlainObject')
 const defaultTheme = require('tailwindcss/defaultTheme')
+const { isUsableColor } = require('./utils')
 
 const round = (num) =>
   num
@@ -1074,7 +1074,7 @@ module.exports = (theme) => ({
 
   // Add color modifiers
   ...Object.entries(theme('colors')).reduce((reduced, [color, values]) => {
-    if (!isPlainObject(values) || color === 'gray' || !values[600]) {
+    if (!isUsableColor(color, values)) {
       return {}
     }
 

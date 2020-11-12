@@ -7705,7 +7705,7 @@ it('should generate the default classes for the typography components', async ()
   `)
 })
 
-it('should be possilbe to change the default className from `prose` to `markdown`', async () => {
+it('should be possible to change the default className from `prose` to `markdown`', async () => {
   expect(await diffOnly({ className: 'markdown' })).toMatchInlineSnapshot(`
     "
 
@@ -15091,7 +15091,7 @@ it('should be possilbe to change the default className from `prose` to `markdown
   `)
 })
 
-it('should be possilbe to change the default modifiers', async () => {
+it('should be possible to change the default modifiers', async () => {
   expect(await diffOnly({ modifiers: ['sm', 'lg', 'xl' /**, '2xl' */] })).toMatchInlineSnapshot(`
     "
 
@@ -15318,6 +15318,54 @@ it('should be possilbe to change the default modifiers', async () => {
       -   margin-bottom: 0;
       - }
       -
+      - .prose-red a {
+      -   color: #dc2626;
+      - }
+      -
+      - .prose-red a code {
+      -   color: #dc2626;
+      - }
+      -
+      - .prose-yellow a {
+      -   color: #d97706;
+      - }
+      -
+      - .prose-yellow a code {
+      -   color: #d97706;
+      - }
+      -
+      - .prose-green a {
+      -   color: #059669;
+      - }
+      -
+      - .prose-green a code {
+      -   color: #059669;
+      - }
+      -
+      - .prose-blue a {
+      -   color: #2563eb;
+      - }
+      -
+      - .prose-blue a code {
+      -   color: #2563eb;
+      - }
+      -
+      - .prose-purple a {
+      -   color: #7c3aed;
+      - }
+      -
+      - .prose-purple a code {
+      -   color: #7c3aed;
+      - }
+      -
+      - .prose-pink a {
+      -   color: #db2777;
+      - }
+      -
+      - .prose-pink a code {
+      -   color: #db2777;
+      - }
+      -
 
       ---
 
@@ -15424,9 +15472,8 @@ it('should be possilbe to change the default modifiers', async () => {
       -     padding-right: 1.6em;
       -     padding-bottom: 1.2em;
       -     padding-left: 1.6em;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-2xl ol {
       -     margin-top: 1.3333333em;
       -     margin-bottom: 1.3333333em;
@@ -15435,7 +15482,9 @@ it('should be possilbe to change the default modifiers', async () => {
       -   .sm\\\\:prose-2xl ul {
       -     margin-top: 1.3333333em;
       -     margin-bottom: 1.3333333em;
-      -   }
+
+      ---
+
       -
       -   .sm\\\\:prose-2xl li {
       -     margin-top: 0.5em;
@@ -15550,6 +15599,53 @@ it('should be possilbe to change the default modifiers', async () => {
       -     margin-bottom: 0;
       -   }
       -
+      -   .sm\\\\:prose-red a {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .sm\\\\:prose-red a code {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .sm\\\\:prose-yellow a {
+      -     color: #d97706;
+      -   }
+      -
+      -   .sm\\\\:prose-yellow a code {
+      -     color: #d97706;
+      -   }
+      -
+      -   .sm\\\\:prose-green a {
+      -     color: #059669;
+      -   }
+      -
+      -   .sm\\\\:prose-green a code {
+      -     color: #059669;
+      -   }
+      -
+      -   .sm\\\\:prose-blue a {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .sm\\\\:prose-blue a code {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .sm\\\\:prose-purple a {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .sm\\\\:prose-purple a code {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .sm\\\\:prose-pink a {
+      -     color: #db2777;
+      -   }
+      -
+      -   .sm\\\\:prose-pink a code {
+      -     color: #db2777;
+      -   }
 
       ---
 
@@ -15779,6 +15875,57 @@ it('should be possilbe to change the default modifiers', async () => {
 
       ---
 
+      -   }
+      -
+      -   .md\\\\:prose-red a {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .md\\\\:prose-red a code {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .md\\\\:prose-yellow a {
+      -     color: #d97706;
+      -   }
+      -
+      -   .md\\\\:prose-yellow a code {
+      -     color: #d97706;
+      -   }
+      -
+      -   .md\\\\:prose-green a {
+      -     color: #059669;
+      -   }
+      -
+      -   .md\\\\:prose-green a code {
+      -     color: #059669;
+      -   }
+      -
+      -   .md\\\\:prose-blue a {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .md\\\\:prose-blue a code {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .md\\\\:prose-purple a {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .md\\\\:prose-purple a code {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .md\\\\:prose-pink a {
+      -     color: #db2777;
+      -   }
+      -
+      -   .md\\\\:prose-pink a code {
+      -     color: #db2777;
+
+      ---
+
       -     margin-bottom: 0;
       -   }
       -
@@ -16002,6 +16149,60 @@ it('should be possilbe to change the default modifiers', async () => {
       -   }
       -
       -   .lg\\\\:prose-2xl > :last-child {
+
+      ---
+
+      -   }
+      -
+      -   .lg\\\\:prose-red a {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .lg\\\\:prose-red a code {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .lg\\\\:prose-yellow a {
+      -     color: #d97706;
+      -   }
+      -
+      -   .lg\\\\:prose-yellow a code {
+      -     color: #d97706;
+      -   }
+      -
+      -   .lg\\\\:prose-green a {
+      -     color: #059669;
+      -   }
+      -
+      -   .lg\\\\:prose-green a code {
+      -     color: #059669;
+      -   }
+      -
+      -   .lg\\\\:prose-blue a {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .lg\\\\:prose-blue a code {
+      -     color: #2563eb;
+
+      ---
+
+      -
+      -   .lg\\\\:prose-purple a {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .lg\\\\:prose-purple a code {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .lg\\\\:prose-pink a {
+      -     color: #db2777;
+      -   }
+      -
+      -   .lg\\\\:prose-pink a code {
+      -     color: #db2777;
+      -   }
 
       ---
 
@@ -16231,7 +16432,60 @@ it('should be possilbe to change the default modifiers', async () => {
 
       ---
 
-      -     margin-bottom: 0;
+      -   }
+      -
+      -   .xl\\\\:prose-red a {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .xl\\\\:prose-red a code {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .xl\\\\:prose-yellow a {
+      -     color: #d97706;
+      -   }
+      -
+      -   .xl\\\\:prose-yellow a code {
+      -     color: #d97706;
+
+      ---
+
+      -
+      -   .xl\\\\:prose-green a {
+      -     color: #059669;
+      -   }
+      -
+      -   .xl\\\\:prose-green a code {
+      -     color: #059669;
+      -   }
+      -
+      -   .xl\\\\:prose-blue a {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .xl\\\\:prose-blue a code {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .xl\\\\:prose-purple a {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .xl\\\\:prose-purple a code {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .xl\\\\:prose-pink a {
+      -     color: #db2777;
+      -   }
+      -
+      -   .xl\\\\:prose-pink a code {
+      -     color: #db2777;
+      -   }
+
+      ---
+
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl {
@@ -16454,12 +16708,61 @@ it('should be possilbe to change the default modifiers', async () => {
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl > :last-child {
+      -     margin-bottom: 0;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-red a {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-red a code {
+      -     color: #dc2626;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-yellow a {
+      -     color: #d97706;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-yellow a code {
+      -     color: #d97706;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-green a {
+      -     color: #059669;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-green a code {
+      -     color: #059669;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-blue a {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-blue a code {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-purple a {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-purple a code {
+      -     color: #7c3aed;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-pink a {
+      -     color: #db2777;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-pink a code {
+      -     color: #db2777;
 
     "
   `)
 })
 
-it('should be possilbe to change the default modifiers and change the className', async () => {
+it('should be possible to change the default modifiers and change the className', async () => {
   expect(await diffOnly({ modifiers: [/** 'sm', */ 'lg', 'xl', '2xl'], className: 'markdown' }))
     .toMatchInlineSnapshot(`
     "
@@ -16744,17 +17047,16 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
-      - }
-      -
       - .prose > :first-child {
-      -   margin-top: 0;
+      + .markdown > :first-child {
 
       ---
 
       - .prose > :last-child {
-      -   margin-bottom: 0;
-      - }
-      -
+      + .markdown > :last-child {
+
+      ---
+
       - .prose-sm {
       -   font-size: 0.875rem;
       -   line-height: 1.7142857;
@@ -16780,15 +17082,11 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       - .prose-sm h1 {
       -   font-size: 2.1428571em;
-      + .markdown > :first-child {
-
-      ---
-
+      -   margin-top: 0;
       -   margin-bottom: 0.8em;
       -   line-height: 1.2;
-
-      ---
-
+      - }
+      -
       - .prose-sm h2 {
       -   font-size: 1.4285714em;
       -   margin-top: 1.6em;
@@ -16826,10 +17124,9 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       - .prose-sm figure > * {
       -   margin-top: 0;
-      + .markdown > :last-child {
-
-      ---
-
+      -   margin-bottom: 0;
+      - }
+      -
       - .prose-sm figure figcaption {
       -   font-size: 0.8571429em;
       -   line-height: 1.3333333;
@@ -17643,63 +17940,57 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      - }
+      -
       - .prose-red a {
-      + .markdown-red a {
+      -   color: #dc2626;
 
       ---
 
       - .prose-red a code {
-      + .markdown-red a code {
-
-      ---
-
+      -   color: #dc2626;
+      - }
+      -
       - .prose-yellow a {
-      + .markdown-yellow a {
-
-      ---
-
+      -   color: #d97706;
+      - }
+      -
       - .prose-yellow a code {
-      + .markdown-yellow a code {
-
-      ---
-
+      -   color: #d97706;
+      - }
+      -
       - .prose-green a {
-      + .markdown-green a {
-
-      ---
-
+      -   color: #059669;
+      - }
+      -
       - .prose-green a code {
-      + .markdown-green a code {
-
-      ---
-
+      -   color: #059669;
+      - }
+      -
       - .prose-blue a {
-      + .markdown-blue a {
-
-      ---
-
+      -   color: #2563eb;
+      - }
+      -
       - .prose-blue a code {
-      + .markdown-blue a code {
-
-      ---
-
+      -   color: #2563eb;
+      - }
+      -
       - .prose-purple a {
-      + .markdown-purple a {
-
-      ---
-
+      -   color: #7c3aed;
+      - }
+      -
       - .prose-purple a code {
-      + .markdown-purple a code {
-
-      ---
-
+      -   color: #7c3aed;
+      - }
+      -
       - .prose-pink a {
-      + .markdown-pink a {
-
-      ---
-
+      -   color: #db2777;
+      - }
+      -
       - .prose-pink a code {
-      + .markdown-pink a code {
+      -   color: #db2777;
+      - }
+      -
 
       ---
 
@@ -17943,11 +18234,12 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .sm\\\\:prose hr + * {
-      +   .sm\\\\:markdown hr + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose h2 + * {
       -     margin-top: 0;
       -   }
@@ -17970,17 +18262,15 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose tbody td:first-child {
       -     padding-left: 0;
-      -   }
-      -
+
+      ---
+
       -   .sm\\\\:prose tbody td:last-child {
       -     padding-right: 0;
       -   }
       -
       -   .sm\\\\:prose > :first-child {
-      +   .sm\\\\:markdown h2 + * {
-
-      ---
-
+      -     margin-top: 0;
       -   }
       -
       -   .sm\\\\:prose > :last-child {
@@ -17990,9 +18280,8 @@ it('should be possilbe to change the default modifiers and change the className'
       -   .sm\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -18013,15 +18302,11 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      +   .sm\\\\:markdown h3 + * {
-
-      ---
-
+      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm h2 {
       -     font-size: 1.4285714em;
       -     margin-top: 1.6em;
@@ -18058,10 +18343,7 @@ it('should be possilbe to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm figure > * {
-      +   .sm\\\\:markdown h4 + * {
-
-      ---
-
+      -     margin-top: 0;
       -     margin-bottom: 0;
       -   }
       -
@@ -18136,9 +18418,8 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose-sm > ul > li > *:first-child {
       -     margin-top: 1.1428571em;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm > ul > li > *:last-child {
       -     margin-bottom: 1.1428571em;
       -   }
@@ -18162,21 +18443,25 @@ it('should be possilbe to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm hr + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown hr + * {
+
+      ---
+
       -   .sm\\\\:prose-sm h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h2 + * {
+
+      ---
+
       -   .sm\\\\:prose-sm h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h3 + * {
+
+      ---
+
       -   .sm\\\\:prose-sm h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h4 + * {
+
+      ---
+
       -   .sm\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -18885,63 +19170,57 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .sm\\\\:prose-red a {
-      +   .sm\\\\:markdown-red a {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .sm\\\\:prose-red a code {
-      +   .sm\\\\:markdown-red a code {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .sm\\\\:prose-yellow a {
-      +   .sm\\\\:markdown-yellow a {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .sm\\\\:prose-yellow a code {
-      +   .sm\\\\:markdown-yellow a code {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .sm\\\\:prose-green a {
-      +   .sm\\\\:markdown-green a {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .sm\\\\:prose-green a code {
-      +   .sm\\\\:markdown-green a code {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .sm\\\\:prose-blue a {
-      +   .sm\\\\:markdown-blue a {
+      -     color: #2563eb;
 
       ---
 
+      -
       -   .sm\\\\:prose-blue a code {
-      +   .sm\\\\:markdown-blue a code {
-
-      ---
-
+      -     color: #2563eb;
+      -   }
+      -
       -   .sm\\\\:prose-purple a {
-      +   .sm\\\\:markdown-purple a {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .sm\\\\:prose-purple a code {
-      +   .sm\\\\:markdown-purple a code {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .sm\\\\:prose-pink a {
-      +   .sm\\\\:markdown-pink a {
-
-      ---
-
+      -     color: #db2777;
+      -   }
+      -
       -   .sm\\\\:prose-pink a code {
-      +   .sm\\\\:markdown-pink a code {
+      -     color: #db2777;
+      -   }
 
       ---
 
@@ -19235,14 +19514,11 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .md\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
-
-      ---
-
+      -   }
+      -
       -   .md\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -20121,63 +20397,54 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .md\\\\:prose-red a {
-      +   .md\\\\:markdown-red a {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .md\\\\:prose-red a code {
-      +   .md\\\\:markdown-red a code {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .md\\\\:prose-yellow a {
-      +   .md\\\\:markdown-yellow a {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .md\\\\:prose-yellow a code {
-      +   .md\\\\:markdown-yellow a code {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .md\\\\:prose-green a {
-      +   .md\\\\:markdown-green a {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .md\\\\:prose-green a code {
-      +   .md\\\\:markdown-green a code {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .md\\\\:prose-blue a {
-      +   .md\\\\:markdown-blue a {
-
-      ---
-
+      -     color: #2563eb;
+      -   }
+      -
       -   .md\\\\:prose-blue a code {
-      +   .md\\\\:markdown-blue a code {
-
-      ---
-
+      -     color: #2563eb;
+      -   }
+      -
       -   .md\\\\:prose-purple a {
-      +   .md\\\\:markdown-purple a {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .md\\\\:prose-purple a code {
-      +   .md\\\\:markdown-purple a code {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .md\\\\:prose-pink a {
-      +   .md\\\\:markdown-pink a {
-
-      ---
-
+      -     color: #db2777;
+      -   }
+      -
       -   .md\\\\:prose-pink a code {
-      +   .md\\\\:markdown-pink a code {
+      -     color: #db2777;
 
       ---
 
@@ -20462,18 +20729,23 @@ it('should be possilbe to change the default modifiers and change the className'
       ---
 
       -   .lg\\\\:prose > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown > :first-child {
+
+      ---
+
       -   .lg\\\\:prose > :last-child {
-      -     margin-bottom: 0;
+      +   .lg\\\\:markdown > :last-child {
+
+      ---
+
       -   }
       -
       -   .lg\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
-      -   }
-      -
+
+      ---
+
       -   .lg\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -20494,10 +20766,7 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      +   .lg\\\\:markdown > :first-child {
-
-      ---
-
+      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -20520,9 +20789,8 @@ it('should be possilbe to change the default modifiers and change the className'
       -     margin-top: 1.4285714em;
       -     margin-bottom: 0.5714286em;
       -     line-height: 1.4285714;
-
-      ---
-
+      -   }
+      -
       -   .lg\\\\:prose-sm img {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
@@ -20540,19 +20808,15 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-sm figure > * {
       -     margin-top: 0;
-      +   .lg\\\\:markdown > :last-child {
-
-      ---
-
+      -     margin-bottom: 0;
       -   }
       -
       -   .lg\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
       -     margin-top: 0.6666667em;
-
-      ---
-
+      -   }
+      -
       -   .lg\\\\:prose-sm code {
       -     font-size: 0.8571429em;
       -   }
@@ -21360,63 +21624,57 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .lg\\\\:prose-red a {
-      +   .lg\\\\:markdown-red a {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .lg\\\\:prose-red a code {
-      +   .lg\\\\:markdown-red a code {
+      -     color: #dc2626;
 
       ---
 
+      -
       -   .lg\\\\:prose-yellow a {
-      +   .lg\\\\:markdown-yellow a {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .lg\\\\:prose-yellow a code {
-      +   .lg\\\\:markdown-yellow a code {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .lg\\\\:prose-green a {
-      +   .lg\\\\:markdown-green a {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .lg\\\\:prose-green a code {
-      +   .lg\\\\:markdown-green a code {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .lg\\\\:prose-blue a {
-      +   .lg\\\\:markdown-blue a {
-
-      ---
-
+      -     color: #2563eb;
+      -   }
+      -
       -   .lg\\\\:prose-blue a code {
-      +   .lg\\\\:markdown-blue a code {
-
-      ---
-
+      -     color: #2563eb;
+      -   }
+      -
       -   .lg\\\\:prose-purple a {
-      +   .lg\\\\:markdown-purple a {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .lg\\\\:prose-purple a code {
-      +   .lg\\\\:markdown-purple a code {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .lg\\\\:prose-pink a {
-      +   .lg\\\\:markdown-pink a {
-
-      ---
-
+      -     color: #db2777;
+      -   }
+      -
       -   .lg\\\\:prose-pink a code {
-      +   .lg\\\\:markdown-pink a code {
+      -     color: #db2777;
+      -   }
 
       ---
 
@@ -21713,9 +21971,8 @@ it('should be possilbe to change the default modifiers and change the className'
       -   .xl\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
-
-      ---
-
+      -   }
+      -
       -   .xl\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -21732,8 +21989,9 @@ it('should be possilbe to change the default modifiers and change the className'
       -     margin-top: 1.3333333em;
       -     margin-bottom: 1.3333333em;
       -     padding-left: 1.1111111em;
-      -   }
-      -
+
+      ---
+
       -   .xl\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
       +   .xl\\\\:markdown > :first-child {
@@ -21786,6 +22044,8 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .xl\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
@@ -21802,8 +22062,9 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-sm h3 code {
       -     font-size: 0.8888889em;
-      -   }
-      -
+
+      ---
+
       -   .xl\\\\:prose-sm pre {
       -     font-size: 0.8571429em;
       -     line-height: 1.6666667;
@@ -22599,63 +22860,57 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .xl\\\\:prose-red a {
-      +   .xl\\\\:markdown-red a {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .xl\\\\:prose-red a code {
-      +   .xl\\\\:markdown-red a code {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .xl\\\\:prose-yellow a {
-      +   .xl\\\\:markdown-yellow a {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .xl\\\\:prose-yellow a code {
-      +   .xl\\\\:markdown-yellow a code {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .xl\\\\:prose-green a {
-      +   .xl\\\\:markdown-green a {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .xl\\\\:prose-green a code {
-      +   .xl\\\\:markdown-green a code {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .xl\\\\:prose-blue a {
-      +   .xl\\\\:markdown-blue a {
+      -     color: #2563eb;
 
       ---
 
+      -
       -   .xl\\\\:prose-blue a code {
-      +   .xl\\\\:markdown-blue a code {
-
-      ---
-
+      -     color: #2563eb;
+      -   }
+      -
       -   .xl\\\\:prose-purple a {
-      +   .xl\\\\:markdown-purple a {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .xl\\\\:prose-purple a code {
-      +   .xl\\\\:markdown-purple a code {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .xl\\\\:prose-pink a {
-      +   .xl\\\\:markdown-pink a {
-
-      ---
-
+      -     color: #db2777;
+      -   }
+      -
       -   .xl\\\\:prose-pink a code {
-      +   .xl\\\\:markdown-pink a code {
+      -     color: #db2777;
+      -   }
 
       ---
 
@@ -22899,13 +23154,10 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .\\\\32xl\\\\:prose hr + * {
       -     margin-top: 0;
-
-      ---
-
+      -   }
+      -
       -   .\\\\32xl\\\\:prose h2 + * {
       -     margin-top: 0;
       -   }
@@ -22967,10 +23219,7 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       -   .\\\\32xl\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      +   .\\\\32xl\\\\:markdown hr + * {
-
-      ---
-
+      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -22980,9 +23229,8 @@ it('should be possilbe to change the default modifiers and change the className'
       -     margin-top: 1.6em;
       -     margin-bottom: 0.8em;
       -     line-height: 1.4;
-
-      ---
-
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm h3 {
       -     font-size: 1.2857143em;
       -     margin-top: 1.5555556em;
@@ -23012,10 +23260,7 @@ it('should be possilbe to change the default modifiers and change the className'
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm figure > * {
-      +   .\\\\32xl\\\\:markdown h2 + * {
-
-      ---
-
+      -     margin-top: 0;
       -     margin-bottom: 0;
       -   }
       -
@@ -23031,9 +23276,8 @@ it('should be possilbe to change the default modifiers and change the className'
       -
       -   .\\\\32xl\\\\:prose-sm h2 code {
       -     font-size: 0.9em;
-
-      ---
-
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm h3 code {
       -     font-size: 0.8888889em;
       -   }
@@ -23116,28 +23360,33 @@ it('should be possilbe to change the default modifiers and change the className'
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm hr + * {
-      +   .\\\\32xl\\\\:markdown h3 + * {
+      +   .\\\\32xl\\\\:markdown hr + * {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm h2 + * {
-      +   .\\\\32xl\\\\:markdown h4 + * {
+      +   .\\\\32xl\\\\:markdown h2 + * {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown h3 + * {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-sm h4 + * {
-      -     margin-top: 0;
+      +   .\\\\32xl\\\\:markdown h4 + * {
+
+      ---
+
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
-      -   }
-      -
+
+      ---
+
       -   .\\\\32xl\\\\:prose-sm thead th {
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
@@ -23154,13 +23403,16 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-      -   }
-      -
+
+      ---
+
       -   .\\\\32xl\\\\:prose-sm tbody td:first-child {
       +   .\\\\32xl\\\\:markdown tbody td:first-child {
 
@@ -23841,63 +24093,54 @@ it('should be possilbe to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-red a {
-      +   .\\\\32xl\\\\:markdown-red a {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-red a code {
-      +   .\\\\32xl\\\\:markdown-red a code {
-
-      ---
-
+      -     color: #dc2626;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-yellow a {
-      +   .\\\\32xl\\\\:markdown-yellow a {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-yellow a code {
-      +   .\\\\32xl\\\\:markdown-yellow a code {
-
-      ---
-
+      -     color: #d97706;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-green a {
-      +   .\\\\32xl\\\\:markdown-green a {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-green a code {
-      +   .\\\\32xl\\\\:markdown-green a code {
-
-      ---
-
+      -     color: #059669;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-blue a {
-      +   .\\\\32xl\\\\:markdown-blue a {
-
-      ---
-
+      -     color: #2563eb;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-blue a code {
-      +   .\\\\32xl\\\\:markdown-blue a code {
-
-      ---
-
+      -     color: #2563eb;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-purple a {
-      +   .\\\\32xl\\\\:markdown-purple a {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-purple a code {
-      +   .\\\\32xl\\\\:markdown-purple a code {
-
-      ---
-
+      -     color: #7c3aed;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-pink a {
-      +   .\\\\32xl\\\\:markdown-pink a {
-
-      ---
-
+      -     color: #db2777;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-pink a code {
-      +   .\\\\32xl\\\\:markdown-pink a code {
+      -     color: #db2777;
 
     "
   `)
@@ -24151,7 +24394,7 @@ it('should be possible to only update a single value from a different modifier',
   `)
 })
 
-it('should be possilbe to override backticks for the inline `code` tag', async () => {
+it('should be possible to override backticks for the inline `code` tag', async () => {
   expect(
     await diffOnly(
       {},
