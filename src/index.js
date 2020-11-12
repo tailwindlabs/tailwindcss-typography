@@ -41,5 +41,8 @@ module.exports = plugin.withOptions(
       )
     }
   },
-  () => ({ theme: { typography: styles }, variants: { typography: ['responsive'] } })
+  () => ({
+    theme: { typography: styles },
+    variants: { typography: ['responsive'] },
+  })
 )
