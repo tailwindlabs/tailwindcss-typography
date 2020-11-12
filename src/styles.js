@@ -13,18 +13,18 @@ module.exports = (theme) => ({
   DEFAULT: {
     css: [
       {
-        color: defaultTheme.colors.gray[700],
+        color: theme('colors.gray.700', defaultTheme.colors.gray[700]),
         maxWidth: '65ch',
         '[class~="lead"]': {
-          color: defaultTheme.colors.gray[600],
+          color: theme('colors.gray.600', defaultTheme.colors.gray[600]),
         },
         a: {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           textDecoration: 'underline',
           fontWeight: '500',
         },
         strong: {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
         ol: {
@@ -38,7 +38,7 @@ module.exports = (theme) => ({
           content: 'counter(list-counter) "."',
           position: 'absolute',
           fontWeight: '400',
-          color: defaultTheme.colors.gray[500],
+          color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
         },
         'ul > li': {
           position: 'relative',
@@ -46,19 +46,19 @@ module.exports = (theme) => ({
         'ul > li::before': {
           content: '""',
           position: 'absolute',
-          backgroundColor: defaultTheme.colors.gray[300],
+          backgroundColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
           borderRadius: '50%',
         },
         hr: {
-          borderColor: defaultTheme.colors.gray[200],
+          borderColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
           borderTopWidth: 1,
         },
         blockquote: {
           fontWeight: '500',
           fontStyle: 'italic',
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           borderLeftWidth: '0.25rem',
-          borderLeftColor: defaultTheme.colors.gray[200],
+          borderLeftColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
           quotes: '"\\201C""\\201D""\\2018""\\2019"',
         },
         'blockquote p:first-of-type::before': {
@@ -68,26 +68,26 @@ module.exports = (theme) => ({
           content: 'close-quote',
         },
         h1: {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '800',
         },
         h2: {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '700',
         },
         h3: {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
         h4: {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
         'figure figcaption': {
-          color: defaultTheme.colors.gray[500],
+          color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
         },
         code: {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
         'code::before': {
@@ -97,11 +97,11 @@ module.exports = (theme) => ({
           content: '"`"',
         },
         'a code': {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
         },
         pre: {
-          color: defaultTheme.colors.gray[200],
-          backgroundColor: defaultTheme.colors.gray[800],
+          color: theme('colors.gray.200', defaultTheme.colors.gray[200]),
+          backgroundColor: theme('colors.gray.800', defaultTheme.colors.gray[800]),
           overflowX: 'auto',
         },
         'pre code': {
@@ -129,17 +129,17 @@ module.exports = (theme) => ({
           marginBottom: em(32, 16),
         },
         thead: {
-          color: defaultTheme.colors.gray[900],
+          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
           borderBottomWidth: '1px',
-          borderBottomColor: defaultTheme.colors.gray[300],
+          borderBottomColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
         },
         'thead th': {
           verticalAlign: 'bottom',
         },
         'tbody tr': {
           borderBottomWidth: '1px',
-          borderBottomColor: defaultTheme.colors.gray[200],
+          borderBottomColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
         },
         'tbody tr:last-child': {
           borderBottomWidth: '0',
