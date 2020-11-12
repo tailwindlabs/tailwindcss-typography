@@ -32,12 +32,12 @@ async function diffOnly(options = {}, config = {}) {
 it('should generate the default classes for the typography components', async () => {
   expect(await run()).toMatchInlineSnapshot(`
     ".prose {
-      color: #3f3f46;
+      color: #374151;
       max-width: 65ch;
     }
 
     .prose [class~=\\"lead\\"] {
-      color: #52525b;
+      color: #4b5563;
       font-size: 1.25em;
       line-height: 1.6;
       margin-top: 1.2em;
@@ -45,13 +45,13 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose a {
-      color: #18181b;
+      color: #111827;
       text-decoration: underline;
       font-weight: 500;
     }
 
     .prose strong {
-      color: #18181b;
+      color: #111827;
       font-weight: 600;
     }
 
@@ -71,7 +71,7 @@ it('should generate the default classes for the typography components', async ()
       content: counter(list-counter) \\".\\";
       position: absolute;
       font-weight: 400;
-      color: #71717a;
+      color: #6b7280;
       left: 0;
     }
 
@@ -83,7 +83,7 @@ it('should generate the default classes for the typography components', async ()
     .prose ul > li::before {
       content: \\"\\";
       position: absolute;
-      background-color: #d4d4d8;
+      background-color: #d1d5db;
       border-radius: 50%;
       width: 0.375em;
       height: 0.375em;
@@ -92,7 +92,7 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose hr {
-      border-color: #e4e4e7;
+      border-color: #e5e7eb;
       border-top-width: 1px;
       margin-top: 3em;
       margin-bottom: 3em;
@@ -101,9 +101,9 @@ it('should generate the default classes for the typography components', async ()
     .prose blockquote {
       font-weight: 500;
       font-style: italic;
-      color: #18181b;
+      color: #111827;
       border-left-width: 0.25rem;
-      border-left-color: #e4e4e7;
+      border-left-color: #e5e7eb;
       quotes: \\"\\\\201C\\"\\"\\\\201D\\"\\"\\\\2018\\"\\"\\\\2019\\";
       margin-top: 1.6em;
       margin-bottom: 1.6em;
@@ -119,7 +119,7 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose h1 {
-      color: #18181b;
+      color: #111827;
       font-weight: 800;
       font-size: 2.25em;
       margin-top: 0;
@@ -128,7 +128,7 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose h2 {
-      color: #18181b;
+      color: #111827;
       font-weight: 700;
       font-size: 1.5em;
       margin-top: 2em;
@@ -137,7 +137,7 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose h3 {
-      color: #18181b;
+      color: #111827;
       font-weight: 600;
       font-size: 1.25em;
       margin-top: 1.6em;
@@ -146,7 +146,7 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose h4 {
-      color: #18181b;
+      color: #111827;
       font-weight: 600;
       margin-top: 1.5em;
       margin-bottom: 0.5em;
@@ -154,14 +154,14 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose figure figcaption {
-      color: #71717a;
+      color: #6b7280;
       font-size: 0.875em;
       line-height: 1.4285714;
       margin-top: 0.8571429em;
     }
 
     .prose code {
-      color: #18181b;
+      color: #111827;
       font-weight: 600;
       font-size: 0.875em;
     }
@@ -175,12 +175,12 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose a code {
-      color: #18181b;
+      color: #111827;
     }
 
     .prose pre {
-      color: #e4e4e7;
-      background-color: #27272a;
+      color: #e5e7eb;
+      background-color: #1f2937;
       overflow-x: auto;
       font-size: 0.875em;
       line-height: 1.7142857;
@@ -224,10 +224,10 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose thead {
-      color: #18181b;
+      color: #111827;
       font-weight: 600;
       border-bottom-width: 1px;
-      border-bottom-color: #d4d4d8;
+      border-bottom-color: #d1d5db;
     }
 
     .prose thead th {
@@ -239,7 +239,7 @@ it('should generate the default classes for the typography components', async ()
 
     .prose tbody tr {
       border-bottom-width: 1px;
-      border-bottom-color: #e4e4e7;
+      border-bottom-color: #e5e7eb;
     }
 
     .prose tbody tr:last-child {
@@ -1292,6 +1292,14 @@ it('should generate the default classes for the typography components', async ()
       color: #2563eb;
     }
 
+    .prose-indigo a {
+      color: #4f46e5;
+    }
+
+    .prose-indigo a code {
+      color: #4f46e5;
+    }
+
     .prose-purple a {
       color: #7c3aed;
     }
@@ -1310,12 +1318,12 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 640px) {
       .sm\\\\:prose {
-        color: #3f3f46;
+        color: #374151;
         max-width: 65ch;
       }
 
       .sm\\\\:prose [class~=\\"lead\\"] {
-        color: #52525b;
+        color: #4b5563;
         font-size: 1.25em;
         line-height: 1.6;
         margin-top: 1.2em;
@@ -1323,13 +1331,13 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose a {
-        color: #18181b;
+        color: #111827;
         text-decoration: underline;
         font-weight: 500;
       }
 
       .sm\\\\:prose strong {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
       }
 
@@ -1349,7 +1357,7 @@ it('should generate the default classes for the typography components', async ()
         content: counter(list-counter) \\".\\";
         position: absolute;
         font-weight: 400;
-        color: #71717a;
+        color: #6b7280;
         left: 0;
       }
 
@@ -1361,7 +1369,7 @@ it('should generate the default classes for the typography components', async ()
       .sm\\\\:prose ul > li::before {
         content: \\"\\";
         position: absolute;
-        background-color: #d4d4d8;
+        background-color: #d1d5db;
         border-radius: 50%;
         width: 0.375em;
         height: 0.375em;
@@ -1370,7 +1378,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose hr {
-        border-color: #e4e4e7;
+        border-color: #e5e7eb;
         border-top-width: 1px;
         margin-top: 3em;
         margin-bottom: 3em;
@@ -1379,9 +1387,9 @@ it('should generate the default classes for the typography components', async ()
       .sm\\\\:prose blockquote {
         font-weight: 500;
         font-style: italic;
-        color: #18181b;
+        color: #111827;
         border-left-width: 0.25rem;
-        border-left-color: #e4e4e7;
+        border-left-color: #e5e7eb;
         quotes: \\"\\\\201C\\"\\"\\\\201D\\"\\"\\\\2018\\"\\"\\\\2019\\";
         margin-top: 1.6em;
         margin-bottom: 1.6em;
@@ -1397,7 +1405,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose h1 {
-        color: #18181b;
+        color: #111827;
         font-weight: 800;
         font-size: 2.25em;
         margin-top: 0;
@@ -1406,7 +1414,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose h2 {
-        color: #18181b;
+        color: #111827;
         font-weight: 700;
         font-size: 1.5em;
         margin-top: 2em;
@@ -1415,7 +1423,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose h3 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 1.25em;
         margin-top: 1.6em;
@@ -1424,7 +1432,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose h4 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
@@ -1432,14 +1440,14 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose figure figcaption {
-        color: #71717a;
+        color: #6b7280;
         font-size: 0.875em;
         line-height: 1.4285714;
         margin-top: 0.8571429em;
       }
 
       .sm\\\\:prose code {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 0.875em;
       }
@@ -1453,12 +1461,12 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose a code {
-        color: #18181b;
+        color: #111827;
       }
 
       .sm\\\\:prose pre {
-        color: #e4e4e7;
-        background-color: #27272a;
+        color: #e5e7eb;
+        background-color: #1f2937;
         overflow-x: auto;
         font-size: 0.875em;
         line-height: 1.7142857;
@@ -1502,10 +1510,10 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose thead {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         border-bottom-width: 1px;
-        border-bottom-color: #d4d4d8;
+        border-bottom-color: #d1d5db;
       }
 
       .sm\\\\:prose thead th {
@@ -1517,7 +1525,7 @@ it('should generate the default classes for the typography components', async ()
 
       .sm\\\\:prose tbody tr {
         border-bottom-width: 1px;
-        border-bottom-color: #e4e4e7;
+        border-bottom-color: #e5e7eb;
       }
 
       .sm\\\\:prose tbody tr:last-child {
@@ -2570,6 +2578,14 @@ it('should generate the default classes for the typography components', async ()
         color: #2563eb;
       }
 
+      .sm\\\\:prose-indigo a {
+        color: #4f46e5;
+      }
+
+      .sm\\\\:prose-indigo a code {
+        color: #4f46e5;
+      }
+
       .sm\\\\:prose-purple a {
         color: #7c3aed;
       }
@@ -2589,12 +2605,12 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 768px) {
       .md\\\\:prose {
-        color: #3f3f46;
+        color: #374151;
         max-width: 65ch;
       }
 
       .md\\\\:prose [class~=\\"lead\\"] {
-        color: #52525b;
+        color: #4b5563;
         font-size: 1.25em;
         line-height: 1.6;
         margin-top: 1.2em;
@@ -2602,13 +2618,13 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose a {
-        color: #18181b;
+        color: #111827;
         text-decoration: underline;
         font-weight: 500;
       }
 
       .md\\\\:prose strong {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
       }
 
@@ -2628,7 +2644,7 @@ it('should generate the default classes for the typography components', async ()
         content: counter(list-counter) \\".\\";
         position: absolute;
         font-weight: 400;
-        color: #71717a;
+        color: #6b7280;
         left: 0;
       }
 
@@ -2640,7 +2656,7 @@ it('should generate the default classes for the typography components', async ()
       .md\\\\:prose ul > li::before {
         content: \\"\\";
         position: absolute;
-        background-color: #d4d4d8;
+        background-color: #d1d5db;
         border-radius: 50%;
         width: 0.375em;
         height: 0.375em;
@@ -2649,7 +2665,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose hr {
-        border-color: #e4e4e7;
+        border-color: #e5e7eb;
         border-top-width: 1px;
         margin-top: 3em;
         margin-bottom: 3em;
@@ -2658,9 +2674,9 @@ it('should generate the default classes for the typography components', async ()
       .md\\\\:prose blockquote {
         font-weight: 500;
         font-style: italic;
-        color: #18181b;
+        color: #111827;
         border-left-width: 0.25rem;
-        border-left-color: #e4e4e7;
+        border-left-color: #e5e7eb;
         quotes: \\"\\\\201C\\"\\"\\\\201D\\"\\"\\\\2018\\"\\"\\\\2019\\";
         margin-top: 1.6em;
         margin-bottom: 1.6em;
@@ -2676,7 +2692,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose h1 {
-        color: #18181b;
+        color: #111827;
         font-weight: 800;
         font-size: 2.25em;
         margin-top: 0;
@@ -2685,7 +2701,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose h2 {
-        color: #18181b;
+        color: #111827;
         font-weight: 700;
         font-size: 1.5em;
         margin-top: 2em;
@@ -2694,7 +2710,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose h3 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 1.25em;
         margin-top: 1.6em;
@@ -2703,7 +2719,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose h4 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
@@ -2711,14 +2727,14 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose figure figcaption {
-        color: #71717a;
+        color: #6b7280;
         font-size: 0.875em;
         line-height: 1.4285714;
         margin-top: 0.8571429em;
       }
 
       .md\\\\:prose code {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 0.875em;
       }
@@ -2732,12 +2748,12 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose a code {
-        color: #18181b;
+        color: #111827;
       }
 
       .md\\\\:prose pre {
-        color: #e4e4e7;
-        background-color: #27272a;
+        color: #e5e7eb;
+        background-color: #1f2937;
         overflow-x: auto;
         font-size: 0.875em;
         line-height: 1.7142857;
@@ -2781,10 +2797,10 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose thead {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         border-bottom-width: 1px;
-        border-bottom-color: #d4d4d8;
+        border-bottom-color: #d1d5db;
       }
 
       .md\\\\:prose thead th {
@@ -2796,7 +2812,7 @@ it('should generate the default classes for the typography components', async ()
 
       .md\\\\:prose tbody tr {
         border-bottom-width: 1px;
-        border-bottom-color: #e4e4e7;
+        border-bottom-color: #e5e7eb;
       }
 
       .md\\\\:prose tbody tr:last-child {
@@ -3849,6 +3865,14 @@ it('should generate the default classes for the typography components', async ()
         color: #2563eb;
       }
 
+      .md\\\\:prose-indigo a {
+        color: #4f46e5;
+      }
+
+      .md\\\\:prose-indigo a code {
+        color: #4f46e5;
+      }
+
       .md\\\\:prose-purple a {
         color: #7c3aed;
       }
@@ -3868,12 +3892,12 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 1024px) {
       .lg\\\\:prose {
-        color: #3f3f46;
+        color: #374151;
         max-width: 65ch;
       }
 
       .lg\\\\:prose [class~=\\"lead\\"] {
-        color: #52525b;
+        color: #4b5563;
         font-size: 1.25em;
         line-height: 1.6;
         margin-top: 1.2em;
@@ -3881,13 +3905,13 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose a {
-        color: #18181b;
+        color: #111827;
         text-decoration: underline;
         font-weight: 500;
       }
 
       .lg\\\\:prose strong {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
       }
 
@@ -3907,7 +3931,7 @@ it('should generate the default classes for the typography components', async ()
         content: counter(list-counter) \\".\\";
         position: absolute;
         font-weight: 400;
-        color: #71717a;
+        color: #6b7280;
         left: 0;
       }
 
@@ -3919,7 +3943,7 @@ it('should generate the default classes for the typography components', async ()
       .lg\\\\:prose ul > li::before {
         content: \\"\\";
         position: absolute;
-        background-color: #d4d4d8;
+        background-color: #d1d5db;
         border-radius: 50%;
         width: 0.375em;
         height: 0.375em;
@@ -3928,7 +3952,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose hr {
-        border-color: #e4e4e7;
+        border-color: #e5e7eb;
         border-top-width: 1px;
         margin-top: 3em;
         margin-bottom: 3em;
@@ -3937,9 +3961,9 @@ it('should generate the default classes for the typography components', async ()
       .lg\\\\:prose blockquote {
         font-weight: 500;
         font-style: italic;
-        color: #18181b;
+        color: #111827;
         border-left-width: 0.25rem;
-        border-left-color: #e4e4e7;
+        border-left-color: #e5e7eb;
         quotes: \\"\\\\201C\\"\\"\\\\201D\\"\\"\\\\2018\\"\\"\\\\2019\\";
         margin-top: 1.6em;
         margin-bottom: 1.6em;
@@ -3955,7 +3979,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose h1 {
-        color: #18181b;
+        color: #111827;
         font-weight: 800;
         font-size: 2.25em;
         margin-top: 0;
@@ -3964,7 +3988,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose h2 {
-        color: #18181b;
+        color: #111827;
         font-weight: 700;
         font-size: 1.5em;
         margin-top: 2em;
@@ -3973,7 +3997,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose h3 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 1.25em;
         margin-top: 1.6em;
@@ -3982,7 +4006,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose h4 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
@@ -3990,14 +4014,14 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose figure figcaption {
-        color: #71717a;
+        color: #6b7280;
         font-size: 0.875em;
         line-height: 1.4285714;
         margin-top: 0.8571429em;
       }
 
       .lg\\\\:prose code {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 0.875em;
       }
@@ -4011,12 +4035,12 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose a code {
-        color: #18181b;
+        color: #111827;
       }
 
       .lg\\\\:prose pre {
-        color: #e4e4e7;
-        background-color: #27272a;
+        color: #e5e7eb;
+        background-color: #1f2937;
         overflow-x: auto;
         font-size: 0.875em;
         line-height: 1.7142857;
@@ -4060,10 +4084,10 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose thead {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         border-bottom-width: 1px;
-        border-bottom-color: #d4d4d8;
+        border-bottom-color: #d1d5db;
       }
 
       .lg\\\\:prose thead th {
@@ -4075,7 +4099,7 @@ it('should generate the default classes for the typography components', async ()
 
       .lg\\\\:prose tbody tr {
         border-bottom-width: 1px;
-        border-bottom-color: #e4e4e7;
+        border-bottom-color: #e5e7eb;
       }
 
       .lg\\\\:prose tbody tr:last-child {
@@ -5128,6 +5152,14 @@ it('should generate the default classes for the typography components', async ()
         color: #2563eb;
       }
 
+      .lg\\\\:prose-indigo a {
+        color: #4f46e5;
+      }
+
+      .lg\\\\:prose-indigo a code {
+        color: #4f46e5;
+      }
+
       .lg\\\\:prose-purple a {
         color: #7c3aed;
       }
@@ -5147,12 +5179,12 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 1280px) {
       .xl\\\\:prose {
-        color: #3f3f46;
+        color: #374151;
         max-width: 65ch;
       }
 
       .xl\\\\:prose [class~=\\"lead\\"] {
-        color: #52525b;
+        color: #4b5563;
         font-size: 1.25em;
         line-height: 1.6;
         margin-top: 1.2em;
@@ -5160,13 +5192,13 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose a {
-        color: #18181b;
+        color: #111827;
         text-decoration: underline;
         font-weight: 500;
       }
 
       .xl\\\\:prose strong {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
       }
 
@@ -5186,7 +5218,7 @@ it('should generate the default classes for the typography components', async ()
         content: counter(list-counter) \\".\\";
         position: absolute;
         font-weight: 400;
-        color: #71717a;
+        color: #6b7280;
         left: 0;
       }
 
@@ -5198,7 +5230,7 @@ it('should generate the default classes for the typography components', async ()
       .xl\\\\:prose ul > li::before {
         content: \\"\\";
         position: absolute;
-        background-color: #d4d4d8;
+        background-color: #d1d5db;
         border-radius: 50%;
         width: 0.375em;
         height: 0.375em;
@@ -5207,7 +5239,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose hr {
-        border-color: #e4e4e7;
+        border-color: #e5e7eb;
         border-top-width: 1px;
         margin-top: 3em;
         margin-bottom: 3em;
@@ -5216,9 +5248,9 @@ it('should generate the default classes for the typography components', async ()
       .xl\\\\:prose blockquote {
         font-weight: 500;
         font-style: italic;
-        color: #18181b;
+        color: #111827;
         border-left-width: 0.25rem;
-        border-left-color: #e4e4e7;
+        border-left-color: #e5e7eb;
         quotes: \\"\\\\201C\\"\\"\\\\201D\\"\\"\\\\2018\\"\\"\\\\2019\\";
         margin-top: 1.6em;
         margin-bottom: 1.6em;
@@ -5234,7 +5266,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose h1 {
-        color: #18181b;
+        color: #111827;
         font-weight: 800;
         font-size: 2.25em;
         margin-top: 0;
@@ -5243,7 +5275,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose h2 {
-        color: #18181b;
+        color: #111827;
         font-weight: 700;
         font-size: 1.5em;
         margin-top: 2em;
@@ -5252,7 +5284,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose h3 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 1.25em;
         margin-top: 1.6em;
@@ -5261,7 +5293,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose h4 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
@@ -5269,14 +5301,14 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose figure figcaption {
-        color: #71717a;
+        color: #6b7280;
         font-size: 0.875em;
         line-height: 1.4285714;
         margin-top: 0.8571429em;
       }
 
       .xl\\\\:prose code {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 0.875em;
       }
@@ -5290,12 +5322,12 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose a code {
-        color: #18181b;
+        color: #111827;
       }
 
       .xl\\\\:prose pre {
-        color: #e4e4e7;
-        background-color: #27272a;
+        color: #e5e7eb;
+        background-color: #1f2937;
         overflow-x: auto;
         font-size: 0.875em;
         line-height: 1.7142857;
@@ -5339,10 +5371,10 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose thead {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         border-bottom-width: 1px;
-        border-bottom-color: #d4d4d8;
+        border-bottom-color: #d1d5db;
       }
 
       .xl\\\\:prose thead th {
@@ -5354,7 +5386,7 @@ it('should generate the default classes for the typography components', async ()
 
       .xl\\\\:prose tbody tr {
         border-bottom-width: 1px;
-        border-bottom-color: #e4e4e7;
+        border-bottom-color: #e5e7eb;
       }
 
       .xl\\\\:prose tbody tr:last-child {
@@ -6407,6 +6439,14 @@ it('should generate the default classes for the typography components', async ()
         color: #2563eb;
       }
 
+      .xl\\\\:prose-indigo a {
+        color: #4f46e5;
+      }
+
+      .xl\\\\:prose-indigo a code {
+        color: #4f46e5;
+      }
+
       .xl\\\\:prose-purple a {
         color: #7c3aed;
       }
@@ -6426,12 +6466,12 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 1536px) {
       .\\\\32xl\\\\:prose {
-        color: #3f3f46;
+        color: #374151;
         max-width: 65ch;
       }
 
       .\\\\32xl\\\\:prose [class~=\\"lead\\"] {
-        color: #52525b;
+        color: #4b5563;
         font-size: 1.25em;
         line-height: 1.6;
         margin-top: 1.2em;
@@ -6439,13 +6479,13 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose a {
-        color: #18181b;
+        color: #111827;
         text-decoration: underline;
         font-weight: 500;
       }
 
       .\\\\32xl\\\\:prose strong {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
       }
 
@@ -6465,7 +6505,7 @@ it('should generate the default classes for the typography components', async ()
         content: counter(list-counter) \\".\\";
         position: absolute;
         font-weight: 400;
-        color: #71717a;
+        color: #6b7280;
         left: 0;
       }
 
@@ -6477,7 +6517,7 @@ it('should generate the default classes for the typography components', async ()
       .\\\\32xl\\\\:prose ul > li::before {
         content: \\"\\";
         position: absolute;
-        background-color: #d4d4d8;
+        background-color: #d1d5db;
         border-radius: 50%;
         width: 0.375em;
         height: 0.375em;
@@ -6486,7 +6526,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose hr {
-        border-color: #e4e4e7;
+        border-color: #e5e7eb;
         border-top-width: 1px;
         margin-top: 3em;
         margin-bottom: 3em;
@@ -6495,9 +6535,9 @@ it('should generate the default classes for the typography components', async ()
       .\\\\32xl\\\\:prose blockquote {
         font-weight: 500;
         font-style: italic;
-        color: #18181b;
+        color: #111827;
         border-left-width: 0.25rem;
-        border-left-color: #e4e4e7;
+        border-left-color: #e5e7eb;
         quotes: \\"\\\\201C\\"\\"\\\\201D\\"\\"\\\\2018\\"\\"\\\\2019\\";
         margin-top: 1.6em;
         margin-bottom: 1.6em;
@@ -6513,7 +6553,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose h1 {
-        color: #18181b;
+        color: #111827;
         font-weight: 800;
         font-size: 2.25em;
         margin-top: 0;
@@ -6522,7 +6562,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose h2 {
-        color: #18181b;
+        color: #111827;
         font-weight: 700;
         font-size: 1.5em;
         margin-top: 2em;
@@ -6531,7 +6571,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose h3 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 1.25em;
         margin-top: 1.6em;
@@ -6540,7 +6580,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose h4 {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
@@ -6548,14 +6588,14 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose figure figcaption {
-        color: #71717a;
+        color: #6b7280;
         font-size: 0.875em;
         line-height: 1.4285714;
         margin-top: 0.8571429em;
       }
 
       .\\\\32xl\\\\:prose code {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         font-size: 0.875em;
       }
@@ -6569,12 +6609,12 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose a code {
-        color: #18181b;
+        color: #111827;
       }
 
       .\\\\32xl\\\\:prose pre {
-        color: #e4e4e7;
-        background-color: #27272a;
+        color: #e5e7eb;
+        background-color: #1f2937;
         overflow-x: auto;
         font-size: 0.875em;
         line-height: 1.7142857;
@@ -6618,10 +6658,10 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose thead {
-        color: #18181b;
+        color: #111827;
         font-weight: 600;
         border-bottom-width: 1px;
-        border-bottom-color: #d4d4d8;
+        border-bottom-color: #d1d5db;
       }
 
       .\\\\32xl\\\\:prose thead th {
@@ -6633,7 +6673,7 @@ it('should generate the default classes for the typography components', async ()
 
       .\\\\32xl\\\\:prose tbody tr {
         border-bottom-width: 1px;
-        border-bottom-color: #e4e4e7;
+        border-bottom-color: #e5e7eb;
       }
 
       .\\\\32xl\\\\:prose tbody tr:last-child {
@@ -7684,6 +7724,14 @@ it('should generate the default classes for the typography components', async ()
 
       .\\\\32xl\\\\:prose-blue a code {
         color: #2563eb;
+      }
+
+      .\\\\32xl\\\\:prose-indigo a {
+        color: #4f46e5;
+      }
+
+      .\\\\32xl\\\\:prose-indigo a code {
+        color: #4f46e5;
       }
 
       .\\\\32xl\\\\:prose-purple a {
@@ -8919,6 +8967,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose-indigo a {
+      + .markdown-indigo a {
+
+      ---
+
+      - .prose-indigo a code {
+      + .markdown-indigo a code {
+
+      ---
+
       - .prose-purple a {
       + .markdown-purple a {
 
@@ -10146,6 +10204,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose-blue a code {
       +   .sm\\\\:markdown-blue a code {
+
+      ---
+
+      -   .sm\\\\:prose-indigo a {
+      +   .sm\\\\:markdown-indigo a {
+
+      ---
+
+      -   .sm\\\\:prose-indigo a code {
+      +   .sm\\\\:markdown-indigo a code {
 
       ---
 
@@ -11379,6 +11447,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .md\\\\:prose-indigo a {
+      +   .md\\\\:markdown-indigo a {
+
+      ---
+
+      -   .md\\\\:prose-indigo a code {
+      +   .md\\\\:markdown-indigo a code {
+
+      ---
+
       -   .md\\\\:prose-purple a {
       +   .md\\\\:markdown-purple a {
 
@@ -12606,6 +12684,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose-blue a code {
       +   .lg\\\\:markdown-blue a code {
+
+      ---
+
+      -   .lg\\\\:prose-indigo a {
+      +   .lg\\\\:markdown-indigo a {
+
+      ---
+
+      -   .lg\\\\:prose-indigo a code {
+      +   .lg\\\\:markdown-indigo a code {
 
       ---
 
@@ -13839,6 +13927,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .xl\\\\:prose-indigo a {
+      +   .xl\\\\:markdown-indigo a {
+
+      ---
+
+      -   .xl\\\\:prose-indigo a code {
+      +   .xl\\\\:markdown-indigo a code {
+
+      ---
+
       -   .xl\\\\:prose-purple a {
       +   .xl\\\\:markdown-purple a {
 
@@ -15069,6 +15167,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .\\\\32xl\\\\:prose-indigo a {
+      +   .\\\\32xl\\\\:markdown-indigo a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-indigo a code {
+      +   .\\\\32xl\\\\:markdown-indigo a code {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-purple a {
       +   .\\\\32xl\\\\:markdown-purple a {
 
@@ -15350,6 +15458,14 @@ it('should be possible to change the default modifiers', async () => {
       -   color: #2563eb;
       - }
       -
+      - .prose-indigo a {
+      -   color: #4f46e5;
+      - }
+      -
+      - .prose-indigo a code {
+      -   color: #4f46e5;
+      - }
+      -
       - .prose-purple a {
       -   color: #7c3aed;
       - }
@@ -15482,9 +15598,7 @@ it('should be possible to change the default modifiers', async () => {
       -   .sm\\\\:prose-2xl ul {
       -     margin-top: 1.3333333em;
       -     margin-bottom: 1.3333333em;
-
-      ---
-
+      -   }
       -
       -   .sm\\\\:prose-2xl li {
       -     margin-top: 0.5em;
@@ -15513,7 +15627,9 @@ it('should be possible to change the default modifiers', async () => {
       -   .sm\\\\:prose-2xl > ul > li p {
       -     margin-top: 0.8333333em;
       -     margin-bottom: 0.8333333em;
-      -   }
+
+      ---
+
       -
       -   .sm\\\\:prose-2xl > ul > li > *:first-child {
       -     margin-top: 1.3333333em;
@@ -15629,6 +15745,14 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .sm\\\\:prose-blue a code {
       -     color: #2563eb;
+      -   }
+      -
+      -   .sm\\\\:prose-indigo a {
+      -     color: #4f46e5;
+      -   }
+      -
+      -   .sm\\\\:prose-indigo a code {
+      -     color: #4f46e5;
       -   }
       -
       -   .sm\\\\:prose-purple a {
@@ -15909,6 +16033,14 @@ it('should be possible to change the default modifiers', async () => {
       -     color: #2563eb;
       -   }
       -
+      -   .md\\\\:prose-indigo a {
+      -     color: #4f46e5;
+      -   }
+      -
+      -   .md\\\\:prose-indigo a code {
+      -     color: #4f46e5;
+      -   }
+      -
       -   .md\\\\:prose-purple a {
       -     color: #7c3aed;
       -   }
@@ -16184,9 +16316,15 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .lg\\\\:prose-blue a code {
       -     color: #2563eb;
-
-      ---
-
+      -   }
+      -
+      -   .lg\\\\:prose-indigo a {
+      -     color: #4f46e5;
+      -   }
+      -
+      -   .lg\\\\:prose-indigo a code {
+      -     color: #4f46e5;
+      -   }
       -
       -   .lg\\\\:prose-purple a {
       -     color: #7c3aed;
@@ -16194,7 +16332,9 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .lg\\\\:prose-purple a code {
       -     color: #7c3aed;
-      -   }
+
+      ---
+
       -
       -   .lg\\\\:prose-pink a {
       -     color: #db2777;
@@ -16448,9 +16588,7 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .xl\\\\:prose-yellow a code {
       -     color: #d97706;
-
-      ---
-
+      -   }
       -
       -   .xl\\\\:prose-green a {
       -     color: #059669;
@@ -16468,13 +16606,23 @@ it('should be possible to change the default modifiers', async () => {
       -     color: #2563eb;
       -   }
       -
+      -   .xl\\\\:prose-indigo a {
+      -     color: #4f46e5;
+      -   }
+      -
+      -   .xl\\\\:prose-indigo a code {
+      -     color: #4f46e5;
+      -   }
+      -
       -   .xl\\\\:prose-purple a {
       -     color: #7c3aed;
       -   }
       -
       -   .xl\\\\:prose-purple a code {
       -     color: #7c3aed;
-      -   }
+
+      ---
+
       -
       -   .xl\\\\:prose-pink a {
       -     color: #db2777;
@@ -16486,6 +16634,7 @@ it('should be possible to change the default modifiers', async () => {
 
       ---
 
+      -     margin-bottom: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl {
@@ -16555,7 +16704,9 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .\\\\32xl\\\\:prose-2xl figure > * {
       -     margin-top: 0;
-      -     margin-bottom: 0;
+
+      ---
+
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl figure figcaption {
@@ -16741,6 +16892,14 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .\\\\32xl\\\\:prose-blue a code {
       -     color: #2563eb;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-indigo a {
+      -     color: #4f46e5;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-indigo a code {
+      -     color: #4f46e5;
       -   }
       -
       -   .\\\\32xl\\\\:prose-purple a {
@@ -17047,13 +17206,14 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - }
+      -
       - .prose > :first-child {
-      + .markdown > :first-child {
-
-      ---
-
+      -   margin-top: 0;
+      - }
+      -
       - .prose > :last-child {
-      + .markdown > :last-child {
+      -   margin-bottom: 0;
 
       ---
 
@@ -17082,11 +17242,15 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-sm h1 {
       -   font-size: 2.1428571em;
-      -   margin-top: 0;
+      + .markdown > :first-child {
+
+      ---
+
       -   margin-bottom: 0.8em;
       -   line-height: 1.2;
-      - }
-      -
+
+      ---
+
       - .prose-sm h2 {
       -   font-size: 1.4285714em;
       -   margin-top: 1.6em;
@@ -17124,9 +17288,10 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-sm figure > * {
       -   margin-top: 0;
-      -   margin-bottom: 0;
-      - }
-      -
+      + .markdown > :last-child {
+
+      ---
+
       - .prose-sm figure figcaption {
       -   font-size: 0.8571429em;
       -   line-height: 1.3333333;
@@ -17944,9 +18109,8 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-red a {
       -   color: #dc2626;
-
-      ---
-
+      - }
+      -
       - .prose-red a code {
       -   color: #dc2626;
       - }
@@ -17957,8 +18121,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-yellow a code {
       -   color: #d97706;
-      - }
-      -
+
+      ---
+
       - .prose-green a {
       -   color: #059669;
       - }
@@ -17973,6 +18138,14 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-blue a code {
       -   color: #2563eb;
+      - }
+      -
+      - .prose-indigo a {
+      -   color: #4f46e5;
+      - }
+      -
+      - .prose-indigo a code {
+      -   color: #4f46e5;
       - }
       -
       - .prose-purple a {
@@ -18234,37 +18407,42 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .sm\\\\:prose hr + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown hr + * {
+
+      ---
+
       -   .sm\\\\:prose h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h2 + * {
+
+      ---
+
       -   .sm\\\\:prose h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h3 + * {
+
+      ---
+
       -   .sm\\\\:prose h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h4 + * {
+
+      ---
+
       -   .sm\\\\:prose thead th:first-child {
-      -     padding-left: 0;
+      +   .sm\\\\:markdown thead th:first-child {
+
+      ---
+
       -   }
       -
       -   .sm\\\\:prose thead th:last-child {
       -     padding-right: 0;
-      -   }
-      -
-      -   .sm\\\\:prose tbody td:first-child {
-      -     padding-left: 0;
 
       ---
 
+      -   .sm\\\\:prose tbody td:first-child {
+      -     padding-left: 0;
+      -   }
+      -
       -   .sm\\\\:prose tbody td:last-child {
       -     padding-right: 0;
       -   }
@@ -18443,25 +18621,21 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm hr + * {
-      +   .sm\\\\:markdown hr + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose-sm h2 + * {
-      +   .sm\\\\:markdown h2 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose-sm h3 + * {
-      +   .sm\\\\:markdown h3 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose-sm h4 + * {
-      +   .sm\\\\:markdown h4 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -18474,10 +18648,9 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm thead th:first-child {
-      +   .sm\\\\:markdown thead th:first-child {
-
-      ---
-
+      -     padding-left: 0;
+      -   }
+      -
       -   .sm\\\\:prose-sm thead th:last-child {
       +   .sm\\\\:markdown thead th:last-child {
 
@@ -19198,12 +19371,20 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose-blue a {
       -     color: #2563eb;
+      -   }
+      -
+      -   .sm\\\\:prose-blue a code {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .sm\\\\:prose-indigo a {
+      -     color: #4f46e5;
 
       ---
 
       -
-      -   .sm\\\\:prose-blue a code {
-      -     color: #2563eb;
+      -   .sm\\\\:prose-indigo a code {
+      -     color: #4f46e5;
       -   }
       -
       -   .sm\\\\:prose-purple a {
@@ -20431,6 +20612,14 @@ it('should be possible to change the default modifiers and change the className'
       -     color: #2563eb;
       -   }
       -
+      -   .md\\\\:prose-indigo a {
+      -     color: #4f46e5;
+      -   }
+      -
+      -   .md\\\\:prose-indigo a code {
+      -     color: #4f46e5;
+      -   }
+      -
       -   .md\\\\:prose-purple a {
       -     color: #7c3aed;
       -   }
@@ -20728,24 +20917,22 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose > :first-child {
-      +   .lg\\\\:markdown > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose > :last-child {
-      +   .lg\\\\:markdown > :last-child {
-
-      ---
-
       -   }
       -
+      -   .lg\\\\:prose > :first-child {
+      -     margin-top: 0;
+      -   }
+      -
+      -   .lg\\\\:prose > :last-child {
+      -     margin-bottom: 0;
+
+      ---
+
       -   .lg\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
-
-      ---
-
+      -   }
+      -
       -   .lg\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -20766,7 +20953,10 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      -     margin-top: 0;
+      +   .lg\\\\:markdown > :first-child {
+
+      ---
+
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -20776,8 +20966,9 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-top: 1.6em;
       -     margin-bottom: 0.8em;
       -     line-height: 1.4;
-      -   }
-      -
+
+      ---
+
       -   .lg\\\\:prose-sm h3 {
       -     font-size: 1.2857143em;
       -     margin-top: 1.5555556em;
@@ -20808,9 +20999,10 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-sm figure > * {
       -     margin-top: 0;
-      -     margin-bottom: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown > :last-child {
+
+      ---
+
       -   .lg\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
@@ -21632,9 +21824,7 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-red a code {
       -     color: #dc2626;
-
-      ---
-
+      -   }
       -
       -   .lg\\\\:prose-yellow a {
       -     color: #d97706;
@@ -21660,9 +21850,19 @@ it('should be possible to change the default modifiers and change the className'
       -     color: #2563eb;
       -   }
       -
+      -   .lg\\\\:prose-indigo a {
+      -     color: #4f46e5;
+      -   }
+      -
+      -   .lg\\\\:prose-indigo a code {
+      -     color: #4f46e5;
+      -   }
+      -
       -   .lg\\\\:prose-purple a {
       -     color: #7c3aed;
-      -   }
+
+      ---
+
       -
       -   .lg\\\\:prose-purple a code {
       -     color: #7c3aed;
@@ -21958,12 +22158,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .xl\\\\:prose > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .xl\\\\:markdown > :first-child {
+
+      ---
+
       -   .xl\\\\:prose > :last-child {
       -     margin-bottom: 0;
       -   }
@@ -21989,20 +22188,15 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-top: 1.3333333em;
       -     margin-bottom: 1.3333333em;
       -     padding-left: 1.1111111em;
-
-      ---
-
+      -   }
+      -
       -   .xl\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      +   .xl\\\\:markdown > :first-child {
-
-      ---
-
+      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
-
-      ---
-
+      -   }
+      -
       -   .xl\\\\:prose-sm h2 {
       -     font-size: 1.4285714em;
       -     margin-top: 1.6em;
@@ -22044,8 +22238,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .xl\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
@@ -22062,9 +22254,8 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-sm h3 code {
       -     font-size: 0.8888889em;
-
-      ---
-
+      -   }
+      -
       -   .xl\\\\:prose-sm pre {
       -     font-size: 0.8571429em;
       -     line-height: 1.6666667;
@@ -22888,12 +23079,20 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-blue a {
       -     color: #2563eb;
+      -   }
+      -
+      -   .xl\\\\:prose-blue a code {
+      -     color: #2563eb;
+      -   }
+      -
+      -   .xl\\\\:prose-indigo a {
+      -     color: #4f46e5;
 
       ---
 
       -
-      -   .xl\\\\:prose-blue a code {
-      -     color: #2563eb;
+      -   .xl\\\\:prose-indigo a code {
+      -     color: #4f46e5;
       -   }
       -
       -   .xl\\\\:prose-purple a {
@@ -23154,6 +23353,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .\\\\32xl\\\\:prose hr + * {
       -     margin-top: 0;
       -   }
@@ -23192,8 +23393,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .\\\\32xl\\\\:prose > :last-child {
       -     margin-bottom: 0;
-      -   }
-      -
+
+      ---
+
       -   .\\\\32xl\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -23260,7 +23462,10 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm figure > * {
-      -     margin-top: 0;
+      +   .\\\\32xl\\\\:markdown hr + * {
+
+      ---
+
       -     margin-bottom: 0;
       -   }
       -
@@ -23280,8 +23485,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .\\\\32xl\\\\:prose-sm h3 code {
       -     font-size: 0.8888889em;
-      -   }
-      -
+
+      ---
+
       -   .\\\\32xl\\\\:prose-sm pre {
       -     font-size: 0.8571429em;
       -     line-height: 1.6666667;
@@ -23360,20 +23566,19 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm hr + * {
-      +   .\\\\32xl\\\\:markdown hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm h2 + * {
       +   .\\\\32xl\\\\:markdown h2 + * {
 
       ---
 
-      -   .\\\\32xl\\\\:prose-sm h3 + * {
+      -   .\\\\32xl\\\\:prose-sm h2 + * {
       +   .\\\\32xl\\\\:markdown h3 + * {
 
       ---
 
+      -   .\\\\32xl\\\\:prose-sm h3 + * {
+      -     margin-top: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm h4 + * {
       +   .\\\\32xl\\\\:markdown h4 + * {
 
@@ -23384,15 +23589,15 @@ it('should be possible to change the default modifiers and change the className'
       -   .\\\\32xl\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
-
-      ---
-
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm thead th {
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-      -   }
-      -
+
+      ---
+
       -   .\\\\32xl\\\\:prose-sm thead th:first-child {
       +   .\\\\32xl\\\\:markdown thead th:first-child {
 
@@ -23403,16 +23608,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .\\\\32xl\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-
-      ---
-
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm tbody td:first-child {
       +   .\\\\32xl\\\\:markdown tbody td:first-child {
 
@@ -24127,6 +24329,14 @@ it('should be possible to change the default modifiers and change the className'
       -     color: #2563eb;
       -   }
       -
+      -   .\\\\32xl\\\\:prose-indigo a {
+      -     color: #4f46e5;
+      -   }
+      -
+      -   .\\\\32xl\\\\:prose-indigo a code {
+      -     color: #4f46e5;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-purple a {
       -     color: #7c3aed;
       -   }
@@ -24234,7 +24444,7 @@ it('should be possible to merge values', async () => {
   ).toMatchInlineSnapshot(`
     "
 
-      -   color: #18181b;
+      -   color: #111827;
       +   color: green;
 
       ---
@@ -24243,7 +24453,7 @@ it('should be possible to merge values', async () => {
 
       ---
 
-      -     color: #18181b;
+      -     color: #111827;
       +     color: green;
 
       ---
@@ -24252,7 +24462,7 @@ it('should be possible to merge values', async () => {
 
       ---
 
-      -     color: #18181b;
+      -     color: #111827;
       +     color: green;
 
       ---
@@ -24261,7 +24471,7 @@ it('should be possible to merge values', async () => {
 
       ---
 
-      -     color: #18181b;
+      -     color: #111827;
       +     color: green;
 
       ---
@@ -24270,7 +24480,7 @@ it('should be possible to merge values', async () => {
 
       ---
 
-      -     color: #18181b;
+      -     color: #111827;
       +     color: green;
 
       ---
@@ -24279,7 +24489,7 @@ it('should be possible to merge values', async () => {
 
       ---
 
-      -     color: #18181b;
+      -     color: #111827;
       +     color: green;
 
       ---
