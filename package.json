@@ -24,7 +24,7 @@
     "prepublishOnly": "node scripts/build.js"
   },
   "peerDependencies": {
-    "tailwindcss": "2.0.0-alpha.4 || ^2.0.0"
+    "tailwindcss": "2.0.0-alpha.24 || ^2.0.0"
   },
   "devDependencies": {
     "@mdx-js/loader": "^1.0.19",
