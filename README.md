@@ -189,7 +189,7 @@ To customize the styles provided by this plugin, add your overrides under the `t
 module.exports = {
   theme: {
     typography: {
-      default: {
+      DEFAULT: {
         css: {
           color: '#333',
           a: {
@@ -216,7 +216,7 @@ Like with all theme customizations in Tailwind, you can also define the `typogra
 module.exports = {
   theme: {
     typography: (theme) => ({
-      default: {
+      DEFAULT: {
         css: {
           color: theme('colors.gray.800'),
 
@@ -232,7 +232,7 @@ module.exports = {
 }
 ```
 
-Customizations should be applied to a specific modifier like `default` or `xl`, and must be added under the `css` property. Customizations are authored in the same [CSS-in-JS syntax](https://tailwindcss.com/docs/plugins#css-in-js-syntax) used to write Tailwind plugins.
+Customizations should be applied to a specific modifier like `DEFAULT` or `xl`, and must be added under the `css` property. Customizations are authored in the same [CSS-in-JS syntax](https://tailwindcss.com/docs/plugins#css-in-js-syntax) used to write Tailwind plugins.
 
 It's important to note that all customizations are **merged** with the defaults. If you'd like to completely override a provided size modifier, you can do so by disabling that modifier so the default styles are not included.
 
@@ -240,16 +240,16 @@ See [the default styles](./src/styles.js) for this plugin for more in-depth exam
 
 ### Customizing shared styles
 
-Many styles _(for example colors, font weight, and text decoration)_ are shared between all size modifiers, and are therefore defined only for the `default` modifier, since modifiers are designed to be used with the [multi-class modifier pattern](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers).
+Many styles _(for example colors, font weight, and text decoration)_ are shared between all size modifiers, and are therefore defined only for the `DEFAULT` modifier, since modifiers are designed to be used with the [multi-class modifier pattern](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers).
 
-If you'd like to customize these sorts of styles, do so using the `default` modifier:
+If you'd like to customize these sorts of styles, do so using the `DEFAULT` modifier:
 
 ```js
 // tailwind.config.js
 module.exports = {
   theme: {
     typography: {
-      default: {
+      DEFAULT: {
         css: {
           color: '#333',
           strong: {
@@ -334,7 +334,7 @@ module.exports = {
 
 This option acts as a _safelist_, so you can list only the modifiers you'd actually like included and the others will be removed.
 
-The `default` modifier is always included and cannot be disabled.
+The `DEFAULT` modifier is always included and cannot be disabled.
 
 ### Disabling responsive variants
 
