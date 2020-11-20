@@ -174,7 +174,7 @@ module.exports = {
   theme: {
     extend: {
       typography: {
-        default: {
+        DEFAULT: {
           css: {
             color: '#333',
             a: {
@@ -203,7 +203,7 @@ module.exports = {
   theme: {
     extend: {
       typography: (theme) => ({
-        default: {
+        DEFAULT: {
           css: {
             color: theme('colors.gray.800'),
 
@@ -238,7 +238,7 @@ module.exports = {
   theme: {
     extend: {
       typography: {
-        default: {
+        DEFAULT: {
           css: {
             color: '#333',
             strong: {
