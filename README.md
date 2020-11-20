@@ -2,6 +2,8 @@
   <img alt="Tailwind CSS Typography" width="350" src="./.github/logo.svg">
 </p>
 
+**As of v0.3.0, @tailwindcss/typography is designed for Tailwind CSS v2.0+.**
+
 A plugin that provides a set of `prose` classes you can use to add beautiful typographic defaults to any vanilla HTML you don't control (like HTML rendered from Markdown, or pulled from a CMS).
 
 [View live demo](https://tailwindcss-typography.netlify.app/)
@@ -125,6 +127,30 @@ Size modifiers are designed to be used with the [multi-class modifier pattern](h
 </article>
 ```
 
+### Color modifiers
+
+Color modifiers allow you to "brand" your typography sections by changing the link color. By default, modifiers are generated for every color in your color palette that include a `600` shade except for `gray` since it's the default.
+
+```html
+<article class="prose prose-indigo">
+  {{ markdown }}
+</article>
+```
+
+Here are the classes that are generated using a totally default Tailwind CSS v2.0 build:
+
+| Class          | Link color   |
+| -------------- | ------------ |
+| `prose-red`    | `red.600`    |
+| `prose-yellow` | `yellow.600` |
+| `prose-green`  | `green.600`  |
+| `prose-blue`   | `blue.600`   |
+| `prose-indigo` | `indigo.600` |
+| `prose-purple` | `purple.600` |
+| `prose-pink`   | `pink.600`   |
+
+For more control, use the [low-level customization API](#customization).
+
 ### Responsive variants
 
 None of the sizes are automatically responsive, but responsive variants are provided for each size modifier so you can easily change the typography size at different breakpoints:
@@ -135,48 +161,6 @@ None of the sizes are automatically responsive, but responsive variants are prov
 </article>
 ```
 
-## Purging unused styles
-
-Since the typography styles are added to the `components` layer and Tailwind only purges `utilities` by default, you will notice that even with the `purge` option configured in your `tailwind.config.js` file, all of the typography styles still remain in your final CSS.
-
-If you'd like to purge unused typography styles, you'll need to use the `mode: 'all'` option in your `purge` configuration:
-
-```js
-// tailwind.config.js
-module.exports = {
-  purge: {
-    mode: 'all',
-    content: [
-      // Paths to your templates here...
-    ],
-  },
-}
-```
-
-It's important to note that if you are using markdown for any of your source files (perhaps you're working on a blog or similar), that you need to be careful not to accidentally purge styles you actually need.
-
-Markdown files for example contain no actual `h2`, `blockquote`, `strong`, etc. elements, so PurgeCSS will remove those styles because it doesn't think you need them.
-
-You have two options for solving this:
-
-1. Safelist all of the plain HTML elements you need in your config file:
-
-   ```js
-   // tailwind.config.js
-   module.exports = {
-     purge: {
-       mode: 'all',
-       content: [
-         // Paths to your templates here...
-       ],
-       options: {
-         whitelist: ['h1', 'h2', 'h3', 'p', 'blockquote', 'strong' /* etc. */],
-       },
-     },
-   }
-   ```
-
-2. Use a custom extractor to compile your markdown files _before_ scanning them for tokens. This is more complicated but it is [what we do for the Tailwind blog](https://github.com/tailwindlabs/blog.tailwindcss.com/blob/eb2a0ff80c8e56a79f6514c8dc4253ef84ac5548/tailwind.config.js#L13) for example.
 
 ## Customization
 
@@ -188,18 +172,20 @@ To customize the styles provided by this plugin, add your overrides under the `t
 // tailwind.config.js
 module.exports = {
   theme: {
-    typography: {
-      default: {
-        css: {
-          color: '#333',
-          a: {
-            color: '#3182ce',
-            '&:hover': {
-              color: '#2c5282',
+    extend: {
+      typography: {
+        default: {
+          css: {
+            color: '#333',
+            a: {
+              color: '#3182ce',
+              '&:hover': {
+                color: '#2c5282',
+              },
             },
           },
         },
-      },
+      }
     },
   },
   plugins: [
@@ -215,15 +201,17 @@ Like with all theme customizations in Tailwind, you can also define the `typogra
 // tailwind.config.js
 module.exports = {
   theme: {
-    typography: (theme) => ({
-      default: {
-        css: {
-          color: theme('colors.gray.800'),
+    extend: {
+      typography: (theme) => ({
+        default: {
+          css: {
+            color: theme('colors.gray.800'),
 
-          // ...
+            // ...
+          },
         },
-      },
-    }),
+      }),
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),
@@ -248,17 +236,19 @@ If you'd like to customize these sorts of styles, do so using the `default` modi
 // tailwind.config.js
 module.exports = {
   theme: {
-    typography: {
-      default: {
-        css: {
-          color: '#333',
-          strong: {
-            fontWeight: '800',
+    extend: {
+      typography: {
+        default: {
+          css: {
+            color: '#333',
+            strong: {
+              fontWeight: '800',
+            },
+            // ...
           },
-          // ...
         },
       },
-    },
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),
@@ -275,17 +265,19 @@ You can add a new modifier by creating a new key in the `typography` section of 
 // tailwind.config.js
 module.exports = {
   theme: {
-    typography: {
-      '3xl': {
-        css: {
-          fontSize: '1.875rem',
-          h1: {
-            fontSize: '4rem',
+    extend: {
+      typography: {
+        '3xl': {
+          css: {
+            fontSize: '1.875rem',
+            h1: {
+              fontSize: '4rem',
+            },
+            // ...
           },
-          // ...
         },
       },
-    },
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),
