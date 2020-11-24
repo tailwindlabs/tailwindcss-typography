@@ -31,15 +31,21 @@ Then add the plugin to your `tailwind.config.js` file:
 ```js
 // tailwind.config.js
 module.exports = {
+  purge: [],
+  darkMode: false,
   theme: {
-    // ...
+    extend: {}
+  },
+  variants: {
+    extend: {}
   },
   plugins: [
-    require('@tailwindcss/typography'),
-    // ...
-  ],
+    require('@tailwindcss/typography')
+  ]
 }
 ```
+
+**Note**: Don't forget to recompile your CSS.
 
 ### Using a CDN
 
