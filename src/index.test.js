@@ -1593,19 +1593,19 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .sm\\\\:prose > ul > li > *:first-child {
+      .sm\\\\:prose > ul > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .sm\\\\:prose > ul > li > *:last-child {
+      .sm\\\\:prose > ul > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
-      .sm\\\\:prose > ol > li > *:first-child {
+      .sm\\\\:prose > ol > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .sm\\\\:prose > ol > li > *:last-child {
+      .sm\\\\:prose > ol > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
@@ -2880,19 +2880,19 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .md\\\\:prose > ul > li > *:first-child {
+      .md\\\\:prose > ul > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .md\\\\:prose > ul > li > *:last-child {
+      .md\\\\:prose > ul > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
-      .md\\\\:prose > ol > li > *:first-child {
+      .md\\\\:prose > ol > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .md\\\\:prose > ol > li > *:last-child {
+      .md\\\\:prose > ol > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
@@ -4167,19 +4167,19 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .lg\\\\:prose > ul > li > *:first-child {
+      .lg\\\\:prose > ul > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .lg\\\\:prose > ul > li > *:last-child {
+      .lg\\\\:prose > ul > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
-      .lg\\\\:prose > ol > li > *:first-child {
+      .lg\\\\:prose > ol > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .lg\\\\:prose > ol > li > *:last-child {
+      .lg\\\\:prose > ol > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
@@ -5454,19 +5454,19 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .xl\\\\:prose > ul > li > *:first-child {
+      .xl\\\\:prose > ul > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .xl\\\\:prose > ul > li > *:last-child {
+      .xl\\\\:prose > ul > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
-      .xl\\\\:prose > ol > li > *:first-child {
+      .xl\\\\:prose > ol > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .xl\\\\:prose > ol > li > *:last-child {
+      .xl\\\\:prose > ol > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
@@ -6741,19 +6741,19 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .\\\\32xl\\\\:prose > ul > li > *:first-child {
+      .\\\\32xl\\\\:prose > ul > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .\\\\32xl\\\\:prose > ul > li > *:last-child {
+      .\\\\32xl\\\\:prose > ul > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
-      .\\\\32xl\\\\:prose > ol > li > *:first-child {
+      .\\\\32xl\\\\:prose > ol > li > *:first-child :not(br) {
         margin-top: 1.25em;
       }
 
-      .\\\\32xl\\\\:prose > ol > li > *:last-child {
+      .\\\\32xl\\\\:prose > ol > li > *:last-child :not(br) {
         margin-bottom: 1.25em;
       }
 
@@ -7972,23 +7972,23 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose > ul > li > *:first-child {
-      + .markdown > ul > li > *:first-child {
+      - .prose > ul > li > *:first-child :not(br) {
+      + .markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      - .prose > ul > li > *:last-child {
-      + .markdown > ul > li > *:last-child {
+      - .prose > ul > li > *:last-child :not(br) {
+      + .markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      - .prose > ol > li > *:first-child {
-      + .markdown > ol > li > *:first-child {
+      - .prose > ol > li > *:first-child :not(br) {
+      + .markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      - .prose > ol > li > *:last-child {
-      + .markdown > ol > li > *:last-child {
+      - .prose > ol > li > *:last-child :not(br) {
+      + .markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -9212,23 +9212,23 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose > ul > li > *:first-child {
-      +   .sm\\\\:markdown > ul > li > *:first-child {
+      -   .sm\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .sm\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .sm\\\\:prose > ul > li > *:last-child {
-      +   .sm\\\\:markdown > ul > li > *:last-child {
+      -   .sm\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .sm\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .sm\\\\:prose > ol > li > *:first-child {
-      +   .sm\\\\:markdown > ol > li > *:first-child {
+      -   .sm\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .sm\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .sm\\\\:prose > ol > li > *:last-child {
-      +   .sm\\\\:markdown > ol > li > *:last-child {
+      -   .sm\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .sm\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -10452,23 +10452,23 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose > ul > li > *:first-child {
-      +   .md\\\\:markdown > ul > li > *:first-child {
+      -   .md\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .md\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .md\\\\:prose > ul > li > *:last-child {
-      +   .md\\\\:markdown > ul > li > *:last-child {
+      -   .md\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .md\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .md\\\\:prose > ol > li > *:first-child {
-      +   .md\\\\:markdown > ol > li > *:first-child {
+      -   .md\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .md\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .md\\\\:prose > ol > li > *:last-child {
-      +   .md\\\\:markdown > ol > li > *:last-child {
+      -   .md\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .md\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -11692,23 +11692,23 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose > ul > li > *:first-child {
-      +   .lg\\\\:markdown > ul > li > *:first-child {
+      -   .lg\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .lg\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .lg\\\\:prose > ul > li > *:last-child {
-      +   .lg\\\\:markdown > ul > li > *:last-child {
+      -   .lg\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .lg\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .lg\\\\:prose > ol > li > *:first-child {
-      +   .lg\\\\:markdown > ol > li > *:first-child {
+      -   .lg\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .lg\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .lg\\\\:prose > ol > li > *:last-child {
-      +   .lg\\\\:markdown > ol > li > *:last-child {
+      -   .lg\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .lg\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -12932,23 +12932,23 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose > ul > li > *:first-child {
-      +   .xl\\\\:markdown > ul > li > *:first-child {
+      -   .xl\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .xl\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .xl\\\\:prose > ul > li > *:last-child {
-      +   .xl\\\\:markdown > ul > li > *:last-child {
+      -   .xl\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .xl\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .xl\\\\:prose > ol > li > *:first-child {
-      +   .xl\\\\:markdown > ol > li > *:first-child {
+      -   .xl\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .xl\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .xl\\\\:prose > ol > li > *:last-child {
-      +   .xl\\\\:markdown > ol > li > *:last-child {
+      -   .xl\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .xl\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -14172,23 +14172,23 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose > ul > li > *:first-child {
-      +   .\\\\32xl\\\\:markdown > ul > li > *:first-child {
+      -   .\\\\32xl\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .\\\\32xl\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .\\\\32xl\\\\:prose > ul > li > *:last-child {
-      +   .\\\\32xl\\\\:markdown > ul > li > *:last-child {
+      -   .\\\\32xl\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .\\\\32xl\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .\\\\32xl\\\\:prose > ol > li > *:first-child {
-      +   .\\\\32xl\\\\:markdown > ol > li > *:first-child {
+      -   .\\\\32xl\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .\\\\32xl\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .\\\\32xl\\\\:prose > ol > li > *:last-child {
-      +   .\\\\32xl\\\\:markdown > ol > li > *:last-child {
+      -   .\\\\32xl\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .\\\\32xl\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -17141,23 +17141,23 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose > ul > li > *:first-child {
-      + .markdown > ul > li > *:first-child {
+      - .prose > ul > li > *:first-child :not(br) {
+      + .markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      - .prose > ul > li > *:last-child {
-      + .markdown > ul > li > *:last-child {
+      - .prose > ul > li > *:last-child :not(br) {
+      + .markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      - .prose > ol > li > *:first-child {
-      + .markdown > ol > li > *:first-child {
+      - .prose > ol > li > *:first-child :not(br) {
+      + .markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      - .prose > ol > li > *:last-child {
-      + .markdown > ol > li > *:last-child {
+      - .prose > ol > li > *:last-child :not(br) {
+      + .markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -18382,23 +18382,23 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose > ul > li > *:first-child {
-      +   .sm\\\\:markdown > ul > li > *:first-child {
+      -   .sm\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .sm\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .sm\\\\:prose > ul > li > *:last-child {
-      +   .sm\\\\:markdown > ul > li > *:last-child {
+      -   .sm\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .sm\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .sm\\\\:prose > ol > li > *:first-child {
-      +   .sm\\\\:markdown > ol > li > *:first-child {
+      -   .sm\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .sm\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .sm\\\\:prose > ol > li > *:last-child {
-      +   .sm\\\\:markdown > ol > li > *:last-child {
+      -   .sm\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .sm\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -19620,23 +19620,23 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose > ul > li > *:first-child {
-      +   .md\\\\:markdown > ul > li > *:first-child {
+      -   .md\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .md\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .md\\\\:prose > ul > li > *:last-child {
-      +   .md\\\\:markdown > ul > li > *:last-child {
+      -   .md\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .md\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .md\\\\:prose > ol > li > *:first-child {
-      +   .md\\\\:markdown > ol > li > *:first-child {
+      -   .md\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .md\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .md\\\\:prose > ol > li > *:last-child {
-      +   .md\\\\:markdown > ol > li > *:last-child {
+      -   .md\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .md\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -20852,23 +20852,23 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose > ul > li > *:first-child {
-      +   .lg\\\\:markdown > ul > li > *:first-child {
+      -   .lg\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .lg\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .lg\\\\:prose > ul > li > *:last-child {
-      +   .lg\\\\:markdown > ul > li > *:last-child {
+      -   .lg\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .lg\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .lg\\\\:prose > ol > li > *:first-child {
-      +   .lg\\\\:markdown > ol > li > *:first-child {
+      -   .lg\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .lg\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .lg\\\\:prose > ol > li > *:last-child {
-      +   .lg\\\\:markdown > ol > li > *:last-child {
+      -   .lg\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .lg\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -22093,23 +22093,23 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose > ul > li > *:first-child {
-      +   .xl\\\\:markdown > ul > li > *:first-child {
+      -   .xl\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .xl\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .xl\\\\:prose > ul > li > *:last-child {
-      +   .xl\\\\:markdown > ul > li > *:last-child {
+      -   .xl\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .xl\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .xl\\\\:prose > ol > li > *:first-child {
-      +   .xl\\\\:markdown > ol > li > *:first-child {
+      -   .xl\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .xl\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .xl\\\\:prose > ol > li > *:last-child {
-      +   .xl\\\\:markdown > ol > li > *:last-child {
+      -   .xl\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .xl\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
@@ -23328,23 +23328,23 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose > ul > li > *:first-child {
-      +   .\\\\32xl\\\\:markdown > ul > li > *:first-child {
+      -   .\\\\32xl\\\\:prose > ul > li > *:first-child :not(br) {
+      +   .\\\\32xl\\\\:markdown > ul > li > *:first-child :not(br) {
 
       ---
 
-      -   .\\\\32xl\\\\:prose > ul > li > *:last-child {
-      +   .\\\\32xl\\\\:markdown > ul > li > *:last-child {
+      -   .\\\\32xl\\\\:prose > ul > li > *:last-child :not(br) {
+      +   .\\\\32xl\\\\:markdown > ul > li > *:last-child :not(br) {
 
       ---
 
-      -   .\\\\32xl\\\\:prose > ol > li > *:first-child {
-      +   .\\\\32xl\\\\:markdown > ol > li > *:first-child {
+      -   .\\\\32xl\\\\:prose > ol > li > *:first-child :not(br) {
+      +   .\\\\32xl\\\\:markdown > ol > li > *:first-child :not(br) {
 
       ---
 
-      -   .\\\\32xl\\\\:prose > ol > li > *:last-child {
-      +   .\\\\32xl\\\\:markdown > ol > li > *:last-child {
+      -   .\\\\32xl\\\\:prose > ol > li > *:last-child :not(br) {
+      +   .\\\\32xl\\\\:markdown > ol > li > *:last-child :not(br) {
 
       ---
 
