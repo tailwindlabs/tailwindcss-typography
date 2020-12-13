@@ -113,7 +113,7 @@ Five different typography sizes are included out of the box:
 
 Everything about the provided size modifiers has been hand-tuned to look as beautiful as possible, including the relationships between font sizes, heading spacing, code block padding, etc. Just like the Tailwind color palettes, none of these styles are based on naive mathematical formulas, and have been hand-crafted by professional designers.
 
-Size modifiers are designed to be used with the [multi-class modifier pattern](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers) and **must be used in conjunction with the base `prose` class**:
+Size modifiers are designed to be used with the [multi-class modifier pattern](https://web.archive.org/web/20201112025723/https://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers) and **must be used in conjunction with the base `prose` class**:
 
 ```html
 <!-- Will not work -->
@@ -228,7 +228,7 @@ See [the default styles](./src/styles.js) for this plugin for more in-depth exam
 
 ### Customizing shared styles
 
-Many styles _(for example colors, font weight, and text decoration)_ are shared between all size modifiers, and are therefore defined only for the `default` modifier, since modifiers are designed to be used with the [multi-class modifier pattern](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers).
+Many styles _(for example colors, font weight, and text decoration)_ are shared between all size modifiers, and are therefore defined only for the `default` modifier, since modifiers are designed to be used with the [multi-class modifier pattern](https://web.archive.org/web/20201112025723/https://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers).
 
 If you'd like to customize these sorts of styles, do so using the `default` modifier:
 
