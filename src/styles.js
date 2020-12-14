@@ -1075,7 +1075,7 @@ module.exports = (theme) => ({
   // Add color modifiers
   ...Object.entries(theme('colors')).reduce((reduced, [color, values]) => {
     if (!isUsableColor(color, values)) {
-      return {}
+      return reduced
     }
 
     return {

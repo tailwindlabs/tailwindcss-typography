@@ -24693,3 +24693,97 @@ it('should be possible to override backticks for the inline `code` tag', async (
     "
   `)
 })
+
+it('should be possible to add colors without 600 and still get default and custom prose color helpers created', async () => {
+  expect(
+    await diffOnly(
+      {},
+      {
+        theme: {
+          extend: {
+            colors: {
+              'darkish-red': '#a85555',
+              'darkish-green': {
+                600: '#55a855',
+              },
+            },
+          },
+        },
+      }
+    )
+  ).toMatchInlineSnapshot(`
+    "
+
+      + .prose-darkish-green a {
+      +   color: #55a855;
+      + }
+      +
+      + .prose-darkish-green a code {
+      +   color: #55a855;
+      + }
+      +
+
+      ---
+
+      +   }
+      +
+      +   .sm\\\\:prose-darkish-green a {
+      +     color: #55a855;
+      +   }
+      +
+      +   .sm\\\\:prose-darkish-green a code {
+      +     color: #55a855;
+
+      ---
+
+      +   }
+      +
+      +   .md\\\\:prose-darkish-green a {
+      +     color: #55a855;
+      +   }
+      +
+      +   .md\\\\:prose-darkish-green a code {
+      +     color: #55a855;
+
+      ---
+
+      +   }
+      +
+      +   .lg\\\\:prose-darkish-green a {
+      +     color: #55a855;
+
+      ---
+
+      +
+      +   .lg\\\\:prose-darkish-green a code {
+      +     color: #55a855;
+      +   }
+
+      ---
+
+      +   }
+      +
+      +   .xl\\\\:prose-darkish-green a {
+      +     color: #55a855;
+
+      ---
+
+      +
+      +   .xl\\\\:prose-darkish-green a code {
+      +     color: #55a855;
+      +   }
+
+      ---
+
+      +   }
+      +
+      +   .\\\\32xl\\\\:prose-darkish-green a {
+      +     color: #55a855;
+      +   }
+      +
+      +   .\\\\32xl\\\\:prose-darkish-green a code {
+      +     color: #55a855;
+
+    "
+  `)
+})
