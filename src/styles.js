@@ -27,15 +27,11 @@ module.exports = (theme) => ({
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
-        ol: {
-          counterReset: 'list-counter',
-        },
         'ol > li': {
           position: 'relative',
-          counterIncrement: 'list-counter',
         },
         'ol > li::before': {
-          content: 'counter(list-counter) "."',
+          content: 'counter(list-item) "."',
           position: 'absolute',
           fontWeight: '400',
           color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
