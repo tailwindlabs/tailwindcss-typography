@@ -55,20 +55,13 @@ it('should generate the default classes for the typography components', async ()
       font-weight: 600;
     }
 
-    .prose ol {
-      counter-reset: list-counter;
-      margin-top: 1.25em;
-      margin-bottom: 1.25em;
-    }
-
     .prose ol > li {
       position: relative;
-      counter-increment: list-counter;
       padding-left: 1.75em;
     }
 
     .prose ol > li::before {
-      content: counter(list-counter) \\".\\";
+      content: counter(list-item) \\".\\";
       position: absolute;
       font-weight: 400;
       color: #6b7280;
@@ -290,6 +283,11 @@ it('should generate the default classes for the typography components', async ()
 
     .prose h3 code {
       font-size: 0.9em;
+    }
+
+    .prose ol {
+      margin-top: 1.25em;
+      margin-bottom: 1.25em;
     }
 
     .prose ul {
@@ -1341,20 +1339,13 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
-      .sm\\\\:prose ol {
-        counter-reset: list-counter;
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-      }
-
       .sm\\\\:prose ol > li {
         position: relative;
-        counter-increment: list-counter;
         padding-left: 1.75em;
       }
 
       .sm\\\\:prose ol > li::before {
-        content: counter(list-counter) \\".\\";
+        content: counter(list-item) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -1576,6 +1567,11 @@ it('should generate the default classes for the typography components', async ()
 
       .sm\\\\:prose h3 code {
         font-size: 0.9em;
+      }
+
+      .sm\\\\:prose ol {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
       }
 
       .sm\\\\:prose ul {
@@ -2628,20 +2624,13 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
-      .md\\\\:prose ol {
-        counter-reset: list-counter;
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-      }
-
       .md\\\\:prose ol > li {
         position: relative;
-        counter-increment: list-counter;
         padding-left: 1.75em;
       }
 
       .md\\\\:prose ol > li::before {
-        content: counter(list-counter) \\".\\";
+        content: counter(list-item) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -2863,6 +2852,11 @@ it('should generate the default classes for the typography components', async ()
 
       .md\\\\:prose h3 code {
         font-size: 0.9em;
+      }
+
+      .md\\\\:prose ol {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
       }
 
       .md\\\\:prose ul {
@@ -3915,20 +3909,13 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
-      .lg\\\\:prose ol {
-        counter-reset: list-counter;
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-      }
-
       .lg\\\\:prose ol > li {
         position: relative;
-        counter-increment: list-counter;
         padding-left: 1.75em;
       }
 
       .lg\\\\:prose ol > li::before {
-        content: counter(list-counter) \\".\\";
+        content: counter(list-item) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -4150,6 +4137,11 @@ it('should generate the default classes for the typography components', async ()
 
       .lg\\\\:prose h3 code {
         font-size: 0.9em;
+      }
+
+      .lg\\\\:prose ol {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
       }
 
       .lg\\\\:prose ul {
@@ -5202,20 +5194,13 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
-      .xl\\\\:prose ol {
-        counter-reset: list-counter;
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-      }
-
       .xl\\\\:prose ol > li {
         position: relative;
-        counter-increment: list-counter;
         padding-left: 1.75em;
       }
 
       .xl\\\\:prose ol > li::before {
-        content: counter(list-counter) \\".\\";
+        content: counter(list-item) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -5437,6 +5422,11 @@ it('should generate the default classes for the typography components', async ()
 
       .xl\\\\:prose h3 code {
         font-size: 0.9em;
+      }
+
+      .xl\\\\:prose ol {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
       }
 
       .xl\\\\:prose ul {
@@ -6489,20 +6479,13 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
-      .\\\\32xl\\\\:prose ol {
-        counter-reset: list-counter;
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-      }
-
       .\\\\32xl\\\\:prose ol > li {
         position: relative;
-        counter-increment: list-counter;
         padding-left: 1.75em;
       }
 
       .\\\\32xl\\\\:prose ol > li::before {
-        content: counter(list-counter) \\".\\";
+        content: counter(list-item) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -6724,6 +6707,11 @@ it('should generate the default classes for the typography components', async ()
 
       .\\\\32xl\\\\:prose h3 code {
         font-size: 0.9em;
+      }
+
+      .\\\\32xl\\\\:prose ol {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
       }
 
       .\\\\32xl\\\\:prose ul {
@@ -7777,11 +7765,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose ol {
-      + .markdown ol {
-
-      ---
-
       - .prose ol > li {
       + .markdown ol > li {
 
@@ -7954,6 +7937,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose h3 code {
       + .markdown h3 code {
+
+      ---
+
+      - .prose ol {
+      + .markdown ol {
 
       ---
 
@@ -9017,11 +9005,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose ol {
-      +   .sm\\\\:markdown ol {
-
-      ---
-
       -   .sm\\\\:prose ol > li {
       +   .sm\\\\:markdown ol > li {
 
@@ -9194,6 +9177,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose h3 code {
       +   .sm\\\\:markdown h3 code {
+
+      ---
+
+      -   .sm\\\\:prose ol {
+      +   .sm\\\\:markdown ol {
 
       ---
 
@@ -10257,11 +10245,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose ol {
-      +   .md\\\\:markdown ol {
-
-      ---
-
       -   .md\\\\:prose ol > li {
       +   .md\\\\:markdown ol > li {
 
@@ -10434,6 +10417,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose h3 code {
       +   .md\\\\:markdown h3 code {
+
+      ---
+
+      -   .md\\\\:prose ol {
+      +   .md\\\\:markdown ol {
 
       ---
 
@@ -11497,11 +11485,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose ol {
-      +   .lg\\\\:markdown ol {
-
-      ---
-
       -   .lg\\\\:prose ol > li {
       +   .lg\\\\:markdown ol > li {
 
@@ -11674,6 +11657,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose h3 code {
       +   .lg\\\\:markdown h3 code {
+
+      ---
+
+      -   .lg\\\\:prose ol {
+      +   .lg\\\\:markdown ol {
 
       ---
 
@@ -12737,11 +12725,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose ol {
-      +   .xl\\\\:markdown ol {
-
-      ---
-
       -   .xl\\\\:prose ol > li {
       +   .xl\\\\:markdown ol > li {
 
@@ -12914,6 +12897,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose h3 code {
       +   .xl\\\\:markdown h3 code {
+
+      ---
+
+      -   .xl\\\\:prose ol {
+      +   .xl\\\\:markdown ol {
 
       ---
 
@@ -13977,11 +13965,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol {
-      +   .\\\\32xl\\\\:markdown ol {
-
-      ---
-
       -   .\\\\32xl\\\\:prose ol > li {
       +   .\\\\32xl\\\\:markdown ol > li {
 
@@ -14154,6 +14137,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose h3 code {
       +   .\\\\32xl\\\\:markdown h3 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol {
+      +   .\\\\32xl\\\\:markdown ol {
 
       ---
 
@@ -16946,11 +16934,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose ol {
-      + .markdown ol {
-
-      ---
-
       - .prose ol > li {
       + .markdown ol > li {
 
@@ -17123,6 +17106,11 @@ it('should be possible to change the default modifiers and change the className'
 
       - .prose h3 code {
       + .markdown h3 code {
+
+      ---
+
+      - .prose ol {
+      + .markdown ol {
 
       ---
 
@@ -18187,11 +18175,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose ol {
-      +   .sm\\\\:markdown ol {
-
-      ---
-
       -   .sm\\\\:prose ol > li {
       +   .sm\\\\:markdown ol > li {
 
@@ -18364,6 +18347,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .sm\\\\:prose h3 code {
       +   .sm\\\\:markdown h3 code {
+
+      ---
+
+      -   .sm\\\\:prose ol {
+      +   .sm\\\\:markdown ol {
 
       ---
 
@@ -19425,11 +19413,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose ol {
-      +   .md\\\\:markdown ol {
-
-      ---
-
       -   .md\\\\:prose ol > li {
       +   .md\\\\:markdown ol > li {
 
@@ -19602,6 +19585,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .md\\\\:prose h3 code {
       +   .md\\\\:markdown h3 code {
+
+      ---
+
+      -   .md\\\\:prose ol {
+      +   .md\\\\:markdown ol {
 
       ---
 
@@ -20657,11 +20645,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose ol {
-      +   .lg\\\\:markdown ol {
-
-      ---
-
       -   .lg\\\\:prose ol > li {
       +   .lg\\\\:markdown ol > li {
 
@@ -20834,6 +20817,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .lg\\\\:prose h3 code {
       +   .lg\\\\:markdown h3 code {
+
+      ---
+
+      -   .lg\\\\:prose ol {
+      +   .lg\\\\:markdown ol {
 
       ---
 
@@ -21898,11 +21886,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose ol {
-      +   .xl\\\\:markdown ol {
-
-      ---
-
       -   .xl\\\\:prose ol > li {
       +   .xl\\\\:markdown ol > li {
 
@@ -22075,6 +22058,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .xl\\\\:prose h3 code {
       +   .xl\\\\:markdown h3 code {
+
+      ---
+
+      -   .xl\\\\:prose ol {
+      +   .xl\\\\:markdown ol {
 
       ---
 
@@ -23133,11 +23121,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol {
-      +   .\\\\32xl\\\\:markdown ol {
-
-      ---
-
       -   .\\\\32xl\\\\:prose ol > li {
       +   .\\\\32xl\\\\:markdown ol > li {
 
@@ -23310,6 +23293,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .\\\\32xl\\\\:prose h3 code {
       +   .\\\\32xl\\\\:markdown h3 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol {
+      +   .\\\\32xl\\\\:markdown ol {
 
       ---
 
