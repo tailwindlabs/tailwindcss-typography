@@ -1,7 +1,7 @@
 const plugin = require('tailwindcss/plugin')
-const merge = require('lodash/merge')
-const castArray = require('lodash/castArray')
-const uniq = require('lodash/uniq')
+const merge = require('lodash.merge')
+const castArray = require('lodash.castarray')
+const uniq = require('lodash.uniq')
 const styles = require('./styles')
 const { isUsableColor } = require('./utils')
 
