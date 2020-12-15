@@ -43,5 +43,10 @@
     "react-dom": "^16.8.6",
     "snapshot-diff": "^0.8.1",
     "tailwindcss": "^2.0.0-alpha.16"
+  },
+  "dependencies": {
+    "lodash.castarray": "^4.4.0",
+    "lodash.merge": "^4.6.2",
+    "lodash.uniq": "^4.5.0"
   }
 }
