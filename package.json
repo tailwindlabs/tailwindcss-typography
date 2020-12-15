@@ -4,7 +4,8 @@
   "description": "A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults.",
   "main": "src/index.js",
   "files": [
-    "src/*.js"
+    "src/*.js",
+    "dist/"
   ],
   "repository": "https://github.com/tailwindcss/typography",
   "license": "MIT",
