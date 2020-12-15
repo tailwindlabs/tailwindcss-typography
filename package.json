@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "lodash.castarray": "^4.4.0",
+    "lodash.isplainobject": "^4.0.6",
     "lodash.merge": "^4.6.2",
     "lodash.uniq": "^4.5.0"
   }
