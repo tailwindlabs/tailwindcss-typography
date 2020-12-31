@@ -151,6 +151,36 @@ Here are the classes that are generated using a totally default Tailwind CSS v2.
 
 For more control, use the [low-level customization API](#customization).
 
+### Dark mode
+
+A light modifier is included to cater for dark pages primarily using `bg-gray-900`, `bg-black` or a similar background. Tailwind CSS v2.0+ [features dark mode support](https://tailwindcss.com/docs/dark-mode) out of the box, but dark variants have to be enabled manually for this plugin:
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+  variants: {
+    extend: {
+      typography: ['dark'],
+    },
+  },
+}
+```
+
+After enabling the variant, the light modifier can be used as follows:
+
+```html
+<article class="prose dark:prose-light">
+  {{ markdown }}
+</article>
+```
+
 ### Responsive variants
 
 None of the sizes are automatically responsive, but responsive variants are provided for each size modifier so you can easily change the typography size at different breakpoints:
