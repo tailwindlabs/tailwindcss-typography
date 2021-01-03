@@ -112,10 +112,10 @@ module.exports = (theme) => ({
           lineHeight: 'inherit',
         },
         'pre code::before': {
-          content: '""',
+          content: 'none',
         },
         'pre code::after': {
-          content: '""',
+          content: 'none',
         },
         table: {
           width: '100%',
