@@ -376,7 +376,6 @@ module.exports = (theme) => ({
         },
         pre: {
           color: theme('colors.gray.700', defaultTheme.colors.gray[700]),
-          backgroundColor: theme('colors.gray.800', defaultTheme.colors.gray[800]),
         },
         thead: {
           color: theme('colors.gray.200', defaultTheme.colors.gray[200]),
