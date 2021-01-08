@@ -74,7 +74,7 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose ul > li::before {
-      content: \\"\\";
+      content: none;
       position: absolute;
       background-color: #d1d5db;
       border-radius: 50%;
@@ -199,11 +199,11 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose pre code::before {
-      content: \\"\\";
+      content: none;
     }
 
     .prose pre code::after {
-      content: \\"\\";
+      content: none;
     }
 
     .prose table {
@@ -1358,7 +1358,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose ul > li::before {
-        content: \\"\\";
+        content: none;
         position: absolute;
         background-color: #d1d5db;
         border-radius: 50%;
@@ -1483,11 +1483,11 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose pre code::before {
-        content: \\"\\";
+        content: none;
       }
 
       .sm\\\\:prose pre code::after {
-        content: \\"\\";
+        content: none;
       }
 
       .sm\\\\:prose table {
@@ -2643,7 +2643,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose ul > li::before {
-        content: \\"\\";
+        content: none;
         position: absolute;
         background-color: #d1d5db;
         border-radius: 50%;
@@ -2768,11 +2768,11 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose pre code::before {
-        content: \\"\\";
+        content: none;
       }
 
       .md\\\\:prose pre code::after {
-        content: \\"\\";
+        content: none;
       }
 
       .md\\\\:prose table {
@@ -3928,7 +3928,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose ul > li::before {
-        content: \\"\\";
+        content: none;
         position: absolute;
         background-color: #d1d5db;
         border-radius: 50%;
@@ -4053,11 +4053,11 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose pre code::before {
-        content: \\"\\";
+        content: none;
       }
 
       .lg\\\\:prose pre code::after {
-        content: \\"\\";
+        content: none;
       }
 
       .lg\\\\:prose table {
@@ -5213,7 +5213,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose ul > li::before {
-        content: \\"\\";
+        content: none;
         position: absolute;
         background-color: #d1d5db;
         border-radius: 50%;
@@ -5338,11 +5338,11 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose pre code::before {
-        content: \\"\\";
+        content: none;
       }
 
       .xl\\\\:prose pre code::after {
-        content: \\"\\";
+        content: none;
       }
 
       .xl\\\\:prose table {
@@ -6498,7 +6498,7 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose ul > li::before {
-        content: \\"\\";
+        content: none;
         position: absolute;
         background-color: #d1d5db;
         border-radius: 50%;
@@ -6623,11 +6623,11 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose pre code::before {
-        content: \\"\\";
+        content: none;
       }
 
       .\\\\32xl\\\\:prose pre code::after {
-        content: \\"\\";
+        content: none;
       }
 
       .\\\\32xl\\\\:prose table {
