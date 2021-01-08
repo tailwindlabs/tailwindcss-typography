@@ -40,7 +40,7 @@ module.exports = (theme) => ({
           position: 'relative',
         },
         'ul > li::before': {
-          content: 'none',
+          content: '""',
           position: 'absolute',
           backgroundColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
           borderRadius: '50%',
