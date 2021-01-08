@@ -40,7 +40,7 @@ module.exports = (theme) => ({
           position: 'relative',
         },
         'ul > li::before': {
-          content: '""',
+          content: 'none',
           position: 'absolute',
           backgroundColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
           borderRadius: '50%',
@@ -112,10 +112,10 @@ module.exports = (theme) => ({
           lineHeight: 'inherit',
         },
         'pre code::before': {
-          content: '""',
+          content: 'none',
         },
         'pre code::after': {
-          content: '""',
+          content: 'none',
         },
         table: {
           width: '100%',
