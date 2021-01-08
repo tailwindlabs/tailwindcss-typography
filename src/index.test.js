@@ -55,13 +55,49 @@ it('should generate the default classes for the typography components', async ()
       font-weight: 600;
     }
 
+    .prose ol[type=\\"A\\"] {
+      --list-counter-style: upper-alpha;
+    }
+
+    .prose ol[type=\\"a\\"] {
+      --list-counter-style: lower-alpha;
+    }
+
+    .prose ol[type=\\"A s\\"] {
+      --list-counter-style: upper-alpha;
+    }
+
+    .prose ol[type=\\"a s\\"] {
+      --list-counter-style: lower-alpha;
+    }
+
+    .prose ol[type=\\"I\\"] {
+      --list-counter-style: upper-roman;
+    }
+
+    .prose ol[type=\\"i\\"] {
+      --list-counter-style: lower-roman;
+    }
+
+    .prose ol[type=\\"I s\\"] {
+      --list-counter-style: upper-roman;
+    }
+
+    .prose ol[type=\\"i s\\"] {
+      --list-counter-style: lower-roman;
+    }
+
+    .prose ol[type=\\"1\\"] {
+      --list-counter-style: decimal;
+    }
+
     .prose ol > li {
       position: relative;
       padding-left: 1.75em;
     }
 
     .prose ol > li::before {
-      content: counter(list-item) \\".\\";
+      content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
       position: absolute;
       font-weight: 400;
       color: #6b7280;
@@ -1339,13 +1375,49 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
+      .sm\\\\:prose ol[type=\\"A\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .sm\\\\:prose ol[type=\\"a\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .sm\\\\:prose ol[type=\\"A s\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .sm\\\\:prose ol[type=\\"a s\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .sm\\\\:prose ol[type=\\"I\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .sm\\\\:prose ol[type=\\"i\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .sm\\\\:prose ol[type=\\"I s\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .sm\\\\:prose ol[type=\\"i s\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .sm\\\\:prose ol[type=\\"1\\"] {
+        --list-counter-style: decimal;
+      }
+
       .sm\\\\:prose ol > li {
         position: relative;
         padding-left: 1.75em;
       }
 
       .sm\\\\:prose ol > li::before {
-        content: counter(list-item) \\".\\";
+        content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -2624,13 +2696,49 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
+      .md\\\\:prose ol[type=\\"A\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .md\\\\:prose ol[type=\\"a\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .md\\\\:prose ol[type=\\"A s\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .md\\\\:prose ol[type=\\"a s\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .md\\\\:prose ol[type=\\"I\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .md\\\\:prose ol[type=\\"i\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .md\\\\:prose ol[type=\\"I s\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .md\\\\:prose ol[type=\\"i s\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .md\\\\:prose ol[type=\\"1\\"] {
+        --list-counter-style: decimal;
+      }
+
       .md\\\\:prose ol > li {
         position: relative;
         padding-left: 1.75em;
       }
 
       .md\\\\:prose ol > li::before {
-        content: counter(list-item) \\".\\";
+        content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -3909,13 +4017,49 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
+      .lg\\\\:prose ol[type=\\"A\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .lg\\\\:prose ol[type=\\"a\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .lg\\\\:prose ol[type=\\"A s\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .lg\\\\:prose ol[type=\\"a s\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .lg\\\\:prose ol[type=\\"I\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .lg\\\\:prose ol[type=\\"i\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .lg\\\\:prose ol[type=\\"I s\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .lg\\\\:prose ol[type=\\"i s\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .lg\\\\:prose ol[type=\\"1\\"] {
+        --list-counter-style: decimal;
+      }
+
       .lg\\\\:prose ol > li {
         position: relative;
         padding-left: 1.75em;
       }
 
       .lg\\\\:prose ol > li::before {
-        content: counter(list-item) \\".\\";
+        content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -5194,13 +5338,49 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
+      .xl\\\\:prose ol[type=\\"A\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .xl\\\\:prose ol[type=\\"a\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .xl\\\\:prose ol[type=\\"A s\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .xl\\\\:prose ol[type=\\"a s\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .xl\\\\:prose ol[type=\\"I\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .xl\\\\:prose ol[type=\\"i\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .xl\\\\:prose ol[type=\\"I s\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .xl\\\\:prose ol[type=\\"i s\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .xl\\\\:prose ol[type=\\"1\\"] {
+        --list-counter-style: decimal;
+      }
+
       .xl\\\\:prose ol > li {
         position: relative;
         padding-left: 1.75em;
       }
 
       .xl\\\\:prose ol > li::before {
-        content: counter(list-item) \\".\\";
+        content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -6479,13 +6659,49 @@ it('should generate the default classes for the typography components', async ()
         font-weight: 600;
       }
 
+      .\\\\32xl\\\\:prose ol[type=\\"A\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .\\\\32xl\\\\:prose ol[type=\\"a\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .\\\\32xl\\\\:prose ol[type=\\"A s\\"] {
+        --list-counter-style: upper-alpha;
+      }
+
+      .\\\\32xl\\\\:prose ol[type=\\"a s\\"] {
+        --list-counter-style: lower-alpha;
+      }
+
+      .\\\\32xl\\\\:prose ol[type=\\"I\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .\\\\32xl\\\\:prose ol[type=\\"i\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .\\\\32xl\\\\:prose ol[type=\\"I s\\"] {
+        --list-counter-style: upper-roman;
+      }
+
+      .\\\\32xl\\\\:prose ol[type=\\"i s\\"] {
+        --list-counter-style: lower-roman;
+      }
+
+      .\\\\32xl\\\\:prose ol[type=\\"1\\"] {
+        --list-counter-style: decimal;
+      }
+
       .\\\\32xl\\\\:prose ol > li {
         position: relative;
         padding-left: 1.75em;
       }
 
       .\\\\32xl\\\\:prose ol > li::before {
-        content: counter(list-item) \\".\\";
+        content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
         color: #6b7280;
@@ -7765,6 +7981,51 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose ol[type='A'] {
+      + .markdown ol[type='A'] {
+
+      ---
+
+      - .prose ol[type='a'] {
+      + .markdown ol[type='a'] {
+
+      ---
+
+      - .prose ol[type='A s'] {
+      + .markdown ol[type='A s'] {
+
+      ---
+
+      - .prose ol[type='a s'] {
+      + .markdown ol[type='a s'] {
+
+      ---
+
+      - .prose ol[type='I'] {
+      + .markdown ol[type='I'] {
+
+      ---
+
+      - .prose ol[type='i'] {
+      + .markdown ol[type='i'] {
+
+      ---
+
+      - .prose ol[type='I s'] {
+      + .markdown ol[type='I s'] {
+
+      ---
+
+      - .prose ol[type='i s'] {
+      + .markdown ol[type='i s'] {
+
+      ---
+
+      - .prose ol[type='1'] {
+      + .markdown ol[type='1'] {
+
+      ---
+
       - .prose ol > li {
       + .markdown ol > li {
 
@@ -9002,6 +9263,51 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose strong {
       +   .sm\\\\:markdown strong {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='A'] {
+      +   .sm\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='a'] {
+      +   .sm\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='A s'] {
+      +   .sm\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='a s'] {
+      +   .sm\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='I'] {
+      +   .sm\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='i'] {
+      +   .sm\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='I s'] {
+      +   .sm\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='i s'] {
+      +   .sm\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='1'] {
+      +   .sm\\\\:markdown ol[type='1'] {
 
       ---
 
@@ -10245,6 +10551,51 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .md\\\\:prose ol[type='A'] {
+      +   .md\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='a'] {
+      +   .md\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='A s'] {
+      +   .md\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='a s'] {
+      +   .md\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='I'] {
+      +   .md\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='i'] {
+      +   .md\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='I s'] {
+      +   .md\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='i s'] {
+      +   .md\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='1'] {
+      +   .md\\\\:markdown ol[type='1'] {
+
+      ---
+
       -   .md\\\\:prose ol > li {
       +   .md\\\\:markdown ol > li {
 
@@ -11482,6 +11833,51 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose strong {
       +   .lg\\\\:markdown strong {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='A'] {
+      +   .lg\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='a'] {
+      +   .lg\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='A s'] {
+      +   .lg\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='a s'] {
+      +   .lg\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='I'] {
+      +   .lg\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='i'] {
+      +   .lg\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='I s'] {
+      +   .lg\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='i s'] {
+      +   .lg\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='1'] {
+      +   .lg\\\\:markdown ol[type='1'] {
 
       ---
 
@@ -12725,6 +13121,51 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .xl\\\\:prose ol[type='A'] {
+      +   .xl\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='a'] {
+      +   .xl\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='A s'] {
+      +   .xl\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='a s'] {
+      +   .xl\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='I'] {
+      +   .xl\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='i'] {
+      +   .xl\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='I s'] {
+      +   .xl\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='i s'] {
+      +   .xl\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='1'] {
+      +   .xl\\\\:markdown ol[type='1'] {
+
+      ---
+
       -   .xl\\\\:prose ol > li {
       +   .xl\\\\:markdown ol > li {
 
@@ -13962,6 +14403,51 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose strong {
       +   .\\\\32xl\\\\:markdown strong {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='A'] {
+      +   .\\\\32xl\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='a'] {
+      +   .\\\\32xl\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='A s'] {
+      +   .\\\\32xl\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='a s'] {
+      +   .\\\\32xl\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='I'] {
+      +   .\\\\32xl\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='i'] {
+      +   .\\\\32xl\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='I s'] {
+      +   .\\\\32xl\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='i s'] {
+      +   .\\\\32xl\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='1'] {
+      +   .\\\\32xl\\\\:markdown ol[type='1'] {
 
       ---
 
@@ -16934,6 +17420,51 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose ol[type='A'] {
+      + .markdown ol[type='A'] {
+
+      ---
+
+      - .prose ol[type='a'] {
+      + .markdown ol[type='a'] {
+
+      ---
+
+      - .prose ol[type='A s'] {
+      + .markdown ol[type='A s'] {
+
+      ---
+
+      - .prose ol[type='a s'] {
+      + .markdown ol[type='a s'] {
+
+      ---
+
+      - .prose ol[type='I'] {
+      + .markdown ol[type='I'] {
+
+      ---
+
+      - .prose ol[type='i'] {
+      + .markdown ol[type='i'] {
+
+      ---
+
+      - .prose ol[type='I s'] {
+      + .markdown ol[type='I s'] {
+
+      ---
+
+      - .prose ol[type='i s'] {
+      + .markdown ol[type='i s'] {
+
+      ---
+
+      - .prose ol[type='1'] {
+      + .markdown ol[type='1'] {
+
+      ---
+
       - .prose ol > li {
       + .markdown ol > li {
 
@@ -17154,46 +17685,39 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - }
+      -
       - .prose hr + * {
-      + .markdown hr + * {
-
-      ---
-
+      -   margin-top: 0;
+      - }
+      -
       - .prose h2 + * {
-      + .markdown h2 + * {
-
-      ---
-
+      -   margin-top: 0;
+      - }
+      -
       - .prose h3 + * {
-      + .markdown h3 + * {
+      -   margin-top: 0;
 
       ---
 
       - .prose h4 + * {
-      + .markdown h4 + * {
-
-      ---
-
+      -   margin-top: 0;
+      - }
+      -
       - .prose thead th:first-child {
-      + .markdown thead th:first-child {
-
-      ---
-
+      -   padding-left: 0;
+      - }
+      -
       - .prose thead th:last-child {
-      + .markdown thead th:last-child {
-
-      ---
-
+      -   padding-right: 0;
+      - }
+      -
       - .prose tbody td:first-child {
-      + .markdown tbody td:first-child {
-
-      ---
-
+      -   padding-left: 0;
+      - }
+      -
       - .prose tbody td:last-child {
-      + .markdown tbody td:last-child {
-
-      ---
-
+      -   padding-right: 0;
       - }
       -
       - .prose > :first-child {
@@ -17202,9 +17726,8 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose > :last-child {
       -   margin-bottom: 0;
-
-      ---
-
+      - }
+      -
       - .prose-sm {
       -   font-size: 0.875rem;
       -   line-height: 1.7142857;
@@ -17230,15 +17753,11 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-sm h1 {
       -   font-size: 2.1428571em;
-      + .markdown > :first-child {
-
-      ---
-
+      -   margin-top: 0;
       -   margin-bottom: 0.8em;
       -   line-height: 1.2;
-
-      ---
-
+      - }
+      -
       - .prose-sm h2 {
       -   font-size: 1.4285714em;
       -   margin-top: 1.6em;
@@ -17276,10 +17795,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-sm figure > * {
       -   margin-top: 0;
-      + .markdown > :last-child {
-
-      ---
-
+      -   margin-bottom: 0;
+      - }
+      -
       - .prose-sm figure figcaption {
       -   font-size: 0.8571429em;
       -   line-height: 1.3333333;
@@ -17376,21 +17894,25 @@ it('should be possible to change the default modifiers and change the className'
       - }
       -
       - .prose-sm hr + * {
-      -   margin-top: 0;
-      - }
-      -
+      + .markdown hr + * {
+
+      ---
+
       - .prose-sm h2 + * {
-      -   margin-top: 0;
-      - }
-      -
+      + .markdown h2 + * {
+
+      ---
+
       - .prose-sm h3 + * {
-      -   margin-top: 0;
-      - }
-      -
+      + .markdown h3 + * {
+
+      ---
+
       - .prose-sm h4 + * {
-      -   margin-top: 0;
-      - }
-      -
+      + .markdown h4 + * {
+
+      ---
+
       - .prose-sm table {
       -   font-size: 0.8571429em;
       -   line-height: 1.5;
@@ -17403,13 +17925,15 @@ it('should be possible to change the default modifiers and change the className'
       - }
       -
       - .prose-sm thead th:first-child {
-      -   padding-left: 0;
-      - }
-      -
+      + .markdown thead th:first-child {
+
+      ---
+
       - .prose-sm thead th:last-child {
-      -   padding-right: 0;
-      - }
-      -
+      + .markdown thead th:last-child {
+
+      ---
+
       - .prose-sm tbody td {
       -   padding-top: 0.6666667em;
       -   padding-right: 1em;
@@ -17418,21 +17942,25 @@ it('should be possible to change the default modifiers and change the className'
       - }
       -
       - .prose-sm tbody td:first-child {
-      -   padding-left: 0;
-      - }
-      -
+      + .markdown tbody td:first-child {
+
+      ---
+
       - .prose-sm tbody td:last-child {
-      -   padding-right: 0;
-      - }
-      -
+      + .markdown tbody td:last-child {
+
+      ---
+
       - .prose-sm > :first-child {
-      -   margin-top: 0;
-      - }
-      -
+      + .markdown > :first-child {
+
+      ---
+
       - .prose-sm > :last-child {
-      -   margin-bottom: 0;
-      - }
-      -
+      + .markdown > :last-child {
+
+      ---
+
       - .prose-lg {
       + .markdown-lg {
 
@@ -18105,13 +18633,13 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-yellow a {
       -   color: #d97706;
-      - }
-      -
-      - .prose-yellow a code {
-      -   color: #d97706;
 
       ---
 
+      - .prose-yellow a code {
+      -   color: #d97706;
+      - }
+      -
       - .prose-green a {
       -   color: #059669;
       - }
@@ -18172,6 +18700,51 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .sm\\\\:prose strong {
       +   .sm\\\\:markdown strong {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='A'] {
+      +   .sm\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='a'] {
+      +   .sm\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='A s'] {
+      +   .sm\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='a s'] {
+      +   .sm\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='I'] {
+      +   .sm\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='i'] {
+      +   .sm\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='I s'] {
+      +   .sm\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='i s'] {
+      +   .sm\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .sm\\\\:prose ol[type='1'] {
+      +   .sm\\\\:markdown ol[type='1'] {
 
       ---
 
@@ -18395,38 +18968,32 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .sm\\\\:prose hr + * {
-      +   .sm\\\\:markdown hr + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose h2 + * {
-      +   .sm\\\\:markdown h2 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose h3 + * {
-      +   .sm\\\\:markdown h3 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose h4 + * {
-      +   .sm\\\\:markdown h4 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose thead th:first-child {
-      +   .sm\\\\:markdown thead th:first-child {
-
-      ---
-
+      -     padding-left: 0;
       -   }
       -
       -   .sm\\\\:prose thead th:last-child {
       -     padding-right: 0;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose tbody td:first-child {
       -     padding-left: 0;
       -   }
@@ -18496,8 +19063,9 @@ it('should be possible to change the default modifiers and change the className'
       -   .sm\\\\:prose-sm img {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
-      -   }
-      -
+
+      ---
+
       -   .sm\\\\:prose-sm video {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
@@ -18509,10 +19077,14 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm figure > * {
-      -     margin-top: 0;
+      +   .sm\\\\:markdown hr + * {
+
+      ---
+
       -     margin-bottom: 0;
-      -   }
-      -
+
+      ---
+
       -   .sm\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
@@ -18609,19 +19181,24 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm hr + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h2 + * {
+
+      ---
+
       -   .sm\\\\:prose-sm h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h3 + * {
+
+      ---
+
       -   .sm\\\\:prose-sm h3 + * {
       -     margin-top: 0;
       -   }
       -
       -   .sm\\\\:prose-sm h4 + * {
-      -     margin-top: 0;
+      +   .sm\\\\:markdown h4 + * {
+
+      ---
+
       -   }
       -
       -   .sm\\\\:prose-sm table {
@@ -18633,12 +19210,14 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-      -   }
-      -
+
+      ---
+
       -   .sm\\\\:prose-sm thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown thead th:first-child {
+
+      ---
+
       -   .sm\\\\:prose-sm thead th:last-child {
       +   .sm\\\\:markdown thead th:last-child {
 
@@ -19413,6 +19992,51 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .md\\\\:prose ol[type='A'] {
+      +   .md\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='a'] {
+      +   .md\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='A s'] {
+      +   .md\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='a s'] {
+      +   .md\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='I'] {
+      +   .md\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='i'] {
+      +   .md\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='I s'] {
+      +   .md\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='i s'] {
+      +   .md\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .md\\\\:prose ol[type='1'] {
+      +   .md\\\\:markdown ol[type='1'] {
+
+      ---
+
       -   .md\\\\:prose ol > li {
       +   .md\\\\:markdown ol > li {
 
@@ -19633,56 +20257,48 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .md\\\\:prose hr + * {
-      +   .md\\\\:markdown hr + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .md\\\\:prose h2 + * {
-      +   .md\\\\:markdown h2 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .md\\\\:prose h3 + * {
-      +   .md\\\\:markdown h3 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .md\\\\:prose h4 + * {
-      +   .md\\\\:markdown h4 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .md\\\\:prose thead th:first-child {
-      +   .md\\\\:markdown thead th:first-child {
-
-      ---
-
+      -     padding-left: 0;
+      -   }
+      -
       -   .md\\\\:prose thead th:last-child {
-      +   .md\\\\:markdown thead th:last-child {
-
-      ---
-
+      -     padding-right: 0;
+      -   }
+      -
       -   .md\\\\:prose tbody td:first-child {
-      +   .md\\\\:markdown tbody td:first-child {
-
-      ---
-
+      -     padding-left: 0;
+      -   }
+      -
       -   .md\\\\:prose tbody td:last-child {
-      +   .md\\\\:markdown tbody td:last-child {
-
-      ---
-
+      -     padding-right: 0;
+      -   }
+      -
       -   .md\\\\:prose > :first-child {
-      +   .md\\\\:markdown > :first-child {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .md\\\\:prose > :last-child {
-      +   .md\\\\:markdown > :last-child {
-
-      ---
-
+      -     margin-bottom: 0;
+      -   }
+      -
       -   .md\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -19691,8 +20307,9 @@ it('should be possible to change the default modifiers and change the className'
       -   .md\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
-      -   }
-      -
+
+      ---
+
       -   .md\\\\:prose-sm [class~='lead'] {
       -     font-size: 1.2857143em;
       -     line-height: 1.5555556;
@@ -19849,21 +20466,25 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm hr + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .md\\\\:markdown hr + * {
+
+      ---
+
       -   .md\\\\:prose-sm h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .md\\\\:markdown h2 + * {
+
+      ---
+
       -   .md\\\\:prose-sm h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .md\\\\:markdown h3 + * {
+
+      ---
+
       -   .md\\\\:prose-sm h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .md\\\\:markdown h4 + * {
+
+      ---
+
       -   .md\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -19876,13 +20497,15 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
+      +   .md\\\\:markdown thead th:first-child {
+
+      ---
+
       -   .md\\\\:prose-sm thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
+      +   .md\\\\:markdown thead th:last-child {
+
+      ---
+
       -   .md\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
@@ -19891,21 +20514,25 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
+      +   .md\\\\:markdown tbody td:first-child {
+
+      ---
+
       -   .md\\\\:prose-sm tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
+      +   .md\\\\:markdown tbody td:last-child {
+
+      ---
+
       -   .md\\\\:prose-sm > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .md\\\\:markdown > :first-child {
+
+      ---
+
       -   .md\\\\:prose-sm > :last-child {
-      -     margin-bottom: 0;
-      -   }
-      -
+      +   .md\\\\:markdown > :last-child {
+
+      ---
+
       -   .md\\\\:prose-lg {
       +   .md\\\\:markdown-lg {
 
@@ -20645,6 +21272,51 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .lg\\\\:prose ol[type='A'] {
+      +   .lg\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='a'] {
+      +   .lg\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='A s'] {
+      +   .lg\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='a s'] {
+      +   .lg\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='I'] {
+      +   .lg\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='i'] {
+      +   .lg\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='I s'] {
+      +   .lg\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='i s'] {
+      +   .lg\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .lg\\\\:prose ol[type='1'] {
+      +   .lg\\\\:markdown ol[type='1'] {
+
+      ---
+
       -   .lg\\\\:prose ol > li {
       +   .lg\\\\:markdown ol > li {
 
@@ -20865,46 +21537,38 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .lg\\\\:prose hr + * {
-      +   .lg\\\\:markdown hr + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .lg\\\\:prose h2 + * {
-      +   .lg\\\\:markdown h2 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .lg\\\\:prose h3 + * {
-      +   .lg\\\\:markdown h3 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .lg\\\\:prose h4 + * {
-      +   .lg\\\\:markdown h4 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .lg\\\\:prose thead th:first-child {
-      +   .lg\\\\:markdown thead th:first-child {
-
-      ---
-
+      -     padding-left: 0;
+      -   }
+      -
       -   .lg\\\\:prose thead th:last-child {
-      +   .lg\\\\:markdown thead th:last-child {
-
-      ---
-
+      -     padding-right: 0;
+      -   }
+      -
       -   .lg\\\\:prose tbody td:first-child {
-      +   .lg\\\\:markdown tbody td:first-child {
-
-      ---
-
+      -     padding-left: 0;
+      -   }
+      -
       -   .lg\\\\:prose tbody td:last-child {
-      +   .lg\\\\:markdown tbody td:last-child {
-
-      ---
-
+      -     padding-right: 0;
       -   }
       -
       -   .lg\\\\:prose > :first-child {
@@ -20913,9 +21577,8 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose > :last-child {
       -     margin-bottom: 0;
-
-      ---
-
+      -   }
+      -
       -   .lg\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -20941,10 +21604,7 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      +   .lg\\\\:markdown > :first-child {
-
-      ---
-
+      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -20954,9 +21614,8 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-top: 1.6em;
       -     margin-bottom: 0.8em;
       -     line-height: 1.4;
-
-      ---
-
+      -   }
+      -
       -   .lg\\\\:prose-sm h3 {
       -     font-size: 1.2857143em;
       -     margin-top: 1.5555556em;
@@ -20987,10 +21646,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-sm figure > * {
       -     margin-top: 0;
-      +   .lg\\\\:markdown > :last-child {
-
-      ---
-
+      -     margin-bottom: 0;
+      -   }
+      -
       -   .lg\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
@@ -21019,8 +21677,9 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-      -   }
-      -
+
+      ---
+
       -   .lg\\\\:prose-sm ol {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -21087,21 +21746,25 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .lg\\\\:prose-sm hr + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown hr + * {
+
+      ---
+
       -   .lg\\\\:prose-sm h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown h2 + * {
+
+      ---
+
       -   .lg\\\\:prose-sm h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown h3 + * {
+
+      ---
+
       -   .lg\\\\:prose-sm h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown h4 + * {
+
+      ---
+
       -   .lg\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -21114,13 +21777,15 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .lg\\\\:prose-sm thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown thead th:first-child {
+
+      ---
+
       -   .lg\\\\:prose-sm thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown thead th:last-child {
+
+      ---
+
       -   .lg\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
@@ -21129,21 +21794,25 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .lg\\\\:prose-sm tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown tbody td:first-child {
+
+      ---
+
       -   .lg\\\\:prose-sm tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown tbody td:last-child {
+
+      ---
+
       -   .lg\\\\:prose-sm > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown > :first-child {
+
+      ---
+
       -   .lg\\\\:prose-sm > :last-child {
-      -     margin-bottom: 0;
-      -   }
-      -
+      +   .lg\\\\:markdown > :last-child {
+
+      ---
+
       -   .lg\\\\:prose-lg {
       +   .lg\\\\:markdown-lg {
 
@@ -21804,7 +22473,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
       -
       -   .lg\\\\:prose-red a {
       -     color: #dc2626;
@@ -21848,9 +22516,7 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-purple a {
       -     color: #7c3aed;
-
-      ---
-
+      -   }
       -
       -   .lg\\\\:prose-purple a code {
       -     color: #7c3aed;
@@ -21883,6 +22549,51 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .xl\\\\:prose strong {
       +   .xl\\\\:markdown strong {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='A'] {
+      +   .xl\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='a'] {
+      +   .xl\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='A s'] {
+      +   .xl\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='a s'] {
+      +   .xl\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='I'] {
+      +   .xl\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='i'] {
+      +   .xl\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='I s'] {
+      +   .xl\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='i s'] {
+      +   .xl\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .xl\\\\:prose ol[type='1'] {
+      +   .xl\\\\:markdown ol[type='1'] {
 
       ---
 
@@ -22226,12 +22937,15 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   }
+      -
       -   .xl\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
       -     margin-top: 0.6666667em;
-      -   }
-      -
+
+      ---
+
       -   .xl\\\\:prose-sm code {
       -     font-size: 0.8571429em;
       -   }
@@ -23075,9 +23789,7 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-indigo a {
       -     color: #4f46e5;
-
-      ---
-
+      -   }
       -
       -   .xl\\\\:prose-indigo a code {
       -     color: #4f46e5;
@@ -23093,7 +23805,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-pink a {
       -     color: #db2777;
-      -   }
+
+      ---
+
       -
       -   .xl\\\\:prose-pink a code {
       -     color: #db2777;
@@ -23118,6 +23832,51 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .\\\\32xl\\\\:prose strong {
       +   .\\\\32xl\\\\:markdown strong {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='A'] {
+      +   .\\\\32xl\\\\:markdown ol[type='A'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='a'] {
+      +   .\\\\32xl\\\\:markdown ol[type='a'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='A s'] {
+      +   .\\\\32xl\\\\:markdown ol[type='A s'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='a s'] {
+      +   .\\\\32xl\\\\:markdown ol[type='a s'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='I'] {
+      +   .\\\\32xl\\\\:markdown ol[type='I'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='i'] {
+      +   .\\\\32xl\\\\:markdown ol[type='i'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='I s'] {
+      +   .\\\\32xl\\\\:markdown ol[type='I s'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='i s'] {
+      +   .\\\\32xl\\\\:markdown ol[type='i s'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose ol[type='1'] {
+      +   .\\\\32xl\\\\:markdown ol[type='1'] {
 
       ---
 
@@ -23341,46 +24100,53 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .\\\\32xl\\\\:prose hr + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown hr + * {
+
+      ---
+
       -   .\\\\32xl\\\\:prose h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown h2 + * {
+
+      ---
+
       -   .\\\\32xl\\\\:prose h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown h3 + * {
+
+      ---
+
       -   .\\\\32xl\\\\:prose h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown h4 + * {
+
+      ---
+
       -   .\\\\32xl\\\\:prose thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown thead th:first-child {
+
+      ---
+
       -   .\\\\32xl\\\\:prose thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown thead th:last-child {
+
+      ---
+
       -   .\\\\32xl\\\\:prose tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown tbody td:first-child {
+
+      ---
+
       -   .\\\\32xl\\\\:prose tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown tbody td:last-child {
+
+      ---
+
       -   .\\\\32xl\\\\:prose > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .\\\\32xl\\\\:markdown > :first-child {
+
+      ---
+
       -   .\\\\32xl\\\\:prose > :last-child {
-      -     margin-bottom: 0;
+      +   .\\\\32xl\\\\:markdown > :last-child {
 
       ---
 
@@ -23450,10 +24216,7 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm figure > * {
-      +   .\\\\32xl\\\\:markdown hr + * {
-
-      ---
-
+      -     margin-top: 0;
       -     margin-bottom: 0;
       -   }
       -
@@ -23473,9 +24236,8 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .\\\\32xl\\\\:prose-sm h3 code {
       -     font-size: 0.8888889em;
-
-      ---
-
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm pre {
       -     font-size: 0.8571429em;
       -     line-height: 1.6666667;
@@ -23554,24 +24316,19 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm hr + * {
-      +   .\\\\32xl\\\\:markdown h2 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm h2 + * {
-      +   .\\\\32xl\\\\:markdown h3 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm h3 + * {
       -     margin-top: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm h4 + * {
-      +   .\\\\32xl\\\\:markdown h4 + * {
-
-      ---
-
+      -     margin-top: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm table {
@@ -23583,19 +24340,16 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-
-      ---
-
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm thead th:first-child {
-      +   .\\\\32xl\\\\:markdown thead th:first-child {
-
-      ---
-
+      -     padding-left: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm thead th:last-child {
-      +   .\\\\32xl\\\\:markdown thead th:last-child {
-
-      ---
-
+      -     padding-right: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
@@ -23604,25 +24358,21 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown tbody td:first-child {
-
-      ---
-
+      -     padding-left: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown tbody td:last-child {
-
-      ---
-
+      -     padding-right: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm > :first-child {
-      +   .\\\\32xl\\\\:markdown > :first-child {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm > :last-child {
-      +   .\\\\32xl\\\\:markdown > :last-child {
-
-      ---
-
+      -     margin-bottom: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-lg {
       +   .\\\\32xl\\\\:markdown-lg {
 
