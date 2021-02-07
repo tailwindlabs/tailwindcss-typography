@@ -63,11 +63,11 @@ it('should generate the default classes for the typography components', async ()
       --list-counter-style: lower-alpha;
     }
 
-    .prose ol[type=\\"A s\\"] {
+    .prose ol[type=\\"A\\" s] {
       --list-counter-style: upper-alpha;
     }
 
-    .prose ol[type=\\"a s\\"] {
+    .prose ol[type=\\"a\\" s] {
       --list-counter-style: lower-alpha;
     }
 
@@ -79,11 +79,11 @@ it('should generate the default classes for the typography components', async ()
       --list-counter-style: lower-roman;
     }
 
-    .prose ol[type=\\"I s\\"] {
+    .prose ol[type=\\"I\\" s] {
       --list-counter-style: upper-roman;
     }
 
-    .prose ol[type=\\"i s\\"] {
+    .prose ol[type=\\"i\\" s] {
       --list-counter-style: lower-roman;
     }
 
@@ -1383,11 +1383,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-alpha;
       }
 
-      .sm\\\\:prose ol[type=\\"A s\\"] {
+      .sm\\\\:prose ol[type=\\"A\\" s] {
         --list-counter-style: upper-alpha;
       }
 
-      .sm\\\\:prose ol[type=\\"a s\\"] {
+      .sm\\\\:prose ol[type=\\"a\\" s] {
         --list-counter-style: lower-alpha;
       }
 
@@ -1399,11 +1399,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-roman;
       }
 
-      .sm\\\\:prose ol[type=\\"I s\\"] {
+      .sm\\\\:prose ol[type=\\"I\\" s] {
         --list-counter-style: upper-roman;
       }
 
-      .sm\\\\:prose ol[type=\\"i s\\"] {
+      .sm\\\\:prose ol[type=\\"i\\" s] {
         --list-counter-style: lower-roman;
       }
 
@@ -2704,11 +2704,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-alpha;
       }
 
-      .md\\\\:prose ol[type=\\"A s\\"] {
+      .md\\\\:prose ol[type=\\"A\\" s] {
         --list-counter-style: upper-alpha;
       }
 
-      .md\\\\:prose ol[type=\\"a s\\"] {
+      .md\\\\:prose ol[type=\\"a\\" s] {
         --list-counter-style: lower-alpha;
       }
 
@@ -2720,11 +2720,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-roman;
       }
 
-      .md\\\\:prose ol[type=\\"I s\\"] {
+      .md\\\\:prose ol[type=\\"I\\" s] {
         --list-counter-style: upper-roman;
       }
 
-      .md\\\\:prose ol[type=\\"i s\\"] {
+      .md\\\\:prose ol[type=\\"i\\" s] {
         --list-counter-style: lower-roman;
       }
 
@@ -4025,11 +4025,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-alpha;
       }
 
-      .lg\\\\:prose ol[type=\\"A s\\"] {
+      .lg\\\\:prose ol[type=\\"A\\" s] {
         --list-counter-style: upper-alpha;
       }
 
-      .lg\\\\:prose ol[type=\\"a s\\"] {
+      .lg\\\\:prose ol[type=\\"a\\" s] {
         --list-counter-style: lower-alpha;
       }
 
@@ -4041,11 +4041,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-roman;
       }
 
-      .lg\\\\:prose ol[type=\\"I s\\"] {
+      .lg\\\\:prose ol[type=\\"I\\" s] {
         --list-counter-style: upper-roman;
       }
 
-      .lg\\\\:prose ol[type=\\"i s\\"] {
+      .lg\\\\:prose ol[type=\\"i\\" s] {
         --list-counter-style: lower-roman;
       }
 
@@ -5346,11 +5346,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-alpha;
       }
 
-      .xl\\\\:prose ol[type=\\"A s\\"] {
+      .xl\\\\:prose ol[type=\\"A\\" s] {
         --list-counter-style: upper-alpha;
       }
 
-      .xl\\\\:prose ol[type=\\"a s\\"] {
+      .xl\\\\:prose ol[type=\\"a\\" s] {
         --list-counter-style: lower-alpha;
       }
 
@@ -5362,11 +5362,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-roman;
       }
 
-      .xl\\\\:prose ol[type=\\"I s\\"] {
+      .xl\\\\:prose ol[type=\\"I\\" s] {
         --list-counter-style: upper-roman;
       }
 
-      .xl\\\\:prose ol[type=\\"i s\\"] {
+      .xl\\\\:prose ol[type=\\"i\\" s] {
         --list-counter-style: lower-roman;
       }
 
@@ -6667,11 +6667,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-alpha;
       }
 
-      .\\\\32xl\\\\:prose ol[type=\\"A s\\"] {
+      .\\\\32xl\\\\:prose ol[type=\\"A\\" s] {
         --list-counter-style: upper-alpha;
       }
 
-      .\\\\32xl\\\\:prose ol[type=\\"a s\\"] {
+      .\\\\32xl\\\\:prose ol[type=\\"a\\" s] {
         --list-counter-style: lower-alpha;
       }
 
@@ -6683,11 +6683,11 @@ it('should generate the default classes for the typography components', async ()
         --list-counter-style: lower-roman;
       }
 
-      .\\\\32xl\\\\:prose ol[type=\\"I s\\"] {
+      .\\\\32xl\\\\:prose ol[type=\\"I\\" s] {
         --list-counter-style: upper-roman;
       }
 
-      .\\\\32xl\\\\:prose ol[type=\\"i s\\"] {
+      .\\\\32xl\\\\:prose ol[type=\\"i\\" s] {
         --list-counter-style: lower-roman;
       }
 
@@ -7991,13 +7991,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose ol[type='A s'] {
-      + .markdown ol[type='A s'] {
+      - .prose ol[type='A' s] {
+      + .markdown ol[type='A' s] {
 
       ---
 
-      - .prose ol[type='a s'] {
-      + .markdown ol[type='a s'] {
+      - .prose ol[type='a' s] {
+      + .markdown ol[type='a' s] {
 
       ---
 
@@ -8011,13 +8011,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose ol[type='I s'] {
-      + .markdown ol[type='I s'] {
+      - .prose ol[type='I' s] {
+      + .markdown ol[type='I' s] {
 
       ---
 
-      - .prose ol[type='i s'] {
-      + .markdown ol[type='i s'] {
+      - .prose ol[type='i' s] {
+      + .markdown ol[type='i' s] {
 
       ---
 
@@ -9276,13 +9276,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose ol[type='A s'] {
-      +   .sm\\\\:markdown ol[type='A s'] {
+      -   .sm\\\\:prose ol[type='A' s] {
+      +   .sm\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .sm\\\\:prose ol[type='a s'] {
-      +   .sm\\\\:markdown ol[type='a s'] {
+      -   .sm\\\\:prose ol[type='a' s] {
+      +   .sm\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -9296,13 +9296,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose ol[type='I s'] {
-      +   .sm\\\\:markdown ol[type='I s'] {
+      -   .sm\\\\:prose ol[type='I' s] {
+      +   .sm\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .sm\\\\:prose ol[type='i s'] {
-      +   .sm\\\\:markdown ol[type='i s'] {
+      -   .sm\\\\:prose ol[type='i' s] {
+      +   .sm\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -10561,13 +10561,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose ol[type='A s'] {
-      +   .md\\\\:markdown ol[type='A s'] {
+      -   .md\\\\:prose ol[type='A' s] {
+      +   .md\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .md\\\\:prose ol[type='a s'] {
-      +   .md\\\\:markdown ol[type='a s'] {
+      -   .md\\\\:prose ol[type='a' s] {
+      +   .md\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -10581,13 +10581,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose ol[type='I s'] {
-      +   .md\\\\:markdown ol[type='I s'] {
+      -   .md\\\\:prose ol[type='I' s] {
+      +   .md\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .md\\\\:prose ol[type='i s'] {
-      +   .md\\\\:markdown ol[type='i s'] {
+      -   .md\\\\:prose ol[type='i' s] {
+      +   .md\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -11846,13 +11846,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose ol[type='A s'] {
-      +   .lg\\\\:markdown ol[type='A s'] {
+      -   .lg\\\\:prose ol[type='A' s] {
+      +   .lg\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .lg\\\\:prose ol[type='a s'] {
-      +   .lg\\\\:markdown ol[type='a s'] {
+      -   .lg\\\\:prose ol[type='a' s] {
+      +   .lg\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -11866,13 +11866,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose ol[type='I s'] {
-      +   .lg\\\\:markdown ol[type='I s'] {
+      -   .lg\\\\:prose ol[type='I' s] {
+      +   .lg\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .lg\\\\:prose ol[type='i s'] {
-      +   .lg\\\\:markdown ol[type='i s'] {
+      -   .lg\\\\:prose ol[type='i' s] {
+      +   .lg\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -13131,13 +13131,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose ol[type='A s'] {
-      +   .xl\\\\:markdown ol[type='A s'] {
+      -   .xl\\\\:prose ol[type='A' s] {
+      +   .xl\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .xl\\\\:prose ol[type='a s'] {
-      +   .xl\\\\:markdown ol[type='a s'] {
+      -   .xl\\\\:prose ol[type='a' s] {
+      +   .xl\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -13151,13 +13151,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose ol[type='I s'] {
-      +   .xl\\\\:markdown ol[type='I s'] {
+      -   .xl\\\\:prose ol[type='I' s] {
+      +   .xl\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .xl\\\\:prose ol[type='i s'] {
-      +   .xl\\\\:markdown ol[type='i s'] {
+      -   .xl\\\\:prose ol[type='i' s] {
+      +   .xl\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -14416,13 +14416,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol[type='A s'] {
-      +   .\\\\32xl\\\\:markdown ol[type='A s'] {
+      -   .\\\\32xl\\\\:prose ol[type='A' s] {
+      +   .\\\\32xl\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol[type='a s'] {
-      +   .\\\\32xl\\\\:markdown ol[type='a s'] {
+      -   .\\\\32xl\\\\:prose ol[type='a' s] {
+      +   .\\\\32xl\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -14436,13 +14436,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol[type='I s'] {
-      +   .\\\\32xl\\\\:markdown ol[type='I s'] {
+      -   .\\\\32xl\\\\:prose ol[type='I' s] {
+      +   .\\\\32xl\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol[type='i s'] {
-      +   .\\\\32xl\\\\:markdown ol[type='i s'] {
+      -   .\\\\32xl\\\\:prose ol[type='i' s] {
+      +   .\\\\32xl\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -17430,13 +17430,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose ol[type='A s'] {
-      + .markdown ol[type='A s'] {
+      - .prose ol[type='A' s] {
+      + .markdown ol[type='A' s] {
 
       ---
 
-      - .prose ol[type='a s'] {
-      + .markdown ol[type='a s'] {
+      - .prose ol[type='a' s] {
+      + .markdown ol[type='a' s] {
 
       ---
 
@@ -17450,13 +17450,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose ol[type='I s'] {
-      + .markdown ol[type='I s'] {
+      - .prose ol[type='I' s] {
+      + .markdown ol[type='I' s] {
 
       ---
 
-      - .prose ol[type='i s'] {
-      + .markdown ol[type='i s'] {
+      - .prose ol[type='i' s] {
+      + .markdown ol[type='i' s] {
 
       ---
 
@@ -18713,13 +18713,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose ol[type='A s'] {
-      +   .sm\\\\:markdown ol[type='A s'] {
+      -   .sm\\\\:prose ol[type='A' s] {
+      +   .sm\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .sm\\\\:prose ol[type='a s'] {
-      +   .sm\\\\:markdown ol[type='a s'] {
+      -   .sm\\\\:prose ol[type='a' s] {
+      +   .sm\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -18733,13 +18733,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose ol[type='I s'] {
-      +   .sm\\\\:markdown ol[type='I s'] {
+      -   .sm\\\\:prose ol[type='I' s] {
+      +   .sm\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .sm\\\\:prose ol[type='i s'] {
-      +   .sm\\\\:markdown ol[type='i s'] {
+      -   .sm\\\\:prose ol[type='i' s] {
+      +   .sm\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -20002,13 +20002,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose ol[type='A s'] {
-      +   .md\\\\:markdown ol[type='A s'] {
+      -   .md\\\\:prose ol[type='A' s] {
+      +   .md\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .md\\\\:prose ol[type='a s'] {
-      +   .md\\\\:markdown ol[type='a s'] {
+      -   .md\\\\:prose ol[type='a' s] {
+      +   .md\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -20022,13 +20022,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose ol[type='I s'] {
-      +   .md\\\\:markdown ol[type='I s'] {
+      -   .md\\\\:prose ol[type='I' s] {
+      +   .md\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .md\\\\:prose ol[type='i s'] {
-      +   .md\\\\:markdown ol[type='i s'] {
+      -   .md\\\\:prose ol[type='i' s] {
+      +   .md\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -21282,13 +21282,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose ol[type='A s'] {
-      +   .lg\\\\:markdown ol[type='A s'] {
+      -   .lg\\\\:prose ol[type='A' s] {
+      +   .lg\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .lg\\\\:prose ol[type='a s'] {
-      +   .lg\\\\:markdown ol[type='a s'] {
+      -   .lg\\\\:prose ol[type='a' s] {
+      +   .lg\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -21302,13 +21302,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose ol[type='I s'] {
-      +   .lg\\\\:markdown ol[type='I s'] {
+      -   .lg\\\\:prose ol[type='I' s] {
+      +   .lg\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .lg\\\\:prose ol[type='i s'] {
-      +   .lg\\\\:markdown ol[type='i s'] {
+      -   .lg\\\\:prose ol[type='i' s] {
+      +   .lg\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -22562,13 +22562,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose ol[type='A s'] {
-      +   .xl\\\\:markdown ol[type='A s'] {
+      -   .xl\\\\:prose ol[type='A' s] {
+      +   .xl\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .xl\\\\:prose ol[type='a s'] {
-      +   .xl\\\\:markdown ol[type='a s'] {
+      -   .xl\\\\:prose ol[type='a' s] {
+      +   .xl\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -22582,13 +22582,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose ol[type='I s'] {
-      +   .xl\\\\:markdown ol[type='I s'] {
+      -   .xl\\\\:prose ol[type='I' s] {
+      +   .xl\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .xl\\\\:prose ol[type='i s'] {
-      +   .xl\\\\:markdown ol[type='i s'] {
+      -   .xl\\\\:prose ol[type='i' s] {
+      +   .xl\\\\:markdown ol[type='i' s] {
 
       ---
 
@@ -23845,13 +23845,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol[type='A s'] {
-      +   .\\\\32xl\\\\:markdown ol[type='A s'] {
+      -   .\\\\32xl\\\\:prose ol[type='A' s] {
+      +   .\\\\32xl\\\\:markdown ol[type='A' s] {
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol[type='a s'] {
-      +   .\\\\32xl\\\\:markdown ol[type='a s'] {
+      -   .\\\\32xl\\\\:prose ol[type='a' s] {
+      +   .\\\\32xl\\\\:markdown ol[type='a' s] {
 
       ---
 
@@ -23865,13 +23865,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol[type='I s'] {
-      +   .\\\\32xl\\\\:markdown ol[type='I s'] {
+      -   .\\\\32xl\\\\:prose ol[type='I' s] {
+      +   .\\\\32xl\\\\:markdown ol[type='I' s] {
 
       ---
 
-      -   .\\\\32xl\\\\:prose ol[type='i s'] {
-      +   .\\\\32xl\\\\:markdown ol[type='i s'] {
+      -   .\\\\32xl\\\\:prose ol[type='i' s] {
+      +   .\\\\32xl\\\\:markdown ol[type='i' s] {
 
       ---
 
