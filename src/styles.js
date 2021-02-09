@@ -84,12 +84,6 @@ module.exports = (theme) => ({
           borderLeftColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
           quotes: '"\\201C""\\201D""\\2018""\\2019"',
         },
-        'blockquote p:first-of-type::before': {
-          content: 'open-quote',
-        },
-        'blockquote p:last-of-type::after': {
-          content: 'close-quote',
-        },
         h1: {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '800',
