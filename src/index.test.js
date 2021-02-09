@@ -8008,16 +8008,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose blockquote p:first-of-type::before {
-      + .markdown blockquote p:first-of-type::before {
-
-      ---
-
-      - .prose blockquote p:last-of-type::after {
-      + .markdown blockquote p:last-of-type::after {
-
-      ---
-
       - .prose h1 {
       + .markdown h1 {
 
