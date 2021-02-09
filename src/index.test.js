@@ -139,14 +139,6 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1em;
     }
 
-    .prose blockquote p:first-of-type::before {
-      content: open-quote;
-    }
-
-    .prose blockquote p:last-of-type::after {
-      content: close-quote;
-    }
-
     .prose h1 {
       color: #111827;
       font-weight: 800;
@@ -1457,14 +1449,6 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 1.6em;
         margin-bottom: 1.6em;
         padding-left: 1em;
-      }
-
-      .sm\\\\:prose blockquote p:first-of-type::before {
-        content: open-quote;
-      }
-
-      .sm\\\\:prose blockquote p:last-of-type::after {
-        content: close-quote;
       }
 
       .sm\\\\:prose h1 {
@@ -2780,14 +2764,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .md\\\\:prose blockquote p:first-of-type::before {
-        content: open-quote;
-      }
-
-      .md\\\\:prose blockquote p:last-of-type::after {
-        content: close-quote;
-      }
-
       .md\\\\:prose h1 {
         color: #111827;
         font-weight: 800;
@@ -4099,14 +4075,6 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 1.6em;
         margin-bottom: 1.6em;
         padding-left: 1em;
-      }
-
-      .lg\\\\:prose blockquote p:first-of-type::before {
-        content: open-quote;
-      }
-
-      .lg\\\\:prose blockquote p:last-of-type::after {
-        content: close-quote;
       }
 
       .lg\\\\:prose h1 {
@@ -5422,14 +5390,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .xl\\\\:prose blockquote p:first-of-type::before {
-        content: open-quote;
-      }
-
-      .xl\\\\:prose blockquote p:last-of-type::after {
-        content: close-quote;
-      }
-
       .xl\\\\:prose h1 {
         color: #111827;
         font-weight: 800;
@@ -6741,14 +6701,6 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 1.6em;
         margin-bottom: 1.6em;
         padding-left: 1em;
-      }
-
-      .\\\\32xl\\\\:prose blockquote p:first-of-type::before {
-        content: open-quote;
-      }
-
-      .\\\\32xl\\\\:prose blockquote p:last-of-type::after {
-        content: close-quote;
       }
 
       .\\\\32xl\\\\:prose h1 {
