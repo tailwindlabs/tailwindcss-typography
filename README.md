@@ -347,3 +347,11 @@ module.exports = {
   },
 }
 ```
+
+### Supporting Dark Mode
+
+If you'd like to support dark mode, you can use the configuration tools above. The [Tailwind Playground](https://play.tailwindcss.com/xTOjz3kR3m?file=config) provides one option for supporting dark mode quickly. The steps are:
+
+1. Enable dark mode in Tailwind, documented here: https://tailwindcss.com/docs/dark-mode
+2. Add a "light" text modifier for the plugin, documented here: https://github.com/tailwindlabs/tailwindcss-typography#adding-new-modifiers
+3. Enable the "dark" variant for the typography plugin, documented here: https://tailwindcss.com/docs/dark-mode#enabling-for-other-utilities
