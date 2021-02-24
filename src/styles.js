@@ -489,18 +489,6 @@ module.exports = (theme) => ({
           marginTop: em(40, 14),
           marginBottom: em(40, 14),
         },
-        'hr + *': {
-          marginTop: '0',
-        },
-        'h2 + *': {
-          marginTop: '0',
-        },
-        'h3 + *': {
-          marginTop: '0',
-        },
-        'h4 + *': {
-          marginTop: '0',
-        },
         table: {
           fontSize: em(12, 14),
           lineHeight: round(18 / 12),
@@ -653,18 +641,6 @@ module.exports = (theme) => ({
         hr: {
           marginTop: em(56, 18),
           marginBottom: em(56, 18),
-        },
-        'hr + *': {
-          marginTop: '0',
-        },
-        'h2 + *': {
-          marginTop: '0',
-        },
-        'h3 + *': {
-          marginTop: '0',
-        },
-        'h4 + *': {
-          marginTop: '0',
         },
         table: {
           fontSize: em(16, 18),
@@ -819,18 +795,6 @@ module.exports = (theme) => ({
           marginTop: em(56, 20),
           marginBottom: em(56, 20),
         },
-        'hr + *': {
-          marginTop: '0',
-        },
-        'h2 + *': {
-          marginTop: '0',
-        },
-        'h3 + *': {
-          marginTop: '0',
-        },
-        'h4 + *': {
-          marginTop: '0',
-        },
         table: {
           fontSize: em(18, 20),
           lineHeight: round(28 / 18),
@@ -983,18 +947,6 @@ module.exports = (theme) => ({
         hr: {
           marginTop: em(72, 24),
           marginBottom: em(72, 24),
-        },
-        'hr + *': {
-          marginTop: '0',
-        },
-        'h2 + *': {
-          marginTop: '0',
-        },
-        'h3 + *': {
-          marginTop: '0',
-        },
-        'h4 + *': {
-          marginTop: '0',
         },
         table: {
           fontSize: em(20, 24),
