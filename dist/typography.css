@@ -434,11 +434,6 @@
   margin-bottom: 1.7142857em;
 }
 
-.prose-sm figure > * {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .prose-sm figure figcaption {
   font-size: 0.8571429em;
   line-height: 1.3333333;
@@ -611,11 +606,6 @@
 .prose-lg figure {
   margin-top: 1.7777778em;
   margin-bottom: 1.7777778em;
-}
-
-.prose-lg figure > * {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .prose-lg figure figcaption {
@@ -792,11 +782,6 @@
   margin-bottom: 2em;
 }
 
-.prose-xl figure > * {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .prose-xl figure figcaption {
   font-size: 0.9em;
   line-height: 1.5555556;
@@ -969,11 +954,6 @@
 .prose-2xl figure {
   margin-top: 2em;
   margin-bottom: 2em;
-}
-
-.prose-2xl figure > * {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .prose-2xl figure figcaption {
@@ -1578,11 +1558,6 @@
     margin-bottom: 1.7142857em;
   }
 
-  .sm\:prose-sm figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .sm\:prose-sm figure figcaption {
     font-size: 0.8571429em;
     line-height: 1.3333333;
@@ -1755,11 +1730,6 @@
   .sm\:prose-lg figure {
     margin-top: 1.7777778em;
     margin-bottom: 1.7777778em;
-  }
-
-  .sm\:prose-lg figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .sm\:prose-lg figure figcaption {
@@ -1936,11 +1906,6 @@
     margin-bottom: 2em;
   }
 
-  .sm\:prose-xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .sm\:prose-xl figure figcaption {
     font-size: 0.9em;
     line-height: 1.5555556;
@@ -2113,11 +2078,6 @@
   .sm\:prose-2xl figure {
     margin-top: 2em;
     margin-bottom: 2em;
-  }
-
-  .sm\:prose-2xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .sm\:prose-2xl figure figcaption {
@@ -2723,11 +2683,6 @@
     margin-bottom: 1.7142857em;
   }
 
-  .md\:prose-sm figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .md\:prose-sm figure figcaption {
     font-size: 0.8571429em;
     line-height: 1.3333333;
@@ -2900,11 +2855,6 @@
   .md\:prose-lg figure {
     margin-top: 1.7777778em;
     margin-bottom: 1.7777778em;
-  }
-
-  .md\:prose-lg figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .md\:prose-lg figure figcaption {
@@ -3081,11 +3031,6 @@
     margin-bottom: 2em;
   }
 
-  .md\:prose-xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .md\:prose-xl figure figcaption {
     font-size: 0.9em;
     line-height: 1.5555556;
@@ -3258,11 +3203,6 @@
   .md\:prose-2xl figure {
     margin-top: 2em;
     margin-bottom: 2em;
-  }
-
-  .md\:prose-2xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .md\:prose-2xl figure figcaption {
@@ -3868,11 +3808,6 @@
     margin-bottom: 1.7142857em;
   }
 
-  .lg\:prose-sm figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .lg\:prose-sm figure figcaption {
     font-size: 0.8571429em;
     line-height: 1.3333333;
@@ -4045,11 +3980,6 @@
   .lg\:prose-lg figure {
     margin-top: 1.7777778em;
     margin-bottom: 1.7777778em;
-  }
-
-  .lg\:prose-lg figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .lg\:prose-lg figure figcaption {
@@ -4226,11 +4156,6 @@
     margin-bottom: 2em;
   }
 
-  .lg\:prose-xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .lg\:prose-xl figure figcaption {
     font-size: 0.9em;
     line-height: 1.5555556;
@@ -4403,11 +4328,6 @@
   .lg\:prose-2xl figure {
     margin-top: 2em;
     margin-bottom: 2em;
-  }
-
-  .lg\:prose-2xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .lg\:prose-2xl figure figcaption {
@@ -5013,11 +4933,6 @@
     margin-bottom: 1.7142857em;
   }
 
-  .xl\:prose-sm figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .xl\:prose-sm figure figcaption {
     font-size: 0.8571429em;
     line-height: 1.3333333;
@@ -5190,11 +5105,6 @@
   .xl\:prose-lg figure {
     margin-top: 1.7777778em;
     margin-bottom: 1.7777778em;
-  }
-
-  .xl\:prose-lg figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .xl\:prose-lg figure figcaption {
@@ -5371,11 +5281,6 @@
     margin-bottom: 2em;
   }
 
-  .xl\:prose-xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .xl\:prose-xl figure figcaption {
     font-size: 0.9em;
     line-height: 1.5555556;
@@ -5548,11 +5453,6 @@
   .xl\:prose-2xl figure {
     margin-top: 2em;
     margin-bottom: 2em;
-  }
-
-  .xl\:prose-2xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .xl\:prose-2xl figure figcaption {
@@ -6158,11 +6058,6 @@
     margin-bottom: 1.7142857em;
   }
 
-  .\32xl\:prose-sm figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .\32xl\:prose-sm figure figcaption {
     font-size: 0.8571429em;
     line-height: 1.3333333;
@@ -6335,11 +6230,6 @@
   .\32xl\:prose-lg figure {
     margin-top: 1.7777778em;
     margin-bottom: 1.7777778em;
-  }
-
-  .\32xl\:prose-lg figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .\32xl\:prose-lg figure figcaption {
@@ -6516,11 +6406,6 @@
     margin-bottom: 2em;
   }
 
-  .\32xl\:prose-xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   .\32xl\:prose-xl figure figcaption {
     font-size: 0.9em;
     line-height: 1.5555556;
@@ -6693,11 +6578,6 @@
   .\32xl\:prose-2xl figure {
     margin-top: 2em;
     margin-bottom: 2em;
-  }
-
-  .\32xl\:prose-2xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .\32xl\:prose-2xl figure figcaption {

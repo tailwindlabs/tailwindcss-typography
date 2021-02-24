@@ -409,10 +409,6 @@ module.exports = (theme) => ({
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
         },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
         'figure figcaption': {
           fontSize: em(12, 14),
           lineHeight: round(16 / 12),
@@ -558,10 +554,6 @@ module.exports = (theme) => ({
         figure: {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
         },
         'figure figcaption': {
           fontSize: em(16, 18),
@@ -709,10 +701,6 @@ module.exports = (theme) => ({
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
         },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
         'figure figcaption': {
           fontSize: em(18, 20),
           lineHeight: round(28 / 18),
@@ -858,10 +846,6 @@ module.exports = (theme) => ({
         figure: {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
         },
         'figure figcaption': {
           fontSize: em(20, 24),
