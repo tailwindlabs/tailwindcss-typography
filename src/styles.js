@@ -529,14 +529,6 @@ module.exports = (theme) => ({
           paddingRight: '0',
         },
       },
-      {
-        '> :first-child': {
-          marginTop: '0',
-        },
-        '> :last-child': {
-          marginBottom: '0',
-        },
-      },
     ],
   },
   lg: {
@@ -712,14 +704,6 @@ module.exports = (theme) => ({
         },
         'tbody td:last-child': {
           paddingRight: '0',
-        },
-      },
-      {
-        '> :first-child': {
-          marginTop: '0',
-        },
-        '> :last-child': {
-          marginBottom: '0',
         },
       },
     ],
@@ -899,14 +883,6 @@ module.exports = (theme) => ({
           paddingRight: '0',
         },
       },
-      {
-        '> :first-child': {
-          marginTop: '0',
-        },
-        '> :last-child': {
-          marginBottom: '0',
-        },
-      },
     ],
   },
   '2xl': {
@@ -1082,14 +1058,6 @@ module.exports = (theme) => ({
         },
         'tbody td:last-child': {
           paddingRight: '0',
-        },
-      },
-      {
-        '> :first-child': {
-          marginTop: '0',
-        },
-        '> :last-child': {
-          marginBottom: '0',
         },
       },
     ],

@@ -584,14 +584,6 @@
   padding-right: 0;
 }
 
-.prose-sm > :first-child {
-  margin-top: 0;
-}
-
-.prose-sm > :last-child {
-  margin-bottom: 0;
-}
-
 .prose-lg {
   font-size: 1.125rem;
   line-height: 1.7777778;
@@ -805,14 +797,6 @@
 
 .prose-lg tbody td:last-child {
   padding-right: 0;
-}
-
-.prose-lg > :first-child {
-  margin-top: 0;
-}
-
-.prose-lg > :last-child {
-  margin-bottom: 0;
 }
 
 .prose-xl {
@@ -1030,14 +1014,6 @@
   padding-right: 0;
 }
 
-.prose-xl > :first-child {
-  margin-top: 0;
-}
-
-.prose-xl > :last-child {
-  margin-bottom: 0;
-}
-
 .prose-2xl {
   font-size: 1.5rem;
   line-height: 1.6666667;
@@ -1251,14 +1227,6 @@
 
 .prose-2xl tbody td:last-child {
   padding-right: 0;
-}
-
-.prose-2xl > :first-child {
-  margin-top: 0;
-}
-
-.prose-2xl > :last-child {
-  margin-bottom: 0;
 }
 
 .prose-red a {
@@ -1904,14 +1872,6 @@
     padding-right: 0;
   }
 
-  .sm\:prose-sm > :first-child {
-    margin-top: 0;
-  }
-
-  .sm\:prose-sm > :last-child {
-    margin-bottom: 0;
-  }
-
   .sm\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -2125,14 +2085,6 @@
 
   .sm\:prose-lg tbody td:last-child {
     padding-right: 0;
-  }
-
-  .sm\:prose-lg > :first-child {
-    margin-top: 0;
-  }
-
-  .sm\:prose-lg > :last-child {
-    margin-bottom: 0;
   }
 
   .sm\:prose-xl {
@@ -2350,14 +2302,6 @@
     padding-right: 0;
   }
 
-  .sm\:prose-xl > :first-child {
-    margin-top: 0;
-  }
-
-  .sm\:prose-xl > :last-child {
-    margin-bottom: 0;
-  }
-
   .sm\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -2571,14 +2515,6 @@
 
   .sm\:prose-2xl tbody td:last-child {
     padding-right: 0;
-  }
-
-  .sm\:prose-2xl > :first-child {
-    margin-top: 0;
-  }
-
-  .sm\:prose-2xl > :last-child {
-    margin-bottom: 0;
   }
 
   .sm\:prose-red a {
@@ -3225,14 +3161,6 @@
     padding-right: 0;
   }
 
-  .md\:prose-sm > :first-child {
-    margin-top: 0;
-  }
-
-  .md\:prose-sm > :last-child {
-    margin-bottom: 0;
-  }
-
   .md\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -3446,14 +3374,6 @@
 
   .md\:prose-lg tbody td:last-child {
     padding-right: 0;
-  }
-
-  .md\:prose-lg > :first-child {
-    margin-top: 0;
-  }
-
-  .md\:prose-lg > :last-child {
-    margin-bottom: 0;
   }
 
   .md\:prose-xl {
@@ -3671,14 +3591,6 @@
     padding-right: 0;
   }
 
-  .md\:prose-xl > :first-child {
-    margin-top: 0;
-  }
-
-  .md\:prose-xl > :last-child {
-    margin-bottom: 0;
-  }
-
   .md\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -3892,14 +3804,6 @@
 
   .md\:prose-2xl tbody td:last-child {
     padding-right: 0;
-  }
-
-  .md\:prose-2xl > :first-child {
-    margin-top: 0;
-  }
-
-  .md\:prose-2xl > :last-child {
-    margin-bottom: 0;
   }
 
   .md\:prose-red a {
@@ -4546,14 +4450,6 @@
     padding-right: 0;
   }
 
-  .lg\:prose-sm > :first-child {
-    margin-top: 0;
-  }
-
-  .lg\:prose-sm > :last-child {
-    margin-bottom: 0;
-  }
-
   .lg\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -4767,14 +4663,6 @@
 
   .lg\:prose-lg tbody td:last-child {
     padding-right: 0;
-  }
-
-  .lg\:prose-lg > :first-child {
-    margin-top: 0;
-  }
-
-  .lg\:prose-lg > :last-child {
-    margin-bottom: 0;
   }
 
   .lg\:prose-xl {
@@ -4992,14 +4880,6 @@
     padding-right: 0;
   }
 
-  .lg\:prose-xl > :first-child {
-    margin-top: 0;
-  }
-
-  .lg\:prose-xl > :last-child {
-    margin-bottom: 0;
-  }
-
   .lg\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -5213,14 +5093,6 @@
 
   .lg\:prose-2xl tbody td:last-child {
     padding-right: 0;
-  }
-
-  .lg\:prose-2xl > :first-child {
-    margin-top: 0;
-  }
-
-  .lg\:prose-2xl > :last-child {
-    margin-bottom: 0;
   }
 
   .lg\:prose-red a {
@@ -5867,14 +5739,6 @@
     padding-right: 0;
   }
 
-  .xl\:prose-sm > :first-child {
-    margin-top: 0;
-  }
-
-  .xl\:prose-sm > :last-child {
-    margin-bottom: 0;
-  }
-
   .xl\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -6088,14 +5952,6 @@
 
   .xl\:prose-lg tbody td:last-child {
     padding-right: 0;
-  }
-
-  .xl\:prose-lg > :first-child {
-    margin-top: 0;
-  }
-
-  .xl\:prose-lg > :last-child {
-    margin-bottom: 0;
   }
 
   .xl\:prose-xl {
@@ -6313,14 +6169,6 @@
     padding-right: 0;
   }
 
-  .xl\:prose-xl > :first-child {
-    margin-top: 0;
-  }
-
-  .xl\:prose-xl > :last-child {
-    margin-bottom: 0;
-  }
-
   .xl\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -6534,14 +6382,6 @@
 
   .xl\:prose-2xl tbody td:last-child {
     padding-right: 0;
-  }
-
-  .xl\:prose-2xl > :first-child {
-    margin-top: 0;
-  }
-
-  .xl\:prose-2xl > :last-child {
-    margin-bottom: 0;
   }
 
   .xl\:prose-red a {
@@ -7188,14 +7028,6 @@
     padding-right: 0;
   }
 
-  .\32xl\:prose-sm > :first-child {
-    margin-top: 0;
-  }
-
-  .\32xl\:prose-sm > :last-child {
-    margin-bottom: 0;
-  }
-
   .\32xl\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -7409,14 +7241,6 @@
 
   .\32xl\:prose-lg tbody td:last-child {
     padding-right: 0;
-  }
-
-  .\32xl\:prose-lg > :first-child {
-    margin-top: 0;
-  }
-
-  .\32xl\:prose-lg > :last-child {
-    margin-bottom: 0;
   }
 
   .\32xl\:prose-xl {
@@ -7634,14 +7458,6 @@
     padding-right: 0;
   }
 
-  .\32xl\:prose-xl > :first-child {
-    margin-top: 0;
-  }
-
-  .\32xl\:prose-xl > :last-child {
-    margin-bottom: 0;
-  }
-
   .\32xl\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -7855,14 +7671,6 @@
 
   .\32xl\:prose-2xl tbody td:last-child {
     padding-right: 0;
-  }
-
-  .\32xl\:prose-2xl > :first-child {
-    margin-top: 0;
-  }
-
-  .\32xl\:prose-2xl > :last-child {
-    margin-bottom: 0;
   }
 
   .\32xl\:prose-red a {
