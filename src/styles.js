@@ -510,12 +510,6 @@ module.exports = (theme) => ({
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
         },
-        'thead th:first-child': {
-          paddingLeft: '0',
-        },
-        'thead th:last-child': {
-          paddingRight: '0',
-        },
         'tbody td': {
           paddingTop: em(8, 12),
           paddingRight: em(12, 12),
@@ -680,12 +674,6 @@ module.exports = (theme) => ({
           paddingRight: em(12, 16),
           paddingBottom: em(12, 16),
           paddingLeft: em(12, 16),
-        },
-        'thead th:first-child': {
-          paddingLeft: '0',
-        },
-        'thead th:last-child': {
-          paddingRight: '0',
         },
         'tbody td': {
           paddingTop: em(12, 16),
@@ -852,12 +840,6 @@ module.exports = (theme) => ({
           paddingBottom: em(16, 18),
           paddingLeft: em(12, 18),
         },
-        'thead th:first-child': {
-          paddingLeft: '0',
-        },
-        'thead th:last-child': {
-          paddingRight: '0',
-        },
         'tbody td': {
           paddingTop: em(16, 18),
           paddingRight: em(12, 18),
@@ -1022,12 +1004,6 @@ module.exports = (theme) => ({
           paddingRight: em(12, 20),
           paddingBottom: em(16, 20),
           paddingLeft: em(12, 20),
-        },
-        'thead th:first-child': {
-          paddingLeft: '0',
-        },
-        'thead th:last-child': {
-          paddingRight: '0',
         },
         'tbody td': {
           paddingTop: em(16, 20),

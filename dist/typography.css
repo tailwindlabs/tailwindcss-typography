@@ -561,14 +561,6 @@
   padding-left: 1em;
 }
 
-.prose-sm thead th:first-child {
-  padding-left: 0;
-}
-
-.prose-sm thead th:last-child {
-  padding-right: 0;
-}
-
 .prose-sm tbody td {
   padding-top: 0.6666667em;
   padding-right: 1em;
@@ -766,14 +758,6 @@
   padding-right: 0.75em;
   padding-bottom: 0.75em;
   padding-left: 0.75em;
-}
-
-.prose-lg thead th:first-child {
-  padding-left: 0;
-}
-
-.prose-lg thead th:last-child {
-  padding-right: 0;
 }
 
 .prose-lg tbody td {
@@ -975,14 +959,6 @@
   padding-left: 0.6666667em;
 }
 
-.prose-xl thead th:first-child {
-  padding-left: 0;
-}
-
-.prose-xl thead th:last-child {
-  padding-right: 0;
-}
-
 .prose-xl tbody td {
   padding-top: 0.8888889em;
   padding-right: 0.6666667em;
@@ -1180,14 +1156,6 @@
   padding-right: 0.6em;
   padding-bottom: 0.8em;
   padding-left: 0.6em;
-}
-
-.prose-2xl thead th:first-child {
-  padding-left: 0;
-}
-
-.prose-2xl thead th:last-child {
-  padding-right: 0;
 }
 
 .prose-2xl tbody td {
@@ -1817,14 +1785,6 @@
     padding-left: 1em;
   }
 
-  .sm\:prose-sm thead th:first-child {
-    padding-left: 0;
-  }
-
-  .sm\:prose-sm thead th:last-child {
-    padding-right: 0;
-  }
-
   .sm\:prose-sm tbody td {
     padding-top: 0.6666667em;
     padding-right: 1em;
@@ -2022,14 +1982,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .sm\:prose-lg thead th:first-child {
-    padding-left: 0;
-  }
-
-  .sm\:prose-lg thead th:last-child {
-    padding-right: 0;
   }
 
   .sm\:prose-lg tbody td {
@@ -2231,14 +2183,6 @@
     padding-left: 0.6666667em;
   }
 
-  .sm\:prose-xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .sm\:prose-xl thead th:last-child {
-    padding-right: 0;
-  }
-
   .sm\:prose-xl tbody td {
     padding-top: 0.8888889em;
     padding-right: 0.6666667em;
@@ -2436,14 +2380,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .sm\:prose-2xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .sm\:prose-2xl thead th:last-child {
-    padding-right: 0;
   }
 
   .sm\:prose-2xl tbody td {
@@ -3074,14 +3010,6 @@
     padding-left: 1em;
   }
 
-  .md\:prose-sm thead th:first-child {
-    padding-left: 0;
-  }
-
-  .md\:prose-sm thead th:last-child {
-    padding-right: 0;
-  }
-
   .md\:prose-sm tbody td {
     padding-top: 0.6666667em;
     padding-right: 1em;
@@ -3279,14 +3207,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .md\:prose-lg thead th:first-child {
-    padding-left: 0;
-  }
-
-  .md\:prose-lg thead th:last-child {
-    padding-right: 0;
   }
 
   .md\:prose-lg tbody td {
@@ -3488,14 +3408,6 @@
     padding-left: 0.6666667em;
   }
 
-  .md\:prose-xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .md\:prose-xl thead th:last-child {
-    padding-right: 0;
-  }
-
   .md\:prose-xl tbody td {
     padding-top: 0.8888889em;
     padding-right: 0.6666667em;
@@ -3693,14 +3605,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .md\:prose-2xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .md\:prose-2xl thead th:last-child {
-    padding-right: 0;
   }
 
   .md\:prose-2xl tbody td {
@@ -4331,14 +4235,6 @@
     padding-left: 1em;
   }
 
-  .lg\:prose-sm thead th:first-child {
-    padding-left: 0;
-  }
-
-  .lg\:prose-sm thead th:last-child {
-    padding-right: 0;
-  }
-
   .lg\:prose-sm tbody td {
     padding-top: 0.6666667em;
     padding-right: 1em;
@@ -4536,14 +4432,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .lg\:prose-lg thead th:first-child {
-    padding-left: 0;
-  }
-
-  .lg\:prose-lg thead th:last-child {
-    padding-right: 0;
   }
 
   .lg\:prose-lg tbody td {
@@ -4745,14 +4633,6 @@
     padding-left: 0.6666667em;
   }
 
-  .lg\:prose-xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .lg\:prose-xl thead th:last-child {
-    padding-right: 0;
-  }
-
   .lg\:prose-xl tbody td {
     padding-top: 0.8888889em;
     padding-right: 0.6666667em;
@@ -4950,14 +4830,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .lg\:prose-2xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .lg\:prose-2xl thead th:last-child {
-    padding-right: 0;
   }
 
   .lg\:prose-2xl tbody td {
@@ -5588,14 +5460,6 @@
     padding-left: 1em;
   }
 
-  .xl\:prose-sm thead th:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-sm thead th:last-child {
-    padding-right: 0;
-  }
-
   .xl\:prose-sm tbody td {
     padding-top: 0.6666667em;
     padding-right: 1em;
@@ -5793,14 +5657,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .xl\:prose-lg thead th:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-lg thead th:last-child {
-    padding-right: 0;
   }
 
   .xl\:prose-lg tbody td {
@@ -6002,14 +5858,6 @@
     padding-left: 0.6666667em;
   }
 
-  .xl\:prose-xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-xl thead th:last-child {
-    padding-right: 0;
-  }
-
   .xl\:prose-xl tbody td {
     padding-top: 0.8888889em;
     padding-right: 0.6666667em;
@@ -6207,14 +6055,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .xl\:prose-2xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-2xl thead th:last-child {
-    padding-right: 0;
   }
 
   .xl\:prose-2xl tbody td {
@@ -6845,14 +6685,6 @@
     padding-left: 1em;
   }
 
-  .\32xl\:prose-sm thead th:first-child {
-    padding-left: 0;
-  }
-
-  .\32xl\:prose-sm thead th:last-child {
-    padding-right: 0;
-  }
-
   .\32xl\:prose-sm tbody td {
     padding-top: 0.6666667em;
     padding-right: 1em;
@@ -7050,14 +6882,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .\32xl\:prose-lg thead th:first-child {
-    padding-left: 0;
-  }
-
-  .\32xl\:prose-lg thead th:last-child {
-    padding-right: 0;
   }
 
   .\32xl\:prose-lg tbody td {
@@ -7259,14 +7083,6 @@
     padding-left: 0.6666667em;
   }
 
-  .\32xl\:prose-xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .\32xl\:prose-xl thead th:last-child {
-    padding-right: 0;
-  }
-
   .\32xl\:prose-xl tbody td {
     padding-top: 0.8888889em;
     padding-right: 0.6666667em;
@@ -7464,14 +7280,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .\32xl\:prose-2xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .\32xl\:prose-2xl thead th:last-child {
-    padding-right: 0;
   }
 
   .\32xl\:prose-2xl tbody td {
