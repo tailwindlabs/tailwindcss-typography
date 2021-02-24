@@ -453,9 +453,6 @@ module.exports = (theme) => ({
         'ol > li': {
           paddingLeft: em(22, 14),
         },
-        'ol > li::before': {
-          left: '0',
-        },
         'ul > li': {
           paddingLeft: em(22, 14),
         },
@@ -605,9 +602,6 @@ module.exports = (theme) => ({
         },
         'ol > li': {
           paddingLeft: em(30, 18),
-        },
-        'ol > li::before': {
-          left: '0',
         },
         'ul > li': {
           paddingLeft: em(30, 18),
@@ -759,9 +753,6 @@ module.exports = (theme) => ({
         'ol > li': {
           paddingLeft: em(36, 20),
         },
-        'ol > li::before': {
-          left: '0',
-        },
         'ul > li': {
           paddingLeft: em(36, 20),
         },
@@ -911,9 +902,6 @@ module.exports = (theme) => ({
         },
         'ol > li': {
           paddingLeft: em(40, 24),
-        },
-        'ol > li::before': {
-          left: '0',
         },
         'ul > li': {
           paddingLeft: em(40, 24),

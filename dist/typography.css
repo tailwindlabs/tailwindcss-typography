@@ -488,10 +488,6 @@
   padding-left: 1.5714286em;
 }
 
-.prose-sm ol > li::before {
-  left: 0;
-}
-
 .prose-sm ul > li {
   padding-left: 1.5714286em;
 }
@@ -669,10 +665,6 @@
 
 .prose-lg ol > li {
   padding-left: 1.6666667em;
-}
-
-.prose-lg ol > li::before {
-  left: 0;
 }
 
 .prose-lg ul > li {
@@ -854,10 +846,6 @@
   padding-left: 1.8em;
 }
 
-.prose-xl ol > li::before {
-  left: 0;
-}
-
 .prose-xl ul > li {
   padding-left: 1.8em;
 }
@@ -1035,10 +1023,6 @@
 
 .prose-2xl ol > li {
   padding-left: 1.6666667em;
-}
-
-.prose-2xl ol > li::before {
-  left: 0;
 }
 
 .prose-2xl ul > li {
@@ -1648,10 +1632,6 @@
     padding-left: 1.5714286em;
   }
 
-  .sm\:prose-sm ol > li::before {
-    left: 0;
-  }
-
   .sm\:prose-sm ul > li {
     padding-left: 1.5714286em;
   }
@@ -1829,10 +1809,6 @@
 
   .sm\:prose-lg ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .sm\:prose-lg ol > li::before {
-    left: 0;
   }
 
   .sm\:prose-lg ul > li {
@@ -2014,10 +1990,6 @@
     padding-left: 1.8em;
   }
 
-  .sm\:prose-xl ol > li::before {
-    left: 0;
-  }
-
   .sm\:prose-xl ul > li {
     padding-left: 1.8em;
   }
@@ -2195,10 +2167,6 @@
 
   .sm\:prose-2xl ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .sm\:prose-2xl ol > li::before {
-    left: 0;
   }
 
   .sm\:prose-2xl ul > li {
@@ -2809,10 +2777,6 @@
     padding-left: 1.5714286em;
   }
 
-  .md\:prose-sm ol > li::before {
-    left: 0;
-  }
-
   .md\:prose-sm ul > li {
     padding-left: 1.5714286em;
   }
@@ -2990,10 +2954,6 @@
 
   .md\:prose-lg ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .md\:prose-lg ol > li::before {
-    left: 0;
   }
 
   .md\:prose-lg ul > li {
@@ -3175,10 +3135,6 @@
     padding-left: 1.8em;
   }
 
-  .md\:prose-xl ol > li::before {
-    left: 0;
-  }
-
   .md\:prose-xl ul > li {
     padding-left: 1.8em;
   }
@@ -3356,10 +3312,6 @@
 
   .md\:prose-2xl ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .md\:prose-2xl ol > li::before {
-    left: 0;
   }
 
   .md\:prose-2xl ul > li {
@@ -3970,10 +3922,6 @@
     padding-left: 1.5714286em;
   }
 
-  .lg\:prose-sm ol > li::before {
-    left: 0;
-  }
-
   .lg\:prose-sm ul > li {
     padding-left: 1.5714286em;
   }
@@ -4151,10 +4099,6 @@
 
   .lg\:prose-lg ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .lg\:prose-lg ol > li::before {
-    left: 0;
   }
 
   .lg\:prose-lg ul > li {
@@ -4336,10 +4280,6 @@
     padding-left: 1.8em;
   }
 
-  .lg\:prose-xl ol > li::before {
-    left: 0;
-  }
-
   .lg\:prose-xl ul > li {
     padding-left: 1.8em;
   }
@@ -4517,10 +4457,6 @@
 
   .lg\:prose-2xl ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .lg\:prose-2xl ol > li::before {
-    left: 0;
   }
 
   .lg\:prose-2xl ul > li {
@@ -5131,10 +5067,6 @@
     padding-left: 1.5714286em;
   }
 
-  .xl\:prose-sm ol > li::before {
-    left: 0;
-  }
-
   .xl\:prose-sm ul > li {
     padding-left: 1.5714286em;
   }
@@ -5312,10 +5244,6 @@
 
   .xl\:prose-lg ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .xl\:prose-lg ol > li::before {
-    left: 0;
   }
 
   .xl\:prose-lg ul > li {
@@ -5497,10 +5425,6 @@
     padding-left: 1.8em;
   }
 
-  .xl\:prose-xl ol > li::before {
-    left: 0;
-  }
-
   .xl\:prose-xl ul > li {
     padding-left: 1.8em;
   }
@@ -5678,10 +5602,6 @@
 
   .xl\:prose-2xl ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .xl\:prose-2xl ol > li::before {
-    left: 0;
   }
 
   .xl\:prose-2xl ul > li {
@@ -6292,10 +6212,6 @@
     padding-left: 1.5714286em;
   }
 
-  .\32xl\:prose-sm ol > li::before {
-    left: 0;
-  }
-
   .\32xl\:prose-sm ul > li {
     padding-left: 1.5714286em;
   }
@@ -6473,10 +6389,6 @@
 
   .\32xl\:prose-lg ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .\32xl\:prose-lg ol > li::before {
-    left: 0;
   }
 
   .\32xl\:prose-lg ul > li {
@@ -6658,10 +6570,6 @@
     padding-left: 1.8em;
   }
 
-  .\32xl\:prose-xl ol > li::before {
-    left: 0;
-  }
-
   .\32xl\:prose-xl ul > li {
     padding-left: 1.8em;
   }
@@ -6839,10 +6747,6 @@
 
   .\32xl\:prose-2xl ol > li {
     padding-left: 1.6666667em;
-  }
-
-  .\32xl\:prose-2xl ol > li::before {
-    left: 0;
   }
 
   .\32xl\:prose-2xl ul > li {
