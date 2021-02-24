@@ -522,12 +522,6 @@ module.exports = (theme) => ({
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
         },
-        'tbody td:first-child': {
-          paddingLeft: '0',
-        },
-        'tbody td:last-child': {
-          paddingRight: '0',
-        },
       },
     ],
   },
@@ -698,12 +692,6 @@ module.exports = (theme) => ({
           paddingRight: em(12, 16),
           paddingBottom: em(12, 16),
           paddingLeft: em(12, 16),
-        },
-        'tbody td:first-child': {
-          paddingLeft: '0',
-        },
-        'tbody td:last-child': {
-          paddingRight: '0',
         },
       },
     ],
@@ -876,12 +864,6 @@ module.exports = (theme) => ({
           paddingBottom: em(16, 18),
           paddingLeft: em(12, 18),
         },
-        'tbody td:first-child': {
-          paddingLeft: '0',
-        },
-        'tbody td:last-child': {
-          paddingRight: '0',
-        },
       },
     ],
   },
@@ -1052,12 +1034,6 @@ module.exports = (theme) => ({
           paddingRight: em(12, 20),
           paddingBottom: em(16, 20),
           paddingLeft: em(12, 20),
-        },
-        'tbody td:first-child': {
-          paddingLeft: '0',
-        },
-        'tbody td:last-child': {
-          paddingRight: '0',
         },
       },
     ],

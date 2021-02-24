@@ -576,14 +576,6 @@
   padding-left: 1em;
 }
 
-.prose-sm tbody td:first-child {
-  padding-left: 0;
-}
-
-.prose-sm tbody td:last-child {
-  padding-right: 0;
-}
-
 .prose-lg {
   font-size: 1.125rem;
   line-height: 1.7777778;
@@ -789,14 +781,6 @@
   padding-right: 0.75em;
   padding-bottom: 0.75em;
   padding-left: 0.75em;
-}
-
-.prose-lg tbody td:first-child {
-  padding-left: 0;
-}
-
-.prose-lg tbody td:last-child {
-  padding-right: 0;
 }
 
 .prose-xl {
@@ -1006,14 +990,6 @@
   padding-left: 0.6666667em;
 }
 
-.prose-xl tbody td:first-child {
-  padding-left: 0;
-}
-
-.prose-xl tbody td:last-child {
-  padding-right: 0;
-}
-
 .prose-2xl {
   font-size: 1.5rem;
   line-height: 1.6666667;
@@ -1219,14 +1195,6 @@
   padding-right: 0.6em;
   padding-bottom: 0.8em;
   padding-left: 0.6em;
-}
-
-.prose-2xl tbody td:first-child {
-  padding-left: 0;
-}
-
-.prose-2xl tbody td:last-child {
-  padding-right: 0;
 }
 
 .prose-red a {
@@ -1864,14 +1832,6 @@
     padding-left: 1em;
   }
 
-  .sm\:prose-sm tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .sm\:prose-sm tbody td:last-child {
-    padding-right: 0;
-  }
-
   .sm\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -2077,14 +2037,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .sm\:prose-lg tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .sm\:prose-lg tbody td:last-child {
-    padding-right: 0;
   }
 
   .sm\:prose-xl {
@@ -2294,14 +2246,6 @@
     padding-left: 0.6666667em;
   }
 
-  .sm\:prose-xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .sm\:prose-xl tbody td:last-child {
-    padding-right: 0;
-  }
-
   .sm\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -2507,14 +2451,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .sm\:prose-2xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .sm\:prose-2xl tbody td:last-child {
-    padding-right: 0;
   }
 
   .sm\:prose-red a {
@@ -3153,14 +3089,6 @@
     padding-left: 1em;
   }
 
-  .md\:prose-sm tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .md\:prose-sm tbody td:last-child {
-    padding-right: 0;
-  }
-
   .md\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -3366,14 +3294,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .md\:prose-lg tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .md\:prose-lg tbody td:last-child {
-    padding-right: 0;
   }
 
   .md\:prose-xl {
@@ -3583,14 +3503,6 @@
     padding-left: 0.6666667em;
   }
 
-  .md\:prose-xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .md\:prose-xl tbody td:last-child {
-    padding-right: 0;
-  }
-
   .md\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -3796,14 +3708,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .md\:prose-2xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .md\:prose-2xl tbody td:last-child {
-    padding-right: 0;
   }
 
   .md\:prose-red a {
@@ -4442,14 +4346,6 @@
     padding-left: 1em;
   }
 
-  .lg\:prose-sm tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .lg\:prose-sm tbody td:last-child {
-    padding-right: 0;
-  }
-
   .lg\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -4655,14 +4551,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .lg\:prose-lg tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .lg\:prose-lg tbody td:last-child {
-    padding-right: 0;
   }
 
   .lg\:prose-xl {
@@ -4872,14 +4760,6 @@
     padding-left: 0.6666667em;
   }
 
-  .lg\:prose-xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .lg\:prose-xl tbody td:last-child {
-    padding-right: 0;
-  }
-
   .lg\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -5085,14 +4965,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .lg\:prose-2xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .lg\:prose-2xl tbody td:last-child {
-    padding-right: 0;
   }
 
   .lg\:prose-red a {
@@ -5731,14 +5603,6 @@
     padding-left: 1em;
   }
 
-  .xl\:prose-sm tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-sm tbody td:last-child {
-    padding-right: 0;
-  }
-
   .xl\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -5944,14 +5808,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .xl\:prose-lg tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-lg tbody td:last-child {
-    padding-right: 0;
   }
 
   .xl\:prose-xl {
@@ -6161,14 +6017,6 @@
     padding-left: 0.6666667em;
   }
 
-  .xl\:prose-xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-xl tbody td:last-child {
-    padding-right: 0;
-  }
-
   .xl\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -6374,14 +6222,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .xl\:prose-2xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-2xl tbody td:last-child {
-    padding-right: 0;
   }
 
   .xl\:prose-red a {
@@ -7020,14 +6860,6 @@
     padding-left: 1em;
   }
 
-  .\32xl\:prose-sm tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .\32xl\:prose-sm tbody td:last-child {
-    padding-right: 0;
-  }
-
   .\32xl\:prose-lg {
     font-size: 1.125rem;
     line-height: 1.7777778;
@@ -7233,14 +7065,6 @@
     padding-right: 0.75em;
     padding-bottom: 0.75em;
     padding-left: 0.75em;
-  }
-
-  .\32xl\:prose-lg tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .\32xl\:prose-lg tbody td:last-child {
-    padding-right: 0;
   }
 
   .\32xl\:prose-xl {
@@ -7450,14 +7274,6 @@
     padding-left: 0.6666667em;
   }
 
-  .\32xl\:prose-xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .\32xl\:prose-xl tbody td:last-child {
-    padding-right: 0;
-  }
-
   .\32xl\:prose-2xl {
     font-size: 1.5rem;
     line-height: 1.6666667;
@@ -7663,14 +7479,6 @@
     padding-right: 0.6em;
     padding-bottom: 0.8em;
     padding-left: 0.6em;
-  }
-
-  .\32xl\:prose-2xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .\32xl\:prose-2xl tbody td:last-child {
-    padding-right: 0;
   }
 
   .\32xl\:prose-red a {
