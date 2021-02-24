@@ -93,6 +93,7 @@ module.exports = (theme) => ({
         h1: {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '800',
+          marginTop: '0',
         },
         h2: {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
@@ -191,7 +192,6 @@ module.exports = (theme) => ({
         },
         h1: {
           fontSize: em(36, 16),
-          marginTop: '0',
           marginBottom: em(32, 36),
           lineHeight: round(40 / 36),
         },
@@ -376,7 +376,6 @@ module.exports = (theme) => ({
         },
         h1: {
           fontSize: em(30, 14),
-          marginTop: '0',
           marginBottom: em(24, 30),
           lineHeight: round(36 / 30),
         },
@@ -522,7 +521,6 @@ module.exports = (theme) => ({
         },
         h1: {
           fontSize: em(48, 18),
-          marginTop: '0',
           marginBottom: em(40, 48),
           lineHeight: round(48 / 48),
         },
@@ -668,7 +666,6 @@ module.exports = (theme) => ({
         },
         h1: {
           fontSize: em(56, 20),
-          marginTop: '0',
           marginBottom: em(48, 56),
           lineHeight: round(56 / 56),
         },
@@ -814,7 +811,6 @@ module.exports = (theme) => ({
         },
         h1: {
           fontSize: em(64, 24),
-          marginTop: '0',
           marginBottom: em(56, 64),
           lineHeight: round(64 / 64),
         },

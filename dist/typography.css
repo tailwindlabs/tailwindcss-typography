@@ -117,8 +117,8 @@
 .prose h1 {
   color: #111827;
   font-weight: 800;
-  font-size: 2.25em;
   margin-top: 0;
+  font-size: 2.25em;
   margin-bottom: 0.8888889em;
   line-height: 1.1111111;
 }
@@ -394,7 +394,6 @@
 
 .prose-sm h1 {
   font-size: 2.1428571em;
-  margin-top: 0;
   margin-bottom: 0.8em;
   line-height: 1.2;
 }
@@ -568,7 +567,6 @@
 
 .prose-lg h1 {
   font-size: 2.6666667em;
-  margin-top: 0;
   margin-bottom: 0.8333333em;
   line-height: 1;
 }
@@ -742,7 +740,6 @@
 
 .prose-xl h1 {
   font-size: 2.8em;
-  margin-top: 0;
   margin-bottom: 0.8571429em;
   line-height: 1;
 }
@@ -916,7 +913,6 @@
 
 .prose-2xl h1 {
   font-size: 2.6666667em;
-  margin-top: 0;
   margin-bottom: 0.875em;
   line-height: 1;
 }
@@ -1241,8 +1237,8 @@
   .sm\:prose h1 {
     color: #111827;
     font-weight: 800;
-    font-size: 2.25em;
     margin-top: 0;
+    font-size: 2.25em;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
   }
@@ -1518,7 +1514,6 @@
 
   .sm\:prose-sm h1 {
     font-size: 2.1428571em;
-    margin-top: 0;
     margin-bottom: 0.8em;
     line-height: 1.2;
   }
@@ -1692,7 +1687,6 @@
 
   .sm\:prose-lg h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.8333333em;
     line-height: 1;
   }
@@ -1866,7 +1860,6 @@
 
   .sm\:prose-xl h1 {
     font-size: 2.8em;
-    margin-top: 0;
     margin-bottom: 0.8571429em;
     line-height: 1;
   }
@@ -2040,7 +2033,6 @@
 
   .sm\:prose-2xl h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.875em;
     line-height: 1;
   }
@@ -2366,8 +2358,8 @@
   .md\:prose h1 {
     color: #111827;
     font-weight: 800;
-    font-size: 2.25em;
     margin-top: 0;
+    font-size: 2.25em;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
   }
@@ -2643,7 +2635,6 @@
 
   .md\:prose-sm h1 {
     font-size: 2.1428571em;
-    margin-top: 0;
     margin-bottom: 0.8em;
     line-height: 1.2;
   }
@@ -2817,7 +2808,6 @@
 
   .md\:prose-lg h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.8333333em;
     line-height: 1;
   }
@@ -2991,7 +2981,6 @@
 
   .md\:prose-xl h1 {
     font-size: 2.8em;
-    margin-top: 0;
     margin-bottom: 0.8571429em;
     line-height: 1;
   }
@@ -3165,7 +3154,6 @@
 
   .md\:prose-2xl h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.875em;
     line-height: 1;
   }
@@ -3491,8 +3479,8 @@
   .lg\:prose h1 {
     color: #111827;
     font-weight: 800;
-    font-size: 2.25em;
     margin-top: 0;
+    font-size: 2.25em;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
   }
@@ -3768,7 +3756,6 @@
 
   .lg\:prose-sm h1 {
     font-size: 2.1428571em;
-    margin-top: 0;
     margin-bottom: 0.8em;
     line-height: 1.2;
   }
@@ -3942,7 +3929,6 @@
 
   .lg\:prose-lg h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.8333333em;
     line-height: 1;
   }
@@ -4116,7 +4102,6 @@
 
   .lg\:prose-xl h1 {
     font-size: 2.8em;
-    margin-top: 0;
     margin-bottom: 0.8571429em;
     line-height: 1;
   }
@@ -4290,7 +4275,6 @@
 
   .lg\:prose-2xl h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.875em;
     line-height: 1;
   }
@@ -4616,8 +4600,8 @@
   .xl\:prose h1 {
     color: #111827;
     font-weight: 800;
-    font-size: 2.25em;
     margin-top: 0;
+    font-size: 2.25em;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
   }
@@ -4893,7 +4877,6 @@
 
   .xl\:prose-sm h1 {
     font-size: 2.1428571em;
-    margin-top: 0;
     margin-bottom: 0.8em;
     line-height: 1.2;
   }
@@ -5067,7 +5050,6 @@
 
   .xl\:prose-lg h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.8333333em;
     line-height: 1;
   }
@@ -5241,7 +5223,6 @@
 
   .xl\:prose-xl h1 {
     font-size: 2.8em;
-    margin-top: 0;
     margin-bottom: 0.8571429em;
     line-height: 1;
   }
@@ -5415,7 +5396,6 @@
 
   .xl\:prose-2xl h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.875em;
     line-height: 1;
   }
@@ -5741,8 +5721,8 @@
   .\32xl\:prose h1 {
     color: #111827;
     font-weight: 800;
-    font-size: 2.25em;
     margin-top: 0;
+    font-size: 2.25em;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
   }
@@ -6018,7 +5998,6 @@
 
   .\32xl\:prose-sm h1 {
     font-size: 2.1428571em;
-    margin-top: 0;
     margin-bottom: 0.8em;
     line-height: 1.2;
   }
@@ -6192,7 +6171,6 @@
 
   .\32xl\:prose-lg h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.8333333em;
     line-height: 1;
   }
@@ -6366,7 +6344,6 @@
 
   .\32xl\:prose-xl h1 {
     font-size: 2.8em;
-    margin-top: 0;
     margin-bottom: 0.8571429em;
     line-height: 1;
   }
@@ -6540,7 +6517,6 @@
 
   .\32xl\:prose-2xl h1 {
     font-size: 2.6666667em;
-    margin-top: 0;
     margin-bottom: 0.875em;
     line-height: 1;
   }
