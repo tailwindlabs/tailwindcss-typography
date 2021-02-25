@@ -13,6 +13,54 @@ module.exports = (theme) => ({
   DEFAULT: {
     css: [
       {
+        /*
+         * Begin variant override fields
+         *
+         * These are rules that override every variant for specific
+         * edge cases. These need to be !important because variant
+         * css classes are at a higher CSS specificity value than
+         * the generic `.prose` class.
+         */
+
+        'figure > *:not(figcaption)': {
+          marginTop: '0 !important',
+          marginBottom: '0 !important',
+        },
+        'hr + *': {
+          marginTop: '0 !important',
+        },
+        'h2 + *': {
+          marginTop: '0 !important',
+        },
+        'h3 + *': {
+          marginTop: '0 !important',
+        },
+        'h4 + *': {
+          marginTop: '0 !important',
+        },
+        'thead th:first-child': {
+          paddingLeft: '0 !important',
+        },
+        'thead th:last-child': {
+          paddingRight: '0 !important',
+        },
+        'tbody td:first-child': {
+          paddingLeft: '0 !important',
+        },
+        'tbody td:last-child': {
+          paddingRight: '0 !important',
+        },
+        '> :first-child': {
+          marginTop: '0 !important',
+        },
+        '> :last-child': {
+          marginBottom: '0 !important',
+        },
+
+        /*
+         * End variant override fields
+         */
+
         color: theme('colors.gray.700', defaultTheme.colors.gray[700]),
         maxWidth: '65ch',
         '[class~="lead"]': {
@@ -62,6 +110,7 @@ module.exports = (theme) => ({
           position: 'absolute',
           fontWeight: '400',
           color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
+          left: '0',
         },
         'ul > li': {
           position: 'relative',
@@ -224,10 +273,6 @@ module.exports = (theme) => ({
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
         'figure figcaption': {
           fontSize: em(14, 16),
           lineHeight: round(20 / 14),
@@ -268,9 +313,6 @@ module.exports = (theme) => ({
         'ol > li': {
           paddingLeft: em(28, 16),
         },
-        'ol > li::before': {
-          left: '0',
-        },
         'ul > li': {
           paddingLeft: em(28, 16),
         },
@@ -304,18 +346,6 @@ module.exports = (theme) => ({
           marginTop: em(48, 16),
           marginBottom: em(48, 16),
         },
-        'hr + *': {
-          marginTop: '0',
-        },
-        'h2 + *': {
-          marginTop: '0',
-        },
-        'h3 + *': {
-          marginTop: '0',
-        },
-        'h4 + *': {
-          marginTop: '0',
-        },
         table: {
           fontSize: em(14, 16),
           lineHeight: round(24 / 14),
@@ -325,31 +355,11 @@ module.exports = (theme) => ({
           paddingBottom: em(8, 14),
           paddingLeft: em(8, 14),
         },
-        'thead th:first-child': {
-          paddingLeft: '0',
-        },
-        'thead th:last-child': {
-          paddingRight: '0',
-        },
         'tbody td': {
           paddingTop: em(8, 14),
           paddingRight: em(8, 14),
           paddingBottom: em(8, 14),
           paddingLeft: em(8, 14),
-        },
-        'tbody td:first-child': {
-          paddingLeft: '0',
-        },
-        'tbody td:last-child': {
-          paddingRight: '0',
-        },
-      },
-      {
-        '> :first-child': {
-          marginTop: '0',
-        },
-        '> :last-child': {
-          marginBottom: '0',
         },
       },
     ],
