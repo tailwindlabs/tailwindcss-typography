@@ -31,7 +31,52 @@ async function diffOnly(options = {}, config = {}) {
 
 it('should generate the default classes for the typography components', async () => {
   expect(await run()).toMatchInlineSnapshot(`
-    ".prose {
+    ".prose figure > *:not(figcaption) {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    .prose hr + * {
+      margin-top: 0 !important;
+    }
+
+    .prose h2 + * {
+      margin-top: 0 !important;
+    }
+
+    .prose h3 + * {
+      margin-top: 0 !important;
+    }
+
+    .prose h4 + * {
+      margin-top: 0 !important;
+    }
+
+    .prose thead th:first-child {
+      padding-left: 0 !important;
+    }
+
+    .prose thead th:last-child {
+      padding-right: 0 !important;
+    }
+
+    .prose tbody td:first-child {
+      padding-left: 0 !important;
+    }
+
+    .prose tbody td:last-child {
+      padding-right: 0 !important;
+    }
+
+    .prose > :first-child {
+      margin-top: 0 !important;
+    }
+
+    .prose > :last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .prose {
       color: #374151;
       max-width: 65ch;
     }
@@ -150,8 +195,8 @@ it('should generate the default classes for the typography components', async ()
     .prose h1 {
       color: #111827;
       font-weight: 800;
-      font-size: 2.25em;
       margin-top: 0;
+      font-size: 2.25em;
       margin-bottom: 0.8888889em;
       line-height: 1.1111111;
     }
@@ -308,11 +353,6 @@ it('should generate the default classes for the typography components', async ()
       margin-bottom: 2em;
     }
 
-    .prose figure > * {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
     .prose h2 code {
       font-size: 0.875em;
     }
@@ -362,46 +402,6 @@ it('should generate the default classes for the typography components', async ()
       margin-bottom: 0.75em;
     }
 
-    .prose hr + * {
-      margin-top: 0;
-    }
-
-    .prose h2 + * {
-      margin-top: 0;
-    }
-
-    .prose h3 + * {
-      margin-top: 0;
-    }
-
-    .prose h4 + * {
-      margin-top: 0;
-    }
-
-    .prose thead th:first-child {
-      padding-left: 0;
-    }
-
-    .prose thead th:last-child {
-      padding-right: 0;
-    }
-
-    .prose tbody td:first-child {
-      padding-left: 0;
-    }
-
-    .prose tbody td:last-child {
-      padding-right: 0;
-    }
-
-    .prose > :first-child {
-      margin-top: 0;
-    }
-
-    .prose > :last-child {
-      margin-bottom: 0;
-    }
-
     .prose-sm {
       font-size: 0.875rem;
       line-height: 1.7142857;
@@ -427,7 +427,6 @@ it('should generate the default classes for the typography components', async ()
 
     .prose-sm h1 {
       font-size: 2.1428571em;
-      margin-top: 0;
       margin-bottom: 0.8em;
       line-height: 1.2;
     }
@@ -465,11 +464,6 @@ it('should generate the default classes for the typography components', async ()
     .prose-sm figure {
       margin-top: 1.7142857em;
       margin-bottom: 1.7142857em;
-    }
-
-    .prose-sm figure > * {
-      margin-top: 0;
-      margin-bottom: 0;
     }
 
     .prose-sm figure figcaption {
@@ -521,10 +515,6 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.5714286em;
     }
 
-    .prose-sm ol > li::before {
-      left: 0;
-    }
-
     .prose-sm ul > li {
       padding-left: 1.5714286em;
     }
@@ -567,22 +557,6 @@ it('should generate the default classes for the typography components', async ()
       margin-bottom: 2.8571429em;
     }
 
-    .prose-sm hr + * {
-      margin-top: 0;
-    }
-
-    .prose-sm h2 + * {
-      margin-top: 0;
-    }
-
-    .prose-sm h3 + * {
-      margin-top: 0;
-    }
-
-    .prose-sm h4 + * {
-      margin-top: 0;
-    }
-
     .prose-sm table {
       font-size: 0.8571429em;
       line-height: 1.5;
@@ -594,35 +568,11 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1em;
     }
 
-    .prose-sm thead th:first-child {
-      padding-left: 0;
-    }
-
-    .prose-sm thead th:last-child {
-      padding-right: 0;
-    }
-
     .prose-sm tbody td {
       padding-top: 0.6666667em;
       padding-right: 1em;
       padding-bottom: 0.6666667em;
       padding-left: 1em;
-    }
-
-    .prose-sm tbody td:first-child {
-      padding-left: 0;
-    }
-
-    .prose-sm tbody td:last-child {
-      padding-right: 0;
-    }
-
-    .prose-sm > :first-child {
-      margin-top: 0;
-    }
-
-    .prose-sm > :last-child {
-      margin-bottom: 0;
     }
 
     .prose-lg {
@@ -650,7 +600,6 @@ it('should generate the default classes for the typography components', async ()
 
     .prose-lg h1 {
       font-size: 2.6666667em;
-      margin-top: 0;
       margin-bottom: 0.8333333em;
       line-height: 1;
     }
@@ -688,11 +637,6 @@ it('should generate the default classes for the typography components', async ()
     .prose-lg figure {
       margin-top: 1.7777778em;
       margin-bottom: 1.7777778em;
-    }
-
-    .prose-lg figure > * {
-      margin-top: 0;
-      margin-bottom: 0;
     }
 
     .prose-lg figure figcaption {
@@ -744,10 +688,6 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
-    .prose-lg ol > li::before {
-      left: 0;
-    }
-
     .prose-lg ul > li {
       padding-left: 1.6666667em;
     }
@@ -790,22 +730,6 @@ it('should generate the default classes for the typography components', async ()
       margin-bottom: 3.1111111em;
     }
 
-    .prose-lg hr + * {
-      margin-top: 0;
-    }
-
-    .prose-lg h2 + * {
-      margin-top: 0;
-    }
-
-    .prose-lg h3 + * {
-      margin-top: 0;
-    }
-
-    .prose-lg h4 + * {
-      margin-top: 0;
-    }
-
     .prose-lg table {
       font-size: 0.8888889em;
       line-height: 1.5;
@@ -817,35 +741,11 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 0.75em;
     }
 
-    .prose-lg thead th:first-child {
-      padding-left: 0;
-    }
-
-    .prose-lg thead th:last-child {
-      padding-right: 0;
-    }
-
     .prose-lg tbody td {
       padding-top: 0.75em;
       padding-right: 0.75em;
       padding-bottom: 0.75em;
       padding-left: 0.75em;
-    }
-
-    .prose-lg tbody td:first-child {
-      padding-left: 0;
-    }
-
-    .prose-lg tbody td:last-child {
-      padding-right: 0;
-    }
-
-    .prose-lg > :first-child {
-      margin-top: 0;
-    }
-
-    .prose-lg > :last-child {
-      margin-bottom: 0;
     }
 
     .prose-xl {
@@ -873,7 +773,6 @@ it('should generate the default classes for the typography components', async ()
 
     .prose-xl h1 {
       font-size: 2.8em;
-      margin-top: 0;
       margin-bottom: 0.8571429em;
       line-height: 1;
     }
@@ -911,11 +810,6 @@ it('should generate the default classes for the typography components', async ()
     .prose-xl figure {
       margin-top: 2em;
       margin-bottom: 2em;
-    }
-
-    .prose-xl figure > * {
-      margin-top: 0;
-      margin-bottom: 0;
     }
 
     .prose-xl figure figcaption {
@@ -967,10 +861,6 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.8em;
     }
 
-    .prose-xl ol > li::before {
-      left: 0;
-    }
-
     .prose-xl ul > li {
       padding-left: 1.8em;
     }
@@ -1013,22 +903,6 @@ it('should generate the default classes for the typography components', async ()
       margin-bottom: 2.8em;
     }
 
-    .prose-xl hr + * {
-      margin-top: 0;
-    }
-
-    .prose-xl h2 + * {
-      margin-top: 0;
-    }
-
-    .prose-xl h3 + * {
-      margin-top: 0;
-    }
-
-    .prose-xl h4 + * {
-      margin-top: 0;
-    }
-
     .prose-xl table {
       font-size: 0.9em;
       line-height: 1.5555556;
@@ -1040,35 +914,11 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 0.6666667em;
     }
 
-    .prose-xl thead th:first-child {
-      padding-left: 0;
-    }
-
-    .prose-xl thead th:last-child {
-      padding-right: 0;
-    }
-
     .prose-xl tbody td {
       padding-top: 0.8888889em;
       padding-right: 0.6666667em;
       padding-bottom: 0.8888889em;
       padding-left: 0.6666667em;
-    }
-
-    .prose-xl tbody td:first-child {
-      padding-left: 0;
-    }
-
-    .prose-xl tbody td:last-child {
-      padding-right: 0;
-    }
-
-    .prose-xl > :first-child {
-      margin-top: 0;
-    }
-
-    .prose-xl > :last-child {
-      margin-bottom: 0;
     }
 
     .prose-2xl {
@@ -1096,7 +946,6 @@ it('should generate the default classes for the typography components', async ()
 
     .prose-2xl h1 {
       font-size: 2.6666667em;
-      margin-top: 0;
       margin-bottom: 0.875em;
       line-height: 1;
     }
@@ -1134,11 +983,6 @@ it('should generate the default classes for the typography components', async ()
     .prose-2xl figure {
       margin-top: 2em;
       margin-bottom: 2em;
-    }
-
-    .prose-2xl figure > * {
-      margin-top: 0;
-      margin-bottom: 0;
     }
 
     .prose-2xl figure figcaption {
@@ -1190,10 +1034,6 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
-    .prose-2xl ol > li::before {
-      left: 0;
-    }
-
     .prose-2xl ul > li {
       padding-left: 1.6666667em;
     }
@@ -1236,22 +1076,6 @@ it('should generate the default classes for the typography components', async ()
       margin-bottom: 3em;
     }
 
-    .prose-2xl hr + * {
-      margin-top: 0;
-    }
-
-    .prose-2xl h2 + * {
-      margin-top: 0;
-    }
-
-    .prose-2xl h3 + * {
-      margin-top: 0;
-    }
-
-    .prose-2xl h4 + * {
-      margin-top: 0;
-    }
-
     .prose-2xl table {
       font-size: 0.8333333em;
       line-height: 1.4;
@@ -1263,35 +1087,11 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 0.6em;
     }
 
-    .prose-2xl thead th:first-child {
-      padding-left: 0;
-    }
-
-    .prose-2xl thead th:last-child {
-      padding-right: 0;
-    }
-
     .prose-2xl tbody td {
       padding-top: 0.8em;
       padding-right: 0.6em;
       padding-bottom: 0.8em;
       padding-left: 0.6em;
-    }
-
-    .prose-2xl tbody td:first-child {
-      padding-left: 0;
-    }
-
-    .prose-2xl tbody td:last-child {
-      padding-right: 0;
-    }
-
-    .prose-2xl > :first-child {
-      margin-top: 0;
-    }
-
-    .prose-2xl > :last-child {
-      margin-bottom: 0;
     }
 
     .prose-red a {
@@ -1351,6 +1151,51 @@ it('should generate the default classes for the typography components', async ()
     }
 
     @media (min-width: 640px) {
+      .sm\\\\:prose figure > *:not(figcaption) {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      .sm\\\\:prose hr + * {
+        margin-top: 0 !important;
+      }
+
+      .sm\\\\:prose h2 + * {
+        margin-top: 0 !important;
+      }
+
+      .sm\\\\:prose h3 + * {
+        margin-top: 0 !important;
+      }
+
+      .sm\\\\:prose h4 + * {
+        margin-top: 0 !important;
+      }
+
+      .sm\\\\:prose thead th:first-child {
+        padding-left: 0 !important;
+      }
+
+      .sm\\\\:prose thead th:last-child {
+        padding-right: 0 !important;
+      }
+
+      .sm\\\\:prose tbody td:first-child {
+        padding-left: 0 !important;
+      }
+
+      .sm\\\\:prose tbody td:last-child {
+        padding-right: 0 !important;
+      }
+
+      .sm\\\\:prose > :first-child {
+        margin-top: 0 !important;
+      }
+
+      .sm\\\\:prose > :last-child {
+        margin-bottom: 0 !important;
+      }
+
       .sm\\\\:prose {
         color: #374151;
         max-width: 65ch;
@@ -1470,8 +1315,8 @@ it('should generate the default classes for the typography components', async ()
       .sm\\\\:prose h1 {
         color: #111827;
         font-weight: 800;
-        font-size: 2.25em;
         margin-top: 0;
+        font-size: 2.25em;
         margin-bottom: 0.8888889em;
         line-height: 1.1111111;
       }
@@ -1628,11 +1473,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2em;
       }
 
-      .sm\\\\:prose figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
       .sm\\\\:prose h2 code {
         font-size: 0.875em;
       }
@@ -1682,46 +1522,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .sm\\\\:prose hr + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose h2 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose h3 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose h4 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose thead th:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose thead th:last-child {
-        padding-right: 0;
-      }
-
-      .sm\\\\:prose tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .sm\\\\:prose > :first-child {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose > :last-child {
-        margin-bottom: 0;
-      }
-
       .sm\\\\:prose-sm {
         font-size: 0.875rem;
         line-height: 1.7142857;
@@ -1747,7 +1547,6 @@ it('should generate the default classes for the typography components', async ()
 
       .sm\\\\:prose-sm h1 {
         font-size: 2.1428571em;
-        margin-top: 0;
         margin-bottom: 0.8em;
         line-height: 1.2;
       }
@@ -1785,11 +1584,6 @@ it('should generate the default classes for the typography components', async ()
       .sm\\\\:prose-sm figure {
         margin-top: 1.7142857em;
         margin-bottom: 1.7142857em;
-      }
-
-      .sm\\\\:prose-sm figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .sm\\\\:prose-sm figure figcaption {
@@ -1841,10 +1635,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .sm\\\\:prose-sm ol > li::before {
-        left: 0;
-      }
-
       .sm\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
       }
@@ -1887,22 +1677,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8571429em;
       }
 
-      .sm\\\\:prose-sm hr + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-sm h2 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-sm h3 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-sm h4 + * {
-        margin-top: 0;
-      }
-
       .sm\\\\:prose-sm table {
         font-size: 0.8571429em;
         line-height: 1.5;
@@ -1914,35 +1688,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .sm\\\\:prose-sm thead th:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose-sm thead th:last-child {
-        padding-right: 0;
-      }
-
       .sm\\\\:prose-sm tbody td {
         padding-top: 0.6666667em;
         padding-right: 1em;
         padding-bottom: 0.6666667em;
         padding-left: 1em;
-      }
-
-      .sm\\\\:prose-sm tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose-sm tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .sm\\\\:prose-sm > :first-child {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-sm > :last-child {
-        margin-bottom: 0;
       }
 
       .sm\\\\:prose-lg {
@@ -1970,7 +1720,6 @@ it('should generate the default classes for the typography components', async ()
 
       .sm\\\\:prose-lg h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.8333333em;
         line-height: 1;
       }
@@ -2008,11 +1757,6 @@ it('should generate the default classes for the typography components', async ()
       .sm\\\\:prose-lg figure {
         margin-top: 1.7777778em;
         margin-bottom: 1.7777778em;
-      }
-
-      .sm\\\\:prose-lg figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .sm\\\\:prose-lg figure figcaption {
@@ -2064,10 +1808,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .sm\\\\:prose-lg ol > li::before {
-        left: 0;
-      }
-
       .sm\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
       }
@@ -2110,22 +1850,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3.1111111em;
       }
 
-      .sm\\\\:prose-lg hr + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-lg h2 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-lg h3 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-lg h4 + * {
-        margin-top: 0;
-      }
-
       .sm\\\\:prose-lg table {
         font-size: 0.8888889em;
         line-height: 1.5;
@@ -2137,35 +1861,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.75em;
       }
 
-      .sm\\\\:prose-lg thead th:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose-lg thead th:last-child {
-        padding-right: 0;
-      }
-
       .sm\\\\:prose-lg tbody td {
         padding-top: 0.75em;
         padding-right: 0.75em;
         padding-bottom: 0.75em;
         padding-left: 0.75em;
-      }
-
-      .sm\\\\:prose-lg tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose-lg tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .sm\\\\:prose-lg > :first-child {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-lg > :last-child {
-        margin-bottom: 0;
       }
 
       .sm\\\\:prose-xl {
@@ -2193,7 +1893,6 @@ it('should generate the default classes for the typography components', async ()
 
       .sm\\\\:prose-xl h1 {
         font-size: 2.8em;
-        margin-top: 0;
         margin-bottom: 0.8571429em;
         line-height: 1;
       }
@@ -2231,11 +1930,6 @@ it('should generate the default classes for the typography components', async ()
       .sm\\\\:prose-xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .sm\\\\:prose-xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .sm\\\\:prose-xl figure figcaption {
@@ -2287,10 +1981,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .sm\\\\:prose-xl ol > li::before {
-        left: 0;
-      }
-
       .sm\\\\:prose-xl ul > li {
         padding-left: 1.8em;
       }
@@ -2333,22 +2023,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8em;
       }
 
-      .sm\\\\:prose-xl hr + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-xl h2 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-xl h3 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-xl h4 + * {
-        margin-top: 0;
-      }
-
       .sm\\\\:prose-xl table {
         font-size: 0.9em;
         line-height: 1.5555556;
@@ -2360,35 +2034,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6666667em;
       }
 
-      .sm\\\\:prose-xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose-xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .sm\\\\:prose-xl tbody td {
         padding-top: 0.8888889em;
         padding-right: 0.6666667em;
         padding-bottom: 0.8888889em;
         padding-left: 0.6666667em;
-      }
-
-      .sm\\\\:prose-xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose-xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .sm\\\\:prose-xl > :first-child {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-xl > :last-child {
-        margin-bottom: 0;
       }
 
       .sm\\\\:prose-2xl {
@@ -2416,7 +2066,6 @@ it('should generate the default classes for the typography components', async ()
 
       .sm\\\\:prose-2xl h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.875em;
         line-height: 1;
       }
@@ -2454,11 +2103,6 @@ it('should generate the default classes for the typography components', async ()
       .sm\\\\:prose-2xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .sm\\\\:prose-2xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .sm\\\\:prose-2xl figure figcaption {
@@ -2510,10 +2154,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .sm\\\\:prose-2xl ol > li::before {
-        left: 0;
-      }
-
       .sm\\\\:prose-2xl ul > li {
         padding-left: 1.6666667em;
       }
@@ -2556,22 +2196,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3em;
       }
 
-      .sm\\\\:prose-2xl hr + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-2xl h2 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-2xl h3 + * {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-2xl h4 + * {
-        margin-top: 0;
-      }
-
       .sm\\\\:prose-2xl table {
         font-size: 0.8333333em;
         line-height: 1.4;
@@ -2583,35 +2207,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6em;
       }
 
-      .sm\\\\:prose-2xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose-2xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .sm\\\\:prose-2xl tbody td {
         padding-top: 0.8em;
         padding-right: 0.6em;
         padding-bottom: 0.8em;
         padding-left: 0.6em;
-      }
-
-      .sm\\\\:prose-2xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .sm\\\\:prose-2xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .sm\\\\:prose-2xl > :first-child {
-        margin-top: 0;
-      }
-
-      .sm\\\\:prose-2xl > :last-child {
-        margin-bottom: 0;
       }
 
       .sm\\\\:prose-red a {
@@ -2672,6 +2272,51 @@ it('should generate the default classes for the typography components', async ()
     }
 
     @media (min-width: 768px) {
+      .md\\\\:prose figure > *:not(figcaption) {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      .md\\\\:prose hr + * {
+        margin-top: 0 !important;
+      }
+
+      .md\\\\:prose h2 + * {
+        margin-top: 0 !important;
+      }
+
+      .md\\\\:prose h3 + * {
+        margin-top: 0 !important;
+      }
+
+      .md\\\\:prose h4 + * {
+        margin-top: 0 !important;
+      }
+
+      .md\\\\:prose thead th:first-child {
+        padding-left: 0 !important;
+      }
+
+      .md\\\\:prose thead th:last-child {
+        padding-right: 0 !important;
+      }
+
+      .md\\\\:prose tbody td:first-child {
+        padding-left: 0 !important;
+      }
+
+      .md\\\\:prose tbody td:last-child {
+        padding-right: 0 !important;
+      }
+
+      .md\\\\:prose > :first-child {
+        margin-top: 0 !important;
+      }
+
+      .md\\\\:prose > :last-child {
+        margin-bottom: 0 !important;
+      }
+
       .md\\\\:prose {
         color: #374151;
         max-width: 65ch;
@@ -2791,8 +2436,8 @@ it('should generate the default classes for the typography components', async ()
       .md\\\\:prose h1 {
         color: #111827;
         font-weight: 800;
-        font-size: 2.25em;
         margin-top: 0;
+        font-size: 2.25em;
         margin-bottom: 0.8888889em;
         line-height: 1.1111111;
       }
@@ -2949,11 +2594,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2em;
       }
 
-      .md\\\\:prose figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
       .md\\\\:prose h2 code {
         font-size: 0.875em;
       }
@@ -3003,46 +2643,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .md\\\\:prose hr + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose h2 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose h3 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose h4 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose thead th:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose thead th:last-child {
-        padding-right: 0;
-      }
-
-      .md\\\\:prose tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .md\\\\:prose > :first-child {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose > :last-child {
-        margin-bottom: 0;
-      }
-
       .md\\\\:prose-sm {
         font-size: 0.875rem;
         line-height: 1.7142857;
@@ -3068,7 +2668,6 @@ it('should generate the default classes for the typography components', async ()
 
       .md\\\\:prose-sm h1 {
         font-size: 2.1428571em;
-        margin-top: 0;
         margin-bottom: 0.8em;
         line-height: 1.2;
       }
@@ -3106,11 +2705,6 @@ it('should generate the default classes for the typography components', async ()
       .md\\\\:prose-sm figure {
         margin-top: 1.7142857em;
         margin-bottom: 1.7142857em;
-      }
-
-      .md\\\\:prose-sm figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .md\\\\:prose-sm figure figcaption {
@@ -3162,10 +2756,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .md\\\\:prose-sm ol > li::before {
-        left: 0;
-      }
-
       .md\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
       }
@@ -3208,22 +2798,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8571429em;
       }
 
-      .md\\\\:prose-sm hr + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-sm h2 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-sm h3 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-sm h4 + * {
-        margin-top: 0;
-      }
-
       .md\\\\:prose-sm table {
         font-size: 0.8571429em;
         line-height: 1.5;
@@ -3235,35 +2809,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .md\\\\:prose-sm thead th:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose-sm thead th:last-child {
-        padding-right: 0;
-      }
-
       .md\\\\:prose-sm tbody td {
         padding-top: 0.6666667em;
         padding-right: 1em;
         padding-bottom: 0.6666667em;
         padding-left: 1em;
-      }
-
-      .md\\\\:prose-sm tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose-sm tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .md\\\\:prose-sm > :first-child {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-sm > :last-child {
-        margin-bottom: 0;
       }
 
       .md\\\\:prose-lg {
@@ -3291,7 +2841,6 @@ it('should generate the default classes for the typography components', async ()
 
       .md\\\\:prose-lg h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.8333333em;
         line-height: 1;
       }
@@ -3329,11 +2878,6 @@ it('should generate the default classes for the typography components', async ()
       .md\\\\:prose-lg figure {
         margin-top: 1.7777778em;
         margin-bottom: 1.7777778em;
-      }
-
-      .md\\\\:prose-lg figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .md\\\\:prose-lg figure figcaption {
@@ -3385,10 +2929,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .md\\\\:prose-lg ol > li::before {
-        left: 0;
-      }
-
       .md\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
       }
@@ -3431,22 +2971,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3.1111111em;
       }
 
-      .md\\\\:prose-lg hr + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-lg h2 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-lg h3 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-lg h4 + * {
-        margin-top: 0;
-      }
-
       .md\\\\:prose-lg table {
         font-size: 0.8888889em;
         line-height: 1.5;
@@ -3458,35 +2982,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.75em;
       }
 
-      .md\\\\:prose-lg thead th:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose-lg thead th:last-child {
-        padding-right: 0;
-      }
-
       .md\\\\:prose-lg tbody td {
         padding-top: 0.75em;
         padding-right: 0.75em;
         padding-bottom: 0.75em;
         padding-left: 0.75em;
-      }
-
-      .md\\\\:prose-lg tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose-lg tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .md\\\\:prose-lg > :first-child {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-lg > :last-child {
-        margin-bottom: 0;
       }
 
       .md\\\\:prose-xl {
@@ -3514,7 +3014,6 @@ it('should generate the default classes for the typography components', async ()
 
       .md\\\\:prose-xl h1 {
         font-size: 2.8em;
-        margin-top: 0;
         margin-bottom: 0.8571429em;
         line-height: 1;
       }
@@ -3552,11 +3051,6 @@ it('should generate the default classes for the typography components', async ()
       .md\\\\:prose-xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .md\\\\:prose-xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .md\\\\:prose-xl figure figcaption {
@@ -3608,10 +3102,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .md\\\\:prose-xl ol > li::before {
-        left: 0;
-      }
-
       .md\\\\:prose-xl ul > li {
         padding-left: 1.8em;
       }
@@ -3654,22 +3144,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8em;
       }
 
-      .md\\\\:prose-xl hr + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-xl h2 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-xl h3 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-xl h4 + * {
-        margin-top: 0;
-      }
-
       .md\\\\:prose-xl table {
         font-size: 0.9em;
         line-height: 1.5555556;
@@ -3681,35 +3155,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6666667em;
       }
 
-      .md\\\\:prose-xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose-xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .md\\\\:prose-xl tbody td {
         padding-top: 0.8888889em;
         padding-right: 0.6666667em;
         padding-bottom: 0.8888889em;
         padding-left: 0.6666667em;
-      }
-
-      .md\\\\:prose-xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose-xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .md\\\\:prose-xl > :first-child {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-xl > :last-child {
-        margin-bottom: 0;
       }
 
       .md\\\\:prose-2xl {
@@ -3737,7 +3187,6 @@ it('should generate the default classes for the typography components', async ()
 
       .md\\\\:prose-2xl h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.875em;
         line-height: 1;
       }
@@ -3775,11 +3224,6 @@ it('should generate the default classes for the typography components', async ()
       .md\\\\:prose-2xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .md\\\\:prose-2xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .md\\\\:prose-2xl figure figcaption {
@@ -3831,10 +3275,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .md\\\\:prose-2xl ol > li::before {
-        left: 0;
-      }
-
       .md\\\\:prose-2xl ul > li {
         padding-left: 1.6666667em;
       }
@@ -3877,22 +3317,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3em;
       }
 
-      .md\\\\:prose-2xl hr + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-2xl h2 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-2xl h3 + * {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-2xl h4 + * {
-        margin-top: 0;
-      }
-
       .md\\\\:prose-2xl table {
         font-size: 0.8333333em;
         line-height: 1.4;
@@ -3904,35 +3328,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6em;
       }
 
-      .md\\\\:prose-2xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose-2xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .md\\\\:prose-2xl tbody td {
         padding-top: 0.8em;
         padding-right: 0.6em;
         padding-bottom: 0.8em;
         padding-left: 0.6em;
-      }
-
-      .md\\\\:prose-2xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .md\\\\:prose-2xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .md\\\\:prose-2xl > :first-child {
-        margin-top: 0;
-      }
-
-      .md\\\\:prose-2xl > :last-child {
-        margin-bottom: 0;
       }
 
       .md\\\\:prose-red a {
@@ -3993,6 +3393,51 @@ it('should generate the default classes for the typography components', async ()
     }
 
     @media (min-width: 1024px) {
+      .lg\\\\:prose figure > *:not(figcaption) {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      .lg\\\\:prose hr + * {
+        margin-top: 0 !important;
+      }
+
+      .lg\\\\:prose h2 + * {
+        margin-top: 0 !important;
+      }
+
+      .lg\\\\:prose h3 + * {
+        margin-top: 0 !important;
+      }
+
+      .lg\\\\:prose h4 + * {
+        margin-top: 0 !important;
+      }
+
+      .lg\\\\:prose thead th:first-child {
+        padding-left: 0 !important;
+      }
+
+      .lg\\\\:prose thead th:last-child {
+        padding-right: 0 !important;
+      }
+
+      .lg\\\\:prose tbody td:first-child {
+        padding-left: 0 !important;
+      }
+
+      .lg\\\\:prose tbody td:last-child {
+        padding-right: 0 !important;
+      }
+
+      .lg\\\\:prose > :first-child {
+        margin-top: 0 !important;
+      }
+
+      .lg\\\\:prose > :last-child {
+        margin-bottom: 0 !important;
+      }
+
       .lg\\\\:prose {
         color: #374151;
         max-width: 65ch;
@@ -4112,8 +3557,8 @@ it('should generate the default classes for the typography components', async ()
       .lg\\\\:prose h1 {
         color: #111827;
         font-weight: 800;
-        font-size: 2.25em;
         margin-top: 0;
+        font-size: 2.25em;
         margin-bottom: 0.8888889em;
         line-height: 1.1111111;
       }
@@ -4270,11 +3715,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2em;
       }
 
-      .lg\\\\:prose figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
       .lg\\\\:prose h2 code {
         font-size: 0.875em;
       }
@@ -4324,46 +3764,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .lg\\\\:prose hr + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose h2 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose h3 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose h4 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose thead th:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose thead th:last-child {
-        padding-right: 0;
-      }
-
-      .lg\\\\:prose tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .lg\\\\:prose > :first-child {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose > :last-child {
-        margin-bottom: 0;
-      }
-
       .lg\\\\:prose-sm {
         font-size: 0.875rem;
         line-height: 1.7142857;
@@ -4389,7 +3789,6 @@ it('should generate the default classes for the typography components', async ()
 
       .lg\\\\:prose-sm h1 {
         font-size: 2.1428571em;
-        margin-top: 0;
         margin-bottom: 0.8em;
         line-height: 1.2;
       }
@@ -4427,11 +3826,6 @@ it('should generate the default classes for the typography components', async ()
       .lg\\\\:prose-sm figure {
         margin-top: 1.7142857em;
         margin-bottom: 1.7142857em;
-      }
-
-      .lg\\\\:prose-sm figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .lg\\\\:prose-sm figure figcaption {
@@ -4483,10 +3877,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .lg\\\\:prose-sm ol > li::before {
-        left: 0;
-      }
-
       .lg\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
       }
@@ -4529,22 +3919,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8571429em;
       }
 
-      .lg\\\\:prose-sm hr + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-sm h2 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-sm h3 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-sm h4 + * {
-        margin-top: 0;
-      }
-
       .lg\\\\:prose-sm table {
         font-size: 0.8571429em;
         line-height: 1.5;
@@ -4556,35 +3930,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .lg\\\\:prose-sm thead th:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose-sm thead th:last-child {
-        padding-right: 0;
-      }
-
       .lg\\\\:prose-sm tbody td {
         padding-top: 0.6666667em;
         padding-right: 1em;
         padding-bottom: 0.6666667em;
         padding-left: 1em;
-      }
-
-      .lg\\\\:prose-sm tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose-sm tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .lg\\\\:prose-sm > :first-child {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-sm > :last-child {
-        margin-bottom: 0;
       }
 
       .lg\\\\:prose-lg {
@@ -4612,7 +3962,6 @@ it('should generate the default classes for the typography components', async ()
 
       .lg\\\\:prose-lg h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.8333333em;
         line-height: 1;
       }
@@ -4650,11 +3999,6 @@ it('should generate the default classes for the typography components', async ()
       .lg\\\\:prose-lg figure {
         margin-top: 1.7777778em;
         margin-bottom: 1.7777778em;
-      }
-
-      .lg\\\\:prose-lg figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .lg\\\\:prose-lg figure figcaption {
@@ -4706,10 +4050,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .lg\\\\:prose-lg ol > li::before {
-        left: 0;
-      }
-
       .lg\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
       }
@@ -4752,22 +4092,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3.1111111em;
       }
 
-      .lg\\\\:prose-lg hr + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-lg h2 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-lg h3 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-lg h4 + * {
-        margin-top: 0;
-      }
-
       .lg\\\\:prose-lg table {
         font-size: 0.8888889em;
         line-height: 1.5;
@@ -4779,35 +4103,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.75em;
       }
 
-      .lg\\\\:prose-lg thead th:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose-lg thead th:last-child {
-        padding-right: 0;
-      }
-
       .lg\\\\:prose-lg tbody td {
         padding-top: 0.75em;
         padding-right: 0.75em;
         padding-bottom: 0.75em;
         padding-left: 0.75em;
-      }
-
-      .lg\\\\:prose-lg tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose-lg tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .lg\\\\:prose-lg > :first-child {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-lg > :last-child {
-        margin-bottom: 0;
       }
 
       .lg\\\\:prose-xl {
@@ -4835,7 +4135,6 @@ it('should generate the default classes for the typography components', async ()
 
       .lg\\\\:prose-xl h1 {
         font-size: 2.8em;
-        margin-top: 0;
         margin-bottom: 0.8571429em;
         line-height: 1;
       }
@@ -4873,11 +4172,6 @@ it('should generate the default classes for the typography components', async ()
       .lg\\\\:prose-xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .lg\\\\:prose-xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .lg\\\\:prose-xl figure figcaption {
@@ -4929,10 +4223,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .lg\\\\:prose-xl ol > li::before {
-        left: 0;
-      }
-
       .lg\\\\:prose-xl ul > li {
         padding-left: 1.8em;
       }
@@ -4975,22 +4265,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8em;
       }
 
-      .lg\\\\:prose-xl hr + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-xl h2 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-xl h3 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-xl h4 + * {
-        margin-top: 0;
-      }
-
       .lg\\\\:prose-xl table {
         font-size: 0.9em;
         line-height: 1.5555556;
@@ -5002,35 +4276,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6666667em;
       }
 
-      .lg\\\\:prose-xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose-xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .lg\\\\:prose-xl tbody td {
         padding-top: 0.8888889em;
         padding-right: 0.6666667em;
         padding-bottom: 0.8888889em;
         padding-left: 0.6666667em;
-      }
-
-      .lg\\\\:prose-xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose-xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .lg\\\\:prose-xl > :first-child {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-xl > :last-child {
-        margin-bottom: 0;
       }
 
       .lg\\\\:prose-2xl {
@@ -5058,7 +4308,6 @@ it('should generate the default classes for the typography components', async ()
 
       .lg\\\\:prose-2xl h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.875em;
         line-height: 1;
       }
@@ -5096,11 +4345,6 @@ it('should generate the default classes for the typography components', async ()
       .lg\\\\:prose-2xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .lg\\\\:prose-2xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .lg\\\\:prose-2xl figure figcaption {
@@ -5152,10 +4396,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .lg\\\\:prose-2xl ol > li::before {
-        left: 0;
-      }
-
       .lg\\\\:prose-2xl ul > li {
         padding-left: 1.6666667em;
       }
@@ -5198,22 +4438,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3em;
       }
 
-      .lg\\\\:prose-2xl hr + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-2xl h2 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-2xl h3 + * {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-2xl h4 + * {
-        margin-top: 0;
-      }
-
       .lg\\\\:prose-2xl table {
         font-size: 0.8333333em;
         line-height: 1.4;
@@ -5225,35 +4449,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6em;
       }
 
-      .lg\\\\:prose-2xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose-2xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .lg\\\\:prose-2xl tbody td {
         padding-top: 0.8em;
         padding-right: 0.6em;
         padding-bottom: 0.8em;
         padding-left: 0.6em;
-      }
-
-      .lg\\\\:prose-2xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .lg\\\\:prose-2xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .lg\\\\:prose-2xl > :first-child {
-        margin-top: 0;
-      }
-
-      .lg\\\\:prose-2xl > :last-child {
-        margin-bottom: 0;
       }
 
       .lg\\\\:prose-red a {
@@ -5314,6 +4514,51 @@ it('should generate the default classes for the typography components', async ()
     }
 
     @media (min-width: 1280px) {
+      .xl\\\\:prose figure > *:not(figcaption) {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      .xl\\\\:prose hr + * {
+        margin-top: 0 !important;
+      }
+
+      .xl\\\\:prose h2 + * {
+        margin-top: 0 !important;
+      }
+
+      .xl\\\\:prose h3 + * {
+        margin-top: 0 !important;
+      }
+
+      .xl\\\\:prose h4 + * {
+        margin-top: 0 !important;
+      }
+
+      .xl\\\\:prose thead th:first-child {
+        padding-left: 0 !important;
+      }
+
+      .xl\\\\:prose thead th:last-child {
+        padding-right: 0 !important;
+      }
+
+      .xl\\\\:prose tbody td:first-child {
+        padding-left: 0 !important;
+      }
+
+      .xl\\\\:prose tbody td:last-child {
+        padding-right: 0 !important;
+      }
+
+      .xl\\\\:prose > :first-child {
+        margin-top: 0 !important;
+      }
+
+      .xl\\\\:prose > :last-child {
+        margin-bottom: 0 !important;
+      }
+
       .xl\\\\:prose {
         color: #374151;
         max-width: 65ch;
@@ -5433,8 +4678,8 @@ it('should generate the default classes for the typography components', async ()
       .xl\\\\:prose h1 {
         color: #111827;
         font-weight: 800;
-        font-size: 2.25em;
         margin-top: 0;
+        font-size: 2.25em;
         margin-bottom: 0.8888889em;
         line-height: 1.1111111;
       }
@@ -5591,11 +4836,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2em;
       }
 
-      .xl\\\\:prose figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
       .xl\\\\:prose h2 code {
         font-size: 0.875em;
       }
@@ -5645,46 +4885,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .xl\\\\:prose hr + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose h2 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose h3 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose h4 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose thead th:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose thead th:last-child {
-        padding-right: 0;
-      }
-
-      .xl\\\\:prose tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .xl\\\\:prose > :first-child {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose > :last-child {
-        margin-bottom: 0;
-      }
-
       .xl\\\\:prose-sm {
         font-size: 0.875rem;
         line-height: 1.7142857;
@@ -5710,7 +4910,6 @@ it('should generate the default classes for the typography components', async ()
 
       .xl\\\\:prose-sm h1 {
         font-size: 2.1428571em;
-        margin-top: 0;
         margin-bottom: 0.8em;
         line-height: 1.2;
       }
@@ -5748,11 +4947,6 @@ it('should generate the default classes for the typography components', async ()
       .xl\\\\:prose-sm figure {
         margin-top: 1.7142857em;
         margin-bottom: 1.7142857em;
-      }
-
-      .xl\\\\:prose-sm figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .xl\\\\:prose-sm figure figcaption {
@@ -5804,10 +4998,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .xl\\\\:prose-sm ol > li::before {
-        left: 0;
-      }
-
       .xl\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
       }
@@ -5850,22 +5040,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8571429em;
       }
 
-      .xl\\\\:prose-sm hr + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-sm h2 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-sm h3 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-sm h4 + * {
-        margin-top: 0;
-      }
-
       .xl\\\\:prose-sm table {
         font-size: 0.8571429em;
         line-height: 1.5;
@@ -5877,35 +5051,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .xl\\\\:prose-sm thead th:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose-sm thead th:last-child {
-        padding-right: 0;
-      }
-
       .xl\\\\:prose-sm tbody td {
         padding-top: 0.6666667em;
         padding-right: 1em;
         padding-bottom: 0.6666667em;
         padding-left: 1em;
-      }
-
-      .xl\\\\:prose-sm tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose-sm tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .xl\\\\:prose-sm > :first-child {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-sm > :last-child {
-        margin-bottom: 0;
       }
 
       .xl\\\\:prose-lg {
@@ -5933,7 +5083,6 @@ it('should generate the default classes for the typography components', async ()
 
       .xl\\\\:prose-lg h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.8333333em;
         line-height: 1;
       }
@@ -5971,11 +5120,6 @@ it('should generate the default classes for the typography components', async ()
       .xl\\\\:prose-lg figure {
         margin-top: 1.7777778em;
         margin-bottom: 1.7777778em;
-      }
-
-      .xl\\\\:prose-lg figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .xl\\\\:prose-lg figure figcaption {
@@ -6027,10 +5171,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .xl\\\\:prose-lg ol > li::before {
-        left: 0;
-      }
-
       .xl\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
       }
@@ -6073,22 +5213,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3.1111111em;
       }
 
-      .xl\\\\:prose-lg hr + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-lg h2 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-lg h3 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-lg h4 + * {
-        margin-top: 0;
-      }
-
       .xl\\\\:prose-lg table {
         font-size: 0.8888889em;
         line-height: 1.5;
@@ -6100,35 +5224,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.75em;
       }
 
-      .xl\\\\:prose-lg thead th:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose-lg thead th:last-child {
-        padding-right: 0;
-      }
-
       .xl\\\\:prose-lg tbody td {
         padding-top: 0.75em;
         padding-right: 0.75em;
         padding-bottom: 0.75em;
         padding-left: 0.75em;
-      }
-
-      .xl\\\\:prose-lg tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose-lg tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .xl\\\\:prose-lg > :first-child {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-lg > :last-child {
-        margin-bottom: 0;
       }
 
       .xl\\\\:prose-xl {
@@ -6156,7 +5256,6 @@ it('should generate the default classes for the typography components', async ()
 
       .xl\\\\:prose-xl h1 {
         font-size: 2.8em;
-        margin-top: 0;
         margin-bottom: 0.8571429em;
         line-height: 1;
       }
@@ -6194,11 +5293,6 @@ it('should generate the default classes for the typography components', async ()
       .xl\\\\:prose-xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .xl\\\\:prose-xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .xl\\\\:prose-xl figure figcaption {
@@ -6250,10 +5344,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .xl\\\\:prose-xl ol > li::before {
-        left: 0;
-      }
-
       .xl\\\\:prose-xl ul > li {
         padding-left: 1.8em;
       }
@@ -6296,22 +5386,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8em;
       }
 
-      .xl\\\\:prose-xl hr + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-xl h2 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-xl h3 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-xl h4 + * {
-        margin-top: 0;
-      }
-
       .xl\\\\:prose-xl table {
         font-size: 0.9em;
         line-height: 1.5555556;
@@ -6323,35 +5397,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6666667em;
       }
 
-      .xl\\\\:prose-xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose-xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .xl\\\\:prose-xl tbody td {
         padding-top: 0.8888889em;
         padding-right: 0.6666667em;
         padding-bottom: 0.8888889em;
         padding-left: 0.6666667em;
-      }
-
-      .xl\\\\:prose-xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose-xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .xl\\\\:prose-xl > :first-child {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-xl > :last-child {
-        margin-bottom: 0;
       }
 
       .xl\\\\:prose-2xl {
@@ -6379,7 +5429,6 @@ it('should generate the default classes for the typography components', async ()
 
       .xl\\\\:prose-2xl h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.875em;
         line-height: 1;
       }
@@ -6417,11 +5466,6 @@ it('should generate the default classes for the typography components', async ()
       .xl\\\\:prose-2xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .xl\\\\:prose-2xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .xl\\\\:prose-2xl figure figcaption {
@@ -6473,10 +5517,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .xl\\\\:prose-2xl ol > li::before {
-        left: 0;
-      }
-
       .xl\\\\:prose-2xl ul > li {
         padding-left: 1.6666667em;
       }
@@ -6519,22 +5559,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3em;
       }
 
-      .xl\\\\:prose-2xl hr + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-2xl h2 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-2xl h3 + * {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-2xl h4 + * {
-        margin-top: 0;
-      }
-
       .xl\\\\:prose-2xl table {
         font-size: 0.8333333em;
         line-height: 1.4;
@@ -6546,35 +5570,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6em;
       }
 
-      .xl\\\\:prose-2xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose-2xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .xl\\\\:prose-2xl tbody td {
         padding-top: 0.8em;
         padding-right: 0.6em;
         padding-bottom: 0.8em;
         padding-left: 0.6em;
-      }
-
-      .xl\\\\:prose-2xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .xl\\\\:prose-2xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .xl\\\\:prose-2xl > :first-child {
-        margin-top: 0;
-      }
-
-      .xl\\\\:prose-2xl > :last-child {
-        margin-bottom: 0;
       }
 
       .xl\\\\:prose-red a {
@@ -6635,6 +5635,51 @@ it('should generate the default classes for the typography components', async ()
     }
 
     @media (min-width: 1536px) {
+      .\\\\32xl\\\\:prose figure > *:not(figcaption) {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose hr + * {
+        margin-top: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose h2 + * {
+        margin-top: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose h3 + * {
+        margin-top: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose h4 + * {
+        margin-top: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose thead th:first-child {
+        padding-left: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose thead th:last-child {
+        padding-right: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose tbody td:first-child {
+        padding-left: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose tbody td:last-child {
+        padding-right: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose > :first-child {
+        margin-top: 0 !important;
+      }
+
+      .\\\\32xl\\\\:prose > :last-child {
+        margin-bottom: 0 !important;
+      }
+
       .\\\\32xl\\\\:prose {
         color: #374151;
         max-width: 65ch;
@@ -6754,8 +5799,8 @@ it('should generate the default classes for the typography components', async ()
       .\\\\32xl\\\\:prose h1 {
         color: #111827;
         font-weight: 800;
-        font-size: 2.25em;
         margin-top: 0;
+        font-size: 2.25em;
         margin-bottom: 0.8888889em;
         line-height: 1.1111111;
       }
@@ -6912,11 +5957,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2em;
       }
 
-      .\\\\32xl\\\\:prose figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
       .\\\\32xl\\\\:prose h2 code {
         font-size: 0.875em;
       }
@@ -6966,46 +6006,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.75em;
       }
 
-      .\\\\32xl\\\\:prose hr + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose h2 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose h3 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose h4 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose thead th:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose thead th:last-child {
-        padding-right: 0;
-      }
-
-      .\\\\32xl\\\\:prose tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .\\\\32xl\\\\:prose > :first-child {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose > :last-child {
-        margin-bottom: 0;
-      }
-
       .\\\\32xl\\\\:prose-sm {
         font-size: 0.875rem;
         line-height: 1.7142857;
@@ -7031,7 +6031,6 @@ it('should generate the default classes for the typography components', async ()
 
       .\\\\32xl\\\\:prose-sm h1 {
         font-size: 2.1428571em;
-        margin-top: 0;
         margin-bottom: 0.8em;
         line-height: 1.2;
       }
@@ -7069,11 +6068,6 @@ it('should generate the default classes for the typography components', async ()
       .\\\\32xl\\\\:prose-sm figure {
         margin-top: 1.7142857em;
         margin-bottom: 1.7142857em;
-      }
-
-      .\\\\32xl\\\\:prose-sm figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .\\\\32xl\\\\:prose-sm figure figcaption {
@@ -7125,10 +6119,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .\\\\32xl\\\\:prose-sm ol > li::before {
-        left: 0;
-      }
-
       .\\\\32xl\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
       }
@@ -7171,22 +6161,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8571429em;
       }
 
-      .\\\\32xl\\\\:prose-sm hr + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-sm h2 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-sm h3 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-sm h4 + * {
-        margin-top: 0;
-      }
-
       .\\\\32xl\\\\:prose-sm table {
         font-size: 0.8571429em;
         line-height: 1.5;
@@ -7198,35 +6172,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .\\\\32xl\\\\:prose-sm thead th:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose-sm thead th:last-child {
-        padding-right: 0;
-      }
-
       .\\\\32xl\\\\:prose-sm tbody td {
         padding-top: 0.6666667em;
         padding-right: 1em;
         padding-bottom: 0.6666667em;
         padding-left: 1em;
-      }
-
-      .\\\\32xl\\\\:prose-sm tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose-sm tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .\\\\32xl\\\\:prose-sm > :first-child {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-sm > :last-child {
-        margin-bottom: 0;
       }
 
       .\\\\32xl\\\\:prose-lg {
@@ -7254,7 +6204,6 @@ it('should generate the default classes for the typography components', async ()
 
       .\\\\32xl\\\\:prose-lg h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.8333333em;
         line-height: 1;
       }
@@ -7292,11 +6241,6 @@ it('should generate the default classes for the typography components', async ()
       .\\\\32xl\\\\:prose-lg figure {
         margin-top: 1.7777778em;
         margin-bottom: 1.7777778em;
-      }
-
-      .\\\\32xl\\\\:prose-lg figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .\\\\32xl\\\\:prose-lg figure figcaption {
@@ -7348,10 +6292,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .\\\\32xl\\\\:prose-lg ol > li::before {
-        left: 0;
-      }
-
       .\\\\32xl\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
       }
@@ -7394,22 +6334,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3.1111111em;
       }
 
-      .\\\\32xl\\\\:prose-lg hr + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-lg h2 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-lg h3 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-lg h4 + * {
-        margin-top: 0;
-      }
-
       .\\\\32xl\\\\:prose-lg table {
         font-size: 0.8888889em;
         line-height: 1.5;
@@ -7421,35 +6345,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.75em;
       }
 
-      .\\\\32xl\\\\:prose-lg thead th:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose-lg thead th:last-child {
-        padding-right: 0;
-      }
-
       .\\\\32xl\\\\:prose-lg tbody td {
         padding-top: 0.75em;
         padding-right: 0.75em;
         padding-bottom: 0.75em;
         padding-left: 0.75em;
-      }
-
-      .\\\\32xl\\\\:prose-lg tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose-lg tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .\\\\32xl\\\\:prose-lg > :first-child {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-lg > :last-child {
-        margin-bottom: 0;
       }
 
       .\\\\32xl\\\\:prose-xl {
@@ -7477,7 +6377,6 @@ it('should generate the default classes for the typography components', async ()
 
       .\\\\32xl\\\\:prose-xl h1 {
         font-size: 2.8em;
-        margin-top: 0;
         margin-bottom: 0.8571429em;
         line-height: 1;
       }
@@ -7515,11 +6414,6 @@ it('should generate the default classes for the typography components', async ()
       .\\\\32xl\\\\:prose-xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .\\\\32xl\\\\:prose-xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .\\\\32xl\\\\:prose-xl figure figcaption {
@@ -7571,10 +6465,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .\\\\32xl\\\\:prose-xl ol > li::before {
-        left: 0;
-      }
-
       .\\\\32xl\\\\:prose-xl ul > li {
         padding-left: 1.8em;
       }
@@ -7617,22 +6507,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 2.8em;
       }
 
-      .\\\\32xl\\\\:prose-xl hr + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-xl h2 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-xl h3 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-xl h4 + * {
-        margin-top: 0;
-      }
-
       .\\\\32xl\\\\:prose-xl table {
         font-size: 0.9em;
         line-height: 1.5555556;
@@ -7644,35 +6518,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6666667em;
       }
 
-      .\\\\32xl\\\\:prose-xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose-xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .\\\\32xl\\\\:prose-xl tbody td {
         padding-top: 0.8888889em;
         padding-right: 0.6666667em;
         padding-bottom: 0.8888889em;
         padding-left: 0.6666667em;
-      }
-
-      .\\\\32xl\\\\:prose-xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose-xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .\\\\32xl\\\\:prose-xl > :first-child {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-xl > :last-child {
-        margin-bottom: 0;
       }
 
       .\\\\32xl\\\\:prose-2xl {
@@ -7700,7 +6550,6 @@ it('should generate the default classes for the typography components', async ()
 
       .\\\\32xl\\\\:prose-2xl h1 {
         font-size: 2.6666667em;
-        margin-top: 0;
         margin-bottom: 0.875em;
         line-height: 1;
       }
@@ -7738,11 +6587,6 @@ it('should generate the default classes for the typography components', async ()
       .\\\\32xl\\\\:prose-2xl figure {
         margin-top: 2em;
         margin-bottom: 2em;
-      }
-
-      .\\\\32xl\\\\:prose-2xl figure > * {
-        margin-top: 0;
-        margin-bottom: 0;
       }
 
       .\\\\32xl\\\\:prose-2xl figure figcaption {
@@ -7794,10 +6638,6 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .\\\\32xl\\\\:prose-2xl ol > li::before {
-        left: 0;
-      }
-
       .\\\\32xl\\\\:prose-2xl ul > li {
         padding-left: 1.6666667em;
       }
@@ -7840,22 +6680,6 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 3em;
       }
 
-      .\\\\32xl\\\\:prose-2xl hr + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-2xl h2 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-2xl h3 + * {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-2xl h4 + * {
-        margin-top: 0;
-      }
-
       .\\\\32xl\\\\:prose-2xl table {
         font-size: 0.8333333em;
         line-height: 1.4;
@@ -7867,35 +6691,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 0.6em;
       }
 
-      .\\\\32xl\\\\:prose-2xl thead th:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose-2xl thead th:last-child {
-        padding-right: 0;
-      }
-
       .\\\\32xl\\\\:prose-2xl tbody td {
         padding-top: 0.8em;
         padding-right: 0.6em;
         padding-bottom: 0.8em;
         padding-left: 0.6em;
-      }
-
-      .\\\\32xl\\\\:prose-2xl tbody td:first-child {
-        padding-left: 0;
-      }
-
-      .\\\\32xl\\\\:prose-2xl tbody td:last-child {
-        padding-right: 0;
-      }
-
-      .\\\\32xl\\\\:prose-2xl > :first-child {
-        margin-top: 0;
-      }
-
-      .\\\\32xl\\\\:prose-2xl > :last-child {
-        margin-bottom: 0;
       }
 
       .\\\\32xl\\\\:prose-red a {
@@ -7960,6 +6760,61 @@ it('should generate the default classes for the typography components', async ()
 it('should be possible to change the default className from `prose` to `markdown`', async () => {
   expect(await diffOnly({ className: 'markdown' })).toMatchInlineSnapshot(`
     "
+
+      - .prose figure > *:not(figcaption) {
+      + .markdown figure > *:not(figcaption) {
+
+      ---
+
+      - .prose hr + * {
+      + .markdown hr + * {
+
+      ---
+
+      - .prose h2 + * {
+      + .markdown h2 + * {
+
+      ---
+
+      - .prose h3 + * {
+      + .markdown h3 + * {
+
+      ---
+
+      - .prose h4 + * {
+      + .markdown h4 + * {
+
+      ---
+
+      - .prose thead th:first-child {
+      + .markdown thead th:first-child {
+
+      ---
+
+      - .prose thead th:last-child {
+      + .markdown thead th:last-child {
+
+      ---
+
+      - .prose tbody td:first-child {
+      + .markdown tbody td:first-child {
+
+      ---
+
+      - .prose tbody td:last-child {
+      + .markdown tbody td:last-child {
+
+      ---
+
+      - .prose > :first-child {
+      + .markdown > :first-child {
+
+      ---
+
+      - .prose > :last-child {
+      + .markdown > :last-child {
+
+      ---
 
       - .prose {
       + .markdown {
@@ -8186,11 +7041,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose figure > * {
-      + .markdown figure > * {
-
-      ---
-
       - .prose h2 code {
       + .markdown h2 code {
 
@@ -8243,56 +7093,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
       + .markdown ul ul, .markdown ul ol, .markdown ol ul, .markdown ol ol {
-
-      ---
-
-      - .prose hr + * {
-      + .markdown hr + * {
-
-      ---
-
-      - .prose h2 + * {
-      + .markdown h2 + * {
-
-      ---
-
-      - .prose h3 + * {
-      + .markdown h3 + * {
-
-      ---
-
-      - .prose h4 + * {
-      + .markdown h4 + * {
-
-      ---
-
-      - .prose thead th:first-child {
-      + .markdown thead th:first-child {
-
-      ---
-
-      - .prose thead th:last-child {
-      + .markdown thead th:last-child {
-
-      ---
-
-      - .prose tbody td:first-child {
-      + .markdown tbody td:first-child {
-
-      ---
-
-      - .prose tbody td:last-child {
-      + .markdown tbody td:last-child {
-
-      ---
-
-      - .prose > :first-child {
-      + .markdown > :first-child {
-
-      ---
-
-      - .prose > :last-child {
-      + .markdown > :last-child {
 
       ---
 
@@ -8351,11 +7151,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-sm figure > * {
-      + .markdown-sm figure > * {
-
-      ---
-
       - .prose-sm figure figcaption {
       + .markdown-sm figure figcaption {
 
@@ -8398,11 +7193,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose-sm ol > li {
       + .markdown-sm ol > li {
-
-      ---
-
-      - .prose-sm ol > li::before {
-      + .markdown-sm ol > li::before {
 
       ---
 
@@ -8451,26 +7241,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-sm hr + * {
-      + .markdown-sm hr + * {
-
-      ---
-
-      - .prose-sm h2 + * {
-      + .markdown-sm h2 + * {
-
-      ---
-
-      - .prose-sm h3 + * {
-      + .markdown-sm h3 + * {
-
-      ---
-
-      - .prose-sm h4 + * {
-      + .markdown-sm h4 + * {
-
-      ---
-
       - .prose-sm table {
       + .markdown-sm table {
 
@@ -8481,38 +7251,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-sm thead th:first-child {
-      + .markdown-sm thead th:first-child {
-
-      ---
-
-      - .prose-sm thead th:last-child {
-      + .markdown-sm thead th:last-child {
-
-      ---
-
       - .prose-sm tbody td {
       + .markdown-sm tbody td {
-
-      ---
-
-      - .prose-sm tbody td:first-child {
-      + .markdown-sm tbody td:first-child {
-
-      ---
-
-      - .prose-sm tbody td:last-child {
-      + .markdown-sm tbody td:last-child {
-
-      ---
-
-      - .prose-sm > :first-child {
-      + .markdown-sm > :first-child {
-
-      ---
-
-      - .prose-sm > :last-child {
-      + .markdown-sm > :last-child {
 
       ---
 
@@ -8571,11 +7311,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-lg figure > * {
-      + .markdown-lg figure > * {
-
-      ---
-
       - .prose-lg figure figcaption {
       + .markdown-lg figure figcaption {
 
@@ -8618,11 +7353,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose-lg ol > li {
       + .markdown-lg ol > li {
-
-      ---
-
-      - .prose-lg ol > li::before {
-      + .markdown-lg ol > li::before {
 
       ---
 
@@ -8671,26 +7401,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-lg hr + * {
-      + .markdown-lg hr + * {
-
-      ---
-
-      - .prose-lg h2 + * {
-      + .markdown-lg h2 + * {
-
-      ---
-
-      - .prose-lg h3 + * {
-      + .markdown-lg h3 + * {
-
-      ---
-
-      - .prose-lg h4 + * {
-      + .markdown-lg h4 + * {
-
-      ---
-
       - .prose-lg table {
       + .markdown-lg table {
 
@@ -8701,38 +7411,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-lg thead th:first-child {
-      + .markdown-lg thead th:first-child {
-
-      ---
-
-      - .prose-lg thead th:last-child {
-      + .markdown-lg thead th:last-child {
-
-      ---
-
       - .prose-lg tbody td {
       + .markdown-lg tbody td {
-
-      ---
-
-      - .prose-lg tbody td:first-child {
-      + .markdown-lg tbody td:first-child {
-
-      ---
-
-      - .prose-lg tbody td:last-child {
-      + .markdown-lg tbody td:last-child {
-
-      ---
-
-      - .prose-lg > :first-child {
-      + .markdown-lg > :first-child {
-
-      ---
-
-      - .prose-lg > :last-child {
-      + .markdown-lg > :last-child {
 
       ---
 
@@ -8791,11 +7471,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-xl figure > * {
-      + .markdown-xl figure > * {
-
-      ---
-
       - .prose-xl figure figcaption {
       + .markdown-xl figure figcaption {
 
@@ -8838,11 +7513,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose-xl ol > li {
       + .markdown-xl ol > li {
-
-      ---
-
-      - .prose-xl ol > li::before {
-      + .markdown-xl ol > li::before {
 
       ---
 
@@ -8891,26 +7561,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-xl hr + * {
-      + .markdown-xl hr + * {
-
-      ---
-
-      - .prose-xl h2 + * {
-      + .markdown-xl h2 + * {
-
-      ---
-
-      - .prose-xl h3 + * {
-      + .markdown-xl h3 + * {
-
-      ---
-
-      - .prose-xl h4 + * {
-      + .markdown-xl h4 + * {
-
-      ---
-
       - .prose-xl table {
       + .markdown-xl table {
 
@@ -8921,38 +7571,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-xl thead th:first-child {
-      + .markdown-xl thead th:first-child {
-
-      ---
-
-      - .prose-xl thead th:last-child {
-      + .markdown-xl thead th:last-child {
-
-      ---
-
       - .prose-xl tbody td {
       + .markdown-xl tbody td {
-
-      ---
-
-      - .prose-xl tbody td:first-child {
-      + .markdown-xl tbody td:first-child {
-
-      ---
-
-      - .prose-xl tbody td:last-child {
-      + .markdown-xl tbody td:last-child {
-
-      ---
-
-      - .prose-xl > :first-child {
-      + .markdown-xl > :first-child {
-
-      ---
-
-      - .prose-xl > :last-child {
-      + .markdown-xl > :last-child {
 
       ---
 
@@ -9011,11 +7631,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-2xl figure > * {
-      + .markdown-2xl figure > * {
-
-      ---
-
       - .prose-2xl figure figcaption {
       + .markdown-2xl figure figcaption {
 
@@ -9058,11 +7673,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose-2xl ol > li {
       + .markdown-2xl ol > li {
-
-      ---
-
-      - .prose-2xl ol > li::before {
-      + .markdown-2xl ol > li::before {
 
       ---
 
@@ -9111,26 +7721,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-2xl hr + * {
-      + .markdown-2xl hr + * {
-
-      ---
-
-      - .prose-2xl h2 + * {
-      + .markdown-2xl h2 + * {
-
-      ---
-
-      - .prose-2xl h3 + * {
-      + .markdown-2xl h3 + * {
-
-      ---
-
-      - .prose-2xl h4 + * {
-      + .markdown-2xl h4 + * {
-
-      ---
-
       - .prose-2xl table {
       + .markdown-2xl table {
 
@@ -9141,38 +7731,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-2xl thead th:first-child {
-      + .markdown-2xl thead th:first-child {
-
-      ---
-
-      - .prose-2xl thead th:last-child {
-      + .markdown-2xl thead th:last-child {
-
-      ---
-
       - .prose-2xl tbody td {
       + .markdown-2xl tbody td {
-
-      ---
-
-      - .prose-2xl tbody td:first-child {
-      + .markdown-2xl tbody td:first-child {
-
-      ---
-
-      - .prose-2xl tbody td:last-child {
-      + .markdown-2xl tbody td:last-child {
-
-      ---
-
-      - .prose-2xl > :first-child {
-      + .markdown-2xl > :first-child {
-
-      ---
-
-      - .prose-2xl > :last-child {
-      + .markdown-2xl > :last-child {
 
       ---
 
@@ -9243,6 +7803,61 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose-pink a code {
       + .markdown-pink a code {
+
+      ---
+
+      -   .sm\\\\:prose figure > *:not(figcaption) {
+      +   .sm\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .sm\\\\:prose hr + * {
+      +   .sm\\\\:markdown hr + * {
+
+      ---
+
+      -   .sm\\\\:prose h2 + * {
+      +   .sm\\\\:markdown h2 + * {
+
+      ---
+
+      -   .sm\\\\:prose h3 + * {
+      +   .sm\\\\:markdown h3 + * {
+
+      ---
+
+      -   .sm\\\\:prose h4 + * {
+      +   .sm\\\\:markdown h4 + * {
+
+      ---
+
+      -   .sm\\\\:prose thead th:first-child {
+      +   .sm\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .sm\\\\:prose thead th:last-child {
+      +   .sm\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .sm\\\\:prose tbody td:first-child {
+      +   .sm\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .sm\\\\:prose tbody td:last-child {
+      +   .sm\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .sm\\\\:prose > :first-child {
+      +   .sm\\\\:markdown > :first-child {
+
+      ---
+
+      -   .sm\\\\:prose > :last-child {
+      +   .sm\\\\:markdown > :last-child {
 
       ---
 
@@ -9471,11 +8086,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose figure > * {
-      +   .sm\\\\:markdown figure > * {
-
-      ---
-
       -   .sm\\\\:prose h2 code {
       +   .sm\\\\:markdown h2 code {
 
@@ -9528,56 +8138,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose ul ul, .sm\\\\:prose ul ol, .sm\\\\:prose ol ul, .sm\\\\:prose ol ol {
       +   .sm\\\\:markdown ul ul, .sm\\\\:markdown ul ol, .sm\\\\:markdown ol ul, .sm\\\\:markdown ol ol {
-
-      ---
-
-      -   .sm\\\\:prose hr + * {
-      +   .sm\\\\:markdown hr + * {
-
-      ---
-
-      -   .sm\\\\:prose h2 + * {
-      +   .sm\\\\:markdown h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose h3 + * {
-      +   .sm\\\\:markdown h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose h4 + * {
-      +   .sm\\\\:markdown h4 + * {
-
-      ---
-
-      -   .sm\\\\:prose thead th:first-child {
-      +   .sm\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose thead th:last-child {
-      +   .sm\\\\:markdown thead th:last-child {
-
-      ---
-
-      -   .sm\\\\:prose tbody td:first-child {
-      +   .sm\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose tbody td:last-child {
-      +   .sm\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose > :first-child {
-      +   .sm\\\\:markdown > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose > :last-child {
-      +   .sm\\\\:markdown > :last-child {
 
       ---
 
@@ -9636,11 +8196,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-sm figure > * {
-      +   .sm\\\\:markdown-sm figure > * {
-
-      ---
-
       -   .sm\\\\:prose-sm figure figcaption {
       +   .sm\\\\:markdown-sm figure figcaption {
 
@@ -9683,11 +8238,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose-sm ol > li {
       +   .sm\\\\:markdown-sm ol > li {
-
-      ---
-
-      -   .sm\\\\:prose-sm ol > li::before {
-      +   .sm\\\\:markdown-sm ol > li::before {
 
       ---
 
@@ -9736,26 +8286,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-sm hr + * {
-      +   .sm\\\\:markdown-sm hr + * {
-
-      ---
-
-      -   .sm\\\\:prose-sm h2 + * {
-      +   .sm\\\\:markdown-sm h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose-sm h3 + * {
-      +   .sm\\\\:markdown-sm h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose-sm h4 + * {
-      +   .sm\\\\:markdown-sm h4 + * {
-
-      ---
-
       -   .sm\\\\:prose-sm table {
       +   .sm\\\\:markdown-sm table {
 
@@ -9766,38 +8296,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-sm thead th:first-child {
-      +   .sm\\\\:markdown-sm thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-sm thead th:last-child {
-      +   .sm\\\\:markdown-sm thead th:last-child {
-
-      ---
-
       -   .sm\\\\:prose-sm tbody td {
       +   .sm\\\\:markdown-sm tbody td {
-
-      ---
-
-      -   .sm\\\\:prose-sm tbody td:first-child {
-      +   .sm\\\\:markdown-sm tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-sm tbody td:last-child {
-      +   .sm\\\\:markdown-sm tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose-sm > :first-child {
-      +   .sm\\\\:markdown-sm > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose-sm > :last-child {
-      +   .sm\\\\:markdown-sm > :last-child {
 
       ---
 
@@ -9856,11 +8356,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-lg figure > * {
-      +   .sm\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .sm\\\\:prose-lg figure figcaption {
       +   .sm\\\\:markdown-lg figure figcaption {
 
@@ -9903,11 +8398,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose-lg ol > li {
       +   .sm\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .sm\\\\:prose-lg ol > li::before {
-      +   .sm\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -9956,26 +8446,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-lg hr + * {
-      +   .sm\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .sm\\\\:prose-lg h2 + * {
-      +   .sm\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose-lg h3 + * {
-      +   .sm\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose-lg h4 + * {
-      +   .sm\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .sm\\\\:prose-lg table {
       +   .sm\\\\:markdown-lg table {
 
@@ -9986,38 +8456,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-lg thead th:first-child {
-      +   .sm\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-lg thead th:last-child {
-      +   .sm\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .sm\\\\:prose-lg tbody td {
       +   .sm\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .sm\\\\:prose-lg tbody td:first-child {
-      +   .sm\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-lg tbody td:last-child {
-      +   .sm\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose-lg > :first-child {
-      +   .sm\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose-lg > :last-child {
-      +   .sm\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -10076,11 +8516,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-xl figure > * {
-      +   .sm\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .sm\\\\:prose-xl figure figcaption {
       +   .sm\\\\:markdown-xl figure figcaption {
 
@@ -10123,11 +8558,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose-xl ol > li {
       +   .sm\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .sm\\\\:prose-xl ol > li::before {
-      +   .sm\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -10176,26 +8606,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-xl hr + * {
-      +   .sm\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .sm\\\\:prose-xl h2 + * {
-      +   .sm\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose-xl h3 + * {
-      +   .sm\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose-xl h4 + * {
-      +   .sm\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .sm\\\\:prose-xl table {
       +   .sm\\\\:markdown-xl table {
 
@@ -10206,38 +8616,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-xl thead th:first-child {
-      +   .sm\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-xl thead th:last-child {
-      +   .sm\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .sm\\\\:prose-xl tbody td {
       +   .sm\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .sm\\\\:prose-xl tbody td:first-child {
-      +   .sm\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-xl tbody td:last-child {
-      +   .sm\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose-xl > :first-child {
-      +   .sm\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose-xl > :last-child {
-      +   .sm\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -10296,11 +8676,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-2xl figure > * {
-      +   .sm\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .sm\\\\:prose-2xl figure figcaption {
       +   .sm\\\\:markdown-2xl figure figcaption {
 
@@ -10343,11 +8718,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose-2xl ol > li {
       +   .sm\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .sm\\\\:prose-2xl ol > li::before {
-      +   .sm\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -10396,26 +8766,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-2xl hr + * {
-      +   .sm\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .sm\\\\:prose-2xl h2 + * {
-      +   .sm\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose-2xl h3 + * {
-      +   .sm\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose-2xl h4 + * {
-      +   .sm\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .sm\\\\:prose-2xl table {
       +   .sm\\\\:markdown-2xl table {
 
@@ -10426,38 +8776,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-2xl thead th:first-child {
-      +   .sm\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-2xl thead th:last-child {
-      +   .sm\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .sm\\\\:prose-2xl tbody td {
       +   .sm\\\\:markdown-2xl tbody td {
-
-      ---
-
-      -   .sm\\\\:prose-2xl tbody td:first-child {
-      +   .sm\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-2xl tbody td:last-child {
-      +   .sm\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose-2xl > :first-child {
-      +   .sm\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose-2xl > :last-child {
-      +   .sm\\\\:markdown-2xl > :last-child {
 
       ---
 
@@ -10528,6 +8848,61 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose-pink a code {
       +   .sm\\\\:markdown-pink a code {
+
+      ---
+
+      -   .md\\\\:prose figure > *:not(figcaption) {
+      +   .md\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .md\\\\:prose hr + * {
+      +   .md\\\\:markdown hr + * {
+
+      ---
+
+      -   .md\\\\:prose h2 + * {
+      +   .md\\\\:markdown h2 + * {
+
+      ---
+
+      -   .md\\\\:prose h3 + * {
+      +   .md\\\\:markdown h3 + * {
+
+      ---
+
+      -   .md\\\\:prose h4 + * {
+      +   .md\\\\:markdown h4 + * {
+
+      ---
+
+      -   .md\\\\:prose thead th:first-child {
+      +   .md\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .md\\\\:prose thead th:last-child {
+      +   .md\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .md\\\\:prose tbody td:first-child {
+      +   .md\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .md\\\\:prose tbody td:last-child {
+      +   .md\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .md\\\\:prose > :first-child {
+      +   .md\\\\:markdown > :first-child {
+
+      ---
+
+      -   .md\\\\:prose > :last-child {
+      +   .md\\\\:markdown > :last-child {
 
       ---
 
@@ -10756,11 +9131,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose figure > * {
-      +   .md\\\\:markdown figure > * {
-
-      ---
-
       -   .md\\\\:prose h2 code {
       +   .md\\\\:markdown h2 code {
 
@@ -10813,56 +9183,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose ul ul, .md\\\\:prose ul ol, .md\\\\:prose ol ul, .md\\\\:prose ol ol {
       +   .md\\\\:markdown ul ul, .md\\\\:markdown ul ol, .md\\\\:markdown ol ul, .md\\\\:markdown ol ol {
-
-      ---
-
-      -   .md\\\\:prose hr + * {
-      +   .md\\\\:markdown hr + * {
-
-      ---
-
-      -   .md\\\\:prose h2 + * {
-      +   .md\\\\:markdown h2 + * {
-
-      ---
-
-      -   .md\\\\:prose h3 + * {
-      +   .md\\\\:markdown h3 + * {
-
-      ---
-
-      -   .md\\\\:prose h4 + * {
-      +   .md\\\\:markdown h4 + * {
-
-      ---
-
-      -   .md\\\\:prose thead th:first-child {
-      +   .md\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose thead th:last-child {
-      +   .md\\\\:markdown thead th:last-child {
-
-      ---
-
-      -   .md\\\\:prose tbody td:first-child {
-      +   .md\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose tbody td:last-child {
-      +   .md\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose > :first-child {
-      +   .md\\\\:markdown > :first-child {
-
-      ---
-
-      -   .md\\\\:prose > :last-child {
-      +   .md\\\\:markdown > :last-child {
 
       ---
 
@@ -10921,11 +9241,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-sm figure > * {
-      +   .md\\\\:markdown-sm figure > * {
-
-      ---
-
       -   .md\\\\:prose-sm figure figcaption {
       +   .md\\\\:markdown-sm figure figcaption {
 
@@ -10968,11 +9283,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose-sm ol > li {
       +   .md\\\\:markdown-sm ol > li {
-
-      ---
-
-      -   .md\\\\:prose-sm ol > li::before {
-      +   .md\\\\:markdown-sm ol > li::before {
 
       ---
 
@@ -11021,26 +9331,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-sm hr + * {
-      +   .md\\\\:markdown-sm hr + * {
-
-      ---
-
-      -   .md\\\\:prose-sm h2 + * {
-      +   .md\\\\:markdown-sm h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-sm h3 + * {
-      +   .md\\\\:markdown-sm h3 + * {
-
-      ---
-
-      -   .md\\\\:prose-sm h4 + * {
-      +   .md\\\\:markdown-sm h4 + * {
-
-      ---
-
       -   .md\\\\:prose-sm table {
       +   .md\\\\:markdown-sm table {
 
@@ -11051,38 +9341,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-sm thead th:first-child {
-      +   .md\\\\:markdown-sm thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose-sm thead th:last-child {
-      +   .md\\\\:markdown-sm thead th:last-child {
-
-      ---
-
       -   .md\\\\:prose-sm tbody td {
       +   .md\\\\:markdown-sm tbody td {
-
-      ---
-
-      -   .md\\\\:prose-sm tbody td:first-child {
-      +   .md\\\\:markdown-sm tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose-sm tbody td:last-child {
-      +   .md\\\\:markdown-sm tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose-sm > :first-child {
-      +   .md\\\\:markdown-sm > :first-child {
-
-      ---
-
-      -   .md\\\\:prose-sm > :last-child {
-      +   .md\\\\:markdown-sm > :last-child {
 
       ---
 
@@ -11141,11 +9401,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-lg figure > * {
-      +   .md\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .md\\\\:prose-lg figure figcaption {
       +   .md\\\\:markdown-lg figure figcaption {
 
@@ -11188,11 +9443,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose-lg ol > li {
       +   .md\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .md\\\\:prose-lg ol > li::before {
-      +   .md\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -11241,26 +9491,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-lg hr + * {
-      +   .md\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .md\\\\:prose-lg h2 + * {
-      +   .md\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-lg h3 + * {
-      +   .md\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .md\\\\:prose-lg h4 + * {
-      +   .md\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .md\\\\:prose-lg table {
       +   .md\\\\:markdown-lg table {
 
@@ -11271,38 +9501,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-lg thead th:first-child {
-      +   .md\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose-lg thead th:last-child {
-      +   .md\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .md\\\\:prose-lg tbody td {
       +   .md\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .md\\\\:prose-lg tbody td:first-child {
-      +   .md\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose-lg tbody td:last-child {
-      +   .md\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose-lg > :first-child {
-      +   .md\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .md\\\\:prose-lg > :last-child {
-      +   .md\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -11361,11 +9561,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-xl figure > * {
-      +   .md\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .md\\\\:prose-xl figure figcaption {
       +   .md\\\\:markdown-xl figure figcaption {
 
@@ -11408,11 +9603,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose-xl ol > li {
       +   .md\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .md\\\\:prose-xl ol > li::before {
-      +   .md\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -11461,26 +9651,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-xl hr + * {
-      +   .md\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .md\\\\:prose-xl h2 + * {
-      +   .md\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-xl h3 + * {
-      +   .md\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .md\\\\:prose-xl h4 + * {
-      +   .md\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .md\\\\:prose-xl table {
       +   .md\\\\:markdown-xl table {
 
@@ -11491,38 +9661,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-xl thead th:first-child {
-      +   .md\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose-xl thead th:last-child {
-      +   .md\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .md\\\\:prose-xl tbody td {
       +   .md\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .md\\\\:prose-xl tbody td:first-child {
-      +   .md\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose-xl tbody td:last-child {
-      +   .md\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose-xl > :first-child {
-      +   .md\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .md\\\\:prose-xl > :last-child {
-      +   .md\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -11581,11 +9721,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-2xl figure > * {
-      +   .md\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .md\\\\:prose-2xl figure figcaption {
       +   .md\\\\:markdown-2xl figure figcaption {
 
@@ -11628,11 +9763,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose-2xl ol > li {
       +   .md\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .md\\\\:prose-2xl ol > li::before {
-      +   .md\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -11681,26 +9811,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-2xl hr + * {
-      +   .md\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .md\\\\:prose-2xl h2 + * {
-      +   .md\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-2xl h3 + * {
-      +   .md\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .md\\\\:prose-2xl h4 + * {
-      +   .md\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .md\\\\:prose-2xl table {
       +   .md\\\\:markdown-2xl table {
 
@@ -11711,38 +9821,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-2xl thead th:first-child {
-      +   .md\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose-2xl thead th:last-child {
-      +   .md\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .md\\\\:prose-2xl tbody td {
       +   .md\\\\:markdown-2xl tbody td {
-
-      ---
-
-      -   .md\\\\:prose-2xl tbody td:first-child {
-      +   .md\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose-2xl tbody td:last-child {
-      +   .md\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose-2xl > :first-child {
-      +   .md\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .md\\\\:prose-2xl > :last-child {
-      +   .md\\\\:markdown-2xl > :last-child {
 
       ---
 
@@ -11813,6 +9893,61 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose-pink a code {
       +   .md\\\\:markdown-pink a code {
+
+      ---
+
+      -   .lg\\\\:prose figure > *:not(figcaption) {
+      +   .lg\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .lg\\\\:prose hr + * {
+      +   .lg\\\\:markdown hr + * {
+
+      ---
+
+      -   .lg\\\\:prose h2 + * {
+      +   .lg\\\\:markdown h2 + * {
+
+      ---
+
+      -   .lg\\\\:prose h3 + * {
+      +   .lg\\\\:markdown h3 + * {
+
+      ---
+
+      -   .lg\\\\:prose h4 + * {
+      +   .lg\\\\:markdown h4 + * {
+
+      ---
+
+      -   .lg\\\\:prose thead th:first-child {
+      +   .lg\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .lg\\\\:prose thead th:last-child {
+      +   .lg\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .lg\\\\:prose tbody td:first-child {
+      +   .lg\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .lg\\\\:prose tbody td:last-child {
+      +   .lg\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .lg\\\\:prose > :first-child {
+      +   .lg\\\\:markdown > :first-child {
+
+      ---
+
+      -   .lg\\\\:prose > :last-child {
+      +   .lg\\\\:markdown > :last-child {
 
       ---
 
@@ -12041,11 +10176,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose figure > * {
-      +   .lg\\\\:markdown figure > * {
-
-      ---
-
       -   .lg\\\\:prose h2 code {
       +   .lg\\\\:markdown h2 code {
 
@@ -12098,56 +10228,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose ul ul, .lg\\\\:prose ul ol, .lg\\\\:prose ol ul, .lg\\\\:prose ol ol {
       +   .lg\\\\:markdown ul ul, .lg\\\\:markdown ul ol, .lg\\\\:markdown ol ul, .lg\\\\:markdown ol ol {
-
-      ---
-
-      -   .lg\\\\:prose hr + * {
-      +   .lg\\\\:markdown hr + * {
-
-      ---
-
-      -   .lg\\\\:prose h2 + * {
-      +   .lg\\\\:markdown h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose h3 + * {
-      +   .lg\\\\:markdown h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose h4 + * {
-      +   .lg\\\\:markdown h4 + * {
-
-      ---
-
-      -   .lg\\\\:prose thead th:first-child {
-      +   .lg\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose thead th:last-child {
-      +   .lg\\\\:markdown thead th:last-child {
-
-      ---
-
-      -   .lg\\\\:prose tbody td:first-child {
-      +   .lg\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose tbody td:last-child {
-      +   .lg\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose > :first-child {
-      +   .lg\\\\:markdown > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose > :last-child {
-      +   .lg\\\\:markdown > :last-child {
 
       ---
 
@@ -12206,11 +10286,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-sm figure > * {
-      +   .lg\\\\:markdown-sm figure > * {
-
-      ---
-
       -   .lg\\\\:prose-sm figure figcaption {
       +   .lg\\\\:markdown-sm figure figcaption {
 
@@ -12253,11 +10328,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose-sm ol > li {
       +   .lg\\\\:markdown-sm ol > li {
-
-      ---
-
-      -   .lg\\\\:prose-sm ol > li::before {
-      +   .lg\\\\:markdown-sm ol > li::before {
 
       ---
 
@@ -12306,26 +10376,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-sm hr + * {
-      +   .lg\\\\:markdown-sm hr + * {
-
-      ---
-
-      -   .lg\\\\:prose-sm h2 + * {
-      +   .lg\\\\:markdown-sm h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose-sm h3 + * {
-      +   .lg\\\\:markdown-sm h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose-sm h4 + * {
-      +   .lg\\\\:markdown-sm h4 + * {
-
-      ---
-
       -   .lg\\\\:prose-sm table {
       +   .lg\\\\:markdown-sm table {
 
@@ -12336,38 +10386,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-sm thead th:first-child {
-      +   .lg\\\\:markdown-sm thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-sm thead th:last-child {
-      +   .lg\\\\:markdown-sm thead th:last-child {
-
-      ---
-
       -   .lg\\\\:prose-sm tbody td {
       +   .lg\\\\:markdown-sm tbody td {
-
-      ---
-
-      -   .lg\\\\:prose-sm tbody td:first-child {
-      +   .lg\\\\:markdown-sm tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-sm tbody td:last-child {
-      +   .lg\\\\:markdown-sm tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose-sm > :first-child {
-      +   .lg\\\\:markdown-sm > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose-sm > :last-child {
-      +   .lg\\\\:markdown-sm > :last-child {
 
       ---
 
@@ -12426,11 +10446,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-lg figure > * {
-      +   .lg\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .lg\\\\:prose-lg figure figcaption {
       +   .lg\\\\:markdown-lg figure figcaption {
 
@@ -12473,11 +10488,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose-lg ol > li {
       +   .lg\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .lg\\\\:prose-lg ol > li::before {
-      +   .lg\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -12526,26 +10536,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-lg hr + * {
-      +   .lg\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .lg\\\\:prose-lg h2 + * {
-      +   .lg\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose-lg h3 + * {
-      +   .lg\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose-lg h4 + * {
-      +   .lg\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .lg\\\\:prose-lg table {
       +   .lg\\\\:markdown-lg table {
 
@@ -12556,38 +10546,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-lg thead th:first-child {
-      +   .lg\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-lg thead th:last-child {
-      +   .lg\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .lg\\\\:prose-lg tbody td {
       +   .lg\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .lg\\\\:prose-lg tbody td:first-child {
-      +   .lg\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-lg tbody td:last-child {
-      +   .lg\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose-lg > :first-child {
-      +   .lg\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose-lg > :last-child {
-      +   .lg\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -12646,11 +10606,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-xl figure > * {
-      +   .lg\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .lg\\\\:prose-xl figure figcaption {
       +   .lg\\\\:markdown-xl figure figcaption {
 
@@ -12693,11 +10648,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose-xl ol > li {
       +   .lg\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .lg\\\\:prose-xl ol > li::before {
-      +   .lg\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -12746,26 +10696,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-xl hr + * {
-      +   .lg\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .lg\\\\:prose-xl h2 + * {
-      +   .lg\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose-xl h3 + * {
-      +   .lg\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose-xl h4 + * {
-      +   .lg\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .lg\\\\:prose-xl table {
       +   .lg\\\\:markdown-xl table {
 
@@ -12776,38 +10706,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-xl thead th:first-child {
-      +   .lg\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-xl thead th:last-child {
-      +   .lg\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .lg\\\\:prose-xl tbody td {
       +   .lg\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .lg\\\\:prose-xl tbody td:first-child {
-      +   .lg\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-xl tbody td:last-child {
-      +   .lg\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose-xl > :first-child {
-      +   .lg\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose-xl > :last-child {
-      +   .lg\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -12866,11 +10766,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-2xl figure > * {
-      +   .lg\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .lg\\\\:prose-2xl figure figcaption {
       +   .lg\\\\:markdown-2xl figure figcaption {
 
@@ -12913,11 +10808,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose-2xl ol > li {
       +   .lg\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .lg\\\\:prose-2xl ol > li::before {
-      +   .lg\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -12966,26 +10856,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-2xl hr + * {
-      +   .lg\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .lg\\\\:prose-2xl h2 + * {
-      +   .lg\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose-2xl h3 + * {
-      +   .lg\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose-2xl h4 + * {
-      +   .lg\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .lg\\\\:prose-2xl table {
       +   .lg\\\\:markdown-2xl table {
 
@@ -12996,38 +10866,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-2xl thead th:first-child {
-      +   .lg\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-2xl thead th:last-child {
-      +   .lg\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .lg\\\\:prose-2xl tbody td {
       +   .lg\\\\:markdown-2xl tbody td {
-
-      ---
-
-      -   .lg\\\\:prose-2xl tbody td:first-child {
-      +   .lg\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-2xl tbody td:last-child {
-      +   .lg\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose-2xl > :first-child {
-      +   .lg\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose-2xl > :last-child {
-      +   .lg\\\\:markdown-2xl > :last-child {
 
       ---
 
@@ -13098,6 +10938,61 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose-pink a code {
       +   .lg\\\\:markdown-pink a code {
+
+      ---
+
+      -   .xl\\\\:prose figure > *:not(figcaption) {
+      +   .xl\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .xl\\\\:prose hr + * {
+      +   .xl\\\\:markdown hr + * {
+
+      ---
+
+      -   .xl\\\\:prose h2 + * {
+      +   .xl\\\\:markdown h2 + * {
+
+      ---
+
+      -   .xl\\\\:prose h3 + * {
+      +   .xl\\\\:markdown h3 + * {
+
+      ---
+
+      -   .xl\\\\:prose h4 + * {
+      +   .xl\\\\:markdown h4 + * {
+
+      ---
+
+      -   .xl\\\\:prose thead th:first-child {
+      +   .xl\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .xl\\\\:prose thead th:last-child {
+      +   .xl\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .xl\\\\:prose tbody td:first-child {
+      +   .xl\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .xl\\\\:prose tbody td:last-child {
+      +   .xl\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .xl\\\\:prose > :first-child {
+      +   .xl\\\\:markdown > :first-child {
+
+      ---
+
+      -   .xl\\\\:prose > :last-child {
+      +   .xl\\\\:markdown > :last-child {
 
       ---
 
@@ -13326,11 +11221,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose figure > * {
-      +   .xl\\\\:markdown figure > * {
-
-      ---
-
       -   .xl\\\\:prose h2 code {
       +   .xl\\\\:markdown h2 code {
 
@@ -13383,56 +11273,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose ul ul, .xl\\\\:prose ul ol, .xl\\\\:prose ol ul, .xl\\\\:prose ol ol {
       +   .xl\\\\:markdown ul ul, .xl\\\\:markdown ul ol, .xl\\\\:markdown ol ul, .xl\\\\:markdown ol ol {
-
-      ---
-
-      -   .xl\\\\:prose hr + * {
-      +   .xl\\\\:markdown hr + * {
-
-      ---
-
-      -   .xl\\\\:prose h2 + * {
-      +   .xl\\\\:markdown h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose h3 + * {
-      +   .xl\\\\:markdown h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose h4 + * {
-      +   .xl\\\\:markdown h4 + * {
-
-      ---
-
-      -   .xl\\\\:prose thead th:first-child {
-      +   .xl\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose thead th:last-child {
-      +   .xl\\\\:markdown thead th:last-child {
-
-      ---
-
-      -   .xl\\\\:prose tbody td:first-child {
-      +   .xl\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose tbody td:last-child {
-      +   .xl\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose > :first-child {
-      +   .xl\\\\:markdown > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose > :last-child {
-      +   .xl\\\\:markdown > :last-child {
 
       ---
 
@@ -13491,11 +11331,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-sm figure > * {
-      +   .xl\\\\:markdown-sm figure > * {
-
-      ---
-
       -   .xl\\\\:prose-sm figure figcaption {
       +   .xl\\\\:markdown-sm figure figcaption {
 
@@ -13538,11 +11373,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose-sm ol > li {
       +   .xl\\\\:markdown-sm ol > li {
-
-      ---
-
-      -   .xl\\\\:prose-sm ol > li::before {
-      +   .xl\\\\:markdown-sm ol > li::before {
 
       ---
 
@@ -13591,26 +11421,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-sm hr + * {
-      +   .xl\\\\:markdown-sm hr + * {
-
-      ---
-
-      -   .xl\\\\:prose-sm h2 + * {
-      +   .xl\\\\:markdown-sm h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose-sm h3 + * {
-      +   .xl\\\\:markdown-sm h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose-sm h4 + * {
-      +   .xl\\\\:markdown-sm h4 + * {
-
-      ---
-
       -   .xl\\\\:prose-sm table {
       +   .xl\\\\:markdown-sm table {
 
@@ -13621,38 +11431,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-sm thead th:first-child {
-      +   .xl\\\\:markdown-sm thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-sm thead th:last-child {
-      +   .xl\\\\:markdown-sm thead th:last-child {
-
-      ---
-
       -   .xl\\\\:prose-sm tbody td {
       +   .xl\\\\:markdown-sm tbody td {
-
-      ---
-
-      -   .xl\\\\:prose-sm tbody td:first-child {
-      +   .xl\\\\:markdown-sm tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-sm tbody td:last-child {
-      +   .xl\\\\:markdown-sm tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose-sm > :first-child {
-      +   .xl\\\\:markdown-sm > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose-sm > :last-child {
-      +   .xl\\\\:markdown-sm > :last-child {
 
       ---
 
@@ -13711,11 +11491,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-lg figure > * {
-      +   .xl\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .xl\\\\:prose-lg figure figcaption {
       +   .xl\\\\:markdown-lg figure figcaption {
 
@@ -13758,11 +11533,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose-lg ol > li {
       +   .xl\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .xl\\\\:prose-lg ol > li::before {
-      +   .xl\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -13811,26 +11581,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-lg hr + * {
-      +   .xl\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .xl\\\\:prose-lg h2 + * {
-      +   .xl\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose-lg h3 + * {
-      +   .xl\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose-lg h4 + * {
-      +   .xl\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .xl\\\\:prose-lg table {
       +   .xl\\\\:markdown-lg table {
 
@@ -13841,38 +11591,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-lg thead th:first-child {
-      +   .xl\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-lg thead th:last-child {
-      +   .xl\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .xl\\\\:prose-lg tbody td {
       +   .xl\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .xl\\\\:prose-lg tbody td:first-child {
-      +   .xl\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-lg tbody td:last-child {
-      +   .xl\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose-lg > :first-child {
-      +   .xl\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose-lg > :last-child {
-      +   .xl\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -13931,11 +11651,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-xl figure > * {
-      +   .xl\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .xl\\\\:prose-xl figure figcaption {
       +   .xl\\\\:markdown-xl figure figcaption {
 
@@ -13978,11 +11693,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose-xl ol > li {
       +   .xl\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .xl\\\\:prose-xl ol > li::before {
-      +   .xl\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -14031,26 +11741,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-xl hr + * {
-      +   .xl\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .xl\\\\:prose-xl h2 + * {
-      +   .xl\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose-xl h3 + * {
-      +   .xl\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose-xl h4 + * {
-      +   .xl\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .xl\\\\:prose-xl table {
       +   .xl\\\\:markdown-xl table {
 
@@ -14061,38 +11751,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-xl thead th:first-child {
-      +   .xl\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-xl thead th:last-child {
-      +   .xl\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .xl\\\\:prose-xl tbody td {
       +   .xl\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .xl\\\\:prose-xl tbody td:first-child {
-      +   .xl\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-xl tbody td:last-child {
-      +   .xl\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose-xl > :first-child {
-      +   .xl\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose-xl > :last-child {
-      +   .xl\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -14151,11 +11811,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-2xl figure > * {
-      +   .xl\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .xl\\\\:prose-2xl figure figcaption {
       +   .xl\\\\:markdown-2xl figure figcaption {
 
@@ -14198,11 +11853,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose-2xl ol > li {
       +   .xl\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .xl\\\\:prose-2xl ol > li::before {
-      +   .xl\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -14251,26 +11901,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-2xl hr + * {
-      +   .xl\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .xl\\\\:prose-2xl h2 + * {
-      +   .xl\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose-2xl h3 + * {
-      +   .xl\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose-2xl h4 + * {
-      +   .xl\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .xl\\\\:prose-2xl table {
       +   .xl\\\\:markdown-2xl table {
 
@@ -14281,38 +11911,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-2xl thead th:first-child {
-      +   .xl\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-2xl thead th:last-child {
-      +   .xl\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .xl\\\\:prose-2xl tbody td {
       +   .xl\\\\:markdown-2xl tbody td {
-
-      ---
-
-      -   .xl\\\\:prose-2xl tbody td:first-child {
-      +   .xl\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-2xl tbody td:last-child {
-      +   .xl\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose-2xl > :first-child {
-      +   .xl\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose-2xl > :last-child {
-      +   .xl\\\\:markdown-2xl > :last-child {
 
       ---
 
@@ -14383,6 +11983,61 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose-pink a code {
       +   .xl\\\\:markdown-pink a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose figure > *:not(figcaption) {
+      +   .\\\\32xl\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose hr + * {
+      +   .\\\\32xl\\\\:markdown hr + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h2 + * {
+      +   .\\\\32xl\\\\:markdown h2 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h3 + * {
+      +   .\\\\32xl\\\\:markdown h3 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h4 + * {
+      +   .\\\\32xl\\\\:markdown h4 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose thead th:first-child {
+      +   .\\\\32xl\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose thead th:last-child {
+      +   .\\\\32xl\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose tbody td:first-child {
+      +   .\\\\32xl\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose tbody td:last-child {
+      +   .\\\\32xl\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose > :first-child {
+      +   .\\\\32xl\\\\:markdown > :first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose > :last-child {
+      +   .\\\\32xl\\\\:markdown > :last-child {
 
       ---
 
@@ -14611,11 +12266,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose figure > * {
-      +   .\\\\32xl\\\\:markdown figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose h2 code {
       +   .\\\\32xl\\\\:markdown h2 code {
 
@@ -14668,56 +12318,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose ul ul, .\\\\32xl\\\\:prose ul ol, .\\\\32xl\\\\:prose ol ul, .\\\\32xl\\\\:prose ol ol {
       +   .\\\\32xl\\\\:markdown ul ul, .\\\\32xl\\\\:markdown ul ol, .\\\\32xl\\\\:markdown ol ul, .\\\\32xl\\\\:markdown ol ol {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose hr + * {
-      +   .\\\\32xl\\\\:markdown hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose h2 + * {
-      +   .\\\\32xl\\\\:markdown h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose h3 + * {
-      +   .\\\\32xl\\\\:markdown h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose h4 + * {
-      +   .\\\\32xl\\\\:markdown h4 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose thead th:first-child {
-      +   .\\\\32xl\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose thead th:last-child {
-      +   .\\\\32xl\\\\:markdown thead th:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose > :first-child {
-      +   .\\\\32xl\\\\:markdown > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose > :last-child {
-      +   .\\\\32xl\\\\:markdown > :last-child {
 
       ---
 
@@ -14776,11 +12376,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-sm figure > * {
-      +   .\\\\32xl\\\\:markdown-sm figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-sm figure figcaption {
       +   .\\\\32xl\\\\:markdown-sm figure figcaption {
 
@@ -14823,11 +12418,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose-sm ol > li {
       +   .\\\\32xl\\\\:markdown-sm ol > li {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm ol > li::before {
-      +   .\\\\32xl\\\\:markdown-sm ol > li::before {
 
       ---
 
@@ -14876,26 +12466,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-sm hr + * {
-      +   .\\\\32xl\\\\:markdown-sm hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm h2 + * {
-      +   .\\\\32xl\\\\:markdown-sm h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm h3 + * {
-      +   .\\\\32xl\\\\:markdown-sm h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm h4 + * {
-      +   .\\\\32xl\\\\:markdown-sm h4 + * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-sm table {
       +   .\\\\32xl\\\\:markdown-sm table {
 
@@ -14906,38 +12476,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-sm thead th:first-child {
-      +   .\\\\32xl\\\\:markdown-sm thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm thead th:last-child {
-      +   .\\\\32xl\\\\:markdown-sm thead th:last-child {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-sm tbody td {
       +   .\\\\32xl\\\\:markdown-sm tbody td {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown-sm tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown-sm tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm > :first-child {
-      +   .\\\\32xl\\\\:markdown-sm > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-sm > :last-child {
-      +   .\\\\32xl\\\\:markdown-sm > :last-child {
 
       ---
 
@@ -14996,11 +12536,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg figure > * {
-      +   .\\\\32xl\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-lg figure figcaption {
       +   .\\\\32xl\\\\:markdown-lg figure figcaption {
 
@@ -15043,11 +12578,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose-lg ol > li {
       +   .\\\\32xl\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg ol > li::before {
-      +   .\\\\32xl\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -15096,26 +12626,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg hr + * {
-      +   .\\\\32xl\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg h2 + * {
-      +   .\\\\32xl\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg h3 + * {
-      +   .\\\\32xl\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg h4 + * {
-      +   .\\\\32xl\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-lg table {
       +   .\\\\32xl\\\\:markdown-lg table {
 
@@ -15126,38 +12636,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg thead th:first-child {
-      +   .\\\\32xl\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg thead th:last-child {
-      +   .\\\\32xl\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-lg tbody td {
       +   .\\\\32xl\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg > :first-child {
-      +   .\\\\32xl\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg > :last-child {
-      +   .\\\\32xl\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -15216,11 +12696,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl figure > * {
-      +   .\\\\32xl\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-xl figure figcaption {
       +   .\\\\32xl\\\\:markdown-xl figure figcaption {
 
@@ -15263,11 +12738,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose-xl ol > li {
       +   .\\\\32xl\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl ol > li::before {
-      +   .\\\\32xl\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -15316,26 +12786,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl hr + * {
-      +   .\\\\32xl\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl h2 + * {
-      +   .\\\\32xl\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl h3 + * {
-      +   .\\\\32xl\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl h4 + * {
-      +   .\\\\32xl\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-xl table {
       +   .\\\\32xl\\\\:markdown-xl table {
 
@@ -15346,38 +12796,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl thead th:first-child {
-      +   .\\\\32xl\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl thead th:last-child {
-      +   .\\\\32xl\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-xl tbody td {
       +   .\\\\32xl\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl > :first-child {
-      +   .\\\\32xl\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl > :last-child {
-      +   .\\\\32xl\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -15436,11 +12856,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl figure > * {
-      +   .\\\\32xl\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-2xl figure figcaption {
       +   .\\\\32xl\\\\:markdown-2xl figure figcaption {
 
@@ -15483,11 +12898,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose-2xl ol > li {
       +   .\\\\32xl\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl ol > li::before {
-      +   .\\\\32xl\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -15536,26 +12946,6 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl hr + * {
-      +   .\\\\32xl\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl h2 + * {
-      +   .\\\\32xl\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl h3 + * {
-      +   .\\\\32xl\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl h4 + * {
-      +   .\\\\32xl\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-2xl table {
       +   .\\\\32xl\\\\:markdown-2xl table {
 
@@ -15566,38 +12956,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl thead th:first-child {
-      +   .\\\\32xl\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl thead th:last-child {
-      +   .\\\\32xl\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-2xl tbody td {
       +   .\\\\32xl\\\\:markdown-2xl tbody td {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl > :first-child {
-      +   .\\\\32xl\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl > :last-child {
-      +   .\\\\32xl\\\\:markdown-2xl > :last-child {
 
       ---
 
@@ -15702,7 +13062,6 @@ it('should be possible to change the default modifiers', async () => {
       -
       - .prose-2xl h1 {
       -   font-size: 2.6666667em;
-      -   margin-top: 0;
       -   margin-bottom: 0.875em;
       -   line-height: 1;
       - }
@@ -15740,11 +13099,6 @@ it('should be possible to change the default modifiers', async () => {
       - .prose-2xl figure {
       -   margin-top: 2em;
       -   margin-bottom: 2em;
-      - }
-      -
-      - .prose-2xl figure > * {
-      -   margin-top: 0;
-      -   margin-bottom: 0;
       - }
       -
       - .prose-2xl figure figcaption {
@@ -15796,10 +13150,6 @@ it('should be possible to change the default modifiers', async () => {
       -   padding-left: 1.6666667em;
       - }
       -
-      - .prose-2xl ol > li::before {
-      -   left: 0;
-      - }
-      -
       - .prose-2xl ul > li {
       -   padding-left: 1.6666667em;
       - }
@@ -15842,22 +13192,6 @@ it('should be possible to change the default modifiers', async () => {
       -   margin-bottom: 3em;
       - }
       -
-      - .prose-2xl hr + * {
-      -   margin-top: 0;
-      - }
-      -
-      - .prose-2xl h2 + * {
-      -   margin-top: 0;
-      - }
-      -
-      - .prose-2xl h3 + * {
-      -   margin-top: 0;
-      - }
-      -
-      - .prose-2xl h4 + * {
-      -   margin-top: 0;
-      - }
-      -
       - .prose-2xl table {
       -   font-size: 0.8333333em;
       -   line-height: 1.4;
@@ -15869,35 +13203,11 @@ it('should be possible to change the default modifiers', async () => {
       -   padding-left: 0.6em;
       - }
       -
-      - .prose-2xl thead th:first-child {
-      -   padding-left: 0;
-      - }
-      -
-      - .prose-2xl thead th:last-child {
-      -   padding-right: 0;
-      - }
-      -
       - .prose-2xl tbody td {
       -   padding-top: 0.8em;
       -   padding-right: 0.6em;
       -   padding-bottom: 0.8em;
       -   padding-left: 0.6em;
-      - }
-      -
-      - .prose-2xl tbody td:first-child {
-      -   padding-left: 0;
-      - }
-      -
-      - .prose-2xl tbody td:last-child {
-      -   padding-right: 0;
-      - }
-      -
-      - .prose-2xl > :first-child {
-      -   margin-top: 0;
-      - }
-      -
-      - .prose-2xl > :last-child {
-      -   margin-bottom: 0;
       - }
       -
       - .prose-red a {
@@ -15959,7 +13269,6 @@ it('should be possible to change the default modifiers', async () => {
 
       ---
 
-      -     margin-bottom: 0;
       -   }
       -
       -   .sm\\\\:prose-2xl {
@@ -15983,11 +13292,12 @@ it('should be possible to change the default modifiers', async () => {
       -     margin-top: 1.7777778em;
       -     margin-bottom: 1.7777778em;
       -     padding-left: 1.1111111em;
-      -   }
+
+      ---
+
       -
       -   .sm\\\\:prose-2xl h1 {
       -     font-size: 2.6666667em;
-      -     margin-top: 0;
       -     margin-bottom: 0.875em;
       -     line-height: 1;
       -   }
@@ -16025,13 +13335,6 @@ it('should be possible to change the default modifiers', async () => {
       -   .sm\\\\:prose-2xl figure {
       -     margin-top: 2em;
       -     margin-bottom: 2em;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl figure > * {
-      -     margin-top: 0;
-
-      ---
-
       -   }
       -
       -   .sm\\\\:prose-2xl figure figcaption {
@@ -16083,10 +13386,6 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .sm\\\\:prose-2xl ol > li::before {
-      -     left: 0;
-      -   }
-      -
       -   .sm\\\\:prose-2xl ul > li {
       -     padding-left: 1.6666667em;
       -   }
@@ -16101,9 +13400,7 @@ it('should be possible to change the default modifiers', async () => {
       -   .sm\\\\:prose-2xl > ul > li p {
       -     margin-top: 0.8333333em;
       -     margin-bottom: 0.8333333em;
-
-      ---
-
+      -   }
       -
       -   .sm\\\\:prose-2xl > ul > li > *:first-child {
       -     margin-top: 1.3333333em;
@@ -16131,22 +13428,6 @@ it('should be possible to change the default modifiers', async () => {
       -     margin-bottom: 3em;
       -   }
       -
-      -   .sm\\\\:prose-2xl hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
       -   .sm\\\\:prose-2xl table {
       -     font-size: 0.8333333em;
       -     line-height: 1.4;
@@ -16158,35 +13439,11 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 0.6em;
       -   }
       -
-      -   .sm\\\\:prose-2xl thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
       -   .sm\\\\:prose-2xl tbody td {
       -     padding-top: 0.8em;
       -     padding-right: 0.6em;
       -     padding-bottom: 0.8em;
       -     padding-left: 0.6em;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-2xl > :last-child {
-      -     margin-bottom: 0;
       -   }
       -
       -   .sm\\\\:prose-red a {
@@ -16247,7 +13504,6 @@ it('should be possible to change the default modifiers', async () => {
 
       ---
 
-      -     margin-bottom: 0;
       -   }
       -
       -   .md\\\\:prose-2xl {
@@ -16275,7 +13531,6 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .md\\\\:prose-2xl h1 {
       -     font-size: 2.6666667em;
-      -     margin-top: 0;
       -     margin-bottom: 0.875em;
       -     line-height: 1;
       -   }
@@ -16313,11 +13568,6 @@ it('should be possible to change the default modifiers', async () => {
       -   .md\\\\:prose-2xl figure {
       -     margin-top: 2em;
       -     margin-bottom: 2em;
-      -   }
-      -
-      -   .md\\\\:prose-2xl figure > * {
-      -     margin-top: 0;
-      -     margin-bottom: 0;
       -   }
       -
       -   .md\\\\:prose-2xl figure figcaption {
@@ -16369,10 +13619,6 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .md\\\\:prose-2xl ol > li::before {
-      -     left: 0;
-      -   }
-      -
       -   .md\\\\:prose-2xl ul > li {
       -     padding-left: 1.6666667em;
       -   }
@@ -16415,22 +13661,6 @@ it('should be possible to change the default modifiers', async () => {
       -     margin-bottom: 3em;
       -   }
       -
-      -   .md\\\\:prose-2xl hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose-2xl h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose-2xl h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose-2xl h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
       -   .md\\\\:prose-2xl table {
       -     font-size: 0.8333333em;
       -     line-height: 1.4;
@@ -16442,37 +13672,11 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 0.6em;
       -   }
       -
-      -   .md\\\\:prose-2xl thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .md\\\\:prose-2xl thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
       -   .md\\\\:prose-2xl tbody td {
       -     padding-top: 0.8em;
       -     padding-right: 0.6em;
       -     padding-bottom: 0.8em;
       -     padding-left: 0.6em;
-      -   }
-      -
-      -   .md\\\\:prose-2xl tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .md\\\\:prose-2xl tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .md\\\\:prose-2xl > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose-2xl > :last-child {
-
-      ---
-
       -   }
       -
       -   .md\\\\:prose-red a {
@@ -16532,7 +13736,6 @@ it('should be possible to change the default modifiers', async () => {
 
       ---
 
-      -     margin-bottom: 0;
       -   }
       -
       -   .lg\\\\:prose-2xl {
@@ -16560,7 +13763,6 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .lg\\\\:prose-2xl h1 {
       -     font-size: 2.6666667em;
-      -     margin-top: 0;
       -     margin-bottom: 0.875em;
       -     line-height: 1;
       -   }
@@ -16577,7 +13779,9 @@ it('should be possible to change the default modifiers', async () => {
       -     margin-top: 1.5555556em;
       -     margin-bottom: 0.6666667em;
       -     line-height: 1.2222222;
-      -   }
+
+      ---
+
       -
       -   .lg\\\\:prose-2xl h4 {
       -     margin-top: 1.6666667em;
@@ -16598,11 +13802,6 @@ it('should be possible to change the default modifiers', async () => {
       -   .lg\\\\:prose-2xl figure {
       -     margin-top: 2em;
       -     margin-bottom: 2em;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl figure > * {
-      -     margin-top: 0;
-      -     margin-bottom: 0;
       -   }
       -
       -   .lg\\\\:prose-2xl figure figcaption {
@@ -16654,10 +13853,6 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .lg\\\\:prose-2xl ol > li::before {
-      -     left: 0;
-      -   }
-      -
       -   .lg\\\\:prose-2xl ul > li {
       -     padding-left: 1.6666667em;
       -   }
@@ -16700,22 +13895,6 @@ it('should be possible to change the default modifiers', async () => {
       -     margin-bottom: 3em;
       -   }
       -
-      -   .lg\\\\:prose-2xl hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
       -   .lg\\\\:prose-2xl table {
       -     font-size: 0.8333333em;
       -     line-height: 1.4;
@@ -16727,37 +13906,11 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 0.6em;
       -   }
       -
-      -   .lg\\\\:prose-2xl thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
       -   .lg\\\\:prose-2xl tbody td {
       -     padding-top: 0.8em;
       -     padding-right: 0.6em;
       -     padding-bottom: 0.8em;
       -     padding-left: 0.6em;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose-2xl > :last-child {
-
-      ---
-
       -   }
       -
       -   .lg\\\\:prose-red a {
@@ -16806,9 +13959,7 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .lg\\\\:prose-purple a code {
       -     color: #7c3aed;
-
-      ---
-
+      -   }
       -
       -   .lg\\\\:prose-pink a {
       -     color: #db2777;
@@ -16820,7 +13971,6 @@ it('should be possible to change the default modifiers', async () => {
 
       ---
 
-      -     margin-bottom: 0;
       -   }
       -
       -   .xl\\\\:prose-2xl {
@@ -16848,7 +13998,6 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .xl\\\\:prose-2xl h1 {
       -     font-size: 2.6666667em;
-      -     margin-top: 0;
       -     margin-bottom: 0.875em;
       -     line-height: 1;
       -   }
@@ -16886,11 +14035,6 @@ it('should be possible to change the default modifiers', async () => {
       -   .xl\\\\:prose-2xl figure {
       -     margin-top: 2em;
       -     margin-bottom: 2em;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl figure > * {
-      -     margin-top: 0;
-      -     margin-bottom: 0;
       -   }
       -
       -   .xl\\\\:prose-2xl figure figcaption {
@@ -16942,10 +14086,6 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .xl\\\\:prose-2xl ol > li::before {
-      -     left: 0;
-      -   }
-      -
       -   .xl\\\\:prose-2xl ul > li {
       -     padding-left: 1.6666667em;
       -   }
@@ -16988,22 +14128,6 @@ it('should be possible to change the default modifiers', async () => {
       -     margin-bottom: 3em;
       -   }
       -
-      -   .xl\\\\:prose-2xl hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
       -   .xl\\\\:prose-2xl table {
       -     font-size: 0.8333333em;
       -     line-height: 1.4;
@@ -17015,37 +14139,11 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 0.6em;
       -   }
       -
-      -   .xl\\\\:prose-2xl thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
       -   .xl\\\\:prose-2xl tbody td {
       -     padding-top: 0.8em;
       -     padding-right: 0.6em;
       -     padding-bottom: 0.8em;
       -     padding-left: 0.6em;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-2xl > :last-child {
-
-      ---
-
       -   }
       -
       -   .xl\\\\:prose-red a {
@@ -17074,7 +14172,9 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .xl\\\\:prose-blue a {
       -     color: #2563eb;
-      -   }
+
+      ---
+
       -
       -   .xl\\\\:prose-blue a code {
       -     color: #2563eb;
@@ -17094,9 +14194,7 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .xl\\\\:prose-purple a code {
       -     color: #7c3aed;
-
-      ---
-
+      -   }
       -
       -   .xl\\\\:prose-pink a {
       -     color: #db2777;
@@ -17108,7 +14206,6 @@ it('should be possible to change the default modifiers', async () => {
 
       ---
 
-      -     margin-bottom: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl {
@@ -17136,7 +14233,6 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .\\\\32xl\\\\:prose-2xl h1 {
       -     font-size: 2.6666667em;
-      -     margin-top: 0;
       -     margin-bottom: 0.875em;
       -     line-height: 1;
       -   }
@@ -17174,13 +14270,6 @@ it('should be possible to change the default modifiers', async () => {
       -   .\\\\32xl\\\\:prose-2xl figure {
       -     margin-top: 2em;
       -     margin-bottom: 2em;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl figure > * {
-      -     margin-top: 0;
-
-      ---
-
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl figure figcaption {
@@ -17232,10 +14321,6 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-2xl ol > li::before {
-      -     left: 0;
-      -   }
-      -
       -   .\\\\32xl\\\\:prose-2xl ul > li {
       -     padding-left: 1.6666667em;
       -   }
@@ -17278,22 +14363,6 @@ it('should be possible to change the default modifiers', async () => {
       -     margin-bottom: 3em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-2xl hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
       -   .\\\\32xl\\\\:prose-2xl table {
       -     font-size: 0.8333333em;
       -     line-height: 1.4;
@@ -17305,35 +14374,11 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 0.6em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-2xl thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
       -   .\\\\32xl\\\\:prose-2xl tbody td {
       -     padding-top: 0.8em;
       -     padding-right: 0.6em;
       -     padding-bottom: 0.8em;
       -     padding-left: 0.6em;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-2xl > :last-child {
-      -     margin-bottom: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-red a {
@@ -17399,6 +14444,61 @@ it('should be possible to change the default modifiers and change the className'
   expect(await diffOnly({ modifiers: [/** 'sm', */ 'lg', 'xl', '2xl'], className: 'markdown' }))
     .toMatchInlineSnapshot(`
     "
+
+      - .prose figure > *:not(figcaption) {
+      + .markdown figure > *:not(figcaption) {
+
+      ---
+
+      - .prose hr + * {
+      + .markdown hr + * {
+
+      ---
+
+      - .prose h2 + * {
+      + .markdown h2 + * {
+
+      ---
+
+      - .prose h3 + * {
+      + .markdown h3 + * {
+
+      ---
+
+      - .prose h4 + * {
+      + .markdown h4 + * {
+
+      ---
+
+      - .prose thead th:first-child {
+      + .markdown thead th:first-child {
+
+      ---
+
+      - .prose thead th:last-child {
+      + .markdown thead th:last-child {
+
+      ---
+
+      - .prose tbody td:first-child {
+      + .markdown tbody td:first-child {
+
+      ---
+
+      - .prose tbody td:last-child {
+      + .markdown tbody td:last-child {
+
+      ---
+
+      - .prose > :first-child {
+      + .markdown > :first-child {
+
+      ---
+
+      - .prose > :last-child {
+      + .markdown > :last-child {
+
+      ---
 
       - .prose {
       + .markdown {
@@ -17625,11 +14725,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose figure > * {
-      + .markdown figure > * {
-
-      ---
-
       - .prose h2 code {
       + .markdown h2 code {
 
@@ -17687,52 +14782,12 @@ it('should be possible to change the default modifiers and change the className'
 
       - }
       -
-      - .prose hr + * {
-      -   margin-top: 0;
-      - }
-      -
-      - .prose h2 + * {
-      -   margin-top: 0;
-      - }
-      -
-      - .prose h3 + * {
-      -   margin-top: 0;
-
-      ---
-
-      - .prose h4 + * {
-      -   margin-top: 0;
-      - }
-      -
-      - .prose thead th:first-child {
-      -   padding-left: 0;
-      - }
-      -
-      - .prose thead th:last-child {
-      -   padding-right: 0;
-      - }
-      -
-      - .prose tbody td:first-child {
-      -   padding-left: 0;
-      - }
-      -
-      - .prose tbody td:last-child {
-      -   padding-right: 0;
-      - }
-      -
-      - .prose > :first-child {
-      -   margin-top: 0;
-      - }
-      -
-      - .prose > :last-child {
-      -   margin-bottom: 0;
-      - }
-      -
       - .prose-sm {
       -   font-size: 0.875rem;
       -   line-height: 1.7142857;
-      - }
-      -
+
+      ---
+
       - .prose-sm p {
       -   margin-top: 1.1428571em;
       -   margin-bottom: 1.1428571em;
@@ -17753,7 +14808,6 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-sm h1 {
       -   font-size: 2.1428571em;
-      -   margin-top: 0;
       -   margin-bottom: 0.8em;
       -   line-height: 1.2;
       - }
@@ -17791,11 +14845,6 @@ it('should be possible to change the default modifiers and change the className'
       - .prose-sm figure {
       -   margin-top: 1.7142857em;
       -   margin-bottom: 1.7142857em;
-      - }
-      -
-      - .prose-sm figure > * {
-      -   margin-top: 0;
-      -   margin-bottom: 0;
       - }
       -
       - .prose-sm figure figcaption {
@@ -17847,10 +14896,6 @@ it('should be possible to change the default modifiers and change the className'
       -   padding-left: 1.5714286em;
       - }
       -
-      - .prose-sm ol > li::before {
-      -   left: 0;
-      - }
-      -
       - .prose-sm ul > li {
       -   padding-left: 1.5714286em;
       - }
@@ -17893,26 +14938,6 @@ it('should be possible to change the default modifiers and change the className'
       -   margin-bottom: 2.8571429em;
       - }
       -
-      - .prose-sm hr + * {
-      + .markdown hr + * {
-
-      ---
-
-      - .prose-sm h2 + * {
-      + .markdown h2 + * {
-
-      ---
-
-      - .prose-sm h3 + * {
-      + .markdown h3 + * {
-
-      ---
-
-      - .prose-sm h4 + * {
-      + .markdown h4 + * {
-
-      ---
-
       - .prose-sm table {
       -   font-size: 0.8571429em;
       -   line-height: 1.5;
@@ -17924,16 +14949,6 @@ it('should be possible to change the default modifiers and change the className'
       -   padding-left: 1em;
       - }
       -
-      - .prose-sm thead th:first-child {
-      + .markdown thead th:first-child {
-
-      ---
-
-      - .prose-sm thead th:last-child {
-      + .markdown thead th:last-child {
-
-      ---
-
       - .prose-sm tbody td {
       -   padding-top: 0.6666667em;
       -   padding-right: 1em;
@@ -17941,26 +14956,6 @@ it('should be possible to change the default modifiers and change the className'
       -   padding-left: 1em;
       - }
       -
-      - .prose-sm tbody td:first-child {
-      + .markdown tbody td:first-child {
-
-      ---
-
-      - .prose-sm tbody td:last-child {
-      + .markdown tbody td:last-child {
-
-      ---
-
-      - .prose-sm > :first-child {
-      + .markdown > :first-child {
-
-      ---
-
-      - .prose-sm > :last-child {
-      + .markdown > :last-child {
-
-      ---
-
       - .prose-lg {
       + .markdown-lg {
 
@@ -18016,11 +15011,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-lg figure > * {
-      + .markdown-lg figure > * {
-
-      ---
-
       - .prose-lg figure figcaption {
       + .markdown-lg figure figcaption {
 
@@ -18063,11 +15053,6 @@ it('should be possible to change the default modifiers and change the className'
 
       - .prose-lg ol > li {
       + .markdown-lg ol > li {
-
-      ---
-
-      - .prose-lg ol > li::before {
-      + .markdown-lg ol > li::before {
 
       ---
 
@@ -18116,26 +15101,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-lg hr + * {
-      + .markdown-lg hr + * {
-
-      ---
-
-      - .prose-lg h2 + * {
-      + .markdown-lg h2 + * {
-
-      ---
-
-      - .prose-lg h3 + * {
-      + .markdown-lg h3 + * {
-
-      ---
-
-      - .prose-lg h4 + * {
-      + .markdown-lg h4 + * {
-
-      ---
-
       - .prose-lg table {
       + .markdown-lg table {
 
@@ -18146,38 +15111,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-lg thead th:first-child {
-      + .markdown-lg thead th:first-child {
-
-      ---
-
-      - .prose-lg thead th:last-child {
-      + .markdown-lg thead th:last-child {
-
-      ---
-
       - .prose-lg tbody td {
       + .markdown-lg tbody td {
-
-      ---
-
-      - .prose-lg tbody td:first-child {
-      + .markdown-lg tbody td:first-child {
-
-      ---
-
-      - .prose-lg tbody td:last-child {
-      + .markdown-lg tbody td:last-child {
-
-      ---
-
-      - .prose-lg > :first-child {
-      + .markdown-lg > :first-child {
-
-      ---
-
-      - .prose-lg > :last-child {
-      + .markdown-lg > :last-child {
 
       ---
 
@@ -18236,11 +15171,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-xl figure > * {
-      + .markdown-xl figure > * {
-
-      ---
-
       - .prose-xl figure figcaption {
       + .markdown-xl figure figcaption {
 
@@ -18283,11 +15213,6 @@ it('should be possible to change the default modifiers and change the className'
 
       - .prose-xl ol > li {
       + .markdown-xl ol > li {
-
-      ---
-
-      - .prose-xl ol > li::before {
-      + .markdown-xl ol > li::before {
 
       ---
 
@@ -18336,26 +15261,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-xl hr + * {
-      + .markdown-xl hr + * {
-
-      ---
-
-      - .prose-xl h2 + * {
-      + .markdown-xl h2 + * {
-
-      ---
-
-      - .prose-xl h3 + * {
-      + .markdown-xl h3 + * {
-
-      ---
-
-      - .prose-xl h4 + * {
-      + .markdown-xl h4 + * {
-
-      ---
-
       - .prose-xl table {
       + .markdown-xl table {
 
@@ -18366,38 +15271,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-xl thead th:first-child {
-      + .markdown-xl thead th:first-child {
-
-      ---
-
-      - .prose-xl thead th:last-child {
-      + .markdown-xl thead th:last-child {
-
-      ---
-
       - .prose-xl tbody td {
       + .markdown-xl tbody td {
-
-      ---
-
-      - .prose-xl tbody td:first-child {
-      + .markdown-xl tbody td:first-child {
-
-      ---
-
-      - .prose-xl tbody td:last-child {
-      + .markdown-xl tbody td:last-child {
-
-      ---
-
-      - .prose-xl > :first-child {
-      + .markdown-xl > :first-child {
-
-      ---
-
-      - .prose-xl > :last-child {
-      + .markdown-xl > :last-child {
 
       ---
 
@@ -18456,11 +15331,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-2xl figure > * {
-      + .markdown-2xl figure > * {
-
-      ---
-
       - .prose-2xl figure figcaption {
       + .markdown-2xl figure figcaption {
 
@@ -18503,11 +15373,6 @@ it('should be possible to change the default modifiers and change the className'
 
       - .prose-2xl ol > li {
       + .markdown-2xl ol > li {
-
-      ---
-
-      - .prose-2xl ol > li::before {
-      + .markdown-2xl ol > li::before {
 
       ---
 
@@ -18556,26 +15421,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-2xl hr + * {
-      + .markdown-2xl hr + * {
-
-      ---
-
-      - .prose-2xl h2 + * {
-      + .markdown-2xl h2 + * {
-
-      ---
-
-      - .prose-2xl h3 + * {
-      + .markdown-2xl h3 + * {
-
-      ---
-
-      - .prose-2xl h4 + * {
-      + .markdown-2xl h4 + * {
-
-      ---
-
       - .prose-2xl table {
       + .markdown-2xl table {
 
@@ -18586,38 +15431,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-2xl thead th:first-child {
-      + .markdown-2xl thead th:first-child {
-
-      ---
-
-      - .prose-2xl thead th:last-child {
-      + .markdown-2xl thead th:last-child {
-
-      ---
-
       - .prose-2xl tbody td {
       + .markdown-2xl tbody td {
-
-      ---
-
-      - .prose-2xl tbody td:first-child {
-      + .markdown-2xl tbody td:first-child {
-
-      ---
-
-      - .prose-2xl tbody td:last-child {
-      + .markdown-2xl tbody td:last-child {
-
-      ---
-
-      - .prose-2xl > :first-child {
-      + .markdown-2xl > :first-child {
-
-      ---
-
-      - .prose-2xl > :last-child {
-      + .markdown-2xl > :last-child {
 
       ---
 
@@ -18629,13 +15444,13 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-red a code {
       -   color: #dc2626;
-      - }
-      -
-      - .prose-yellow a {
-      -   color: #d97706;
 
       ---
 
+      - .prose-yellow a {
+      -   color: #d97706;
+      - }
+      -
       - .prose-yellow a code {
       -   color: #d97706;
       - }
@@ -18680,6 +15495,61 @@ it('should be possible to change the default modifiers and change the className'
       -   color: #db2777;
       - }
       -
+
+      ---
+
+      -   .sm\\\\:prose figure > *:not(figcaption) {
+      +   .sm\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .sm\\\\:prose hr + * {
+      +   .sm\\\\:markdown hr + * {
+
+      ---
+
+      -   .sm\\\\:prose h2 + * {
+      +   .sm\\\\:markdown h2 + * {
+
+      ---
+
+      -   .sm\\\\:prose h3 + * {
+      +   .sm\\\\:markdown h3 + * {
+
+      ---
+
+      -   .sm\\\\:prose h4 + * {
+      +   .sm\\\\:markdown h4 + * {
+
+      ---
+
+      -   .sm\\\\:prose thead th:first-child {
+      +   .sm\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .sm\\\\:prose thead th:last-child {
+      +   .sm\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .sm\\\\:prose tbody td:first-child {
+      +   .sm\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .sm\\\\:prose tbody td:last-child {
+      +   .sm\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .sm\\\\:prose > :first-child {
+      +   .sm\\\\:markdown > :first-child {
+
+      ---
+
+      -   .sm\\\\:prose > :last-child {
+      +   .sm\\\\:markdown > :last-child {
 
       ---
 
@@ -18908,11 +15778,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose figure > * {
-      +   .sm\\\\:markdown figure > * {
-
-      ---
-
       -   .sm\\\\:prose h2 code {
       +   .sm\\\\:markdown h2 code {
 
@@ -18968,48 +15833,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
-      -   .sm\\\\:prose hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .sm\\\\:prose thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .sm\\\\:prose tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .sm\\\\:prose tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .sm\\\\:prose > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose > :last-child {
-      -     margin-bottom: 0;
-      -   }
-      -
       -   .sm\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -19035,7 +15858,6 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -19063,9 +15885,8 @@ it('should be possible to change the default modifiers and change the className'
       -   .sm\\\\:prose-sm img {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm video {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
@@ -19076,15 +15897,6 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-bottom: 1.7142857em;
       -   }
       -
-      -   .sm\\\\:prose-sm figure > * {
-      +   .sm\\\\:markdown hr + * {
-
-      ---
-
-      -     margin-bottom: 0;
-
-      ---
-
       -   .sm\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
@@ -19134,10 +15946,6 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .sm\\\\:prose-sm ol > li::before {
-      -     left: 0;
-      -   }
-      -
       -   .sm\\\\:prose-sm ul > li {
       -     padding-left: 1.5714286em;
       -   }
@@ -19180,27 +15988,6 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-bottom: 2.8571429em;
       -   }
       -
-      -   .sm\\\\:prose-sm hr + * {
-      +   .sm\\\\:markdown h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose-sm h2 + * {
-      +   .sm\\\\:markdown h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose-sm h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-sm h4 + * {
-      +   .sm\\\\:markdown h4 + * {
-
-      ---
-
-      -   }
-      -
       -   .sm\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -19210,19 +15997,8 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-
-      ---
-
-      -   .sm\\\\:prose-sm thead th:first-child {
-      +   .sm\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-sm thead th:last-child {
-      +   .sm\\\\:markdown thead th:last-child {
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
@@ -19230,26 +16006,6 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1em;
       -   }
       -
-      -   .sm\\\\:prose-sm tbody td:first-child {
-      +   .sm\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-sm tbody td:last-child {
-      +   .sm\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose-sm > :first-child {
-      +   .sm\\\\:markdown > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose-sm > :last-child {
-      +   .sm\\\\:markdown > :last-child {
-
-      ---
-
       -   .sm\\\\:prose-lg {
       +   .sm\\\\:markdown-lg {
 
@@ -19305,11 +16061,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-lg figure > * {
-      +   .sm\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .sm\\\\:prose-lg figure figcaption {
       +   .sm\\\\:markdown-lg figure figcaption {
 
@@ -19352,11 +16103,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .sm\\\\:prose-lg ol > li {
       +   .sm\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .sm\\\\:prose-lg ol > li::before {
-      +   .sm\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -19405,26 +16151,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-lg hr + * {
-      +   .sm\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .sm\\\\:prose-lg h2 + * {
-      +   .sm\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose-lg h3 + * {
-      +   .sm\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose-lg h4 + * {
-      +   .sm\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .sm\\\\:prose-lg table {
       +   .sm\\\\:markdown-lg table {
 
@@ -19435,38 +16161,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-lg thead th:first-child {
-      +   .sm\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-lg thead th:last-child {
-      +   .sm\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .sm\\\\:prose-lg tbody td {
       +   .sm\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .sm\\\\:prose-lg tbody td:first-child {
-      +   .sm\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-lg tbody td:last-child {
-      +   .sm\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose-lg > :first-child {
-      +   .sm\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose-lg > :last-child {
-      +   .sm\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -19525,11 +16221,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-xl figure > * {
-      +   .sm\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .sm\\\\:prose-xl figure figcaption {
       +   .sm\\\\:markdown-xl figure figcaption {
 
@@ -19572,11 +16263,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .sm\\\\:prose-xl ol > li {
       +   .sm\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .sm\\\\:prose-xl ol > li::before {
-      +   .sm\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -19625,26 +16311,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-xl hr + * {
-      +   .sm\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .sm\\\\:prose-xl h2 + * {
-      +   .sm\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose-xl h3 + * {
-      +   .sm\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose-xl h4 + * {
-      +   .sm\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .sm\\\\:prose-xl table {
       +   .sm\\\\:markdown-xl table {
 
@@ -19655,38 +16321,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-xl thead th:first-child {
-      +   .sm\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-xl thead th:last-child {
-      +   .sm\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .sm\\\\:prose-xl tbody td {
       +   .sm\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .sm\\\\:prose-xl tbody td:first-child {
-      +   .sm\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-xl tbody td:last-child {
-      +   .sm\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose-xl > :first-child {
-      +   .sm\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose-xl > :last-child {
-      +   .sm\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -19745,11 +16381,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-2xl figure > * {
-      +   .sm\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .sm\\\\:prose-2xl figure figcaption {
       +   .sm\\\\:markdown-2xl figure figcaption {
 
@@ -19792,11 +16423,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .sm\\\\:prose-2xl ol > li {
       +   .sm\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .sm\\\\:prose-2xl ol > li::before {
-      +   .sm\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -19845,26 +16471,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-2xl hr + * {
-      +   .sm\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .sm\\\\:prose-2xl h2 + * {
-      +   .sm\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .sm\\\\:prose-2xl h3 + * {
-      +   .sm\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .sm\\\\:prose-2xl h4 + * {
-      +   .sm\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .sm\\\\:prose-2xl table {
       +   .sm\\\\:markdown-2xl table {
 
@@ -19875,42 +16481,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-2xl thead th:first-child {
-      +   .sm\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-2xl thead th:last-child {
-      +   .sm\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .sm\\\\:prose-2xl tbody td {
       +   .sm\\\\:markdown-2xl tbody td {
 
       ---
 
-      -   .sm\\\\:prose-2xl tbody td:first-child {
-      +   .sm\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .sm\\\\:prose-2xl tbody td:last-child {
-      +   .sm\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .sm\\\\:prose-2xl > :first-child {
-      +   .sm\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .sm\\\\:prose-2xl > :last-child {
-      +   .sm\\\\:markdown-2xl > :last-child {
-
-      ---
-
-      -   }
       -
       -   .sm\\\\:prose-red a {
       -     color: #dc2626;
@@ -19946,9 +16521,7 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose-indigo a {
       -     color: #4f46e5;
-
-      ---
-
+      -   }
       -
       -   .sm\\\\:prose-indigo a code {
       -     color: #4f46e5;
@@ -19969,6 +16542,61 @@ it('should be possible to change the default modifiers and change the className'
       -   .sm\\\\:prose-pink a code {
       -     color: #db2777;
       -   }
+
+      ---
+
+      -   .md\\\\:prose figure > *:not(figcaption) {
+      +   .md\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .md\\\\:prose hr + * {
+      +   .md\\\\:markdown hr + * {
+
+      ---
+
+      -   .md\\\\:prose h2 + * {
+      +   .md\\\\:markdown h2 + * {
+
+      ---
+
+      -   .md\\\\:prose h3 + * {
+      +   .md\\\\:markdown h3 + * {
+
+      ---
+
+      -   .md\\\\:prose h4 + * {
+      +   .md\\\\:markdown h4 + * {
+
+      ---
+
+      -   .md\\\\:prose thead th:first-child {
+      +   .md\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .md\\\\:prose thead th:last-child {
+      +   .md\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .md\\\\:prose tbody td:first-child {
+      +   .md\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .md\\\\:prose tbody td:last-child {
+      +   .md\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .md\\\\:prose > :first-child {
+      +   .md\\\\:markdown > :first-child {
+
+      ---
+
+      -   .md\\\\:prose > :last-child {
+      +   .md\\\\:markdown > :last-child {
 
       ---
 
@@ -20197,11 +16825,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose figure > * {
-      +   .md\\\\:markdown figure > * {
-
-      ---
-
       -   .md\\\\:prose h2 code {
       +   .md\\\\:markdown h2 code {
 
@@ -20257,48 +16880,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
-      -   .md\\\\:prose hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .md\\\\:prose thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .md\\\\:prose tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .md\\\\:prose tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .md\\\\:prose > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .md\\\\:prose > :last-child {
-      -     margin-bottom: 0;
-      -   }
-      -
       -   .md\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -20307,9 +16888,8 @@ it('should be possible to change the default modifiers and change the className'
       -   .md\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
-
-      ---
-
+      -   }
+      -
       -   .md\\\\:prose-sm [class~='lead'] {
       -     font-size: 1.2857143em;
       -     line-height: 1.5555556;
@@ -20325,7 +16905,6 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .md\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -20363,11 +16942,6 @@ it('should be possible to change the default modifiers and change the className'
       -   .md\\\\:prose-sm figure {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
-      -   }
-      -
-      -   .md\\\\:prose-sm figure > * {
-      -     margin-top: 0;
-      -     margin-bottom: 0;
       -   }
       -
       -   .md\\\\:prose-sm figure figcaption {
@@ -20419,10 +16993,6 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .md\\\\:prose-sm ol > li::before {
-      -     left: 0;
-      -   }
-      -
       -   .md\\\\:prose-sm ul > li {
       -     padding-left: 1.5714286em;
       -   }
@@ -20465,26 +17035,6 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-bottom: 2.8571429em;
       -   }
       -
-      -   .md\\\\:prose-sm hr + * {
-      +   .md\\\\:markdown hr + * {
-
-      ---
-
-      -   .md\\\\:prose-sm h2 + * {
-      +   .md\\\\:markdown h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-sm h3 + * {
-      +   .md\\\\:markdown h3 + * {
-
-      ---
-
-      -   .md\\\\:prose-sm h4 + * {
-      +   .md\\\\:markdown h4 + * {
-
-      ---
-
       -   .md\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -20496,16 +17046,6 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1em;
       -   }
       -
-      -   .md\\\\:prose-sm thead th:first-child {
-      +   .md\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose-sm thead th:last-child {
-      +   .md\\\\:markdown thead th:last-child {
-
-      ---
-
       -   .md\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
@@ -20513,26 +17053,6 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1em;
       -   }
       -
-      -   .md\\\\:prose-sm tbody td:first-child {
-      +   .md\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose-sm tbody td:last-child {
-      +   .md\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose-sm > :first-child {
-      +   .md\\\\:markdown > :first-child {
-
-      ---
-
-      -   .md\\\\:prose-sm > :last-child {
-      +   .md\\\\:markdown > :last-child {
-
-      ---
-
       -   .md\\\\:prose-lg {
       +   .md\\\\:markdown-lg {
 
@@ -20588,11 +17108,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-lg figure > * {
-      +   .md\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .md\\\\:prose-lg figure figcaption {
       +   .md\\\\:markdown-lg figure figcaption {
 
@@ -20635,11 +17150,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .md\\\\:prose-lg ol > li {
       +   .md\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .md\\\\:prose-lg ol > li::before {
-      +   .md\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -20688,26 +17198,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-lg hr + * {
-      +   .md\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .md\\\\:prose-lg h2 + * {
-      +   .md\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-lg h3 + * {
-      +   .md\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .md\\\\:prose-lg h4 + * {
-      +   .md\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .md\\\\:prose-lg table {
       +   .md\\\\:markdown-lg table {
 
@@ -20718,38 +17208,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-lg thead th:first-child {
-      +   .md\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose-lg thead th:last-child {
-      +   .md\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .md\\\\:prose-lg tbody td {
       +   .md\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .md\\\\:prose-lg tbody td:first-child {
-      +   .md\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose-lg tbody td:last-child {
-      +   .md\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose-lg > :first-child {
-      +   .md\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .md\\\\:prose-lg > :last-child {
-      +   .md\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -20808,11 +17268,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-xl figure > * {
-      +   .md\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .md\\\\:prose-xl figure figcaption {
       +   .md\\\\:markdown-xl figure figcaption {
 
@@ -20855,11 +17310,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .md\\\\:prose-xl ol > li {
       +   .md\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .md\\\\:prose-xl ol > li::before {
-      +   .md\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -20908,26 +17358,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-xl hr + * {
-      +   .md\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .md\\\\:prose-xl h2 + * {
-      +   .md\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-xl h3 + * {
-      +   .md\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .md\\\\:prose-xl h4 + * {
-      +   .md\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .md\\\\:prose-xl table {
       +   .md\\\\:markdown-xl table {
 
@@ -20938,38 +17368,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-xl thead th:first-child {
-      +   .md\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose-xl thead th:last-child {
-      +   .md\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .md\\\\:prose-xl tbody td {
       +   .md\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .md\\\\:prose-xl tbody td:first-child {
-      +   .md\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose-xl tbody td:last-child {
-      +   .md\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose-xl > :first-child {
-      +   .md\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .md\\\\:prose-xl > :last-child {
-      +   .md\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -21028,11 +17428,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-2xl figure > * {
-      +   .md\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .md\\\\:prose-2xl figure figcaption {
       +   .md\\\\:markdown-2xl figure figcaption {
 
@@ -21075,11 +17470,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .md\\\\:prose-2xl ol > li {
       +   .md\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .md\\\\:prose-2xl ol > li::before {
-      +   .md\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -21128,26 +17518,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-2xl hr + * {
-      +   .md\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .md\\\\:prose-2xl h2 + * {
-      +   .md\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-2xl h3 + * {
-      +   .md\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .md\\\\:prose-2xl h4 + * {
-      +   .md\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .md\\\\:prose-2xl table {
       +   .md\\\\:markdown-2xl table {
 
@@ -21158,38 +17528,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-2xl thead th:first-child {
-      +   .md\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .md\\\\:prose-2xl thead th:last-child {
-      +   .md\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .md\\\\:prose-2xl tbody td {
       +   .md\\\\:markdown-2xl tbody td {
-
-      ---
-
-      -   .md\\\\:prose-2xl tbody td:first-child {
-      +   .md\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .md\\\\:prose-2xl tbody td:last-child {
-      +   .md\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .md\\\\:prose-2xl > :first-child {
-      +   .md\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .md\\\\:prose-2xl > :last-child {
-      +   .md\\\\:markdown-2xl > :last-child {
 
       ---
 
@@ -21249,6 +17589,61 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .md\\\\:prose-pink a code {
       -     color: #db2777;
+
+      ---
+
+      -   .lg\\\\:prose figure > *:not(figcaption) {
+      +   .lg\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .lg\\\\:prose hr + * {
+      +   .lg\\\\:markdown hr + * {
+
+      ---
+
+      -   .lg\\\\:prose h2 + * {
+      +   .lg\\\\:markdown h2 + * {
+
+      ---
+
+      -   .lg\\\\:prose h3 + * {
+      +   .lg\\\\:markdown h3 + * {
+
+      ---
+
+      -   .lg\\\\:prose h4 + * {
+      +   .lg\\\\:markdown h4 + * {
+
+      ---
+
+      -   .lg\\\\:prose thead th:first-child {
+      +   .lg\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .lg\\\\:prose thead th:last-child {
+      +   .lg\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .lg\\\\:prose tbody td:first-child {
+      +   .lg\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .lg\\\\:prose tbody td:last-child {
+      +   .lg\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .lg\\\\:prose > :first-child {
+      +   .lg\\\\:markdown > :first-child {
+
+      ---
+
+      -   .lg\\\\:prose > :last-child {
+      +   .lg\\\\:markdown > :last-child {
 
       ---
 
@@ -21477,11 +17872,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose figure > * {
-      +   .lg\\\\:markdown figure > * {
-
-      ---
-
       -   .lg\\\\:prose h2 code {
       +   .lg\\\\:markdown h2 code {
 
@@ -21539,46 +17929,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   }
       -
-      -   .lg\\\\:prose hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .lg\\\\:prose thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .lg\\\\:prose tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .lg\\\\:prose tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .lg\\\\:prose > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .lg\\\\:prose > :last-child {
-      -     margin-bottom: 0;
-      -   }
-      -
       -   .lg\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -21600,11 +17950,11 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-top: 1.3333333em;
       -     margin-bottom: 1.3333333em;
       -     padding-left: 1.1111111em;
-      -   }
-      -
+
+      ---
+
       -   .lg\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -21644,11 +17994,6 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-bottom: 1.7142857em;
       -   }
       -
-      -   .lg\\\\:prose-sm figure > * {
-      -     margin-top: 0;
-      -     margin-bottom: 0;
-      -   }
-      -
       -   .lg\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
@@ -21677,9 +18022,8 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-
-      ---
-
+      -   }
+      -
       -   .lg\\\\:prose-sm ol {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -21697,10 +18041,6 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-sm ol > li {
       -     padding-left: 1.5714286em;
-      -   }
-      -
-      -   .lg\\\\:prose-sm ol > li::before {
-      -     left: 0;
       -   }
       -
       -   .lg\\\\:prose-sm ul > li {
@@ -21745,26 +18085,6 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-bottom: 2.8571429em;
       -   }
       -
-      -   .lg\\\\:prose-sm hr + * {
-      +   .lg\\\\:markdown hr + * {
-
-      ---
-
-      -   .lg\\\\:prose-sm h2 + * {
-      +   .lg\\\\:markdown h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose-sm h3 + * {
-      +   .lg\\\\:markdown h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose-sm h4 + * {
-      +   .lg\\\\:markdown h4 + * {
-
-      ---
-
       -   .lg\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -21776,16 +18096,6 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1em;
       -   }
       -
-      -   .lg\\\\:prose-sm thead th:first-child {
-      +   .lg\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-sm thead th:last-child {
-      +   .lg\\\\:markdown thead th:last-child {
-
-      ---
-
       -   .lg\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
@@ -21793,26 +18103,6 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1em;
       -   }
       -
-      -   .lg\\\\:prose-sm tbody td:first-child {
-      +   .lg\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-sm tbody td:last-child {
-      +   .lg\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose-sm > :first-child {
-      +   .lg\\\\:markdown > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose-sm > :last-child {
-      +   .lg\\\\:markdown > :last-child {
-
-      ---
-
       -   .lg\\\\:prose-lg {
       +   .lg\\\\:markdown-lg {
 
@@ -21868,11 +18158,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-lg figure > * {
-      +   .lg\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .lg\\\\:prose-lg figure figcaption {
       +   .lg\\\\:markdown-lg figure figcaption {
 
@@ -21915,11 +18200,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .lg\\\\:prose-lg ol > li {
       +   .lg\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .lg\\\\:prose-lg ol > li::before {
-      +   .lg\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -21968,26 +18248,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-lg hr + * {
-      +   .lg\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .lg\\\\:prose-lg h2 + * {
-      +   .lg\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose-lg h3 + * {
-      +   .lg\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose-lg h4 + * {
-      +   .lg\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .lg\\\\:prose-lg table {
       +   .lg\\\\:markdown-lg table {
 
@@ -21998,38 +18258,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-lg thead th:first-child {
-      +   .lg\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-lg thead th:last-child {
-      +   .lg\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .lg\\\\:prose-lg tbody td {
       +   .lg\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .lg\\\\:prose-lg tbody td:first-child {
-      +   .lg\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-lg tbody td:last-child {
-      +   .lg\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose-lg > :first-child {
-      +   .lg\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose-lg > :last-child {
-      +   .lg\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -22088,11 +18318,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-xl figure > * {
-      +   .lg\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .lg\\\\:prose-xl figure figcaption {
       +   .lg\\\\:markdown-xl figure figcaption {
 
@@ -22135,11 +18360,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .lg\\\\:prose-xl ol > li {
       +   .lg\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .lg\\\\:prose-xl ol > li::before {
-      +   .lg\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -22188,26 +18408,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-xl hr + * {
-      +   .lg\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .lg\\\\:prose-xl h2 + * {
-      +   .lg\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose-xl h3 + * {
-      +   .lg\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose-xl h4 + * {
-      +   .lg\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .lg\\\\:prose-xl table {
       +   .lg\\\\:markdown-xl table {
 
@@ -22218,38 +18418,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-xl thead th:first-child {
-      +   .lg\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-xl thead th:last-child {
-      +   .lg\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .lg\\\\:prose-xl tbody td {
       +   .lg\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .lg\\\\:prose-xl tbody td:first-child {
-      +   .lg\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-xl tbody td:last-child {
-      +   .lg\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose-xl > :first-child {
-      +   .lg\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose-xl > :last-child {
-      +   .lg\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -22308,11 +18478,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-2xl figure > * {
-      +   .lg\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .lg\\\\:prose-2xl figure figcaption {
       +   .lg\\\\:markdown-2xl figure figcaption {
 
@@ -22355,11 +18520,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .lg\\\\:prose-2xl ol > li {
       +   .lg\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .lg\\\\:prose-2xl ol > li::before {
-      +   .lg\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -22408,26 +18568,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-2xl hr + * {
-      +   .lg\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .lg\\\\:prose-2xl h2 + * {
-      +   .lg\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .lg\\\\:prose-2xl h3 + * {
-      +   .lg\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .lg\\\\:prose-2xl h4 + * {
-      +   .lg\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .lg\\\\:prose-2xl table {
       +   .lg\\\\:markdown-2xl table {
 
@@ -22438,45 +18578,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-2xl thead th:first-child {
-      +   .lg\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-2xl thead th:last-child {
-      +   .lg\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .lg\\\\:prose-2xl tbody td {
       +   .lg\\\\:markdown-2xl tbody td {
 
       ---
 
-      -   .lg\\\\:prose-2xl tbody td:first-child {
-      +   .lg\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .lg\\\\:prose-2xl tbody td:last-child {
-      +   .lg\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .lg\\\\:prose-2xl > :first-child {
-      +   .lg\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .lg\\\\:prose-2xl > :last-child {
-      +   .lg\\\\:markdown-2xl > :last-child {
-
-      ---
-
+      -   }
       -
       -   .lg\\\\:prose-red a {
       -     color: #dc2626;
-      -   }
+
+      ---
+
       -
       -   .lg\\\\:prose-red a code {
       -     color: #dc2626;
@@ -22529,6 +18642,61 @@ it('should be possible to change the default modifiers and change the className'
       -   .lg\\\\:prose-pink a code {
       -     color: #db2777;
       -   }
+
+      ---
+
+      -   .xl\\\\:prose figure > *:not(figcaption) {
+      +   .xl\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .xl\\\\:prose hr + * {
+      +   .xl\\\\:markdown hr + * {
+
+      ---
+
+      -   .xl\\\\:prose h2 + * {
+      +   .xl\\\\:markdown h2 + * {
+
+      ---
+
+      -   .xl\\\\:prose h3 + * {
+      +   .xl\\\\:markdown h3 + * {
+
+      ---
+
+      -   .xl\\\\:prose h4 + * {
+      +   .xl\\\\:markdown h4 + * {
+
+      ---
+
+      -   .xl\\\\:prose thead th:first-child {
+      +   .xl\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .xl\\\\:prose thead th:last-child {
+      +   .xl\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .xl\\\\:prose tbody td:first-child {
+      +   .xl\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .xl\\\\:prose tbody td:last-child {
+      +   .xl\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .xl\\\\:prose > :first-child {
+      +   .xl\\\\:markdown > :first-child {
+
+      ---
+
+      -   .xl\\\\:prose > :last-child {
+      +   .xl\\\\:markdown > :last-child {
 
       ---
 
@@ -22757,11 +18925,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose figure > * {
-      +   .xl\\\\:markdown figure > * {
-
-      ---
-
       -   .xl\\\\:prose h2 code {
       +   .xl\\\\:markdown h2 code {
 
@@ -22817,55 +18980,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose hr + * {
-      +   .xl\\\\:markdown hr + * {
-
-      ---
-
-      -   .xl\\\\:prose h2 + * {
-      +   .xl\\\\:markdown h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose h3 + * {
-      +   .xl\\\\:markdown h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose h4 + * {
-      +   .xl\\\\:markdown h4 + * {
-
-      ---
-
-      -   .xl\\\\:prose thead th:first-child {
-      +   .xl\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose thead th:last-child {
-      +   .xl\\\\:markdown thead th:last-child {
-
-      ---
-
-      -   .xl\\\\:prose tbody td:first-child {
-      +   .xl\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose tbody td:last-child {
-      +   .xl\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose > :first-child {
-      +   .xl\\\\:markdown > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose > :last-child {
-      -     margin-bottom: 0;
-      -   }
-      -
       -   .xl\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -22891,7 +19005,6 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -22931,21 +19044,12 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-bottom: 1.7142857em;
       -   }
       -
-      -   .xl\\\\:prose-sm figure > * {
-      -     margin-top: 0;
-      +   .xl\\\\:markdown > :last-child {
-
-      ---
-
-      -   }
-      -
       -   .xl\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
       -     margin-top: 0.6666667em;
-
-      ---
-
+      -   }
+      -
       -   .xl\\\\:prose-sm code {
       -     font-size: 0.8571429em;
       -   }
@@ -22987,10 +19091,6 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-sm ol > li {
       -     padding-left: 1.5714286em;
-      -   }
-      -
-      -   .xl\\\\:prose-sm ol > li::before {
-      -     left: 0;
       -   }
       -
       -   .xl\\\\:prose-sm ul > li {
@@ -23035,22 +19135,6 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-bottom: 2.8571429em;
       -   }
       -
-      -   .xl\\\\:prose-sm hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-sm h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-sm h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-sm h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
       -   .xl\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -23062,35 +19146,11 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1em;
       -   }
       -
-      -   .xl\\\\:prose-sm thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-sm thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
       -   .xl\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-      -   }
-      -
-      -   .xl\\\\:prose-sm tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-sm tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-sm > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .xl\\\\:prose-sm > :last-child {
-      -     margin-bottom: 0;
       -   }
       -
       -   .xl\\\\:prose-lg {
@@ -23148,11 +19208,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-lg figure > * {
-      +   .xl\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .xl\\\\:prose-lg figure figcaption {
       +   .xl\\\\:markdown-lg figure figcaption {
 
@@ -23195,11 +19250,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .xl\\\\:prose-lg ol > li {
       +   .xl\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .xl\\\\:prose-lg ol > li::before {
-      +   .xl\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -23248,26 +19298,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-lg hr + * {
-      +   .xl\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .xl\\\\:prose-lg h2 + * {
-      +   .xl\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose-lg h3 + * {
-      +   .xl\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose-lg h4 + * {
-      +   .xl\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .xl\\\\:prose-lg table {
       +   .xl\\\\:markdown-lg table {
 
@@ -23278,38 +19308,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-lg thead th:first-child {
-      +   .xl\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-lg thead th:last-child {
-      +   .xl\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .xl\\\\:prose-lg tbody td {
       +   .xl\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .xl\\\\:prose-lg tbody td:first-child {
-      +   .xl\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-lg tbody td:last-child {
-      +   .xl\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose-lg > :first-child {
-      +   .xl\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose-lg > :last-child {
-      +   .xl\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -23368,11 +19368,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-xl figure > * {
-      +   .xl\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .xl\\\\:prose-xl figure figcaption {
       +   .xl\\\\:markdown-xl figure figcaption {
 
@@ -23415,11 +19410,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .xl\\\\:prose-xl ol > li {
       +   .xl\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .xl\\\\:prose-xl ol > li::before {
-      +   .xl\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -23468,26 +19458,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-xl hr + * {
-      +   .xl\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .xl\\\\:prose-xl h2 + * {
-      +   .xl\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose-xl h3 + * {
-      +   .xl\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose-xl h4 + * {
-      +   .xl\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .xl\\\\:prose-xl table {
       +   .xl\\\\:markdown-xl table {
 
@@ -23498,38 +19468,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-xl thead th:first-child {
-      +   .xl\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-xl thead th:last-child {
-      +   .xl\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .xl\\\\:prose-xl tbody td {
       +   .xl\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .xl\\\\:prose-xl tbody td:first-child {
-      +   .xl\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-xl tbody td:last-child {
-      +   .xl\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose-xl > :first-child {
-      +   .xl\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose-xl > :last-child {
-      +   .xl\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -23588,11 +19528,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-2xl figure > * {
-      +   .xl\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .xl\\\\:prose-2xl figure figcaption {
       +   .xl\\\\:markdown-2xl figure figcaption {
 
@@ -23635,11 +19570,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .xl\\\\:prose-2xl ol > li {
       +   .xl\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .xl\\\\:prose-2xl ol > li::before {
-      +   .xl\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -23688,26 +19618,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-2xl hr + * {
-      +   .xl\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .xl\\\\:prose-2xl h2 + * {
-      +   .xl\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .xl\\\\:prose-2xl h3 + * {
-      +   .xl\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .xl\\\\:prose-2xl h4 + * {
-      +   .xl\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .xl\\\\:prose-2xl table {
       +   .xl\\\\:markdown-2xl table {
 
@@ -23718,42 +19628,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-2xl thead th:first-child {
-      +   .xl\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-2xl thead th:last-child {
-      +   .xl\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .xl\\\\:prose-2xl tbody td {
       +   .xl\\\\:markdown-2xl tbody td {
 
       ---
 
-      -   .xl\\\\:prose-2xl tbody td:first-child {
-      +   .xl\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .xl\\\\:prose-2xl tbody td:last-child {
-      +   .xl\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .xl\\\\:prose-2xl > :first-child {
-      +   .xl\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .xl\\\\:prose-2xl > :last-child {
-      +   .xl\\\\:markdown-2xl > :last-child {
-
-      ---
-
-      -   }
       -
       -   .xl\\\\:prose-red a {
       -     color: #dc2626;
@@ -23805,13 +19684,66 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-pink a {
       -     color: #db2777;
-
-      ---
-
+      -   }
       -
       -   .xl\\\\:prose-pink a code {
       -     color: #db2777;
       -   }
+
+      ---
+
+      -   .\\\\32xl\\\\:prose figure > *:not(figcaption) {
+      +   .\\\\32xl\\\\:markdown figure > *:not(figcaption) {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose hr + * {
+      +   .\\\\32xl\\\\:markdown hr + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h2 + * {
+      +   .\\\\32xl\\\\:markdown h2 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h3 + * {
+      +   .\\\\32xl\\\\:markdown h3 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h4 + * {
+      +   .\\\\32xl\\\\:markdown h4 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose thead th:first-child {
+      +   .\\\\32xl\\\\:markdown thead th:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose thead th:last-child {
+      +   .\\\\32xl\\\\:markdown thead th:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose tbody td:first-child {
+      +   .\\\\32xl\\\\:markdown tbody td:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose tbody td:last-child {
+      +   .\\\\32xl\\\\:markdown tbody td:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose > :first-child {
+      +   .\\\\32xl\\\\:markdown > :first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose > :last-child {
+      +   .\\\\32xl\\\\:markdown > :last-child {
 
       ---
 
@@ -24040,11 +19972,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose figure > * {
-      +   .\\\\32xl\\\\:markdown figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose h2 code {
       +   .\\\\32xl\\\\:markdown h2 code {
 
@@ -24100,61 +20027,14 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose hr + * {
-      +   .\\\\32xl\\\\:markdown hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose h2 + * {
-      +   .\\\\32xl\\\\:markdown h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose h3 + * {
-      +   .\\\\32xl\\\\:markdown h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose h4 + * {
-      +   .\\\\32xl\\\\:markdown h4 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose thead th:first-child {
-      +   .\\\\32xl\\\\:markdown thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose thead th:last-child {
-      +   .\\\\32xl\\\\:markdown thead th:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose > :first-child {
-      +   .\\\\32xl\\\\:markdown > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose > :last-child {
-      +   .\\\\32xl\\\\:markdown > :last-child {
-
-      ---
-
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
-      -   }
-      -
+
+      ---
+
       -   .\\\\32xl\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -24175,7 +20055,6 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .\\\\32xl\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      -     margin-top: 0;
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
       -   }
@@ -24213,11 +20092,6 @@ it('should be possible to change the default modifiers and change the className'
       -   .\\\\32xl\\\\:prose-sm figure {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm figure > * {
-      -     margin-top: 0;
-      -     margin-bottom: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm figure figcaption {
@@ -24269,10 +20143,6 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-sm ol > li::before {
-      -     left: 0;
-      -   }
-      -
       -   .\\\\32xl\\\\:prose-sm ul > li {
       -     padding-left: 1.5714286em;
       -   }
@@ -24315,22 +20185,6 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-bottom: 2.8571429em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-sm hr + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
       -   .\\\\32xl\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
@@ -24342,35 +20196,11 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-sm thead th:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm thead th:last-child {
-      -     padding-right: 0;
-      -   }
-      -
       -   .\\\\32xl\\\\:prose-sm tbody td {
       -     padding-top: 0.6666667em;
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm tbody td:first-child {
-      -     padding-left: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm tbody td:last-child {
-      -     padding-right: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm > :first-child {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .\\\\32xl\\\\:prose-sm > :last-child {
-      -     margin-bottom: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-lg {
@@ -24428,11 +20258,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg figure > * {
-      +   .\\\\32xl\\\\:markdown-lg figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-lg figure figcaption {
       +   .\\\\32xl\\\\:markdown-lg figure figcaption {
 
@@ -24475,11 +20300,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .\\\\32xl\\\\:prose-lg ol > li {
       +   .\\\\32xl\\\\:markdown-lg ol > li {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg ol > li::before {
-      +   .\\\\32xl\\\\:markdown-lg ol > li::before {
 
       ---
 
@@ -24528,26 +20348,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg hr + * {
-      +   .\\\\32xl\\\\:markdown-lg hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg h2 + * {
-      +   .\\\\32xl\\\\:markdown-lg h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg h3 + * {
-      +   .\\\\32xl\\\\:markdown-lg h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg h4 + * {
-      +   .\\\\32xl\\\\:markdown-lg h4 + * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-lg table {
       +   .\\\\32xl\\\\:markdown-lg table {
 
@@ -24558,38 +20358,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg thead th:first-child {
-      +   .\\\\32xl\\\\:markdown-lg thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg thead th:last-child {
-      +   .\\\\32xl\\\\:markdown-lg thead th:last-child {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-lg tbody td {
       +   .\\\\32xl\\\\:markdown-lg tbody td {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown-lg tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown-lg tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg > :first-child {
-      +   .\\\\32xl\\\\:markdown-lg > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-lg > :last-child {
-      +   .\\\\32xl\\\\:markdown-lg > :last-child {
 
       ---
 
@@ -24648,11 +20418,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl figure > * {
-      +   .\\\\32xl\\\\:markdown-xl figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-xl figure figcaption {
       +   .\\\\32xl\\\\:markdown-xl figure figcaption {
 
@@ -24695,11 +20460,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .\\\\32xl\\\\:prose-xl ol > li {
       +   .\\\\32xl\\\\:markdown-xl ol > li {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl ol > li::before {
-      +   .\\\\32xl\\\\:markdown-xl ol > li::before {
 
       ---
 
@@ -24748,26 +20508,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl hr + * {
-      +   .\\\\32xl\\\\:markdown-xl hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl h2 + * {
-      +   .\\\\32xl\\\\:markdown-xl h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl h3 + * {
-      +   .\\\\32xl\\\\:markdown-xl h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl h4 + * {
-      +   .\\\\32xl\\\\:markdown-xl h4 + * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-xl table {
       +   .\\\\32xl\\\\:markdown-xl table {
 
@@ -24778,38 +20518,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl thead th:first-child {
-      +   .\\\\32xl\\\\:markdown-xl thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl thead th:last-child {
-      +   .\\\\32xl\\\\:markdown-xl thead th:last-child {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-xl tbody td {
       +   .\\\\32xl\\\\:markdown-xl tbody td {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown-xl tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown-xl tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl > :first-child {
-      +   .\\\\32xl\\\\:markdown-xl > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-xl > :last-child {
-      +   .\\\\32xl\\\\:markdown-xl > :last-child {
 
       ---
 
@@ -24868,11 +20578,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl figure > * {
-      +   .\\\\32xl\\\\:markdown-2xl figure > * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-2xl figure figcaption {
       +   .\\\\32xl\\\\:markdown-2xl figure figcaption {
 
@@ -24915,11 +20620,6 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .\\\\32xl\\\\:prose-2xl ol > li {
       +   .\\\\32xl\\\\:markdown-2xl ol > li {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl ol > li::before {
-      +   .\\\\32xl\\\\:markdown-2xl ol > li::before {
 
       ---
 
@@ -24968,26 +20668,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl hr + * {
-      +   .\\\\32xl\\\\:markdown-2xl hr + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl h2 + * {
-      +   .\\\\32xl\\\\:markdown-2xl h2 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl h3 + * {
-      +   .\\\\32xl\\\\:markdown-2xl h3 + * {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl h4 + * {
-      +   .\\\\32xl\\\\:markdown-2xl h4 + * {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-2xl table {
       +   .\\\\32xl\\\\:markdown-2xl table {
 
@@ -24998,38 +20678,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl thead th:first-child {
-      +   .\\\\32xl\\\\:markdown-2xl thead th:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl thead th:last-child {
-      +   .\\\\32xl\\\\:markdown-2xl thead th:last-child {
-
-      ---
-
       -   .\\\\32xl\\\\:prose-2xl tbody td {
       +   .\\\\32xl\\\\:markdown-2xl tbody td {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl tbody td:first-child {
-      +   .\\\\32xl\\\\:markdown-2xl tbody td:first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl tbody td:last-child {
-      +   .\\\\32xl\\\\:markdown-2xl tbody td:last-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl > :first-child {
-      +   .\\\\32xl\\\\:markdown-2xl > :first-child {
-
-      ---
-
-      -   .\\\\32xl\\\\:prose-2xl > :last-child {
-      +   .\\\\32xl\\\\:markdown-2xl > :last-child {
 
       ---
 
