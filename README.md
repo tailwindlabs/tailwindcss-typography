@@ -343,7 +343,42 @@ module.exports = {
     // ...
   ],
   variants: {
-    typography: [],
+    typography: [], // default is ["responsive"]
   },
 }
 ```
+
+    
+### How to add dark mode to typography ###
+    
+It's 100% possible to add dark mode to typography using all of the existing options in Tailwind + this plugin.
+
+Here's a quick 5 minute version: https://play.tailwindcss.com/xTOjz3kR3m?file=config
+
+The steps to do this were:
+
+1. [Enable dark mode in Tailwind](https://tailwindcss.com/docs/dark-mode)
+2. [Add a "light" text modifier for the plugin](https://github.com/tailwindlabs/tailwindcss-typography#adding-new-modifiers)
+3. [Enable the "dark" variant for the typography plugin, documented here](https://tailwindcss.com/docs/dark-mode#enabling-for-other-utilities)
+
+### Using dark variant with responsive typography ###
+
+You can use responsive breakpoints with dark mode, including [if you're toggling dark mode manually](https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually]) using the class based approach described in the docs. To do so, set the `typography` key to `["responsive", "dark"]` in the `variants` section of your `tailwind.config.js` file:
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+  variants: {
+    typography: ["responsive", "dark"],
+  },
+}
+```
+
+You would use the same approach to combine any sets of variants. Note that the variant is `"responsive"`, not `"sm", "md", "lg, "xl"` as with safe-listing certain responsive size modifiers mentioned above.
