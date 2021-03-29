@@ -63,6 +63,9 @@ module.exports = (theme) => ({
           fontWeight: '400',
           color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
         },
+        'ol > li.list-none::before': {
+          display: 'none',
+        },
         'ul > li': {
           position: 'relative',
         },
@@ -71,6 +74,9 @@ module.exports = (theme) => ({
           position: 'absolute',
           backgroundColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
           borderRadius: '50%',
+        },
+        'ul > li.list-none::before': {
+          display: 'none',
         },
         hr: {
           borderColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
@@ -268,11 +274,17 @@ module.exports = (theme) => ({
         'ol > li': {
           paddingLeft: em(28, 16),
         },
+        'ol > li.list-none': {
+          paddingLeft: '0',
+        },
         'ol > li::before': {
           left: '0',
         },
         'ul > li': {
           paddingLeft: em(28, 16),
+        },
+        'ul > li.list-none': {
+          paddingLeft: '0',
         },
         'ul > li::before': {
           width: em(6, 16),
@@ -453,11 +465,17 @@ module.exports = (theme) => ({
         'ol > li': {
           paddingLeft: em(22, 14),
         },
+        'ol > li.list-none': {
+          paddingLeft: '0',
+        },
         'ol > li::before': {
           left: '0',
         },
         'ul > li': {
           paddingLeft: em(22, 14),
+        },
+        'ul > li.list-none': {
+          paddingLeft: '0',
         },
         'ul > li::before': {
           height: em(5, 14),
@@ -638,11 +656,17 @@ module.exports = (theme) => ({
         'ol > li': {
           paddingLeft: em(30, 18),
         },
+        'ol > li.list-none': {
+          paddingLeft: '0',
+        },
         'ol > li::before': {
           left: '0',
         },
         'ul > li': {
           paddingLeft: em(30, 18),
+        },
+        'ul > li.list-none': {
+          paddingLeft: '0',
         },
         'ul > li::before': {
           width: em(6, 18),
@@ -823,17 +847,26 @@ module.exports = (theme) => ({
         'ol > li': {
           paddingLeft: em(36, 20),
         },
+        'ol > li.list-none': {
+          paddingLeft: '0',
+        },
         'ol > li::before': {
           left: '0',
         },
         'ul > li': {
           paddingLeft: em(36, 20),
         },
+        'ul > li.list-none': {
+          paddingLeft: '0',
+        },
         'ul > li::before': {
           width: em(7, 20),
           height: em(7, 20),
           top: `calc(${em(36 / 2, 20)} - ${em(3.5, 20)})`,
           left: em(5, 20),
+        },
+        'ul > li.list-none::before': {
+          display: 'none',
         },
         '> ul > li p': {
           marginTop: em(16, 20),
@@ -1008,17 +1041,26 @@ module.exports = (theme) => ({
         'ol > li': {
           paddingLeft: em(40, 24),
         },
+        'ol > li.list-none': {
+          paddingLeft: '0',
+        },
         'ol > li::before': {
           left: '0',
         },
         'ul > li': {
           paddingLeft: em(40, 24),
         },
+        'ul > li.list-none': {
+          paddingLeft: '0',
+        },
         'ul > li::before': {
           width: em(8, 24),
           height: em(8, 24),
           top: `calc(${em(40 / 2, 24)} - ${em(4, 24)})`,
           left: em(6, 24),
+        },
+        'ul > li.list-none::before': {
+          display: 'none',
         },
         '> ul > li p': {
           marginTop: em(20, 24),

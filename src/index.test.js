@@ -104,6 +104,10 @@ it('should generate the default classes for the typography components', async ()
       left: 0;
     }
 
+    .prose ol > li.list-none::before {
+      display: none;
+    }
+
     .prose ul > li {
       position: relative;
       padding-left: 1.75em;
@@ -118,6 +122,10 @@ it('should generate the default classes for the typography components', async ()
       height: 0.375em;
       top: calc(0.875em - 0.1875em);
       left: 0.25em;
+    }
+
+    .prose ul > li.list-none::before {
+      display: none;
     }
 
     .prose hr {
@@ -336,6 +344,14 @@ it('should generate the default classes for the typography components', async ()
       margin-bottom: 0.5em;
     }
 
+    .prose ol > li.list-none {
+      padding-left: 0;
+    }
+
+    .prose ul > li.list-none {
+      padding-left: 0;
+    }
+
     .prose > ul > li p {
       margin-top: 0.75em;
       margin-bottom: 0.75em;
@@ -521,12 +537,20 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.5714286em;
     }
 
+    .prose-sm ol > li.list-none {
+      padding-left: 0;
+    }
+
     .prose-sm ol > li::before {
       left: 0;
     }
 
     .prose-sm ul > li {
       padding-left: 1.5714286em;
+    }
+
+    .prose-sm ul > li.list-none {
+      padding-left: 0;
     }
 
     .prose-sm ul > li::before {
@@ -744,12 +768,20 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
+    .prose-lg ol > li.list-none {
+      padding-left: 0;
+    }
+
     .prose-lg ol > li::before {
       left: 0;
     }
 
     .prose-lg ul > li {
       padding-left: 1.6666667em;
+    }
+
+    .prose-lg ul > li.list-none {
+      padding-left: 0;
     }
 
     .prose-lg ul > li::before {
@@ -967,6 +999,10 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.8em;
     }
 
+    .prose-xl ol > li.list-none {
+      padding-left: 0;
+    }
+
     .prose-xl ol > li::before {
       left: 0;
     }
@@ -975,11 +1011,19 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.8em;
     }
 
+    .prose-xl ul > li.list-none {
+      padding-left: 0;
+    }
+
     .prose-xl ul > li::before {
       width: 0.35em;
       height: 0.35em;
       top: calc(0.9em - 0.175em);
       left: 0.25em;
+    }
+
+    .prose-xl ul > li.list-none::before {
+      display: none;
     }
 
     .prose-xl > ul > li p {
@@ -1190,6 +1234,10 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
+    .prose-2xl ol > li.list-none {
+      padding-left: 0;
+    }
+
     .prose-2xl ol > li::before {
       left: 0;
     }
@@ -1198,11 +1246,19 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
+    .prose-2xl ul > li.list-none {
+      padding-left: 0;
+    }
+
     .prose-2xl ul > li::before {
       width: 0.3333333em;
       height: 0.3333333em;
       top: calc(0.8333333em - 0.1666667em);
       left: 0.25em;
+    }
+
+    .prose-2xl ul > li.list-none::before {
+      display: none;
     }
 
     .prose-2xl > ul > li p {
@@ -1424,6 +1480,10 @@ it('should generate the default classes for the typography components', async ()
         left: 0;
       }
 
+      .prose ol > li.sm\\\\:list-none::before {
+        display: none;
+      }
+
       .sm\\\\:prose ul > li {
         position: relative;
         padding-left: 1.75em;
@@ -1438,6 +1498,10 @@ it('should generate the default classes for the typography components', async ()
         height: 0.375em;
         top: calc(0.875em - 0.1875em);
         left: 0.25em;
+      }
+
+      .prose ul > li.sm\\\\:list-none::before {
+        display: none;
       }
 
       .sm\\\\:prose hr {
@@ -1656,6 +1720,14 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.5em;
       }
 
+      .prose ol > li.sm\\\\:list-none {
+        padding-left: 0;
+      }
+
+      .prose ul > li.sm\\\\:list-none {
+        padding-left: 0;
+      }
+
       .sm\\\\:prose > ul > li p {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
@@ -1841,12 +1913,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
+      .prose-sm ol > li.sm\\\\:list-none {
+        padding-left: 0;
+      }
+
       .sm\\\\:prose-sm ol > li::before {
         left: 0;
       }
 
       .sm\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
+      }
+
+      .prose-sm ul > li.sm\\\\:list-none {
+        padding-left: 0;
       }
 
       .sm\\\\:prose-sm ul > li::before {
@@ -2064,12 +2144,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-lg ol > li.sm\\\\:list-none {
+        padding-left: 0;
+      }
+
       .sm\\\\:prose-lg ol > li::before {
         left: 0;
       }
 
       .sm\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
+      }
+
+      .prose-lg ul > li.sm\\\\:list-none {
+        padding-left: 0;
       }
 
       .sm\\\\:prose-lg ul > li::before {
@@ -2287,6 +2375,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ol > li.sm\\\\:list-none {
+        padding-left: 0;
+      }
+
       .sm\\\\:prose-xl ol > li::before {
         left: 0;
       }
@@ -2295,11 +2387,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ul > li.sm\\\\:list-none {
+        padding-left: 0;
+      }
+
       .sm\\\\:prose-xl ul > li::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
         left: 0.25em;
+      }
+
+      .prose-xl ul > li.sm\\\\:list-none::before {
+        display: none;
       }
 
       .sm\\\\:prose-xl > ul > li p {
@@ -2510,6 +2610,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ol > li.sm\\\\:list-none {
+        padding-left: 0;
+      }
+
       .sm\\\\:prose-2xl ol > li::before {
         left: 0;
       }
@@ -2518,11 +2622,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ul > li.sm\\\\:list-none {
+        padding-left: 0;
+      }
+
       .sm\\\\:prose-2xl ul > li::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
         left: 0.25em;
+      }
+
+      .prose-2xl ul > li.sm\\\\:list-none::before {
+        display: none;
       }
 
       .sm\\\\:prose-2xl > ul > li p {
@@ -2745,6 +2857,10 @@ it('should generate the default classes for the typography components', async ()
         left: 0;
       }
 
+      .prose ol > li.md\\\\:list-none::before {
+        display: none;
+      }
+
       .md\\\\:prose ul > li {
         position: relative;
         padding-left: 1.75em;
@@ -2759,6 +2875,10 @@ it('should generate the default classes for the typography components', async ()
         height: 0.375em;
         top: calc(0.875em - 0.1875em);
         left: 0.25em;
+      }
+
+      .prose ul > li.md\\\\:list-none::before {
+        display: none;
       }
 
       .md\\\\:prose hr {
@@ -2977,6 +3097,14 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.5em;
       }
 
+      .prose ol > li.md\\\\:list-none {
+        padding-left: 0;
+      }
+
+      .prose ul > li.md\\\\:list-none {
+        padding-left: 0;
+      }
+
       .md\\\\:prose > ul > li p {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
@@ -3162,12 +3290,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
+      .prose-sm ol > li.md\\\\:list-none {
+        padding-left: 0;
+      }
+
       .md\\\\:prose-sm ol > li::before {
         left: 0;
       }
 
       .md\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
+      }
+
+      .prose-sm ul > li.md\\\\:list-none {
+        padding-left: 0;
       }
 
       .md\\\\:prose-sm ul > li::before {
@@ -3385,12 +3521,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-lg ol > li.md\\\\:list-none {
+        padding-left: 0;
+      }
+
       .md\\\\:prose-lg ol > li::before {
         left: 0;
       }
 
       .md\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
+      }
+
+      .prose-lg ul > li.md\\\\:list-none {
+        padding-left: 0;
       }
 
       .md\\\\:prose-lg ul > li::before {
@@ -3608,6 +3752,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ol > li.md\\\\:list-none {
+        padding-left: 0;
+      }
+
       .md\\\\:prose-xl ol > li::before {
         left: 0;
       }
@@ -3616,11 +3764,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ul > li.md\\\\:list-none {
+        padding-left: 0;
+      }
+
       .md\\\\:prose-xl ul > li::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
         left: 0.25em;
+      }
+
+      .prose-xl ul > li.md\\\\:list-none::before {
+        display: none;
       }
 
       .md\\\\:prose-xl > ul > li p {
@@ -3831,6 +3987,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ol > li.md\\\\:list-none {
+        padding-left: 0;
+      }
+
       .md\\\\:prose-2xl ol > li::before {
         left: 0;
       }
@@ -3839,11 +3999,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ul > li.md\\\\:list-none {
+        padding-left: 0;
+      }
+
       .md\\\\:prose-2xl ul > li::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
         left: 0.25em;
+      }
+
+      .prose-2xl ul > li.md\\\\:list-none::before {
+        display: none;
       }
 
       .md\\\\:prose-2xl > ul > li p {
@@ -4066,6 +4234,10 @@ it('should generate the default classes for the typography components', async ()
         left: 0;
       }
 
+      .prose ol > li.lg\\\\:list-none::before {
+        display: none;
+      }
+
       .lg\\\\:prose ul > li {
         position: relative;
         padding-left: 1.75em;
@@ -4080,6 +4252,10 @@ it('should generate the default classes for the typography components', async ()
         height: 0.375em;
         top: calc(0.875em - 0.1875em);
         left: 0.25em;
+      }
+
+      .prose ul > li.lg\\\\:list-none::before {
+        display: none;
       }
 
       .lg\\\\:prose hr {
@@ -4298,6 +4474,14 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.5em;
       }
 
+      .prose ol > li.lg\\\\:list-none {
+        padding-left: 0;
+      }
+
+      .prose ul > li.lg\\\\:list-none {
+        padding-left: 0;
+      }
+
       .lg\\\\:prose > ul > li p {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
@@ -4483,12 +4667,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
+      .prose-sm ol > li.lg\\\\:list-none {
+        padding-left: 0;
+      }
+
       .lg\\\\:prose-sm ol > li::before {
         left: 0;
       }
 
       .lg\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
+      }
+
+      .prose-sm ul > li.lg\\\\:list-none {
+        padding-left: 0;
       }
 
       .lg\\\\:prose-sm ul > li::before {
@@ -4706,12 +4898,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-lg ol > li.lg\\\\:list-none {
+        padding-left: 0;
+      }
+
       .lg\\\\:prose-lg ol > li::before {
         left: 0;
       }
 
       .lg\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
+      }
+
+      .prose-lg ul > li.lg\\\\:list-none {
+        padding-left: 0;
       }
 
       .lg\\\\:prose-lg ul > li::before {
@@ -4929,6 +5129,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ol > li.lg\\\\:list-none {
+        padding-left: 0;
+      }
+
       .lg\\\\:prose-xl ol > li::before {
         left: 0;
       }
@@ -4937,11 +5141,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ul > li.lg\\\\:list-none {
+        padding-left: 0;
+      }
+
       .lg\\\\:prose-xl ul > li::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
         left: 0.25em;
+      }
+
+      .prose-xl ul > li.lg\\\\:list-none::before {
+        display: none;
       }
 
       .lg\\\\:prose-xl > ul > li p {
@@ -5152,6 +5364,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ol > li.lg\\\\:list-none {
+        padding-left: 0;
+      }
+
       .lg\\\\:prose-2xl ol > li::before {
         left: 0;
       }
@@ -5160,11 +5376,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ul > li.lg\\\\:list-none {
+        padding-left: 0;
+      }
+
       .lg\\\\:prose-2xl ul > li::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
         left: 0.25em;
+      }
+
+      .prose-2xl ul > li.lg\\\\:list-none::before {
+        display: none;
       }
 
       .lg\\\\:prose-2xl > ul > li p {
@@ -5387,6 +5611,10 @@ it('should generate the default classes for the typography components', async ()
         left: 0;
       }
 
+      .prose ol > li.xl\\\\:list-none::before {
+        display: none;
+      }
+
       .xl\\\\:prose ul > li {
         position: relative;
         padding-left: 1.75em;
@@ -5401,6 +5629,10 @@ it('should generate the default classes for the typography components', async ()
         height: 0.375em;
         top: calc(0.875em - 0.1875em);
         left: 0.25em;
+      }
+
+      .prose ul > li.xl\\\\:list-none::before {
+        display: none;
       }
 
       .xl\\\\:prose hr {
@@ -5619,6 +5851,14 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.5em;
       }
 
+      .prose ol > li.xl\\\\:list-none {
+        padding-left: 0;
+      }
+
+      .prose ul > li.xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .xl\\\\:prose > ul > li p {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
@@ -5804,12 +6044,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
+      .prose-sm ol > li.xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .xl\\\\:prose-sm ol > li::before {
         left: 0;
       }
 
       .xl\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
+      }
+
+      .prose-sm ul > li.xl\\\\:list-none {
+        padding-left: 0;
       }
 
       .xl\\\\:prose-sm ul > li::before {
@@ -6027,12 +6275,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-lg ol > li.xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .xl\\\\:prose-lg ol > li::before {
         left: 0;
       }
 
       .xl\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
+      }
+
+      .prose-lg ul > li.xl\\\\:list-none {
+        padding-left: 0;
       }
 
       .xl\\\\:prose-lg ul > li::before {
@@ -6250,6 +6506,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ol > li.xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .xl\\\\:prose-xl ol > li::before {
         left: 0;
       }
@@ -6258,11 +6518,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ul > li.xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .xl\\\\:prose-xl ul > li::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
         left: 0.25em;
+      }
+
+      .prose-xl ul > li.xl\\\\:list-none::before {
+        display: none;
       }
 
       .xl\\\\:prose-xl > ul > li p {
@@ -6473,6 +6741,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ol > li.xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .xl\\\\:prose-2xl ol > li::before {
         left: 0;
       }
@@ -6481,11 +6753,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ul > li.xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .xl\\\\:prose-2xl ul > li::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
         left: 0.25em;
+      }
+
+      .prose-2xl ul > li.xl\\\\:list-none::before {
+        display: none;
       }
 
       .xl\\\\:prose-2xl > ul > li p {
@@ -6708,6 +6988,10 @@ it('should generate the default classes for the typography components', async ()
         left: 0;
       }
 
+      .prose ol > li.\\\\32xl\\\\:list-none::before {
+        display: none;
+      }
+
       .\\\\32xl\\\\:prose ul > li {
         position: relative;
         padding-left: 1.75em;
@@ -6722,6 +7006,10 @@ it('should generate the default classes for the typography components', async ()
         height: 0.375em;
         top: calc(0.875em - 0.1875em);
         left: 0.25em;
+      }
+
+      .prose ul > li.\\\\32xl\\\\:list-none::before {
+        display: none;
       }
 
       .\\\\32xl\\\\:prose hr {
@@ -6940,6 +7228,14 @@ it('should generate the default classes for the typography components', async ()
         margin-bottom: 0.5em;
       }
 
+      .prose ol > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
+      }
+
+      .prose ul > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .\\\\32xl\\\\:prose > ul > li p {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
@@ -7125,12 +7421,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
+      .prose-sm ol > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .\\\\32xl\\\\:prose-sm ol > li::before {
         left: 0;
       }
 
       .\\\\32xl\\\\:prose-sm ul > li {
         padding-left: 1.5714286em;
+      }
+
+      .prose-sm ul > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
       }
 
       .\\\\32xl\\\\:prose-sm ul > li::before {
@@ -7348,12 +7652,20 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-lg ol > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .\\\\32xl\\\\:prose-lg ol > li::before {
         left: 0;
       }
 
       .\\\\32xl\\\\:prose-lg ul > li {
         padding-left: 1.6666667em;
+      }
+
+      .prose-lg ul > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
       }
 
       .\\\\32xl\\\\:prose-lg ul > li::before {
@@ -7571,6 +7883,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ol > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .\\\\32xl\\\\:prose-xl ol > li::before {
         left: 0;
       }
@@ -7579,11 +7895,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
+      .prose-xl ul > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .\\\\32xl\\\\:prose-xl ul > li::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
         left: 0.25em;
+      }
+
+      .prose-xl ul > li.\\\\32xl\\\\:list-none::before {
+        display: none;
       }
 
       .\\\\32xl\\\\:prose-xl > ul > li p {
@@ -7794,6 +8118,10 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ol > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .\\\\32xl\\\\:prose-2xl ol > li::before {
         left: 0;
       }
@@ -7802,11 +8130,19 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
+      .prose-2xl ul > li.\\\\32xl\\\\:list-none {
+        padding-left: 0;
+      }
+
       .\\\\32xl\\\\:prose-2xl ul > li::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
         left: 0.25em;
+      }
+
+      .prose-2xl ul > li.\\\\32xl\\\\:list-none::before {
+        display: none;
       }
 
       .\\\\32xl\\\\:prose-2xl > ul > li p {
@@ -8036,6 +8372,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose ol > li.list-none::before {
+      + .markdown ol > li.list-none::before {
+
+      ---
+
       - .prose ul > li {
       + .markdown ul > li {
 
@@ -8043,6 +8384,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose ul > li::before {
       + .markdown ul > li::before {
+
+      ---
+
+      - .prose ul > li.list-none::before {
+      + .markdown ul > li.list-none::before {
 
       ---
 
@@ -8213,6 +8559,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose li {
       + .markdown li {
+
+      ---
+
+      - .prose ol > li.list-none {
+      + .markdown ol > li.list-none {
+
+      ---
+
+      - .prose ul > li.list-none {
+      + .markdown ul > li.list-none {
 
       ---
 
@@ -8401,6 +8757,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose-sm ol > li.list-none {
+      + .markdown-sm ol > li.list-none {
+
+      ---
+
       - .prose-sm ol > li::before {
       + .markdown-sm ol > li::before {
 
@@ -8408,6 +8769,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose-sm ul > li {
       + .markdown-sm ul > li {
+
+      ---
+
+      - .prose-sm ul > li.list-none {
+      + .markdown-sm ul > li.list-none {
 
       ---
 
@@ -8621,6 +8987,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose-lg ol > li.list-none {
+      + .markdown-lg ol > li.list-none {
+
+      ---
+
       - .prose-lg ol > li::before {
       + .markdown-lg ol > li::before {
 
@@ -8628,6 +8999,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       - .prose-lg ul > li {
       + .markdown-lg ul > li {
+
+      ---
+
+      - .prose-lg ul > li.list-none {
+      + .markdown-lg ul > li.list-none {
 
       ---
 
@@ -8841,6 +9217,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose-xl ol > li.list-none {
+      + .markdown-xl ol > li.list-none {
+
+      ---
+
       - .prose-xl ol > li::before {
       + .markdown-xl ol > li::before {
 
@@ -8851,8 +9232,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose-xl ul > li.list-none {
+      + .markdown-xl ul > li.list-none {
+
+      ---
+
       - .prose-xl ul > li::before {
       + .markdown-xl ul > li::before {
+
+      ---
+
+      - .prose-xl ul > li.list-none::before {
+      + .markdown-xl ul > li.list-none::before {
 
       ---
 
@@ -9061,6 +9452,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose-2xl ol > li.list-none {
+      + .markdown-2xl ol > li.list-none {
+
+      ---
+
       - .prose-2xl ol > li::before {
       + .markdown-2xl ol > li::before {
 
@@ -9071,8 +9467,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose-2xl ul > li.list-none {
+      + .markdown-2xl ul > li.list-none {
+
+      ---
+
       - .prose-2xl ul > li::before {
       + .markdown-2xl ul > li::before {
+
+      ---
+
+      - .prose-2xl ul > li.list-none::before {
+      + .markdown-2xl ul > li.list-none::before {
 
       ---
 
@@ -9321,6 +9727,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose ol > li.sm\\\\:list-none::before {
+      +   .markdown ol > li.sm\\\\:list-none::before {
+
+      ---
+
       -   .sm\\\\:prose ul > li {
       +   .sm\\\\:markdown ul > li {
 
@@ -9328,6 +9739,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose ul > li::before {
       +   .sm\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.sm\\\\:list-none::before {
+      +   .markdown ul > li.sm\\\\:list-none::before {
 
       ---
 
@@ -9498,6 +9914,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose li {
       +   .sm\\\\:markdown li {
+
+      ---
+
+      -   .prose ol > li.sm\\\\:list-none {
+      +   .markdown ol > li.sm\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.sm\\\\:list-none {
+      +   .markdown ul > li.sm\\\\:list-none {
 
       ---
 
@@ -9686,6 +10112,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-sm ol > li.sm\\\\:list-none {
+      +   .markdown-sm ol > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-sm ol > li::before {
       +   .sm\\\\:markdown-sm ol > li::before {
 
@@ -9693,6 +10124,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose-sm ul > li {
       +   .sm\\\\:markdown-sm ul > li {
+
+      ---
+
+      -   .prose-sm ul > li.sm\\\\:list-none {
+      +   .markdown-sm ul > li.sm\\\\:list-none {
 
       ---
 
@@ -9906,6 +10342,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-lg ol > li.sm\\\\:list-none {
+      +   .markdown-lg ol > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-lg ol > li::before {
       +   .sm\\\\:markdown-lg ol > li::before {
 
@@ -9913,6 +10354,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .sm\\\\:prose-lg ul > li {
       +   .sm\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.sm\\\\:list-none {
+      +   .markdown-lg ul > li.sm\\\\:list-none {
 
       ---
 
@@ -10126,6 +10572,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ol > li.sm\\\\:list-none {
+      +   .markdown-xl ol > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-xl ol > li::before {
       +   .sm\\\\:markdown-xl ol > li::before {
 
@@ -10136,8 +10587,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ul > li.sm\\\\:list-none {
+      +   .markdown-xl ul > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-xl ul > li::before {
       +   .sm\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.sm\\\\:list-none::before {
+      +   .markdown-xl ul > li.sm\\\\:list-none::before {
 
       ---
 
@@ -10346,6 +10807,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ol > li.sm\\\\:list-none {
+      +   .markdown-2xl ol > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-2xl ol > li::before {
       +   .sm\\\\:markdown-2xl ol > li::before {
 
@@ -10356,8 +10822,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ul > li.sm\\\\:list-none {
+      +   .markdown-2xl ul > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-2xl ul > li::before {
       +   .sm\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.sm\\\\:list-none::before {
+      +   .markdown-2xl ul > li.sm\\\\:list-none::before {
 
       ---
 
@@ -10606,6 +11082,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose ol > li.md\\\\:list-none::before {
+      +   .markdown ol > li.md\\\\:list-none::before {
+
+      ---
+
       -   .md\\\\:prose ul > li {
       +   .md\\\\:markdown ul > li {
 
@@ -10613,6 +11094,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose ul > li::before {
       +   .md\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.md\\\\:list-none::before {
+      +   .markdown ul > li.md\\\\:list-none::before {
 
       ---
 
@@ -10783,6 +11269,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose li {
       +   .md\\\\:markdown li {
+
+      ---
+
+      -   .prose ol > li.md\\\\:list-none {
+      +   .markdown ol > li.md\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.md\\\\:list-none {
+      +   .markdown ul > li.md\\\\:list-none {
 
       ---
 
@@ -10971,6 +11467,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-sm ol > li.md\\\\:list-none {
+      +   .markdown-sm ol > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-sm ol > li::before {
       +   .md\\\\:markdown-sm ol > li::before {
 
@@ -10978,6 +11479,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose-sm ul > li {
       +   .md\\\\:markdown-sm ul > li {
+
+      ---
+
+      -   .prose-sm ul > li.md\\\\:list-none {
+      +   .markdown-sm ul > li.md\\\\:list-none {
 
       ---
 
@@ -11191,6 +11697,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-lg ol > li.md\\\\:list-none {
+      +   .markdown-lg ol > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-lg ol > li::before {
       +   .md\\\\:markdown-lg ol > li::before {
 
@@ -11198,6 +11709,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .md\\\\:prose-lg ul > li {
       +   .md\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.md\\\\:list-none {
+      +   .markdown-lg ul > li.md\\\\:list-none {
 
       ---
 
@@ -11411,6 +11927,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ol > li.md\\\\:list-none {
+      +   .markdown-xl ol > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-xl ol > li::before {
       +   .md\\\\:markdown-xl ol > li::before {
 
@@ -11421,8 +11942,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ul > li.md\\\\:list-none {
+      +   .markdown-xl ul > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-xl ul > li::before {
       +   .md\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.md\\\\:list-none::before {
+      +   .markdown-xl ul > li.md\\\\:list-none::before {
 
       ---
 
@@ -11631,6 +12162,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ol > li.md\\\\:list-none {
+      +   .markdown-2xl ol > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-2xl ol > li::before {
       +   .md\\\\:markdown-2xl ol > li::before {
 
@@ -11641,8 +12177,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ul > li.md\\\\:list-none {
+      +   .markdown-2xl ul > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-2xl ul > li::before {
       +   .md\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.md\\\\:list-none::before {
+      +   .markdown-2xl ul > li.md\\\\:list-none::before {
 
       ---
 
@@ -11891,6 +12437,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose ol > li.lg\\\\:list-none::before {
+      +   .markdown ol > li.lg\\\\:list-none::before {
+
+      ---
+
       -   .lg\\\\:prose ul > li {
       +   .lg\\\\:markdown ul > li {
 
@@ -11898,6 +12449,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose ul > li::before {
       +   .lg\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.lg\\\\:list-none::before {
+      +   .markdown ul > li.lg\\\\:list-none::before {
 
       ---
 
@@ -12068,6 +12624,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose li {
       +   .lg\\\\:markdown li {
+
+      ---
+
+      -   .prose ol > li.lg\\\\:list-none {
+      +   .markdown ol > li.lg\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.lg\\\\:list-none {
+      +   .markdown ul > li.lg\\\\:list-none {
 
       ---
 
@@ -12256,6 +12822,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-sm ol > li.lg\\\\:list-none {
+      +   .markdown-sm ol > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-sm ol > li::before {
       +   .lg\\\\:markdown-sm ol > li::before {
 
@@ -12263,6 +12834,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose-sm ul > li {
       +   .lg\\\\:markdown-sm ul > li {
+
+      ---
+
+      -   .prose-sm ul > li.lg\\\\:list-none {
+      +   .markdown-sm ul > li.lg\\\\:list-none {
 
       ---
 
@@ -12476,6 +13052,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-lg ol > li.lg\\\\:list-none {
+      +   .markdown-lg ol > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-lg ol > li::before {
       +   .lg\\\\:markdown-lg ol > li::before {
 
@@ -12483,6 +13064,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .lg\\\\:prose-lg ul > li {
       +   .lg\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.lg\\\\:list-none {
+      +   .markdown-lg ul > li.lg\\\\:list-none {
 
       ---
 
@@ -12696,6 +13282,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ol > li.lg\\\\:list-none {
+      +   .markdown-xl ol > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-xl ol > li::before {
       +   .lg\\\\:markdown-xl ol > li::before {
 
@@ -12706,8 +13297,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ul > li.lg\\\\:list-none {
+      +   .markdown-xl ul > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-xl ul > li::before {
       +   .lg\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.lg\\\\:list-none::before {
+      +   .markdown-xl ul > li.lg\\\\:list-none::before {
 
       ---
 
@@ -12916,6 +13517,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ol > li.lg\\\\:list-none {
+      +   .markdown-2xl ol > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-2xl ol > li::before {
       +   .lg\\\\:markdown-2xl ol > li::before {
 
@@ -12926,8 +13532,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ul > li.lg\\\\:list-none {
+      +   .markdown-2xl ul > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-2xl ul > li::before {
       +   .lg\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.lg\\\\:list-none::before {
+      +   .markdown-2xl ul > li.lg\\\\:list-none::before {
 
       ---
 
@@ -13176,6 +13792,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose ol > li.xl\\\\:list-none::before {
+      +   .markdown ol > li.xl\\\\:list-none::before {
+
+      ---
+
       -   .xl\\\\:prose ul > li {
       +   .xl\\\\:markdown ul > li {
 
@@ -13183,6 +13804,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose ul > li::before {
       +   .xl\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.xl\\\\:list-none::before {
+      +   .markdown ul > li.xl\\\\:list-none::before {
 
       ---
 
@@ -13353,6 +13979,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose li {
       +   .xl\\\\:markdown li {
+
+      ---
+
+      -   .prose ol > li.xl\\\\:list-none {
+      +   .markdown ol > li.xl\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.xl\\\\:list-none {
+      +   .markdown ul > li.xl\\\\:list-none {
 
       ---
 
@@ -13541,6 +14177,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-sm ol > li.xl\\\\:list-none {
+      +   .markdown-sm ol > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-sm ol > li::before {
       +   .xl\\\\:markdown-sm ol > li::before {
 
@@ -13548,6 +14189,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose-sm ul > li {
       +   .xl\\\\:markdown-sm ul > li {
+
+      ---
+
+      -   .prose-sm ul > li.xl\\\\:list-none {
+      +   .markdown-sm ul > li.xl\\\\:list-none {
 
       ---
 
@@ -13761,6 +14407,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-lg ol > li.xl\\\\:list-none {
+      +   .markdown-lg ol > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-lg ol > li::before {
       +   .xl\\\\:markdown-lg ol > li::before {
 
@@ -13768,6 +14419,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .xl\\\\:prose-lg ul > li {
       +   .xl\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.xl\\\\:list-none {
+      +   .markdown-lg ul > li.xl\\\\:list-none {
 
       ---
 
@@ -13981,6 +14637,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ol > li.xl\\\\:list-none {
+      +   .markdown-xl ol > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-xl ol > li::before {
       +   .xl\\\\:markdown-xl ol > li::before {
 
@@ -13991,8 +14652,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ul > li.xl\\\\:list-none {
+      +   .markdown-xl ul > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-xl ul > li::before {
       +   .xl\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.xl\\\\:list-none::before {
+      +   .markdown-xl ul > li.xl\\\\:list-none::before {
 
       ---
 
@@ -14201,6 +14872,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ol > li.xl\\\\:list-none {
+      +   .markdown-2xl ol > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-2xl ol > li::before {
       +   .xl\\\\:markdown-2xl ol > li::before {
 
@@ -14211,8 +14887,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ul > li.xl\\\\:list-none {
+      +   .markdown-2xl ul > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-2xl ul > li::before {
       +   .xl\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.xl\\\\:list-none::before {
+      +   .markdown-2xl ul > li.xl\\\\:list-none::before {
 
       ---
 
@@ -14461,6 +15147,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose ol > li.\\\\32xl\\\\:list-none::before {
+      +   .markdown ol > li.\\\\32xl\\\\:list-none::before {
+
+      ---
+
       -   .\\\\32xl\\\\:prose ul > li {
       +   .\\\\32xl\\\\:markdown ul > li {
 
@@ -14468,6 +15159,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose ul > li::before {
       +   .\\\\32xl\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.\\\\32xl\\\\:list-none::before {
+      +   .markdown ul > li.\\\\32xl\\\\:list-none::before {
 
       ---
 
@@ -14638,6 +15334,16 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose li {
       +   .\\\\32xl\\\\:markdown li {
+
+      ---
+
+      -   .prose ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown ul > li.\\\\32xl\\\\:list-none {
 
       ---
 
@@ -14826,6 +15532,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-sm ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown-sm ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-sm ol > li::before {
       +   .\\\\32xl\\\\:markdown-sm ol > li::before {
 
@@ -14833,6 +15544,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose-sm ul > li {
       +   .\\\\32xl\\\\:markdown-sm ul > li {
+
+      ---
+
+      -   .prose-sm ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown-sm ul > li.\\\\32xl\\\\:list-none {
 
       ---
 
@@ -15046,6 +15762,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-lg ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown-lg ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-lg ol > li::before {
       +   .\\\\32xl\\\\:markdown-lg ol > li::before {
 
@@ -15053,6 +15774,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       -   .\\\\32xl\\\\:prose-lg ul > li {
       +   .\\\\32xl\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown-lg ul > li.\\\\32xl\\\\:list-none {
 
       ---
 
@@ -15266,6 +15992,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown-xl ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-xl ol > li::before {
       +   .\\\\32xl\\\\:markdown-xl ol > li::before {
 
@@ -15276,8 +16007,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-xl ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown-xl ul > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-xl ul > li::before {
       +   .\\\\32xl\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.\\\\32xl\\\\:list-none::before {
+      +   .markdown-xl ul > li.\\\\32xl\\\\:list-none::before {
 
       ---
 
@@ -15486,6 +16227,11 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown-2xl ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-2xl ol > li::before {
       +   .\\\\32xl\\\\:markdown-2xl ol > li::before {
 
@@ -15496,8 +16242,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .prose-2xl ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown-2xl ul > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-2xl ul > li::before {
       +   .\\\\32xl\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.\\\\32xl\\\\:list-none::before {
+      +   .markdown-2xl ul > li.\\\\32xl\\\\:list-none::before {
 
       ---
 
@@ -15796,6 +16552,10 @@ it('should be possible to change the default modifiers', async () => {
       -   padding-left: 1.6666667em;
       - }
       -
+      - .prose-2xl ol > li.list-none {
+      -   padding-left: 0;
+      - }
+      -
       - .prose-2xl ol > li::before {
       -   left: 0;
       - }
@@ -15804,11 +16564,19 @@ it('should be possible to change the default modifiers', async () => {
       -   padding-left: 1.6666667em;
       - }
       -
+      - .prose-2xl ul > li.list-none {
+      -   padding-left: 0;
+      - }
+      -
       - .prose-2xl ul > li::before {
       -   width: 0.3333333em;
       -   height: 0.3333333em;
       -   top: calc(0.8333333em - 0.1666667em);
       -   left: 0.25em;
+      - }
+      -
+      - .prose-2xl ul > li.list-none::before {
+      -   display: none;
       - }
       -
       - .prose-2xl > ul > li p {
@@ -15959,13 +16727,14 @@ it('should be possible to change the default modifiers', async () => {
 
       ---
 
-      -     margin-bottom: 0;
       -   }
       -
       -   .sm\\\\:prose-2xl {
       -     font-size: 1.5rem;
       -     line-height: 1.6666667;
-      -   }
+
+      ---
+
       -
       -   .sm\\\\:prose-2xl p {
       -     margin-top: 1.3333333em;
@@ -16029,9 +16798,7 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .sm\\\\:prose-2xl figure > * {
       -     margin-top: 0;
-
-      ---
-
+      -     margin-bottom: 0;
       -   }
       -
       -   .sm\\\\:prose-2xl figure figcaption {
@@ -16083,12 +16850,20 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ol > li.sm\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .sm\\\\:prose-2xl ol > li::before {
       -     left: 0;
       -   }
       -
       -   .sm\\\\:prose-2xl ul > li {
       -     padding-left: 1.6666667em;
+      -   }
+      -
+      -   .prose-2xl ul > li.sm\\\\:list-none {
+      -     padding-left: 0;
       -   }
       -
       -   .sm\\\\:prose-2xl ul > li::before {
@@ -16098,12 +16873,14 @@ it('should be possible to change the default modifiers', async () => {
       -     left: 0.25em;
       -   }
       -
+      -   .prose-2xl ul > li.sm\\\\:list-none::before {
+      -     display: none;
+      -   }
+      -
       -   .sm\\\\:prose-2xl > ul > li p {
       -     margin-top: 0.8333333em;
       -     margin-bottom: 0.8333333em;
-
-      ---
-
+      -   }
       -
       -   .sm\\\\:prose-2xl > ul > li > *:first-child {
       -     margin-top: 1.3333333em;
@@ -16369,6 +17146,10 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ol > li.md\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .md\\\\:prose-2xl ol > li::before {
       -     left: 0;
       -   }
@@ -16377,11 +17158,19 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ul > li.md\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .md\\\\:prose-2xl ul > li::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
       -     left: 0.25em;
+      -   }
+      -
+      -   .prose-2xl ul > li.md\\\\:list-none::before {
+      -     display: none;
       -   }
       -
       -   .md\\\\:prose-2xl > ul > li p {
@@ -16654,6 +17443,10 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ol > li.lg\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .lg\\\\:prose-2xl ol > li::before {
       -     left: 0;
       -   }
@@ -16662,11 +17455,19 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ul > li.lg\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .lg\\\\:prose-2xl ul > li::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
       -     left: 0.25em;
+      -   }
+      -
+      -   .prose-2xl ul > li.lg\\\\:list-none::before {
+      -     display: none;
       -   }
       -
       -   .lg\\\\:prose-2xl > ul > li p {
@@ -16798,7 +17599,9 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .lg\\\\:prose-indigo a code {
       -     color: #4f46e5;
-      -   }
+
+      ---
+
       -
       -   .lg\\\\:prose-purple a {
       -     color: #7c3aed;
@@ -16806,9 +17609,7 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .lg\\\\:prose-purple a code {
       -     color: #7c3aed;
-
-      ---
-
+      -   }
       -
       -   .lg\\\\:prose-pink a {
       -     color: #db2777;
@@ -16942,6 +17743,10 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ol > li.xl\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .xl\\\\:prose-2xl ol > li::before {
       -     left: 0;
       -   }
@@ -16950,11 +17755,19 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ul > li.xl\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .xl\\\\:prose-2xl ul > li::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
       -     left: 0.25em;
+      -   }
+      -
+      -   .prose-2xl ul > li.xl\\\\:list-none::before {
+      -     display: none;
       -   }
       -
       -   .xl\\\\:prose-2xl > ul > li p {
@@ -17066,7 +17879,9 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .xl\\\\:prose-green a {
       -     color: #059669;
-      -   }
+
+      ---
+
       -
       -   .xl\\\\:prose-green a code {
       -     color: #059669;
@@ -17094,9 +17909,7 @@ it('should be possible to change the default modifiers', async () => {
       -
       -   .xl\\\\:prose-purple a code {
       -     color: #7c3aed;
-
-      ---
-
+      -   }
       -
       -   .xl\\\\:prose-pink a {
       -     color: #db2777;
@@ -17232,6 +18045,10 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ol > li.\\\\32xl\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-2xl ol > li::before {
       -     left: 0;
       -   }
@@ -17240,11 +18057,19 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
+      -   .prose-2xl ul > li.\\\\32xl\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-2xl ul > li::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
       -     left: 0.25em;
+      -   }
+      -
+      -   .prose-2xl ul > li.\\\\32xl\\\\:list-none::before {
+      -     display: none;
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl > ul > li p {
@@ -17475,6 +18300,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose ol > li.list-none::before {
+      + .markdown ol > li.list-none::before {
+
+      ---
+
       - .prose ul > li {
       + .markdown ul > li {
 
@@ -17482,6 +18312,11 @@ it('should be possible to change the default modifiers and change the className'
 
       - .prose ul > li::before {
       + .markdown ul > li::before {
+
+      ---
+
+      - .prose ul > li.list-none::before {
+      + .markdown ul > li.list-none::before {
 
       ---
 
@@ -17655,6 +18490,16 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose ol > li.list-none {
+      + .markdown ol > li.list-none {
+
+      ---
+
+      - .prose ul > li.list-none {
+      + .markdown ul > li.list-none {
+
+      ---
+
       - .prose > ul > li p {
       + .markdown > ul > li p {
 
@@ -17685,8 +18530,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - }
-      -
       - .prose hr + * {
       -   margin-top: 0;
       - }
@@ -17697,9 +18540,8 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose h3 + * {
       -   margin-top: 0;
-
-      ---
-
+      - }
+      -
       - .prose h4 + * {
       -   margin-top: 0;
       - }
@@ -17847,12 +18689,20 @@ it('should be possible to change the default modifiers and change the className'
       -   padding-left: 1.5714286em;
       - }
       -
+      - .prose-sm ol > li.list-none {
+      -   padding-left: 0;
+      - }
+      -
       - .prose-sm ol > li::before {
       -   left: 0;
       - }
       -
       - .prose-sm ul > li {
       -   padding-left: 1.5714286em;
+      - }
+      -
+      - .prose-sm ul > li.list-none {
+      -   padding-left: 0;
       - }
       -
       - .prose-sm ul > li::before {
@@ -17934,13 +18784,16 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - }
+      -
       - .prose-sm tbody td {
       -   padding-top: 0.6666667em;
       -   padding-right: 1em;
       -   padding-bottom: 0.6666667em;
       -   padding-left: 1em;
-      - }
-      -
+
+      ---
+
       - .prose-sm tbody td:first-child {
       + .markdown tbody td:first-child {
 
@@ -18066,6 +18919,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose-lg ol > li.list-none {
+      + .markdown-lg ol > li.list-none {
+
+      ---
+
       - .prose-lg ol > li::before {
       + .markdown-lg ol > li::before {
 
@@ -18073,6 +18931,11 @@ it('should be possible to change the default modifiers and change the className'
 
       - .prose-lg ul > li {
       + .markdown-lg ul > li {
+
+      ---
+
+      - .prose-lg ul > li.list-none {
+      + .markdown-lg ul > li.list-none {
 
       ---
 
@@ -18286,6 +19149,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose-xl ol > li.list-none {
+      + .markdown-xl ol > li.list-none {
+
+      ---
+
       - .prose-xl ol > li::before {
       + .markdown-xl ol > li::before {
 
@@ -18296,8 +19164,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose-xl ul > li.list-none {
+      + .markdown-xl ul > li.list-none {
+
+      ---
+
       - .prose-xl ul > li::before {
       + .markdown-xl ul > li::before {
+
+      ---
+
+      - .prose-xl ul > li.list-none::before {
+      + .markdown-xl ul > li.list-none::before {
 
       ---
 
@@ -18506,6 +19384,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose-2xl ol > li.list-none {
+      + .markdown-2xl ol > li.list-none {
+
+      ---
+
       - .prose-2xl ol > li::before {
       + .markdown-2xl ol > li::before {
 
@@ -18516,8 +19399,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose-2xl ul > li.list-none {
+      + .markdown-2xl ul > li.list-none {
+
+      ---
+
       - .prose-2xl ul > li::before {
       + .markdown-2xl ul > li::before {
+
+      ---
+
+      - .prose-2xl ul > li.list-none::before {
+      + .markdown-2xl ul > li.list-none::before {
 
       ---
 
@@ -18621,8 +19514,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - }
-      -
       - .prose-red a {
       -   color: #dc2626;
       - }
@@ -18633,9 +19524,8 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-yellow a {
       -   color: #d97706;
-
-      ---
-
+      - }
+      -
       - .prose-yellow a code {
       -   color: #d97706;
       - }
@@ -18758,6 +19648,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.sm\\\\:list-none::before {
+      +   .markdown ol > li.sm\\\\:list-none::before {
+
+      ---
+
       -   .sm\\\\:prose ul > li {
       +   .sm\\\\:markdown ul > li {
 
@@ -18765,6 +19660,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .sm\\\\:prose ul > li::before {
       +   .sm\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.sm\\\\:list-none::before {
+      +   .markdown ul > li.sm\\\\:list-none::before {
 
       ---
 
@@ -18938,6 +19838,16 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.sm\\\\:list-none {
+      +   .markdown ol > li.sm\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.sm\\\\:list-none {
+      +   .markdown ul > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose > ul > li p {
       +   .sm\\\\:markdown > ul > li p {
 
@@ -19025,8 +19935,9 @@ it('should be possible to change the default modifiers and change the className'
       -     line-height: 1.5555556;
       -     margin-top: 0.8888889em;
       -     margin-bottom: 0.8888889em;
-      -   }
-      -
+
+      ---
+
       -   .sm\\\\:prose-sm blockquote {
       -     margin-top: 1.3333333em;
       -     margin-bottom: 1.3333333em;
@@ -19063,9 +19974,8 @@ it('should be possible to change the default modifiers and change the className'
       -   .sm\\\\:prose-sm img {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm video {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
@@ -19082,15 +19992,15 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -     margin-bottom: 0;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
       -     margin-top: 0.6666667em;
-      -   }
-      -
+
+      ---
+
       -   .sm\\\\:prose-sm code {
       -     font-size: 0.8571429em;
       -   }
@@ -19134,12 +20044,20 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
+      -   .prose-sm ol > li.sm\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .sm\\\\:prose-sm ol > li::before {
       -     left: 0;
       -   }
       -
       -   .sm\\\\:prose-sm ul > li {
       -     padding-left: 1.5714286em;
+      -   }
+      -
+      -   .prose-sm ul > li.sm\\\\:list-none {
+      -     padding-left: 0;
       -   }
       -
       -   .sm\\\\:prose-sm ul > li::before {
@@ -19191,14 +20109,14 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .sm\\\\:prose-sm h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
-      -   .sm\\\\:prose-sm h4 + * {
       +   .sm\\\\:markdown h4 + * {
 
       ---
 
+      -   }
+      -
+      -   .sm\\\\:prose-sm h4 + * {
+      -     margin-top: 0;
       -   }
       -
       -   .sm\\\\:prose-sm table {
@@ -19355,6 +20273,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-lg ol > li.sm\\\\:list-none {
+      +   .markdown-lg ol > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-lg ol > li::before {
       +   .sm\\\\:markdown-lg ol > li::before {
 
@@ -19362,6 +20285,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .sm\\\\:prose-lg ul > li {
       +   .sm\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.sm\\\\:list-none {
+      +   .markdown-lg ul > li.sm\\\\:list-none {
 
       ---
 
@@ -19575,6 +20503,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ol > li.sm\\\\:list-none {
+      +   .markdown-xl ol > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-xl ol > li::before {
       +   .sm\\\\:markdown-xl ol > li::before {
 
@@ -19585,8 +20518,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ul > li.sm\\\\:list-none {
+      +   .markdown-xl ul > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-xl ul > li::before {
       +   .sm\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.sm\\\\:list-none::before {
+      +   .markdown-xl ul > li.sm\\\\:list-none::before {
 
       ---
 
@@ -19795,6 +20738,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ol > li.sm\\\\:list-none {
+      +   .markdown-2xl ol > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-2xl ol > li::before {
       +   .sm\\\\:markdown-2xl ol > li::before {
 
@@ -19805,8 +20753,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ul > li.sm\\\\:list-none {
+      +   .markdown-2xl ul > li.sm\\\\:list-none {
+
+      ---
+
       -   .sm\\\\:prose-2xl ul > li::before {
       +   .sm\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.sm\\\\:list-none::before {
+      +   .markdown-2xl ul > li.sm\\\\:list-none::before {
 
       ---
 
@@ -19946,9 +20904,7 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose-indigo a {
       -     color: #4f46e5;
-
-      ---
-
+      -   }
       -
       -   .sm\\\\:prose-indigo a code {
       -     color: #4f46e5;
@@ -19964,7 +20920,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose-pink a {
       -     color: #db2777;
-      -   }
+
+      ---
+
       -
       -   .sm\\\\:prose-pink a code {
       -     color: #db2777;
@@ -20047,6 +21005,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.md\\\\:list-none::before {
+      +   .markdown ol > li.md\\\\:list-none::before {
+
+      ---
+
       -   .md\\\\:prose ul > li {
       +   .md\\\\:markdown ul > li {
 
@@ -20054,6 +21017,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .md\\\\:prose ul > li::before {
       +   .md\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.md\\\\:list-none::before {
+      +   .markdown ul > li.md\\\\:list-none::before {
 
       ---
 
@@ -20227,6 +21195,16 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.md\\\\:list-none {
+      +   .markdown ol > li.md\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.md\\\\:list-none {
+      +   .markdown ul > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose > ul > li p {
       +   .md\\\\:markdown > ul > li p {
 
@@ -20265,8 +21243,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .md\\\\:prose h2 + * {
       -     margin-top: 0;
-      -   }
-      -
+
+      ---
+
       -   .md\\\\:prose h3 + * {
       -     margin-top: 0;
       -   }
@@ -20307,9 +21286,8 @@ it('should be possible to change the default modifiers and change the className'
       -   .md\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
-
-      ---
-
+      -   }
+      -
       -   .md\\\\:prose-sm [class~='lead'] {
       -     font-size: 1.2857143em;
       -     line-height: 1.5555556;
@@ -20419,12 +21397,20 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
+      -   .prose-sm ol > li.md\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .md\\\\:prose-sm ol > li::before {
       -     left: 0;
       -   }
       -
       -   .md\\\\:prose-sm ul > li {
       -     padding-left: 1.5714286em;
+      -   }
+      -
+      -   .prose-sm ul > li.md\\\\:list-none {
+      -     padding-left: 0;
       -   }
       -
       -   .md\\\\:prose-sm ul > li::before {
@@ -20638,6 +21624,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-lg ol > li.md\\\\:list-none {
+      +   .markdown-lg ol > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-lg ol > li::before {
       +   .md\\\\:markdown-lg ol > li::before {
 
@@ -20645,6 +21636,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .md\\\\:prose-lg ul > li {
       +   .md\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.md\\\\:list-none {
+      +   .markdown-lg ul > li.md\\\\:list-none {
 
       ---
 
@@ -20858,6 +21854,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ol > li.md\\\\:list-none {
+      +   .markdown-xl ol > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-xl ol > li::before {
       +   .md\\\\:markdown-xl ol > li::before {
 
@@ -20868,8 +21869,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ul > li.md\\\\:list-none {
+      +   .markdown-xl ul > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-xl ul > li::before {
       +   .md\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.md\\\\:list-none::before {
+      +   .markdown-xl ul > li.md\\\\:list-none::before {
 
       ---
 
@@ -21078,6 +22089,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ol > li.md\\\\:list-none {
+      +   .markdown-2xl ol > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-2xl ol > li::before {
       +   .md\\\\:markdown-2xl ol > li::before {
 
@@ -21088,8 +22104,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ul > li.md\\\\:list-none {
+      +   .markdown-2xl ul > li.md\\\\:list-none {
+
+      ---
+
       -   .md\\\\:prose-2xl ul > li::before {
       +   .md\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.md\\\\:list-none::before {
+      +   .markdown-2xl ul > li.md\\\\:list-none::before {
 
       ---
 
@@ -21327,6 +22353,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.lg\\\\:list-none::before {
+      +   .markdown ol > li.lg\\\\:list-none::before {
+
+      ---
+
       -   .lg\\\\:prose ul > li {
       +   .lg\\\\:markdown ul > li {
 
@@ -21334,6 +22365,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .lg\\\\:prose ul > li::before {
       +   .lg\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.lg\\\\:list-none::before {
+      +   .markdown ul > li.lg\\\\:list-none::before {
 
       ---
 
@@ -21507,6 +22543,16 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.lg\\\\:list-none {
+      +   .markdown ol > li.lg\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.lg\\\\:list-none {
+      +   .markdown ul > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose > ul > li p {
       +   .lg\\\\:markdown > ul > li p {
 
@@ -21537,8 +22583,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .lg\\\\:prose hr + * {
       -     margin-top: 0;
       -   }
@@ -21677,9 +22721,8 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-
-      ---
-
+      -   }
+      -
       -   .lg\\\\:prose-sm ol {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -21699,12 +22742,20 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
+      -   .prose-sm ol > li.lg\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .lg\\\\:prose-sm ol > li::before {
       -     left: 0;
       -   }
       -
       -   .lg\\\\:prose-sm ul > li {
       -     padding-left: 1.5714286em;
+      -   }
+      -
+      -   .prose-sm ul > li.lg\\\\:list-none {
+      -     padding-left: 0;
       -   }
       -
       -   .lg\\\\:prose-sm ul > li::before {
@@ -21918,6 +22969,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-lg ol > li.lg\\\\:list-none {
+      +   .markdown-lg ol > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-lg ol > li::before {
       +   .lg\\\\:markdown-lg ol > li::before {
 
@@ -21925,6 +22981,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .lg\\\\:prose-lg ul > li {
       +   .lg\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.lg\\\\:list-none {
+      +   .markdown-lg ul > li.lg\\\\:list-none {
 
       ---
 
@@ -22138,6 +23199,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ol > li.lg\\\\:list-none {
+      +   .markdown-xl ol > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-xl ol > li::before {
       +   .lg\\\\:markdown-xl ol > li::before {
 
@@ -22148,8 +23214,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ul > li.lg\\\\:list-none {
+      +   .markdown-xl ul > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-xl ul > li::before {
       +   .lg\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.lg\\\\:list-none::before {
+      +   .markdown-xl ul > li.lg\\\\:list-none::before {
 
       ---
 
@@ -22358,6 +23434,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ol > li.lg\\\\:list-none {
+      +   .markdown-2xl ol > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-2xl ol > li::before {
       +   .lg\\\\:markdown-2xl ol > li::before {
 
@@ -22368,8 +23449,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ul > li.lg\\\\:list-none {
+      +   .markdown-2xl ul > li.lg\\\\:list-none {
+
+      ---
+
       -   .lg\\\\:prose-2xl ul > li::before {
       +   .lg\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.lg\\\\:list-none::before {
+      +   .markdown-2xl ul > li.lg\\\\:list-none::before {
 
       ---
 
@@ -22473,6 +23564,7 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   }
       -
       -   .lg\\\\:prose-red a {
       -     color: #dc2626;
@@ -22484,7 +23576,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-yellow a {
       -     color: #d97706;
-      -   }
+
+      ---
+
       -
       -   .lg\\\\:prose-yellow a code {
       -     color: #d97706;
@@ -22607,6 +23701,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.xl\\\\:list-none::before {
+      +   .markdown ol > li.xl\\\\:list-none::before {
+
+      ---
+
       -   .xl\\\\:prose ul > li {
       +   .xl\\\\:markdown ul > li {
 
@@ -22614,6 +23713,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .xl\\\\:prose ul > li::before {
       +   .xl\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.xl\\\\:list-none::before {
+      +   .markdown ul > li.xl\\\\:list-none::before {
 
       ---
 
@@ -22787,6 +23891,16 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.xl\\\\:list-none {
+      +   .markdown ol > li.xl\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.xl\\\\:list-none {
+      +   .markdown ul > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose > ul > li p {
       +   .xl\\\\:markdown > ul > li p {
 
@@ -22862,10 +23976,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose > :last-child {
-      -     margin-bottom: 0;
       -   }
       -
+      -   .xl\\\\:prose > :last-child {
+      -     margin-bottom: 0;
+
+      ---
+
       -   .xl\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -22943,13 +24060,13 @@ it('should be possible to change the default modifiers and change the className'
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
       -     margin-top: 0.6666667em;
+      -   }
+      -
+      -   .xl\\\\:prose-sm code {
+      -     font-size: 0.8571429em;
 
       ---
 
-      -   .xl\\\\:prose-sm code {
-      -     font-size: 0.8571429em;
-      -   }
-      -
       -   .xl\\\\:prose-sm h2 code {
       -     font-size: 0.9em;
       -   }
@@ -22989,12 +24106,20 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
+      -   .prose-sm ol > li.xl\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .xl\\\\:prose-sm ol > li::before {
       -     left: 0;
       -   }
       -
       -   .xl\\\\:prose-sm ul > li {
       -     padding-left: 1.5714286em;
+      -   }
+      -
+      -   .prose-sm ul > li.xl\\\\:list-none {
+      -     padding-left: 0;
       -   }
       -
       -   .xl\\\\:prose-sm ul > li::before {
@@ -23198,6 +24323,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-lg ol > li.xl\\\\:list-none {
+      +   .markdown-lg ol > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-lg ol > li::before {
       +   .xl\\\\:markdown-lg ol > li::before {
 
@@ -23205,6 +24335,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .xl\\\\:prose-lg ul > li {
       +   .xl\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.xl\\\\:list-none {
+      +   .markdown-lg ul > li.xl\\\\:list-none {
 
       ---
 
@@ -23418,6 +24553,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ol > li.xl\\\\:list-none {
+      +   .markdown-xl ol > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-xl ol > li::before {
       +   .xl\\\\:markdown-xl ol > li::before {
 
@@ -23428,8 +24568,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ul > li.xl\\\\:list-none {
+      +   .markdown-xl ul > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-xl ul > li::before {
       +   .xl\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.xl\\\\:list-none::before {
+      +   .markdown-xl ul > li.xl\\\\:list-none::before {
 
       ---
 
@@ -23638,6 +24788,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ol > li.xl\\\\:list-none {
+      +   .markdown-2xl ol > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-2xl ol > li::before {
       +   .xl\\\\:markdown-2xl ol > li::before {
 
@@ -23648,8 +24803,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ul > li.xl\\\\:list-none {
+      +   .markdown-2xl ul > li.xl\\\\:list-none {
+
+      ---
+
       -   .xl\\\\:prose-2xl ul > li::before {
       +   .xl\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.xl\\\\:list-none::before {
+      +   .markdown-2xl ul > li.xl\\\\:list-none::before {
 
       ---
 
@@ -23789,7 +24954,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-indigo a {
       -     color: #4f46e5;
-      -   }
+
+      ---
+
       -
       -   .xl\\\\:prose-indigo a code {
       -     color: #4f46e5;
@@ -23805,9 +24972,7 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-pink a {
       -     color: #db2777;
-
-      ---
-
+      -   }
       -
       -   .xl\\\\:prose-pink a code {
       -     color: #db2777;
@@ -23890,6 +25055,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose ol > li.\\\\32xl\\\\:list-none::before {
+      +   .markdown ol > li.\\\\32xl\\\\:list-none::before {
+
+      ---
+
       -   .\\\\32xl\\\\:prose ul > li {
       +   .\\\\32xl\\\\:markdown ul > li {
 
@@ -23897,6 +25067,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .\\\\32xl\\\\:prose ul > li::before {
       +   .\\\\32xl\\\\:markdown ul > li::before {
+
+      ---
+
+      -   .prose ul > li.\\\\32xl\\\\:list-none::before {
+      +   .markdown ul > li.\\\\32xl\\\\:list-none::before {
 
       ---
 
@@ -24067,6 +25242,16 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .\\\\32xl\\\\:prose li {
       +   .\\\\32xl\\\\:markdown li {
+
+      ---
+
+      -   .prose ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
+      -   .prose ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown ul > li.\\\\32xl\\\\:list-none {
 
       ---
 
@@ -24269,12 +25454,20 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
+      -   .prose-sm ol > li.\\\\32xl\\\\:list-none {
+      -     padding-left: 0;
+      -   }
+      -
       -   .\\\\32xl\\\\:prose-sm ol > li::before {
       -     left: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm ul > li {
       -     padding-left: 1.5714286em;
+      -   }
+      -
+      -   .prose-sm ul > li.\\\\32xl\\\\:list-none {
+      -     padding-left: 0;
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm ul > li::before {
@@ -24478,6 +25671,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-lg ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown-lg ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-lg ol > li::before {
       +   .\\\\32xl\\\\:markdown-lg ol > li::before {
 
@@ -24485,6 +25683,11 @@ it('should be possible to change the default modifiers and change the className'
 
       -   .\\\\32xl\\\\:prose-lg ul > li {
       +   .\\\\32xl\\\\:markdown-lg ul > li {
+
+      ---
+
+      -   .prose-lg ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown-lg ul > li.\\\\32xl\\\\:list-none {
 
       ---
 
@@ -24698,6 +25901,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown-xl ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-xl ol > li::before {
       +   .\\\\32xl\\\\:markdown-xl ol > li::before {
 
@@ -24708,8 +25916,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-xl ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown-xl ul > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-xl ul > li::before {
       +   .\\\\32xl\\\\:markdown-xl ul > li::before {
+
+      ---
+
+      -   .prose-xl ul > li.\\\\32xl\\\\:list-none::before {
+      +   .markdown-xl ul > li.\\\\32xl\\\\:list-none::before {
 
       ---
 
@@ -24918,6 +26136,11 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ol > li.\\\\32xl\\\\:list-none {
+      +   .markdown-2xl ol > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-2xl ol > li::before {
       +   .\\\\32xl\\\\:markdown-2xl ol > li::before {
 
@@ -24928,8 +26151,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .prose-2xl ul > li.\\\\32xl\\\\:list-none {
+      +   .markdown-2xl ul > li.\\\\32xl\\\\:list-none {
+
+      ---
+
       -   .\\\\32xl\\\\:prose-2xl ul > li::before {
       +   .\\\\32xl\\\\:markdown-2xl ul > li::before {
+
+      ---
+
+      -   .prose-2xl ul > li.\\\\32xl\\\\:list-none::before {
+      +   .markdown-2xl ul > li.\\\\32xl\\\\:list-none::before {
 
       ---
 
