@@ -27,6 +27,9 @@ module.exports = (theme) => ({
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
+        'ol': {
+          'counter-reset': 'list-item',
+        },
         'ol[type="A"]': {
           '--list-counter-style': 'upper-alpha',
         },
