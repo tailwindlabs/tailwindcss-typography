@@ -1,6 +1,5 @@
 name: Bug Report
 description: Create a bug report for @tailwindcss/typography.
-title: '[Bug] :'
 labels: []
 body:
   - type: input
@@ -30,7 +29,7 @@ body:
   - type: input
     attributes:
       label: Reproduction repository
-      description: A public GitHub repo that demonstrates the bug. If it's really unnecessary, link us to a YouTube video you think is awesome instead.
+      description: A public GitHub repo that includes a minimal reproduction of the bug. Unfortunately we can't provide support without a reproduction, and your issue will be closed and locked with no comment if this is not provided.
     validations:
       required: true
   - type: textarea
