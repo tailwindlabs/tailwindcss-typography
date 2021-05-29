@@ -94,17 +94,29 @@ module.exports = (theme) => ({
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '800',
         },
+        'h1 strong': {
+          fontWeight: '900',
+        },
         h2: {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '700',
+        },
+        'h2 strong': {
+          fontWeight: '800',
         },
         h3: {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
         },
+        'h3 strong': {
+          fontWeight: '700',
+        },
         h4: {
           color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
           fontWeight: '600',
+        },
+        'h4 strong': {
+          fontWeight: '700',
         },
         'figure figcaption': {
           color: theme('colors.gray.500', defaultTheme.colors.gray[500]),

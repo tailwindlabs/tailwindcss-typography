@@ -156,6 +156,10 @@ it('should generate the default classes for the typography components', async ()
       line-height: 1.1111111;
     }
 
+    .prose h1 strong {
+      font-weight: 900;
+    }
+
     .prose h2 {
       color: #111827;
       font-weight: 700;
@@ -163,6 +167,10 @@ it('should generate the default classes for the typography components', async ()
       margin-top: 2em;
       margin-bottom: 1em;
       line-height: 1.3333333;
+    }
+
+    .prose h2 strong {
+      font-weight: 800;
     }
 
     .prose h3 {
@@ -174,12 +182,20 @@ it('should generate the default classes for the typography components', async ()
       line-height: 1.6;
     }
 
+    .prose h3 strong {
+      font-weight: 700;
+    }
+
     .prose h4 {
       color: #111827;
       font-weight: 600;
       margin-top: 1.5em;
       margin-bottom: 0.5em;
       line-height: 1.5;
+    }
+
+    .prose h4 strong {
+      font-weight: 700;
     }
 
     .prose figure figcaption {
@@ -1476,6 +1492,10 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.1111111;
       }
 
+      .sm\\\\:prose h1 strong {
+        font-weight: 900;
+      }
+
       .sm\\\\:prose h2 {
         color: #111827;
         font-weight: 700;
@@ -1483,6 +1503,10 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 2em;
         margin-bottom: 1em;
         line-height: 1.3333333;
+      }
+
+      .sm\\\\:prose h2 strong {
+        font-weight: 800;
       }
 
       .sm\\\\:prose h3 {
@@ -1494,12 +1518,20 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.6;
       }
 
+      .sm\\\\:prose h3 strong {
+        font-weight: 700;
+      }
+
       .sm\\\\:prose h4 {
         color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         line-height: 1.5;
+      }
+
+      .sm\\\\:prose h4 strong {
+        font-weight: 700;
       }
 
       .sm\\\\:prose figure figcaption {
@@ -2797,6 +2829,10 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.1111111;
       }
 
+      .md\\\\:prose h1 strong {
+        font-weight: 900;
+      }
+
       .md\\\\:prose h2 {
         color: #111827;
         font-weight: 700;
@@ -2804,6 +2840,10 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 2em;
         margin-bottom: 1em;
         line-height: 1.3333333;
+      }
+
+      .md\\\\:prose h2 strong {
+        font-weight: 800;
       }
 
       .md\\\\:prose h3 {
@@ -2815,12 +2855,20 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.6;
       }
 
+      .md\\\\:prose h3 strong {
+        font-weight: 700;
+      }
+
       .md\\\\:prose h4 {
         color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         line-height: 1.5;
+      }
+
+      .md\\\\:prose h4 strong {
+        font-weight: 700;
       }
 
       .md\\\\:prose figure figcaption {
@@ -4118,6 +4166,10 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.1111111;
       }
 
+      .lg\\\\:prose h1 strong {
+        font-weight: 900;
+      }
+
       .lg\\\\:prose h2 {
         color: #111827;
         font-weight: 700;
@@ -4125,6 +4177,10 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 2em;
         margin-bottom: 1em;
         line-height: 1.3333333;
+      }
+
+      .lg\\\\:prose h2 strong {
+        font-weight: 800;
       }
 
       .lg\\\\:prose h3 {
@@ -4136,12 +4192,20 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.6;
       }
 
+      .lg\\\\:prose h3 strong {
+        font-weight: 700;
+      }
+
       .lg\\\\:prose h4 {
         color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         line-height: 1.5;
+      }
+
+      .lg\\\\:prose h4 strong {
+        font-weight: 700;
       }
 
       .lg\\\\:prose figure figcaption {
@@ -5439,6 +5503,10 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.1111111;
       }
 
+      .xl\\\\:prose h1 strong {
+        font-weight: 900;
+      }
+
       .xl\\\\:prose h2 {
         color: #111827;
         font-weight: 700;
@@ -5446,6 +5514,10 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 2em;
         margin-bottom: 1em;
         line-height: 1.3333333;
+      }
+
+      .xl\\\\:prose h2 strong {
+        font-weight: 800;
       }
 
       .xl\\\\:prose h3 {
@@ -5457,12 +5529,20 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.6;
       }
 
+      .xl\\\\:prose h3 strong {
+        font-weight: 700;
+      }
+
       .xl\\\\:prose h4 {
         color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         line-height: 1.5;
+      }
+
+      .xl\\\\:prose h4 strong {
+        font-weight: 700;
       }
 
       .xl\\\\:prose figure figcaption {
@@ -6760,6 +6840,10 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.1111111;
       }
 
+      .\\\\32xl\\\\:prose h1 strong {
+        font-weight: 900;
+      }
+
       .\\\\32xl\\\\:prose h2 {
         color: #111827;
         font-weight: 700;
@@ -6767,6 +6851,10 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 2em;
         margin-bottom: 1em;
         line-height: 1.3333333;
+      }
+
+      .\\\\32xl\\\\:prose h2 strong {
+        font-weight: 800;
       }
 
       .\\\\32xl\\\\:prose h3 {
@@ -6778,12 +6866,20 @@ it('should generate the default classes for the typography components', async ()
         line-height: 1.6;
       }
 
+      .\\\\32xl\\\\:prose h3 strong {
+        font-weight: 700;
+      }
+
       .\\\\32xl\\\\:prose h4 {
         color: #111827;
         font-weight: 600;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         line-height: 1.5;
+      }
+
+      .\\\\32xl\\\\:prose h4 strong {
+        font-weight: 700;
       }
 
       .\\\\32xl\\\\:prose figure figcaption {
@@ -8071,8 +8167,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose h1 strong {
+      + .markdown h1 strong {
+
+      ---
+
       - .prose h2 {
       + .markdown h2 {
+
+      ---
+
+      - .prose h2 strong {
+      + .markdown h2 strong {
 
       ---
 
@@ -8081,8 +8187,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      - .prose h3 strong {
+      + .markdown h3 strong {
+
+      ---
+
       - .prose h4 {
       + .markdown h4 {
+
+      ---
+
+      - .prose h4 strong {
+      + .markdown h4 strong {
 
       ---
 
@@ -9356,8 +9472,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .sm\\\\:prose h1 strong {
+      +   .sm\\\\:markdown h1 strong {
+
+      ---
+
       -   .sm\\\\:prose h2 {
       +   .sm\\\\:markdown h2 {
+
+      ---
+
+      -   .sm\\\\:prose h2 strong {
+      +   .sm\\\\:markdown h2 strong {
 
       ---
 
@@ -9366,8 +9492,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .sm\\\\:prose h3 strong {
+      +   .sm\\\\:markdown h3 strong {
+
+      ---
+
       -   .sm\\\\:prose h4 {
       +   .sm\\\\:markdown h4 {
+
+      ---
+
+      -   .sm\\\\:prose h4 strong {
+      +   .sm\\\\:markdown h4 strong {
 
       ---
 
@@ -10641,8 +10777,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .md\\\\:prose h1 strong {
+      +   .md\\\\:markdown h1 strong {
+
+      ---
+
       -   .md\\\\:prose h2 {
       +   .md\\\\:markdown h2 {
+
+      ---
+
+      -   .md\\\\:prose h2 strong {
+      +   .md\\\\:markdown h2 strong {
 
       ---
 
@@ -10651,8 +10797,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .md\\\\:prose h3 strong {
+      +   .md\\\\:markdown h3 strong {
+
+      ---
+
       -   .md\\\\:prose h4 {
       +   .md\\\\:markdown h4 {
+
+      ---
+
+      -   .md\\\\:prose h4 strong {
+      +   .md\\\\:markdown h4 strong {
 
       ---
 
@@ -11926,8 +12082,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .lg\\\\:prose h1 strong {
+      +   .lg\\\\:markdown h1 strong {
+
+      ---
+
       -   .lg\\\\:prose h2 {
       +   .lg\\\\:markdown h2 {
+
+      ---
+
+      -   .lg\\\\:prose h2 strong {
+      +   .lg\\\\:markdown h2 strong {
 
       ---
 
@@ -11936,8 +12102,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .lg\\\\:prose h3 strong {
+      +   .lg\\\\:markdown h3 strong {
+
+      ---
+
       -   .lg\\\\:prose h4 {
       +   .lg\\\\:markdown h4 {
+
+      ---
+
+      -   .lg\\\\:prose h4 strong {
+      +   .lg\\\\:markdown h4 strong {
 
       ---
 
@@ -13211,8 +13387,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .xl\\\\:prose h1 strong {
+      +   .xl\\\\:markdown h1 strong {
+
+      ---
+
       -   .xl\\\\:prose h2 {
       +   .xl\\\\:markdown h2 {
+
+      ---
+
+      -   .xl\\\\:prose h2 strong {
+      +   .xl\\\\:markdown h2 strong {
 
       ---
 
@@ -13221,8 +13407,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .xl\\\\:prose h3 strong {
+      +   .xl\\\\:markdown h3 strong {
+
+      ---
+
       -   .xl\\\\:prose h4 {
       +   .xl\\\\:markdown h4 {
+
+      ---
+
+      -   .xl\\\\:prose h4 strong {
+      +   .xl\\\\:markdown h4 strong {
 
       ---
 
@@ -14496,8 +14692,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .\\\\32xl\\\\:prose h1 strong {
+      +   .\\\\32xl\\\\:markdown h1 strong {
+
+      ---
+
       -   .\\\\32xl\\\\:prose h2 {
       +   .\\\\32xl\\\\:markdown h2 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h2 strong {
+      +   .\\\\32xl\\\\:markdown h2 strong {
 
       ---
 
@@ -14506,8 +14712,18 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
+      -   .\\\\32xl\\\\:prose h3 strong {
+      +   .\\\\32xl\\\\:markdown h3 strong {
+
+      ---
+
       -   .\\\\32xl\\\\:prose h4 {
       +   .\\\\32xl\\\\:markdown h4 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h4 strong {
+      +   .\\\\32xl\\\\:markdown h4 strong {
 
       ---
 
@@ -17510,8 +17726,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose h1 strong {
+      + .markdown h1 strong {
+
+      ---
+
       - .prose h2 {
       + .markdown h2 {
+
+      ---
+
+      - .prose h2 strong {
+      + .markdown h2 strong {
 
       ---
 
@@ -17520,8 +17746,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      - .prose h3 strong {
+      + .markdown h3 strong {
+
+      ---
+
       - .prose h4 {
       + .markdown h4 {
+
+      ---
+
+      - .prose h4 strong {
+      + .markdown h4 strong {
 
       ---
 
@@ -17697,9 +17933,8 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose h3 + * {
       -   margin-top: 0;
-
-      ---
-
+      - }
+      -
       - .prose h4 + * {
       -   margin-top: 0;
       - }
@@ -17756,8 +17991,9 @@ it('should be possible to change the default modifiers and change the className'
       -   margin-top: 0;
       -   margin-bottom: 0.8em;
       -   line-height: 1.2;
-      - }
-      -
+
+      ---
+
       - .prose-sm h2 {
       -   font-size: 1.4285714em;
       -   margin-top: 1.6em;
@@ -18633,13 +18869,13 @@ it('should be possible to change the default modifiers and change the className'
       -
       - .prose-yellow a {
       -   color: #d97706;
+      - }
+      -
+      - .prose-yellow a code {
+      -   color: #d97706;
 
       ---
 
-      - .prose-yellow a code {
-      -   color: #d97706;
-      - }
-      -
       - .prose-green a {
       -   color: #059669;
       - }
@@ -18793,8 +19029,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .sm\\\\:prose h1 strong {
+      +   .sm\\\\:markdown h1 strong {
+
+      ---
+
       -   .sm\\\\:prose h2 {
       +   .sm\\\\:markdown h2 {
+
+      ---
+
+      -   .sm\\\\:prose h2 strong {
+      +   .sm\\\\:markdown h2 strong {
 
       ---
 
@@ -18803,8 +19049,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .sm\\\\:prose h3 strong {
+      +   .sm\\\\:markdown h3 strong {
+
+      ---
+
       -   .sm\\\\:prose h4 {
       +   .sm\\\\:markdown h4 {
+
+      ---
+
+      -   .sm\\\\:prose h4 strong {
+      +   .sm\\\\:markdown h4 strong {
 
       ---
 
@@ -18972,20 +19228,24 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .sm\\\\:prose hr + * {
       -     margin-top: 0;
-      -   }
-      -
+
+      ---
+
       -   .sm\\\\:prose h2 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown hr + * {
+
+      ---
+
       -   .sm\\\\:prose h3 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h2 + * {
+
+      ---
+
       -   .sm\\\\:prose h4 + * {
-      -     margin-top: 0;
-      -   }
-      -
+      +   .sm\\\\:markdown h3 + * {
+
+      ---
+
       -   .sm\\\\:prose thead th:first-child {
       -     padding-left: 0;
       -   }
@@ -19063,9 +19323,8 @@ it('should be possible to change the default modifiers and change the className'
       -   .sm\\\\:prose-sm img {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm video {
       -     margin-top: 1.7142857em;
       -     margin-bottom: 1.7142857em;
@@ -19077,20 +19336,20 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm figure > * {
-      +   .sm\\\\:markdown hr + * {
+      +   .sm\\\\:markdown h4 + * {
 
       ---
 
       -     margin-bottom: 0;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
       -     margin-top: 0.6666667em;
-      -   }
-      -
+
+      ---
+
       -   .sm\\\\:prose-sm code {
       -     font-size: 0.8571429em;
       -   }
@@ -19181,24 +19440,19 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm hr + * {
-      +   .sm\\\\:markdown h2 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose-sm h2 + * {
-      +   .sm\\\\:markdown h3 + * {
-
-      ---
-
+      -     margin-top: 0;
+      -   }
+      -
       -   .sm\\\\:prose-sm h3 + * {
       -     margin-top: 0;
       -   }
       -
       -   .sm\\\\:prose-sm h4 + * {
-      +   .sm\\\\:markdown h4 + * {
-
-      ---
-
+      -     margin-top: 0;
       -   }
       -
       -   .sm\\\\:prose-sm table {
@@ -19210,9 +19464,8 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-
-      ---
-
+      -   }
+      -
       -   .sm\\\\:prose-sm thead th:first-child {
       +   .sm\\\\:markdown thead th:first-child {
 
@@ -20082,8 +20335,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .md\\\\:prose h1 strong {
+      +   .md\\\\:markdown h1 strong {
+
+      ---
+
       -   .md\\\\:prose h2 {
       +   .md\\\\:markdown h2 {
+
+      ---
+
+      -   .md\\\\:prose h2 strong {
+      +   .md\\\\:markdown h2 strong {
 
       ---
 
@@ -20092,8 +20355,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .md\\\\:prose h3 strong {
+      +   .md\\\\:markdown h3 strong {
+
+      ---
+
       -   .md\\\\:prose h4 {
       +   .md\\\\:markdown h4 {
+
+      ---
+
+      -   .md\\\\:prose h4 strong {
+      +   .md\\\\:markdown h4 strong {
 
       ---
 
@@ -20257,8 +20530,6 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   }
-      -
       -   .md\\\\:prose hr + * {
       -     margin-top: 0;
       -   }
@@ -20307,9 +20578,8 @@ it('should be possible to change the default modifiers and change the className'
       -   .md\\\\:prose-sm p {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
-
-      ---
-
+      -   }
+      -
       -   .md\\\\:prose-sm [class~='lead'] {
       -     font-size: 1.2857143em;
       -     line-height: 1.5555556;
@@ -20325,11 +20595,15 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .md\\\\:prose-sm h1 {
       -     font-size: 2.1428571em;
-      -     margin-top: 0;
+      +   .md\\\\:markdown hr + * {
+
+      ---
+
       -     margin-bottom: 0.8em;
       -     line-height: 1.2;
-      -   }
-      -
+
+      ---
+
       -   .md\\\\:prose-sm h2 {
       -     font-size: 1.4285714em;
       -     margin-top: 1.6em;
@@ -20366,10 +20640,14 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm figure > * {
-      -     margin-top: 0;
+      +   .md\\\\:markdown h2 + * {
+
+      ---
+
       -     margin-bottom: 0;
-      -   }
-      -
+
+      ---
+
       -   .md\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
@@ -20466,30 +20744,31 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm hr + * {
-      +   .md\\\\:markdown hr + * {
-
-      ---
-
-      -   .md\\\\:prose-sm h2 + * {
-      +   .md\\\\:markdown h2 + * {
-
-      ---
-
-      -   .md\\\\:prose-sm h3 + * {
       +   .md\\\\:markdown h3 + * {
 
       ---
 
+      -   .md\\\\:prose-sm h2 + * {
+      -     margin-top: 0;
+      -   }
+      -
+      -   .md\\\\:prose-sm h3 + * {
+      -     margin-top: 0;
+      -   }
+      -
       -   .md\\\\:prose-sm h4 + * {
       +   .md\\\\:markdown h4 + * {
 
       ---
 
+      -   }
+      -
       -   .md\\\\:prose-sm table {
       -     font-size: 0.8571429em;
       -     line-height: 1.5;
-      -   }
-      -
+
+      ---
+
       -   .md\\\\:prose-sm thead th {
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
@@ -21362,8 +21641,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .lg\\\\:prose h1 strong {
+      +   .lg\\\\:markdown h1 strong {
+
+      ---
+
       -   .lg\\\\:prose h2 {
       +   .lg\\\\:markdown h2 {
+
+      ---
+
+      -   .lg\\\\:prose h2 strong {
+      +   .lg\\\\:markdown h2 strong {
 
       ---
 
@@ -21372,8 +21661,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .lg\\\\:prose h3 strong {
+      +   .lg\\\\:markdown h3 strong {
+
+      ---
+
       -   .lg\\\\:prose h4 {
       +   .lg\\\\:markdown h4 {
+
+      ---
+
+      -   .lg\\\\:prose h4 strong {
+      +   .lg\\\\:markdown h4 strong {
 
       ---
 
@@ -21545,8 +21844,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose h2 + * {
       -     margin-top: 0;
-      -   }
-      -
+
+      ---
+
       -   .lg\\\\:prose h3 + * {
       -     margin-top: 0;
       -   }
@@ -21677,9 +21977,8 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-right: 1em;
       -     padding-bottom: 0.6666667em;
       -     padding-left: 1em;
-
-      ---
-
+      -   }
+      -
       -   .lg\\\\:prose-sm ol {
       -     margin-top: 1.1428571em;
       -     margin-bottom: 1.1428571em;
@@ -22473,6 +22772,7 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   }
       -
       -   .lg\\\\:prose-red a {
       -     color: #dc2626;
@@ -22488,7 +22788,9 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .lg\\\\:prose-yellow a code {
       -     color: #d97706;
-      -   }
+
+      ---
+
       -
       -   .lg\\\\:prose-green a {
       -     color: #059669;
@@ -22642,8 +22944,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .xl\\\\:prose h1 strong {
+      +   .xl\\\\:markdown h1 strong {
+
+      ---
+
       -   .xl\\\\:prose h2 {
       +   .xl\\\\:markdown h2 {
+
+      ---
+
+      -   .xl\\\\:prose h2 strong {
+      +   .xl\\\\:markdown h2 strong {
 
       ---
 
@@ -22652,8 +22964,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .xl\\\\:prose h3 strong {
+      +   .xl\\\\:markdown h3 strong {
+
+      ---
+
       -   .xl\\\\:prose h4 {
       +   .xl\\\\:markdown h4 {
+
+      ---
+
+      -   .xl\\\\:prose h4 strong {
+      +   .xl\\\\:markdown h4 strong {
 
       ---
 
@@ -22863,9 +23185,10 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .xl\\\\:prose > :last-child {
-      -     margin-bottom: 0;
-      -   }
-      -
+      +   .xl\\\\:markdown > :last-child {
+
+      ---
+
       -   .xl\\\\:prose-sm {
       -     font-size: 0.875rem;
       -     line-height: 1.7142857;
@@ -22933,19 +23256,15 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .xl\\\\:prose-sm figure > * {
       -     margin-top: 0;
-      +   .xl\\\\:markdown > :last-child {
-
-      ---
-
+      -     margin-bottom: 0;
       -   }
       -
       -   .xl\\\\:prose-sm figure figcaption {
       -     font-size: 0.8571429em;
       -     line-height: 1.3333333;
       -     margin-top: 0.6666667em;
-
-      ---
-
+      -   }
+      -
       -   .xl\\\\:prose-sm code {
       -     font-size: 0.8571429em;
       -   }
@@ -23925,8 +24244,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .\\\\32xl\\\\:prose h1 strong {
+      +   .\\\\32xl\\\\:markdown h1 strong {
+
+      ---
+
       -   .\\\\32xl\\\\:prose h2 {
       +   .\\\\32xl\\\\:markdown h2 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h2 strong {
+      +   .\\\\32xl\\\\:markdown h2 strong {
 
       ---
 
@@ -23935,8 +24264,18 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
+      -   .\\\\32xl\\\\:prose h3 strong {
+      +   .\\\\32xl\\\\:markdown h3 strong {
+
+      ---
+
       -   .\\\\32xl\\\\:prose h4 {
       +   .\\\\32xl\\\\:markdown h4 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose h4 strong {
+      +   .\\\\32xl\\\\:markdown h4 strong {
 
       ---
 
