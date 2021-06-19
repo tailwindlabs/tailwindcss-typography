@@ -49,13 +49,13 @@ If you need to pull in these styles via CDN, you can do so using services like U
 <!-- From UNPKG -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+  href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css"
 />
 
 <!-- From jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+  href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.4.x/dist/typography.min.css"
 />
 ```
 
