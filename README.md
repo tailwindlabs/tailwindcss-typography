@@ -347,3 +347,29 @@ module.exports = {
   },
 }
 ```
+
+
+### Changing the default class name
+
+If you need to use a class name other than `prose` for any reason, you can do so using the `className` option when registering the plugin:
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/typography')({
+        className: 'markdown',
+    }),
+  ]
+  ...
+}
+```
+
+```html
+<article class="markdown md:markdown-lg">
+  {{ markdown }}
+</article>
+```
