@@ -351,7 +351,7 @@ module.exports = {
 
 ### Changing the default class name
 
-If you'd like to customise the name of your tailwind typography class, you can do so by setting the `className` key to your preferred name in the options passed when you import the `@tailwindcss/typography` plugin in your `tailwind.config.js` file:
+If you need to use a class name other than `prose` for any reason, you can do so using the `className` option when registering the plugin:
 
 ```js
 // tailwind.config.js
@@ -361,7 +361,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography')({
-        className: 'typography',
+        className: 'markdown',
     }),
   ]
   ...
@@ -369,7 +369,7 @@ module.exports = {
 ```
 
 ```html
-<article class="typography sm:typography-sm lg:typography-lg xl:typography-xl">
+<article class="markdown md:markdown-lg">
   {{ markdown }}
 </article>
 ```
