@@ -11,12 +11,16 @@ const computed = {
 }
 
 function configToCss(config = {}) {
-  return merge(
-    {},
-    ...Object.keys(config)
-      .filter((key) => computed[key])
-      .map((key) => computed[key](config[key])),
-    ...castArray(config.css || {})
+  return Object.fromEntries(
+    Object.entries(
+      merge(
+        {},
+        ...Object.keys(config)
+          .filter((key) => computed[key])
+          .map((key) => computed[key](config[key])),
+        ...castArray(config.css || {})
+      )
+    ).map(([k, v]) => [`:where(${k})`, v])
   )
 }
 
@@ -43,6 +47,8 @@ module.exports = plugin.withOptions(
         ...modifiers,
         ...Object.keys(config).filter((modifier) => !DEFAULT_MODIFIERS.includes(modifier)),
       ])
+
+      console.log(configToCss(config['DEFAULT']))
 
       addComponents(
         all.map((modifier) => ({
