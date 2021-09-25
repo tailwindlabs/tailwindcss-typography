@@ -32,7 +32,13 @@ function configToCss(config = {}) {
           .map((key) => computed[key](config[key])),
         ...castArray(config.css || {})
       )
-    ).map(([k, v]) => [inWhere(k), v])
+    ).map(([k, v]) => {
+      if (typeof v == 'object' && v.constructor == Object) {
+        return [inWhere(k), v]
+      }
+
+      return [k, v]
+    })
   )
 }
 

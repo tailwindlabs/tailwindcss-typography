@@ -32,8 +32,8 @@ async function diffOnly(options = {}, config = {}) {
 it('should generate the default classes for the typography components', async () => {
   expect(await run()).toMatchInlineSnapshot(`
     ".prose {
-      :where(color): #374151;
-      :where(max-width): 65ch;
+      color: #374151;
+      max-width: 65ch;
     }
 
     .prose :where([class~=\\"lead\\"]) {
@@ -300,8 +300,8 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose {
-      :where(font-size): 1rem;
-      :where(line-height): 1.75;
+      font-size: 1rem;
+      line-height: 1.75;
     }
 
     .prose :where(p) {
@@ -419,8 +419,8 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose-sm {
-      :where(font-size): 0.875rem;
-      :where(line-height): 1.7142857;
+      font-size: 0.875rem;
+      line-height: 1.7142857;
     }
 
     .prose-sm :where(p) {
@@ -642,8 +642,8 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose-lg {
-      :where(font-size): 1.125rem;
-      :where(line-height): 1.7777778;
+      font-size: 1.125rem;
+      line-height: 1.7777778;
     }
 
     .prose-lg :where(p) {
@@ -865,8 +865,8 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose-xl {
-      :where(font-size): 1.25rem;
-      :where(line-height): 1.8;
+      font-size: 1.25rem;
+      line-height: 1.8;
     }
 
     .prose-xl :where(p) {
@@ -1088,8 +1088,8 @@ it('should generate the default classes for the typography components', async ()
     }
 
     .prose-2xl {
-      :where(font-size): 1.5rem;
-      :where(line-height): 1.6666667;
+      font-size: 1.5rem;
+      line-height: 1.6666667;
     }
 
     .prose-2xl :where(p) {
@@ -1368,8 +1368,8 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 640px) {
       .sm\\\\:prose {
-        :where(color): #374151;
-        :where(max-width): 65ch;
+        color: #374151;
+        max-width: 65ch;
       }
 
       .sm\\\\:prose :where([class~=\\"lead\\"]) {
@@ -1636,8 +1636,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose {
-        :where(font-size): 1rem;
-        :where(line-height): 1.75;
+        font-size: 1rem;
+        line-height: 1.75;
       }
 
       .sm\\\\:prose :where(p) {
@@ -1755,8 +1755,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose-sm {
-        :where(font-size): 0.875rem;
-        :where(line-height): 1.7142857;
+        font-size: 0.875rem;
+        line-height: 1.7142857;
       }
 
       .sm\\\\:prose-sm :where(p) {
@@ -1978,8 +1978,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose-lg {
-        :where(font-size): 1.125rem;
-        :where(line-height): 1.7777778;
+        font-size: 1.125rem;
+        line-height: 1.7777778;
       }
 
       .sm\\\\:prose-lg :where(p) {
@@ -2201,8 +2201,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose-xl {
-        :where(font-size): 1.25rem;
-        :where(line-height): 1.8;
+        font-size: 1.25rem;
+        line-height: 1.8;
       }
 
       .sm\\\\:prose-xl :where(p) {
@@ -2424,8 +2424,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .sm\\\\:prose-2xl {
-        :where(font-size): 1.5rem;
-        :where(line-height): 1.6666667;
+        font-size: 1.5rem;
+        line-height: 1.6666667;
       }
 
       .sm\\\\:prose-2xl :where(p) {
@@ -2705,8 +2705,8 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 768px) {
       .md\\\\:prose {
-        :where(color): #374151;
-        :where(max-width): 65ch;
+        color: #374151;
+        max-width: 65ch;
       }
 
       .md\\\\:prose :where([class~=\\"lead\\"]) {
@@ -2973,8 +2973,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose {
-        :where(font-size): 1rem;
-        :where(line-height): 1.75;
+        font-size: 1rem;
+        line-height: 1.75;
       }
 
       .md\\\\:prose :where(p) {
@@ -3092,8 +3092,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose-sm {
-        :where(font-size): 0.875rem;
-        :where(line-height): 1.7142857;
+        font-size: 0.875rem;
+        line-height: 1.7142857;
       }
 
       .md\\\\:prose-sm :where(p) {
@@ -3315,8 +3315,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose-lg {
-        :where(font-size): 1.125rem;
-        :where(line-height): 1.7777778;
+        font-size: 1.125rem;
+        line-height: 1.7777778;
       }
 
       .md\\\\:prose-lg :where(p) {
@@ -3538,8 +3538,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose-xl {
-        :where(font-size): 1.25rem;
-        :where(line-height): 1.8;
+        font-size: 1.25rem;
+        line-height: 1.8;
       }
 
       .md\\\\:prose-xl :where(p) {
@@ -3761,8 +3761,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .md\\\\:prose-2xl {
-        :where(font-size): 1.5rem;
-        :where(line-height): 1.6666667;
+        font-size: 1.5rem;
+        line-height: 1.6666667;
       }
 
       .md\\\\:prose-2xl :where(p) {
@@ -4042,8 +4042,8 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 1024px) {
       .lg\\\\:prose {
-        :where(color): #374151;
-        :where(max-width): 65ch;
+        color: #374151;
+        max-width: 65ch;
       }
 
       .lg\\\\:prose :where([class~=\\"lead\\"]) {
@@ -4310,8 +4310,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose {
-        :where(font-size): 1rem;
-        :where(line-height): 1.75;
+        font-size: 1rem;
+        line-height: 1.75;
       }
 
       .lg\\\\:prose :where(p) {
@@ -4429,8 +4429,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose-sm {
-        :where(font-size): 0.875rem;
-        :where(line-height): 1.7142857;
+        font-size: 0.875rem;
+        line-height: 1.7142857;
       }
 
       .lg\\\\:prose-sm :where(p) {
@@ -4652,8 +4652,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose-lg {
-        :where(font-size): 1.125rem;
-        :where(line-height): 1.7777778;
+        font-size: 1.125rem;
+        line-height: 1.7777778;
       }
 
       .lg\\\\:prose-lg :where(p) {
@@ -4875,8 +4875,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose-xl {
-        :where(font-size): 1.25rem;
-        :where(line-height): 1.8;
+        font-size: 1.25rem;
+        line-height: 1.8;
       }
 
       .lg\\\\:prose-xl :where(p) {
@@ -5098,8 +5098,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .lg\\\\:prose-2xl {
-        :where(font-size): 1.5rem;
-        :where(line-height): 1.6666667;
+        font-size: 1.5rem;
+        line-height: 1.6666667;
       }
 
       .lg\\\\:prose-2xl :where(p) {
@@ -5379,8 +5379,8 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 1280px) {
       .xl\\\\:prose {
-        :where(color): #374151;
-        :where(max-width): 65ch;
+        color: #374151;
+        max-width: 65ch;
       }
 
       .xl\\\\:prose :where([class~=\\"lead\\"]) {
@@ -5647,8 +5647,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose {
-        :where(font-size): 1rem;
-        :where(line-height): 1.75;
+        font-size: 1rem;
+        line-height: 1.75;
       }
 
       .xl\\\\:prose :where(p) {
@@ -5766,8 +5766,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose-sm {
-        :where(font-size): 0.875rem;
-        :where(line-height): 1.7142857;
+        font-size: 0.875rem;
+        line-height: 1.7142857;
       }
 
       .xl\\\\:prose-sm :where(p) {
@@ -5989,8 +5989,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose-lg {
-        :where(font-size): 1.125rem;
-        :where(line-height): 1.7777778;
+        font-size: 1.125rem;
+        line-height: 1.7777778;
       }
 
       .xl\\\\:prose-lg :where(p) {
@@ -6212,8 +6212,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose-xl {
-        :where(font-size): 1.25rem;
-        :where(line-height): 1.8;
+        font-size: 1.25rem;
+        line-height: 1.8;
       }
 
       .xl\\\\:prose-xl :where(p) {
@@ -6435,8 +6435,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .xl\\\\:prose-2xl {
-        :where(font-size): 1.5rem;
-        :where(line-height): 1.6666667;
+        font-size: 1.5rem;
+        line-height: 1.6666667;
       }
 
       .xl\\\\:prose-2xl :where(p) {
@@ -6716,8 +6716,8 @@ it('should generate the default classes for the typography components', async ()
 
     @media (min-width: 1536px) {
       .\\\\32xl\\\\:prose {
-        :where(color): #374151;
-        :where(max-width): 65ch;
+        color: #374151;
+        max-width: 65ch;
       }
 
       .\\\\32xl\\\\:prose :where([class~=\\"lead\\"]) {
@@ -6984,8 +6984,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose {
-        :where(font-size): 1rem;
-        :where(line-height): 1.75;
+        font-size: 1rem;
+        line-height: 1.75;
       }
 
       .\\\\32xl\\\\:prose :where(p) {
@@ -7103,8 +7103,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose-sm {
-        :where(font-size): 0.875rem;
-        :where(line-height): 1.7142857;
+        font-size: 0.875rem;
+        line-height: 1.7142857;
       }
 
       .\\\\32xl\\\\:prose-sm :where(p) {
@@ -7326,8 +7326,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose-lg {
-        :where(font-size): 1.125rem;
-        :where(line-height): 1.7777778;
+        font-size: 1.125rem;
+        line-height: 1.7777778;
       }
 
       .\\\\32xl\\\\:prose-lg :where(p) {
@@ -7549,8 +7549,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose-xl {
-        :where(font-size): 1.25rem;
-        :where(line-height): 1.8;
+        font-size: 1.25rem;
+        line-height: 1.8;
       }
 
       .\\\\32xl\\\\:prose-xl :where(p) {
@@ -7772,8 +7772,8 @@ it('should generate the default classes for the typography components', async ()
       }
 
       .\\\\32xl\\\\:prose-2xl {
-        :where(font-size): 1.5rem;
-        :where(line-height): 1.6666667;
+        font-size: 1.5rem;
+        line-height: 1.6666667;
       }
 
       .\\\\32xl\\\\:prose-2xl :where(p) {
@@ -15894,8 +15894,8 @@ it('should be possible to change the default modifiers', async () => {
     "
 
       - .prose-2xl {
-      -   :where(font-size): 1.5rem;
-      -   :where(line-height): 1.6666667;
+      -   font-size: 1.5rem;
+      -   line-height: 1.6666667;
       - }
       -
       - .prose-2xl :where(p) {
@@ -16179,8 +16179,8 @@ it('should be possible to change the default modifiers', async () => {
       -   }
       -
       -   .sm\\\\:prose-2xl {
-      -     :where(font-size): 1.5rem;
-      -     :where(line-height): 1.6666667;
+      -     font-size: 1.5rem;
+      -     line-height: 1.6666667;
       -   }
       -
       -   .sm\\\\:prose-2xl :where(p) {
@@ -16467,8 +16467,8 @@ it('should be possible to change the default modifiers', async () => {
       -   }
       -
       -   .md\\\\:prose-2xl {
-      -     :where(font-size): 1.5rem;
-      -     :where(line-height): 1.6666667;
+      -     font-size: 1.5rem;
+      -     line-height: 1.6666667;
       -   }
       -
       -   .md\\\\:prose-2xl :where(p) {
@@ -16752,8 +16752,8 @@ it('should be possible to change the default modifiers', async () => {
       -   }
       -
       -   .lg\\\\:prose-2xl {
-      -     :where(font-size): 1.5rem;
-      -     :where(line-height): 1.6666667;
+      -     font-size: 1.5rem;
+      -     line-height: 1.6666667;
       -   }
       -
       -   .lg\\\\:prose-2xl :where(p) {
@@ -17040,8 +17040,8 @@ it('should be possible to change the default modifiers', async () => {
       -   }
       -
       -   .xl\\\\:prose-2xl {
-      -     :where(font-size): 1.5rem;
-      -     :where(line-height): 1.6666667;
+      -     font-size: 1.5rem;
+      -     line-height: 1.6666667;
       -   }
       -
       -   .xl\\\\:prose-2xl :where(p) {
@@ -17328,8 +17328,8 @@ it('should be possible to change the default modifiers', async () => {
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl {
-      -     :where(font-size): 1.5rem;
-      -     :where(line-height): 1.6666667;
+      -     font-size: 1.5rem;
+      -     line-height: 1.6666667;
       -   }
       -
       -   .\\\\32xl\\\\:prose-2xl :where(p) {
@@ -17964,8 +17964,8 @@ it('should be possible to change the default modifiers and change the className'
       - }
       -
       - .prose-sm {
-      -   :where(font-size): 0.875rem;
-      -   :where(line-height): 1.7142857;
+      -   font-size: 0.875rem;
+      -   line-height: 1.7142857;
       - }
       -
       - .prose-sm :where(p) {
@@ -19271,8 +19271,8 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm {
-      -     :where(font-size): 0.875rem;
-      -     :where(line-height): 1.7142857;
+      -     font-size: 0.875rem;
+      -     line-height: 1.7142857;
       -   }
       -
       -   .sm\\\\:prose-sm :where(p) {
@@ -20571,8 +20571,8 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm {
-      -     :where(font-size): 0.875rem;
-      -     :where(line-height): 1.7142857;
+      -     font-size: 0.875rem;
+      -     line-height: 1.7142857;
       -   }
       -
       -   .md\\\\:prose-sm :where(p) {
@@ -21880,8 +21880,8 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .lg\\\\:prose-sm {
-      -     :where(font-size): 0.875rem;
-      -     :where(line-height): 1.7142857;
+      -     font-size: 0.875rem;
+      -     line-height: 1.7142857;
       -   }
       -
       -   .lg\\\\:prose-sm :where(p) {
@@ -23190,8 +23190,8 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .xl\\\\:prose-sm {
-      -     :where(font-size): 0.875rem;
-      -     :where(line-height): 1.7142857;
+      -     font-size: 0.875rem;
+      -     line-height: 1.7142857;
       -   }
       -
       -   .xl\\\\:prose-sm :where(p) {
@@ -24490,8 +24490,8 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .\\\\32xl\\\\:prose-sm {
-      -     :where(font-size): 0.875rem;
-      -     :where(line-height): 1.7142857;
+      -     font-size: 0.875rem;
+      -     line-height: 1.7142857;
       -   }
       -
       -   .\\\\32xl\\\\:prose-sm :where(p) {
@@ -25453,8 +25453,8 @@ it('should be possible to add a new variant', async () => {
     "
 
       + .prose-dark {
-      +   :where(color): black;
-      +   :where(max-width): 65ch;
+      +   color: black;
+      +   max-width: 65ch;
       + }
       +
 
@@ -25462,8 +25462,8 @@ it('should be possible to add a new variant', async () => {
 
       +
       +   .sm\\\\:prose-dark {
-      +     :where(color): black;
-      +     :where(max-width): 65ch;
+      +     color: black;
+      +     max-width: 65ch;
       +   }
 
       ---
@@ -25471,32 +25471,32 @@ it('should be possible to add a new variant', async () => {
       +   }
       +
       +   .md\\\\:prose-dark {
-      +     :where(color): black;
-      +     :where(max-width): 65ch;
+      +     color: black;
+      +     max-width: 65ch;
 
       ---
 
       +   }
       +
       +   .lg\\\\:prose-dark {
-      +     :where(color): black;
-      +     :where(max-width): 65ch;
+      +     color: black;
+      +     max-width: 65ch;
 
       ---
 
       +   }
       +
       +   .xl\\\\:prose-dark {
-      +     :where(color): black;
-      +     :where(max-width): 65ch;
+      +     color: black;
+      +     max-width: 65ch;
 
       ---
 
       +   }
       +
       +   .\\\\32xl\\\\:prose-dark {
-      +     :where(color): black;
-      +     :where(max-width): 65ch;
+      +     color: black;
+      +     max-width: 65ch;
 
     "
   `)
