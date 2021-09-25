@@ -10,6 +10,18 @@ const computed = {
   // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
 }
 
+function inWhere(selector) {
+  if (selector.endsWith('::before')) {
+    return `:where(${selector.slice(0, -8)})::before`
+  }
+
+  if (selector.endsWith('::after')) {
+    return `:where(${selector.slice(0, -7)})::after`
+  }
+
+  return `:where(${selector})`
+}
+
 function configToCss(config = {}) {
   return Object.fromEntries(
     Object.entries(
@@ -20,7 +32,7 @@ function configToCss(config = {}) {
           .map((key) => computed[key](config[key])),
         ...castArray(config.css || {})
       )
-    ).map(([k, v]) => [`:where(${k})`, v])
+    ).map(([k, v]) => [inWhere(k), v])
   )
 }
 

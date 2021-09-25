@@ -96,7 +96,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.75em;
     }
 
-    .prose :where(ol > li::before) {
+    .prose :where(ol > li)::before {
       content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
       position: absolute;
       font-weight: 400;
@@ -109,7 +109,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.75em;
     }
 
-    .prose :where(ul > li::before) {
+    .prose :where(ul > li)::before {
       content: \\"\\";
       position: absolute;
       background-color: #d1d5db;
@@ -139,11 +139,11 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1em;
     }
 
-    .prose :where(blockquote p:first-of-type::before) {
+    .prose :where(blockquote p:first-of-type)::before {
       content: open-quote;
     }
 
-    .prose :where(blockquote p:last-of-type::after) {
+    .prose :where(blockquote p:last-of-type)::after {
       content: close-quote;
     }
 
@@ -211,11 +211,11 @@ it('should generate the default classes for the typography components', async ()
       font-size: 0.875em;
     }
 
-    .prose :where(code::before) {
+    .prose :where(code)::before {
       content: \\"\`\\";
     }
 
-    .prose :where(code::after) {
+    .prose :where(code)::after {
       content: \\"\`\\";
     }
 
@@ -250,11 +250,11 @@ it('should generate the default classes for the typography components', async ()
       line-height: inherit;
     }
 
-    .prose :where(pre code::before) {
+    .prose :where(pre code)::before {
       content: none;
     }
 
-    .prose :where(pre code::after) {
+    .prose :where(pre code)::after {
       content: none;
     }
 
@@ -537,7 +537,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.5714286em;
     }
 
-    .prose-sm :where(ol > li::before) {
+    .prose-sm :where(ol > li)::before {
       left: 0;
     }
 
@@ -545,7 +545,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.5714286em;
     }
 
-    .prose-sm :where(ul > li::before) {
+    .prose-sm :where(ul > li)::before {
       height: 0.3571429em;
       width: 0.3571429em;
       top: calc(0.8571429em - 0.1785714em);
@@ -760,7 +760,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
-    .prose-lg :where(ol > li::before) {
+    .prose-lg :where(ol > li)::before {
       left: 0;
     }
 
@@ -768,7 +768,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
-    .prose-lg :where(ul > li::before) {
+    .prose-lg :where(ul > li)::before {
       width: 0.3333333em;
       height: 0.3333333em;
       top: calc(0.8888889em - 0.1666667em);
@@ -983,7 +983,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.8em;
     }
 
-    .prose-xl :where(ol > li::before) {
+    .prose-xl :where(ol > li)::before {
       left: 0;
     }
 
@@ -991,7 +991,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.8em;
     }
 
-    .prose-xl :where(ul > li::before) {
+    .prose-xl :where(ul > li)::before {
       width: 0.35em;
       height: 0.35em;
       top: calc(0.9em - 0.175em);
@@ -1206,7 +1206,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
-    .prose-2xl :where(ol > li::before) {
+    .prose-2xl :where(ol > li)::before {
       left: 0;
     }
 
@@ -1214,7 +1214,7 @@ it('should generate the default classes for the typography components', async ()
       padding-left: 1.6666667em;
     }
 
-    .prose-2xl :where(ul > li::before) {
+    .prose-2xl :where(ul > li)::before {
       width: 0.3333333em;
       height: 0.3333333em;
       top: calc(0.8333333em - 0.1666667em);
@@ -1432,7 +1432,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .sm\\\\:prose :where(ol > li::before) {
+      .sm\\\\:prose :where(ol > li)::before {
         content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
@@ -1445,7 +1445,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .sm\\\\:prose :where(ul > li::before) {
+      .sm\\\\:prose :where(ul > li)::before {
         content: \\"\\";
         position: absolute;
         background-color: #d1d5db;
@@ -1475,11 +1475,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .sm\\\\:prose :where(blockquote p:first-of-type::before) {
+      .sm\\\\:prose :where(blockquote p:first-of-type)::before {
         content: open-quote;
       }
 
-      .sm\\\\:prose :where(blockquote p:last-of-type::after) {
+      .sm\\\\:prose :where(blockquote p:last-of-type)::after {
         content: close-quote;
       }
 
@@ -1547,11 +1547,11 @@ it('should generate the default classes for the typography components', async ()
         font-size: 0.875em;
       }
 
-      .sm\\\\:prose :where(code::before) {
+      .sm\\\\:prose :where(code)::before {
         content: \\"\`\\";
       }
 
-      .sm\\\\:prose :where(code::after) {
+      .sm\\\\:prose :where(code)::after {
         content: \\"\`\\";
       }
 
@@ -1586,11 +1586,11 @@ it('should generate the default classes for the typography components', async ()
         line-height: inherit;
       }
 
-      .sm\\\\:prose :where(pre code::before) {
+      .sm\\\\:prose :where(pre code)::before {
         content: none;
       }
 
-      .sm\\\\:prose :where(pre code::after) {
+      .sm\\\\:prose :where(pre code)::after {
         content: none;
       }
 
@@ -1873,7 +1873,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .sm\\\\:prose-sm :where(ol > li::before) {
+      .sm\\\\:prose-sm :where(ol > li)::before {
         left: 0;
       }
 
@@ -1881,7 +1881,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .sm\\\\:prose-sm :where(ul > li::before) {
+      .sm\\\\:prose-sm :where(ul > li)::before {
         height: 0.3571429em;
         width: 0.3571429em;
         top: calc(0.8571429em - 0.1785714em);
@@ -2096,7 +2096,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .sm\\\\:prose-lg :where(ol > li::before) {
+      .sm\\\\:prose-lg :where(ol > li)::before {
         left: 0;
       }
 
@@ -2104,7 +2104,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .sm\\\\:prose-lg :where(ul > li::before) {
+      .sm\\\\:prose-lg :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8888889em - 0.1666667em);
@@ -2319,7 +2319,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .sm\\\\:prose-xl :where(ol > li::before) {
+      .sm\\\\:prose-xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -2327,7 +2327,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .sm\\\\:prose-xl :where(ul > li::before) {
+      .sm\\\\:prose-xl :where(ul > li)::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
@@ -2542,7 +2542,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .sm\\\\:prose-2xl :where(ol > li::before) {
+      .sm\\\\:prose-2xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -2550,7 +2550,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .sm\\\\:prose-2xl :where(ul > li::before) {
+      .sm\\\\:prose-2xl :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
@@ -2769,7 +2769,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .md\\\\:prose :where(ol > li::before) {
+      .md\\\\:prose :where(ol > li)::before {
         content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
@@ -2782,7 +2782,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .md\\\\:prose :where(ul > li::before) {
+      .md\\\\:prose :where(ul > li)::before {
         content: \\"\\";
         position: absolute;
         background-color: #d1d5db;
@@ -2812,11 +2812,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .md\\\\:prose :where(blockquote p:first-of-type::before) {
+      .md\\\\:prose :where(blockquote p:first-of-type)::before {
         content: open-quote;
       }
 
-      .md\\\\:prose :where(blockquote p:last-of-type::after) {
+      .md\\\\:prose :where(blockquote p:last-of-type)::after {
         content: close-quote;
       }
 
@@ -2884,11 +2884,11 @@ it('should generate the default classes for the typography components', async ()
         font-size: 0.875em;
       }
 
-      .md\\\\:prose :where(code::before) {
+      .md\\\\:prose :where(code)::before {
         content: \\"\`\\";
       }
 
-      .md\\\\:prose :where(code::after) {
+      .md\\\\:prose :where(code)::after {
         content: \\"\`\\";
       }
 
@@ -2923,11 +2923,11 @@ it('should generate the default classes for the typography components', async ()
         line-height: inherit;
       }
 
-      .md\\\\:prose :where(pre code::before) {
+      .md\\\\:prose :where(pre code)::before {
         content: none;
       }
 
-      .md\\\\:prose :where(pre code::after) {
+      .md\\\\:prose :where(pre code)::after {
         content: none;
       }
 
@@ -3210,7 +3210,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .md\\\\:prose-sm :where(ol > li::before) {
+      .md\\\\:prose-sm :where(ol > li)::before {
         left: 0;
       }
 
@@ -3218,7 +3218,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .md\\\\:prose-sm :where(ul > li::before) {
+      .md\\\\:prose-sm :where(ul > li)::before {
         height: 0.3571429em;
         width: 0.3571429em;
         top: calc(0.8571429em - 0.1785714em);
@@ -3433,7 +3433,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .md\\\\:prose-lg :where(ol > li::before) {
+      .md\\\\:prose-lg :where(ol > li)::before {
         left: 0;
       }
 
@@ -3441,7 +3441,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .md\\\\:prose-lg :where(ul > li::before) {
+      .md\\\\:prose-lg :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8888889em - 0.1666667em);
@@ -3656,7 +3656,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .md\\\\:prose-xl :where(ol > li::before) {
+      .md\\\\:prose-xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -3664,7 +3664,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .md\\\\:prose-xl :where(ul > li::before) {
+      .md\\\\:prose-xl :where(ul > li)::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
@@ -3879,7 +3879,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .md\\\\:prose-2xl :where(ol > li::before) {
+      .md\\\\:prose-2xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -3887,7 +3887,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .md\\\\:prose-2xl :where(ul > li::before) {
+      .md\\\\:prose-2xl :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
@@ -4106,7 +4106,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .lg\\\\:prose :where(ol > li::before) {
+      .lg\\\\:prose :where(ol > li)::before {
         content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
@@ -4119,7 +4119,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .lg\\\\:prose :where(ul > li::before) {
+      .lg\\\\:prose :where(ul > li)::before {
         content: \\"\\";
         position: absolute;
         background-color: #d1d5db;
@@ -4149,11 +4149,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .lg\\\\:prose :where(blockquote p:first-of-type::before) {
+      .lg\\\\:prose :where(blockquote p:first-of-type)::before {
         content: open-quote;
       }
 
-      .lg\\\\:prose :where(blockquote p:last-of-type::after) {
+      .lg\\\\:prose :where(blockquote p:last-of-type)::after {
         content: close-quote;
       }
 
@@ -4221,11 +4221,11 @@ it('should generate the default classes for the typography components', async ()
         font-size: 0.875em;
       }
 
-      .lg\\\\:prose :where(code::before) {
+      .lg\\\\:prose :where(code)::before {
         content: \\"\`\\";
       }
 
-      .lg\\\\:prose :where(code::after) {
+      .lg\\\\:prose :where(code)::after {
         content: \\"\`\\";
       }
 
@@ -4260,11 +4260,11 @@ it('should generate the default classes for the typography components', async ()
         line-height: inherit;
       }
 
-      .lg\\\\:prose :where(pre code::before) {
+      .lg\\\\:prose :where(pre code)::before {
         content: none;
       }
 
-      .lg\\\\:prose :where(pre code::after) {
+      .lg\\\\:prose :where(pre code)::after {
         content: none;
       }
 
@@ -4547,7 +4547,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .lg\\\\:prose-sm :where(ol > li::before) {
+      .lg\\\\:prose-sm :where(ol > li)::before {
         left: 0;
       }
 
@@ -4555,7 +4555,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .lg\\\\:prose-sm :where(ul > li::before) {
+      .lg\\\\:prose-sm :where(ul > li)::before {
         height: 0.3571429em;
         width: 0.3571429em;
         top: calc(0.8571429em - 0.1785714em);
@@ -4770,7 +4770,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .lg\\\\:prose-lg :where(ol > li::before) {
+      .lg\\\\:prose-lg :where(ol > li)::before {
         left: 0;
       }
 
@@ -4778,7 +4778,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .lg\\\\:prose-lg :where(ul > li::before) {
+      .lg\\\\:prose-lg :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8888889em - 0.1666667em);
@@ -4993,7 +4993,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .lg\\\\:prose-xl :where(ol > li::before) {
+      .lg\\\\:prose-xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -5001,7 +5001,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .lg\\\\:prose-xl :where(ul > li::before) {
+      .lg\\\\:prose-xl :where(ul > li)::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
@@ -5216,7 +5216,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .lg\\\\:prose-2xl :where(ol > li::before) {
+      .lg\\\\:prose-2xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -5224,7 +5224,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .lg\\\\:prose-2xl :where(ul > li::before) {
+      .lg\\\\:prose-2xl :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
@@ -5443,7 +5443,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .xl\\\\:prose :where(ol > li::before) {
+      .xl\\\\:prose :where(ol > li)::before {
         content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
@@ -5456,7 +5456,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .xl\\\\:prose :where(ul > li::before) {
+      .xl\\\\:prose :where(ul > li)::before {
         content: \\"\\";
         position: absolute;
         background-color: #d1d5db;
@@ -5486,11 +5486,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .xl\\\\:prose :where(blockquote p:first-of-type::before) {
+      .xl\\\\:prose :where(blockquote p:first-of-type)::before {
         content: open-quote;
       }
 
-      .xl\\\\:prose :where(blockquote p:last-of-type::after) {
+      .xl\\\\:prose :where(blockquote p:last-of-type)::after {
         content: close-quote;
       }
 
@@ -5558,11 +5558,11 @@ it('should generate the default classes for the typography components', async ()
         font-size: 0.875em;
       }
 
-      .xl\\\\:prose :where(code::before) {
+      .xl\\\\:prose :where(code)::before {
         content: \\"\`\\";
       }
 
-      .xl\\\\:prose :where(code::after) {
+      .xl\\\\:prose :where(code)::after {
         content: \\"\`\\";
       }
 
@@ -5597,11 +5597,11 @@ it('should generate the default classes for the typography components', async ()
         line-height: inherit;
       }
 
-      .xl\\\\:prose :where(pre code::before) {
+      .xl\\\\:prose :where(pre code)::before {
         content: none;
       }
 
-      .xl\\\\:prose :where(pre code::after) {
+      .xl\\\\:prose :where(pre code)::after {
         content: none;
       }
 
@@ -5884,7 +5884,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .xl\\\\:prose-sm :where(ol > li::before) {
+      .xl\\\\:prose-sm :where(ol > li)::before {
         left: 0;
       }
 
@@ -5892,7 +5892,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .xl\\\\:prose-sm :where(ul > li::before) {
+      .xl\\\\:prose-sm :where(ul > li)::before {
         height: 0.3571429em;
         width: 0.3571429em;
         top: calc(0.8571429em - 0.1785714em);
@@ -6107,7 +6107,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .xl\\\\:prose-lg :where(ol > li::before) {
+      .xl\\\\:prose-lg :where(ol > li)::before {
         left: 0;
       }
 
@@ -6115,7 +6115,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .xl\\\\:prose-lg :where(ul > li::before) {
+      .xl\\\\:prose-lg :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8888889em - 0.1666667em);
@@ -6330,7 +6330,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .xl\\\\:prose-xl :where(ol > li::before) {
+      .xl\\\\:prose-xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -6338,7 +6338,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .xl\\\\:prose-xl :where(ul > li::before) {
+      .xl\\\\:prose-xl :where(ul > li)::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
@@ -6553,7 +6553,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .xl\\\\:prose-2xl :where(ol > li::before) {
+      .xl\\\\:prose-2xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -6561,7 +6561,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .xl\\\\:prose-2xl :where(ul > li::before) {
+      .xl\\\\:prose-2xl :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
@@ -6780,7 +6780,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .\\\\32xl\\\\:prose :where(ol > li::before) {
+      .\\\\32xl\\\\:prose :where(ol > li)::before {
         content: counter(list-item, var(--list-counter-style, decimal)) \\".\\";
         position: absolute;
         font-weight: 400;
@@ -6793,7 +6793,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.75em;
       }
 
-      .\\\\32xl\\\\:prose :where(ul > li::before) {
+      .\\\\32xl\\\\:prose :where(ul > li)::before {
         content: \\"\\";
         position: absolute;
         background-color: #d1d5db;
@@ -6823,11 +6823,11 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1em;
       }
 
-      .\\\\32xl\\\\:prose :where(blockquote p:first-of-type::before) {
+      .\\\\32xl\\\\:prose :where(blockquote p:first-of-type)::before {
         content: open-quote;
       }
 
-      .\\\\32xl\\\\:prose :where(blockquote p:last-of-type::after) {
+      .\\\\32xl\\\\:prose :where(blockquote p:last-of-type)::after {
         content: close-quote;
       }
 
@@ -6895,11 +6895,11 @@ it('should generate the default classes for the typography components', async ()
         font-size: 0.875em;
       }
 
-      .\\\\32xl\\\\:prose :where(code::before) {
+      .\\\\32xl\\\\:prose :where(code)::before {
         content: \\"\`\\";
       }
 
-      .\\\\32xl\\\\:prose :where(code::after) {
+      .\\\\32xl\\\\:prose :where(code)::after {
         content: \\"\`\\";
       }
 
@@ -6934,11 +6934,11 @@ it('should generate the default classes for the typography components', async ()
         line-height: inherit;
       }
 
-      .\\\\32xl\\\\:prose :where(pre code::before) {
+      .\\\\32xl\\\\:prose :where(pre code)::before {
         content: none;
       }
 
-      .\\\\32xl\\\\:prose :where(pre code::after) {
+      .\\\\32xl\\\\:prose :where(pre code)::after {
         content: none;
       }
 
@@ -7221,7 +7221,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .\\\\32xl\\\\:prose-sm :where(ol > li::before) {
+      .\\\\32xl\\\\:prose-sm :where(ol > li)::before {
         left: 0;
       }
 
@@ -7229,7 +7229,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.5714286em;
       }
 
-      .\\\\32xl\\\\:prose-sm :where(ul > li::before) {
+      .\\\\32xl\\\\:prose-sm :where(ul > li)::before {
         height: 0.3571429em;
         width: 0.3571429em;
         top: calc(0.8571429em - 0.1785714em);
@@ -7444,7 +7444,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .\\\\32xl\\\\:prose-lg :where(ol > li::before) {
+      .\\\\32xl\\\\:prose-lg :where(ol > li)::before {
         left: 0;
       }
 
@@ -7452,7 +7452,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .\\\\32xl\\\\:prose-lg :where(ul > li::before) {
+      .\\\\32xl\\\\:prose-lg :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8888889em - 0.1666667em);
@@ -7667,7 +7667,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .\\\\32xl\\\\:prose-xl :where(ol > li::before) {
+      .\\\\32xl\\\\:prose-xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -7675,7 +7675,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.8em;
       }
 
-      .\\\\32xl\\\\:prose-xl :where(ul > li::before) {
+      .\\\\32xl\\\\:prose-xl :where(ul > li)::before {
         width: 0.35em;
         height: 0.35em;
         top: calc(0.9em - 0.175em);
@@ -7890,7 +7890,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .\\\\32xl\\\\:prose-2xl :where(ol > li::before) {
+      .\\\\32xl\\\\:prose-2xl :where(ol > li)::before {
         left: 0;
       }
 
@@ -7898,7 +7898,7 @@ it('should generate the default classes for the typography components', async ()
         padding-left: 1.6666667em;
       }
 
-      .\\\\32xl\\\\:prose-2xl :where(ul > li::before) {
+      .\\\\32xl\\\\:prose-2xl :where(ul > li)::before {
         width: 0.3333333em;
         height: 0.3333333em;
         top: calc(0.8333333em - 0.1666667em);
@@ -8127,8 +8127,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose :where(ol > li::before) {
-      + .markdown :where(ol > li::before) {
+      - .prose :where(ol > li)::before {
+      + .markdown :where(ol > li)::before {
 
       ---
 
@@ -8137,8 +8137,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose :where(ul > li::before) {
-      + .markdown :where(ul > li::before) {
+      - .prose :where(ul > li)::before {
+      + .markdown :where(ul > li)::before {
 
       ---
 
@@ -8152,13 +8152,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose :where(blockquote p:first-of-type::before) {
-      + .markdown :where(blockquote p:first-of-type::before) {
+      - .prose :where(blockquote p:first-of-type)::before {
+      + .markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      - .prose :where(blockquote p:last-of-type::after) {
-      + .markdown :where(blockquote p:last-of-type::after) {
+      - .prose :where(blockquote p:last-of-type)::after {
+      + .markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -8212,13 +8212,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose :where(code::before) {
-      + .markdown :where(code::before) {
+      - .prose :where(code)::before {
+      + .markdown :where(code)::before {
 
       ---
 
-      - .prose :where(code::after) {
-      + .markdown :where(code::after) {
+      - .prose :where(code)::after {
+      + .markdown :where(code)::after {
 
       ---
 
@@ -8237,13 +8237,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose :where(pre code::before) {
-      + .markdown :where(pre code::before) {
+      - .prose :where(pre code)::before {
+      + .markdown :where(pre code)::before {
 
       ---
 
-      - .prose :where(pre code::after) {
-      + .markdown :where(pre code::after) {
+      - .prose :where(pre code)::after {
+      + .markdown :where(pre code)::after {
 
       ---
 
@@ -8517,8 +8517,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-sm :where(ol > li::before) {
-      + .markdown-sm :where(ol > li::before) {
+      - .prose-sm :where(ol > li)::before {
+      + .markdown-sm :where(ol > li)::before {
 
       ---
 
@@ -8527,8 +8527,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-sm :where(ul > li::before) {
-      + .markdown-sm :where(ul > li::before) {
+      - .prose-sm :where(ul > li)::before {
+      + .markdown-sm :where(ul > li)::before {
 
       ---
 
@@ -8737,8 +8737,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-lg :where(ol > li::before) {
-      + .markdown-lg :where(ol > li::before) {
+      - .prose-lg :where(ol > li)::before {
+      + .markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -8747,8 +8747,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-lg :where(ul > li::before) {
-      + .markdown-lg :where(ul > li::before) {
+      - .prose-lg :where(ul > li)::before {
+      + .markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -8957,8 +8957,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-xl :where(ol > li::before) {
-      + .markdown-xl :where(ol > li::before) {
+      - .prose-xl :where(ol > li)::before {
+      + .markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -8967,8 +8967,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-xl :where(ul > li::before) {
-      + .markdown-xl :where(ul > li::before) {
+      - .prose-xl :where(ul > li)::before {
+      + .markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -9177,8 +9177,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-2xl :where(ol > li::before) {
-      + .markdown-2xl :where(ol > li::before) {
+      - .prose-2xl :where(ol > li)::before {
+      + .markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -9187,8 +9187,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      - .prose-2xl :where(ul > li::before) {
-      + .markdown-2xl :where(ul > li::before) {
+      - .prose-2xl :where(ul > li)::before {
+      + .markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -9432,8 +9432,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose :where(ol > li::before) {
-      +   .sm\\\\:markdown :where(ol > li::before) {
+      -   .sm\\\\:prose :where(ol > li)::before {
+      +   .sm\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -9442,8 +9442,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose :where(ul > li::before) {
-      +   .sm\\\\:markdown :where(ul > li::before) {
+      -   .sm\\\\:prose :where(ul > li)::before {
+      +   .sm\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -9457,13 +9457,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .sm\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .sm\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .sm\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .sm\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .sm\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .sm\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .sm\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -9517,13 +9517,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose :where(code::before) {
-      +   .sm\\\\:markdown :where(code::before) {
+      -   .sm\\\\:prose :where(code)::before {
+      +   .sm\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .sm\\\\:prose :where(code::after) {
-      +   .sm\\\\:markdown :where(code::after) {
+      -   .sm\\\\:prose :where(code)::after {
+      +   .sm\\\\:markdown :where(code)::after {
 
       ---
 
@@ -9542,13 +9542,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose :where(pre code::before) {
-      +   .sm\\\\:markdown :where(pre code::before) {
+      -   .sm\\\\:prose :where(pre code)::before {
+      +   .sm\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .sm\\\\:prose :where(pre code::after) {
-      +   .sm\\\\:markdown :where(pre code::after) {
+      -   .sm\\\\:prose :where(pre code)::after {
+      +   .sm\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -9822,8 +9822,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-sm :where(ol > li::before) {
-      +   .sm\\\\:markdown-sm :where(ol > li::before) {
+      -   .sm\\\\:prose-sm :where(ol > li)::before {
+      +   .sm\\\\:markdown-sm :where(ol > li)::before {
 
       ---
 
@@ -9832,8 +9832,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-sm :where(ul > li::before) {
-      +   .sm\\\\:markdown-sm :where(ul > li::before) {
+      -   .sm\\\\:prose-sm :where(ul > li)::before {
+      +   .sm\\\\:markdown-sm :where(ul > li)::before {
 
       ---
 
@@ -10042,8 +10042,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-lg :where(ol > li::before) {
-      +   .sm\\\\:markdown-lg :where(ol > li::before) {
+      -   .sm\\\\:prose-lg :where(ol > li)::before {
+      +   .sm\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -10052,8 +10052,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-lg :where(ul > li::before) {
-      +   .sm\\\\:markdown-lg :where(ul > li::before) {
+      -   .sm\\\\:prose-lg :where(ul > li)::before {
+      +   .sm\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -10262,8 +10262,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-xl :where(ol > li::before) {
-      +   .sm\\\\:markdown-xl :where(ol > li::before) {
+      -   .sm\\\\:prose-xl :where(ol > li)::before {
+      +   .sm\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -10272,8 +10272,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-xl :where(ul > li::before) {
-      +   .sm\\\\:markdown-xl :where(ul > li::before) {
+      -   .sm\\\\:prose-xl :where(ul > li)::before {
+      +   .sm\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -10482,8 +10482,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-2xl :where(ol > li::before) {
-      +   .sm\\\\:markdown-2xl :where(ol > li::before) {
+      -   .sm\\\\:prose-2xl :where(ol > li)::before {
+      +   .sm\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -10492,8 +10492,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .sm\\\\:prose-2xl :where(ul > li::before) {
-      +   .sm\\\\:markdown-2xl :where(ul > li::before) {
+      -   .sm\\\\:prose-2xl :where(ul > li)::before {
+      +   .sm\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -10737,8 +10737,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose :where(ol > li::before) {
-      +   .md\\\\:markdown :where(ol > li::before) {
+      -   .md\\\\:prose :where(ol > li)::before {
+      +   .md\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -10747,8 +10747,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose :where(ul > li::before) {
-      +   .md\\\\:markdown :where(ul > li::before) {
+      -   .md\\\\:prose :where(ul > li)::before {
+      +   .md\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -10762,13 +10762,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .md\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .md\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .md\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .md\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .md\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .md\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .md\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -10822,13 +10822,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose :where(code::before) {
-      +   .md\\\\:markdown :where(code::before) {
+      -   .md\\\\:prose :where(code)::before {
+      +   .md\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .md\\\\:prose :where(code::after) {
-      +   .md\\\\:markdown :where(code::after) {
+      -   .md\\\\:prose :where(code)::after {
+      +   .md\\\\:markdown :where(code)::after {
 
       ---
 
@@ -10847,13 +10847,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose :where(pre code::before) {
-      +   .md\\\\:markdown :where(pre code::before) {
+      -   .md\\\\:prose :where(pre code)::before {
+      +   .md\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .md\\\\:prose :where(pre code::after) {
-      +   .md\\\\:markdown :where(pre code::after) {
+      -   .md\\\\:prose :where(pre code)::after {
+      +   .md\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -11127,8 +11127,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-sm :where(ol > li::before) {
-      +   .md\\\\:markdown-sm :where(ol > li::before) {
+      -   .md\\\\:prose-sm :where(ol > li)::before {
+      +   .md\\\\:markdown-sm :where(ol > li)::before {
 
       ---
 
@@ -11137,8 +11137,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-sm :where(ul > li::before) {
-      +   .md\\\\:markdown-sm :where(ul > li::before) {
+      -   .md\\\\:prose-sm :where(ul > li)::before {
+      +   .md\\\\:markdown-sm :where(ul > li)::before {
 
       ---
 
@@ -11347,8 +11347,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-lg :where(ol > li::before) {
-      +   .md\\\\:markdown-lg :where(ol > li::before) {
+      -   .md\\\\:prose-lg :where(ol > li)::before {
+      +   .md\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -11357,8 +11357,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-lg :where(ul > li::before) {
-      +   .md\\\\:markdown-lg :where(ul > li::before) {
+      -   .md\\\\:prose-lg :where(ul > li)::before {
+      +   .md\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -11567,8 +11567,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-xl :where(ol > li::before) {
-      +   .md\\\\:markdown-xl :where(ol > li::before) {
+      -   .md\\\\:prose-xl :where(ol > li)::before {
+      +   .md\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -11577,8 +11577,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-xl :where(ul > li::before) {
-      +   .md\\\\:markdown-xl :where(ul > li::before) {
+      -   .md\\\\:prose-xl :where(ul > li)::before {
+      +   .md\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -11787,8 +11787,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-2xl :where(ol > li::before) {
-      +   .md\\\\:markdown-2xl :where(ol > li::before) {
+      -   .md\\\\:prose-2xl :where(ol > li)::before {
+      +   .md\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -11797,8 +11797,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .md\\\\:prose-2xl :where(ul > li::before) {
-      +   .md\\\\:markdown-2xl :where(ul > li::before) {
+      -   .md\\\\:prose-2xl :where(ul > li)::before {
+      +   .md\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -12042,8 +12042,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose :where(ol > li::before) {
-      +   .lg\\\\:markdown :where(ol > li::before) {
+      -   .lg\\\\:prose :where(ol > li)::before {
+      +   .lg\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -12052,8 +12052,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose :where(ul > li::before) {
-      +   .lg\\\\:markdown :where(ul > li::before) {
+      -   .lg\\\\:prose :where(ul > li)::before {
+      +   .lg\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -12067,13 +12067,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .lg\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .lg\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .lg\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .lg\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .lg\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .lg\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .lg\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -12127,13 +12127,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose :where(code::before) {
-      +   .lg\\\\:markdown :where(code::before) {
+      -   .lg\\\\:prose :where(code)::before {
+      +   .lg\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .lg\\\\:prose :where(code::after) {
-      +   .lg\\\\:markdown :where(code::after) {
+      -   .lg\\\\:prose :where(code)::after {
+      +   .lg\\\\:markdown :where(code)::after {
 
       ---
 
@@ -12152,13 +12152,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose :where(pre code::before) {
-      +   .lg\\\\:markdown :where(pre code::before) {
+      -   .lg\\\\:prose :where(pre code)::before {
+      +   .lg\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .lg\\\\:prose :where(pre code::after) {
-      +   .lg\\\\:markdown :where(pre code::after) {
+      -   .lg\\\\:prose :where(pre code)::after {
+      +   .lg\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -12432,8 +12432,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-sm :where(ol > li::before) {
-      +   .lg\\\\:markdown-sm :where(ol > li::before) {
+      -   .lg\\\\:prose-sm :where(ol > li)::before {
+      +   .lg\\\\:markdown-sm :where(ol > li)::before {
 
       ---
 
@@ -12442,8 +12442,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-sm :where(ul > li::before) {
-      +   .lg\\\\:markdown-sm :where(ul > li::before) {
+      -   .lg\\\\:prose-sm :where(ul > li)::before {
+      +   .lg\\\\:markdown-sm :where(ul > li)::before {
 
       ---
 
@@ -12652,8 +12652,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-lg :where(ol > li::before) {
-      +   .lg\\\\:markdown-lg :where(ol > li::before) {
+      -   .lg\\\\:prose-lg :where(ol > li)::before {
+      +   .lg\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -12662,8 +12662,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-lg :where(ul > li::before) {
-      +   .lg\\\\:markdown-lg :where(ul > li::before) {
+      -   .lg\\\\:prose-lg :where(ul > li)::before {
+      +   .lg\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -12872,8 +12872,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-xl :where(ol > li::before) {
-      +   .lg\\\\:markdown-xl :where(ol > li::before) {
+      -   .lg\\\\:prose-xl :where(ol > li)::before {
+      +   .lg\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -12882,8 +12882,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-xl :where(ul > li::before) {
-      +   .lg\\\\:markdown-xl :where(ul > li::before) {
+      -   .lg\\\\:prose-xl :where(ul > li)::before {
+      +   .lg\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -13092,8 +13092,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-2xl :where(ol > li::before) {
-      +   .lg\\\\:markdown-2xl :where(ol > li::before) {
+      -   .lg\\\\:prose-2xl :where(ol > li)::before {
+      +   .lg\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -13102,8 +13102,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .lg\\\\:prose-2xl :where(ul > li::before) {
-      +   .lg\\\\:markdown-2xl :where(ul > li::before) {
+      -   .lg\\\\:prose-2xl :where(ul > li)::before {
+      +   .lg\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -13347,8 +13347,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose :where(ol > li::before) {
-      +   .xl\\\\:markdown :where(ol > li::before) {
+      -   .xl\\\\:prose :where(ol > li)::before {
+      +   .xl\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -13357,8 +13357,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose :where(ul > li::before) {
-      +   .xl\\\\:markdown :where(ul > li::before) {
+      -   .xl\\\\:prose :where(ul > li)::before {
+      +   .xl\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -13372,13 +13372,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .xl\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .xl\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .xl\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .xl\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .xl\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .xl\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .xl\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -13432,13 +13432,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose :where(code::before) {
-      +   .xl\\\\:markdown :where(code::before) {
+      -   .xl\\\\:prose :where(code)::before {
+      +   .xl\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .xl\\\\:prose :where(code::after) {
-      +   .xl\\\\:markdown :where(code::after) {
+      -   .xl\\\\:prose :where(code)::after {
+      +   .xl\\\\:markdown :where(code)::after {
 
       ---
 
@@ -13457,13 +13457,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose :where(pre code::before) {
-      +   .xl\\\\:markdown :where(pre code::before) {
+      -   .xl\\\\:prose :where(pre code)::before {
+      +   .xl\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .xl\\\\:prose :where(pre code::after) {
-      +   .xl\\\\:markdown :where(pre code::after) {
+      -   .xl\\\\:prose :where(pre code)::after {
+      +   .xl\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -13737,8 +13737,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-sm :where(ol > li::before) {
-      +   .xl\\\\:markdown-sm :where(ol > li::before) {
+      -   .xl\\\\:prose-sm :where(ol > li)::before {
+      +   .xl\\\\:markdown-sm :where(ol > li)::before {
 
       ---
 
@@ -13747,8 +13747,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-sm :where(ul > li::before) {
-      +   .xl\\\\:markdown-sm :where(ul > li::before) {
+      -   .xl\\\\:prose-sm :where(ul > li)::before {
+      +   .xl\\\\:markdown-sm :where(ul > li)::before {
 
       ---
 
@@ -13957,8 +13957,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-lg :where(ol > li::before) {
-      +   .xl\\\\:markdown-lg :where(ol > li::before) {
+      -   .xl\\\\:prose-lg :where(ol > li)::before {
+      +   .xl\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -13967,8 +13967,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-lg :where(ul > li::before) {
-      +   .xl\\\\:markdown-lg :where(ul > li::before) {
+      -   .xl\\\\:prose-lg :where(ul > li)::before {
+      +   .xl\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -14177,8 +14177,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-xl :where(ol > li::before) {
-      +   .xl\\\\:markdown-xl :where(ol > li::before) {
+      -   .xl\\\\:prose-xl :where(ol > li)::before {
+      +   .xl\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -14187,8 +14187,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-xl :where(ul > li::before) {
-      +   .xl\\\\:markdown-xl :where(ul > li::before) {
+      -   .xl\\\\:prose-xl :where(ul > li)::before {
+      +   .xl\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -14397,8 +14397,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-2xl :where(ol > li::before) {
-      +   .xl\\\\:markdown-2xl :where(ol > li::before) {
+      -   .xl\\\\:prose-2xl :where(ol > li)::before {
+      +   .xl\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -14407,8 +14407,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .xl\\\\:prose-2xl :where(ul > li::before) {
-      +   .xl\\\\:markdown-2xl :where(ul > li::before) {
+      -   .xl\\\\:prose-2xl :where(ul > li)::before {
+      +   .xl\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -14652,8 +14652,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -14662,8 +14662,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -14677,13 +14677,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .\\\\32xl\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .\\\\32xl\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .\\\\32xl\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .\\\\32xl\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .\\\\32xl\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .\\\\32xl\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -14737,13 +14737,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(code::before) {
-      +   .\\\\32xl\\\\:markdown :where(code::before) {
+      -   .\\\\32xl\\\\:prose :where(code)::before {
+      +   .\\\\32xl\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(code::after) {
-      +   .\\\\32xl\\\\:markdown :where(code::after) {
+      -   .\\\\32xl\\\\:prose :where(code)::after {
+      +   .\\\\32xl\\\\:markdown :where(code)::after {
 
       ---
 
@@ -14762,13 +14762,13 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(pre code::before) {
-      +   .\\\\32xl\\\\:markdown :where(pre code::before) {
+      -   .\\\\32xl\\\\:prose :where(pre code)::before {
+      +   .\\\\32xl\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(pre code::after) {
-      +   .\\\\32xl\\\\:markdown :where(pre code::after) {
+      -   .\\\\32xl\\\\:prose :where(pre code)::after {
+      +   .\\\\32xl\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -15042,8 +15042,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-sm :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown-sm :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-sm :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown-sm :where(ol > li)::before {
 
       ---
 
@@ -15052,8 +15052,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-sm :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown-sm :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-sm :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown-sm :where(ul > li)::before {
 
       ---
 
@@ -15262,8 +15262,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-lg :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -15272,8 +15272,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-lg :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -15482,8 +15482,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-xl :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -15492,8 +15492,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-xl :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -15702,8 +15702,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-2xl :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -15712,8 +15712,8 @@ it('should be possible to change the default className from `prose` to `markdown
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-2xl :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -16012,7 +16012,7 @@ it('should be possible to change the default modifiers', async () => {
       -   padding-left: 1.6666667em;
       - }
       -
-      - .prose-2xl :where(ol > li::before) {
+      - .prose-2xl :where(ol > li)::before {
       -   left: 0;
       - }
       -
@@ -16020,7 +16020,7 @@ it('should be possible to change the default modifiers', async () => {
       -   padding-left: 1.6666667em;
       - }
       -
-      - .prose-2xl :where(ul > li::before) {
+      - .prose-2xl :where(ul > li)::before {
       -   width: 0.3333333em;
       -   height: 0.3333333em;
       -   top: calc(0.8333333em - 0.1666667em);
@@ -16299,7 +16299,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .sm\\\\:prose-2xl :where(ol > li::before) {
+      -   .sm\\\\:prose-2xl :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -16307,7 +16307,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .sm\\\\:prose-2xl :where(ul > li::before) {
+      -   .sm\\\\:prose-2xl :where(ul > li)::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
@@ -16585,7 +16585,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .md\\\\:prose-2xl :where(ol > li::before) {
+      -   .md\\\\:prose-2xl :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -16593,7 +16593,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .md\\\\:prose-2xl :where(ul > li::before) {
+      -   .md\\\\:prose-2xl :where(ul > li)::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
@@ -16870,7 +16870,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .lg\\\\:prose-2xl :where(ol > li::before) {
+      -   .lg\\\\:prose-2xl :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -16878,7 +16878,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .lg\\\\:prose-2xl :where(ul > li::before) {
+      -   .lg\\\\:prose-2xl :where(ul > li)::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
@@ -17158,7 +17158,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .xl\\\\:prose-2xl :where(ol > li::before) {
+      -   .xl\\\\:prose-2xl :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -17166,7 +17166,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .xl\\\\:prose-2xl :where(ul > li::before) {
+      -   .xl\\\\:prose-2xl :where(ul > li)::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
@@ -17448,7 +17448,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-2xl :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-2xl :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -17456,7 +17456,7 @@ it('should be possible to change the default modifiers', async () => {
       -     padding-left: 1.6666667em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-2xl :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-2xl :where(ul > li)::before {
       -     width: 0.3333333em;
       -     height: 0.3333333em;
       -     top: calc(0.8333333em - 0.1666667em);
@@ -17686,8 +17686,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose :where(ol > li::before) {
-      + .markdown :where(ol > li::before) {
+      - .prose :where(ol > li)::before {
+      + .markdown :where(ol > li)::before {
 
       ---
 
@@ -17696,8 +17696,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose :where(ul > li::before) {
-      + .markdown :where(ul > li::before) {
+      - .prose :where(ul > li)::before {
+      + .markdown :where(ul > li)::before {
 
       ---
 
@@ -17711,13 +17711,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose :where(blockquote p:first-of-type::before) {
-      + .markdown :where(blockquote p:first-of-type::before) {
+      - .prose :where(blockquote p:first-of-type)::before {
+      + .markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      - .prose :where(blockquote p:last-of-type::after) {
-      + .markdown :where(blockquote p:last-of-type::after) {
+      - .prose :where(blockquote p:last-of-type)::after {
+      + .markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -17771,13 +17771,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose :where(code::before) {
-      + .markdown :where(code::before) {
+      - .prose :where(code)::before {
+      + .markdown :where(code)::before {
 
       ---
 
-      - .prose :where(code::after) {
-      + .markdown :where(code::after) {
+      - .prose :where(code)::after {
+      + .markdown :where(code)::after {
 
       ---
 
@@ -17796,13 +17796,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose :where(pre code::before) {
-      + .markdown :where(pre code::before) {
+      - .prose :where(pre code)::before {
+      + .markdown :where(pre code)::before {
 
       ---
 
-      - .prose :where(pre code::after) {
-      + .markdown :where(pre code::after) {
+      - .prose :where(pre code)::after {
+      + .markdown :where(pre code)::after {
 
       ---
 
@@ -18083,7 +18083,7 @@ it('should be possible to change the default modifiers and change the className'
       -   padding-left: 1.5714286em;
       - }
       -
-      - .prose-sm :where(ol > li::before) {
+      - .prose-sm :where(ol > li)::before {
       -   left: 0;
       - }
       -
@@ -18091,7 +18091,7 @@ it('should be possible to change the default modifiers and change the className'
       -   padding-left: 1.5714286em;
       - }
       -
-      - .prose-sm :where(ul > li::before) {
+      - .prose-sm :where(ul > li)::before {
       -   height: 0.3571429em;
       -   width: 0.3571429em;
       -   top: calc(0.8571429em - 0.1785714em);
@@ -18302,8 +18302,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-lg :where(ol > li::before) {
-      + .markdown-lg :where(ol > li::before) {
+      - .prose-lg :where(ol > li)::before {
+      + .markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -18312,8 +18312,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-lg :where(ul > li::before) {
-      + .markdown-lg :where(ul > li::before) {
+      - .prose-lg :where(ul > li)::before {
+      + .markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -18522,8 +18522,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-xl :where(ol > li::before) {
-      + .markdown-xl :where(ol > li::before) {
+      - .prose-xl :where(ol > li)::before {
+      + .markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -18532,8 +18532,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-xl :where(ul > li::before) {
-      + .markdown-xl :where(ul > li::before) {
+      - .prose-xl :where(ul > li)::before {
+      + .markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -18742,8 +18742,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-2xl :where(ol > li::before) {
-      + .markdown-2xl :where(ol > li::before) {
+      - .prose-2xl :where(ol > li)::before {
+      + .markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -18752,8 +18752,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      - .prose-2xl :where(ul > li::before) {
-      + .markdown-2xl :where(ul > li::before) {
+      - .prose-2xl :where(ul > li)::before {
+      + .markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -18989,8 +18989,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose :where(ol > li::before) {
-      +   .sm\\\\:markdown :where(ol > li::before) {
+      -   .sm\\\\:prose :where(ol > li)::before {
+      +   .sm\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -18999,8 +18999,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose :where(ul > li::before) {
-      +   .sm\\\\:markdown :where(ul > li::before) {
+      -   .sm\\\\:prose :where(ul > li)::before {
+      +   .sm\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -19014,13 +19014,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .sm\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .sm\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .sm\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .sm\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .sm\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .sm\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .sm\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -19074,13 +19074,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose :where(code::before) {
-      +   .sm\\\\:markdown :where(code::before) {
+      -   .sm\\\\:prose :where(code)::before {
+      +   .sm\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .sm\\\\:prose :where(code::after) {
-      +   .sm\\\\:markdown :where(code::after) {
+      -   .sm\\\\:prose :where(code)::after {
+      +   .sm\\\\:markdown :where(code)::after {
 
       ---
 
@@ -19099,13 +19099,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose :where(pre code::before) {
-      +   .sm\\\\:markdown :where(pre code::before) {
+      -   .sm\\\\:prose :where(pre code)::before {
+      +   .sm\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .sm\\\\:prose :where(pre code::after) {
-      +   .sm\\\\:markdown :where(pre code::after) {
+      -   .sm\\\\:prose :where(pre code)::after {
+      +   .sm\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -19393,7 +19393,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .sm\\\\:prose-sm :where(ol > li::before) {
+      -   .sm\\\\:prose-sm :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -19401,7 +19401,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .sm\\\\:prose-sm :where(ul > li::before) {
+      -   .sm\\\\:prose-sm :where(ul > li)::before {
       -     height: 0.3571429em;
       -     width: 0.3571429em;
       -     top: calc(0.8571429em - 0.1785714em);
@@ -19608,8 +19608,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-lg :where(ol > li::before) {
-      +   .sm\\\\:markdown-lg :where(ol > li::before) {
+      -   .sm\\\\:prose-lg :where(ol > li)::before {
+      +   .sm\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -19618,8 +19618,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-lg :where(ul > li::before) {
-      +   .sm\\\\:markdown-lg :where(ul > li::before) {
+      -   .sm\\\\:prose-lg :where(ul > li)::before {
+      +   .sm\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -19828,8 +19828,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-xl :where(ol > li::before) {
-      +   .sm\\\\:markdown-xl :where(ol > li::before) {
+      -   .sm\\\\:prose-xl :where(ol > li)::before {
+      +   .sm\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -19838,8 +19838,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-xl :where(ul > li::before) {
-      +   .sm\\\\:markdown-xl :where(ul > li::before) {
+      -   .sm\\\\:prose-xl :where(ul > li)::before {
+      +   .sm\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -20048,8 +20048,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-2xl :where(ol > li::before) {
-      +   .sm\\\\:markdown-2xl :where(ol > li::before) {
+      -   .sm\\\\:prose-2xl :where(ol > li)::before {
+      +   .sm\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -20058,8 +20058,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .sm\\\\:prose-2xl :where(ul > li::before) {
-      +   .sm\\\\:markdown-2xl :where(ul > li::before) {
+      -   .sm\\\\:prose-2xl :where(ul > li)::before {
+      +   .sm\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -20295,8 +20295,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose :where(ol > li::before) {
-      +   .md\\\\:markdown :where(ol > li::before) {
+      -   .md\\\\:prose :where(ol > li)::before {
+      +   .md\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -20305,8 +20305,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose :where(ul > li::before) {
-      +   .md\\\\:markdown :where(ul > li::before) {
+      -   .md\\\\:prose :where(ul > li)::before {
+      +   .md\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -20320,13 +20320,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .md\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .md\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .md\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .md\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .md\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .md\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .md\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -20380,13 +20380,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose :where(code::before) {
-      +   .md\\\\:markdown :where(code::before) {
+      -   .md\\\\:prose :where(code)::before {
+      +   .md\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .md\\\\:prose :where(code::after) {
-      +   .md\\\\:markdown :where(code::after) {
+      -   .md\\\\:prose :where(code)::after {
+      +   .md\\\\:markdown :where(code)::after {
 
       ---
 
@@ -20405,13 +20405,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose :where(pre code::before) {
-      +   .md\\\\:markdown :where(pre code::before) {
+      -   .md\\\\:prose :where(pre code)::before {
+      +   .md\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .md\\\\:prose :where(pre code::after) {
-      +   .md\\\\:markdown :where(pre code::after) {
+      -   .md\\\\:prose :where(pre code)::after {
+      +   .md\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -20697,7 +20697,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .md\\\\:prose-sm :where(ol > li::before) {
+      -   .md\\\\:prose-sm :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -20705,7 +20705,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .md\\\\:prose-sm :where(ul > li::before) {
+      -   .md\\\\:prose-sm :where(ul > li)::before {
       -     height: 0.3571429em;
       -     width: 0.3571429em;
       -     top: calc(0.8571429em - 0.1785714em);
@@ -20917,8 +20917,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-lg :where(ol > li::before) {
-      +   .md\\\\:markdown-lg :where(ol > li::before) {
+      -   .md\\\\:prose-lg :where(ol > li)::before {
+      +   .md\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -20927,8 +20927,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-lg :where(ul > li::before) {
-      +   .md\\\\:markdown-lg :where(ul > li::before) {
+      -   .md\\\\:prose-lg :where(ul > li)::before {
+      +   .md\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -21137,8 +21137,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-xl :where(ol > li::before) {
-      +   .md\\\\:markdown-xl :where(ol > li::before) {
+      -   .md\\\\:prose-xl :where(ol > li)::before {
+      +   .md\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -21147,8 +21147,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-xl :where(ul > li::before) {
-      +   .md\\\\:markdown-xl :where(ul > li::before) {
+      -   .md\\\\:prose-xl :where(ul > li)::before {
+      +   .md\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -21357,8 +21357,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-2xl :where(ol > li::before) {
-      +   .md\\\\:markdown-2xl :where(ol > li::before) {
+      -   .md\\\\:prose-2xl :where(ol > li)::before {
+      +   .md\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -21367,8 +21367,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .md\\\\:prose-2xl :where(ul > li::before) {
-      +   .md\\\\:markdown-2xl :where(ul > li::before) {
+      -   .md\\\\:prose-2xl :where(ul > li)::before {
+      +   .md\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -21601,8 +21601,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose :where(ol > li::before) {
-      +   .lg\\\\:markdown :where(ol > li::before) {
+      -   .lg\\\\:prose :where(ol > li)::before {
+      +   .lg\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -21611,8 +21611,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose :where(ul > li::before) {
-      +   .lg\\\\:markdown :where(ul > li::before) {
+      -   .lg\\\\:prose :where(ul > li)::before {
+      +   .lg\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -21626,13 +21626,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .lg\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .lg\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .lg\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .lg\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .lg\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .lg\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .lg\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -21686,13 +21686,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose :where(code::before) {
-      +   .lg\\\\:markdown :where(code::before) {
+      -   .lg\\\\:prose :where(code)::before {
+      +   .lg\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .lg\\\\:prose :where(code::after) {
-      +   .lg\\\\:markdown :where(code::after) {
+      -   .lg\\\\:prose :where(code)::after {
+      +   .lg\\\\:markdown :where(code)::after {
 
       ---
 
@@ -21711,13 +21711,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose :where(pre code::before) {
-      +   .lg\\\\:markdown :where(pre code::before) {
+      -   .lg\\\\:prose :where(pre code)::before {
+      +   .lg\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .lg\\\\:prose :where(pre code::after) {
-      +   .lg\\\\:markdown :where(pre code::after) {
+      -   .lg\\\\:prose :where(pre code)::after {
+      +   .lg\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -21998,7 +21998,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .lg\\\\:prose-sm :where(ol > li::before) {
+      -   .lg\\\\:prose-sm :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -22006,7 +22006,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .lg\\\\:prose-sm :where(ul > li::before) {
+      -   .lg\\\\:prose-sm :where(ul > li)::before {
       -     height: 0.3571429em;
       -     width: 0.3571429em;
       -     top: calc(0.8571429em - 0.1785714em);
@@ -22217,8 +22217,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-lg :where(ol > li::before) {
-      +   .lg\\\\:markdown-lg :where(ol > li::before) {
+      -   .lg\\\\:prose-lg :where(ol > li)::before {
+      +   .lg\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -22227,8 +22227,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-lg :where(ul > li::before) {
-      +   .lg\\\\:markdown-lg :where(ul > li::before) {
+      -   .lg\\\\:prose-lg :where(ul > li)::before {
+      +   .lg\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -22437,8 +22437,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-xl :where(ol > li::before) {
-      +   .lg\\\\:markdown-xl :where(ol > li::before) {
+      -   .lg\\\\:prose-xl :where(ol > li)::before {
+      +   .lg\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -22447,8 +22447,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-xl :where(ul > li::before) {
-      +   .lg\\\\:markdown-xl :where(ul > li::before) {
+      -   .lg\\\\:prose-xl :where(ul > li)::before {
+      +   .lg\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -22657,8 +22657,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-2xl :where(ol > li::before) {
-      +   .lg\\\\:markdown-2xl :where(ol > li::before) {
+      -   .lg\\\\:prose-2xl :where(ol > li)::before {
+      +   .lg\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -22667,8 +22667,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .lg\\\\:prose-2xl :where(ul > li::before) {
-      +   .lg\\\\:markdown-2xl :where(ul > li::before) {
+      -   .lg\\\\:prose-2xl :where(ul > li)::before {
+      +   .lg\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -22904,8 +22904,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose :where(ol > li::before) {
-      +   .xl\\\\:markdown :where(ol > li::before) {
+      -   .xl\\\\:prose :where(ol > li)::before {
+      +   .xl\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -22914,8 +22914,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose :where(ul > li::before) {
-      +   .xl\\\\:markdown :where(ul > li::before) {
+      -   .xl\\\\:prose :where(ul > li)::before {
+      +   .xl\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -22929,13 +22929,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .xl\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .xl\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .xl\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .xl\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .xl\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .xl\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .xl\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -22989,13 +22989,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose :where(code::before) {
-      +   .xl\\\\:markdown :where(code::before) {
+      -   .xl\\\\:prose :where(code)::before {
+      +   .xl\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .xl\\\\:prose :where(code::after) {
-      +   .xl\\\\:markdown :where(code::after) {
+      -   .xl\\\\:prose :where(code)::after {
+      +   .xl\\\\:markdown :where(code)::after {
 
       ---
 
@@ -23014,13 +23014,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose :where(pre code::before) {
-      +   .xl\\\\:markdown :where(pre code::before) {
+      -   .xl\\\\:prose :where(pre code)::before {
+      +   .xl\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .xl\\\\:prose :where(pre code::after) {
-      +   .xl\\\\:markdown :where(pre code::after) {
+      -   .xl\\\\:prose :where(pre code)::after {
+      +   .xl\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -23308,7 +23308,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .xl\\\\:prose-sm :where(ol > li::before) {
+      -   .xl\\\\:prose-sm :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -23316,7 +23316,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .xl\\\\:prose-sm :where(ul > li::before) {
+      -   .xl\\\\:prose-sm :where(ul > li)::before {
       -     height: 0.3571429em;
       -     width: 0.3571429em;
       -     top: calc(0.8571429em - 0.1785714em);
@@ -23517,8 +23517,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-lg :where(ol > li::before) {
-      +   .xl\\\\:markdown-lg :where(ol > li::before) {
+      -   .xl\\\\:prose-lg :where(ol > li)::before {
+      +   .xl\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -23527,8 +23527,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-lg :where(ul > li::before) {
-      +   .xl\\\\:markdown-lg :where(ul > li::before) {
+      -   .xl\\\\:prose-lg :where(ul > li)::before {
+      +   .xl\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -23737,8 +23737,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-xl :where(ol > li::before) {
-      +   .xl\\\\:markdown-xl :where(ol > li::before) {
+      -   .xl\\\\:prose-xl :where(ol > li)::before {
+      +   .xl\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -23747,8 +23747,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-xl :where(ul > li::before) {
-      +   .xl\\\\:markdown-xl :where(ul > li::before) {
+      -   .xl\\\\:prose-xl :where(ul > li)::before {
+      +   .xl\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -23957,8 +23957,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-2xl :where(ol > li::before) {
-      +   .xl\\\\:markdown-2xl :where(ol > li::before) {
+      -   .xl\\\\:prose-2xl :where(ol > li)::before {
+      +   .xl\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -23967,8 +23967,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .xl\\\\:prose-2xl :where(ul > li::before) {
-      +   .xl\\\\:markdown-2xl :where(ul > li::before) {
+      -   .xl\\\\:prose-2xl :where(ul > li)::before {
+      +   .xl\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
@@ -24204,8 +24204,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown :where(ol > li)::before {
 
       ---
 
@@ -24214,8 +24214,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown :where(ul > li)::before {
 
       ---
 
@@ -24229,13 +24229,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(blockquote p:first-of-type::before) {
-      +   .\\\\32xl\\\\:markdown :where(blockquote p:first-of-type::before) {
+      -   .\\\\32xl\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .\\\\32xl\\\\:markdown :where(blockquote p:first-of-type)::before {
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(blockquote p:last-of-type::after) {
-      +   .\\\\32xl\\\\:markdown :where(blockquote p:last-of-type::after) {
+      -   .\\\\32xl\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .\\\\32xl\\\\:markdown :where(blockquote p:last-of-type)::after {
 
       ---
 
@@ -24289,13 +24289,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(code::before) {
-      +   .\\\\32xl\\\\:markdown :where(code::before) {
+      -   .\\\\32xl\\\\:prose :where(code)::before {
+      +   .\\\\32xl\\\\:markdown :where(code)::before {
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(code::after) {
-      +   .\\\\32xl\\\\:markdown :where(code::after) {
+      -   .\\\\32xl\\\\:prose :where(code)::after {
+      +   .\\\\32xl\\\\:markdown :where(code)::after {
 
       ---
 
@@ -24314,13 +24314,13 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(pre code::before) {
-      +   .\\\\32xl\\\\:markdown :where(pre code::before) {
+      -   .\\\\32xl\\\\:prose :where(pre code)::before {
+      +   .\\\\32xl\\\\:markdown :where(pre code)::before {
 
       ---
 
-      -   .\\\\32xl\\\\:prose :where(pre code::after) {
-      +   .\\\\32xl\\\\:markdown :where(pre code::after) {
+      -   .\\\\32xl\\\\:prose :where(pre code)::after {
+      +   .\\\\32xl\\\\:markdown :where(pre code)::after {
 
       ---
 
@@ -24608,7 +24608,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-sm :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-sm :where(ol > li)::before {
       -     left: 0;
       -   }
       -
@@ -24616,7 +24616,7 @@ it('should be possible to change the default modifiers and change the className'
       -     padding-left: 1.5714286em;
       -   }
       -
-      -   .\\\\32xl\\\\:prose-sm :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-sm :where(ul > li)::before {
       -     height: 0.3571429em;
       -     width: 0.3571429em;
       -     top: calc(0.8571429em - 0.1785714em);
@@ -24817,8 +24817,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-lg :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown-lg :where(ol > li)::before {
 
       ---
 
@@ -24827,8 +24827,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-lg :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-lg :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul > li)::before {
 
       ---
 
@@ -25037,8 +25037,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-xl :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown-xl :where(ol > li)::before {
 
       ---
 
@@ -25047,8 +25047,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-xl :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-xl :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul > li)::before {
 
       ---
 
@@ -25257,8 +25257,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl :where(ol > li::before) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li::before) {
+      -   .\\\\32xl\\\\:prose-2xl :where(ol > li)::before {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li)::before {
 
       ---
 
@@ -25267,8 +25267,8 @@ it('should be possible to change the default modifiers and change the className'
 
       ---
 
-      -   .\\\\32xl\\\\:prose-2xl :where(ul > li::before) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li::before) {
+      -   .\\\\32xl\\\\:prose-2xl :where(ul > li)::before {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li)::before {
 
       ---
 
