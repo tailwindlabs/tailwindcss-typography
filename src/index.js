@@ -48,8 +48,6 @@ module.exports = plugin.withOptions(
         ...Object.keys(config).filter((modifier) => !DEFAULT_MODIFIERS.includes(modifier)),
       ])
 
-      console.log(configToCss(config['DEFAULT']))
-
       addComponents(
         all.map((modifier) => ({
           [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
