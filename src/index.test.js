@@ -15889,6 +15889,7662 @@ it('should be possible to change the default className from `prose` to `markdown
   `)
 })
 
+it('should be possible to disable the use of :where() by setting `target` to `legacy`', async () => {
+  expect(await diffOnly({ target: 'legacy' })).toMatchInlineSnapshot(`
+    "
+
+      - .prose :where([class~='lead']) {
+      + .prose [class~='lead'] {
+
+      ---
+
+      - .prose :where(a) {
+      + .prose a {
+
+      ---
+
+      - .prose :where(strong) {
+      + .prose strong {
+
+      ---
+
+      - .prose :where(ol[type='A']) {
+      + .prose ol[type='A'] {
+
+      ---
+
+      - .prose :where(ol[type='a']) {
+      + .prose ol[type='a'] {
+
+      ---
+
+      - .prose :where(ol[type='A' s]) {
+      + .prose ol[type='A' s] {
+
+      ---
+
+      - .prose :where(ol[type='a' s]) {
+      + .prose ol[type='a' s] {
+
+      ---
+
+      - .prose :where(ol[type='I']) {
+      + .prose ol[type='I'] {
+
+      ---
+
+      - .prose :where(ol[type='i']) {
+      + .prose ol[type='i'] {
+
+      ---
+
+      - .prose :where(ol[type='I' s]) {
+      + .prose ol[type='I' s] {
+
+      ---
+
+      - .prose :where(ol[type='i' s]) {
+      + .prose ol[type='i' s] {
+
+      ---
+
+      - .prose :where(ol[type='1']) {
+      + .prose ol[type='1'] {
+
+      ---
+
+      - .prose :where(ol > li) {
+      + .prose ol > li {
+
+      ---
+
+      - .prose :where(ol > li)::before {
+      + .prose ol > li::before {
+
+      ---
+
+      - .prose :where(ul > li) {
+      + .prose ul > li {
+
+      ---
+
+      - .prose :where(ul > li)::before {
+      + .prose ul > li::before {
+
+      ---
+
+      - .prose :where(hr) {
+      + .prose hr {
+
+      ---
+
+      - .prose :where(blockquote) {
+      + .prose blockquote {
+
+      ---
+
+      - .prose :where(blockquote p:first-of-type)::before {
+      + .prose blockquote p:first-of-type::before {
+
+      ---
+
+      - .prose :where(blockquote p:last-of-type)::after {
+      + .prose blockquote p:last-of-type::after {
+
+      ---
+
+      - .prose :where(h1) {
+      + .prose h1 {
+
+      ---
+
+      - .prose :where(h1 strong) {
+      + .prose h1 strong {
+
+      ---
+
+      - .prose :where(h2) {
+      + .prose h2 {
+
+      ---
+
+      - .prose :where(h2 strong) {
+      + .prose h2 strong {
+
+      ---
+
+      - .prose :where(h3) {
+      + .prose h3 {
+
+      ---
+
+      - .prose :where(h3 strong) {
+      + .prose h3 strong {
+
+      ---
+
+      - .prose :where(h4) {
+      + .prose h4 {
+
+      ---
+
+      - .prose :where(h4 strong) {
+      + .prose h4 strong {
+
+      ---
+
+      - .prose :where(figure figcaption) {
+      + .prose figure figcaption {
+
+      ---
+
+      - .prose :where(code) {
+      + .prose code {
+
+      ---
+
+      - .prose :where(code)::before {
+      + .prose code::before {
+
+      ---
+
+      - .prose :where(code)::after {
+      + .prose code::after {
+
+      ---
+
+      - .prose :where(a code) {
+      + .prose a code {
+
+      ---
+
+      - .prose :where(pre) {
+      + .prose pre {
+
+      ---
+
+      - .prose :where(pre code) {
+      + .prose pre code {
+
+      ---
+
+      - .prose :where(pre code)::before {
+      + .prose pre code::before {
+
+      ---
+
+      - .prose :where(pre code)::after {
+      + .prose pre code::after {
+
+      ---
+
+      - .prose :where(table) {
+      + .prose table {
+
+      ---
+
+      - .prose :where(thead) {
+      + .prose thead {
+
+      ---
+
+      - .prose :where(thead th) {
+      + .prose thead th {
+
+      ---
+
+      - .prose :where(tbody tr) {
+      + .prose tbody tr {
+
+      ---
+
+      - .prose :where(tbody tr:last-child) {
+      + .prose tbody tr:last-child {
+
+      ---
+
+      - .prose :where(tbody td) {
+      + .prose tbody td {
+
+      ---
+
+      - .prose :where(p) {
+      + .prose p {
+
+      ---
+
+      - .prose :where(img) {
+      + .prose img {
+
+      ---
+
+      - .prose :where(video) {
+      + .prose video {
+
+      ---
+
+      - .prose :where(figure) {
+      + .prose figure {
+
+      ---
+
+      - .prose :where(figure > *) {
+      + .prose figure > * {
+
+      ---
+
+      - .prose :where(h2 code) {
+      + .prose h2 code {
+
+      ---
+
+      - .prose :where(h3 code) {
+      + .prose h3 code {
+
+      ---
+
+      - .prose :where(ol) {
+      + .prose ol {
+
+      ---
+
+      - .prose :where(ul) {
+      + .prose ul {
+
+      ---
+
+      - .prose :where(li) {
+      + .prose li {
+
+      ---
+
+      - .prose :where(> ul > li p) {
+      + .prose > ul > li p {
+
+      ---
+
+      - .prose :where(> ul > li > *:first-child) {
+      + .prose > ul > li > *:first-child {
+
+      ---
+
+      - .prose :where(> ul > li > *:last-child) {
+      + .prose > ul > li > *:last-child {
+
+      ---
+
+      - .prose :where(> ol > li > *:first-child) {
+      + .prose > ol > li > *:first-child {
+
+      ---
+
+      - .prose :where(> ol > li > *:last-child) {
+      + .prose > ol > li > *:last-child {
+
+      ---
+
+      - .prose :where(ul ul, ul ol, ol ul, ol ol) {
+      + .prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
+
+      ---
+
+      - .prose :where(hr + *) {
+      + .prose hr + * {
+
+      ---
+
+      - .prose :where(h2 + *) {
+      + .prose h2 + * {
+
+      ---
+
+      - .prose :where(h3 + *) {
+      + .prose h3 + * {
+
+      ---
+
+      - .prose :where(h4 + *) {
+      + .prose h4 + * {
+
+      ---
+
+      - .prose :where(thead th:first-child) {
+      + .prose thead th:first-child {
+
+      ---
+
+      - .prose :where(thead th:last-child) {
+      + .prose thead th:last-child {
+
+      ---
+
+      - .prose :where(tbody td:first-child) {
+      + .prose tbody td:first-child {
+
+      ---
+
+      - .prose :where(tbody td:last-child) {
+      + .prose tbody td:last-child {
+
+      ---
+
+      - .prose :where(> :first-child) {
+      + .prose > :first-child {
+
+      ---
+
+      - .prose :where(> :last-child) {
+      + .prose > :last-child {
+
+      ---
+
+      - .prose-sm :where(p) {
+      + .prose-sm p {
+
+      ---
+
+      - .prose-sm :where([class~='lead']) {
+      + .prose-sm [class~='lead'] {
+
+      ---
+
+      - .prose-sm :where(blockquote) {
+      + .prose-sm blockquote {
+
+      ---
+
+      - .prose-sm :where(h1) {
+      + .prose-sm h1 {
+
+      ---
+
+      - .prose-sm :where(h2) {
+      + .prose-sm h2 {
+
+      ---
+
+      - .prose-sm :where(h3) {
+      + .prose-sm h3 {
+
+      ---
+
+      - .prose-sm :where(h4) {
+      + .prose-sm h4 {
+
+      ---
+
+      - .prose-sm :where(img) {
+      + .prose-sm img {
+
+      ---
+
+      - .prose-sm :where(video) {
+      + .prose-sm video {
+
+      ---
+
+      - .prose-sm :where(figure) {
+      + .prose-sm figure {
+
+      ---
+
+      - .prose-sm :where(figure > *) {
+      + .prose-sm figure > * {
+
+      ---
+
+      - .prose-sm :where(figure figcaption) {
+      + .prose-sm figure figcaption {
+
+      ---
+
+      - .prose-sm :where(code) {
+      + .prose-sm code {
+
+      ---
+
+      - .prose-sm :where(h2 code) {
+      + .prose-sm h2 code {
+
+      ---
+
+      - .prose-sm :where(h3 code) {
+      + .prose-sm h3 code {
+
+      ---
+
+      - .prose-sm :where(pre) {
+      + .prose-sm pre {
+
+      ---
+
+      - .prose-sm :where(ol) {
+      + .prose-sm ol {
+
+      ---
+
+      - .prose-sm :where(ul) {
+      + .prose-sm ul {
+
+      ---
+
+      - .prose-sm :where(li) {
+      + .prose-sm li {
+
+      ---
+
+      - .prose-sm :where(ol > li) {
+      + .prose-sm ol > li {
+
+      ---
+
+      - .prose-sm :where(ol > li)::before {
+      + .prose-sm ol > li::before {
+
+      ---
+
+      - .prose-sm :where(ul > li) {
+      + .prose-sm ul > li {
+
+      ---
+
+      - .prose-sm :where(ul > li)::before {
+      + .prose-sm ul > li::before {
+
+      ---
+
+      - .prose-sm :where(> ul > li p) {
+      + .prose-sm > ul > li p {
+
+      ---
+
+      - .prose-sm :where(> ul > li > *:first-child) {
+      + .prose-sm > ul > li > *:first-child {
+
+      ---
+
+      - .prose-sm :where(> ul > li > *:last-child) {
+      + .prose-sm > ul > li > *:last-child {
+
+      ---
+
+      - .prose-sm :where(> ol > li > *:first-child) {
+      + .prose-sm > ol > li > *:first-child {
+
+      ---
+
+      - .prose-sm :where(> ol > li > *:last-child) {
+      + .prose-sm > ol > li > *:last-child {
+
+      ---
+
+      - .prose-sm :where(ul ul, ul ol, ol ul, ol ol) {
+      + .prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
+
+      ---
+
+      - .prose-sm :where(hr) {
+      + .prose-sm hr {
+
+      ---
+
+      - .prose-sm :where(hr + *) {
+      + .prose-sm hr + * {
+
+      ---
+
+      - .prose-sm :where(h2 + *) {
+      + .prose-sm h2 + * {
+
+      ---
+
+      - .prose-sm :where(h3 + *) {
+      + .prose-sm h3 + * {
+
+      ---
+
+      - .prose-sm :where(h4 + *) {
+      + .prose-sm h4 + * {
+
+      ---
+
+      - .prose-sm :where(table) {
+      + .prose-sm table {
+
+      ---
+
+      - .prose-sm :where(thead th) {
+      + .prose-sm thead th {
+
+      ---
+
+      - .prose-sm :where(thead th:first-child) {
+      + .prose-sm thead th:first-child {
+
+      ---
+
+      - .prose-sm :where(thead th:last-child) {
+      + .prose-sm thead th:last-child {
+
+      ---
+
+      - .prose-sm :where(tbody td) {
+      + .prose-sm tbody td {
+
+      ---
+
+      - .prose-sm :where(tbody td:first-child) {
+      + .prose-sm tbody td:first-child {
+
+      ---
+
+      - .prose-sm :where(tbody td:last-child) {
+      + .prose-sm tbody td:last-child {
+
+      ---
+
+      - .prose-sm :where(> :first-child) {
+      + .prose-sm > :first-child {
+
+      ---
+
+      - .prose-sm :where(> :last-child) {
+      + .prose-sm > :last-child {
+
+      ---
+
+      - .prose-lg :where(p) {
+      + .prose-lg p {
+
+      ---
+
+      - .prose-lg :where([class~='lead']) {
+      + .prose-lg [class~='lead'] {
+
+      ---
+
+      - .prose-lg :where(blockquote) {
+      + .prose-lg blockquote {
+
+      ---
+
+      - .prose-lg :where(h1) {
+      + .prose-lg h1 {
+
+      ---
+
+      - .prose-lg :where(h2) {
+      + .prose-lg h2 {
+
+      ---
+
+      - .prose-lg :where(h3) {
+      + .prose-lg h3 {
+
+      ---
+
+      - .prose-lg :where(h4) {
+      + .prose-lg h4 {
+
+      ---
+
+      - .prose-lg :where(img) {
+      + .prose-lg img {
+
+      ---
+
+      - .prose-lg :where(video) {
+      + .prose-lg video {
+
+      ---
+
+      - .prose-lg :where(figure) {
+      + .prose-lg figure {
+
+      ---
+
+      - .prose-lg :where(figure > *) {
+      + .prose-lg figure > * {
+
+      ---
+
+      - .prose-lg :where(figure figcaption) {
+      + .prose-lg figure figcaption {
+
+      ---
+
+      - .prose-lg :where(code) {
+      + .prose-lg code {
+
+      ---
+
+      - .prose-lg :where(h2 code) {
+      + .prose-lg h2 code {
+
+      ---
+
+      - .prose-lg :where(h3 code) {
+      + .prose-lg h3 code {
+
+      ---
+
+      - .prose-lg :where(pre) {
+      + .prose-lg pre {
+
+      ---
+
+      - .prose-lg :where(ol) {
+      + .prose-lg ol {
+
+      ---
+
+      - .prose-lg :where(ul) {
+      + .prose-lg ul {
+
+      ---
+
+      - .prose-lg :where(li) {
+      + .prose-lg li {
+
+      ---
+
+      - .prose-lg :where(ol > li) {
+      + .prose-lg ol > li {
+
+      ---
+
+      - .prose-lg :where(ol > li)::before {
+      + .prose-lg ol > li::before {
+
+      ---
+
+      - .prose-lg :where(ul > li) {
+      + .prose-lg ul > li {
+
+      ---
+
+      - .prose-lg :where(ul > li)::before {
+      + .prose-lg ul > li::before {
+
+      ---
+
+      - .prose-lg :where(> ul > li p) {
+      + .prose-lg > ul > li p {
+
+      ---
+
+      - .prose-lg :where(> ul > li > *:first-child) {
+      + .prose-lg > ul > li > *:first-child {
+
+      ---
+
+      - .prose-lg :where(> ul > li > *:last-child) {
+      + .prose-lg > ul > li > *:last-child {
+
+      ---
+
+      - .prose-lg :where(> ol > li > *:first-child) {
+      + .prose-lg > ol > li > *:first-child {
+
+      ---
+
+      - .prose-lg :where(> ol > li > *:last-child) {
+      + .prose-lg > ol > li > *:last-child {
+
+      ---
+
+      - .prose-lg :where(ul ul, ul ol, ol ul, ol ol) {
+      + .prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
+
+      ---
+
+      - .prose-lg :where(hr) {
+      + .prose-lg hr {
+
+      ---
+
+      - .prose-lg :where(hr + *) {
+      + .prose-lg hr + * {
+
+      ---
+
+      - .prose-lg :where(h2 + *) {
+      + .prose-lg h2 + * {
+
+      ---
+
+      - .prose-lg :where(h3 + *) {
+      + .prose-lg h3 + * {
+
+      ---
+
+      - .prose-lg :where(h4 + *) {
+      + .prose-lg h4 + * {
+
+      ---
+
+      - .prose-lg :where(table) {
+      + .prose-lg table {
+
+      ---
+
+      - .prose-lg :where(thead th) {
+      + .prose-lg thead th {
+
+      ---
+
+      - .prose-lg :where(thead th:first-child) {
+      + .prose-lg thead th:first-child {
+
+      ---
+
+      - .prose-lg :where(thead th:last-child) {
+      + .prose-lg thead th:last-child {
+
+      ---
+
+      - .prose-lg :where(tbody td) {
+      + .prose-lg tbody td {
+
+      ---
+
+      - .prose-lg :where(tbody td:first-child) {
+      + .prose-lg tbody td:first-child {
+
+      ---
+
+      - .prose-lg :where(tbody td:last-child) {
+      + .prose-lg tbody td:last-child {
+
+      ---
+
+      - .prose-lg :where(> :first-child) {
+      + .prose-lg > :first-child {
+
+      ---
+
+      - .prose-lg :where(> :last-child) {
+      + .prose-lg > :last-child {
+
+      ---
+
+      - .prose-xl :where(p) {
+      + .prose-xl p {
+
+      ---
+
+      - .prose-xl :where([class~='lead']) {
+      + .prose-xl [class~='lead'] {
+
+      ---
+
+      - .prose-xl :where(blockquote) {
+      + .prose-xl blockquote {
+
+      ---
+
+      - .prose-xl :where(h1) {
+      + .prose-xl h1 {
+
+      ---
+
+      - .prose-xl :where(h2) {
+      + .prose-xl h2 {
+
+      ---
+
+      - .prose-xl :where(h3) {
+      + .prose-xl h3 {
+
+      ---
+
+      - .prose-xl :where(h4) {
+      + .prose-xl h4 {
+
+      ---
+
+      - .prose-xl :where(img) {
+      + .prose-xl img {
+
+      ---
+
+      - .prose-xl :where(video) {
+      + .prose-xl video {
+
+      ---
+
+      - .prose-xl :where(figure) {
+      + .prose-xl figure {
+
+      ---
+
+      - .prose-xl :where(figure > *) {
+      + .prose-xl figure > * {
+
+      ---
+
+      - .prose-xl :where(figure figcaption) {
+      + .prose-xl figure figcaption {
+
+      ---
+
+      - .prose-xl :where(code) {
+      + .prose-xl code {
+
+      ---
+
+      - .prose-xl :where(h2 code) {
+      + .prose-xl h2 code {
+
+      ---
+
+      - .prose-xl :where(h3 code) {
+      + .prose-xl h3 code {
+
+      ---
+
+      - .prose-xl :where(pre) {
+      + .prose-xl pre {
+
+      ---
+
+      - .prose-xl :where(ol) {
+      + .prose-xl ol {
+
+      ---
+
+      - .prose-xl :where(ul) {
+      + .prose-xl ul {
+
+      ---
+
+      - .prose-xl :where(li) {
+      + .prose-xl li {
+
+      ---
+
+      - .prose-xl :where(ol > li) {
+      + .prose-xl ol > li {
+
+      ---
+
+      - .prose-xl :where(ol > li)::before {
+      + .prose-xl ol > li::before {
+
+      ---
+
+      - .prose-xl :where(ul > li) {
+      + .prose-xl ul > li {
+
+      ---
+
+      - .prose-xl :where(ul > li)::before {
+      + .prose-xl ul > li::before {
+
+      ---
+
+      - .prose-xl :where(> ul > li p) {
+      + .prose-xl > ul > li p {
+
+      ---
+
+      - .prose-xl :where(> ul > li > *:first-child) {
+      + .prose-xl > ul > li > *:first-child {
+
+      ---
+
+      - .prose-xl :where(> ul > li > *:last-child) {
+      + .prose-xl > ul > li > *:last-child {
+
+      ---
+
+      - .prose-xl :where(> ol > li > *:first-child) {
+      + .prose-xl > ol > li > *:first-child {
+
+      ---
+
+      - .prose-xl :where(> ol > li > *:last-child) {
+      + .prose-xl > ol > li > *:last-child {
+
+      ---
+
+      - .prose-xl :where(ul ul, ul ol, ol ul, ol ol) {
+      + .prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
+
+      ---
+
+      - .prose-xl :where(hr) {
+      + .prose-xl hr {
+
+      ---
+
+      - .prose-xl :where(hr + *) {
+      + .prose-xl hr + * {
+
+      ---
+
+      - .prose-xl :where(h2 + *) {
+      + .prose-xl h2 + * {
+
+      ---
+
+      - .prose-xl :where(h3 + *) {
+      + .prose-xl h3 + * {
+
+      ---
+
+      - .prose-xl :where(h4 + *) {
+      + .prose-xl h4 + * {
+
+      ---
+
+      - .prose-xl :where(table) {
+      + .prose-xl table {
+
+      ---
+
+      - .prose-xl :where(thead th) {
+      + .prose-xl thead th {
+
+      ---
+
+      - .prose-xl :where(thead th:first-child) {
+      + .prose-xl thead th:first-child {
+
+      ---
+
+      - .prose-xl :where(thead th:last-child) {
+      + .prose-xl thead th:last-child {
+
+      ---
+
+      - .prose-xl :where(tbody td) {
+      + .prose-xl tbody td {
+
+      ---
+
+      - .prose-xl :where(tbody td:first-child) {
+      + .prose-xl tbody td:first-child {
+
+      ---
+
+      - .prose-xl :where(tbody td:last-child) {
+      + .prose-xl tbody td:last-child {
+
+      ---
+
+      - .prose-xl :where(> :first-child) {
+      + .prose-xl > :first-child {
+
+      ---
+
+      - .prose-xl :where(> :last-child) {
+      + .prose-xl > :last-child {
+
+      ---
+
+      - .prose-2xl :where(p) {
+      + .prose-2xl p {
+
+      ---
+
+      - .prose-2xl :where([class~='lead']) {
+      + .prose-2xl [class~='lead'] {
+
+      ---
+
+      - .prose-2xl :where(blockquote) {
+      + .prose-2xl blockquote {
+
+      ---
+
+      - .prose-2xl :where(h1) {
+      + .prose-2xl h1 {
+
+      ---
+
+      - .prose-2xl :where(h2) {
+      + .prose-2xl h2 {
+
+      ---
+
+      - .prose-2xl :where(h3) {
+      + .prose-2xl h3 {
+
+      ---
+
+      - .prose-2xl :where(h4) {
+      + .prose-2xl h4 {
+
+      ---
+
+      - .prose-2xl :where(img) {
+      + .prose-2xl img {
+
+      ---
+
+      - .prose-2xl :where(video) {
+      + .prose-2xl video {
+
+      ---
+
+      - .prose-2xl :where(figure) {
+      + .prose-2xl figure {
+
+      ---
+
+      - .prose-2xl :where(figure > *) {
+      + .prose-2xl figure > * {
+
+      ---
+
+      - .prose-2xl :where(figure figcaption) {
+      + .prose-2xl figure figcaption {
+
+      ---
+
+      - .prose-2xl :where(code) {
+      + .prose-2xl code {
+
+      ---
+
+      - .prose-2xl :where(h2 code) {
+      + .prose-2xl h2 code {
+
+      ---
+
+      - .prose-2xl :where(h3 code) {
+      + .prose-2xl h3 code {
+
+      ---
+
+      - .prose-2xl :where(pre) {
+      + .prose-2xl pre {
+
+      ---
+
+      - .prose-2xl :where(ol) {
+      + .prose-2xl ol {
+
+      ---
+
+      - .prose-2xl :where(ul) {
+      + .prose-2xl ul {
+
+      ---
+
+      - .prose-2xl :where(li) {
+      + .prose-2xl li {
+
+      ---
+
+      - .prose-2xl :where(ol > li) {
+      + .prose-2xl ol > li {
+
+      ---
+
+      - .prose-2xl :where(ol > li)::before {
+      + .prose-2xl ol > li::before {
+
+      ---
+
+      - .prose-2xl :where(ul > li) {
+      + .prose-2xl ul > li {
+
+      ---
+
+      - .prose-2xl :where(ul > li)::before {
+      + .prose-2xl ul > li::before {
+
+      ---
+
+      - .prose-2xl :where(> ul > li p) {
+      + .prose-2xl > ul > li p {
+
+      ---
+
+      - .prose-2xl :where(> ul > li > *:first-child) {
+      + .prose-2xl > ul > li > *:first-child {
+
+      ---
+
+      - .prose-2xl :where(> ul > li > *:last-child) {
+      + .prose-2xl > ul > li > *:last-child {
+
+      ---
+
+      - .prose-2xl :where(> ol > li > *:first-child) {
+      + .prose-2xl > ol > li > *:first-child {
+
+      ---
+
+      - .prose-2xl :where(> ol > li > *:last-child) {
+      + .prose-2xl > ol > li > *:last-child {
+
+      ---
+
+      - .prose-2xl :where(ul ul, ul ol, ol ul, ol ol) {
+      + .prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
+
+      ---
+
+      - .prose-2xl :where(hr) {
+      + .prose-2xl hr {
+
+      ---
+
+      - .prose-2xl :where(hr + *) {
+      + .prose-2xl hr + * {
+
+      ---
+
+      - .prose-2xl :where(h2 + *) {
+      + .prose-2xl h2 + * {
+
+      ---
+
+      - .prose-2xl :where(h3 + *) {
+      + .prose-2xl h3 + * {
+
+      ---
+
+      - .prose-2xl :where(h4 + *) {
+      + .prose-2xl h4 + * {
+
+      ---
+
+      - .prose-2xl :where(table) {
+      + .prose-2xl table {
+
+      ---
+
+      - .prose-2xl :where(thead th) {
+      + .prose-2xl thead th {
+
+      ---
+
+      - .prose-2xl :where(thead th:first-child) {
+      + .prose-2xl thead th:first-child {
+
+      ---
+
+      - .prose-2xl :where(thead th:last-child) {
+      + .prose-2xl thead th:last-child {
+
+      ---
+
+      - .prose-2xl :where(tbody td) {
+      + .prose-2xl tbody td {
+
+      ---
+
+      - .prose-2xl :where(tbody td:first-child) {
+      + .prose-2xl tbody td:first-child {
+
+      ---
+
+      - .prose-2xl :where(tbody td:last-child) {
+      + .prose-2xl tbody td:last-child {
+
+      ---
+
+      - .prose-2xl :where(> :first-child) {
+      + .prose-2xl > :first-child {
+
+      ---
+
+      - .prose-2xl :where(> :last-child) {
+      + .prose-2xl > :last-child {
+
+      ---
+
+      - .prose-red :where(a) {
+      + .prose-red a {
+
+      ---
+
+      - .prose-red :where(a code) {
+      + .prose-red a code {
+
+      ---
+
+      - .prose-yellow :where(a) {
+      + .prose-yellow a {
+
+      ---
+
+      - .prose-yellow :where(a code) {
+      + .prose-yellow a code {
+
+      ---
+
+      - .prose-green :where(a) {
+      + .prose-green a {
+
+      ---
+
+      - .prose-green :where(a code) {
+      + .prose-green a code {
+
+      ---
+
+      - .prose-blue :where(a) {
+      + .prose-blue a {
+
+      ---
+
+      - .prose-blue :where(a code) {
+      + .prose-blue a code {
+
+      ---
+
+      - .prose-indigo :where(a) {
+      + .prose-indigo a {
+
+      ---
+
+      - .prose-indigo :where(a code) {
+      + .prose-indigo a code {
+
+      ---
+
+      - .prose-purple :where(a) {
+      + .prose-purple a {
+
+      ---
+
+      - .prose-purple :where(a code) {
+      + .prose-purple a code {
+
+      ---
+
+      - .prose-pink :where(a) {
+      + .prose-pink a {
+
+      ---
+
+      - .prose-pink :where(a code) {
+      + .prose-pink a code {
+
+      ---
+
+      -   .sm\\\\:prose :where([class~='lead']) {
+      +   .sm\\\\:prose [class~='lead'] {
+
+      ---
+
+      -   .sm\\\\:prose :where(a) {
+      +   .sm\\\\:prose a {
+
+      ---
+
+      -   .sm\\\\:prose :where(strong) {
+      +   .sm\\\\:prose strong {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='A']) {
+      +   .sm\\\\:prose ol[type='A'] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='a']) {
+      +   .sm\\\\:prose ol[type='a'] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='A' s]) {
+      +   .sm\\\\:prose ol[type='A' s] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='a' s]) {
+      +   .sm\\\\:prose ol[type='a' s] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='I']) {
+      +   .sm\\\\:prose ol[type='I'] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='i']) {
+      +   .sm\\\\:prose ol[type='i'] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='I' s]) {
+      +   .sm\\\\:prose ol[type='I' s] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='i' s]) {
+      +   .sm\\\\:prose ol[type='i' s] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol[type='1']) {
+      +   .sm\\\\:prose ol[type='1'] {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol > li) {
+      +   .sm\\\\:prose ol > li {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol > li)::before {
+      +   .sm\\\\:prose ol > li::before {
+
+      ---
+
+      -   .sm\\\\:prose :where(ul > li) {
+      +   .sm\\\\:prose ul > li {
+
+      ---
+
+      -   .sm\\\\:prose :where(ul > li)::before {
+      +   .sm\\\\:prose ul > li::before {
+
+      ---
+
+      -   .sm\\\\:prose :where(hr) {
+      +   .sm\\\\:prose hr {
+
+      ---
+
+      -   .sm\\\\:prose :where(blockquote) {
+      +   .sm\\\\:prose blockquote {
+
+      ---
+
+      -   .sm\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .sm\\\\:prose blockquote p:first-of-type::before {
+
+      ---
+
+      -   .sm\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .sm\\\\:prose blockquote p:last-of-type::after {
+
+      ---
+
+      -   .sm\\\\:prose :where(h1) {
+      +   .sm\\\\:prose h1 {
+
+      ---
+
+      -   .sm\\\\:prose :where(h1 strong) {
+      +   .sm\\\\:prose h1 strong {
+
+      ---
+
+      -   .sm\\\\:prose :where(h2) {
+      +   .sm\\\\:prose h2 {
+
+      ---
+
+      -   .sm\\\\:prose :where(h2 strong) {
+      +   .sm\\\\:prose h2 strong {
+
+      ---
+
+      -   .sm\\\\:prose :where(h3) {
+      +   .sm\\\\:prose h3 {
+
+      ---
+
+      -   .sm\\\\:prose :where(h3 strong) {
+      +   .sm\\\\:prose h3 strong {
+
+      ---
+
+      -   .sm\\\\:prose :where(h4) {
+      +   .sm\\\\:prose h4 {
+
+      ---
+
+      -   .sm\\\\:prose :where(h4 strong) {
+      +   .sm\\\\:prose h4 strong {
+
+      ---
+
+      -   .sm\\\\:prose :where(figure figcaption) {
+      +   .sm\\\\:prose figure figcaption {
+
+      ---
+
+      -   .sm\\\\:prose :where(code) {
+      +   .sm\\\\:prose code {
+
+      ---
+
+      -   .sm\\\\:prose :where(code)::before {
+      +   .sm\\\\:prose code::before {
+
+      ---
+
+      -   .sm\\\\:prose :where(code)::after {
+      +   .sm\\\\:prose code::after {
+
+      ---
+
+      -   .sm\\\\:prose :where(a code) {
+      +   .sm\\\\:prose a code {
+
+      ---
+
+      -   .sm\\\\:prose :where(pre) {
+      +   .sm\\\\:prose pre {
+
+      ---
+
+      -   .sm\\\\:prose :where(pre code) {
+      +   .sm\\\\:prose pre code {
+
+      ---
+
+      -   .sm\\\\:prose :where(pre code)::before {
+      +   .sm\\\\:prose pre code::before {
+
+      ---
+
+      -   .sm\\\\:prose :where(pre code)::after {
+      +   .sm\\\\:prose pre code::after {
+
+      ---
+
+      -   .sm\\\\:prose :where(table) {
+      +   .sm\\\\:prose table {
+
+      ---
+
+      -   .sm\\\\:prose :where(thead) {
+      +   .sm\\\\:prose thead {
+
+      ---
+
+      -   .sm\\\\:prose :where(thead th) {
+      +   .sm\\\\:prose thead th {
+
+      ---
+
+      -   .sm\\\\:prose :where(tbody tr) {
+      +   .sm\\\\:prose tbody tr {
+
+      ---
+
+      -   .sm\\\\:prose :where(tbody tr:last-child) {
+      +   .sm\\\\:prose tbody tr:last-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(tbody td) {
+      +   .sm\\\\:prose tbody td {
+
+      ---
+
+      -   .sm\\\\:prose :where(p) {
+      +   .sm\\\\:prose p {
+
+      ---
+
+      -   .sm\\\\:prose :where(img) {
+      +   .sm\\\\:prose img {
+
+      ---
+
+      -   .sm\\\\:prose :where(video) {
+      +   .sm\\\\:prose video {
+
+      ---
+
+      -   .sm\\\\:prose :where(figure) {
+      +   .sm\\\\:prose figure {
+
+      ---
+
+      -   .sm\\\\:prose :where(figure > *) {
+      +   .sm\\\\:prose figure > * {
+
+      ---
+
+      -   .sm\\\\:prose :where(h2 code) {
+      +   .sm\\\\:prose h2 code {
+
+      ---
+
+      -   .sm\\\\:prose :where(h3 code) {
+      +   .sm\\\\:prose h3 code {
+
+      ---
+
+      -   .sm\\\\:prose :where(ol) {
+      +   .sm\\\\:prose ol {
+
+      ---
+
+      -   .sm\\\\:prose :where(ul) {
+      +   .sm\\\\:prose ul {
+
+      ---
+
+      -   .sm\\\\:prose :where(li) {
+      +   .sm\\\\:prose li {
+
+      ---
+
+      -   .sm\\\\:prose :where(> ul > li p) {
+      +   .sm\\\\:prose > ul > li p {
+
+      ---
+
+      -   .sm\\\\:prose :where(> ul > li > *:first-child) {
+      +   .sm\\\\:prose > ul > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(> ul > li > *:last-child) {
+      +   .sm\\\\:prose > ul > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(> ol > li > *:first-child) {
+      +   .sm\\\\:prose > ol > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(> ol > li > *:last-child) {
+      +   .sm\\\\:prose > ol > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .sm\\\\:prose ul ul, .sm\\\\:prose ul ol, .sm\\\\:prose ol ul, .sm\\\\:prose ol ol {
+
+      ---
+
+      -   .sm\\\\:prose :where(hr + *) {
+      +   .sm\\\\:prose hr + * {
+
+      ---
+
+      -   .sm\\\\:prose :where(h2 + *) {
+      +   .sm\\\\:prose h2 + * {
+
+      ---
+
+      -   .sm\\\\:prose :where(h3 + *) {
+      +   .sm\\\\:prose h3 + * {
+
+      ---
+
+      -   .sm\\\\:prose :where(h4 + *) {
+      +   .sm\\\\:prose h4 + * {
+
+      ---
+
+      -   .sm\\\\:prose :where(thead th:first-child) {
+      +   .sm\\\\:prose thead th:first-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(thead th:last-child) {
+      +   .sm\\\\:prose thead th:last-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(tbody td:first-child) {
+      +   .sm\\\\:prose tbody td:first-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(tbody td:last-child) {
+      +   .sm\\\\:prose tbody td:last-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(> :first-child) {
+      +   .sm\\\\:prose > :first-child {
+
+      ---
+
+      -   .sm\\\\:prose :where(> :last-child) {
+      +   .sm\\\\:prose > :last-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(p) {
+      +   .sm\\\\:prose-sm p {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where([class~='lead']) {
+      +   .sm\\\\:prose-sm [class~='lead'] {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(blockquote) {
+      +   .sm\\\\:prose-sm blockquote {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h1) {
+      +   .sm\\\\:prose-sm h1 {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h2) {
+      +   .sm\\\\:prose-sm h2 {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h3) {
+      +   .sm\\\\:prose-sm h3 {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h4) {
+      +   .sm\\\\:prose-sm h4 {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(img) {
+      +   .sm\\\\:prose-sm img {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(video) {
+      +   .sm\\\\:prose-sm video {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(figure) {
+      +   .sm\\\\:prose-sm figure {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(figure > *) {
+      +   .sm\\\\:prose-sm figure > * {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(figure figcaption) {
+      +   .sm\\\\:prose-sm figure figcaption {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(code) {
+      +   .sm\\\\:prose-sm code {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h2 code) {
+      +   .sm\\\\:prose-sm h2 code {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h3 code) {
+      +   .sm\\\\:prose-sm h3 code {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(pre) {
+      +   .sm\\\\:prose-sm pre {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(ol) {
+      +   .sm\\\\:prose-sm ol {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(ul) {
+      +   .sm\\\\:prose-sm ul {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(li) {
+      +   .sm\\\\:prose-sm li {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(ol > li) {
+      +   .sm\\\\:prose-sm ol > li {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(ol > li)::before {
+      +   .sm\\\\:prose-sm ol > li::before {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(ul > li) {
+      +   .sm\\\\:prose-sm ul > li {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(ul > li)::before {
+      +   .sm\\\\:prose-sm ul > li::before {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(> ul > li p) {
+      +   .sm\\\\:prose-sm > ul > li p {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(> ul > li > *:first-child) {
+      +   .sm\\\\:prose-sm > ul > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(> ul > li > *:last-child) {
+      +   .sm\\\\:prose-sm > ul > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(> ol > li > *:first-child) {
+      +   .sm\\\\:prose-sm > ol > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(> ol > li > *:last-child) {
+      +   .sm\\\\:prose-sm > ol > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .sm\\\\:prose-sm ul ul, .sm\\\\:prose-sm ul ol, .sm\\\\:prose-sm ol ul, .sm\\\\:prose-sm ol ol {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(hr) {
+      +   .sm\\\\:prose-sm hr {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(hr + *) {
+      +   .sm\\\\:prose-sm hr + * {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h2 + *) {
+      +   .sm\\\\:prose-sm h2 + * {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h3 + *) {
+      +   .sm\\\\:prose-sm h3 + * {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(h4 + *) {
+      +   .sm\\\\:prose-sm h4 + * {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(table) {
+      +   .sm\\\\:prose-sm table {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(thead th) {
+      +   .sm\\\\:prose-sm thead th {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(thead th:first-child) {
+      +   .sm\\\\:prose-sm thead th:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(thead th:last-child) {
+      +   .sm\\\\:prose-sm thead th:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(tbody td) {
+      +   .sm\\\\:prose-sm tbody td {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(tbody td:first-child) {
+      +   .sm\\\\:prose-sm tbody td:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(tbody td:last-child) {
+      +   .sm\\\\:prose-sm tbody td:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(> :first-child) {
+      +   .sm\\\\:prose-sm > :first-child {
+
+      ---
+
+      -   .sm\\\\:prose-sm :where(> :last-child) {
+      +   .sm\\\\:prose-sm > :last-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(p) {
+      +   .sm\\\\:prose-lg p {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where([class~='lead']) {
+      +   .sm\\\\:prose-lg [class~='lead'] {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(blockquote) {
+      +   .sm\\\\:prose-lg blockquote {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h1) {
+      +   .sm\\\\:prose-lg h1 {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h2) {
+      +   .sm\\\\:prose-lg h2 {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h3) {
+      +   .sm\\\\:prose-lg h3 {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h4) {
+      +   .sm\\\\:prose-lg h4 {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(img) {
+      +   .sm\\\\:prose-lg img {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(video) {
+      +   .sm\\\\:prose-lg video {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(figure) {
+      +   .sm\\\\:prose-lg figure {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(figure > *) {
+      +   .sm\\\\:prose-lg figure > * {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(figure figcaption) {
+      +   .sm\\\\:prose-lg figure figcaption {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(code) {
+      +   .sm\\\\:prose-lg code {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h2 code) {
+      +   .sm\\\\:prose-lg h2 code {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h3 code) {
+      +   .sm\\\\:prose-lg h3 code {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(pre) {
+      +   .sm\\\\:prose-lg pre {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(ol) {
+      +   .sm\\\\:prose-lg ol {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(ul) {
+      +   .sm\\\\:prose-lg ul {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(li) {
+      +   .sm\\\\:prose-lg li {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(ol > li) {
+      +   .sm\\\\:prose-lg ol > li {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(ol > li)::before {
+      +   .sm\\\\:prose-lg ol > li::before {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(ul > li) {
+      +   .sm\\\\:prose-lg ul > li {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(ul > li)::before {
+      +   .sm\\\\:prose-lg ul > li::before {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(> ul > li p) {
+      +   .sm\\\\:prose-lg > ul > li p {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(> ul > li > *:first-child) {
+      +   .sm\\\\:prose-lg > ul > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(> ul > li > *:last-child) {
+      +   .sm\\\\:prose-lg > ul > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(> ol > li > *:first-child) {
+      +   .sm\\\\:prose-lg > ol > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(> ol > li > *:last-child) {
+      +   .sm\\\\:prose-lg > ol > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .sm\\\\:prose-lg ul ul, .sm\\\\:prose-lg ul ol, .sm\\\\:prose-lg ol ul, .sm\\\\:prose-lg ol ol {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(hr) {
+      +   .sm\\\\:prose-lg hr {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(hr + *) {
+      +   .sm\\\\:prose-lg hr + * {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h2 + *) {
+      +   .sm\\\\:prose-lg h2 + * {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h3 + *) {
+      +   .sm\\\\:prose-lg h3 + * {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(h4 + *) {
+      +   .sm\\\\:prose-lg h4 + * {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(table) {
+      +   .sm\\\\:prose-lg table {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(thead th) {
+      +   .sm\\\\:prose-lg thead th {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(thead th:first-child) {
+      +   .sm\\\\:prose-lg thead th:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(thead th:last-child) {
+      +   .sm\\\\:prose-lg thead th:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(tbody td) {
+      +   .sm\\\\:prose-lg tbody td {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(tbody td:first-child) {
+      +   .sm\\\\:prose-lg tbody td:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(tbody td:last-child) {
+      +   .sm\\\\:prose-lg tbody td:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(> :first-child) {
+      +   .sm\\\\:prose-lg > :first-child {
+
+      ---
+
+      -   .sm\\\\:prose-lg :where(> :last-child) {
+      +   .sm\\\\:prose-lg > :last-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(p) {
+      +   .sm\\\\:prose-xl p {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where([class~='lead']) {
+      +   .sm\\\\:prose-xl [class~='lead'] {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(blockquote) {
+      +   .sm\\\\:prose-xl blockquote {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h1) {
+      +   .sm\\\\:prose-xl h1 {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h2) {
+      +   .sm\\\\:prose-xl h2 {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h3) {
+      +   .sm\\\\:prose-xl h3 {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h4) {
+      +   .sm\\\\:prose-xl h4 {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(img) {
+      +   .sm\\\\:prose-xl img {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(video) {
+      +   .sm\\\\:prose-xl video {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(figure) {
+      +   .sm\\\\:prose-xl figure {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(figure > *) {
+      +   .sm\\\\:prose-xl figure > * {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(figure figcaption) {
+      +   .sm\\\\:prose-xl figure figcaption {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(code) {
+      +   .sm\\\\:prose-xl code {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h2 code) {
+      +   .sm\\\\:prose-xl h2 code {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h3 code) {
+      +   .sm\\\\:prose-xl h3 code {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(pre) {
+      +   .sm\\\\:prose-xl pre {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(ol) {
+      +   .sm\\\\:prose-xl ol {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(ul) {
+      +   .sm\\\\:prose-xl ul {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(li) {
+      +   .sm\\\\:prose-xl li {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(ol > li) {
+      +   .sm\\\\:prose-xl ol > li {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(ol > li)::before {
+      +   .sm\\\\:prose-xl ol > li::before {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(ul > li) {
+      +   .sm\\\\:prose-xl ul > li {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(ul > li)::before {
+      +   .sm\\\\:prose-xl ul > li::before {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(> ul > li p) {
+      +   .sm\\\\:prose-xl > ul > li p {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(> ul > li > *:first-child) {
+      +   .sm\\\\:prose-xl > ul > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(> ul > li > *:last-child) {
+      +   .sm\\\\:prose-xl > ul > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(> ol > li > *:first-child) {
+      +   .sm\\\\:prose-xl > ol > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(> ol > li > *:last-child) {
+      +   .sm\\\\:prose-xl > ol > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .sm\\\\:prose-xl ul ul, .sm\\\\:prose-xl ul ol, .sm\\\\:prose-xl ol ul, .sm\\\\:prose-xl ol ol {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(hr) {
+      +   .sm\\\\:prose-xl hr {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(hr + *) {
+      +   .sm\\\\:prose-xl hr + * {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h2 + *) {
+      +   .sm\\\\:prose-xl h2 + * {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h3 + *) {
+      +   .sm\\\\:prose-xl h3 + * {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(h4 + *) {
+      +   .sm\\\\:prose-xl h4 + * {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(table) {
+      +   .sm\\\\:prose-xl table {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(thead th) {
+      +   .sm\\\\:prose-xl thead th {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(thead th:first-child) {
+      +   .sm\\\\:prose-xl thead th:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(thead th:last-child) {
+      +   .sm\\\\:prose-xl thead th:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(tbody td) {
+      +   .sm\\\\:prose-xl tbody td {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(tbody td:first-child) {
+      +   .sm\\\\:prose-xl tbody td:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(tbody td:last-child) {
+      +   .sm\\\\:prose-xl tbody td:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(> :first-child) {
+      +   .sm\\\\:prose-xl > :first-child {
+
+      ---
+
+      -   .sm\\\\:prose-xl :where(> :last-child) {
+      +   .sm\\\\:prose-xl > :last-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(p) {
+      +   .sm\\\\:prose-2xl p {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where([class~='lead']) {
+      +   .sm\\\\:prose-2xl [class~='lead'] {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(blockquote) {
+      +   .sm\\\\:prose-2xl blockquote {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h1) {
+      +   .sm\\\\:prose-2xl h1 {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h2) {
+      +   .sm\\\\:prose-2xl h2 {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h3) {
+      +   .sm\\\\:prose-2xl h3 {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h4) {
+      +   .sm\\\\:prose-2xl h4 {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(img) {
+      +   .sm\\\\:prose-2xl img {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(video) {
+      +   .sm\\\\:prose-2xl video {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(figure) {
+      +   .sm\\\\:prose-2xl figure {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(figure > *) {
+      +   .sm\\\\:prose-2xl figure > * {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(figure figcaption) {
+      +   .sm\\\\:prose-2xl figure figcaption {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(code) {
+      +   .sm\\\\:prose-2xl code {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h2 code) {
+      +   .sm\\\\:prose-2xl h2 code {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h3 code) {
+      +   .sm\\\\:prose-2xl h3 code {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(pre) {
+      +   .sm\\\\:prose-2xl pre {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(ol) {
+      +   .sm\\\\:prose-2xl ol {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(ul) {
+      +   .sm\\\\:prose-2xl ul {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(li) {
+      +   .sm\\\\:prose-2xl li {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(ol > li) {
+      +   .sm\\\\:prose-2xl ol > li {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(ol > li)::before {
+      +   .sm\\\\:prose-2xl ol > li::before {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(ul > li) {
+      +   .sm\\\\:prose-2xl ul > li {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(ul > li)::before {
+      +   .sm\\\\:prose-2xl ul > li::before {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(> ul > li p) {
+      +   .sm\\\\:prose-2xl > ul > li p {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(> ul > li > *:first-child) {
+      +   .sm\\\\:prose-2xl > ul > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(> ul > li > *:last-child) {
+      +   .sm\\\\:prose-2xl > ul > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(> ol > li > *:first-child) {
+      +   .sm\\\\:prose-2xl > ol > li > *:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(> ol > li > *:last-child) {
+      +   .sm\\\\:prose-2xl > ol > li > *:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .sm\\\\:prose-2xl ul ul, .sm\\\\:prose-2xl ul ol, .sm\\\\:prose-2xl ol ul, .sm\\\\:prose-2xl ol ol {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(hr) {
+      +   .sm\\\\:prose-2xl hr {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(hr + *) {
+      +   .sm\\\\:prose-2xl hr + * {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h2 + *) {
+      +   .sm\\\\:prose-2xl h2 + * {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h3 + *) {
+      +   .sm\\\\:prose-2xl h3 + * {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(h4 + *) {
+      +   .sm\\\\:prose-2xl h4 + * {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(table) {
+      +   .sm\\\\:prose-2xl table {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(thead th) {
+      +   .sm\\\\:prose-2xl thead th {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(thead th:first-child) {
+      +   .sm\\\\:prose-2xl thead th:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(thead th:last-child) {
+      +   .sm\\\\:prose-2xl thead th:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(tbody td) {
+      +   .sm\\\\:prose-2xl tbody td {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(tbody td:first-child) {
+      +   .sm\\\\:prose-2xl tbody td:first-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(tbody td:last-child) {
+      +   .sm\\\\:prose-2xl tbody td:last-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(> :first-child) {
+      +   .sm\\\\:prose-2xl > :first-child {
+
+      ---
+
+      -   .sm\\\\:prose-2xl :where(> :last-child) {
+      +   .sm\\\\:prose-2xl > :last-child {
+
+      ---
+
+      -   .sm\\\\:prose-red :where(a) {
+      +   .sm\\\\:prose-red a {
+
+      ---
+
+      -   .sm\\\\:prose-red :where(a code) {
+      +   .sm\\\\:prose-red a code {
+
+      ---
+
+      -   .sm\\\\:prose-yellow :where(a) {
+      +   .sm\\\\:prose-yellow a {
+
+      ---
+
+      -   .sm\\\\:prose-yellow :where(a code) {
+      +   .sm\\\\:prose-yellow a code {
+
+      ---
+
+      -   .sm\\\\:prose-green :where(a) {
+      +   .sm\\\\:prose-green a {
+
+      ---
+
+      -   .sm\\\\:prose-green :where(a code) {
+      +   .sm\\\\:prose-green a code {
+
+      ---
+
+      -   .sm\\\\:prose-blue :where(a) {
+      +   .sm\\\\:prose-blue a {
+
+      ---
+
+      -   .sm\\\\:prose-blue :where(a code) {
+      +   .sm\\\\:prose-blue a code {
+
+      ---
+
+      -   .sm\\\\:prose-indigo :where(a) {
+      +   .sm\\\\:prose-indigo a {
+
+      ---
+
+      -   .sm\\\\:prose-indigo :where(a code) {
+      +   .sm\\\\:prose-indigo a code {
+
+      ---
+
+      -   .sm\\\\:prose-purple :where(a) {
+      +   .sm\\\\:prose-purple a {
+
+      ---
+
+      -   .sm\\\\:prose-purple :where(a code) {
+      +   .sm\\\\:prose-purple a code {
+
+      ---
+
+      -   .sm\\\\:prose-pink :where(a) {
+      +   .sm\\\\:prose-pink a {
+
+      ---
+
+      -   .sm\\\\:prose-pink :where(a code) {
+      +   .sm\\\\:prose-pink a code {
+
+      ---
+
+      -   .md\\\\:prose :where([class~='lead']) {
+      +   .md\\\\:prose [class~='lead'] {
+
+      ---
+
+      -   .md\\\\:prose :where(a) {
+      +   .md\\\\:prose a {
+
+      ---
+
+      -   .md\\\\:prose :where(strong) {
+      +   .md\\\\:prose strong {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='A']) {
+      +   .md\\\\:prose ol[type='A'] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='a']) {
+      +   .md\\\\:prose ol[type='a'] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='A' s]) {
+      +   .md\\\\:prose ol[type='A' s] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='a' s]) {
+      +   .md\\\\:prose ol[type='a' s] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='I']) {
+      +   .md\\\\:prose ol[type='I'] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='i']) {
+      +   .md\\\\:prose ol[type='i'] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='I' s]) {
+      +   .md\\\\:prose ol[type='I' s] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='i' s]) {
+      +   .md\\\\:prose ol[type='i' s] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol[type='1']) {
+      +   .md\\\\:prose ol[type='1'] {
+
+      ---
+
+      -   .md\\\\:prose :where(ol > li) {
+      +   .md\\\\:prose ol > li {
+
+      ---
+
+      -   .md\\\\:prose :where(ol > li)::before {
+      +   .md\\\\:prose ol > li::before {
+
+      ---
+
+      -   .md\\\\:prose :where(ul > li) {
+      +   .md\\\\:prose ul > li {
+
+      ---
+
+      -   .md\\\\:prose :where(ul > li)::before {
+      +   .md\\\\:prose ul > li::before {
+
+      ---
+
+      -   .md\\\\:prose :where(hr) {
+      +   .md\\\\:prose hr {
+
+      ---
+
+      -   .md\\\\:prose :where(blockquote) {
+      +   .md\\\\:prose blockquote {
+
+      ---
+
+      -   .md\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .md\\\\:prose blockquote p:first-of-type::before {
+
+      ---
+
+      -   .md\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .md\\\\:prose blockquote p:last-of-type::after {
+
+      ---
+
+      -   .md\\\\:prose :where(h1) {
+      +   .md\\\\:prose h1 {
+
+      ---
+
+      -   .md\\\\:prose :where(h1 strong) {
+      +   .md\\\\:prose h1 strong {
+
+      ---
+
+      -   .md\\\\:prose :where(h2) {
+      +   .md\\\\:prose h2 {
+
+      ---
+
+      -   .md\\\\:prose :where(h2 strong) {
+      +   .md\\\\:prose h2 strong {
+
+      ---
+
+      -   .md\\\\:prose :where(h3) {
+      +   .md\\\\:prose h3 {
+
+      ---
+
+      -   .md\\\\:prose :where(h3 strong) {
+      +   .md\\\\:prose h3 strong {
+
+      ---
+
+      -   .md\\\\:prose :where(h4) {
+      +   .md\\\\:prose h4 {
+
+      ---
+
+      -   .md\\\\:prose :where(h4 strong) {
+      +   .md\\\\:prose h4 strong {
+
+      ---
+
+      -   .md\\\\:prose :where(figure figcaption) {
+      +   .md\\\\:prose figure figcaption {
+
+      ---
+
+      -   .md\\\\:prose :where(code) {
+      +   .md\\\\:prose code {
+
+      ---
+
+      -   .md\\\\:prose :where(code)::before {
+      +   .md\\\\:prose code::before {
+
+      ---
+
+      -   .md\\\\:prose :where(code)::after {
+      +   .md\\\\:prose code::after {
+
+      ---
+
+      -   .md\\\\:prose :where(a code) {
+      +   .md\\\\:prose a code {
+
+      ---
+
+      -   .md\\\\:prose :where(pre) {
+      +   .md\\\\:prose pre {
+
+      ---
+
+      -   .md\\\\:prose :where(pre code) {
+      +   .md\\\\:prose pre code {
+
+      ---
+
+      -   .md\\\\:prose :where(pre code)::before {
+      +   .md\\\\:prose pre code::before {
+
+      ---
+
+      -   .md\\\\:prose :where(pre code)::after {
+      +   .md\\\\:prose pre code::after {
+
+      ---
+
+      -   .md\\\\:prose :where(table) {
+      +   .md\\\\:prose table {
+
+      ---
+
+      -   .md\\\\:prose :where(thead) {
+      +   .md\\\\:prose thead {
+
+      ---
+
+      -   .md\\\\:prose :where(thead th) {
+      +   .md\\\\:prose thead th {
+
+      ---
+
+      -   .md\\\\:prose :where(tbody tr) {
+      +   .md\\\\:prose tbody tr {
+
+      ---
+
+      -   .md\\\\:prose :where(tbody tr:last-child) {
+      +   .md\\\\:prose tbody tr:last-child {
+
+      ---
+
+      -   .md\\\\:prose :where(tbody td) {
+      +   .md\\\\:prose tbody td {
+
+      ---
+
+      -   .md\\\\:prose :where(p) {
+      +   .md\\\\:prose p {
+
+      ---
+
+      -   .md\\\\:prose :where(img) {
+      +   .md\\\\:prose img {
+
+      ---
+
+      -   .md\\\\:prose :where(video) {
+      +   .md\\\\:prose video {
+
+      ---
+
+      -   .md\\\\:prose :where(figure) {
+      +   .md\\\\:prose figure {
+
+      ---
+
+      -   .md\\\\:prose :where(figure > *) {
+      +   .md\\\\:prose figure > * {
+
+      ---
+
+      -   .md\\\\:prose :where(h2 code) {
+      +   .md\\\\:prose h2 code {
+
+      ---
+
+      -   .md\\\\:prose :where(h3 code) {
+      +   .md\\\\:prose h3 code {
+
+      ---
+
+      -   .md\\\\:prose :where(ol) {
+      +   .md\\\\:prose ol {
+
+      ---
+
+      -   .md\\\\:prose :where(ul) {
+      +   .md\\\\:prose ul {
+
+      ---
+
+      -   .md\\\\:prose :where(li) {
+      +   .md\\\\:prose li {
+
+      ---
+
+      -   .md\\\\:prose :where(> ul > li p) {
+      +   .md\\\\:prose > ul > li p {
+
+      ---
+
+      -   .md\\\\:prose :where(> ul > li > *:first-child) {
+      +   .md\\\\:prose > ul > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose :where(> ul > li > *:last-child) {
+      +   .md\\\\:prose > ul > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose :where(> ol > li > *:first-child) {
+      +   .md\\\\:prose > ol > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose :where(> ol > li > *:last-child) {
+      +   .md\\\\:prose > ol > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .md\\\\:prose ul ul, .md\\\\:prose ul ol, .md\\\\:prose ol ul, .md\\\\:prose ol ol {
+
+      ---
+
+      -   .md\\\\:prose :where(hr + *) {
+      +   .md\\\\:prose hr + * {
+
+      ---
+
+      -   .md\\\\:prose :where(h2 + *) {
+      +   .md\\\\:prose h2 + * {
+
+      ---
+
+      -   .md\\\\:prose :where(h3 + *) {
+      +   .md\\\\:prose h3 + * {
+
+      ---
+
+      -   .md\\\\:prose :where(h4 + *) {
+      +   .md\\\\:prose h4 + * {
+
+      ---
+
+      -   .md\\\\:prose :where(thead th:first-child) {
+      +   .md\\\\:prose thead th:first-child {
+
+      ---
+
+      -   .md\\\\:prose :where(thead th:last-child) {
+      +   .md\\\\:prose thead th:last-child {
+
+      ---
+
+      -   .md\\\\:prose :where(tbody td:first-child) {
+      +   .md\\\\:prose tbody td:first-child {
+
+      ---
+
+      -   .md\\\\:prose :where(tbody td:last-child) {
+      +   .md\\\\:prose tbody td:last-child {
+
+      ---
+
+      -   .md\\\\:prose :where(> :first-child) {
+      +   .md\\\\:prose > :first-child {
+
+      ---
+
+      -   .md\\\\:prose :where(> :last-child) {
+      +   .md\\\\:prose > :last-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(p) {
+      +   .md\\\\:prose-sm p {
+
+      ---
+
+      -   .md\\\\:prose-sm :where([class~='lead']) {
+      +   .md\\\\:prose-sm [class~='lead'] {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(blockquote) {
+      +   .md\\\\:prose-sm blockquote {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h1) {
+      +   .md\\\\:prose-sm h1 {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h2) {
+      +   .md\\\\:prose-sm h2 {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h3) {
+      +   .md\\\\:prose-sm h3 {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h4) {
+      +   .md\\\\:prose-sm h4 {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(img) {
+      +   .md\\\\:prose-sm img {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(video) {
+      +   .md\\\\:prose-sm video {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(figure) {
+      +   .md\\\\:prose-sm figure {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(figure > *) {
+      +   .md\\\\:prose-sm figure > * {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(figure figcaption) {
+      +   .md\\\\:prose-sm figure figcaption {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(code) {
+      +   .md\\\\:prose-sm code {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h2 code) {
+      +   .md\\\\:prose-sm h2 code {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h3 code) {
+      +   .md\\\\:prose-sm h3 code {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(pre) {
+      +   .md\\\\:prose-sm pre {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(ol) {
+      +   .md\\\\:prose-sm ol {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(ul) {
+      +   .md\\\\:prose-sm ul {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(li) {
+      +   .md\\\\:prose-sm li {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(ol > li) {
+      +   .md\\\\:prose-sm ol > li {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(ol > li)::before {
+      +   .md\\\\:prose-sm ol > li::before {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(ul > li) {
+      +   .md\\\\:prose-sm ul > li {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(ul > li)::before {
+      +   .md\\\\:prose-sm ul > li::before {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(> ul > li p) {
+      +   .md\\\\:prose-sm > ul > li p {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(> ul > li > *:first-child) {
+      +   .md\\\\:prose-sm > ul > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(> ul > li > *:last-child) {
+      +   .md\\\\:prose-sm > ul > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(> ol > li > *:first-child) {
+      +   .md\\\\:prose-sm > ol > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(> ol > li > *:last-child) {
+      +   .md\\\\:prose-sm > ol > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .md\\\\:prose-sm ul ul, .md\\\\:prose-sm ul ol, .md\\\\:prose-sm ol ul, .md\\\\:prose-sm ol ol {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(hr) {
+      +   .md\\\\:prose-sm hr {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(hr + *) {
+      +   .md\\\\:prose-sm hr + * {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h2 + *) {
+      +   .md\\\\:prose-sm h2 + * {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h3 + *) {
+      +   .md\\\\:prose-sm h3 + * {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(h4 + *) {
+      +   .md\\\\:prose-sm h4 + * {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(table) {
+      +   .md\\\\:prose-sm table {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(thead th) {
+      +   .md\\\\:prose-sm thead th {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(thead th:first-child) {
+      +   .md\\\\:prose-sm thead th:first-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(thead th:last-child) {
+      +   .md\\\\:prose-sm thead th:last-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(tbody td) {
+      +   .md\\\\:prose-sm tbody td {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(tbody td:first-child) {
+      +   .md\\\\:prose-sm tbody td:first-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(tbody td:last-child) {
+      +   .md\\\\:prose-sm tbody td:last-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(> :first-child) {
+      +   .md\\\\:prose-sm > :first-child {
+
+      ---
+
+      -   .md\\\\:prose-sm :where(> :last-child) {
+      +   .md\\\\:prose-sm > :last-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(p) {
+      +   .md\\\\:prose-lg p {
+
+      ---
+
+      -   .md\\\\:prose-lg :where([class~='lead']) {
+      +   .md\\\\:prose-lg [class~='lead'] {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(blockquote) {
+      +   .md\\\\:prose-lg blockquote {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h1) {
+      +   .md\\\\:prose-lg h1 {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h2) {
+      +   .md\\\\:prose-lg h2 {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h3) {
+      +   .md\\\\:prose-lg h3 {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h4) {
+      +   .md\\\\:prose-lg h4 {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(img) {
+      +   .md\\\\:prose-lg img {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(video) {
+      +   .md\\\\:prose-lg video {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(figure) {
+      +   .md\\\\:prose-lg figure {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(figure > *) {
+      +   .md\\\\:prose-lg figure > * {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(figure figcaption) {
+      +   .md\\\\:prose-lg figure figcaption {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(code) {
+      +   .md\\\\:prose-lg code {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h2 code) {
+      +   .md\\\\:prose-lg h2 code {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h3 code) {
+      +   .md\\\\:prose-lg h3 code {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(pre) {
+      +   .md\\\\:prose-lg pre {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(ol) {
+      +   .md\\\\:prose-lg ol {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(ul) {
+      +   .md\\\\:prose-lg ul {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(li) {
+      +   .md\\\\:prose-lg li {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(ol > li) {
+      +   .md\\\\:prose-lg ol > li {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(ol > li)::before {
+      +   .md\\\\:prose-lg ol > li::before {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(ul > li) {
+      +   .md\\\\:prose-lg ul > li {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(ul > li)::before {
+      +   .md\\\\:prose-lg ul > li::before {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(> ul > li p) {
+      +   .md\\\\:prose-lg > ul > li p {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(> ul > li > *:first-child) {
+      +   .md\\\\:prose-lg > ul > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(> ul > li > *:last-child) {
+      +   .md\\\\:prose-lg > ul > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(> ol > li > *:first-child) {
+      +   .md\\\\:prose-lg > ol > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(> ol > li > *:last-child) {
+      +   .md\\\\:prose-lg > ol > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .md\\\\:prose-lg ul ul, .md\\\\:prose-lg ul ol, .md\\\\:prose-lg ol ul, .md\\\\:prose-lg ol ol {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(hr) {
+      +   .md\\\\:prose-lg hr {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(hr + *) {
+      +   .md\\\\:prose-lg hr + * {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h2 + *) {
+      +   .md\\\\:prose-lg h2 + * {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h3 + *) {
+      +   .md\\\\:prose-lg h3 + * {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(h4 + *) {
+      +   .md\\\\:prose-lg h4 + * {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(table) {
+      +   .md\\\\:prose-lg table {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(thead th) {
+      +   .md\\\\:prose-lg thead th {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(thead th:first-child) {
+      +   .md\\\\:prose-lg thead th:first-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(thead th:last-child) {
+      +   .md\\\\:prose-lg thead th:last-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(tbody td) {
+      +   .md\\\\:prose-lg tbody td {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(tbody td:first-child) {
+      +   .md\\\\:prose-lg tbody td:first-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(tbody td:last-child) {
+      +   .md\\\\:prose-lg tbody td:last-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(> :first-child) {
+      +   .md\\\\:prose-lg > :first-child {
+
+      ---
+
+      -   .md\\\\:prose-lg :where(> :last-child) {
+      +   .md\\\\:prose-lg > :last-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(p) {
+      +   .md\\\\:prose-xl p {
+
+      ---
+
+      -   .md\\\\:prose-xl :where([class~='lead']) {
+      +   .md\\\\:prose-xl [class~='lead'] {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(blockquote) {
+      +   .md\\\\:prose-xl blockquote {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h1) {
+      +   .md\\\\:prose-xl h1 {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h2) {
+      +   .md\\\\:prose-xl h2 {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h3) {
+      +   .md\\\\:prose-xl h3 {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h4) {
+      +   .md\\\\:prose-xl h4 {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(img) {
+      +   .md\\\\:prose-xl img {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(video) {
+      +   .md\\\\:prose-xl video {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(figure) {
+      +   .md\\\\:prose-xl figure {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(figure > *) {
+      +   .md\\\\:prose-xl figure > * {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(figure figcaption) {
+      +   .md\\\\:prose-xl figure figcaption {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(code) {
+      +   .md\\\\:prose-xl code {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h2 code) {
+      +   .md\\\\:prose-xl h2 code {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h3 code) {
+      +   .md\\\\:prose-xl h3 code {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(pre) {
+      +   .md\\\\:prose-xl pre {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(ol) {
+      +   .md\\\\:prose-xl ol {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(ul) {
+      +   .md\\\\:prose-xl ul {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(li) {
+      +   .md\\\\:prose-xl li {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(ol > li) {
+      +   .md\\\\:prose-xl ol > li {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(ol > li)::before {
+      +   .md\\\\:prose-xl ol > li::before {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(ul > li) {
+      +   .md\\\\:prose-xl ul > li {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(ul > li)::before {
+      +   .md\\\\:prose-xl ul > li::before {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(> ul > li p) {
+      +   .md\\\\:prose-xl > ul > li p {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(> ul > li > *:first-child) {
+      +   .md\\\\:prose-xl > ul > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(> ul > li > *:last-child) {
+      +   .md\\\\:prose-xl > ul > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(> ol > li > *:first-child) {
+      +   .md\\\\:prose-xl > ol > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(> ol > li > *:last-child) {
+      +   .md\\\\:prose-xl > ol > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .md\\\\:prose-xl ul ul, .md\\\\:prose-xl ul ol, .md\\\\:prose-xl ol ul, .md\\\\:prose-xl ol ol {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(hr) {
+      +   .md\\\\:prose-xl hr {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(hr + *) {
+      +   .md\\\\:prose-xl hr + * {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h2 + *) {
+      +   .md\\\\:prose-xl h2 + * {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h3 + *) {
+      +   .md\\\\:prose-xl h3 + * {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(h4 + *) {
+      +   .md\\\\:prose-xl h4 + * {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(table) {
+      +   .md\\\\:prose-xl table {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(thead th) {
+      +   .md\\\\:prose-xl thead th {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(thead th:first-child) {
+      +   .md\\\\:prose-xl thead th:first-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(thead th:last-child) {
+      +   .md\\\\:prose-xl thead th:last-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(tbody td) {
+      +   .md\\\\:prose-xl tbody td {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(tbody td:first-child) {
+      +   .md\\\\:prose-xl tbody td:first-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(tbody td:last-child) {
+      +   .md\\\\:prose-xl tbody td:last-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(> :first-child) {
+      +   .md\\\\:prose-xl > :first-child {
+
+      ---
+
+      -   .md\\\\:prose-xl :where(> :last-child) {
+      +   .md\\\\:prose-xl > :last-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(p) {
+      +   .md\\\\:prose-2xl p {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where([class~='lead']) {
+      +   .md\\\\:prose-2xl [class~='lead'] {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(blockquote) {
+      +   .md\\\\:prose-2xl blockquote {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h1) {
+      +   .md\\\\:prose-2xl h1 {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h2) {
+      +   .md\\\\:prose-2xl h2 {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h3) {
+      +   .md\\\\:prose-2xl h3 {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h4) {
+      +   .md\\\\:prose-2xl h4 {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(img) {
+      +   .md\\\\:prose-2xl img {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(video) {
+      +   .md\\\\:prose-2xl video {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(figure) {
+      +   .md\\\\:prose-2xl figure {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(figure > *) {
+      +   .md\\\\:prose-2xl figure > * {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(figure figcaption) {
+      +   .md\\\\:prose-2xl figure figcaption {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(code) {
+      +   .md\\\\:prose-2xl code {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h2 code) {
+      +   .md\\\\:prose-2xl h2 code {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h3 code) {
+      +   .md\\\\:prose-2xl h3 code {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(pre) {
+      +   .md\\\\:prose-2xl pre {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(ol) {
+      +   .md\\\\:prose-2xl ol {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(ul) {
+      +   .md\\\\:prose-2xl ul {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(li) {
+      +   .md\\\\:prose-2xl li {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(ol > li) {
+      +   .md\\\\:prose-2xl ol > li {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(ol > li)::before {
+      +   .md\\\\:prose-2xl ol > li::before {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(ul > li) {
+      +   .md\\\\:prose-2xl ul > li {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(ul > li)::before {
+      +   .md\\\\:prose-2xl ul > li::before {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(> ul > li p) {
+      +   .md\\\\:prose-2xl > ul > li p {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(> ul > li > *:first-child) {
+      +   .md\\\\:prose-2xl > ul > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(> ul > li > *:last-child) {
+      +   .md\\\\:prose-2xl > ul > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(> ol > li > *:first-child) {
+      +   .md\\\\:prose-2xl > ol > li > *:first-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(> ol > li > *:last-child) {
+      +   .md\\\\:prose-2xl > ol > li > *:last-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .md\\\\:prose-2xl ul ul, .md\\\\:prose-2xl ul ol, .md\\\\:prose-2xl ol ul, .md\\\\:prose-2xl ol ol {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(hr) {
+      +   .md\\\\:prose-2xl hr {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(hr + *) {
+      +   .md\\\\:prose-2xl hr + * {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h2 + *) {
+      +   .md\\\\:prose-2xl h2 + * {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h3 + *) {
+      +   .md\\\\:prose-2xl h3 + * {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(h4 + *) {
+      +   .md\\\\:prose-2xl h4 + * {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(table) {
+      +   .md\\\\:prose-2xl table {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(thead th) {
+      +   .md\\\\:prose-2xl thead th {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(thead th:first-child) {
+      +   .md\\\\:prose-2xl thead th:first-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(thead th:last-child) {
+      +   .md\\\\:prose-2xl thead th:last-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(tbody td) {
+      +   .md\\\\:prose-2xl tbody td {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(tbody td:first-child) {
+      +   .md\\\\:prose-2xl tbody td:first-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(tbody td:last-child) {
+      +   .md\\\\:prose-2xl tbody td:last-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(> :first-child) {
+      +   .md\\\\:prose-2xl > :first-child {
+
+      ---
+
+      -   .md\\\\:prose-2xl :where(> :last-child) {
+      +   .md\\\\:prose-2xl > :last-child {
+
+      ---
+
+      -   .md\\\\:prose-red :where(a) {
+      +   .md\\\\:prose-red a {
+
+      ---
+
+      -   .md\\\\:prose-red :where(a code) {
+      +   .md\\\\:prose-red a code {
+
+      ---
+
+      -   .md\\\\:prose-yellow :where(a) {
+      +   .md\\\\:prose-yellow a {
+
+      ---
+
+      -   .md\\\\:prose-yellow :where(a code) {
+      +   .md\\\\:prose-yellow a code {
+
+      ---
+
+      -   .md\\\\:prose-green :where(a) {
+      +   .md\\\\:prose-green a {
+
+      ---
+
+      -   .md\\\\:prose-green :where(a code) {
+      +   .md\\\\:prose-green a code {
+
+      ---
+
+      -   .md\\\\:prose-blue :where(a) {
+      +   .md\\\\:prose-blue a {
+
+      ---
+
+      -   .md\\\\:prose-blue :where(a code) {
+      +   .md\\\\:prose-blue a code {
+
+      ---
+
+      -   .md\\\\:prose-indigo :where(a) {
+      +   .md\\\\:prose-indigo a {
+
+      ---
+
+      -   .md\\\\:prose-indigo :where(a code) {
+      +   .md\\\\:prose-indigo a code {
+
+      ---
+
+      -   .md\\\\:prose-purple :where(a) {
+      +   .md\\\\:prose-purple a {
+
+      ---
+
+      -   .md\\\\:prose-purple :where(a code) {
+      +   .md\\\\:prose-purple a code {
+
+      ---
+
+      -   .md\\\\:prose-pink :where(a) {
+      +   .md\\\\:prose-pink a {
+
+      ---
+
+      -   .md\\\\:prose-pink :where(a code) {
+      +   .md\\\\:prose-pink a code {
+
+      ---
+
+      -   .lg\\\\:prose :where([class~='lead']) {
+      +   .lg\\\\:prose [class~='lead'] {
+
+      ---
+
+      -   .lg\\\\:prose :where(a) {
+      +   .lg\\\\:prose a {
+
+      ---
+
+      -   .lg\\\\:prose :where(strong) {
+      +   .lg\\\\:prose strong {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='A']) {
+      +   .lg\\\\:prose ol[type='A'] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='a']) {
+      +   .lg\\\\:prose ol[type='a'] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='A' s]) {
+      +   .lg\\\\:prose ol[type='A' s] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='a' s]) {
+      +   .lg\\\\:prose ol[type='a' s] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='I']) {
+      +   .lg\\\\:prose ol[type='I'] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='i']) {
+      +   .lg\\\\:prose ol[type='i'] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='I' s]) {
+      +   .lg\\\\:prose ol[type='I' s] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='i' s]) {
+      +   .lg\\\\:prose ol[type='i' s] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol[type='1']) {
+      +   .lg\\\\:prose ol[type='1'] {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol > li) {
+      +   .lg\\\\:prose ol > li {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol > li)::before {
+      +   .lg\\\\:prose ol > li::before {
+
+      ---
+
+      -   .lg\\\\:prose :where(ul > li) {
+      +   .lg\\\\:prose ul > li {
+
+      ---
+
+      -   .lg\\\\:prose :where(ul > li)::before {
+      +   .lg\\\\:prose ul > li::before {
+
+      ---
+
+      -   .lg\\\\:prose :where(hr) {
+      +   .lg\\\\:prose hr {
+
+      ---
+
+      -   .lg\\\\:prose :where(blockquote) {
+      +   .lg\\\\:prose blockquote {
+
+      ---
+
+      -   .lg\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .lg\\\\:prose blockquote p:first-of-type::before {
+
+      ---
+
+      -   .lg\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .lg\\\\:prose blockquote p:last-of-type::after {
+
+      ---
+
+      -   .lg\\\\:prose :where(h1) {
+      +   .lg\\\\:prose h1 {
+
+      ---
+
+      -   .lg\\\\:prose :where(h1 strong) {
+      +   .lg\\\\:prose h1 strong {
+
+      ---
+
+      -   .lg\\\\:prose :where(h2) {
+      +   .lg\\\\:prose h2 {
+
+      ---
+
+      -   .lg\\\\:prose :where(h2 strong) {
+      +   .lg\\\\:prose h2 strong {
+
+      ---
+
+      -   .lg\\\\:prose :where(h3) {
+      +   .lg\\\\:prose h3 {
+
+      ---
+
+      -   .lg\\\\:prose :where(h3 strong) {
+      +   .lg\\\\:prose h3 strong {
+
+      ---
+
+      -   .lg\\\\:prose :where(h4) {
+      +   .lg\\\\:prose h4 {
+
+      ---
+
+      -   .lg\\\\:prose :where(h4 strong) {
+      +   .lg\\\\:prose h4 strong {
+
+      ---
+
+      -   .lg\\\\:prose :where(figure figcaption) {
+      +   .lg\\\\:prose figure figcaption {
+
+      ---
+
+      -   .lg\\\\:prose :where(code) {
+      +   .lg\\\\:prose code {
+
+      ---
+
+      -   .lg\\\\:prose :where(code)::before {
+      +   .lg\\\\:prose code::before {
+
+      ---
+
+      -   .lg\\\\:prose :where(code)::after {
+      +   .lg\\\\:prose code::after {
+
+      ---
+
+      -   .lg\\\\:prose :where(a code) {
+      +   .lg\\\\:prose a code {
+
+      ---
+
+      -   .lg\\\\:prose :where(pre) {
+      +   .lg\\\\:prose pre {
+
+      ---
+
+      -   .lg\\\\:prose :where(pre code) {
+      +   .lg\\\\:prose pre code {
+
+      ---
+
+      -   .lg\\\\:prose :where(pre code)::before {
+      +   .lg\\\\:prose pre code::before {
+
+      ---
+
+      -   .lg\\\\:prose :where(pre code)::after {
+      +   .lg\\\\:prose pre code::after {
+
+      ---
+
+      -   .lg\\\\:prose :where(table) {
+      +   .lg\\\\:prose table {
+
+      ---
+
+      -   .lg\\\\:prose :where(thead) {
+      +   .lg\\\\:prose thead {
+
+      ---
+
+      -   .lg\\\\:prose :where(thead th) {
+      +   .lg\\\\:prose thead th {
+
+      ---
+
+      -   .lg\\\\:prose :where(tbody tr) {
+      +   .lg\\\\:prose tbody tr {
+
+      ---
+
+      -   .lg\\\\:prose :where(tbody tr:last-child) {
+      +   .lg\\\\:prose tbody tr:last-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(tbody td) {
+      +   .lg\\\\:prose tbody td {
+
+      ---
+
+      -   .lg\\\\:prose :where(p) {
+      +   .lg\\\\:prose p {
+
+      ---
+
+      -   .lg\\\\:prose :where(img) {
+      +   .lg\\\\:prose img {
+
+      ---
+
+      -   .lg\\\\:prose :where(video) {
+      +   .lg\\\\:prose video {
+
+      ---
+
+      -   .lg\\\\:prose :where(figure) {
+      +   .lg\\\\:prose figure {
+
+      ---
+
+      -   .lg\\\\:prose :where(figure > *) {
+      +   .lg\\\\:prose figure > * {
+
+      ---
+
+      -   .lg\\\\:prose :where(h2 code) {
+      +   .lg\\\\:prose h2 code {
+
+      ---
+
+      -   .lg\\\\:prose :where(h3 code) {
+      +   .lg\\\\:prose h3 code {
+
+      ---
+
+      -   .lg\\\\:prose :where(ol) {
+      +   .lg\\\\:prose ol {
+
+      ---
+
+      -   .lg\\\\:prose :where(ul) {
+      +   .lg\\\\:prose ul {
+
+      ---
+
+      -   .lg\\\\:prose :where(li) {
+      +   .lg\\\\:prose li {
+
+      ---
+
+      -   .lg\\\\:prose :where(> ul > li p) {
+      +   .lg\\\\:prose > ul > li p {
+
+      ---
+
+      -   .lg\\\\:prose :where(> ul > li > *:first-child) {
+      +   .lg\\\\:prose > ul > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(> ul > li > *:last-child) {
+      +   .lg\\\\:prose > ul > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(> ol > li > *:first-child) {
+      +   .lg\\\\:prose > ol > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(> ol > li > *:last-child) {
+      +   .lg\\\\:prose > ol > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .lg\\\\:prose ul ul, .lg\\\\:prose ul ol, .lg\\\\:prose ol ul, .lg\\\\:prose ol ol {
+
+      ---
+
+      -   .lg\\\\:prose :where(hr + *) {
+      +   .lg\\\\:prose hr + * {
+
+      ---
+
+      -   .lg\\\\:prose :where(h2 + *) {
+      +   .lg\\\\:prose h2 + * {
+
+      ---
+
+      -   .lg\\\\:prose :where(h3 + *) {
+      +   .lg\\\\:prose h3 + * {
+
+      ---
+
+      -   .lg\\\\:prose :where(h4 + *) {
+      +   .lg\\\\:prose h4 + * {
+
+      ---
+
+      -   .lg\\\\:prose :where(thead th:first-child) {
+      +   .lg\\\\:prose thead th:first-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(thead th:last-child) {
+      +   .lg\\\\:prose thead th:last-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(tbody td:first-child) {
+      +   .lg\\\\:prose tbody td:first-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(tbody td:last-child) {
+      +   .lg\\\\:prose tbody td:last-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(> :first-child) {
+      +   .lg\\\\:prose > :first-child {
+
+      ---
+
+      -   .lg\\\\:prose :where(> :last-child) {
+      +   .lg\\\\:prose > :last-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(p) {
+      +   .lg\\\\:prose-sm p {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where([class~='lead']) {
+      +   .lg\\\\:prose-sm [class~='lead'] {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(blockquote) {
+      +   .lg\\\\:prose-sm blockquote {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h1) {
+      +   .lg\\\\:prose-sm h1 {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h2) {
+      +   .lg\\\\:prose-sm h2 {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h3) {
+      +   .lg\\\\:prose-sm h3 {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h4) {
+      +   .lg\\\\:prose-sm h4 {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(img) {
+      +   .lg\\\\:prose-sm img {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(video) {
+      +   .lg\\\\:prose-sm video {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(figure) {
+      +   .lg\\\\:prose-sm figure {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(figure > *) {
+      +   .lg\\\\:prose-sm figure > * {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(figure figcaption) {
+      +   .lg\\\\:prose-sm figure figcaption {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(code) {
+      +   .lg\\\\:prose-sm code {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h2 code) {
+      +   .lg\\\\:prose-sm h2 code {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h3 code) {
+      +   .lg\\\\:prose-sm h3 code {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(pre) {
+      +   .lg\\\\:prose-sm pre {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(ol) {
+      +   .lg\\\\:prose-sm ol {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(ul) {
+      +   .lg\\\\:prose-sm ul {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(li) {
+      +   .lg\\\\:prose-sm li {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(ol > li) {
+      +   .lg\\\\:prose-sm ol > li {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(ol > li)::before {
+      +   .lg\\\\:prose-sm ol > li::before {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(ul > li) {
+      +   .lg\\\\:prose-sm ul > li {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(ul > li)::before {
+      +   .lg\\\\:prose-sm ul > li::before {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(> ul > li p) {
+      +   .lg\\\\:prose-sm > ul > li p {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(> ul > li > *:first-child) {
+      +   .lg\\\\:prose-sm > ul > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(> ul > li > *:last-child) {
+      +   .lg\\\\:prose-sm > ul > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(> ol > li > *:first-child) {
+      +   .lg\\\\:prose-sm > ol > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(> ol > li > *:last-child) {
+      +   .lg\\\\:prose-sm > ol > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .lg\\\\:prose-sm ul ul, .lg\\\\:prose-sm ul ol, .lg\\\\:prose-sm ol ul, .lg\\\\:prose-sm ol ol {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(hr) {
+      +   .lg\\\\:prose-sm hr {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(hr + *) {
+      +   .lg\\\\:prose-sm hr + * {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h2 + *) {
+      +   .lg\\\\:prose-sm h2 + * {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h3 + *) {
+      +   .lg\\\\:prose-sm h3 + * {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(h4 + *) {
+      +   .lg\\\\:prose-sm h4 + * {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(table) {
+      +   .lg\\\\:prose-sm table {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(thead th) {
+      +   .lg\\\\:prose-sm thead th {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(thead th:first-child) {
+      +   .lg\\\\:prose-sm thead th:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(thead th:last-child) {
+      +   .lg\\\\:prose-sm thead th:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(tbody td) {
+      +   .lg\\\\:prose-sm tbody td {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(tbody td:first-child) {
+      +   .lg\\\\:prose-sm tbody td:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(tbody td:last-child) {
+      +   .lg\\\\:prose-sm tbody td:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(> :first-child) {
+      +   .lg\\\\:prose-sm > :first-child {
+
+      ---
+
+      -   .lg\\\\:prose-sm :where(> :last-child) {
+      +   .lg\\\\:prose-sm > :last-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(p) {
+      +   .lg\\\\:prose-lg p {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where([class~='lead']) {
+      +   .lg\\\\:prose-lg [class~='lead'] {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(blockquote) {
+      +   .lg\\\\:prose-lg blockquote {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h1) {
+      +   .lg\\\\:prose-lg h1 {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h2) {
+      +   .lg\\\\:prose-lg h2 {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h3) {
+      +   .lg\\\\:prose-lg h3 {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h4) {
+      +   .lg\\\\:prose-lg h4 {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(img) {
+      +   .lg\\\\:prose-lg img {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(video) {
+      +   .lg\\\\:prose-lg video {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(figure) {
+      +   .lg\\\\:prose-lg figure {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(figure > *) {
+      +   .lg\\\\:prose-lg figure > * {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(figure figcaption) {
+      +   .lg\\\\:prose-lg figure figcaption {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(code) {
+      +   .lg\\\\:prose-lg code {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h2 code) {
+      +   .lg\\\\:prose-lg h2 code {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h3 code) {
+      +   .lg\\\\:prose-lg h3 code {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(pre) {
+      +   .lg\\\\:prose-lg pre {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(ol) {
+      +   .lg\\\\:prose-lg ol {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(ul) {
+      +   .lg\\\\:prose-lg ul {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(li) {
+      +   .lg\\\\:prose-lg li {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(ol > li) {
+      +   .lg\\\\:prose-lg ol > li {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(ol > li)::before {
+      +   .lg\\\\:prose-lg ol > li::before {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(ul > li) {
+      +   .lg\\\\:prose-lg ul > li {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(ul > li)::before {
+      +   .lg\\\\:prose-lg ul > li::before {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(> ul > li p) {
+      +   .lg\\\\:prose-lg > ul > li p {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(> ul > li > *:first-child) {
+      +   .lg\\\\:prose-lg > ul > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(> ul > li > *:last-child) {
+      +   .lg\\\\:prose-lg > ul > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(> ol > li > *:first-child) {
+      +   .lg\\\\:prose-lg > ol > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(> ol > li > *:last-child) {
+      +   .lg\\\\:prose-lg > ol > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .lg\\\\:prose-lg ul ul, .lg\\\\:prose-lg ul ol, .lg\\\\:prose-lg ol ul, .lg\\\\:prose-lg ol ol {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(hr) {
+      +   .lg\\\\:prose-lg hr {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(hr + *) {
+      +   .lg\\\\:prose-lg hr + * {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h2 + *) {
+      +   .lg\\\\:prose-lg h2 + * {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h3 + *) {
+      +   .lg\\\\:prose-lg h3 + * {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(h4 + *) {
+      +   .lg\\\\:prose-lg h4 + * {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(table) {
+      +   .lg\\\\:prose-lg table {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(thead th) {
+      +   .lg\\\\:prose-lg thead th {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(thead th:first-child) {
+      +   .lg\\\\:prose-lg thead th:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(thead th:last-child) {
+      +   .lg\\\\:prose-lg thead th:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(tbody td) {
+      +   .lg\\\\:prose-lg tbody td {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(tbody td:first-child) {
+      +   .lg\\\\:prose-lg tbody td:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(tbody td:last-child) {
+      +   .lg\\\\:prose-lg tbody td:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(> :first-child) {
+      +   .lg\\\\:prose-lg > :first-child {
+
+      ---
+
+      -   .lg\\\\:prose-lg :where(> :last-child) {
+      +   .lg\\\\:prose-lg > :last-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(p) {
+      +   .lg\\\\:prose-xl p {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where([class~='lead']) {
+      +   .lg\\\\:prose-xl [class~='lead'] {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(blockquote) {
+      +   .lg\\\\:prose-xl blockquote {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h1) {
+      +   .lg\\\\:prose-xl h1 {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h2) {
+      +   .lg\\\\:prose-xl h2 {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h3) {
+      +   .lg\\\\:prose-xl h3 {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h4) {
+      +   .lg\\\\:prose-xl h4 {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(img) {
+      +   .lg\\\\:prose-xl img {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(video) {
+      +   .lg\\\\:prose-xl video {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(figure) {
+      +   .lg\\\\:prose-xl figure {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(figure > *) {
+      +   .lg\\\\:prose-xl figure > * {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(figure figcaption) {
+      +   .lg\\\\:prose-xl figure figcaption {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(code) {
+      +   .lg\\\\:prose-xl code {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h2 code) {
+      +   .lg\\\\:prose-xl h2 code {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h3 code) {
+      +   .lg\\\\:prose-xl h3 code {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(pre) {
+      +   .lg\\\\:prose-xl pre {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(ol) {
+      +   .lg\\\\:prose-xl ol {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(ul) {
+      +   .lg\\\\:prose-xl ul {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(li) {
+      +   .lg\\\\:prose-xl li {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(ol > li) {
+      +   .lg\\\\:prose-xl ol > li {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(ol > li)::before {
+      +   .lg\\\\:prose-xl ol > li::before {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(ul > li) {
+      +   .lg\\\\:prose-xl ul > li {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(ul > li)::before {
+      +   .lg\\\\:prose-xl ul > li::before {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(> ul > li p) {
+      +   .lg\\\\:prose-xl > ul > li p {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(> ul > li > *:first-child) {
+      +   .lg\\\\:prose-xl > ul > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(> ul > li > *:last-child) {
+      +   .lg\\\\:prose-xl > ul > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(> ol > li > *:first-child) {
+      +   .lg\\\\:prose-xl > ol > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(> ol > li > *:last-child) {
+      +   .lg\\\\:prose-xl > ol > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .lg\\\\:prose-xl ul ul, .lg\\\\:prose-xl ul ol, .lg\\\\:prose-xl ol ul, .lg\\\\:prose-xl ol ol {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(hr) {
+      +   .lg\\\\:prose-xl hr {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(hr + *) {
+      +   .lg\\\\:prose-xl hr + * {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h2 + *) {
+      +   .lg\\\\:prose-xl h2 + * {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h3 + *) {
+      +   .lg\\\\:prose-xl h3 + * {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(h4 + *) {
+      +   .lg\\\\:prose-xl h4 + * {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(table) {
+      +   .lg\\\\:prose-xl table {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(thead th) {
+      +   .lg\\\\:prose-xl thead th {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(thead th:first-child) {
+      +   .lg\\\\:prose-xl thead th:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(thead th:last-child) {
+      +   .lg\\\\:prose-xl thead th:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(tbody td) {
+      +   .lg\\\\:prose-xl tbody td {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(tbody td:first-child) {
+      +   .lg\\\\:prose-xl tbody td:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(tbody td:last-child) {
+      +   .lg\\\\:prose-xl tbody td:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(> :first-child) {
+      +   .lg\\\\:prose-xl > :first-child {
+
+      ---
+
+      -   .lg\\\\:prose-xl :where(> :last-child) {
+      +   .lg\\\\:prose-xl > :last-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(p) {
+      +   .lg\\\\:prose-2xl p {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where([class~='lead']) {
+      +   .lg\\\\:prose-2xl [class~='lead'] {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(blockquote) {
+      +   .lg\\\\:prose-2xl blockquote {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h1) {
+      +   .lg\\\\:prose-2xl h1 {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h2) {
+      +   .lg\\\\:prose-2xl h2 {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h3) {
+      +   .lg\\\\:prose-2xl h3 {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h4) {
+      +   .lg\\\\:prose-2xl h4 {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(img) {
+      +   .lg\\\\:prose-2xl img {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(video) {
+      +   .lg\\\\:prose-2xl video {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(figure) {
+      +   .lg\\\\:prose-2xl figure {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(figure > *) {
+      +   .lg\\\\:prose-2xl figure > * {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(figure figcaption) {
+      +   .lg\\\\:prose-2xl figure figcaption {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(code) {
+      +   .lg\\\\:prose-2xl code {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h2 code) {
+      +   .lg\\\\:prose-2xl h2 code {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h3 code) {
+      +   .lg\\\\:prose-2xl h3 code {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(pre) {
+      +   .lg\\\\:prose-2xl pre {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(ol) {
+      +   .lg\\\\:prose-2xl ol {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(ul) {
+      +   .lg\\\\:prose-2xl ul {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(li) {
+      +   .lg\\\\:prose-2xl li {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(ol > li) {
+      +   .lg\\\\:prose-2xl ol > li {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(ol > li)::before {
+      +   .lg\\\\:prose-2xl ol > li::before {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(ul > li) {
+      +   .lg\\\\:prose-2xl ul > li {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(ul > li)::before {
+      +   .lg\\\\:prose-2xl ul > li::before {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(> ul > li p) {
+      +   .lg\\\\:prose-2xl > ul > li p {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(> ul > li > *:first-child) {
+      +   .lg\\\\:prose-2xl > ul > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(> ul > li > *:last-child) {
+      +   .lg\\\\:prose-2xl > ul > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(> ol > li > *:first-child) {
+      +   .lg\\\\:prose-2xl > ol > li > *:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(> ol > li > *:last-child) {
+      +   .lg\\\\:prose-2xl > ol > li > *:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .lg\\\\:prose-2xl ul ul, .lg\\\\:prose-2xl ul ol, .lg\\\\:prose-2xl ol ul, .lg\\\\:prose-2xl ol ol {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(hr) {
+      +   .lg\\\\:prose-2xl hr {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(hr + *) {
+      +   .lg\\\\:prose-2xl hr + * {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h2 + *) {
+      +   .lg\\\\:prose-2xl h2 + * {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h3 + *) {
+      +   .lg\\\\:prose-2xl h3 + * {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(h4 + *) {
+      +   .lg\\\\:prose-2xl h4 + * {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(table) {
+      +   .lg\\\\:prose-2xl table {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(thead th) {
+      +   .lg\\\\:prose-2xl thead th {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(thead th:first-child) {
+      +   .lg\\\\:prose-2xl thead th:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(thead th:last-child) {
+      +   .lg\\\\:prose-2xl thead th:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(tbody td) {
+      +   .lg\\\\:prose-2xl tbody td {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(tbody td:first-child) {
+      +   .lg\\\\:prose-2xl tbody td:first-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(tbody td:last-child) {
+      +   .lg\\\\:prose-2xl tbody td:last-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(> :first-child) {
+      +   .lg\\\\:prose-2xl > :first-child {
+
+      ---
+
+      -   .lg\\\\:prose-2xl :where(> :last-child) {
+      +   .lg\\\\:prose-2xl > :last-child {
+
+      ---
+
+      -   .lg\\\\:prose-red :where(a) {
+      +   .lg\\\\:prose-red a {
+
+      ---
+
+      -   .lg\\\\:prose-red :where(a code) {
+      +   .lg\\\\:prose-red a code {
+
+      ---
+
+      -   .lg\\\\:prose-yellow :where(a) {
+      +   .lg\\\\:prose-yellow a {
+
+      ---
+
+      -   .lg\\\\:prose-yellow :where(a code) {
+      +   .lg\\\\:prose-yellow a code {
+
+      ---
+
+      -   .lg\\\\:prose-green :where(a) {
+      +   .lg\\\\:prose-green a {
+
+      ---
+
+      -   .lg\\\\:prose-green :where(a code) {
+      +   .lg\\\\:prose-green a code {
+
+      ---
+
+      -   .lg\\\\:prose-blue :where(a) {
+      +   .lg\\\\:prose-blue a {
+
+      ---
+
+      -   .lg\\\\:prose-blue :where(a code) {
+      +   .lg\\\\:prose-blue a code {
+
+      ---
+
+      -   .lg\\\\:prose-indigo :where(a) {
+      +   .lg\\\\:prose-indigo a {
+
+      ---
+
+      -   .lg\\\\:prose-indigo :where(a code) {
+      +   .lg\\\\:prose-indigo a code {
+
+      ---
+
+      -   .lg\\\\:prose-purple :where(a) {
+      +   .lg\\\\:prose-purple a {
+
+      ---
+
+      -   .lg\\\\:prose-purple :where(a code) {
+      +   .lg\\\\:prose-purple a code {
+
+      ---
+
+      -   .lg\\\\:prose-pink :where(a) {
+      +   .lg\\\\:prose-pink a {
+
+      ---
+
+      -   .lg\\\\:prose-pink :where(a code) {
+      +   .lg\\\\:prose-pink a code {
+
+      ---
+
+      -   .xl\\\\:prose :where([class~='lead']) {
+      +   .xl\\\\:prose [class~='lead'] {
+
+      ---
+
+      -   .xl\\\\:prose :where(a) {
+      +   .xl\\\\:prose a {
+
+      ---
+
+      -   .xl\\\\:prose :where(strong) {
+      +   .xl\\\\:prose strong {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='A']) {
+      +   .xl\\\\:prose ol[type='A'] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='a']) {
+      +   .xl\\\\:prose ol[type='a'] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='A' s]) {
+      +   .xl\\\\:prose ol[type='A' s] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='a' s]) {
+      +   .xl\\\\:prose ol[type='a' s] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='I']) {
+      +   .xl\\\\:prose ol[type='I'] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='i']) {
+      +   .xl\\\\:prose ol[type='i'] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='I' s]) {
+      +   .xl\\\\:prose ol[type='I' s] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='i' s]) {
+      +   .xl\\\\:prose ol[type='i' s] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol[type='1']) {
+      +   .xl\\\\:prose ol[type='1'] {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol > li) {
+      +   .xl\\\\:prose ol > li {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol > li)::before {
+      +   .xl\\\\:prose ol > li::before {
+
+      ---
+
+      -   .xl\\\\:prose :where(ul > li) {
+      +   .xl\\\\:prose ul > li {
+
+      ---
+
+      -   .xl\\\\:prose :where(ul > li)::before {
+      +   .xl\\\\:prose ul > li::before {
+
+      ---
+
+      -   .xl\\\\:prose :where(hr) {
+      +   .xl\\\\:prose hr {
+
+      ---
+
+      -   .xl\\\\:prose :where(blockquote) {
+      +   .xl\\\\:prose blockquote {
+
+      ---
+
+      -   .xl\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .xl\\\\:prose blockquote p:first-of-type::before {
+
+      ---
+
+      -   .xl\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .xl\\\\:prose blockquote p:last-of-type::after {
+
+      ---
+
+      -   .xl\\\\:prose :where(h1) {
+      +   .xl\\\\:prose h1 {
+
+      ---
+
+      -   .xl\\\\:prose :where(h1 strong) {
+      +   .xl\\\\:prose h1 strong {
+
+      ---
+
+      -   .xl\\\\:prose :where(h2) {
+      +   .xl\\\\:prose h2 {
+
+      ---
+
+      -   .xl\\\\:prose :where(h2 strong) {
+      +   .xl\\\\:prose h2 strong {
+
+      ---
+
+      -   .xl\\\\:prose :where(h3) {
+      +   .xl\\\\:prose h3 {
+
+      ---
+
+      -   .xl\\\\:prose :where(h3 strong) {
+      +   .xl\\\\:prose h3 strong {
+
+      ---
+
+      -   .xl\\\\:prose :where(h4) {
+      +   .xl\\\\:prose h4 {
+
+      ---
+
+      -   .xl\\\\:prose :where(h4 strong) {
+      +   .xl\\\\:prose h4 strong {
+
+      ---
+
+      -   .xl\\\\:prose :where(figure figcaption) {
+      +   .xl\\\\:prose figure figcaption {
+
+      ---
+
+      -   .xl\\\\:prose :where(code) {
+      +   .xl\\\\:prose code {
+
+      ---
+
+      -   .xl\\\\:prose :where(code)::before {
+      +   .xl\\\\:prose code::before {
+
+      ---
+
+      -   .xl\\\\:prose :where(code)::after {
+      +   .xl\\\\:prose code::after {
+
+      ---
+
+      -   .xl\\\\:prose :where(a code) {
+      +   .xl\\\\:prose a code {
+
+      ---
+
+      -   .xl\\\\:prose :where(pre) {
+      +   .xl\\\\:prose pre {
+
+      ---
+
+      -   .xl\\\\:prose :where(pre code) {
+      +   .xl\\\\:prose pre code {
+
+      ---
+
+      -   .xl\\\\:prose :where(pre code)::before {
+      +   .xl\\\\:prose pre code::before {
+
+      ---
+
+      -   .xl\\\\:prose :where(pre code)::after {
+      +   .xl\\\\:prose pre code::after {
+
+      ---
+
+      -   .xl\\\\:prose :where(table) {
+      +   .xl\\\\:prose table {
+
+      ---
+
+      -   .xl\\\\:prose :where(thead) {
+      +   .xl\\\\:prose thead {
+
+      ---
+
+      -   .xl\\\\:prose :where(thead th) {
+      +   .xl\\\\:prose thead th {
+
+      ---
+
+      -   .xl\\\\:prose :where(tbody tr) {
+      +   .xl\\\\:prose tbody tr {
+
+      ---
+
+      -   .xl\\\\:prose :where(tbody tr:last-child) {
+      +   .xl\\\\:prose tbody tr:last-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(tbody td) {
+      +   .xl\\\\:prose tbody td {
+
+      ---
+
+      -   .xl\\\\:prose :where(p) {
+      +   .xl\\\\:prose p {
+
+      ---
+
+      -   .xl\\\\:prose :where(img) {
+      +   .xl\\\\:prose img {
+
+      ---
+
+      -   .xl\\\\:prose :where(video) {
+      +   .xl\\\\:prose video {
+
+      ---
+
+      -   .xl\\\\:prose :where(figure) {
+      +   .xl\\\\:prose figure {
+
+      ---
+
+      -   .xl\\\\:prose :where(figure > *) {
+      +   .xl\\\\:prose figure > * {
+
+      ---
+
+      -   .xl\\\\:prose :where(h2 code) {
+      +   .xl\\\\:prose h2 code {
+
+      ---
+
+      -   .xl\\\\:prose :where(h3 code) {
+      +   .xl\\\\:prose h3 code {
+
+      ---
+
+      -   .xl\\\\:prose :where(ol) {
+      +   .xl\\\\:prose ol {
+
+      ---
+
+      -   .xl\\\\:prose :where(ul) {
+      +   .xl\\\\:prose ul {
+
+      ---
+
+      -   .xl\\\\:prose :where(li) {
+      +   .xl\\\\:prose li {
+
+      ---
+
+      -   .xl\\\\:prose :where(> ul > li p) {
+      +   .xl\\\\:prose > ul > li p {
+
+      ---
+
+      -   .xl\\\\:prose :where(> ul > li > *:first-child) {
+      +   .xl\\\\:prose > ul > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(> ul > li > *:last-child) {
+      +   .xl\\\\:prose > ul > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(> ol > li > *:first-child) {
+      +   .xl\\\\:prose > ol > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(> ol > li > *:last-child) {
+      +   .xl\\\\:prose > ol > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .xl\\\\:prose ul ul, .xl\\\\:prose ul ol, .xl\\\\:prose ol ul, .xl\\\\:prose ol ol {
+
+      ---
+
+      -   .xl\\\\:prose :where(hr + *) {
+      +   .xl\\\\:prose hr + * {
+
+      ---
+
+      -   .xl\\\\:prose :where(h2 + *) {
+      +   .xl\\\\:prose h2 + * {
+
+      ---
+
+      -   .xl\\\\:prose :where(h3 + *) {
+      +   .xl\\\\:prose h3 + * {
+
+      ---
+
+      -   .xl\\\\:prose :where(h4 + *) {
+      +   .xl\\\\:prose h4 + * {
+
+      ---
+
+      -   .xl\\\\:prose :where(thead th:first-child) {
+      +   .xl\\\\:prose thead th:first-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(thead th:last-child) {
+      +   .xl\\\\:prose thead th:last-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(tbody td:first-child) {
+      +   .xl\\\\:prose tbody td:first-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(tbody td:last-child) {
+      +   .xl\\\\:prose tbody td:last-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(> :first-child) {
+      +   .xl\\\\:prose > :first-child {
+
+      ---
+
+      -   .xl\\\\:prose :where(> :last-child) {
+      +   .xl\\\\:prose > :last-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(p) {
+      +   .xl\\\\:prose-sm p {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where([class~='lead']) {
+      +   .xl\\\\:prose-sm [class~='lead'] {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(blockquote) {
+      +   .xl\\\\:prose-sm blockquote {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h1) {
+      +   .xl\\\\:prose-sm h1 {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h2) {
+      +   .xl\\\\:prose-sm h2 {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h3) {
+      +   .xl\\\\:prose-sm h3 {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h4) {
+      +   .xl\\\\:prose-sm h4 {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(img) {
+      +   .xl\\\\:prose-sm img {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(video) {
+      +   .xl\\\\:prose-sm video {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(figure) {
+      +   .xl\\\\:prose-sm figure {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(figure > *) {
+      +   .xl\\\\:prose-sm figure > * {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(figure figcaption) {
+      +   .xl\\\\:prose-sm figure figcaption {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(code) {
+      +   .xl\\\\:prose-sm code {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h2 code) {
+      +   .xl\\\\:prose-sm h2 code {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h3 code) {
+      +   .xl\\\\:prose-sm h3 code {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(pre) {
+      +   .xl\\\\:prose-sm pre {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(ol) {
+      +   .xl\\\\:prose-sm ol {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(ul) {
+      +   .xl\\\\:prose-sm ul {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(li) {
+      +   .xl\\\\:prose-sm li {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(ol > li) {
+      +   .xl\\\\:prose-sm ol > li {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(ol > li)::before {
+      +   .xl\\\\:prose-sm ol > li::before {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(ul > li) {
+      +   .xl\\\\:prose-sm ul > li {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(ul > li)::before {
+      +   .xl\\\\:prose-sm ul > li::before {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(> ul > li p) {
+      +   .xl\\\\:prose-sm > ul > li p {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(> ul > li > *:first-child) {
+      +   .xl\\\\:prose-sm > ul > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(> ul > li > *:last-child) {
+      +   .xl\\\\:prose-sm > ul > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(> ol > li > *:first-child) {
+      +   .xl\\\\:prose-sm > ol > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(> ol > li > *:last-child) {
+      +   .xl\\\\:prose-sm > ol > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .xl\\\\:prose-sm ul ul, .xl\\\\:prose-sm ul ol, .xl\\\\:prose-sm ol ul, .xl\\\\:prose-sm ol ol {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(hr) {
+      +   .xl\\\\:prose-sm hr {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(hr + *) {
+      +   .xl\\\\:prose-sm hr + * {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h2 + *) {
+      +   .xl\\\\:prose-sm h2 + * {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h3 + *) {
+      +   .xl\\\\:prose-sm h3 + * {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(h4 + *) {
+      +   .xl\\\\:prose-sm h4 + * {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(table) {
+      +   .xl\\\\:prose-sm table {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(thead th) {
+      +   .xl\\\\:prose-sm thead th {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(thead th:first-child) {
+      +   .xl\\\\:prose-sm thead th:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(thead th:last-child) {
+      +   .xl\\\\:prose-sm thead th:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(tbody td) {
+      +   .xl\\\\:prose-sm tbody td {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(tbody td:first-child) {
+      +   .xl\\\\:prose-sm tbody td:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(tbody td:last-child) {
+      +   .xl\\\\:prose-sm tbody td:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(> :first-child) {
+      +   .xl\\\\:prose-sm > :first-child {
+
+      ---
+
+      -   .xl\\\\:prose-sm :where(> :last-child) {
+      +   .xl\\\\:prose-sm > :last-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(p) {
+      +   .xl\\\\:prose-lg p {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where([class~='lead']) {
+      +   .xl\\\\:prose-lg [class~='lead'] {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(blockquote) {
+      +   .xl\\\\:prose-lg blockquote {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h1) {
+      +   .xl\\\\:prose-lg h1 {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h2) {
+      +   .xl\\\\:prose-lg h2 {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h3) {
+      +   .xl\\\\:prose-lg h3 {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h4) {
+      +   .xl\\\\:prose-lg h4 {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(img) {
+      +   .xl\\\\:prose-lg img {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(video) {
+      +   .xl\\\\:prose-lg video {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(figure) {
+      +   .xl\\\\:prose-lg figure {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(figure > *) {
+      +   .xl\\\\:prose-lg figure > * {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(figure figcaption) {
+      +   .xl\\\\:prose-lg figure figcaption {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(code) {
+      +   .xl\\\\:prose-lg code {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h2 code) {
+      +   .xl\\\\:prose-lg h2 code {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h3 code) {
+      +   .xl\\\\:prose-lg h3 code {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(pre) {
+      +   .xl\\\\:prose-lg pre {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(ol) {
+      +   .xl\\\\:prose-lg ol {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(ul) {
+      +   .xl\\\\:prose-lg ul {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(li) {
+      +   .xl\\\\:prose-lg li {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(ol > li) {
+      +   .xl\\\\:prose-lg ol > li {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(ol > li)::before {
+      +   .xl\\\\:prose-lg ol > li::before {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(ul > li) {
+      +   .xl\\\\:prose-lg ul > li {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(ul > li)::before {
+      +   .xl\\\\:prose-lg ul > li::before {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(> ul > li p) {
+      +   .xl\\\\:prose-lg > ul > li p {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(> ul > li > *:first-child) {
+      +   .xl\\\\:prose-lg > ul > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(> ul > li > *:last-child) {
+      +   .xl\\\\:prose-lg > ul > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(> ol > li > *:first-child) {
+      +   .xl\\\\:prose-lg > ol > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(> ol > li > *:last-child) {
+      +   .xl\\\\:prose-lg > ol > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .xl\\\\:prose-lg ul ul, .xl\\\\:prose-lg ul ol, .xl\\\\:prose-lg ol ul, .xl\\\\:prose-lg ol ol {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(hr) {
+      +   .xl\\\\:prose-lg hr {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(hr + *) {
+      +   .xl\\\\:prose-lg hr + * {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h2 + *) {
+      +   .xl\\\\:prose-lg h2 + * {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h3 + *) {
+      +   .xl\\\\:prose-lg h3 + * {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(h4 + *) {
+      +   .xl\\\\:prose-lg h4 + * {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(table) {
+      +   .xl\\\\:prose-lg table {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(thead th) {
+      +   .xl\\\\:prose-lg thead th {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(thead th:first-child) {
+      +   .xl\\\\:prose-lg thead th:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(thead th:last-child) {
+      +   .xl\\\\:prose-lg thead th:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(tbody td) {
+      +   .xl\\\\:prose-lg tbody td {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(tbody td:first-child) {
+      +   .xl\\\\:prose-lg tbody td:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(tbody td:last-child) {
+      +   .xl\\\\:prose-lg tbody td:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(> :first-child) {
+      +   .xl\\\\:prose-lg > :first-child {
+
+      ---
+
+      -   .xl\\\\:prose-lg :where(> :last-child) {
+      +   .xl\\\\:prose-lg > :last-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(p) {
+      +   .xl\\\\:prose-xl p {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where([class~='lead']) {
+      +   .xl\\\\:prose-xl [class~='lead'] {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(blockquote) {
+      +   .xl\\\\:prose-xl blockquote {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h1) {
+      +   .xl\\\\:prose-xl h1 {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h2) {
+      +   .xl\\\\:prose-xl h2 {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h3) {
+      +   .xl\\\\:prose-xl h3 {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h4) {
+      +   .xl\\\\:prose-xl h4 {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(img) {
+      +   .xl\\\\:prose-xl img {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(video) {
+      +   .xl\\\\:prose-xl video {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(figure) {
+      +   .xl\\\\:prose-xl figure {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(figure > *) {
+      +   .xl\\\\:prose-xl figure > * {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(figure figcaption) {
+      +   .xl\\\\:prose-xl figure figcaption {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(code) {
+      +   .xl\\\\:prose-xl code {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h2 code) {
+      +   .xl\\\\:prose-xl h2 code {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h3 code) {
+      +   .xl\\\\:prose-xl h3 code {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(pre) {
+      +   .xl\\\\:prose-xl pre {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(ol) {
+      +   .xl\\\\:prose-xl ol {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(ul) {
+      +   .xl\\\\:prose-xl ul {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(li) {
+      +   .xl\\\\:prose-xl li {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(ol > li) {
+      +   .xl\\\\:prose-xl ol > li {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(ol > li)::before {
+      +   .xl\\\\:prose-xl ol > li::before {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(ul > li) {
+      +   .xl\\\\:prose-xl ul > li {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(ul > li)::before {
+      +   .xl\\\\:prose-xl ul > li::before {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(> ul > li p) {
+      +   .xl\\\\:prose-xl > ul > li p {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(> ul > li > *:first-child) {
+      +   .xl\\\\:prose-xl > ul > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(> ul > li > *:last-child) {
+      +   .xl\\\\:prose-xl > ul > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(> ol > li > *:first-child) {
+      +   .xl\\\\:prose-xl > ol > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(> ol > li > *:last-child) {
+      +   .xl\\\\:prose-xl > ol > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .xl\\\\:prose-xl ul ul, .xl\\\\:prose-xl ul ol, .xl\\\\:prose-xl ol ul, .xl\\\\:prose-xl ol ol {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(hr) {
+      +   .xl\\\\:prose-xl hr {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(hr + *) {
+      +   .xl\\\\:prose-xl hr + * {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h2 + *) {
+      +   .xl\\\\:prose-xl h2 + * {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h3 + *) {
+      +   .xl\\\\:prose-xl h3 + * {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(h4 + *) {
+      +   .xl\\\\:prose-xl h4 + * {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(table) {
+      +   .xl\\\\:prose-xl table {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(thead th) {
+      +   .xl\\\\:prose-xl thead th {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(thead th:first-child) {
+      +   .xl\\\\:prose-xl thead th:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(thead th:last-child) {
+      +   .xl\\\\:prose-xl thead th:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(tbody td) {
+      +   .xl\\\\:prose-xl tbody td {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(tbody td:first-child) {
+      +   .xl\\\\:prose-xl tbody td:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(tbody td:last-child) {
+      +   .xl\\\\:prose-xl tbody td:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(> :first-child) {
+      +   .xl\\\\:prose-xl > :first-child {
+
+      ---
+
+      -   .xl\\\\:prose-xl :where(> :last-child) {
+      +   .xl\\\\:prose-xl > :last-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(p) {
+      +   .xl\\\\:prose-2xl p {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where([class~='lead']) {
+      +   .xl\\\\:prose-2xl [class~='lead'] {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(blockquote) {
+      +   .xl\\\\:prose-2xl blockquote {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h1) {
+      +   .xl\\\\:prose-2xl h1 {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h2) {
+      +   .xl\\\\:prose-2xl h2 {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h3) {
+      +   .xl\\\\:prose-2xl h3 {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h4) {
+      +   .xl\\\\:prose-2xl h4 {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(img) {
+      +   .xl\\\\:prose-2xl img {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(video) {
+      +   .xl\\\\:prose-2xl video {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(figure) {
+      +   .xl\\\\:prose-2xl figure {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(figure > *) {
+      +   .xl\\\\:prose-2xl figure > * {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(figure figcaption) {
+      +   .xl\\\\:prose-2xl figure figcaption {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(code) {
+      +   .xl\\\\:prose-2xl code {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h2 code) {
+      +   .xl\\\\:prose-2xl h2 code {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h3 code) {
+      +   .xl\\\\:prose-2xl h3 code {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(pre) {
+      +   .xl\\\\:prose-2xl pre {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(ol) {
+      +   .xl\\\\:prose-2xl ol {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(ul) {
+      +   .xl\\\\:prose-2xl ul {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(li) {
+      +   .xl\\\\:prose-2xl li {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(ol > li) {
+      +   .xl\\\\:prose-2xl ol > li {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(ol > li)::before {
+      +   .xl\\\\:prose-2xl ol > li::before {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(ul > li) {
+      +   .xl\\\\:prose-2xl ul > li {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(ul > li)::before {
+      +   .xl\\\\:prose-2xl ul > li::before {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(> ul > li p) {
+      +   .xl\\\\:prose-2xl > ul > li p {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(> ul > li > *:first-child) {
+      +   .xl\\\\:prose-2xl > ul > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(> ul > li > *:last-child) {
+      +   .xl\\\\:prose-2xl > ul > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(> ol > li > *:first-child) {
+      +   .xl\\\\:prose-2xl > ol > li > *:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(> ol > li > *:last-child) {
+      +   .xl\\\\:prose-2xl > ol > li > *:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .xl\\\\:prose-2xl ul ul, .xl\\\\:prose-2xl ul ol, .xl\\\\:prose-2xl ol ul, .xl\\\\:prose-2xl ol ol {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(hr) {
+      +   .xl\\\\:prose-2xl hr {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(hr + *) {
+      +   .xl\\\\:prose-2xl hr + * {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h2 + *) {
+      +   .xl\\\\:prose-2xl h2 + * {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h3 + *) {
+      +   .xl\\\\:prose-2xl h3 + * {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(h4 + *) {
+      +   .xl\\\\:prose-2xl h4 + * {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(table) {
+      +   .xl\\\\:prose-2xl table {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(thead th) {
+      +   .xl\\\\:prose-2xl thead th {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(thead th:first-child) {
+      +   .xl\\\\:prose-2xl thead th:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(thead th:last-child) {
+      +   .xl\\\\:prose-2xl thead th:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(tbody td) {
+      +   .xl\\\\:prose-2xl tbody td {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(tbody td:first-child) {
+      +   .xl\\\\:prose-2xl tbody td:first-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(tbody td:last-child) {
+      +   .xl\\\\:prose-2xl tbody td:last-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(> :first-child) {
+      +   .xl\\\\:prose-2xl > :first-child {
+
+      ---
+
+      -   .xl\\\\:prose-2xl :where(> :last-child) {
+      +   .xl\\\\:prose-2xl > :last-child {
+
+      ---
+
+      -   .xl\\\\:prose-red :where(a) {
+      +   .xl\\\\:prose-red a {
+
+      ---
+
+      -   .xl\\\\:prose-red :where(a code) {
+      +   .xl\\\\:prose-red a code {
+
+      ---
+
+      -   .xl\\\\:prose-yellow :where(a) {
+      +   .xl\\\\:prose-yellow a {
+
+      ---
+
+      -   .xl\\\\:prose-yellow :where(a code) {
+      +   .xl\\\\:prose-yellow a code {
+
+      ---
+
+      -   .xl\\\\:prose-green :where(a) {
+      +   .xl\\\\:prose-green a {
+
+      ---
+
+      -   .xl\\\\:prose-green :where(a code) {
+      +   .xl\\\\:prose-green a code {
+
+      ---
+
+      -   .xl\\\\:prose-blue :where(a) {
+      +   .xl\\\\:prose-blue a {
+
+      ---
+
+      -   .xl\\\\:prose-blue :where(a code) {
+      +   .xl\\\\:prose-blue a code {
+
+      ---
+
+      -   .xl\\\\:prose-indigo :where(a) {
+      +   .xl\\\\:prose-indigo a {
+
+      ---
+
+      -   .xl\\\\:prose-indigo :where(a code) {
+      +   .xl\\\\:prose-indigo a code {
+
+      ---
+
+      -   .xl\\\\:prose-purple :where(a) {
+      +   .xl\\\\:prose-purple a {
+
+      ---
+
+      -   .xl\\\\:prose-purple :where(a code) {
+      +   .xl\\\\:prose-purple a code {
+
+      ---
+
+      -   .xl\\\\:prose-pink :where(a) {
+      +   .xl\\\\:prose-pink a {
+
+      ---
+
+      -   .xl\\\\:prose-pink :where(a code) {
+      +   .xl\\\\:prose-pink a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where([class~='lead']) {
+      +   .\\\\32xl\\\\:prose [class~='lead'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(a) {
+      +   .\\\\32xl\\\\:prose a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(strong) {
+      +   .\\\\32xl\\\\:prose strong {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='A']) {
+      +   .\\\\32xl\\\\:prose ol[type='A'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='a']) {
+      +   .\\\\32xl\\\\:prose ol[type='a'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='A' s]) {
+      +   .\\\\32xl\\\\:prose ol[type='A' s] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='a' s]) {
+      +   .\\\\32xl\\\\:prose ol[type='a' s] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='I']) {
+      +   .\\\\32xl\\\\:prose ol[type='I'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='i']) {
+      +   .\\\\32xl\\\\:prose ol[type='i'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='I' s]) {
+      +   .\\\\32xl\\\\:prose ol[type='I' s] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='i' s]) {
+      +   .\\\\32xl\\\\:prose ol[type='i' s] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol[type='1']) {
+      +   .\\\\32xl\\\\:prose ol[type='1'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol > li) {
+      +   .\\\\32xl\\\\:prose ol > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol > li)::before {
+      +   .\\\\32xl\\\\:prose ol > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ul > li) {
+      +   .\\\\32xl\\\\:prose ul > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ul > li)::before {
+      +   .\\\\32xl\\\\:prose ul > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(hr) {
+      +   .\\\\32xl\\\\:prose hr {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(blockquote) {
+      +   .\\\\32xl\\\\:prose blockquote {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(blockquote p:first-of-type)::before {
+      +   .\\\\32xl\\\\:prose blockquote p:first-of-type::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(blockquote p:last-of-type)::after {
+      +   .\\\\32xl\\\\:prose blockquote p:last-of-type::after {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h1) {
+      +   .\\\\32xl\\\\:prose h1 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h1 strong) {
+      +   .\\\\32xl\\\\:prose h1 strong {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h2) {
+      +   .\\\\32xl\\\\:prose h2 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h2 strong) {
+      +   .\\\\32xl\\\\:prose h2 strong {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h3) {
+      +   .\\\\32xl\\\\:prose h3 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h3 strong) {
+      +   .\\\\32xl\\\\:prose h3 strong {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h4) {
+      +   .\\\\32xl\\\\:prose h4 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h4 strong) {
+      +   .\\\\32xl\\\\:prose h4 strong {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(figure figcaption) {
+      +   .\\\\32xl\\\\:prose figure figcaption {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(code) {
+      +   .\\\\32xl\\\\:prose code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(code)::before {
+      +   .\\\\32xl\\\\:prose code::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(code)::after {
+      +   .\\\\32xl\\\\:prose code::after {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(a code) {
+      +   .\\\\32xl\\\\:prose a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(pre) {
+      +   .\\\\32xl\\\\:prose pre {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(pre code) {
+      +   .\\\\32xl\\\\:prose pre code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(pre code)::before {
+      +   .\\\\32xl\\\\:prose pre code::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(pre code)::after {
+      +   .\\\\32xl\\\\:prose pre code::after {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(table) {
+      +   .\\\\32xl\\\\:prose table {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(thead) {
+      +   .\\\\32xl\\\\:prose thead {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(thead th) {
+      +   .\\\\32xl\\\\:prose thead th {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(tbody tr) {
+      +   .\\\\32xl\\\\:prose tbody tr {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(tbody tr:last-child) {
+      +   .\\\\32xl\\\\:prose tbody tr:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(tbody td) {
+      +   .\\\\32xl\\\\:prose tbody td {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(p) {
+      +   .\\\\32xl\\\\:prose p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(img) {
+      +   .\\\\32xl\\\\:prose img {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(video) {
+      +   .\\\\32xl\\\\:prose video {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(figure) {
+      +   .\\\\32xl\\\\:prose figure {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(figure > *) {
+      +   .\\\\32xl\\\\:prose figure > * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h2 code) {
+      +   .\\\\32xl\\\\:prose h2 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h3 code) {
+      +   .\\\\32xl\\\\:prose h3 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ol) {
+      +   .\\\\32xl\\\\:prose ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ul) {
+      +   .\\\\32xl\\\\:prose ul {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(li) {
+      +   .\\\\32xl\\\\:prose li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(> ul > li p) {
+      +   .\\\\32xl\\\\:prose > ul > li p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(> ul > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose > ul > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(> ul > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose > ul > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(> ol > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose > ol > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(> ol > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose > ol > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .\\\\32xl\\\\:prose ul ul, .\\\\32xl\\\\:prose ul ol, .\\\\32xl\\\\:prose ol ul, .\\\\32xl\\\\:prose ol ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(hr + *) {
+      +   .\\\\32xl\\\\:prose hr + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h2 + *) {
+      +   .\\\\32xl\\\\:prose h2 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h3 + *) {
+      +   .\\\\32xl\\\\:prose h3 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(h4 + *) {
+      +   .\\\\32xl\\\\:prose h4 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(thead th:first-child) {
+      +   .\\\\32xl\\\\:prose thead th:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(thead th:last-child) {
+      +   .\\\\32xl\\\\:prose thead th:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(tbody td:first-child) {
+      +   .\\\\32xl\\\\:prose tbody td:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(tbody td:last-child) {
+      +   .\\\\32xl\\\\:prose tbody td:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(> :first-child) {
+      +   .\\\\32xl\\\\:prose > :first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose :where(> :last-child) {
+      +   .\\\\32xl\\\\:prose > :last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(p) {
+      +   .\\\\32xl\\\\:prose-sm p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where([class~='lead']) {
+      +   .\\\\32xl\\\\:prose-sm [class~='lead'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(blockquote) {
+      +   .\\\\32xl\\\\:prose-sm blockquote {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h1) {
+      +   .\\\\32xl\\\\:prose-sm h1 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h2) {
+      +   .\\\\32xl\\\\:prose-sm h2 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h3) {
+      +   .\\\\32xl\\\\:prose-sm h3 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h4) {
+      +   .\\\\32xl\\\\:prose-sm h4 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(img) {
+      +   .\\\\32xl\\\\:prose-sm img {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(video) {
+      +   .\\\\32xl\\\\:prose-sm video {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(figure) {
+      +   .\\\\32xl\\\\:prose-sm figure {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(figure > *) {
+      +   .\\\\32xl\\\\:prose-sm figure > * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(figure figcaption) {
+      +   .\\\\32xl\\\\:prose-sm figure figcaption {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(code) {
+      +   .\\\\32xl\\\\:prose-sm code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h2 code) {
+      +   .\\\\32xl\\\\:prose-sm h2 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h3 code) {
+      +   .\\\\32xl\\\\:prose-sm h3 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(pre) {
+      +   .\\\\32xl\\\\:prose-sm pre {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(ol) {
+      +   .\\\\32xl\\\\:prose-sm ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(ul) {
+      +   .\\\\32xl\\\\:prose-sm ul {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(li) {
+      +   .\\\\32xl\\\\:prose-sm li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(ol > li) {
+      +   .\\\\32xl\\\\:prose-sm ol > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(ol > li)::before {
+      +   .\\\\32xl\\\\:prose-sm ol > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(ul > li) {
+      +   .\\\\32xl\\\\:prose-sm ul > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(ul > li)::before {
+      +   .\\\\32xl\\\\:prose-sm ul > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(> ul > li p) {
+      +   .\\\\32xl\\\\:prose-sm > ul > li p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(> ul > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose-sm > ul > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(> ul > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose-sm > ul > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(> ol > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose-sm > ol > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(> ol > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose-sm > ol > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .\\\\32xl\\\\:prose-sm ul ul, .\\\\32xl\\\\:prose-sm ul ol, .\\\\32xl\\\\:prose-sm ol ul, .\\\\32xl\\\\:prose-sm ol ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(hr) {
+      +   .\\\\32xl\\\\:prose-sm hr {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(hr + *) {
+      +   .\\\\32xl\\\\:prose-sm hr + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h2 + *) {
+      +   .\\\\32xl\\\\:prose-sm h2 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h3 + *) {
+      +   .\\\\32xl\\\\:prose-sm h3 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(h4 + *) {
+      +   .\\\\32xl\\\\:prose-sm h4 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(table) {
+      +   .\\\\32xl\\\\:prose-sm table {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(thead th) {
+      +   .\\\\32xl\\\\:prose-sm thead th {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(thead th:first-child) {
+      +   .\\\\32xl\\\\:prose-sm thead th:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(thead th:last-child) {
+      +   .\\\\32xl\\\\:prose-sm thead th:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(tbody td) {
+      +   .\\\\32xl\\\\:prose-sm tbody td {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(tbody td:first-child) {
+      +   .\\\\32xl\\\\:prose-sm tbody td:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(tbody td:last-child) {
+      +   .\\\\32xl\\\\:prose-sm tbody td:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(> :first-child) {
+      +   .\\\\32xl\\\\:prose-sm > :first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-sm :where(> :last-child) {
+      +   .\\\\32xl\\\\:prose-sm > :last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(p) {
+      +   .\\\\32xl\\\\:prose-lg p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where([class~='lead']) {
+      +   .\\\\32xl\\\\:prose-lg [class~='lead'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(blockquote) {
+      +   .\\\\32xl\\\\:prose-lg blockquote {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h1) {
+      +   .\\\\32xl\\\\:prose-lg h1 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h2) {
+      +   .\\\\32xl\\\\:prose-lg h2 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h3) {
+      +   .\\\\32xl\\\\:prose-lg h3 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h4) {
+      +   .\\\\32xl\\\\:prose-lg h4 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(img) {
+      +   .\\\\32xl\\\\:prose-lg img {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(video) {
+      +   .\\\\32xl\\\\:prose-lg video {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(figure) {
+      +   .\\\\32xl\\\\:prose-lg figure {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(figure > *) {
+      +   .\\\\32xl\\\\:prose-lg figure > * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(figure figcaption) {
+      +   .\\\\32xl\\\\:prose-lg figure figcaption {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(code) {
+      +   .\\\\32xl\\\\:prose-lg code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h2 code) {
+      +   .\\\\32xl\\\\:prose-lg h2 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h3 code) {
+      +   .\\\\32xl\\\\:prose-lg h3 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(pre) {
+      +   .\\\\32xl\\\\:prose-lg pre {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(ol) {
+      +   .\\\\32xl\\\\:prose-lg ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(ul) {
+      +   .\\\\32xl\\\\:prose-lg ul {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(li) {
+      +   .\\\\32xl\\\\:prose-lg li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(ol > li) {
+      +   .\\\\32xl\\\\:prose-lg ol > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(ol > li)::before {
+      +   .\\\\32xl\\\\:prose-lg ol > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(ul > li) {
+      +   .\\\\32xl\\\\:prose-lg ul > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(ul > li)::before {
+      +   .\\\\32xl\\\\:prose-lg ul > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(> ul > li p) {
+      +   .\\\\32xl\\\\:prose-lg > ul > li p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(> ul > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose-lg > ul > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(> ul > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose-lg > ul > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(> ol > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose-lg > ol > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(> ol > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose-lg > ol > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .\\\\32xl\\\\:prose-lg ul ul, .\\\\32xl\\\\:prose-lg ul ol, .\\\\32xl\\\\:prose-lg ol ul, .\\\\32xl\\\\:prose-lg ol ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(hr) {
+      +   .\\\\32xl\\\\:prose-lg hr {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(hr + *) {
+      +   .\\\\32xl\\\\:prose-lg hr + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h2 + *) {
+      +   .\\\\32xl\\\\:prose-lg h2 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h3 + *) {
+      +   .\\\\32xl\\\\:prose-lg h3 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(h4 + *) {
+      +   .\\\\32xl\\\\:prose-lg h4 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(table) {
+      +   .\\\\32xl\\\\:prose-lg table {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(thead th) {
+      +   .\\\\32xl\\\\:prose-lg thead th {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(thead th:first-child) {
+      +   .\\\\32xl\\\\:prose-lg thead th:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(thead th:last-child) {
+      +   .\\\\32xl\\\\:prose-lg thead th:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(tbody td) {
+      +   .\\\\32xl\\\\:prose-lg tbody td {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(tbody td:first-child) {
+      +   .\\\\32xl\\\\:prose-lg tbody td:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(tbody td:last-child) {
+      +   .\\\\32xl\\\\:prose-lg tbody td:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(> :first-child) {
+      +   .\\\\32xl\\\\:prose-lg > :first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-lg :where(> :last-child) {
+      +   .\\\\32xl\\\\:prose-lg > :last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(p) {
+      +   .\\\\32xl\\\\:prose-xl p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where([class~='lead']) {
+      +   .\\\\32xl\\\\:prose-xl [class~='lead'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(blockquote) {
+      +   .\\\\32xl\\\\:prose-xl blockquote {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h1) {
+      +   .\\\\32xl\\\\:prose-xl h1 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h2) {
+      +   .\\\\32xl\\\\:prose-xl h2 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h3) {
+      +   .\\\\32xl\\\\:prose-xl h3 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h4) {
+      +   .\\\\32xl\\\\:prose-xl h4 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(img) {
+      +   .\\\\32xl\\\\:prose-xl img {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(video) {
+      +   .\\\\32xl\\\\:prose-xl video {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(figure) {
+      +   .\\\\32xl\\\\:prose-xl figure {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(figure > *) {
+      +   .\\\\32xl\\\\:prose-xl figure > * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(figure figcaption) {
+      +   .\\\\32xl\\\\:prose-xl figure figcaption {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(code) {
+      +   .\\\\32xl\\\\:prose-xl code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h2 code) {
+      +   .\\\\32xl\\\\:prose-xl h2 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h3 code) {
+      +   .\\\\32xl\\\\:prose-xl h3 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(pre) {
+      +   .\\\\32xl\\\\:prose-xl pre {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(ol) {
+      +   .\\\\32xl\\\\:prose-xl ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(ul) {
+      +   .\\\\32xl\\\\:prose-xl ul {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(li) {
+      +   .\\\\32xl\\\\:prose-xl li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(ol > li) {
+      +   .\\\\32xl\\\\:prose-xl ol > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(ol > li)::before {
+      +   .\\\\32xl\\\\:prose-xl ol > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(ul > li) {
+      +   .\\\\32xl\\\\:prose-xl ul > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(ul > li)::before {
+      +   .\\\\32xl\\\\:prose-xl ul > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(> ul > li p) {
+      +   .\\\\32xl\\\\:prose-xl > ul > li p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(> ul > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose-xl > ul > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(> ul > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose-xl > ul > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(> ol > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose-xl > ol > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(> ol > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose-xl > ol > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .\\\\32xl\\\\:prose-xl ul ul, .\\\\32xl\\\\:prose-xl ul ol, .\\\\32xl\\\\:prose-xl ol ul, .\\\\32xl\\\\:prose-xl ol ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(hr) {
+      +   .\\\\32xl\\\\:prose-xl hr {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(hr + *) {
+      +   .\\\\32xl\\\\:prose-xl hr + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h2 + *) {
+      +   .\\\\32xl\\\\:prose-xl h2 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h3 + *) {
+      +   .\\\\32xl\\\\:prose-xl h3 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(h4 + *) {
+      +   .\\\\32xl\\\\:prose-xl h4 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(table) {
+      +   .\\\\32xl\\\\:prose-xl table {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(thead th) {
+      +   .\\\\32xl\\\\:prose-xl thead th {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(thead th:first-child) {
+      +   .\\\\32xl\\\\:prose-xl thead th:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(thead th:last-child) {
+      +   .\\\\32xl\\\\:prose-xl thead th:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(tbody td) {
+      +   .\\\\32xl\\\\:prose-xl tbody td {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(tbody td:first-child) {
+      +   .\\\\32xl\\\\:prose-xl tbody td:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(tbody td:last-child) {
+      +   .\\\\32xl\\\\:prose-xl tbody td:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(> :first-child) {
+      +   .\\\\32xl\\\\:prose-xl > :first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-xl :where(> :last-child) {
+      +   .\\\\32xl\\\\:prose-xl > :last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(p) {
+      +   .\\\\32xl\\\\:prose-2xl p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where([class~='lead']) {
+      +   .\\\\32xl\\\\:prose-2xl [class~='lead'] {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(blockquote) {
+      +   .\\\\32xl\\\\:prose-2xl blockquote {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h1) {
+      +   .\\\\32xl\\\\:prose-2xl h1 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h2) {
+      +   .\\\\32xl\\\\:prose-2xl h2 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h3) {
+      +   .\\\\32xl\\\\:prose-2xl h3 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h4) {
+      +   .\\\\32xl\\\\:prose-2xl h4 {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(img) {
+      +   .\\\\32xl\\\\:prose-2xl img {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(video) {
+      +   .\\\\32xl\\\\:prose-2xl video {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(figure) {
+      +   .\\\\32xl\\\\:prose-2xl figure {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(figure > *) {
+      +   .\\\\32xl\\\\:prose-2xl figure > * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(figure figcaption) {
+      +   .\\\\32xl\\\\:prose-2xl figure figcaption {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(code) {
+      +   .\\\\32xl\\\\:prose-2xl code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h2 code) {
+      +   .\\\\32xl\\\\:prose-2xl h2 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h3 code) {
+      +   .\\\\32xl\\\\:prose-2xl h3 code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(pre) {
+      +   .\\\\32xl\\\\:prose-2xl pre {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(ol) {
+      +   .\\\\32xl\\\\:prose-2xl ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(ul) {
+      +   .\\\\32xl\\\\:prose-2xl ul {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(li) {
+      +   .\\\\32xl\\\\:prose-2xl li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(ol > li) {
+      +   .\\\\32xl\\\\:prose-2xl ol > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(ol > li)::before {
+      +   .\\\\32xl\\\\:prose-2xl ol > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(ul > li) {
+      +   .\\\\32xl\\\\:prose-2xl ul > li {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(ul > li)::before {
+      +   .\\\\32xl\\\\:prose-2xl ul > li::before {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(> ul > li p) {
+      +   .\\\\32xl\\\\:prose-2xl > ul > li p {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose-2xl > ul > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose-2xl > ul > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child) {
+      +   .\\\\32xl\\\\:prose-2xl > ol > li > *:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child) {
+      +   .\\\\32xl\\\\:prose-2xl > ol > li > *:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol) {
+      +   .\\\\32xl\\\\:prose-2xl ul ul, .\\\\32xl\\\\:prose-2xl ul ol, .\\\\32xl\\\\:prose-2xl ol ul, .\\\\32xl\\\\:prose-2xl ol ol {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(hr) {
+      +   .\\\\32xl\\\\:prose-2xl hr {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(hr + *) {
+      +   .\\\\32xl\\\\:prose-2xl hr + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h2 + *) {
+      +   .\\\\32xl\\\\:prose-2xl h2 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h3 + *) {
+      +   .\\\\32xl\\\\:prose-2xl h3 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(h4 + *) {
+      +   .\\\\32xl\\\\:prose-2xl h4 + * {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(table) {
+      +   .\\\\32xl\\\\:prose-2xl table {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(thead th) {
+      +   .\\\\32xl\\\\:prose-2xl thead th {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(thead th:first-child) {
+      +   .\\\\32xl\\\\:prose-2xl thead th:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(thead th:last-child) {
+      +   .\\\\32xl\\\\:prose-2xl thead th:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(tbody td) {
+      +   .\\\\32xl\\\\:prose-2xl tbody td {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(tbody td:first-child) {
+      +   .\\\\32xl\\\\:prose-2xl tbody td:first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(tbody td:last-child) {
+      +   .\\\\32xl\\\\:prose-2xl tbody td:last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(> :first-child) {
+      +   .\\\\32xl\\\\:prose-2xl > :first-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-2xl :where(> :last-child) {
+      +   .\\\\32xl\\\\:prose-2xl > :last-child {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-red :where(a) {
+      +   .\\\\32xl\\\\:prose-red a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-red :where(a code) {
+      +   .\\\\32xl\\\\:prose-red a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-yellow :where(a) {
+      +   .\\\\32xl\\\\:prose-yellow a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-yellow :where(a code) {
+      +   .\\\\32xl\\\\:prose-yellow a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-green :where(a) {
+      +   .\\\\32xl\\\\:prose-green a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-green :where(a code) {
+      +   .\\\\32xl\\\\:prose-green a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-blue :where(a) {
+      +   .\\\\32xl\\\\:prose-blue a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-blue :where(a code) {
+      +   .\\\\32xl\\\\:prose-blue a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-indigo :where(a) {
+      +   .\\\\32xl\\\\:prose-indigo a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-indigo :where(a code) {
+      +   .\\\\32xl\\\\:prose-indigo a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-purple :where(a) {
+      +   .\\\\32xl\\\\:prose-purple a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-purple :where(a code) {
+      +   .\\\\32xl\\\\:prose-purple a code {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-pink :where(a) {
+      +   .\\\\32xl\\\\:prose-pink a {
+
+      ---
+
+      -   .\\\\32xl\\\\:prose-pink :where(a code) {
+      +   .\\\\32xl\\\\:prose-pink a code {
+
+    "
+  `)
+})
+
 it('should be possible to change the default modifiers', async () => {
   expect(await diffOnly({ modifiers: ['sm', 'lg', 'xl' /**, '2xl' */] })).toMatchInlineSnapshot(`
     "

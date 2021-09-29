@@ -22,7 +22,7 @@ function inWhere(selector) {
   return `:where(${selector})`
 }
 
-function configToCss(config = {}) {
+function configToCss(config = {}, target) {
   return Object.fromEntries(
     Object.entries(
       merge(
@@ -33,6 +33,10 @@ function configToCss(config = {}) {
         ...castArray(config.css || {})
       )
     ).map(([k, v]) => {
+      if (target === 'legacy') {
+        return [k, v]
+      }
+
       if (typeof v == 'object' && v.constructor == Object) {
         return [inWhere(k), v]
       }
@@ -43,7 +47,7 @@ function configToCss(config = {}) {
 }
 
 module.exports = plugin.withOptions(
-  ({ modifiers, className = 'prose' } = {}) => {
+  ({ modifiers, className = 'prose', target = 'modern' } = {}) => {
     return function ({ addComponents, theme, variants }) {
       const DEFAULT_MODIFIERS = [
         'DEFAULT',
@@ -69,7 +73,8 @@ module.exports = plugin.withOptions(
       addComponents(
         all.map((modifier) => ({
           [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
-            config[modifier]
+            config[modifier],
+            target,
           ),
         })),
         variants('typography')
