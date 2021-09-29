@@ -13,8 +13,12 @@ module.exports = (theme) => ({
   DEFAULT: {
     css: [
       {
+        display: 'grid',
+        'grid-template-columns': '1fr min(65ch, 100%) 1fr',
         color: theme('colors.gray.700', defaultTheme.colors.gray[700]),
-        maxWidth: '65ch',
+        '> *': {
+          'grid-column': '2',
+        },
         '[class~="lead"]': {
           color: theme('colors.gray.600', defaultTheme.colors.gray[600]),
         },

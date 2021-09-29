@@ -44,12 +44,22 @@ module.exports = plugin.withOptions(
         ...Object.keys(config).filter((modifier) => !DEFAULT_MODIFIERS.includes(modifier)),
       ])
 
+      const components = all.map((modifier) => ({
+        [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
+          config[modifier]
+        ),
+      }))
+
       addComponents(
-        all.map((modifier) => ({
-          [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
-            config[modifier]
-          ),
-        })),
+        [
+          ...components,
+          {
+            [`.${className} .${className}-bleed`]: {
+              width: '100%',
+              'grid-column': '1 / -1',
+            },
+          },
+        ],
         variants('typography')
       )
     }
