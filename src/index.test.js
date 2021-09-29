@@ -8063,217 +8063,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       - .prose :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(a):not(:where(.not-prose *)) {
-      + .markdown :where(a):not(:where(.not-prose *)) {
+      + .markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(strong):not(:where(.not-prose *)) {
-      + .markdown :where(strong):not(:where(.not-prose *)) {
+      + .markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(hr):not(:where(.not-prose *)) {
-      + .markdown :where(hr):not(:where(.not-prose *)) {
+      + .markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      + .markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      + .markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      + .markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      + .markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       - .prose :where(h1):not(:where(.not-prose *)) {
-      + .markdown :where(h1):not(:where(.not-prose *)) {
+      + .markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h1 strong):not(:where(.not-prose *)) {
-      + .markdown :where(h1 strong):not(:where(.not-prose *)) {
+      + .markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h2):not(:where(.not-prose *)) {
-      + .markdown :where(h2):not(:where(.not-prose *)) {
+      + .markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h2 strong):not(:where(.not-prose *)) {
-      + .markdown :where(h2 strong):not(:where(.not-prose *)) {
+      + .markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h3):not(:where(.not-prose *)) {
-      + .markdown :where(h3):not(:where(.not-prose *)) {
+      + .markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h3 strong):not(:where(.not-prose *)) {
-      + .markdown :where(h3 strong):not(:where(.not-prose *)) {
+      + .markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h4):not(:where(.not-prose *)) {
-      + .markdown :where(h4):not(:where(.not-prose *)) {
+      + .markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h4 strong):not(:where(.not-prose *)) {
-      + .markdown :where(h4 strong):not(:where(.not-prose *)) {
+      + .markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(code):not(:where(.not-prose *)) {
-      + .markdown :where(code):not(:where(.not-prose *)) {
+      + .markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(code):not(:where(.not-prose *))::before {
-      + .markdown :where(code):not(:where(.not-prose *))::before {
+      + .markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(code):not(:where(.not-prose *))::after {
-      + .markdown :where(code):not(:where(.not-prose *))::after {
+      + .markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       - .prose :where(a code):not(:where(.not-prose *)) {
-      + .markdown :where(a code):not(:where(.not-prose *)) {
+      + .markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(pre):not(:where(.not-prose *)) {
-      + .markdown :where(pre):not(:where(.not-prose *)) {
+      + .markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(pre code):not(:where(.not-prose *)) {
-      + .markdown :where(pre code):not(:where(.not-prose *)) {
+      + .markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(pre code):not(:where(.not-prose *))::before {
-      + .markdown :where(pre code):not(:where(.not-prose *))::before {
+      + .markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(pre code):not(:where(.not-prose *))::after {
-      + .markdown :where(pre code):not(:where(.not-prose *))::after {
+      + .markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       - .prose :where(table):not(:where(.not-prose *)) {
-      + .markdown :where(table):not(:where(.not-prose *)) {
+      + .markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(thead):not(:where(.not-prose *)) {
-      + .markdown :where(thead):not(:where(.not-prose *)) {
+      + .markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(thead th):not(:where(.not-prose *)) {
-      + .markdown :where(thead th):not(:where(.not-prose *)) {
+      + .markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(tbody tr):not(:where(.not-prose *)) {
-      + .markdown :where(tbody tr):not(:where(.not-prose *)) {
+      + .markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -8283,132 +8283,132 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       - .prose :where(p):not(:where(.not-prose *)) {
-      + .markdown :where(p):not(:where(.not-prose *)) {
+      + .markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(img):not(:where(.not-prose *)) {
-      + .markdown :where(img):not(:where(.not-prose *)) {
+      + .markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(video):not(:where(.not-prose *)) {
-      + .markdown :where(video):not(:where(.not-prose *)) {
+      + .markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(figure):not(:where(.not-prose *)) {
-      + .markdown :where(figure):not(:where(.not-prose *)) {
+      + .markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol):not(:where(.not-prose *)) {
-      + .markdown :where(ol):not(:where(.not-prose *)) {
+      + .markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ul):not(:where(.not-prose *)) {
-      + .markdown :where(ul):not(:where(.not-prose *)) {
+      + .markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(li):not(:where(.not-prose *)) {
-      + .markdown :where(li):not(:where(.not-prose *)) {
+      + .markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -8418,217 +8418,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       - .prose-sm :where(p):not(:where(.not-prose *)) {
-      + .markdown-sm :where(p):not(:where(.not-prose *)) {
+      + .markdown-sm :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown-sm :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown-sm :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown-sm :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown-sm :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h1):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h1):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h2):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h2):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h3):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h3):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h4):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h4):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(img):not(:where(.not-prose *)) {
-      + .markdown-sm :where(img):not(:where(.not-prose *)) {
+      + .markdown-sm :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(video):not(:where(.not-prose *)) {
-      + .markdown-sm :where(video):not(:where(.not-prose *)) {
+      + .markdown-sm :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(figure):not(:where(.not-prose *)) {
-      + .markdown-sm :where(figure):not(:where(.not-prose *)) {
+      + .markdown-sm :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown-sm :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown-sm :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown-sm :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown-sm :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(code):not(:where(.not-prose *)) {
-      + .markdown-sm :where(code):not(:where(.not-prose *)) {
+      + .markdown-sm :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(pre):not(:where(.not-prose *)) {
-      + .markdown-sm :where(pre):not(:where(.not-prose *)) {
+      + .markdown-sm :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(ol):not(:where(.not-prose *)) {
-      + .markdown-sm :where(ol):not(:where(.not-prose *)) {
+      + .markdown-sm :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(ul):not(:where(.not-prose *)) {
-      + .markdown-sm :where(ul):not(:where(.not-prose *)) {
+      + .markdown-sm :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(li):not(:where(.not-prose *)) {
-      + .markdown-sm :where(li):not(:where(.not-prose *)) {
+      + .markdown-sm :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown-sm :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown-sm :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown-sm :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown-sm :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-sm :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown-sm :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown-sm :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown-sm :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown-sm :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-sm :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown-sm :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown-sm :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(hr):not(:where(.not-prose *)) {
-      + .markdown-sm :where(hr):not(:where(.not-prose *)) {
+      + .markdown-sm :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown-sm :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown-sm :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown-sm :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown-sm :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(table):not(:where(.not-prose *)) {
-      + .markdown-sm :where(table):not(:where(.not-prose *)) {
+      + .markdown-sm :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(thead th):not(:where(.not-prose *)) {
-      + .markdown-sm :where(thead th):not(:where(.not-prose *)) {
+      + .markdown-sm :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown-sm :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown-sm :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown-sm :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown-sm :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -8638,217 +8638,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       - .prose-lg :where(p):not(:where(.not-prose *)) {
-      + .markdown-lg :where(p):not(:where(.not-prose *)) {
+      + .markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h1):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h1):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h2):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h2):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h3):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h3):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h4):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h4):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(img):not(:where(.not-prose *)) {
-      + .markdown-lg :where(img):not(:where(.not-prose *)) {
+      + .markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(video):not(:where(.not-prose *)) {
-      + .markdown-lg :where(video):not(:where(.not-prose *)) {
+      + .markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(figure):not(:where(.not-prose *)) {
-      + .markdown-lg :where(figure):not(:where(.not-prose *)) {
+      + .markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(code):not(:where(.not-prose *)) {
-      + .markdown-lg :where(code):not(:where(.not-prose *)) {
+      + .markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(pre):not(:where(.not-prose *)) {
-      + .markdown-lg :where(pre):not(:where(.not-prose *)) {
+      + .markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ol):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ol):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ul):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ul):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(li):not(:where(.not-prose *)) {
-      + .markdown-lg :where(li):not(:where(.not-prose *)) {
+      + .markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(hr):not(:where(.not-prose *)) {
-      + .markdown-lg :where(hr):not(:where(.not-prose *)) {
+      + .markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(table):not(:where(.not-prose *)) {
-      + .markdown-lg :where(table):not(:where(.not-prose *)) {
+      + .markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(thead th):not(:where(.not-prose *)) {
-      + .markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      + .markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -8858,217 +8858,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       - .prose-xl :where(p):not(:where(.not-prose *)) {
-      + .markdown-xl :where(p):not(:where(.not-prose *)) {
+      + .markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h1):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h1):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h2):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h2):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h3):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h3):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h4):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h4):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(img):not(:where(.not-prose *)) {
-      + .markdown-xl :where(img):not(:where(.not-prose *)) {
+      + .markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(video):not(:where(.not-prose *)) {
-      + .markdown-xl :where(video):not(:where(.not-prose *)) {
+      + .markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(figure):not(:where(.not-prose *)) {
-      + .markdown-xl :where(figure):not(:where(.not-prose *)) {
+      + .markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(code):not(:where(.not-prose *)) {
-      + .markdown-xl :where(code):not(:where(.not-prose *)) {
+      + .markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(pre):not(:where(.not-prose *)) {
-      + .markdown-xl :where(pre):not(:where(.not-prose *)) {
+      + .markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ol):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ol):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ul):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ul):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(li):not(:where(.not-prose *)) {
-      + .markdown-xl :where(li):not(:where(.not-prose *)) {
+      + .markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(hr):not(:where(.not-prose *)) {
-      + .markdown-xl :where(hr):not(:where(.not-prose *)) {
+      + .markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(table):not(:where(.not-prose *)) {
-      + .markdown-xl :where(table):not(:where(.not-prose *)) {
+      + .markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(thead th):not(:where(.not-prose *)) {
-      + .markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      + .markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -9078,287 +9078,287 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       - .prose-2xl :where(p):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(p):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h1):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h2):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h3):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h4):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(img):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(img):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(video):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(video):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(figure):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(code):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(code):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(pre):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ol):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ul):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(li):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(li):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(hr):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(table):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(table):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-red :where(a):not(:where(.not-prose *)) {
-      + .markdown-red :where(a):not(:where(.not-prose *)) {
+      + .markdown-red :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-red :where(a code):not(:where(.not-prose *)) {
-      + .markdown-red :where(a code):not(:where(.not-prose *)) {
+      + .markdown-red :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-yellow :where(a):not(:where(.not-prose *)) {
-      + .markdown-yellow :where(a):not(:where(.not-prose *)) {
+      + .markdown-yellow :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-yellow :where(a code):not(:where(.not-prose *)) {
-      + .markdown-yellow :where(a code):not(:where(.not-prose *)) {
+      + .markdown-yellow :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-green :where(a):not(:where(.not-prose *)) {
-      + .markdown-green :where(a):not(:where(.not-prose *)) {
+      + .markdown-green :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-green :where(a code):not(:where(.not-prose *)) {
-      + .markdown-green :where(a code):not(:where(.not-prose *)) {
+      + .markdown-green :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-blue :where(a):not(:where(.not-prose *)) {
-      + .markdown-blue :where(a):not(:where(.not-prose *)) {
+      + .markdown-blue :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-blue :where(a code):not(:where(.not-prose *)) {
-      + .markdown-blue :where(a code):not(:where(.not-prose *)) {
+      + .markdown-blue :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-indigo :where(a):not(:where(.not-prose *)) {
-      + .markdown-indigo :where(a):not(:where(.not-prose *)) {
+      + .markdown-indigo :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-indigo :where(a code):not(:where(.not-prose *)) {
-      + .markdown-indigo :where(a code):not(:where(.not-prose *)) {
+      + .markdown-indigo :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-purple :where(a):not(:where(.not-prose *)) {
-      + .markdown-purple :where(a):not(:where(.not-prose *)) {
+      + .markdown-purple :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-purple :where(a code):not(:where(.not-prose *)) {
-      + .markdown-purple :where(a code):not(:where(.not-prose *)) {
+      + .markdown-purple :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-pink :where(a):not(:where(.not-prose *)) {
-      + .markdown-pink :where(a):not(:where(.not-prose *)) {
+      + .markdown-pink :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-pink :where(a code):not(:where(.not-prose *)) {
-      + .markdown-pink :where(a code):not(:where(.not-prose *)) {
+      + .markdown-pink :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
@@ -9368,217 +9368,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .sm\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .sm\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .sm\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .sm\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .sm\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .sm\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .sm\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .sm\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .sm\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .sm\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -9588,132 +9588,132 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .sm\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(hr + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -9723,217 +9723,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .sm\\\\:prose-sm :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-sm :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-sm :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-sm :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -9943,217 +9943,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .sm\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -10163,217 +10163,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .sm\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -10383,287 +10383,287 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .sm\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-red :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-red :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-red :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-red :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-red :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-red :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-yellow :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-yellow :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-yellow :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-yellow :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-yellow :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-yellow :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-green :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-green :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-green :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-green :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-green :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-green :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-blue :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-blue :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-blue :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-blue :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-blue :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-blue :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-indigo :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-indigo :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-indigo :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-indigo :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-indigo :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-indigo :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-purple :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-purple :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-purple :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-purple :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-purple :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-purple :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-pink :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-pink :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-pink :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-pink :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-pink :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-pink :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
@@ -10673,217 +10673,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .md\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .md\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .md\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .md\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .md\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .md\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .md\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .md\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .md\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .md\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -10893,132 +10893,132 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .md\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h2 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h3 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -11028,217 +11028,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .md\\\\:prose-sm :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-sm :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-sm :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h2 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h3 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-sm :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-sm :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -11248,217 +11248,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .md\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -11468,217 +11468,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .md\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -11688,287 +11688,287 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .md\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-red :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-red :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-red :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-red :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-red :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-red :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-yellow :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-yellow :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-yellow :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-yellow :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-yellow :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-yellow :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-green :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-green :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-green :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-green :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-green :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-green :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-blue :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-blue :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-blue :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-blue :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-blue :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-blue :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-indigo :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-indigo :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-indigo :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-indigo :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-indigo :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-indigo :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-purple :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-purple :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-purple :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-purple :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-purple :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-purple :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-pink :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-pink :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-pink :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-pink :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-pink :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-pink :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
@@ -11978,217 +11978,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .lg\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .lg\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .lg\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .lg\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .lg\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .lg\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .lg\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .lg\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .lg\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .lg\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -12198,132 +12198,132 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .lg\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -12333,217 +12333,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .lg\\\\:prose-sm :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-sm :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-sm :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-sm :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -12553,217 +12553,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .lg\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -12773,217 +12773,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .lg\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -12993,287 +12993,287 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .lg\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-red :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-red :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-red :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-red :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-red :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-red :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-yellow :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-yellow :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-yellow :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-yellow :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-yellow :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-yellow :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-green :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-green :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-green :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-green :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-green :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-green :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-blue :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-blue :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-blue :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-blue :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-blue :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-blue :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-indigo :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-indigo :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-indigo :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-indigo :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-indigo :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-indigo :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-purple :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-purple :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-purple :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-purple :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-purple :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-purple :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-pink :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-pink :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-pink :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-pink :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-pink :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-pink :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
@@ -13283,217 +13283,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .xl\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .xl\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .xl\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .xl\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .xl\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .xl\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .xl\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .xl\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .xl\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .xl\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -13503,132 +13503,132 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .xl\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -13638,217 +13638,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .xl\\\\:prose-sm :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-sm :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-sm :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-sm :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-sm :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -13858,217 +13858,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .xl\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -14078,217 +14078,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .xl\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -14298,287 +14298,287 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .xl\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-red :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-red :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-red :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-red :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-red :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-red :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-yellow :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-yellow :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-yellow :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-yellow :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-yellow :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-yellow :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-green :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-green :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-green :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-green :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-green :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-green :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-blue :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-blue :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-blue :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-blue :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-blue :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-blue :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-indigo :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-indigo :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-indigo :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-indigo :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-indigo :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-indigo :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-purple :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-purple :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-purple :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-purple :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-purple :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-purple :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-pink :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-pink :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-pink :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-pink :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-pink :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-pink :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
@@ -14588,217 +14588,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .\\\\32xl\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .\\\\32xl\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .\\\\32xl\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -14808,132 +14808,132 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .\\\\32xl\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -14943,217 +14943,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-sm :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-sm :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-sm :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-sm :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-sm :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-sm :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -15163,217 +15163,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -15383,217 +15383,217 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -15603,287 +15603,287 @@ it('should be possible to change the default className from `prose` to `markdown
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-red :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-red :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-red :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-red :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-red :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-red :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-yellow :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-yellow :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-yellow :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-yellow :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-yellow :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-yellow :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-green :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-green :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-green :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-green :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-green :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-green :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-blue :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-blue :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-blue :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-blue :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-blue :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-blue :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-indigo :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-indigo :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-indigo :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-indigo :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-indigo :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-indigo :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-purple :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-purple :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-purple :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-purple :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-purple :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-purple :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-pink :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-pink :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-pink :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-pink :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-pink :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-pink :where(a code):not(:where(.not-markdown *)) {
 
     "
   `)
@@ -33114,217 +33114,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       - .prose :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(a):not(:where(.not-prose *)) {
-      + .markdown :where(a):not(:where(.not-prose *)) {
+      + .markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(strong):not(:where(.not-prose *)) {
-      + .markdown :where(strong):not(:where(.not-prose *)) {
+      + .markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      + .markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      + .markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(hr):not(:where(.not-prose *)) {
-      + .markdown :where(hr):not(:where(.not-prose *)) {
+      + .markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      + .markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      + .markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      + .markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      + .markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       - .prose :where(h1):not(:where(.not-prose *)) {
-      + .markdown :where(h1):not(:where(.not-prose *)) {
+      + .markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h1 strong):not(:where(.not-prose *)) {
-      + .markdown :where(h1 strong):not(:where(.not-prose *)) {
+      + .markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h2):not(:where(.not-prose *)) {
-      + .markdown :where(h2):not(:where(.not-prose *)) {
+      + .markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h2 strong):not(:where(.not-prose *)) {
-      + .markdown :where(h2 strong):not(:where(.not-prose *)) {
+      + .markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h3):not(:where(.not-prose *)) {
-      + .markdown :where(h3):not(:where(.not-prose *)) {
+      + .markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h3 strong):not(:where(.not-prose *)) {
-      + .markdown :where(h3 strong):not(:where(.not-prose *)) {
+      + .markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h4):not(:where(.not-prose *)) {
-      + .markdown :where(h4):not(:where(.not-prose *)) {
+      + .markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h4 strong):not(:where(.not-prose *)) {
-      + .markdown :where(h4 strong):not(:where(.not-prose *)) {
+      + .markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(code):not(:where(.not-prose *)) {
-      + .markdown :where(code):not(:where(.not-prose *)) {
+      + .markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(code):not(:where(.not-prose *))::before {
-      + .markdown :where(code):not(:where(.not-prose *))::before {
+      + .markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(code):not(:where(.not-prose *))::after {
-      + .markdown :where(code):not(:where(.not-prose *))::after {
+      + .markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       - .prose :where(a code):not(:where(.not-prose *)) {
-      + .markdown :where(a code):not(:where(.not-prose *)) {
+      + .markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(pre):not(:where(.not-prose *)) {
-      + .markdown :where(pre):not(:where(.not-prose *)) {
+      + .markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(pre code):not(:where(.not-prose *)) {
-      + .markdown :where(pre code):not(:where(.not-prose *)) {
+      + .markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(pre code):not(:where(.not-prose *))::before {
-      + .markdown :where(pre code):not(:where(.not-prose *))::before {
+      + .markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose :where(pre code):not(:where(.not-prose *))::after {
-      + .markdown :where(pre code):not(:where(.not-prose *))::after {
+      + .markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       - .prose :where(table):not(:where(.not-prose *)) {
-      + .markdown :where(table):not(:where(.not-prose *)) {
+      + .markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(thead):not(:where(.not-prose *)) {
-      + .markdown :where(thead):not(:where(.not-prose *)) {
+      + .markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(thead th):not(:where(.not-prose *)) {
-      + .markdown :where(thead th):not(:where(.not-prose *)) {
+      + .markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(tbody tr):not(:where(.not-prose *)) {
-      + .markdown :where(tbody tr):not(:where(.not-prose *)) {
+      + .markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -33334,82 +33334,82 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       - .prose :where(p):not(:where(.not-prose *)) {
-      + .markdown :where(p):not(:where(.not-prose *)) {
+      + .markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(img):not(:where(.not-prose *)) {
-      + .markdown :where(img):not(:where(.not-prose *)) {
+      + .markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(video):not(:where(.not-prose *)) {
-      + .markdown :where(video):not(:where(.not-prose *)) {
+      + .markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(figure):not(:where(.not-prose *)) {
-      + .markdown :where(figure):not(:where(.not-prose *)) {
+      + .markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ol):not(:where(.not-prose *)) {
-      + .markdown :where(ol):not(:where(.not-prose *)) {
+      + .markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ul):not(:where(.not-prose *)) {
-      + .markdown :where(ul):not(:where(.not-prose *)) {
+      + .markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(li):not(:where(.not-prose *)) {
-      + .markdown :where(li):not(:where(.not-prose *)) {
+      + .markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
@@ -33622,22 +33622,22 @@ it('should be possible to change the default modifiers and change the className'
       - }
       -
       - .prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
@@ -33653,12 +33653,12 @@ it('should be possible to change the default modifiers and change the className'
       - }
       -
       - .prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -33670,22 +33670,22 @@ it('should be possible to change the default modifiers and change the className'
       - }
       -
       - .prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -33695,217 +33695,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       - .prose-lg :where(p):not(:where(.not-prose *)) {
-      + .markdown-lg :where(p):not(:where(.not-prose *)) {
+      + .markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h1):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h1):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h2):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h2):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h3):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h3):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h4):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h4):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(img):not(:where(.not-prose *)) {
-      + .markdown-lg :where(img):not(:where(.not-prose *)) {
+      + .markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(video):not(:where(.not-prose *)) {
-      + .markdown-lg :where(video):not(:where(.not-prose *)) {
+      + .markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(figure):not(:where(.not-prose *)) {
-      + .markdown-lg :where(figure):not(:where(.not-prose *)) {
+      + .markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(code):not(:where(.not-prose *)) {
-      + .markdown-lg :where(code):not(:where(.not-prose *)) {
+      + .markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(pre):not(:where(.not-prose *)) {
-      + .markdown-lg :where(pre):not(:where(.not-prose *)) {
+      + .markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ol):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ol):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ul):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ul):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(li):not(:where(.not-prose *)) {
-      + .markdown-lg :where(li):not(:where(.not-prose *)) {
+      + .markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(hr):not(:where(.not-prose *)) {
-      + .markdown-lg :where(hr):not(:where(.not-prose *)) {
+      + .markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(table):not(:where(.not-prose *)) {
-      + .markdown-lg :where(table):not(:where(.not-prose *)) {
+      + .markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(thead th):not(:where(.not-prose *)) {
-      + .markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      + .markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -33915,217 +33915,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       - .prose-xl :where(p):not(:where(.not-prose *)) {
-      + .markdown-xl :where(p):not(:where(.not-prose *)) {
+      + .markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h1):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h1):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h2):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h2):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h3):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h3):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h4):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h4):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(img):not(:where(.not-prose *)) {
-      + .markdown-xl :where(img):not(:where(.not-prose *)) {
+      + .markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(video):not(:where(.not-prose *)) {
-      + .markdown-xl :where(video):not(:where(.not-prose *)) {
+      + .markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(figure):not(:where(.not-prose *)) {
-      + .markdown-xl :where(figure):not(:where(.not-prose *)) {
+      + .markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(code):not(:where(.not-prose *)) {
-      + .markdown-xl :where(code):not(:where(.not-prose *)) {
+      + .markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(pre):not(:where(.not-prose *)) {
-      + .markdown-xl :where(pre):not(:where(.not-prose *)) {
+      + .markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ol):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ol):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ul):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ul):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(li):not(:where(.not-prose *)) {
-      + .markdown-xl :where(li):not(:where(.not-prose *)) {
+      + .markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(hr):not(:where(.not-prose *)) {
-      + .markdown-xl :where(hr):not(:where(.not-prose *)) {
+      + .markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(table):not(:where(.not-prose *)) {
-      + .markdown-xl :where(table):not(:where(.not-prose *)) {
+      + .markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(thead th):not(:where(.not-prose *)) {
-      + .markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      + .markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -34135,217 +34135,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       - .prose-2xl :where(p):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(p):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      + .markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      + .markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h1):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h2):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h3):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h4):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(img):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(img):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(video):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(video):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(figure):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(code):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(code):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(pre):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ol):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ul):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(li):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(li):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      + .markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      + .markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      + .markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      + .markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       - .prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(hr):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(table):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(table):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       - .prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      + .markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      + .markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -34417,217 +34417,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .sm\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .sm\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .sm\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .sm\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .sm\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .sm\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .sm\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .sm\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .sm\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .sm\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -34637,82 +34637,82 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .sm\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
@@ -34724,17 +34724,17 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .sm\\\\:prose :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
@@ -34828,7 +34828,7 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
@@ -34959,12 +34959,12 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -34976,22 +34976,22 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .sm\\\\:prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -35001,217 +35001,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .sm\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -35221,217 +35221,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .sm\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -35441,217 +35441,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .sm\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .sm\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .sm\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .sm\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .sm\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .sm\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -35723,217 +35723,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .md\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .md\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .md\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .md\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .md\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .md\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .md\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .md\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .md\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .md\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -35943,82 +35943,82 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .md\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36087,7 +36087,7 @@ it('should be possible to change the default modifiers and change the className'
       -
       -   .md\\\\:prose-sm :where(h1):not(:where(.not-prose *)) {
       -     font-size: 2.1428571em;
-      +   .md\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36132,7 +36132,7 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36236,7 +36236,7 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36249,7 +36249,7 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36268,12 +36268,12 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36285,22 +36285,22 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .md\\\\:prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36310,217 +36310,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .md\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36530,217 +36530,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .md\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -36750,217 +36750,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .md\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .md\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .md\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .md\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .md\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .md\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -37029,217 +37029,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .lg\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .lg\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .lg\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .lg\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .lg\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .lg\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .lg\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .lg\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .lg\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .lg\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -37249,82 +37249,82 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .lg\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
@@ -37537,22 +37537,22 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .lg\\\\:prose-sm :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
@@ -37568,12 +37568,12 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .lg\\\\:prose-sm :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -37585,22 +37585,22 @@ it('should be possible to change the default modifiers and change the className'
       -   }
       -
       -   .lg\\\\:prose-sm :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-sm :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -37610,217 +37610,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .lg\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -37830,217 +37830,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .lg\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -38050,217 +38050,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .lg\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .lg\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .lg\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .lg\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .lg\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .lg\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -38332,217 +38332,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .xl\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .xl\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .xl\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .xl\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .xl\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .xl\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .xl\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .xl\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .xl\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .xl\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -38552,132 +38552,132 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .xl\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -38910,217 +38910,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .xl\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -39130,217 +39130,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .xl\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -39350,217 +39350,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .xl\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .xl\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .xl\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .xl\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -39632,217 +39632,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .\\\\32xl\\\\:prose :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(a):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(a):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(a):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='A']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='A']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='A']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='a']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='a']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='a']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='A' s]):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='A' s]):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='A' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='a' s]):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='a' s]):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='a' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='I']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='I']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='I']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='i']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='i']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='i']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='I' s]):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='I' s]):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='I' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='i' s]):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='i' s]):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='i' s]):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol[type='1']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol[type='1']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol[type='1']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(blockquote p:first-of-type):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
-      +   .\\\\32xl\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-prose *))::after {
+      +   .\\\\32xl\\\\:markdown :where(blockquote p:last-of-type):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h1 strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h1 strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h1 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h2 strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h2 strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h2 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h3 strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h3 strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h3 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h4 strong):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h4 strong):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h4 strong):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(code):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(code):not(:where(.not-prose *))::after {
-      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-prose *))::after {
+      +   .\\\\32xl\\\\:markdown :where(code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(a code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(a code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(a code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(pre code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(pre code):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(pre code):not(:where(.not-prose *))::after {
-      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-prose *))::after {
+      +   .\\\\32xl\\\\:markdown :where(pre code):not(:where(.not-markdown *))::after {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(thead):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(thead):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(thead):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody tr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody tr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody tr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody tr:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody tr:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody tr:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
@@ -39852,132 +39852,132 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .\\\\32xl\\\\:prose :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -40210,217 +40210,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-lg :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-lg :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-lg :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-lg :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-lg :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -40430,217 +40430,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 
@@ -40650,217 +40650,217 @@ it('should be possible to change the default modifiers and change the className'
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where([class~='lead']):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where([class~='lead']):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(blockquote):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(blockquote):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(blockquote):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h1):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h1):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h1):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h2):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h2):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h2):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h3):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h3):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h3):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h4):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h4):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h4):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(img):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(img):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(img):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(video):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(video):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(video):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(figure):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(figure):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(figure):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(figure > *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(figure > *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(figure > *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(figure figcaption):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(figure figcaption):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h2 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h2 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h2 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h3 code):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h3 code):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h3 code):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(pre):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(pre):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(pre):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ul):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ol > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ol > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ul > li):not(:where(.not-prose *))::before {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-prose *))::before {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul > li):not(:where(.not-markdown *))::before {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ul > li p):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li p):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ul > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ol > li > *:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> ol > li > *:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(hr):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(hr):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(hr):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(hr + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(hr + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(hr + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h2 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h2 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h2 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h3 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h3 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h3 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(h4 + *):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(h4 + *):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(h4 + *):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(table):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(table):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(table):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(thead th):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(thead th):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(thead th):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(thead th:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(thead th:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(tbody td):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td:first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(tbody td:last-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> :first-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> :first-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> :first-child):not(:where(.not-markdown *)) {
 
       ---
 
       -   .\\\\32xl\\\\:prose-2xl :where(> :last-child):not(:where(.not-prose *)) {
-      +   .\\\\32xl\\\\:markdown-2xl :where(> :last-child):not(:where(.not-prose *)) {
+      +   .\\\\32xl\\\\:markdown-2xl :where(> :last-child):not(:where(.not-markdown *)) {
 
       ---
 

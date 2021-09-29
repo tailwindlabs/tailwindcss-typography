@@ -10,19 +10,19 @@ const computed = {
   // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
 }
 
-function inWhere(selector) {
+function inWhere(selector, className) {
   if (selector.endsWith('::before')) {
-    return `:where(${selector.slice(0, -8)}):not(:where(.not-prose *))::before`
+    return `:where(${selector.slice(0, -8)}):not(:where(.not-${className} *))::before`
   }
 
   if (selector.endsWith('::after')) {
-    return `:where(${selector.slice(0, -7)}):not(:where(.not-prose *))::after`
+    return `:where(${selector.slice(0, -7)}):not(:where(.not-${className} *))::after`
   }
 
-  return `:where(${selector}):not(:where(.not-prose *))`
+  return `:where(${selector}):not(:where(.not-${className} *))`
 }
 
-function configToCss(config = {}, target) {
+function configToCss(config = {}, { target, className }) {
   return Object.fromEntries(
     Object.entries(
       merge(
@@ -38,7 +38,7 @@ function configToCss(config = {}, target) {
       }
 
       if (typeof v == 'object' && v.constructor == Object) {
-        return [inWhere(k), v]
+        return [inWhere(k, className), v]
       }
 
       return [k, v]
@@ -74,7 +74,7 @@ module.exports = plugin.withOptions(
         all.map((modifier) => ({
           [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
             config[modifier],
-            target,
+            { target, className },
           ),
         })),
         variants('typography')
