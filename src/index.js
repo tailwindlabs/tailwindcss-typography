@@ -12,14 +12,14 @@ const computed = {
 
 function inWhere(selector) {
   if (selector.endsWith('::before')) {
-    return `:where(${selector.slice(0, -8)})::before`
+    return `:where(${selector.slice(0, -8)}):not(:where(.not-prose *))::before`
   }
 
   if (selector.endsWith('::after')) {
-    return `:where(${selector.slice(0, -7)})::after`
+    return `:where(${selector.slice(0, -7)}):not(:where(.not-prose *))::after`
   }
 
-  return `:where(${selector})`
+  return `:where(${selector}):not(:where(.not-prose *))`
 }
 
 function configToCss(config = {}, target) {
