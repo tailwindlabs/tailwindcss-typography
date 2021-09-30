@@ -10,19 +10,21 @@ const computed = {
   // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
 }
 
-function inWhere(selector, className) {
+function inWhere(selector, { className, prefix }) {
+  let prefixedNot = prefix(`.not-${className}`).slice(1)
+
   if (selector.endsWith('::before')) {
-    return `:where(${selector.slice(0, -8)}):not(:where(.not-${className} *))::before`
+    return `:where(${selector.slice(0, -8)}):not(:where([class~="${prefixedNot}"] *))::before`
   }
 
   if (selector.endsWith('::after')) {
-    return `:where(${selector.slice(0, -7)}):not(:where(.not-${className} *))::after`
+    return `:where(${selector.slice(0, -7)}):not(:where([class~="${prefixedNot}"] *))::after`
   }
 
-  return `:where(${selector}):not(:where(.not-${className} *))`
+  return `:where(${selector}):not(:where([class~="${prefixedNot}"] *))`
 }
 
-function configToCss(config = {}, { target, className }) {
+function configToCss(config = {}, { target, className, prefix }) {
   return Object.fromEntries(
     Object.entries(
       merge(
@@ -38,7 +40,7 @@ function configToCss(config = {}, { target, className }) {
       }
 
       if (typeof v == 'object' && v.constructor == Object) {
-        return [inWhere(k, className), v]
+        return [inWhere(k, { className, prefix }), v]
       }
 
       return [k, v]
@@ -48,7 +50,7 @@ function configToCss(config = {}, { target, className }) {
 
 module.exports = plugin.withOptions(
   ({ modifiers, className = 'prose', target = 'modern' } = {}) => {
-    return function ({ addComponents, theme, variants }) {
+    return function ({ addComponents, theme, variants, prefix }) {
       const DEFAULT_MODIFIERS = [
         'DEFAULT',
         'sm',
@@ -74,7 +76,7 @@ module.exports = plugin.withOptions(
         all.map((modifier) => ({
           [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
             config[modifier],
-            { target, className },
+            { target, className, prefix }
           ),
         })),
         variants('typography')
