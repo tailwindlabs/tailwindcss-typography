@@ -46,7 +46,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "snapshot-diff": "^0.8.1",
-    "tailwindcss": "^2.2.16"
+    "tailwindcss": "insiders"
   },
   "dependencies": {
     "lodash.castarray": "^4.4.0",

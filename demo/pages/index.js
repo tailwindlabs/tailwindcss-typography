@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import MarkdownSample from '../components/MarkdownSample.mdx'
 
-export default () => {
+export default function Index() {
   return (
     <div className="antialiased text-gray-900">
       <Head>

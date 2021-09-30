@@ -1,12 +1,11 @@
 const mdx = require('@mdx-js/mdx')
 
 module.exports = {
-  mode: 'jit',
   purge: {
     content: ['./demo/pages/**/*.{js,mdx}', './demo/components/**/*.{js,mdx}'],
     transform: {
       mdx: (content) => mdx.sync(content),
-    }
+    },
   },
   theme: {},
   variants: {},
