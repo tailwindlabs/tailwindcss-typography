@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 const { isUsableColor } = require('./utils')
 
 const round = (num) =>
@@ -13,18 +13,18 @@ module.exports = (theme) => ({
   DEFAULT: {
     css: [
       {
-        color: theme('colors.gray.700', defaultTheme.colors.gray[700]),
+        color: theme('colors.gray.700', colors.gray[700]),
         maxWidth: '65ch',
         '[class~="lead"]': {
-          color: theme('colors.gray.600', defaultTheme.colors.gray[600]),
+          color: theme('colors.gray.600', colors.gray[600]),
         },
         a: {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           textDecoration: 'underline',
           fontWeight: '500',
         },
         strong: {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           fontWeight: '600',
         },
         'ol[type="A"]': {
@@ -61,7 +61,7 @@ module.exports = (theme) => ({
           content: 'counter(list-item, var(--list-counter-style, decimal)) "."',
           position: 'absolute',
           fontWeight: '400',
-          color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
+          color: theme('colors.gray.500', colors.gray[500]),
         },
         'ul > li': {
           position: 'relative',
@@ -69,19 +69,19 @@ module.exports = (theme) => ({
         'ul > li::before': {
           content: '""',
           position: 'absolute',
-          backgroundColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
+          backgroundColor: theme('colors.gray.300', colors.gray[300]),
           borderRadius: '50%',
         },
         hr: {
-          borderColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
+          borderColor: theme('colors.gray.200', colors.gray[200]),
           borderTopWidth: 1,
         },
         blockquote: {
           fontWeight: '500',
           fontStyle: 'italic',
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           borderLeftWidth: '0.25rem',
-          borderLeftColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
+          borderLeftColor: theme('colors.gray.200', colors.gray[200]),
           quotes: '"\\201C""\\201D""\\2018""\\2019"',
         },
         'blockquote p:first-of-type::before': {
@@ -91,38 +91,38 @@ module.exports = (theme) => ({
           content: 'close-quote',
         },
         h1: {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           fontWeight: '800',
         },
         'h1 strong': {
           fontWeight: '900',
         },
         h2: {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           fontWeight: '700',
         },
         'h2 strong': {
           fontWeight: '800',
         },
         h3: {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           fontWeight: '600',
         },
         'h3 strong': {
           fontWeight: '700',
         },
         h4: {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           fontWeight: '600',
         },
         'h4 strong': {
           fontWeight: '700',
         },
         'figure figcaption': {
-          color: theme('colors.gray.500', defaultTheme.colors.gray[500]),
+          color: theme('colors.gray.500', colors.gray[500]),
         },
         code: {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           fontWeight: '600',
         },
         'code::before': {
@@ -132,11 +132,11 @@ module.exports = (theme) => ({
           content: '"`"',
         },
         'a code': {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
         },
         pre: {
-          color: theme('colors.gray.200', defaultTheme.colors.gray[200]),
-          backgroundColor: theme('colors.gray.800', defaultTheme.colors.gray[800]),
+          color: theme('colors.gray.200', colors.gray[200]),
+          backgroundColor: theme('colors.gray.800', colors.gray[800]),
           overflowX: 'auto',
         },
         'pre code': {
@@ -164,17 +164,17 @@ module.exports = (theme) => ({
           marginBottom: em(32, 16),
         },
         thead: {
-          color: theme('colors.gray.900', defaultTheme.colors.gray[900]),
+          color: theme('colors.gray.900', colors.gray[900]),
           fontWeight: '600',
           borderBottomWidth: '1px',
-          borderBottomColor: theme('colors.gray.300', defaultTheme.colors.gray[300]),
+          borderBottomColor: theme('colors.gray.300', colors.gray[300]),
         },
         'thead th': {
           verticalAlign: 'bottom',
         },
         'tbody tr': {
           borderBottomWidth: '1px',
-          borderBottomColor: theme('colors.gray.200', defaultTheme.colors.gray[200]),
+          borderBottomColor: theme('colors.gray.200', colors.gray[200]),
         },
         'tbody tr:last-child': {
           borderBottomWidth: '0',
