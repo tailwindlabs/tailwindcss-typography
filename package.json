@@ -24,8 +24,7 @@
     "build": "next build demo",
     "export": "next export demo",
     "deploy": "npm run build && npm run export",
-    "start": "next start demo",
-    "prepublishOnly": "node scripts/build.js"
+    "start": "next start demo"
   },
   "peerDependencies": {
     "tailwindcss": ">=3.0.0 || >= 3.0.0-alpha.1"
