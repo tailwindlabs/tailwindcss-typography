@@ -309,20 +309,20 @@ it('should generate the default classes for the typography components', async ()
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
-    .prose :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
     }
-    .prose :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.25em;
     }
-    .prose :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.25em;
     }
-    .prose :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.25em;
     }
-    .prose :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.25em;
     }
     .prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -353,10 +353,10 @@ it('should generate the default classes for the typography components', async ()
     .prose :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         padding-right: 0;
     }
-    .prose :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0;
     }
-    .prose :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 0;
     }
     .prose-sm {
@@ -469,20 +469,20 @@ it('should generate the default classes for the typography components', async ()
         top: calc(0.8571429em - 0.1785714em);
         left: 0.2142857em;
     }
-    .prose-sm :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-sm > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0.5714286em;
         margin-bottom: 0.5714286em;
     }
-    .prose-sm :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-sm > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.1428571em;
     }
-    .prose-sm :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-sm > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.1428571em;
     }
-    .prose-sm :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-sm > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.1428571em;
     }
-    .prose-sm :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-sm > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.1428571em;
     }
     .prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -532,10 +532,10 @@ it('should generate the default classes for the typography components', async ()
     .prose-sm :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         padding-right: 0;
     }
-    .prose-sm :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-sm > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0;
     }
-    .prose-sm :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-sm > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 0;
     }
     .prose-lg {
@@ -648,20 +648,20 @@ it('should generate the default classes for the typography components', async ()
         top: calc(0.8888889em - 0.1666667em);
         left: 0.2222222em;
     }
-    .prose-lg :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-lg > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0.8888889em;
         margin-bottom: 0.8888889em;
     }
-    .prose-lg :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-lg > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.3333333em;
     }
-    .prose-lg :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-lg > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.3333333em;
     }
-    .prose-lg :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-lg > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.3333333em;
     }
-    .prose-lg :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-lg > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.3333333em;
     }
     .prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -711,10 +711,10 @@ it('should generate the default classes for the typography components', async ()
     .prose-lg :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         padding-right: 0;
     }
-    .prose-lg :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-lg > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0;
     }
-    .prose-lg :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-lg > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 0;
     }
     .prose-xl {
@@ -827,20 +827,20 @@ it('should generate the default classes for the typography components', async ()
         top: calc(0.9em - 0.175em);
         left: 0.25em;
     }
-    .prose-xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0.8em;
         margin-bottom: 0.8em;
     }
-    .prose-xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.2em;
     }
-    .prose-xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.2em;
     }
-    .prose-xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.2em;
     }
-    .prose-xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.2em;
     }
     .prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -890,10 +890,10 @@ it('should generate the default classes for the typography components', async ()
     .prose-xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         padding-right: 0;
     }
-    .prose-xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0;
     }
-    .prose-xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 0;
     }
     .prose-2xl {
@@ -1006,20 +1006,20 @@ it('should generate the default classes for the typography components', async ()
         top: calc(0.8333333em - 0.1666667em);
         left: 0.25em;
     }
-    .prose-2xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-2xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0.8333333em;
         margin-bottom: 0.8333333em;
     }
-    .prose-2xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-2xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.3333333em;
     }
-    .prose-2xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-2xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.3333333em;
     }
-    .prose-2xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-2xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 1.3333333em;
     }
-    .prose-2xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-2xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 1.3333333em;
     }
     .prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -1069,10 +1069,10 @@ it('should generate the default classes for the typography components', async ()
     .prose-2xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         padding-right: 0;
     }
-    .prose-2xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-2xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-top: 0;
     }
-    .prose-2xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+    .prose-2xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
         margin-bottom: 0;
     }
     .prose-slate :where(a):not(:where([class~=\\"not-prose\\"] *)) {
@@ -1468,20 +1468,20 @@ it('should generate the default classes for the typography components', async ()
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
-        .sm\\\\:prose :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.75em;
             margin-bottom: 0.75em;
         }
-        .sm\\\\:prose :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .sm\\\\:prose :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
-        .sm\\\\:prose :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .sm\\\\:prose :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
         .sm\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -1512,10 +1512,10 @@ it('should generate the default classes for the typography components', async ()
         .sm\\\\:prose :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .sm\\\\:prose :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .sm\\\\:prose :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .sm\\\\:prose-sm {
@@ -1628,20 +1628,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8571429em - 0.1785714em);
             left: 0.2142857em;
         }
-        .sm\\\\:prose-sm :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-sm > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.5714286em;
             margin-bottom: 0.5714286em;
         }
-        .sm\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .sm\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
-        .sm\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .sm\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
         .sm\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -1691,10 +1691,10 @@ it('should generate the default classes for the typography components', async ()
         .sm\\\\:prose-sm :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .sm\\\\:prose-sm :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-sm > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .sm\\\\:prose-sm :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-sm > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .sm\\\\:prose-lg {
@@ -1807,20 +1807,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8888889em - 0.1666667em);
             left: 0.2222222em;
         }
-        .sm\\\\:prose-lg :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-lg > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8888889em;
             margin-bottom: 0.8888889em;
         }
-        .sm\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .sm\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .sm\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .sm\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .sm\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -1870,10 +1870,10 @@ it('should generate the default classes for the typography components', async ()
         .sm\\\\:prose-lg :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .sm\\\\:prose-lg :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-lg > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .sm\\\\:prose-lg :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-lg > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .sm\\\\:prose-xl {
@@ -1986,20 +1986,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.9em - 0.175em);
             left: 0.25em;
         }
-        .sm\\\\:prose-xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8em;
             margin-bottom: 0.8em;
         }
-        .sm\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .sm\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
-        .sm\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .sm\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
         .sm\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -2049,10 +2049,10 @@ it('should generate the default classes for the typography components', async ()
         .sm\\\\:prose-xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .sm\\\\:prose-xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .sm\\\\:prose-xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .sm\\\\:prose-2xl {
@@ -2165,20 +2165,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8333333em - 0.1666667em);
             left: 0.25em;
         }
-        .sm\\\\:prose-2xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-2xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8333333em;
             margin-bottom: 0.8333333em;
         }
-        .sm\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .sm\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .sm\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .sm\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .sm\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -2228,10 +2228,10 @@ it('should generate the default classes for the typography components', async ()
         .sm\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .sm\\\\:prose-2xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-2xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .sm\\\\:prose-2xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .sm\\\\:prose-2xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .sm\\\\:prose-slate :where(a):not(:where([class~=\\"not-prose\\"] *)) {
@@ -2628,20 +2628,20 @@ it('should generate the default classes for the typography components', async ()
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
-        .md\\\\:prose :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.75em;
             margin-bottom: 0.75em;
         }
-        .md\\\\:prose :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .md\\\\:prose :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
-        .md\\\\:prose :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .md\\\\:prose :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
         .md\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -2672,10 +2672,10 @@ it('should generate the default classes for the typography components', async ()
         .md\\\\:prose :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .md\\\\:prose :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .md\\\\:prose :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .md\\\\:prose-sm {
@@ -2788,20 +2788,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8571429em - 0.1785714em);
             left: 0.2142857em;
         }
-        .md\\\\:prose-sm :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-sm > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.5714286em;
             margin-bottom: 0.5714286em;
         }
-        .md\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .md\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
-        .md\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .md\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
         .md\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -2851,10 +2851,10 @@ it('should generate the default classes for the typography components', async ()
         .md\\\\:prose-sm :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .md\\\\:prose-sm :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-sm > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .md\\\\:prose-sm :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-sm > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .md\\\\:prose-lg {
@@ -2967,20 +2967,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8888889em - 0.1666667em);
             left: 0.2222222em;
         }
-        .md\\\\:prose-lg :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-lg > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8888889em;
             margin-bottom: 0.8888889em;
         }
-        .md\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .md\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .md\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .md\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .md\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -3030,10 +3030,10 @@ it('should generate the default classes for the typography components', async ()
         .md\\\\:prose-lg :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .md\\\\:prose-lg :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-lg > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .md\\\\:prose-lg :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-lg > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .md\\\\:prose-xl {
@@ -3146,20 +3146,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.9em - 0.175em);
             left: 0.25em;
         }
-        .md\\\\:prose-xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8em;
             margin-bottom: 0.8em;
         }
-        .md\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .md\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
-        .md\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .md\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
         .md\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -3209,10 +3209,10 @@ it('should generate the default classes for the typography components', async ()
         .md\\\\:prose-xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .md\\\\:prose-xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .md\\\\:prose-xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .md\\\\:prose-2xl {
@@ -3325,20 +3325,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8333333em - 0.1666667em);
             left: 0.25em;
         }
-        .md\\\\:prose-2xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-2xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8333333em;
             margin-bottom: 0.8333333em;
         }
-        .md\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .md\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .md\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .md\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .md\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -3388,10 +3388,10 @@ it('should generate the default classes for the typography components', async ()
         .md\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .md\\\\:prose-2xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-2xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .md\\\\:prose-2xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .md\\\\:prose-2xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .md\\\\:prose-slate :where(a):not(:where([class~=\\"not-prose\\"] *)) {
@@ -3788,20 +3788,20 @@ it('should generate the default classes for the typography components', async ()
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
-        .lg\\\\:prose :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.75em;
             margin-bottom: 0.75em;
         }
-        .lg\\\\:prose :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .lg\\\\:prose :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
-        .lg\\\\:prose :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .lg\\\\:prose :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
         .lg\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -3832,10 +3832,10 @@ it('should generate the default classes for the typography components', async ()
         .lg\\\\:prose :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .lg\\\\:prose :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .lg\\\\:prose :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .lg\\\\:prose-sm {
@@ -3948,20 +3948,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8571429em - 0.1785714em);
             left: 0.2142857em;
         }
-        .lg\\\\:prose-sm :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-sm > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.5714286em;
             margin-bottom: 0.5714286em;
         }
-        .lg\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .lg\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
-        .lg\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .lg\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
         .lg\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -4011,10 +4011,10 @@ it('should generate the default classes for the typography components', async ()
         .lg\\\\:prose-sm :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .lg\\\\:prose-sm :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-sm > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .lg\\\\:prose-sm :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-sm > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .lg\\\\:prose-lg {
@@ -4127,20 +4127,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8888889em - 0.1666667em);
             left: 0.2222222em;
         }
-        .lg\\\\:prose-lg :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-lg > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8888889em;
             margin-bottom: 0.8888889em;
         }
-        .lg\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .lg\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .lg\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .lg\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .lg\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -4190,10 +4190,10 @@ it('should generate the default classes for the typography components', async ()
         .lg\\\\:prose-lg :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .lg\\\\:prose-lg :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-lg > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .lg\\\\:prose-lg :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-lg > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .lg\\\\:prose-xl {
@@ -4306,20 +4306,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.9em - 0.175em);
             left: 0.25em;
         }
-        .lg\\\\:prose-xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8em;
             margin-bottom: 0.8em;
         }
-        .lg\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .lg\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
-        .lg\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .lg\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
         .lg\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -4369,10 +4369,10 @@ it('should generate the default classes for the typography components', async ()
         .lg\\\\:prose-xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .lg\\\\:prose-xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .lg\\\\:prose-xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .lg\\\\:prose-2xl {
@@ -4485,20 +4485,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8333333em - 0.1666667em);
             left: 0.25em;
         }
-        .lg\\\\:prose-2xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-2xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8333333em;
             margin-bottom: 0.8333333em;
         }
-        .lg\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .lg\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .lg\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .lg\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .lg\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -4548,10 +4548,10 @@ it('should generate the default classes for the typography components', async ()
         .lg\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .lg\\\\:prose-2xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-2xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .lg\\\\:prose-2xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .lg\\\\:prose-2xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .lg\\\\:prose-slate :where(a):not(:where([class~=\\"not-prose\\"] *)) {
@@ -4948,20 +4948,20 @@ it('should generate the default classes for the typography components', async ()
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
-        .xl\\\\:prose :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.75em;
             margin-bottom: 0.75em;
         }
-        .xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
-        .xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
         .xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -4992,10 +4992,10 @@ it('should generate the default classes for the typography components', async ()
         .xl\\\\:prose :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .xl\\\\:prose :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .xl\\\\:prose :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .xl\\\\:prose-sm {
@@ -5108,20 +5108,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8571429em - 0.1785714em);
             left: 0.2142857em;
         }
-        .xl\\\\:prose-sm :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-sm > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.5714286em;
             margin-bottom: 0.5714286em;
         }
-        .xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
-        .xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
         .xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -5171,10 +5171,10 @@ it('should generate the default classes for the typography components', async ()
         .xl\\\\:prose-sm :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .xl\\\\:prose-sm :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-sm > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .xl\\\\:prose-sm :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-sm > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .xl\\\\:prose-lg {
@@ -5287,20 +5287,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8888889em - 0.1666667em);
             left: 0.2222222em;
         }
-        .xl\\\\:prose-lg :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-lg > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8888889em;
             margin-bottom: 0.8888889em;
         }
-        .xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -5350,10 +5350,10 @@ it('should generate the default classes for the typography components', async ()
         .xl\\\\:prose-lg :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .xl\\\\:prose-lg :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-lg > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .xl\\\\:prose-lg :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-lg > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .xl\\\\:prose-xl {
@@ -5466,20 +5466,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.9em - 0.175em);
             left: 0.25em;
         }
-        .xl\\\\:prose-xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8em;
             margin-bottom: 0.8em;
         }
-        .xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
-        .xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
         .xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -5529,10 +5529,10 @@ it('should generate the default classes for the typography components', async ()
         .xl\\\\:prose-xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .xl\\\\:prose-xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .xl\\\\:prose-xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .xl\\\\:prose-2xl {
@@ -5645,20 +5645,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8333333em - 0.1666667em);
             left: 0.25em;
         }
-        .xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8333333em;
             margin-bottom: 0.8333333em;
         }
-        .xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -5708,10 +5708,10 @@ it('should generate the default classes for the typography components', async ()
         .xl\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .xl\\\\:prose-2xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-2xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .xl\\\\:prose-2xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .xl\\\\:prose-2xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .xl\\\\:prose-slate :where(a):not(:where([class~=\\"not-prose\\"] *)) {
@@ -6108,20 +6108,20 @@ it('should generate the default classes for the typography components', async ()
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
-        .\\\\32xl\\\\:prose :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.75em;
             margin-bottom: 0.75em;
         }
-        .\\\\32xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .\\\\32xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
-        .\\\\32xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.25em;
         }
-        .\\\\32xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.25em;
         }
         .\\\\32xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -6152,10 +6152,10 @@ it('should generate the default classes for the typography components', async ()
         .\\\\32xl\\\\:prose :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .\\\\32xl\\\\:prose :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .\\\\32xl\\\\:prose :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .\\\\32xl\\\\:prose-sm {
@@ -6268,20 +6268,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8571429em - 0.1785714em);
             left: 0.2142857em;
         }
-        .\\\\32xl\\\\:prose-sm :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-sm > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.5714286em;
             margin-bottom: 0.5714286em;
         }
-        .\\\\32xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .\\\\32xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
-        .\\\\32xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.1428571em;
         }
-        .\\\\32xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.1428571em;
         }
         .\\\\32xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -6331,10 +6331,10 @@ it('should generate the default classes for the typography components', async ()
         .\\\\32xl\\\\:prose-sm :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .\\\\32xl\\\\:prose-sm :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-sm > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .\\\\32xl\\\\:prose-sm :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-sm > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .\\\\32xl\\\\:prose-lg {
@@ -6447,20 +6447,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8888889em - 0.1666667em);
             left: 0.2222222em;
         }
-        .\\\\32xl\\\\:prose-lg :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-lg > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8888889em;
             margin-bottom: 0.8888889em;
         }
-        .\\\\32xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .\\\\32xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .\\\\32xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .\\\\32xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .\\\\32xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -6510,10 +6510,10 @@ it('should generate the default classes for the typography components', async ()
         .\\\\32xl\\\\:prose-lg :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .\\\\32xl\\\\:prose-lg :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-lg > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .\\\\32xl\\\\:prose-lg :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-lg > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .\\\\32xl\\\\:prose-xl {
@@ -6626,20 +6626,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.9em - 0.175em);
             left: 0.25em;
         }
-        .\\\\32xl\\\\:prose-xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8em;
             margin-bottom: 0.8em;
         }
-        .\\\\32xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .\\\\32xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
-        .\\\\32xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.2em;
         }
-        .\\\\32xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.2em;
         }
         .\\\\32xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -6689,10 +6689,10 @@ it('should generate the default classes for the typography components', async ()
         .\\\\32xl\\\\:prose-xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .\\\\32xl\\\\:prose-xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .\\\\32xl\\\\:prose-xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .\\\\32xl\\\\:prose-2xl {
@@ -6805,20 +6805,20 @@ it('should generate the default classes for the typography components', async ()
             top: calc(0.8333333em - 0.1666667em);
             left: 0.25em;
         }
-        .\\\\32xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0.8333333em;
             margin-bottom: 0.8333333em;
         }
-        .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
-        .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 1.3333333em;
         }
-        .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 1.3333333em;
         }
         .\\\\32xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~=\\"not-prose\\"] *)) {
@@ -6868,10 +6868,10 @@ it('should generate the default classes for the typography components', async ()
         .\\\\32xl\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             padding-right: 0;
         }
-        .\\\\32xl\\\\:prose-2xl :where(> :first-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-2xl > :where(:first-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-top: 0;
         }
-        .\\\\32xl\\\\:prose-2xl :where(> :last-child):not(:where([class~=\\"not-prose\\"] *)) {
+        .\\\\32xl\\\\:prose-2xl > :where(:last-child):not(:where([class~=\\"not-prose\\"] *)) {
             margin-bottom: 0;
         }
         .\\\\32xl\\\\:prose-slate :where(a):not(:where([class~=\\"not-prose\\"] *)) {
@@ -7275,20 +7275,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -     margin-top: 0.5em;
       -     margin-bottom: 0.5em;
       - }
-      - .prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.75em;
       -     margin-bottom: 0.75em;
       - }
-      - .prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.25em;
       - }
-      - .prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.25em;
       - }
-      - .prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.25em;
       - }
-      - .prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.25em;
       - }
       - .prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -7319,10 +7319,10 @@ it('should be possible to change the default className from `prose` to `markdown
       - .prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-sm {
@@ -7435,20 +7435,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -     top: calc(0.8571429em - 0.1785714em);
       -     left: 0.2142857em;
       - }
-      - .prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.5714286em;
       -     margin-bottom: 0.5714286em;
       - }
-      - .prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.1428571em;
       - }
-      - .prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.1428571em;
       - }
-      - .prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.1428571em;
       - }
-      - .prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.1428571em;
       - }
       - .prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -7498,10 +7498,10 @@ it('should be possible to change the default className from `prose` to `markdown
       - .prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-lg {
@@ -7614,20 +7614,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -     top: calc(0.8888889em - 0.1666667em);
       -     left: 0.2222222em;
       - }
-      - .prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.8888889em;
       -     margin-bottom: 0.8888889em;
       - }
-      - .prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
-      - .prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
       - .prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -7677,10 +7677,10 @@ it('should be possible to change the default className from `prose` to `markdown
       - .prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-xl {
@@ -7793,20 +7793,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -     top: calc(0.9em - 0.175em);
       -     left: 0.25em;
       - }
-      - .prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.8em;
       -     margin-bottom: 0.8em;
       - }
-      - .prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.2em;
       - }
-      - .prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.2em;
       - }
-      - .prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.2em;
       - }
-      - .prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.2em;
       - }
       - .prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -7856,10 +7856,10 @@ it('should be possible to change the default className from `prose` to `markdown
       - .prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-2xl {
@@ -7972,20 +7972,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -     top: calc(0.8333333em - 0.1666667em);
       -     left: 0.25em;
       - }
-      - .prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.8333333em;
       -     margin-bottom: 0.8333333em;
       - }
-      - .prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
-      - .prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
       - .prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -8035,10 +8035,10 @@ it('should be possible to change the default className from `prose` to `markdown
       - .prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -8434,20 +8434,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .sm\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .sm\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .sm\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .sm\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .sm\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .sm\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -8478,10 +8478,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .sm\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-sm {
@@ -8594,20 +8594,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .sm\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -8657,10 +8657,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .sm\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-lg {
@@ -8773,20 +8773,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .sm\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -8836,10 +8836,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .sm\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-xl {
@@ -8952,20 +8952,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .sm\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -9015,10 +9015,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .sm\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-2xl {
@@ -9131,20 +9131,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .sm\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -9194,10 +9194,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .sm\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -9594,20 +9594,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .md\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .md\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .md\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .md\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .md\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .md\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -9638,10 +9638,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .md\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-sm {
@@ -9754,20 +9754,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .md\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .md\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .md\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .md\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .md\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .md\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -9817,10 +9817,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .md\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-lg {
@@ -9933,20 +9933,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .md\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .md\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .md\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .md\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -9996,10 +9996,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .md\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-xl {
@@ -10112,20 +10112,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .md\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .md\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .md\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .md\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .md\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .md\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -10175,10 +10175,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .md\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-2xl {
@@ -10291,20 +10291,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .md\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -10354,10 +10354,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .md\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -10754,20 +10754,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .lg\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .lg\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .lg\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .lg\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .lg\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .lg\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -10798,10 +10798,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .lg\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-sm {
@@ -10914,20 +10914,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .lg\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -10977,10 +10977,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .lg\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-lg {
@@ -11093,20 +11093,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .lg\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -11156,10 +11156,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .lg\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-xl {
@@ -11272,20 +11272,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .lg\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -11335,10 +11335,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .lg\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-2xl {
@@ -11451,20 +11451,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .lg\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -11514,10 +11514,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .lg\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -11914,20 +11914,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .xl\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -11958,10 +11958,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .xl\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-sm {
@@ -12074,20 +12074,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -12137,10 +12137,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .xl\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-lg {
@@ -12253,20 +12253,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -12316,10 +12316,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .xl\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-xl {
@@ -12432,20 +12432,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -12495,10 +12495,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .xl\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-2xl {
@@ -12611,20 +12611,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -12674,10 +12674,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .xl\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -13074,20 +13074,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .\\\\32xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -13118,10 +13118,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .\\\\32xl\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-sm {
@@ -13234,20 +13234,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .\\\\32xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -13297,10 +13297,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .\\\\32xl\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-lg {
@@ -13413,20 +13413,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .\\\\32xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -13476,10 +13476,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .\\\\32xl\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-xl {
@@ -13592,20 +13592,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .\\\\32xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -13655,10 +13655,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .\\\\32xl\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-2xl {
@@ -13771,20 +13771,20 @@ it('should be possible to change the default className from `prose` to `markdown
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .\\\\32xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -13834,10 +13834,10 @@ it('should be possible to change the default className from `prose` to `markdown
       -     .\\\\32xl\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -14241,27 +14241,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       + .prose > ul > li p {
 
       ---
 
-      - .prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose > ul > li > *:first-child {
 
       ---
 
-      - .prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose > ul > li > *:last-child {
 
       ---
 
-      - .prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose > ol > li > *:first-child {
 
       ---
 
-      - .prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose > ol > li > *:last-child {
 
       ---
@@ -14311,12 +14311,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       + .prose > :first-child {
 
       ---
 
-      - .prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       + .prose > :last-child {
 
       ---
@@ -14436,27 +14436,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       + .prose-sm > ul > li p {
 
       ---
 
-      - .prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-sm > ul > li > *:first-child {
 
       ---
 
-      - .prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-sm > ul > li > *:last-child {
 
       ---
 
-      - .prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-sm > ol > li > *:first-child {
 
       ---
 
-      - .prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-sm > ol > li > *:last-child {
 
       ---
@@ -14526,12 +14526,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-sm > :first-child {
 
       ---
 
-      - .prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-sm > :last-child {
 
       ---
@@ -14651,27 +14651,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       + .prose-lg > ul > li p {
 
       ---
 
-      - .prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-lg > ul > li > *:first-child {
 
       ---
 
-      - .prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-lg > ul > li > *:last-child {
 
       ---
 
-      - .prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-lg > ol > li > *:first-child {
 
       ---
 
-      - .prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-lg > ol > li > *:last-child {
 
       ---
@@ -14741,12 +14741,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-lg > :first-child {
 
       ---
 
-      - .prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-lg > :last-child {
 
       ---
@@ -14866,27 +14866,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       + .prose-xl > ul > li p {
 
       ---
 
-      - .prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-xl > ul > li > *:first-child {
 
       ---
 
-      - .prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-xl > ul > li > *:last-child {
 
       ---
 
-      - .prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-xl > ol > li > *:first-child {
 
       ---
 
-      - .prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-xl > ol > li > *:last-child {
 
       ---
@@ -14956,12 +14956,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-xl > :first-child {
 
       ---
 
-      - .prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-xl > :last-child {
 
       ---
@@ -15081,27 +15081,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       + .prose-2xl > ul > li p {
 
       ---
 
-      - .prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-2xl > ul > li > *:first-child {
 
       ---
 
-      - .prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-2xl > ul > li > *:last-child {
 
       ---
 
-      - .prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-2xl > ol > li > *:first-child {
 
       ---
 
-      - .prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-2xl > ol > li > *:last-child {
 
       ---
@@ -15171,12 +15171,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      - .prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       + .prose-2xl > :first-child {
 
       ---
 
-      - .prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       + .prose-2xl > :last-child {
 
       ---
@@ -15656,27 +15656,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose > ul > li p {
 
       ---
 
-      -     .sm\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose > ul > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose > ul > li > *:last-child {
 
       ---
 
-      -     .sm\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose > ol > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose > ol > li > *:last-child {
 
       ---
@@ -15741,12 +15741,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose > :first-child {
 
       ---
 
-      -     .sm\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose > :last-child {
 
       ---
@@ -15866,27 +15866,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-sm > ul > li p {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-sm > ul > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-sm > ul > li > *:last-child {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-sm > ol > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-sm > ol > li > *:last-child {
 
       ---
@@ -15971,12 +15971,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-sm > :first-child {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-sm > :last-child {
 
       ---
@@ -16096,27 +16096,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-lg > ul > li p {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-lg > ul > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-lg > ul > li > *:last-child {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-lg > ol > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-lg > ol > li > *:last-child {
 
       ---
@@ -16198,12 +16198,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-lg > :first-child {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-lg > :last-child {
 
       ---
@@ -16323,27 +16323,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-xl > ul > li p {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-xl > ul > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-xl > ul > li > *:last-child {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-xl > ol > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-xl > ol > li > *:last-child {
 
       ---
@@ -16428,12 +16428,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-xl > :first-child {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-xl > :last-child {
 
       ---
@@ -16553,27 +16553,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-2xl > ul > li p {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-2xl > ul > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-2xl > ul > li > *:last-child {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-2xl > ol > li > *:first-child {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-2xl > ol > li > *:last-child {
 
       ---
@@ -16655,12 +16655,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-2xl > :first-child {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-2xl > :last-child {
 
       ---
@@ -17140,27 +17140,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose > ul > li p {
 
       ---
 
-      -     .md\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose > ul > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose > ul > li > *:last-child {
 
       ---
 
-      -     .md\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose > ol > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose > ol > li > *:last-child {
 
       ---
@@ -17225,12 +17225,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose > :first-child {
 
       ---
 
-      -     .md\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose > :last-child {
 
       ---
@@ -17350,27 +17350,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-sm > ul > li p {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-sm > ul > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-sm > ul > li > *:last-child {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-sm > ol > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-sm > ol > li > *:last-child {
 
       ---
@@ -17452,12 +17452,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-sm > :first-child {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-sm > :last-child {
 
       ---
@@ -17577,27 +17577,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-lg > ul > li p {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-lg > ul > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-lg > ul > li > *:last-child {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-lg > ol > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-lg > ol > li > *:last-child {
 
       ---
@@ -17679,12 +17679,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-lg > :first-child {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-lg > :last-child {
 
       ---
@@ -17804,27 +17804,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-xl > ul > li p {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-xl > ul > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-xl > ul > li > *:last-child {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-xl > ol > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-xl > ol > li > *:last-child {
 
       ---
@@ -17906,12 +17906,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-xl > :first-child {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-xl > :last-child {
 
       ---
@@ -18031,27 +18031,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-2xl > ul > li p {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-2xl > ul > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-2xl > ul > li > *:last-child {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-2xl > ol > li > *:first-child {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-2xl > ol > li > *:last-child {
 
       ---
@@ -18136,12 +18136,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-2xl > :first-child {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-2xl > :last-child {
 
       ---
@@ -18621,27 +18621,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose > ul > li p {
 
       ---
 
-      -     .lg\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose > ul > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose > ul > li > *:last-child {
 
       ---
 
-      -     .lg\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose > ol > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose > ol > li > *:last-child {
 
       ---
@@ -18703,12 +18703,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose > :first-child {
 
       ---
 
-      -     .lg\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose > :last-child {
 
       ---
@@ -18828,27 +18828,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-sm > ul > li p {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-sm > ul > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-sm > ul > li > *:last-child {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-sm > ol > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-sm > ol > li > *:last-child {
 
       ---
@@ -18930,12 +18930,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-sm > :first-child {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-sm > :last-child {
 
       ---
@@ -19055,27 +19055,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-lg > ul > li p {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-lg > ul > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-lg > ul > li > *:last-child {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-lg > ol > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-lg > ol > li > *:last-child {
 
       ---
@@ -19157,12 +19157,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-lg > :first-child {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-lg > :last-child {
 
       ---
@@ -19282,27 +19282,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-xl > ul > li p {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-xl > ul > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-xl > ul > li > *:last-child {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-xl > ol > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-xl > ol > li > *:last-child {
 
       ---
@@ -19387,12 +19387,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-xl > :first-child {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-xl > :last-child {
 
       ---
@@ -19512,27 +19512,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-2xl > ul > li p {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-2xl > ul > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-2xl > ul > li > *:last-child {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-2xl > ol > li > *:first-child {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-2xl > ol > li > *:last-child {
 
       ---
@@ -19617,12 +19617,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-2xl > :first-child {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-2xl > :last-child {
 
       ---
@@ -20102,27 +20102,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose > ul > li p {
 
       ---
 
-      -     .xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose > ul > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose > ul > li > *:last-child {
 
       ---
 
-      -     .xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose > ol > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose > ol > li > *:last-child {
 
       ---
@@ -20184,12 +20184,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose > :first-child {
 
       ---
 
-      -     .xl\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose > :last-child {
 
       ---
@@ -20309,27 +20309,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-sm > ul > li p {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-sm > ul > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-sm > ul > li > *:last-child {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-sm > ol > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-sm > ol > li > *:last-child {
 
       ---
@@ -20411,12 +20411,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-sm > :first-child {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-sm > :last-child {
 
       ---
@@ -20536,27 +20536,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-lg > ul > li p {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-lg > ul > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-lg > ul > li > *:last-child {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-lg > ol > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-lg > ol > li > *:last-child {
 
       ---
@@ -20638,12 +20638,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-lg > :first-child {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-lg > :last-child {
 
       ---
@@ -20763,27 +20763,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-xl > ul > li p {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-xl > ul > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-xl > ul > li > *:last-child {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-xl > ol > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-xl > ol > li > *:last-child {
 
       ---
@@ -20865,12 +20865,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-xl > :first-child {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-xl > :last-child {
 
       ---
@@ -20990,27 +20990,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-2xl > ul > li p {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-2xl > ul > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-2xl > ul > li > *:last-child {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-2xl > ol > li > *:first-child {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-2xl > ol > li > *:last-child {
 
       ---
@@ -21092,12 +21092,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-2xl > :first-child {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-2xl > :last-child {
 
       ---
@@ -21577,27 +21577,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose > ul > li p {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose > ul > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose > ul > li > *:last-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose > ol > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose > ol > li > *:last-child {
 
       ---
@@ -21659,12 +21659,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose > :first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose > :last-child {
 
       ---
@@ -21784,27 +21784,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-sm > ul > li p {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-sm > ul > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-sm > ul > li > *:last-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-sm > ol > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-sm > ol > li > *:last-child {
 
       ---
@@ -21886,12 +21886,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-sm > :first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-sm > :last-child {
 
       ---
@@ -22011,27 +22011,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-lg > ul > li p {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-lg > ul > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-lg > ul > li > *:last-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-lg > ol > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-lg > ol > li > *:last-child {
 
       ---
@@ -22116,12 +22116,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-lg > :first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-lg > :last-child {
 
       ---
@@ -22241,27 +22241,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-xl > ul > li p {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-xl > ul > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-xl > ul > li > *:last-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-xl > ol > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-xl > ol > li > *:last-child {
 
       ---
@@ -22343,12 +22343,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-xl > :first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-xl > :last-child {
 
       ---
@@ -22468,27 +22468,27 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-2xl > ul > li p {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-2xl > ul > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-2xl > ul > li > *:last-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-2xl > ol > li > *:first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-2xl > ol > li > *:last-child {
 
       ---
@@ -22573,12 +22573,12 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-2xl > :first-child {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-2xl > :last-child {
 
       ---
@@ -23074,28 +23074,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      + .tw-prose :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      - .prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      + .tw-prose > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -23144,13 +23144,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -23274,28 +23274,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-sm :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-sm > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-sm :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-sm > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-sm :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-sm > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-sm :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-sm > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-sm :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-sm > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -23364,13 +23364,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-sm :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-sm > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-sm :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-sm > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -23494,28 +23494,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-lg :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-lg > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-lg :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-lg > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-lg :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-lg > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-lg :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-lg > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-lg :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-lg > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -23584,13 +23584,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-lg :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-lg > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-lg :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-lg > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -23714,28 +23714,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -23804,13 +23804,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -23934,28 +23934,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-2xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-2xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-2xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-2xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-2xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-2xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-2xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-2xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-2xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-2xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -24024,13 +24024,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      - .prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-2xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-2xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      - .prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      + .tw-prose-2xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      - .prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      + .tw-prose-2xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -24519,28 +24519,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -24589,13 +24589,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -24719,28 +24719,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-sm :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-sm > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-sm :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-sm > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-sm :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-sm > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-sm :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-sm > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-sm :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-sm > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -24809,13 +24809,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-sm :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-sm > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-sm :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-sm > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -24939,28 +24939,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-lg :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-lg > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-lg :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-lg > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-lg :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-lg > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-lg :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-lg > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-lg :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-lg > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -25029,13 +25029,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-lg :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-lg > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-lg :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-lg > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -25159,28 +25159,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -25249,13 +25249,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -25379,28 +25379,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-2xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-2xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-2xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-2xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-2xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-2xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-2xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-2xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-2xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-2xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -25469,13 +25469,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-2xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-2xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .sm\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:tw-prose-2xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose-2xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -25964,28 +25964,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26034,13 +26034,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26164,28 +26164,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-sm :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-sm > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-sm :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-sm > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-sm :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-sm > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-sm :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-sm > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-sm :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-sm > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26254,13 +26254,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-sm :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-sm > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-sm :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-sm > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26384,28 +26384,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-lg :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-lg > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-lg :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-lg > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-lg :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-lg > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-lg :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-lg > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-lg :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-lg > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26474,13 +26474,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-lg :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-lg > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-lg :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-lg > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26604,28 +26604,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26694,13 +26694,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26824,28 +26824,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-2xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-2xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-2xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-2xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-2xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-2xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-2xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-2xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-2xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-2xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -26914,13 +26914,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-2xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-2xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .md\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:tw-prose-2xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose-2xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -27409,28 +27409,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -27479,13 +27479,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -27609,28 +27609,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-sm :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-sm > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-sm :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-sm > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-sm :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-sm > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-sm :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-sm > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-sm :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-sm > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -27699,13 +27699,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-sm :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-sm > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-sm :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-sm > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -27829,28 +27829,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-lg :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-lg > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-lg :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-lg > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-lg :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-lg > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-lg :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-lg > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-lg :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-lg > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -27919,13 +27919,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-lg :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-lg > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-lg :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-lg > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -28049,28 +28049,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -28139,13 +28139,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -28269,28 +28269,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-2xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-2xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-2xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-2xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-2xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-2xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-2xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-2xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-2xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-2xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -28359,13 +28359,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-2xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-2xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .lg\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:tw-prose-2xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose-2xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -28854,28 +28854,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -28924,13 +28924,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -29054,28 +29054,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-sm :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-sm > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-sm :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-sm > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-sm :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-sm > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-sm :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-sm > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-sm :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-sm > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -29144,13 +29144,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-sm :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-sm > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-sm :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-sm > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -29274,28 +29274,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-lg :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-lg > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-lg :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-lg > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-lg :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-lg > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-lg :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-lg > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-lg :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-lg > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -29364,13 +29364,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-lg :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-lg > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-lg :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-lg > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -29494,28 +29494,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -29584,13 +29584,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -29714,28 +29714,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-2xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-2xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-2xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-2xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-2xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-2xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-2xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-2xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-2xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-2xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -29804,13 +29804,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-2xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-2xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .xl\\\\:tw-prose-2xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose-2xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -30299,28 +30299,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -30369,13 +30369,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -30499,28 +30499,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-sm :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-sm > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-sm :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-sm > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-sm :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-sm > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-sm :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-sm > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-sm :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-sm > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -30589,13 +30589,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-sm :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-sm > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-sm :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-sm > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -30719,28 +30719,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-lg :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-lg > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-lg :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-lg > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-lg :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-lg > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-lg :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-lg > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-lg :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-lg > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -30809,13 +30809,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-lg :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-lg > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-lg :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-lg > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -30939,28 +30939,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -31029,13 +31029,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -31159,28 +31159,28 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-2xl :where(> ul > li p):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-2xl > :where(ul > li p):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-2xl :where(> ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-2xl > :where(ul > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-2xl :where(> ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-2xl > :where(ul > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-2xl :where(> ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-2xl > :where(ol > li > *:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-2xl :where(> ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-2xl > :where(ol > li > *:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -31249,13 +31249,13 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-2xl :where(> :first-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-2xl > :where(:first-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
-      -     .\\\\32xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
-      +     .\\\\32xl\\\\:tw-prose-2xl :where(> :last-child):not(:where([class~='tw-not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose-2xl > :where(:last-child):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -31585,20 +31585,20 @@ it('should be possible to change the default modifiers', async () => {
       -     top: calc(0.8333333em - 0.1666667em);
       -     left: 0.25em;
       - }
-      - .prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.8333333em;
       -     margin-bottom: 0.8333333em;
       - }
-      - .prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
-      - .prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
       - .prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -31648,10 +31648,10 @@ it('should be possible to change the default modifiers', async () => {
       - .prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -31899,20 +31899,20 @@ it('should be possible to change the default modifiers', async () => {
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .sm\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -31962,10 +31962,10 @@ it('should be possible to change the default modifiers', async () => {
       -     .sm\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -32208,20 +32208,20 @@ it('should be possible to change the default modifiers', async () => {
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .md\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -32271,10 +32271,10 @@ it('should be possible to change the default modifiers', async () => {
       -     .md\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -32517,20 +32517,20 @@ it('should be possible to change the default modifiers', async () => {
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .lg\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -32580,10 +32580,10 @@ it('should be possible to change the default modifiers', async () => {
       -     .lg\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
 
       ---
 
@@ -32831,20 +32831,20 @@ it('should be possible to change the default modifiers', async () => {
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -32894,10 +32894,10 @@ it('should be possible to change the default modifiers', async () => {
       -     .xl\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
 
       ---
 
@@ -33145,20 +33145,20 @@ it('should be possible to change the default modifiers', async () => {
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .\\\\32xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -33208,10 +33208,10 @@ it('should be possible to change the default modifiers', async () => {
       -     .\\\\32xl\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
 
       ---
 
@@ -33618,20 +33618,20 @@ it('should be possible to change the default modifiers and change the className'
       -     margin-top: 0.5em;
       -     margin-bottom: 0.5em;
       - }
-      - .prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.75em;
       -     margin-bottom: 0.75em;
       - }
-      - .prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.25em;
       - }
-      - .prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.25em;
       - }
-      - .prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.25em;
       - }
-      - .prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.25em;
       - }
       - .prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -33662,10 +33662,10 @@ it('should be possible to change the default modifiers and change the className'
       - .prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-sm {
@@ -33778,20 +33778,20 @@ it('should be possible to change the default modifiers and change the className'
       -     top: calc(0.8571429em - 0.1785714em);
       -     left: 0.2142857em;
       - }
-      - .prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.5714286em;
       -     margin-bottom: 0.5714286em;
       - }
-      - .prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.1428571em;
       - }
-      - .prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.1428571em;
       - }
-      - .prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.1428571em;
       - }
-      - .prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.1428571em;
       - }
       - .prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -33841,10 +33841,10 @@ it('should be possible to change the default modifiers and change the className'
       - .prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-lg {
@@ -33957,20 +33957,20 @@ it('should be possible to change the default modifiers and change the className'
       -     top: calc(0.8888889em - 0.1666667em);
       -     left: 0.2222222em;
       - }
-      - .prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.8888889em;
       -     margin-bottom: 0.8888889em;
       - }
-      - .prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
-      - .prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
       - .prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -34020,10 +34020,10 @@ it('should be possible to change the default modifiers and change the className'
       - .prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-xl {
@@ -34136,20 +34136,20 @@ it('should be possible to change the default modifiers and change the className'
       -     top: calc(0.9em - 0.175em);
       -     left: 0.25em;
       - }
-      - .prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.8em;
       -     margin-bottom: 0.8em;
       - }
-      - .prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.2em;
       - }
-      - .prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.2em;
       - }
-      - .prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.2em;
       - }
-      - .prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.2em;
       - }
       - .prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -34199,10 +34199,10 @@ it('should be possible to change the default modifiers and change the className'
       - .prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-2xl {
@@ -34315,20 +34315,20 @@ it('should be possible to change the default modifiers and change the className'
       -     top: calc(0.8333333em - 0.1666667em);
       -     left: 0.25em;
       - }
-      - .prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0.8333333em;
       -     margin-bottom: 0.8333333em;
       - }
-      - .prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
-      - .prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 1.3333333em;
       - }
-      - .prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 1.3333333em;
       - }
       - .prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -34378,10 +34378,10 @@ it('should be possible to change the default modifiers and change the className'
       - .prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -     padding-right: 0;
       - }
-      - .prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -     margin-top: 0;
       - }
-      - .prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      - .prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -     margin-bottom: 0;
       - }
       - .prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -34777,20 +34777,20 @@ it('should be possible to change the default modifiers and change the className'
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .sm\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .sm\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .sm\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .sm\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .sm\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .sm\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -34821,10 +34821,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .sm\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-sm {
@@ -34937,20 +34937,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .sm\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .sm\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -35000,10 +35000,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .sm\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-lg {
@@ -35116,20 +35116,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .sm\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -35179,10 +35179,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .sm\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-xl {
@@ -35295,20 +35295,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .sm\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .sm\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -35358,10 +35358,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .sm\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-2xl {
@@ -35474,20 +35474,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .sm\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .sm\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -35537,10 +35537,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .sm\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .sm\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .sm\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .sm\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .sm\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -35937,20 +35937,20 @@ it('should be possible to change the default modifiers and change the className'
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .md\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .md\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .md\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .md\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .md\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .md\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -35981,10 +35981,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .md\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-sm {
@@ -36097,20 +36097,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .md\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .md\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .md\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .md\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .md\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .md\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -36160,10 +36160,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .md\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-lg {
@@ -36276,20 +36276,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .md\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .md\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .md\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .md\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -36339,10 +36339,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .md\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-xl {
@@ -36455,20 +36455,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .md\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .md\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .md\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .md\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .md\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .md\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -36518,10 +36518,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .md\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-2xl {
@@ -36634,20 +36634,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .md\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .md\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -36697,10 +36697,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .md\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .md\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .md\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .md\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .md\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -37097,20 +37097,20 @@ it('should be possible to change the default modifiers and change the className'
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .lg\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .lg\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .lg\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .lg\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .lg\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .lg\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -37141,10 +37141,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .lg\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-sm {
@@ -37257,20 +37257,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .lg\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .lg\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -37320,10 +37320,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .lg\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-lg {
@@ -37436,20 +37436,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .lg\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -37499,10 +37499,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .lg\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-xl {
@@ -37615,20 +37615,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .lg\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .lg\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -37678,10 +37678,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .lg\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-2xl {
@@ -37794,20 +37794,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .lg\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .lg\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -37857,10 +37857,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .lg\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .lg\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .lg\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .lg\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .lg\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -38257,20 +38257,20 @@ it('should be possible to change the default modifiers and change the className'
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .xl\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -38301,10 +38301,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .xl\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-sm {
@@ -38417,20 +38417,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -38480,10 +38480,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .xl\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-lg {
@@ -38596,20 +38596,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -38659,10 +38659,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .xl\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-xl {
@@ -38775,20 +38775,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -38838,10 +38838,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .xl\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-2xl {
@@ -38954,20 +38954,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -39017,10 +39017,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .xl\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .xl\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
@@ -39417,20 +39417,20 @@ it('should be possible to change the default modifiers and change the className'
       -         margin-top: 0.5em;
       -         margin-bottom: 0.5em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.75em;
       -         margin-bottom: 0.75em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.25em;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.25em;
       -     }
       -     .\\\\32xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -39461,10 +39461,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .\\\\32xl\\\\:prose :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-sm {
@@ -39577,20 +39577,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8571429em - 0.1785714em);
       -         left: 0.2142857em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.5714286em;
       -         margin-bottom: 0.5714286em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.1428571em;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.1428571em;
       -     }
       -     .\\\\32xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -39640,10 +39640,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .\\\\32xl\\\\:prose-sm :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-sm :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-sm > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-lg {
@@ -39756,20 +39756,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8888889em - 0.1666667em);
       -         left: 0.2222222em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8888889em;
       -         margin-bottom: 0.8888889em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .\\\\32xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -39819,10 +39819,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .\\\\32xl\\\\:prose-lg :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-lg :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-lg > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-xl {
@@ -39935,20 +39935,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.9em - 0.175em);
       -         left: 0.25em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8em;
       -         margin-bottom: 0.8em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.2em;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.2em;
       -     }
       -     .\\\\32xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -39998,10 +39998,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .\\\\32xl\\\\:prose-xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-2xl {
@@ -40114,20 +40114,20 @@ it('should be possible to change the default modifiers and change the className'
       -         top: calc(0.8333333em - 0.1666667em);
       -         left: 0.25em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li p):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li p):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0.8333333em;
       -         margin-bottom: 0.8333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ul > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 1.3333333em;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(ol > li > *:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 1.3333333em;
       -     }
       -     .\\\\32xl\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
@@ -40177,10 +40177,10 @@ it('should be possible to change the default modifiers and change the className'
       -     .\\\\32xl\\\\:prose-2xl :where(tbody td:last-child):not(:where([class~='not-prose'] *)) {
       -         padding-right: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> :first-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:first-child):not(:where([class~='not-prose'] *)) {
       -         margin-top: 0;
       -     }
-      -     .\\\\32xl\\\\:prose-2xl :where(> :last-child):not(:where([class~='not-prose'] *)) {
+      -     .\\\\32xl\\\\:prose-2xl > :where(:last-child):not(:where([class~='not-prose'] *)) {
       -         margin-bottom: 0;
       -     }
       -     .\\\\32xl\\\\:prose-slate :where(a):not(:where([class~='not-prose'] *)) {
