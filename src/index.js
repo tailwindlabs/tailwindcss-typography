@@ -14,11 +14,21 @@ function inWhere(selector, { className, prefix }) {
   let prefixedNot = prefix(`.not-${className}`).slice(1)
 
   if (selector.endsWith('::before')) {
+    if (selector.startsWith('>')) {
+      return `> :where(${selector.slice(2, -8)}):not(:where([class~="${prefixedNot}"] *))::before`
+    }
     return `:where(${selector.slice(0, -8)}):not(:where([class~="${prefixedNot}"] *))::before`
   }
 
   if (selector.endsWith('::after')) {
+    if (selector.startsWith('>')) {
+      return `> :where(${selector.slice(2, -8)}):not(:where([class~="${prefixedNot}"] *))::before`
+    }
     return `:where(${selector.slice(0, -7)}):not(:where([class~="${prefixedNot}"] *))::after`
+  }
+
+  if (selector.startsWith('>')) {
+    return `> :where(${selector.slice(2)}):not(:where([class~="${prefixedNot}"] *))`
   }
 
   return `:where(${selector}):not(:where([class~="${prefixedNot}"] *))`
