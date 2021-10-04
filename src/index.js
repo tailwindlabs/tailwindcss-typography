@@ -58,132 +58,132 @@ function configToCss(config = {}, { target, className, prefix }) {
   )
 }
 
-module.exports = plugin.withOptions(
-  ({ modifiers, className = 'prose', target = 'modern' } = {}) => {
-    return function ({ matchComponents, addComponents, theme, prefix }) {
-      // Default prose styles (includes base color + base size)
-      addComponents({
-        prose: {
-          // ...
-        },
-      })
-
-      // Themes, like prose-slate
-      matchComponents({
-        prose: (theme) => {
-          // ...
-        },
-      })
-
-      // For inverting a theme
-      addComponents({
-        '.prose-invert': {
-          // ...
-        },
-      })
-
-      // Sizes, like prose-xl, composable with themes
-      matchComponents({
-        prose: (size) => {
-          // ...
-        },
-      })
-
-      // Element colors
-      matchComponents({
-        'prose-headings': (color) => {
-          // ...
-        },
-        'prose-lead': (color) => {
-          // ...
-        },
-        'prose-body': (color) => {
-          // ...
-        },
-        'prose-links': (color) => {
-          // ...
-        },
-        'prose-bullets': (color) => {
-          // ...
-        },
-        'prose-counters': (color) => {
-          // ...
-        },
-        'prose-rules': (color) => {
-          // ...
-        },
-        'prose-quotes': (color) => {
-          // ...
-        },
-        'prose-quote-borders': (color) => {
-          // ...
-        },
-        'prose-strong': (color) => {
-          // ...
-        },
-        'prose-captions': (color) => {
-          // ...
-        },
-        'prose-code': (color) => {
-          // ...
-        },
-        'prose-pre-bg': (color) => {
-          // ...
-        },
-        'prose-pre-code': (color) => {
-          // ...
-        },
-        'prose-thead-borders': (color) => {
-          // ...
-        },
-        'prose-tr-borders': (color) => {
-          // ...
-        },
-      })
-    }
-  },
-  () => ({
-    theme: { typography: styles },
-  })
-)
-
 // module.exports = plugin.withOptions(
 //   ({ modifiers, className = 'prose', target = 'modern' } = {}) => {
-//     return function ({ addComponents, theme, variants, prefix }) {
-//       const DEFAULT_MODIFIERS = [
-//         'DEFAULT',
-//         'sm',
-//         'lg',
-//         'xl',
-//         '2xl',
-//         ...Object.entries(theme('colors'))
-//           .filter(([color, values]) => {
-//             return isUsableColor(color, values)
-//           })
-//           .map(([color]) => color),
-//       ]
-//       modifiers = modifiers === undefined ? DEFAULT_MODIFIERS : modifiers
-//       const config = theme('typography')
+//     return function ({ matchComponents, addComponents, theme, prefix }) {
+//       // Default prose styles (includes base color + base size)
+//       addComponents({
+//         prose: {
+//           // ...
+//         },
+//       })
 
-//       const all = uniq([
-//         'DEFAULT',
-//         ...modifiers,
-//         ...Object.keys(config).filter((modifier) => !DEFAULT_MODIFIERS.includes(modifier)),
-//       ])
+//       // Themes, like prose-slate
+//       matchComponents({
+//         prose: (theme) => {
+//           // ...
+//         },
+//       })
 
-//       addComponents(
-//         all.map((modifier) => ({
-//           [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
-//             config[modifier],
-//             { target, className, prefix }
-//           ),
-//         })),
-//         variants('typography')
-//       )
+//       // For inverting a theme
+//       addComponents({
+//         '.prose-invert': {
+//           // ...
+//         },
+//       })
+
+//       // Sizes, like prose-xl, composable with themes
+//       matchComponents({
+//         prose: (size) => {
+//           // ...
+//         },
+//       })
+
+//       // Element colors
+//       matchComponents({
+//         'prose-headings': (color) => {
+//           // ...
+//         },
+//         'prose-lead': (color) => {
+//           // ...
+//         },
+//         'prose-body': (color) => {
+//           // ...
+//         },
+//         'prose-links': (color) => {
+//           // ...
+//         },
+//         'prose-bullets': (color) => {
+//           // ...
+//         },
+//         'prose-counters': (color) => {
+//           // ...
+//         },
+//         'prose-rules': (color) => {
+//           // ...
+//         },
+//         'prose-quotes': (color) => {
+//           // ...
+//         },
+//         'prose-quote-borders': (color) => {
+//           // ...
+//         },
+//         'prose-strong': (color) => {
+//           // ...
+//         },
+//         'prose-captions': (color) => {
+//           // ...
+//         },
+//         'prose-code': (color) => {
+//           // ...
+//         },
+//         'prose-pre-bg': (color) => {
+//           // ...
+//         },
+//         'prose-pre-code': (color) => {
+//           // ...
+//         },
+//         'prose-thead-borders': (color) => {
+//           // ...
+//         },
+//         'prose-tr-borders': (color) => {
+//           // ...
+//         },
+//       })
 //     }
 //   },
 //   () => ({
 //     theme: { typography: styles },
-//     variants: { typography: ['responsive'] },
 //   })
 // )
+
+module.exports = plugin.withOptions(
+  ({ modifiers, className = 'prose', target = 'modern' } = {}) => {
+    return function ({ addComponents, theme, variants, prefix }) {
+      const DEFAULT_MODIFIERS = [
+        'DEFAULT',
+        'sm',
+        'lg',
+        'xl',
+        '2xl',
+        ...Object.entries(theme('colors'))
+          .filter(([color, values]) => {
+            return isUsableColor(color, values)
+          })
+          .map(([color]) => color),
+      ]
+      modifiers = modifiers === undefined ? DEFAULT_MODIFIERS : modifiers
+      const config = theme('typography')
+
+      const all = uniq([
+        'DEFAULT',
+        ...modifiers,
+        ...Object.keys(config).filter((modifier) => !DEFAULT_MODIFIERS.includes(modifier)),
+      ])
+
+      addComponents(
+        all.map((modifier) => ({
+          [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
+            config[modifier],
+            { target, className, prefix }
+          ),
+        })),
+        variants('typography')
+      )
+    }
+  },
+  () => ({
+    theme: { typography: styles },
+    variants: { typography: ['responsive'] },
+  })
+)
