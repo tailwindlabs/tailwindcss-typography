@@ -1518,7 +1518,7 @@ module.exports = (theme) => ({
 
   // Monochromatic color themes
   ...Object.fromEntries(
-    Object.entries(flattenColorPalette(theme('colors'))).map(([name, color]) => [
+    Object.entries(flattenColorPalette(colors)).map(([name, color]) => [
       name,
       {
         css: {

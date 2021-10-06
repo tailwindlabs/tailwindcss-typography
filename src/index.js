@@ -183,6 +183,21 @@ module.exports = plugin.withOptions(
         variants('typography')
       )
 
+      // Questions:
+      // - How do we configure colors for things like `prose-body-blue-500`? Should each piece auto-read from the best matching key (body -> textColor, headings -> textColor, quote-borders -> borderColor, etc.)
+      // - If inside `typography`, can we provide BC for old config, or do modifiers need a new sub-key (`typography.modifiers`? `typography.themes`?)
+      // - Do things exend the way we expect when the theme object is complicated and deeply nested?
+      // - Where do we read the colors for the monochromatic themes?
+      // - Should it be easy/possible to disable built-in modifiers? Was more important in AOT, is it still important? Maybe can do it by just not using extend?
+      // - How does the customization API work when you don't use extend? For consistency it should probably totally override
+      // - Document safelisting best practices to avoid 1000mb CSS file
+      // - Should we ditch the `css` key in each modifier?
+      // - Does customizing the complex CSS stuff give predictable results?
+      //    extend: {
+      //      typography: { lg: { css: { h2: { margin-top: 500px }}}}
+      // - Removing backticks around <code> snippets? Easy way to do this without complex CSS customization?
+      //    - CSS var? `--prose-code-pseudo-content: "`"`
+
       matchComponents(
         {
           ...Object.fromEntries(
