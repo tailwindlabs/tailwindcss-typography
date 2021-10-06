@@ -6,7 +6,7 @@
 
 A plugin that provides a set of `prose` classes you can use to add beautiful typographic defaults to any vanilla HTML you don't control (like HTML rendered from Markdown, or pulled from a CMS).
 
-[View live demo](https://tailwindcss-typography.netlify.app/)
+[View live demo](https://tailwindcss-typography.vercel.app/)
 
 ```html
 <article class="prose lg:prose-xl">

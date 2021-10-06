@@ -23,7 +23,6 @@
     "dev": "next dev demo",
     "build": "next build demo",
     "export": "next export demo",
-    "deploy": "npm run build && npm run export",
     "start": "next start demo"
   },
   "peerDependencies": {
