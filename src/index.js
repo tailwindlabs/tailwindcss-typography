@@ -4,6 +4,8 @@ const castArray = require('lodash.castarray')
 const uniq = require('lodash.uniq')
 const styles = require('./styles')
 const { isUsableColor } = require('./utils')
+const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default
+const toColorValue = require('tailwindcss/lib/util/toColorValue').default
 
 const computed = {
   // Reserved for future "magic properties", for example:
@@ -149,7 +151,7 @@ function configToCss(config = {}, { target, className, prefix }) {
 
 module.exports = plugin.withOptions(
   ({ modifiers, className = 'prose', target = 'modern' } = {}) => {
-    return function ({ addComponents, theme, variants, prefix }) {
+    return function ({ matchComponents, addComponents, theme, variants, prefix }) {
       const DEFAULT_MODIFIERS = [
         'DEFAULT',
         'sm',
@@ -179,6 +181,40 @@ module.exports = plugin.withOptions(
           ),
         })),
         variants('typography')
+      )
+
+      matchComponents(
+        {
+          ...Object.fromEntries(
+            [
+              'body',
+              'headings',
+              'lead',
+              'links',
+              'bold',
+              'counters',
+              'bullets',
+              'rules',
+              'quotes',
+              'quote-borders',
+              'captions',
+              'code',
+              'pre-code',
+              'pre-bg',
+              'th-borders',
+              'td-borders',
+            ].map((el) => {
+              return [
+                `prose-${el}`,
+                (value) => {
+                  let color = toColorValue(value)
+                  return { [`--tw-prose-${el}`]: color, [`--tw-prose-invert-${el}`]: color }
+                },
+              ]
+            })
+          ),
+        },
+        { values: flattenColorPalette(theme('colors')), type: ['color', 'any'] }
       )
     }
   },
