@@ -32,7 +32,28 @@ function inWhere(selector, { className, prefix }) {
   return `:where(${selector}):not(:where([class~="${prefixedNot}"] *))`
 }
 
+function isObject(value) {
+  return typeof value === 'object' && value !== null
+}
+
 function configToCss(config = {}, { target, className, prefix }) {
+  function updateSelector(k, v) {
+    if (target === 'legacy') {
+      return [k, v]
+    }
+
+    if (isObject(v)) {
+      let nested = Object.values(v).some(isObject)
+      if (nested) {
+        return [k, Object.fromEntries(Object.entries(v).map(([k, v]) => updateSelector(k, v)))]
+      }
+
+      return [inWhere(k, { className, prefix }), v]
+    }
+
+    return [k, v]
+  }
+
   return Object.fromEntries(
     Object.entries(
       merge(
@@ -42,23 +63,9 @@ function configToCss(config = {}, { target, className, prefix }) {
           .map((key) => computed[key](config[key])),
         ...castArray(config.css || {})
       )
-    ).map(([k, v]) => {
-      if (target === 'legacy') {
-        return [k, v]
-      }
-
-      if (typeof v == 'object' && v.constructor == Object) {
-        return [inWhere(k, { className, prefix }), v]
-      }
-
-      return [k, v]
-    })
+    ).map(([k, v]) => updateSelector(k, v))
   )
 }
-
-// TODO:
-// - Add `prose-base` for less annoying responsive stuff (prose prose-sm prose-slate md:prose-base)
-// - Fix `:where` stuff not working with media queries
 
 module.exports = plugin.withOptions(
   ({ className = 'prose', target = 'modern' } = {}) => {
@@ -69,7 +76,11 @@ module.exports = plugin.withOptions(
         Object.keys(modifiers).map((modifier) => ({
           [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
             modifiers[modifier],
-            { target, className, prefix }
+            {
+              target,
+              className,
+              prefix,
+            }
           ),
         }))
       )
