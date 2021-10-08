@@ -1,5 +1,4 @@
 const colors = require('tailwindcss/colors')
-const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default
 
 const round = (num) =>
   num
@@ -9,398 +8,7 @@ const round = (num) =>
 const rem = (px) => `${round(px / 16)}rem`
 const em = (px, base) => `${round(px / base)}em`
 
-module.exports = (theme) => ({
-  DEFAULT: {
-    css: [
-      {
-        '--tw-prose-body': theme('colors.gray.700', colors.gray[700]),
-        '--tw-prose-headings': theme('colors.gray.900', colors.gray[900]),
-        '--tw-prose-lead': theme('colors.gray.600', colors.gray[600]),
-        '--tw-prose-links': theme('colors.gray.900', colors.gray[900]),
-        '--tw-prose-bold': theme('colors.gray.900', colors.gray[900]),
-        '--tw-prose-counters': theme('colors.gray.500', colors.gray[500]),
-        '--tw-prose-bullets': theme('colors.gray.300', colors.gray[300]),
-        '--tw-prose-rules': theme('colors.gray.200', colors.gray[200]),
-        '--tw-prose-quotes': theme('colors.gray.900', colors.gray[900]),
-        '--tw-prose-quote-borders': theme('colors.gray.200', colors.gray[200]),
-        '--tw-prose-captions': theme('colors.gray.500', colors.gray[500]),
-        '--tw-prose-code': theme('colors.gray.900', colors.gray[900]),
-        '--tw-prose-pre-code': theme('colors.gray.200', colors.gray[200]),
-        '--tw-prose-pre-bg': theme('colors.gray.800', colors.gray[800]),
-        '--tw-prose-th-borders': theme('colors.gray.300', colors.gray[300]),
-        '--tw-prose-td-borders': theme('colors.gray.200', colors.gray[200]),
-        '--tw-prose-invert-body': theme('colors.gray.300', colors.gray[300]),
-        '--tw-prose-invert-headings': theme('colors.white', colors.white),
-        '--tw-prose-invert-lead': theme('colors.gray.400', colors.gray[400]),
-        '--tw-prose-invert-links': theme('colors.white', colors.white),
-        '--tw-prose-invert-bold': theme('colors.white', colors.white),
-        '--tw-prose-invert-counters': theme('colors.gray.400', colors.gray[400]),
-        '--tw-prose-invert-bullets': theme('colors.gray.600', colors.gray[600]),
-        '--tw-prose-invert-rules': theme('colors.gray.700', colors.gray[700]),
-        '--tw-prose-invert-quotes': theme('colors.gray.100', colors.gray[100]),
-        '--tw-prose-invert-quote-borders': theme('colors.gray.700', colors.gray[700]),
-        '--tw-prose-invert-captions': theme('colors.gray.400', colors.gray[400]),
-        '--tw-prose-invert-code': theme('colors.white', colors.white),
-        '--tw-prose-invert-pre-code': theme('colors.gray.300', colors.gray[300]),
-        '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
-        '--tw-prose-invert-th-borders': theme('colors.gray.600', colors.gray[600]),
-        '--tw-prose-invert-td-borders': theme('colors.gray.700', colors.gray[700]),
-
-        color: 'var(--tw-prose-body)',
-        maxWidth: '65ch',
-        '[class~="lead"]': {
-          color: 'var(--tw-prose-lead)',
-        },
-        a: {
-          color: 'var(--tw-prose-links)',
-          textDecoration: 'underline',
-          fontWeight: '500',
-        },
-        strong: {
-          color: 'var(--tw-prose-bold)',
-          fontWeight: '600',
-        },
-        'ol[type="A"]': {
-          '--list-counter-style': 'upper-alpha',
-        },
-        'ol[type="a"]': {
-          '--list-counter-style': 'lower-alpha',
-        },
-        'ol[type="A" s]': {
-          '--list-counter-style': 'upper-alpha',
-        },
-        'ol[type="a" s]': {
-          '--list-counter-style': 'lower-alpha',
-        },
-        'ol[type="I"]': {
-          '--list-counter-style': 'upper-roman',
-        },
-        'ol[type="i"]': {
-          '--list-counter-style': 'lower-roman',
-        },
-        'ol[type="I" s]': {
-          '--list-counter-style': 'upper-roman',
-        },
-        'ol[type="i" s]': {
-          '--list-counter-style': 'lower-roman',
-        },
-        'ol[type="1"]': {
-          '--list-counter-style': 'decimal',
-        },
-        'ol > li': {
-          position: 'relative',
-        },
-        'ol > li::before': {
-          content: 'counter(list-item, var(--list-counter-style, decimal)) "."',
-          position: 'absolute',
-          fontWeight: '400',
-          color: 'var(--tw-prose-counters)',
-        },
-        'ul > li': {
-          position: 'relative',
-        },
-        'ul > li::before': {
-          content: '""',
-          position: 'absolute',
-          backgroundColor: 'var(--tw-prose-bullets)',
-          borderRadius: '50%',
-        },
-        hr: {
-          borderColor: 'var(--tw-prose-rules)',
-          borderTopWidth: 1,
-        },
-        blockquote: {
-          fontWeight: '500',
-          fontStyle: 'italic',
-          color: 'var(--tw-prose-quotes)',
-          borderLeftWidth: '0.25rem',
-          borderLeftColor: 'var(--tw-prose-quote-borders)',
-          quotes: '"\\201C""\\201D""\\2018""\\2019"',
-        },
-        'blockquote p:first-of-type::before': {
-          content: 'open-quote',
-        },
-        'blockquote p:last-of-type::after': {
-          content: 'close-quote',
-        },
-        h1: {
-          color: 'var(--tw-prose-headings)',
-          fontWeight: '800',
-        },
-        'h1 strong': {
-          fontWeight: '900',
-        },
-        h2: {
-          color: 'var(--tw-prose-headings)',
-          fontWeight: '700',
-        },
-        'h2 strong': {
-          fontWeight: '800',
-        },
-        h3: {
-          color: 'var(--tw-prose-headings)',
-          fontWeight: '600',
-        },
-        'h3 strong': {
-          fontWeight: '700',
-        },
-        h4: {
-          color: 'var(--tw-prose-headings)',
-          fontWeight: '600',
-        },
-        'h4 strong': {
-          fontWeight: '700',
-        },
-        // TODO: Figure out how to not need this, it's a merging issue
-        'figure > *': {},
-        'figure figcaption': {
-          color: 'var(--tw-prose-captions)',
-        },
-        code: {
-          color: 'var(--tw-prose-code)',
-          fontWeight: '600',
-        },
-        'code::before': {
-          content: '"`"',
-        },
-        'code::after': {
-          content: '"`"',
-        },
-        'a code': {
-          color: 'var(--tw-prose-links)',
-        },
-        pre: {
-          color: 'var(--tw-prose-pre-code)',
-          backgroundColor: 'var(--tw-prose-pre-bg)',
-          overflowX: 'auto',
-        },
-        'pre code': {
-          backgroundColor: 'transparent',
-          borderWidth: '0',
-          borderRadius: '0',
-          padding: '0',
-          fontWeight: '400',
-          color: 'inherit',
-          fontSize: 'inherit',
-          fontFamily: 'inherit',
-          lineHeight: 'inherit',
-        },
-        'pre code::before': {
-          content: 'none',
-        },
-        'pre code::after': {
-          content: 'none',
-        },
-        table: {
-          width: '100%',
-          tableLayout: 'auto',
-          textAlign: 'left',
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        thead: {
-          color: 'var(--tw-prose-headings)',
-          fontWeight: '600',
-          borderBottomWidth: '1px',
-          borderBottomColor: 'var(--tw-prose-th-borders)',
-        },
-        'thead th': {
-          verticalAlign: 'bottom',
-        },
-        'tbody tr': {
-          borderBottomWidth: '1px',
-          borderBottomColor: 'var(--tw-prose-td-borders)',
-        },
-        'tbody tr:last-child': {
-          borderBottomWidth: '0',
-        },
-        'tbody td': {
-          verticalAlign: 'top',
-        },
-      },
-      {
-        fontSize: rem(16),
-        lineHeight: round(28 / 16),
-        p: {
-          marginTop: em(20, 16),
-          marginBottom: em(20, 16),
-        },
-        '[class~="lead"]': {
-          fontSize: em(20, 16),
-          lineHeight: round(32 / 20),
-          marginTop: em(24, 20),
-          marginBottom: em(24, 20),
-        },
-        blockquote: {
-          marginTop: em(32, 20),
-          marginBottom: em(32, 20),
-          paddingLeft: em(20, 20),
-        },
-        h1: {
-          fontSize: em(36, 16),
-          marginTop: '0',
-          marginBottom: em(32, 36),
-          lineHeight: round(40 / 36),
-        },
-        h2: {
-          fontSize: em(24, 16),
-          marginTop: em(48, 24),
-          marginBottom: em(24, 24),
-          lineHeight: round(32 / 24),
-        },
-        h3: {
-          fontSize: em(20, 16),
-          marginTop: em(32, 20),
-          marginBottom: em(12, 20),
-          lineHeight: round(32 / 20),
-        },
-        h4: {
-          marginTop: em(24, 16),
-          marginBottom: em(8, 16),
-          lineHeight: round(24 / 16),
-        },
-        img: {
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        video: {
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        figure: {
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
-        'figure figcaption': {
-          fontSize: em(14, 16),
-          lineHeight: round(20 / 14),
-          marginTop: em(12, 14),
-        },
-        code: {
-          fontSize: em(14, 16),
-        },
-        'h2 code': {
-          fontSize: em(21, 24),
-        },
-        'h3 code': {
-          fontSize: em(18, 20),
-        },
-        pre: {
-          fontSize: em(14, 16),
-          lineHeight: round(24 / 14),
-          marginTop: em(24, 14),
-          marginBottom: em(24, 14),
-          borderRadius: rem(6),
-          paddingTop: em(12, 14),
-          paddingRight: em(16, 14),
-          paddingBottom: em(12, 14),
-          paddingLeft: em(16, 14),
-        },
-        ol: {
-          marginTop: em(20, 16),
-          marginBottom: em(20, 16),
-        },
-        ul: {
-          marginTop: em(20, 16),
-          marginBottom: em(20, 16),
-        },
-        li: {
-          marginTop: em(8, 16),
-          marginBottom: em(8, 16),
-        },
-        'ol > li': {
-          paddingLeft: em(28, 16),
-        },
-        'ol > li::before': {
-          left: '0',
-        },
-        'ul > li': {
-          paddingLeft: em(28, 16),
-        },
-        'ul > li::before': {
-          width: em(6, 16),
-          height: em(6, 16),
-          top: `calc(${em(28 / 2, 16)} - ${em(3, 16)})`,
-          left: em(4, 16),
-        },
-        '> ul > li p': {
-          marginTop: em(12, 16),
-          marginBottom: em(12, 16),
-        },
-        '> ul > li > *:first-child': {
-          marginTop: em(20, 16),
-        },
-        '> ul > li > *:last-child': {
-          marginBottom: em(20, 16),
-        },
-        '> ol > li > *:first-child': {
-          marginTop: em(20, 16),
-        },
-        '> ol > li > *:last-child': {
-          marginBottom: em(20, 16),
-        },
-        'ul ul, ul ol, ol ul, ol ol': {
-          marginTop: em(12, 16),
-          marginBottom: em(12, 16),
-        },
-        hr: {
-          marginTop: em(48, 16),
-          marginBottom: em(48, 16),
-        },
-        'hr + *': {
-          marginTop: '0',
-        },
-        'h2 + *': {
-          marginTop: '0',
-        },
-        'h3 + *': {
-          marginTop: '0',
-        },
-        'h4 + *': {
-          marginTop: '0',
-        },
-        table: {
-          fontSize: em(14, 16),
-          lineHeight: round(24 / 14),
-        },
-        'thead th': {
-          paddingRight: em(8, 14),
-          paddingBottom: em(8, 14),
-          paddingLeft: em(8, 14),
-        },
-        'thead th:first-child': {
-          paddingLeft: '0',
-        },
-        'thead th:last-child': {
-          paddingRight: '0',
-        },
-        'tbody td': {
-          paddingTop: em(8, 14),
-          paddingRight: em(8, 14),
-          paddingBottom: em(8, 14),
-          paddingLeft: em(8, 14),
-        },
-        'tbody td:first-child': {
-          paddingLeft: '0',
-        },
-        'tbody td:last-child': {
-          paddingRight: '0',
-        },
-      },
-      {
-        '> :first-child': {
-          marginTop: '0',
-        },
-        '> :last-child': {
-          marginBottom: '0',
-        },
-      },
-    ],
-  },
+let defaultModifiers = {
   sm: {
     css: [
       {
@@ -568,6 +176,191 @@ module.exports = (theme) => ({
           paddingRight: em(12, 12),
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
+        },
+        'tbody td:first-child': {
+          paddingLeft: '0',
+        },
+        'tbody td:last-child': {
+          paddingRight: '0',
+        },
+      },
+      {
+        '> :first-child': {
+          marginTop: '0',
+        },
+        '> :last-child': {
+          marginBottom: '0',
+        },
+      },
+    ],
+  },
+  base: {
+    css: [
+      {
+        fontSize: rem(16),
+        lineHeight: round(28 / 16),
+        p: {
+          marginTop: em(20, 16),
+          marginBottom: em(20, 16),
+        },
+        '[class~="lead"]': {
+          fontSize: em(20, 16),
+          lineHeight: round(32 / 20),
+          marginTop: em(24, 20),
+          marginBottom: em(24, 20),
+        },
+        blockquote: {
+          marginTop: em(32, 20),
+          marginBottom: em(32, 20),
+          paddingLeft: em(20, 20),
+        },
+        h1: {
+          fontSize: em(36, 16),
+          marginTop: '0',
+          marginBottom: em(32, 36),
+          lineHeight: round(40 / 36),
+        },
+        h2: {
+          fontSize: em(24, 16),
+          marginTop: em(48, 24),
+          marginBottom: em(24, 24),
+          lineHeight: round(32 / 24),
+        },
+        h3: {
+          fontSize: em(20, 16),
+          marginTop: em(32, 20),
+          marginBottom: em(12, 20),
+          lineHeight: round(32 / 20),
+        },
+        h4: {
+          marginTop: em(24, 16),
+          marginBottom: em(8, 16),
+          lineHeight: round(24 / 16),
+        },
+        img: {
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        video: {
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        figure: {
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        'figure figcaption': {
+          fontSize: em(14, 16),
+          lineHeight: round(20 / 14),
+          marginTop: em(12, 14),
+        },
+        code: {
+          fontSize: em(14, 16),
+        },
+        'h2 code': {
+          fontSize: em(21, 24),
+        },
+        'h3 code': {
+          fontSize: em(18, 20),
+        },
+        pre: {
+          fontSize: em(14, 16),
+          lineHeight: round(24 / 14),
+          marginTop: em(24, 14),
+          marginBottom: em(24, 14),
+          borderRadius: rem(6),
+          paddingTop: em(12, 14),
+          paddingRight: em(16, 14),
+          paddingBottom: em(12, 14),
+          paddingLeft: em(16, 14),
+        },
+        ol: {
+          marginTop: em(20, 16),
+          marginBottom: em(20, 16),
+        },
+        ul: {
+          marginTop: em(20, 16),
+          marginBottom: em(20, 16),
+        },
+        li: {
+          marginTop: em(8, 16),
+          marginBottom: em(8, 16),
+        },
+        'ol > li': {
+          paddingLeft: em(28, 16),
+        },
+        'ol > li::before': {
+          left: '0',
+        },
+        'ul > li': {
+          paddingLeft: em(28, 16),
+        },
+        'ul > li::before': {
+          width: em(6, 16),
+          height: em(6, 16),
+          top: `calc(${em(28 / 2, 16)} - ${em(3, 16)})`,
+          left: em(4, 16),
+        },
+        '> ul > li p': {
+          marginTop: em(12, 16),
+          marginBottom: em(12, 16),
+        },
+        '> ul > li > *:first-child': {
+          marginTop: em(20, 16),
+        },
+        '> ul > li > *:last-child': {
+          marginBottom: em(20, 16),
+        },
+        '> ol > li > *:first-child': {
+          marginTop: em(20, 16),
+        },
+        '> ol > li > *:last-child': {
+          marginBottom: em(20, 16),
+        },
+        'ul ul, ul ol, ol ul, ol ol': {
+          marginTop: em(12, 16),
+          marginBottom: em(12, 16),
+        },
+        hr: {
+          marginTop: em(48, 16),
+          marginBottom: em(48, 16),
+        },
+        'hr + *': {
+          marginTop: '0',
+        },
+        'h2 + *': {
+          marginTop: '0',
+        },
+        'h3 + *': {
+          marginTop: '0',
+        },
+        'h4 + *': {
+          marginTop: '0',
+        },
+        table: {
+          fontSize: em(14, 16),
+          lineHeight: round(24 / 14),
+        },
+        'thead th': {
+          paddingRight: em(8, 14),
+          paddingBottom: em(8, 14),
+          paddingLeft: em(8, 14),
+        },
+        'thead th:first-child': {
+          paddingLeft: '0',
+        },
+        'thead th:last-child': {
+          paddingRight: '0',
+        },
+        'tbody td': {
+          paddingTop: em(8, 14),
+          paddingRight: em(8, 14),
+          paddingBottom: em(8, 14),
+          paddingLeft: em(8, 14),
         },
         'tbody td:first-child': {
           paddingLeft: '0',
@@ -1400,162 +1193,302 @@ module.exports = (theme) => ({
   red: {
     css: {
       '--tw-prose-links': colors.red[600],
-      '--tw-prose-invert-links': colors.red[600],
+      '--tw-prose-invert-links': colors.red[500],
     },
   },
 
   orange: {
     css: {
       '--tw-prose-links': colors.orange[600],
-      '--tw-prose-invert-links': colors.orange[600],
+      '--tw-prose-invert-links': colors.orange[500],
     },
   },
 
   amber: {
     css: {
       '--tw-prose-links': colors.amber[600],
-      '--tw-prose-invert-links': colors.amber[600],
+      '--tw-prose-invert-links': colors.amber[500],
     },
   },
 
   yellow: {
     css: {
       '--tw-prose-links': colors.yellow[600],
-      '--tw-prose-invert-links': colors.yellow[600],
+      '--tw-prose-invert-links': colors.yellow[500],
     },
   },
 
   lime: {
     css: {
       '--tw-prose-links': colors.lime[600],
-      '--tw-prose-invert-links': colors.lime[600],
+      '--tw-prose-invert-links': colors.lime[500],
     },
   },
 
   green: {
     css: {
       '--tw-prose-links': colors.green[600],
-      '--tw-prose-invert-links': colors.green[600],
+      '--tw-prose-invert-links': colors.green[500],
     },
   },
 
   emerald: {
     css: {
       '--tw-prose-links': colors.emerald[600],
-      '--tw-prose-invert-links': colors.emerald[600],
+      '--tw-prose-invert-links': colors.emerald[500],
     },
   },
 
   teal: {
     css: {
       '--tw-prose-links': colors.teal[600],
-      '--tw-prose-invert-links': colors.teal[600],
+      '--tw-prose-invert-links': colors.teal[500],
     },
   },
 
   cyan: {
     css: {
       '--tw-prose-links': colors.cyan[600],
-      '--tw-prose-invert-links': colors.cyan[600],
+      '--tw-prose-invert-links': colors.cyan[500],
     },
   },
 
   sky: {
     css: {
       '--tw-prose-links': colors.sky[600],
-      '--tw-prose-invert-links': colors.sky[600],
+      '--tw-prose-invert-links': colors.sky[500],
     },
   },
 
   blue: {
     css: {
       '--tw-prose-links': colors.blue[600],
-      '--tw-prose-invert-links': colors.blue[600],
+      '--tw-prose-invert-links': colors.blue[500],
     },
   },
 
   indigo: {
     css: {
       '--tw-prose-links': colors.indigo[600],
-      '--tw-prose-invert-links': colors.indigo[600],
+      '--tw-prose-invert-links': colors.indigo[500],
     },
   },
 
   violet: {
     css: {
       '--tw-prose-links': colors.violet[600],
-      '--tw-prose-invert-links': colors.violet[600],
+      '--tw-prose-invert-links': colors.violet[500],
     },
   },
 
   purple: {
     css: {
       '--tw-prose-links': colors.purple[600],
-      '--tw-prose-invert-links': colors.purple[600],
+      '--tw-prose-invert-links': colors.purple[500],
     },
   },
 
   fuchsia: {
     css: {
       '--tw-prose-links': colors.fuchsia[600],
-      '--tw-prose-invert-links': colors.fuchsia[600],
+      '--tw-prose-invert-links': colors.fuchsia[500],
     },
   },
 
   pink: {
     css: {
       '--tw-prose-links': colors.pink[600],
-      '--tw-prose-invert-links': colors.pink[600],
+      '--tw-prose-invert-links': colors.pink[500],
     },
   },
 
   rose: {
     css: {
       '--tw-prose-links': colors.rose[600],
-      '--tw-prose-invert-links': colors.rose[600],
+      '--tw-prose-invert-links': colors.rose[500],
     },
   },
+}
 
-  // Monochromatic color themes
-  ...Object.fromEntries(
-    Object.entries(flattenColorPalette(colors)).map(([name, color]) => [
-      name,
+module.exports = {
+  DEFAULT: {
+    css: [
       {
-        css: {
-          '--tw-prose-body': color,
-          '--tw-prose-headings': color,
-          '--tw-prose-lead': color,
-          '--tw-prose-links': color,
-          '--tw-prose-bold': color,
-          '--tw-prose-counters': color,
-          '--tw-prose-bullets': color,
-          '--tw-prose-rules': color,
-          '--tw-prose-quotes': color,
-          '--tw-prose-quote-borders': color,
-          '--tw-prose-captions': color,
-          '--tw-prose-code': color,
-          '--tw-prose-pre-code': color,
-          '--tw-prose-pre-bg': 'transparent',
-          '--tw-prose-th-borders': color,
-          '--tw-prose-td-borders': color,
-          '--tw-prose-invert-body': color,
-          '--tw-prose-invert-headings': color,
-          '--tw-prose-invert-lead': color,
-          '--tw-prose-invert-links': color,
-          '--tw-prose-invert-bold': color,
-          '--tw-prose-invert-counters': color,
-          '--tw-prose-invert-bullets': color,
-          '--tw-prose-invert-rules': color,
-          '--tw-prose-invert-quotes': color,
-          '--tw-prose-invert-quote-borders': color,
-          '--tw-prose-invert-captions': color,
-          '--tw-prose-invert-code': color,
-          '--tw-prose-invert-pre-code': color,
-          '--tw-prose-invert-pre-bg': 'transparent',
-          '--tw-prose-invert-th-borders': color,
-          '--tw-prose-invert-td-borders': color,
+        color: 'var(--tw-prose-body)',
+        maxWidth: '65ch',
+        '[class~="lead"]': {
+          color: 'var(--tw-prose-lead)',
+        },
+        a: {
+          color: 'var(--tw-prose-links)',
+          textDecoration: 'underline',
+          fontWeight: '500',
+        },
+        strong: {
+          color: 'var(--tw-prose-bold)',
+          fontWeight: '600',
+        },
+        'ol[type="A"]': {
+          '--list-counter-style': 'upper-alpha',
+        },
+        'ol[type="a"]': {
+          '--list-counter-style': 'lower-alpha',
+        },
+        'ol[type="A" s]': {
+          '--list-counter-style': 'upper-alpha',
+        },
+        'ol[type="a" s]': {
+          '--list-counter-style': 'lower-alpha',
+        },
+        'ol[type="I"]': {
+          '--list-counter-style': 'upper-roman',
+        },
+        'ol[type="i"]': {
+          '--list-counter-style': 'lower-roman',
+        },
+        'ol[type="I" s]': {
+          '--list-counter-style': 'upper-roman',
+        },
+        'ol[type="i" s]': {
+          '--list-counter-style': 'lower-roman',
+        },
+        'ol[type="1"]': {
+          '--list-counter-style': 'decimal',
+        },
+        'ol > li': {
+          position: 'relative',
+        },
+        'ol > li::before': {
+          content: 'counter(list-item, var(--list-counter-style, decimal)) "."',
+          position: 'absolute',
+          fontWeight: '400',
+          color: 'var(--tw-prose-counters)',
+        },
+        'ul > li': {
+          position: 'relative',
+        },
+        'ul > li::before': {
+          content: '""',
+          position: 'absolute',
+          backgroundColor: 'var(--tw-prose-bullets)',
+          borderRadius: '50%',
+        },
+        hr: {
+          borderColor: 'var(--tw-prose-rules)',
+          borderTopWidth: 1,
+        },
+        blockquote: {
+          fontWeight: '500',
+          fontStyle: 'italic',
+          color: 'var(--tw-prose-quotes)',
+          borderLeftWidth: '0.25rem',
+          borderLeftColor: 'var(--tw-prose-quote-borders)',
+          quotes: '"\\201C""\\201D""\\2018""\\2019"',
+        },
+        'blockquote p:first-of-type::before': {
+          content: 'open-quote',
+        },
+        'blockquote p:last-of-type::after': {
+          content: 'close-quote',
+        },
+        h1: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '800',
+        },
+        'h1 strong': {
+          fontWeight: '900',
+        },
+        h2: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '700',
+        },
+        'h2 strong': {
+          fontWeight: '800',
+        },
+        h3: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '600',
+        },
+        'h3 strong': {
+          fontWeight: '700',
+        },
+        h4: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '600',
+        },
+        'h4 strong': {
+          fontWeight: '700',
+        },
+        // TODO: Figure out how to not need this, it's a merging issue
+        'figure > *': {},
+        'figure figcaption': {
+          color: 'var(--tw-prose-captions)',
+        },
+        code: {
+          color: 'var(--tw-prose-code)',
+          fontWeight: '600',
+        },
+        'code::before': {
+          content: '"`"',
+        },
+        'code::after': {
+          content: '"`"',
+        },
+        'a code': {
+          color: 'var(--tw-prose-links)',
+        },
+        pre: {
+          color: 'var(--tw-prose-pre-code)',
+          backgroundColor: 'var(--tw-prose-pre-bg)',
+          overflowX: 'auto',
+        },
+        'pre code': {
+          backgroundColor: 'transparent',
+          borderWidth: '0',
+          borderRadius: '0',
+          padding: '0',
+          fontWeight: '400',
+          color: 'inherit',
+          fontSize: 'inherit',
+          fontFamily: 'inherit',
+          lineHeight: 'inherit',
+        },
+        'pre code::before': {
+          content: 'none',
+        },
+        'pre code::after': {
+          content: 'none',
+        },
+        table: {
+          width: '100%',
+          tableLayout: 'auto',
+          textAlign: 'left',
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        thead: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '600',
+          borderBottomWidth: '1px',
+          borderBottomColor: 'var(--tw-prose-th-borders)',
+        },
+        'thead th': {
+          verticalAlign: 'bottom',
+        },
+        'tbody tr': {
+          borderBottomWidth: '1px',
+          borderBottomColor: 'var(--tw-prose-td-borders)',
+        },
+        'tbody tr:last-child': {
+          borderBottomWidth: '0',
+        },
+        'tbody td': {
+          verticalAlign: 'top',
         },
       },
-    ])
-  ),
-})
+      defaultModifiers.gray.css,
+      ...defaultModifiers.base.css,
+    ],
+  },
+  ...defaultModifiers,
+}

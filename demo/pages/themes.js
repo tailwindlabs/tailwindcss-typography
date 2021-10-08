@@ -70,233 +70,205 @@ export default function Index() {
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-red mx-auto">
+            <h1>Red Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-red prose-invert mx-auto">
+            <h1>Red Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-orange mx-auto">
+            <h1>Orange Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-orange prose-invert mx-auto">
+            <h1>Orange Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-amber mx-auto">
+            <h1>Amber Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-amber prose-invert mx-auto">
+            <h1>Amber Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-yellow mx-auto">
+            <h1>Yellow Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-yellow prose-invert mx-auto">
+            <h1>Yellow Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-lime mx-auto">
+            <h1>Lime Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-lime prose-invert mx-auto">
+            <h1>Lime Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-green mx-auto">
+            <h1>Green Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-green prose-invert mx-auto">
+            <h1>Green Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-emerald mx-auto">
+            <h1>Emerald Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-emerald prose-invert mx-auto">
+            <h1>Emerald Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-teal mx-auto">
+            <h1>Teal Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-teal prose-invert mx-auto">
+            <h1>Teal Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-cyan mx-auto">
+            <h1>Cyan Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-cyan prose-invert mx-auto">
+            <h1>Cyan Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-sky mx-auto">
+            <h1>Sky Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-sky prose-invert mx-auto">
+            <h1>Sky Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-blue mx-auto">
+            <h1>Blue Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-blue prose-invert mx-auto">
+            <h1>Blue Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-indigo mx-auto">
+            <h1>Indigo Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-indigo prose-invert mx-auto">
+            <h1>Indigo Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-violet mx-auto">
+            <h1>Violet Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-violet prose-invert mx-auto">
+            <h1>Violet Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-purple mx-auto">
+            <h1>Purple Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-purple prose-invert mx-auto">
+            <h1>Purple Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-fuchsia mx-auto">
+            <h1>Fuchsia Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-fuchsia prose-invert mx-auto">
+            <h1>Fuchsia Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-pink mx-auto">
+            <h1>Pink Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-pink prose-invert mx-auto">
+            <h1>Pink Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-white">
           <article className="py-12 px-4 prose prose-rose mx-auto">
+            <h1>Rose Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
         <div className="bg-gray-900">
           <article className="py-12 px-4 prose prose-rose prose-invert mx-auto">
-            <MarkdownSampleShort />
-          </article>
-        </div>
-        <div className="bg-yellow-200">
-          <article className="py-12 px-4 prose prose-blue-800 mx-auto">
-            <h1>Slate</h1>
-            <MarkdownSampleShort />
-          </article>
-        </div>
-        <div className="bg-blue-700">
-          <article className="py-12 px-4 prose prose-yellow-400 mx-auto">
-            <h1>Slate</h1>
-            <MarkdownSampleShort />
-          </article>
-        </div>
-        <div className="bg-sky-200">
-          <article className="py-12 px-4 prose prose-sky-900 mx-auto">
-            <h1>Slate</h1>
-            <MarkdownSampleShort />
-          </article>
-        </div>
-        <div className="bg-orange-900">
-          <article className="py-12 px-4 prose prose-amber-400 mx-auto">
-            <h1>Slate</h1>
-            <MarkdownSampleShort />
-          </article>
-        </div>
-        <div className="bg-neutral-900">
-          <article className="py-12 px-4 prose prose-red-500 mx-auto">
-            <h1>Slate</h1>
-            <MarkdownSampleShort />
-          </article>
-        </div>
-        <div className="bg-blue-900">
-          <article className="py-12 px-4 prose prose-fuchsia-400 mx-auto">
-            <h1>Slate</h1>
-            <MarkdownSampleShort />
-          </article>
-        </div>
-
-        <div className="bg-white">
-          <article
-            className="
-              mx-auto
-              py-12 px-4
-              prose
-              prose-headings-pink-500
-              prose-lead-orange-600
-              prose-body-green-600
-              prose-code-blue-400
-              prose-links-yellow-500
-              prose-pre-bg-purple-600
-            "
-          >
-            <h1>Hello world</h1>
-            <MarkdownSampleShort />
-          </article>
-        </div>
-
-        <div className="bg-blue-900">
-          <article className="py-12 px-4 prose prose-fuchsia-400 mx-auto">
-            <h1>Slate</h1>
+            <h1>Rose Links</h1>
             <MarkdownSampleShort />
           </article>
         </div>
