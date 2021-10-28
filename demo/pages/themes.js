@@ -9,7 +9,7 @@ export default function Index() {
       </Head>
       <div className="grid grid-cols-2">
         <div className="bg-white dark:bg-slate-900">
-          <article className="py-12 px-4 prose prose-slate dark:prose-invert mx-auto">
+          <article className="py-12 px-4 prose prose-slate prose-red dark:prose-invert mx-auto prose-headings:text-green-400">
             <h1>Slate</h1>
             <MarkdownSampleShort />
           </article>

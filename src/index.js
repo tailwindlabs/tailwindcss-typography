@@ -69,8 +69,35 @@ function configToCss(config = {}, { target, className, prefix }) {
 
 module.exports = plugin.withOptions(
   ({ className = 'prose', target = 'modern' } = {}) => {
-    return function ({ addComponents, theme, prefix }) {
+    return function ({ addVariant, addComponents, theme, prefix }) {
       let modifiers = theme('typography')
+
+      // class="prose-headings-green-500 prose-body:text-red-500 prose-body:uppercase"
+      // addVariant(
+      //   'prose-headings',
+      //   '& :is(h1, h2, h3, h4, thead):not(:where([class~="not-prose"] *))'
+      // )
+
+      // Variants:
+      // prose-strong
+      // prose-bullets (ul > li::before)
+      // prose-captions
+      // prose-code
+      // prose-counters
+      // prose-headings
+      // prose-h1
+      // prose-h2
+      // prose-h3
+      // prose-h4
+      // prose-lead
+      // prose-links
+      // prose-pre-bg
+      // prose-pre-code
+      // prose-quote-borders
+      // prose-quotes
+      // prose-rules
+      // prose-td-borders
+      // prose-th-borders
 
       addComponents(
         Object.keys(modifiers).map((modifier) => ({
