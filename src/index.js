@@ -72,32 +72,26 @@ module.exports = plugin.withOptions(
     return function ({ addVariant, addComponents, theme, prefix }) {
       let modifiers = theme('typography')
 
-      // class="prose-headings-green-500 prose-body:text-red-500 prose-body:uppercase"
-      // addVariant(
-      //   'prose-headings',
-      //   '& :is(h1, h2, h3, h4, thead):not(:where([class~="not-prose"] *))'
-      // )
-
       let options = { className, prefix }
 
       for (let [name, selector] of [
-        ['bold', ':is(strong)'],
-        ['bullets', ':is(ul > li::before)'],
-        ['captions', ':is(figure figcaption)'],
-        ['code', ':is(code)'],
-        ['headings', ':is(h1, h2, h3, h4, th)'],
-        ['h1', ':is(h1)'],
-        ['h2', ':is(h2)'],
-        ['h3', ':is(h3)'],
-        ['h4', ':is(h4)'],
-        ['th', ':is(th)'],
-        ['lead', ':is([class~="lead"])'],
-        ['links', ':is(a)'],
-        ['pre', ':is(pre)'],
-        ['quotes', ':is(blockquote)'],
-        ['img', ':is(img)'],
+        ['bold', 'strong'],
+        ['bullets', 'ul > li::before'],
+        ['captions', 'figure figcaption'],
+        ['code', 'code'],
+        ['headings', 'h1, h2, h3, h4, th'],
+        ['h1', 'h1'],
+        ['h2', 'h2'],
+        ['h3', 'h3'],
+        ['h4', 'h4'],
+        ['th', 'th'],
+        ['lead', '[class~="lead"]'],
+        ['links', 'a'],
+        ['pre', 'pre'],
+        ['quotes', 'blockquote'],
+        ['img', 'img'],
       ]) {
-        addVariant(`${className}-${name}`, `& ${inWhere(selector, options)}`)
+        addVariant(`${className}-${name}`, `& :is(${inWhere(selector, options)})`)
       }
 
       // Variants:
