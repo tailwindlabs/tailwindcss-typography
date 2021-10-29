@@ -936,68 +936,24 @@ let defaultModifiers = {
   },
 
   // Invert (for dark mode)
-
   invert: {
     css: {
-      color: 'var(--tw-prose-invert-body)',
-      '[class~="lead"]': {
-        color: 'var(--tw-prose-invert-lead)',
-      },
-      a: {
-        color: 'var(--tw-prose-invert-links)',
-      },
-      strong: {
-        color: 'var(--tw-prose-invert-bold)',
-      },
-      'ol > li::before': {
-        color: 'var(--tw-prose-invert-counters)',
-      },
-      'ul > li::before': {
-        backgroundColor: 'var(--tw-prose-invert-bullets)',
-      },
-      hr: {
-        borderColor: 'var(--tw-prose-invert-rules)',
-      },
-      blockquote: {
-        color: 'var(--tw-prose-invert-quotes)',
-        borderLeftColor: 'var(--tw-prose-invert-quote-borders)',
-      },
-      h1: {
-        color: 'var(--tw-prose-invert-headings)',
-      },
-      h2: {
-        color: 'var(--tw-prose-invert-headings)',
-      },
-      h3: {
-        color: 'var(--tw-prose-invert-headings)',
-      },
-      h4: {
-        color: 'var(--tw-prose-invert-headings)',
-      },
-      'figure figcaption': {
-        color: 'var(--tw-prose-invert-captions)',
-      },
-      code: {
-        color: 'var(--tw-prose-invert-code)',
-      },
-      'a code': {
-        color: 'var(--tw-prose-invert-links)',
-      },
-      pre: {
-        color: 'var(--tw-prose-invert-pre-code)',
-        backgroundColor: 'var(--tw-prose-invert-pre-bg)',
-      },
-      'pre code': {
-        backgroundColor: 'transparent',
-        color: 'inherit',
-      },
-      thead: {
-        color: 'var(--tw-prose-invert-headings)',
-        borderBottomColor: 'var(--tw-prose-invert-th-borders)',
-      },
-      'tbody tr': {
-        borderBottomColor: 'var(--tw-prose-invert-td-borders)',
-      },
+      '--tw-prose-body': 'var(--tw-prose-invert-body)',
+      '--tw-prose-headings': 'var(--tw-prose-invert-headings)',
+      '--tw-prose-lead': 'var(--tw-prose-invert-lead)',
+      '--tw-prose-links': 'var(--tw-prose-invert-links)',
+      '--tw-prose-bold': 'var(--tw-prose-invert-bold)',
+      '--tw-prose-counters': 'var(--tw-prose-invert-counters)',
+      '--tw-prose-bullets': 'var(--tw-prose-invert-bullets)',
+      '--tw-prose-rules': 'var(--tw-prose-invert-rules)',
+      '--tw-prose-quotes': 'var(--tw-prose-invert-quotes)',
+      '--tw-prose-quote-borders': 'var(--tw-prose-invert-quote-borders)',
+      '--tw-prose-captions': 'var(--tw-prose-invert-captions)',
+      '--tw-prose-code': 'var(--tw-prose-invert-code)',
+      '--tw-prose-pre-code': 'var(--tw-prose-invert-pre-code)',
+      '--tw-prose-pre-bg': 'var(--tw-prose-invert-pre-bg)',
+      '--tw-prose-th-borders': 'var(--tw-prose-invert-th-borders)',
+      '--tw-prose-td-borders': 'var(--tw-prose-invert-td-borders)',
     },
   },
 
