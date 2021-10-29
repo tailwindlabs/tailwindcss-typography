@@ -1397,13 +1397,14 @@ module.exports = {
           color: 'var(--tw-prose-pre-code)',
           backgroundColor: 'var(--tw-prose-pre-bg)',
           overflowX: 'auto',
+          fontWeight: '400',
         },
         'pre code': {
           backgroundColor: 'transparent',
           borderWidth: '0',
           borderRadius: '0',
           padding: '0',
-          fontWeight: '400',
+          fontWeight: 'inherit',
           color: 'inherit',
           fontSize: 'inherit',
           fontFamily: 'inherit',
@@ -1422,13 +1423,11 @@ module.exports = {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
-        thead: {
+        'thead th': {
           color: 'var(--tw-prose-headings)',
           fontWeight: '600',
           borderBottomWidth: '1px',
           borderBottomColor: 'var(--tw-prose-th-borders)',
-        },
-        'thead th': {
           verticalAlign: 'bottom',
         },
         'tbody tr': {
