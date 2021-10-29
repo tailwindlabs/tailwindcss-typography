@@ -90,6 +90,9 @@ module.exports = plugin.withOptions(
         ['pre', 'pre'],
         ['quotes', 'blockquote'],
         ['img', 'img'],
+        ['thead', 'thead'],
+        ['tr', 'tr'],
+        ['hr', 'hr'],
       ]) {
         addVariant(`${className}-${name}`, `& :is(${inWhere(selector, options)})`)
       }
