@@ -78,6 +78,28 @@ module.exports = plugin.withOptions(
       //   '& :is(h1, h2, h3, h4, thead):not(:where([class~="not-prose"] *))'
       // )
 
+      let options = { className, prefix }
+
+      for (let [name, selector] of [
+        ['bold', ':is(strong)'],
+        ['bullets', ':is(ul > li::before)'],
+        ['captions', ':is(figure figcaption)'],
+        ['code', ':is(code)'],
+        ['headings', ':is(h1, h2, h3, h4, th)'],
+        ['h1', ':is(h1)'],
+        ['h2', ':is(h2)'],
+        ['h3', ':is(h3)'],
+        ['h4', ':is(h4)'],
+        ['th', ':is(th)'],
+        ['lead', ':is([class~="lead"])'],
+        ['links', ':is(a)'],
+        ['pre', ':is(pre)'],
+        ['quotes', ':is(blockquote)'],
+        ['img', ':is(img)'],
+      ]) {
+        addVariant(`${className}-${name}`, `& ${inWhere(selector, options)}`)
+      }
+
       // Variants:
       // prose-strong
       // prose-bullets (ul > li::before)
