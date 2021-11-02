@@ -1423,11 +1423,13 @@ module.exports = {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
+        thead: {
+          borderBottomWidth: '1px',
+          borderBottomColor: 'var(--tw-prose-th-borders)',
+        },
         'thead th': {
           color: 'var(--tw-prose-headings)',
           fontWeight: '600',
-          borderBottomWidth: '1px',
-          borderBottomColor: 'var(--tw-prose-th-borders)',
           verticalAlign: 'bottom',
         },
         'tbody tr': {
@@ -1438,7 +1440,7 @@ module.exports = {
           borderBottomWidth: '0',
         },
         'tbody td': {
-          verticalAlign: 'top',
+          verticalAlign: 'baseline',
         },
       },
       defaultModifiers.gray.css,

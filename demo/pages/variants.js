@@ -3,7 +3,7 @@ import MarkdownSampleShort from '../components/MarkdownSampleShort.mdx'
 
 export default function Variants() {
   return (
-    <div className="antialiased text-gray-900">
+    <div className="antialiased text-gray-900 md:bg-gray-900 lg:bg-white">
       <Head>
         <title>Tailwind CSS Typography</title>
       </Head>

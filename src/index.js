@@ -75,21 +75,25 @@ module.exports = plugin.withOptions(
       let options = { className, prefix }
 
       for (let [name, selector] of [
-        ['bold', 'strong'],
+        // Special names
         ['bullets', 'ul > li::before'],
-        ['captions', 'figure figcaption'],
-        ['code', 'code'],
+        ['counters', 'ol > li::before'],
         ['headings', 'h1, h2, h3, h4, th'],
+        ['captions', 'figure figcaption'],
+        ['images', 'img'],
+        ['lead', '[class~="lead"]'],
+        ['links', 'a'],
+        ['quotes', 'blockquote'],
+        ['bold', 'strong'],
+        ['italic', 'em'],
+        // Simple elements
         ['h1', 'h1'],
         ['h2', 'h2'],
         ['h3', 'h3'],
         ['h4', 'h4'],
         ['th', 'th'],
-        ['lead', '[class~="lead"]'],
-        ['links', 'a'],
+        ['code', 'code'],
         ['pre', 'pre'],
-        ['quotes', 'blockquote'],
-        ['img', 'img'],
         ['thead', 'thead'],
         ['tr', 'tr'],
         ['hr', 'hr'],

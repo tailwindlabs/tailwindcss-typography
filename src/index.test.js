@@ -246,11 +246,13 @@ it('should generate the default classes for the typography components', async ()
         font-size: 0.875em;
         line-height: 1.7142857;
     }
+    .prose :where(thead):not(:where([class~=\\"not-prose\\"] *)) {
+        border-bottom-width: 1px;
+        border-bottom-color: var(--tw-prose-th-borders);
+    }
     .prose :where(thead th):not(:where([class~=\\"not-prose\\"] *)) {
         color: var(--tw-prose-headings);
         font-weight: 600;
-        border-bottom-width: 1px;
-        border-bottom-color: var(--tw-prose-th-borders);
         vertical-align: bottom;
         padding-right: 0.5714286em;
         padding-bottom: 0.5714286em;
@@ -264,7 +266,7 @@ it('should generate the default classes for the typography components', async ()
         border-bottom-width: 0;
     }
     .prose :where(tbody td):not(:where([class~=\\"not-prose\\"] *)) {
-        vertical-align: top;
+        vertical-align: baseline;
         padding-top: 0.5714286em;
         padding-right: 0.5714286em;
         padding-bottom: 0.5714286em;
@@ -1745,11 +1747,13 @@ it('should generate the default classes for the typography components', async ()
             font-size: 0.875em;
             line-height: 1.7142857;
         }
+        .sm\\\\:prose :where(thead):not(:where([class~=\\"not-prose\\"] *)) {
+            border-bottom-width: 1px;
+            border-bottom-color: var(--tw-prose-th-borders);
+        }
         .sm\\\\:prose :where(thead th):not(:where([class~=\\"not-prose\\"] *)) {
             color: var(--tw-prose-headings);
             font-weight: 600;
-            border-bottom-width: 1px;
-            border-bottom-color: var(--tw-prose-th-borders);
             vertical-align: bottom;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -1763,7 +1767,7 @@ it('should generate the default classes for the typography components', async ()
             border-bottom-width: 0;
         }
         .sm\\\\:prose :where(tbody td):not(:where([class~=\\"not-prose\\"] *)) {
-            vertical-align: top;
+            vertical-align: baseline;
             padding-top: 0.5714286em;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -3245,11 +3249,13 @@ it('should generate the default classes for the typography components', async ()
             font-size: 0.875em;
             line-height: 1.7142857;
         }
+        .md\\\\:prose :where(thead):not(:where([class~=\\"not-prose\\"] *)) {
+            border-bottom-width: 1px;
+            border-bottom-color: var(--tw-prose-th-borders);
+        }
         .md\\\\:prose :where(thead th):not(:where([class~=\\"not-prose\\"] *)) {
             color: var(--tw-prose-headings);
             font-weight: 600;
-            border-bottom-width: 1px;
-            border-bottom-color: var(--tw-prose-th-borders);
             vertical-align: bottom;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -3263,7 +3269,7 @@ it('should generate the default classes for the typography components', async ()
             border-bottom-width: 0;
         }
         .md\\\\:prose :where(tbody td):not(:where([class~=\\"not-prose\\"] *)) {
-            vertical-align: top;
+            vertical-align: baseline;
             padding-top: 0.5714286em;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -4745,11 +4751,13 @@ it('should generate the default classes for the typography components', async ()
             font-size: 0.875em;
             line-height: 1.7142857;
         }
+        .lg\\\\:prose :where(thead):not(:where([class~=\\"not-prose\\"] *)) {
+            border-bottom-width: 1px;
+            border-bottom-color: var(--tw-prose-th-borders);
+        }
         .lg\\\\:prose :where(thead th):not(:where([class~=\\"not-prose\\"] *)) {
             color: var(--tw-prose-headings);
             font-weight: 600;
-            border-bottom-width: 1px;
-            border-bottom-color: var(--tw-prose-th-borders);
             vertical-align: bottom;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -4763,7 +4771,7 @@ it('should generate the default classes for the typography components', async ()
             border-bottom-width: 0;
         }
         .lg\\\\:prose :where(tbody td):not(:where([class~=\\"not-prose\\"] *)) {
-            vertical-align: top;
+            vertical-align: baseline;
             padding-top: 0.5714286em;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -6245,11 +6253,13 @@ it('should generate the default classes for the typography components', async ()
             font-size: 0.875em;
             line-height: 1.7142857;
         }
+        .xl\\\\:prose :where(thead):not(:where([class~=\\"not-prose\\"] *)) {
+            border-bottom-width: 1px;
+            border-bottom-color: var(--tw-prose-th-borders);
+        }
         .xl\\\\:prose :where(thead th):not(:where([class~=\\"not-prose\\"] *)) {
             color: var(--tw-prose-headings);
             font-weight: 600;
-            border-bottom-width: 1px;
-            border-bottom-color: var(--tw-prose-th-borders);
             vertical-align: bottom;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -6263,7 +6273,7 @@ it('should generate the default classes for the typography components', async ()
             border-bottom-width: 0;
         }
         .xl\\\\:prose :where(tbody td):not(:where([class~=\\"not-prose\\"] *)) {
-            vertical-align: top;
+            vertical-align: baseline;
             padding-top: 0.5714286em;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -7745,11 +7755,13 @@ it('should generate the default classes for the typography components', async ()
             font-size: 0.875em;
             line-height: 1.7142857;
         }
+        .\\\\32xl\\\\:prose :where(thead):not(:where([class~=\\"not-prose\\"] *)) {
+            border-bottom-width: 1px;
+            border-bottom-color: var(--tw-prose-th-borders);
+        }
         .\\\\32xl\\\\:prose :where(thead th):not(:where([class~=\\"not-prose\\"] *)) {
             color: var(--tw-prose-headings);
             font-weight: 600;
-            border-bottom-width: 1px;
-            border-bottom-color: var(--tw-prose-th-borders);
             vertical-align: bottom;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -7763,7 +7775,7 @@ it('should generate the default classes for the typography components', async ()
             border-bottom-width: 0;
         }
         .\\\\32xl\\\\:prose :where(tbody td):not(:where([class~=\\"not-prose\\"] *)) {
-            vertical-align: top;
+            vertical-align: baseline;
             padding-top: 0.5714286em;
             padding-right: 0.5714286em;
             padding-bottom: 0.5714286em;
@@ -9252,11 +9264,13 @@ it('should be possible to change the default className from `prose` to `markdown
       -     font-size: 0.875em;
       -     line-height: 1.7142857;
       - }
+      - .prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -     border-bottom-width: 1px;
+      -     border-bottom-color: var(--tw-prose-th-borders);
+      - }
       - .prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -     color: var(--tw-prose-headings);
       -     font-weight: 600;
-      -     border-bottom-width: 1px;
-      -     border-bottom-color: var(--tw-prose-th-borders);
       -     vertical-align: bottom;
       -     padding-right: 0.5714286em;
       -     padding-bottom: 0.5714286em;
@@ -9270,7 +9284,7 @@ it('should be possible to change the default className from `prose` to `markdown
       -     border-bottom-width: 0;
       - }
       - .prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -     vertical-align: top;
+      -     vertical-align: baseline;
       -     padding-top: 0.5714286em;
       -     padding-right: 0.5714286em;
       -     padding-bottom: 0.5714286em;
@@ -10751,11 +10765,13 @@ it('should be possible to change the default className from `prose` to `markdown
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .sm\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .sm\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -10769,7 +10785,7 @@ it('should be possible to change the default className from `prose` to `markdown
       -         border-bottom-width: 0;
       -     }
       -     .sm\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -12251,11 +12267,13 @@ it('should be possible to change the default className from `prose` to `markdown
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .md\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .md\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -12269,7 +12287,7 @@ it('should be possible to change the default className from `prose` to `markdown
       -         border-bottom-width: 0;
       -     }
       -     .md\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -13751,11 +13769,13 @@ it('should be possible to change the default className from `prose` to `markdown
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .lg\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .lg\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -13769,7 +13789,7 @@ it('should be possible to change the default className from `prose` to `markdown
       -         border-bottom-width: 0;
       -     }
       -     .lg\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -15251,11 +15271,13 @@ it('should be possible to change the default className from `prose` to `markdown
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .xl\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .xl\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -15269,7 +15291,7 @@ it('should be possible to change the default className from `prose` to `markdown
       -         border-bottom-width: 0;
       -     }
       -     .xl\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -16751,11 +16773,13 @@ it('should be possible to change the default className from `prose` to `markdown
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .\\\\32xl\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .\\\\32xl\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -16769,7 +16793,7 @@ it('should be possible to change the default className from `prose` to `markdown
       -         border-bottom-width: 0;
       -     }
       -     .\\\\32xl\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -18251,6 +18275,11 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
+      - .prose :where(thead):not(:where([class~='not-prose'] *)) {
+      + .prose thead {
+
+      ---
+
       - .prose :where(thead th):not(:where([class~='not-prose'] *)) {
       + .prose thead th {
 
@@ -19666,6 +19695,11 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
+      -     .sm\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:prose thead {
+
+      ---
+
       -     .sm\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose thead th {
 
@@ -19758,14 +19792,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .sm\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
+      +         margin-top: 0.75em;
+      +         margin-bottom: 0.75em;
+      +     }
+      +     .sm\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
 
       ---
 
       -     .sm\\\\:prose :where(hr + *):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
-      +         margin-top: 0.75em;
-      +         margin-bottom: 0.75em;
-      +     }
       +     .sm\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -19967,14 +20001,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
       +     .sm\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
       +         margin-top: 0.5714286em;
       +         margin-bottom: 0.5714286em;
-      +     }
-      +     .sm\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
-      +         margin-top: 0.5714286em;
-      +         margin-bottom: 0.5714286em;
 
       ---
 
       -     .sm\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
+      +         margin-top: 0.5714286em;
+      +         margin-bottom: 0.5714286em;
+      +     }
       +     .sm\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
       +         margin-top: 0.5714286em;
       +         margin-bottom: 0.5714286em;
@@ -20193,11 +20227,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .sm\\\\:prose-base :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
+      +     }
       +     .sm\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
-      +     }
+
+      ---
+
+      -     .sm\\\\:prose-base :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -20422,14 +20459,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .sm\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
+      +         margin-top: 0.8888889em;
+      +         margin-bottom: 0.8888889em;
+      +     }
+      +     .sm\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
 
       ---
 
       -     .sm\\\\:prose-lg :where(hr):not(:where([class~='not-prose'] *)) {
-      +     .sm\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
-      +         margin-top: 0.8888889em;
-      +         margin-bottom: 0.8888889em;
-      +     }
       +     .sm\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
       +         margin-top: 0.8888889em;
       +         margin-bottom: 0.8888889em;
@@ -20651,14 +20688,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
       +     .sm\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
       +         margin-top: 0.8em;
       +         margin-bottom: 0.8em;
-      +     }
-      +     .sm\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
-      +         margin-top: 0.8em;
-      +         margin-bottom: 0.8em;
 
       ---
 
       -     .sm\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
+      +         margin-top: 0.8em;
+      +         margin-bottom: 0.8em;
+      +     }
       +     .sm\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
       +         margin-top: 0.8em;
       +         margin-bottom: 0.8em;
@@ -20881,23 +20918,23 @@ it('should be possible to disable the use of :where() by setting `target` to `le
       +     .sm\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
       +         margin-top: 0.6666667em;
       +         margin-bottom: 0.6666667em;
-      +     }
-      +     .sm\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
-      +         margin-top: 0.6666667em;
-      +         margin-bottom: 0.6666667em;
-      +     }
-      +     .sm\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
-      +         margin-top: 0.6666667em;
-      +         margin-bottom: 0.6666667em;
 
       ---
 
       -     .sm\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
+      +         margin-top: 0.6666667em;
+      +         margin-bottom: 0.6666667em;
+      +     }
+      +     .sm\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
 
       ---
 
       -     .sm\\\\:prose-2xl :where(hr):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
+      +         margin-top: 0.6666667em;
+      +         margin-bottom: 0.6666667em;
+      +     }
       +     .sm\\\\:prose-2xl hr {
 
       ---
@@ -21162,6 +21199,11 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
+      -     .md\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:prose thead {
+
+      ---
+
       -     .md\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose thead th {
 
@@ -21254,14 +21296,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .md\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
+      +         margin-top: 0.75em;
+      +         margin-bottom: 0.75em;
+      +     }
+      +     .md\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
 
       ---
 
       -     .md\\\\:prose :where(hr + *):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
-      +         margin-top: 0.75em;
-      +         margin-bottom: 0.75em;
-      +     }
       +     .md\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -21461,22 +21503,22 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .md\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
+      +         margin-top: 0.5714286em;
+      +         margin-bottom: 0.5714286em;
+      +     }
+      +     .md\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
+      +         margin-top: 0.5714286em;
+      +         margin-bottom: 0.5714286em;
+      +     }
+      +     .md\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
+      +         margin-top: 0.5714286em;
+      +         margin-bottom: 0.5714286em;
+      +     }
+      +     .md\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
 
       ---
 
       -     .md\\\\:prose-sm :where(hr):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
-      +         margin-top: 0.5714286em;
-      +         margin-bottom: 0.5714286em;
-      +     }
-      +     .md\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
-      +         margin-top: 0.5714286em;
-      +         margin-bottom: 0.5714286em;
-      +     }
-      +     .md\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
-      +         margin-top: 0.5714286em;
-      +         margin-bottom: 0.5714286em;
-      +     }
       +     .md\\\\:prose-sm hr {
 
       ---
@@ -21686,19 +21728,16 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      +     }
-      +     .md\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
-      +         margin-top: 0.75em;
-      +         margin-bottom: 0.75em;
-
-      ---
-
       -     .md\\\\:prose-base :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
 
       ---
 
       -     .md\\\\:prose-base :where(hr):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
+      +         margin-top: 0.75em;
+      +         margin-bottom: 0.75em;
+      +     }
       +     .md\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -21916,27 +21955,24 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      +     }
-      +     .md\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
-      +         margin-top: 0.8888889em;
-      +         margin-bottom: 0.8888889em;
-
-      ---
-
       -     .md\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
-      +         margin-top: 0.8888889em;
-      +         margin-bottom: 0.8888889em;
-      +     }
-      +     .md\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
-      +         margin-top: 0.8888889em;
-      +         margin-bottom: 0.8888889em;
-      +     }
       +     .md\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
 
       ---
 
       -     .md\\\\:prose-lg :where(hr):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
+      +         margin-top: 0.8888889em;
+      +         margin-bottom: 0.8888889em;
+      +     }
+      +     .md\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
+      +         margin-top: 0.8888889em;
+      +         margin-bottom: 0.8888889em;
+      +     }
+      +     .md\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
+      +         margin-top: 0.8888889em;
+      +         margin-bottom: 0.8888889em;
+      +     }
       +     .md\\\\:prose-lg hr {
 
       ---
@@ -22148,14 +22184,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .md\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
+      +         margin-top: 0.8em;
+      +         margin-bottom: 0.8em;
+      +     }
+      +     .md\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
 
       ---
 
       -     .md\\\\:prose-xl :where(hr):not(:where([class~='not-prose'] *)) {
-      +     .md\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
-      +         margin-top: 0.8em;
-      +         margin-bottom: 0.8em;
-      +     }
       +     .md\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
       +         margin-top: 0.8em;
       +         margin-bottom: 0.8em;
@@ -22655,6 +22691,11 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
+      -     .lg\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:prose thead {
+
+      ---
+
       -     .lg\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose thead th {
 
@@ -22747,14 +22788,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .lg\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
+      +         margin-top: 0.75em;
+      +         margin-bottom: 0.75em;
+      +     }
+      +     .lg\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
 
       ---
 
       -     .lg\\\\:prose :where(hr + *):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
-      +         margin-top: 0.75em;
-      +         margin-bottom: 0.75em;
-      +     }
       +     .lg\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -22958,18 +22999,18 @@ it('should be possible to disable the use of :where() by setting `target` to `le
       +         margin-bottom: 0.5714286em;
       +     }
       +     .lg\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
+      +         margin-top: 0.5714286em;
+      +         margin-bottom: 0.5714286em;
+      +     }
+      +     .lg\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
+      +         margin-top: 0.5714286em;
+      +         margin-bottom: 0.5714286em;
+      +     }
+      +     .lg\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
 
       ---
 
       -     .lg\\\\:prose-sm :where(hr):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
-      +         margin-top: 0.5714286em;
-      +         margin-bottom: 0.5714286em;
-      +     }
-      +     .lg\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
-      +         margin-top: 0.5714286em;
-      +         margin-bottom: 0.5714286em;
-      +     }
       +     .lg\\\\:prose-sm hr {
 
       ---
@@ -23181,14 +23222,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .lg\\\\:prose-base :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
-      +         margin-top: 0.75em;
-      +         margin-bottom: 0.75em;
-      +     }
-      +     .lg\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
 
       ---
 
       -     .lg\\\\:prose-base :where(hr):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
+      +         margin-top: 0.75em;
+      +         margin-bottom: 0.75em;
+      +     }
       +     .lg\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -23406,14 +23447,11 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      +     }
+      -     .lg\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
       +         margin-top: 0.8888889em;
       +         margin-bottom: 0.8888889em;
-
-      ---
-
-      -     .lg\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
+      +     }
       +     .lg\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
       +         margin-top: 0.8888889em;
       +         margin-bottom: 0.8888889em;
@@ -23642,18 +23680,18 @@ it('should be possible to disable the use of :where() by setting `target` to `le
       +         margin-bottom: 0.8em;
       +     }
       +     .lg\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
+      +         margin-top: 0.8em;
+      +         margin-bottom: 0.8em;
+      +     }
+      +     .lg\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
+      +         margin-top: 0.8em;
+      +         margin-bottom: 0.8em;
+      +     }
+      +     .lg\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
 
       ---
 
       -     .lg\\\\:prose-xl :where(hr):not(:where([class~='not-prose'] *)) {
-      +     .lg\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
-      +         margin-top: 0.8em;
-      +         margin-bottom: 0.8em;
-      +     }
-      +     .lg\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
-      +         margin-top: 0.8em;
-      +         margin-bottom: 0.8em;
-      +     }
       +     .lg\\\\:prose-xl hr {
 
       ---
@@ -23865,14 +23903,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .lg\\\\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
-      +         margin-top: 0.6666667em;
-      +         margin-bottom: 0.6666667em;
-      +     }
-      +     .lg\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
 
       ---
 
       -     .lg\\\\:prose-2xl :where(hr):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
+      +         margin-top: 0.6666667em;
+      +         margin-bottom: 0.6666667em;
+      +     }
       +     .lg\\\\:prose-2xl ul ul, .prose-2xl ul ol, .prose-2xl ol ul, .prose-2xl ol ol {
       +         margin-top: 0.6666667em;
       +         margin-bottom: 0.6666667em;
@@ -24145,6 +24183,11 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
+      -     .xl\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:prose thead {
+
+      ---
+
       -     .xl\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose thead th {
 
@@ -24235,13 +24278,6 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      +     }
-      +     .xl\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
-      +         margin-top: 0.75em;
-      +         margin-bottom: 0.75em;
-
-      ---
-
       -     .xl\\\\:prose :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
       +         margin-top: 0.75em;
@@ -24252,6 +24288,10 @@ it('should be possible to disable the use of :where() by setting `target` to `le
       ---
 
       -     .xl\\\\:prose :where(hr + *):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
+      +         margin-top: 0.75em;
+      +         margin-bottom: 0.75em;
+      +     }
       +     .xl\\\\:prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -24447,14 +24487,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .xl\\\\:prose-sm :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
-      +         margin-top: 0.5714286em;
-      +         margin-bottom: 0.5714286em;
-      +     }
-      +     .xl\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
 
       ---
 
       -     .xl\\\\:prose-sm :where(hr):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
+      +         margin-top: 0.5714286em;
+      +         margin-bottom: 0.5714286em;
+      +     }
       +     .xl\\\\:prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
       +         margin-top: 0.5714286em;
       +         margin-bottom: 0.5714286em;
@@ -24672,11 +24712,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       ---
 
-      -     .xl\\\\:prose-base :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
+      +     }
       +     .xl\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
-      +     }
+
+      ---
+
+      -     .xl\\\\:prose-base :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -24903,14 +24946,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
       +     .xl\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
       +         margin-top: 0.8888889em;
       +         margin-bottom: 0.8888889em;
-      +     }
-      +     .xl\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
-      +         margin-top: 0.8888889em;
-      +         margin-bottom: 0.8888889em;
 
       ---
 
       -     .xl\\\\:prose-lg :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
+      +         margin-top: 0.8888889em;
+      +         margin-bottom: 0.8888889em;
+      +     }
       +     .xl\\\\:prose-lg ul ul, .prose-lg ul ol, .prose-lg ol ul, .prose-lg ol ol {
       +         margin-top: 0.8888889em;
       +         margin-bottom: 0.8888889em;
@@ -25131,14 +25174,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .xl\\\\:prose-xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
-      +         margin-top: 0.8em;
-      +         margin-bottom: 0.8em;
-      +     }
-      +     .xl\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
 
       ---
 
       -     .xl\\\\:prose-xl :where(hr):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
+      +         margin-top: 0.8em;
+      +         margin-bottom: 0.8em;
+      +     }
       +     .xl\\\\:prose-xl ul ul, .prose-xl ul ol, .prose-xl ol ul, .prose-xl ol ol {
       +         margin-top: 0.8em;
       +         margin-bottom: 0.8em;
@@ -25635,6 +25678,11 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .\\\\32xl\\\\:prose :where(table):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose table {
+
+      ---
+
+      -     .\\\\32xl\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:prose thead {
 
       ---
 
@@ -26164,14 +26212,14 @@ it('should be possible to disable the use of :where() by setting `target` to `le
 
       -     .\\\\32xl\\\\:prose-base :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
-      +         margin-top: 0.75em;
-      +         margin-bottom: 0.75em;
-      +     }
-      +     .\\\\32xl\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
 
       ---
 
       -     .\\\\32xl\\\\:prose-base :where(hr):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
+      +         margin-top: 0.75em;
+      +         margin-bottom: 0.75em;
+      +     }
       +     .\\\\32xl\\\\:prose-base ul ul, .prose-base ul ol, .prose-base ol ul, .prose-base ol ol {
       +         margin-top: 0.75em;
       +         margin-bottom: 0.75em;
@@ -27133,6 +27181,11 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       - .prose :where(table):not(:where([class~='not-prose'] *)) {
       + .tw-prose :where(table):not(:where([class~='tw-not-prose'] *)) {
+
+      ---
+
+      - .prose :where(thead):not(:where([class~='not-prose'] *)) {
+      + .tw-prose :where(thead):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -28701,6 +28754,11 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
+      -     .sm\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .sm\\\\:tw-prose :where(thead):not(:where([class~='tw-not-prose'] *)) {
+
+      ---
+
       -     .sm\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       +     .sm\\\\:tw-prose :where(thead th):not(:where([class~='tw-not-prose'] *)) {
 
@@ -30263,6 +30321,11 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       -     .md\\\\:prose :where(table):not(:where([class~='not-prose'] *)) {
       +     .md\\\\:tw-prose :where(table):not(:where([class~='tw-not-prose'] *)) {
+
+      ---
+
+      -     .md\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .md\\\\:tw-prose :where(thead):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -31831,6 +31894,11 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
+      -     .lg\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .lg\\\\:tw-prose :where(thead):not(:where([class~='tw-not-prose'] *)) {
+
+      ---
+
       -     .lg\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       +     .lg\\\\:tw-prose :where(thead th):not(:where([class~='tw-not-prose'] *)) {
 
@@ -33396,6 +33464,11 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       ---
 
+      -     .xl\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .xl\\\\:tw-prose :where(thead):not(:where([class~='tw-not-prose'] *)) {
+
+      ---
+
       -     .xl\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       +     .xl\\\\:tw-prose :where(thead th):not(:where([class~='tw-not-prose'] *)) {
 
@@ -34958,6 +35031,11 @@ it('the `not-prose` class is properly prefixed', async () => {
 
       -     .\\\\32xl\\\\:prose :where(table):not(:where([class~='not-prose'] *)) {
       +     .\\\\32xl\\\\:tw-prose :where(table):not(:where([class~='tw-not-prose'] *)) {
+
+      ---
+
+      -     .\\\\32xl\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      +     .\\\\32xl\\\\:tw-prose :where(thead):not(:where([class~='tw-not-prose'] *)) {
 
       ---
 
@@ -36547,11 +36625,13 @@ it('should be possible to change the default modifiers and change the className'
       -     font-size: 0.875em;
       -     line-height: 1.7142857;
       - }
+      - .prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -     border-bottom-width: 1px;
+      -     border-bottom-color: var(--tw-prose-th-borders);
+      - }
       - .prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -     color: var(--tw-prose-headings);
       -     font-weight: 600;
-      -     border-bottom-width: 1px;
-      -     border-bottom-color: var(--tw-prose-th-borders);
       -     vertical-align: bottom;
       -     padding-right: 0.5714286em;
       -     padding-bottom: 0.5714286em;
@@ -36565,7 +36645,7 @@ it('should be possible to change the default modifiers and change the className'
       -     border-bottom-width: 0;
       - }
       - .prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -     vertical-align: top;
+      -     vertical-align: baseline;
       -     padding-top: 0.5714286em;
       -     padding-right: 0.5714286em;
       -     padding-bottom: 0.5714286em;
@@ -38046,11 +38126,13 @@ it('should be possible to change the default modifiers and change the className'
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .sm\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .sm\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -38064,7 +38146,7 @@ it('should be possible to change the default modifiers and change the className'
       -         border-bottom-width: 0;
       -     }
       -     .sm\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -39546,11 +39628,13 @@ it('should be possible to change the default modifiers and change the className'
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .md\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .md\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -39564,7 +39648,7 @@ it('should be possible to change the default modifiers and change the className'
       -         border-bottom-width: 0;
       -     }
       -     .md\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -41046,11 +41130,13 @@ it('should be possible to change the default modifiers and change the className'
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .lg\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .lg\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -41064,7 +41150,7 @@ it('should be possible to change the default modifiers and change the className'
       -         border-bottom-width: 0;
       -     }
       -     .lg\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -42546,11 +42632,13 @@ it('should be possible to change the default modifiers and change the className'
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .xl\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .xl\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -42564,7 +42652,7 @@ it('should be possible to change the default modifiers and change the className'
       -         border-bottom-width: 0;
       -     }
       -     .xl\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -44046,11 +44134,13 @@ it('should be possible to change the default modifiers and change the className'
       -         font-size: 0.875em;
       -         line-height: 1.7142857;
       -     }
+      -     .\\\\32xl\\\\:prose :where(thead):not(:where([class~='not-prose'] *)) {
+      -         border-bottom-width: 1px;
+      -         border-bottom-color: var(--tw-prose-th-borders);
+      -     }
       -     .\\\\32xl\\\\:prose :where(thead th):not(:where([class~='not-prose'] *)) {
       -         color: var(--tw-prose-headings);
       -         font-weight: 600;
-      -         border-bottom-width: 1px;
-      -         border-bottom-color: var(--tw-prose-th-borders);
       -         vertical-align: bottom;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
@@ -44064,7 +44154,7 @@ it('should be possible to change the default modifiers and change the className'
       -         border-bottom-width: 0;
       -     }
       -     .\\\\32xl\\\\:prose :where(tbody td):not(:where([class~='not-prose'] *)) {
-      -         vertical-align: top;
+      -         vertical-align: baseline;
       -         padding-top: 0.5714286em;
       -         padding-right: 0.5714286em;
       -         padding-bottom: 0.5714286em;
