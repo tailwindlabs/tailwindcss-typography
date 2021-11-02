@@ -68,7 +68,7 @@ let defaultModifiers = {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(12, 14),
           lineHeight: round(16 / 12),
           marginTop: em(8, 12),
@@ -253,7 +253,7 @@ let defaultModifiers = {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(14, 16),
           lineHeight: round(20 / 14),
           marginTop: em(12, 14),
@@ -438,7 +438,7 @@ let defaultModifiers = {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(16, 18),
           lineHeight: round(24 / 16),
           marginTop: em(16, 16),
@@ -623,7 +623,7 @@ let defaultModifiers = {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(18, 20),
           lineHeight: round(28 / 18),
           marginTop: em(18, 18),
@@ -808,7 +808,7 @@ let defaultModifiers = {
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(20, 24),
           lineHeight: round(32 / 20),
           marginTop: em(20, 20),
@@ -1377,7 +1377,7 @@ module.exports = {
         },
         // TODO: Figure out how to not need this, it's a merging issue
         'figure > *': {},
-        'figure figcaption': {
+        figcaption: {
           color: 'var(--tw-prose-captions)',
         },
         code: {

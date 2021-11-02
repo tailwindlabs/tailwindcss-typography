@@ -75,27 +75,30 @@ module.exports = plugin.withOptions(
       let options = { className, prefix }
 
       for (let [name, selector] of [
-        // Special names
-        ['bullets', 'ul > li::before'],
-        ['counters', 'ol > li::before'],
         ['headings', 'h1, h2, h3, h4, th'],
-        ['captions', 'figure figcaption'],
-        ['images', 'img'],
-        ['lead', '[class~="lead"]'],
-        ['links', 'a'],
-        ['quotes', 'blockquote'],
-        ['bold', 'strong'],
-        ['italic', 'em'],
-        // Simple elements
         ['h1', 'h1'],
         ['h2', 'h2'],
         ['h3', 'h3'],
         ['h4', 'h4'],
-        ['th', 'th'],
+        ['lead', '[class~="lead"]'],
+        ['p', 'p'],
+        ['a', 'a'],
+        ['blockquote', 'blockquote'],
+        ['figure', 'figure'],
+        ['figcaption', 'figcaption'],
+        ['strong', 'strong'],
+        ['em', 'em'],
         ['code', 'code'],
         ['pre', 'pre'],
+        ['ol', 'ol'],
+        ['ul', 'ul'],
+        ['li', 'li'],
+        ['table', 'table'],
         ['thead', 'thead'],
         ['tr', 'tr'],
+        ['th', 'th'],
+        ['img', 'img'],
+        ['video', 'img'],
         ['hr', 'hr'],
       ]) {
         addVariant(`${className}-${name}`, `& :is(${inWhere(selector, options)})`)
