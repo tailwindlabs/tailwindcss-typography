@@ -97,27 +97,6 @@ module.exports = plugin.withOptions(
         addVariant(`${className}-${name}`, `& :is(${inWhere(selector, options)})`)
       }
 
-      // Variants:
-      // prose-strong
-      // prose-bullets (ul > li::before)
-      // prose-captions
-      // prose-code
-      // prose-counters
-      // prose-headings
-      // prose-h1
-      // prose-h2
-      // prose-h3
-      // prose-h4
-      // prose-lead
-      // prose-links
-      // prose-pre-bg
-      // prose-pre-code
-      // prose-quote-borders
-      // prose-quotes
-      // prose-rules
-      // prose-td-borders
-      // prose-th-borders
-
       addComponents(
         Object.keys(modifiers).map((modifier) => ({
           [modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`]: configToCss(
