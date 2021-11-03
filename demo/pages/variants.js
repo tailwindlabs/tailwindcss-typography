@@ -45,7 +45,15 @@ export default function Variants() {
                 </a>
               </div>
             </div>
-            <div className="prose prose-img:rounded-xl prose-img:shadow-xl prose-pre:bg-blue-900 prose-pre:text-pink-200 hover:prose-pre:font-bold prose-headings:text-pink-800 sm:prose-base md:prose-invert lg:prose-slate">
+            <div
+              className="prose
+            marker:prose-ol:text-red-500
+
+            prose-bullets:bg-red-500
+            marker:prose-ul:text-red-500
+
+            prose-img:rounded-xl prose-img:shadow-xl prose-pre:bg-blue-900 prose-pre:text-pink-200 hover:prose-pre:font-bold prose-headings:text-pink-800 sm:prose-base md:prose-invert lg:prose-slate"
+            >
               <MarkdownSampleShort />
             </div>
           </div>

@@ -105,20 +105,17 @@ let defaultModifiers = {
           marginTop: em(4, 14),
           marginBottom: em(4, 14),
         },
-        'ol > li': {
-          paddingLeft: em(22, 14),
+        ol: {
+          paddingLeft: em(16, 14),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(6, 14),
+        },
+        ul: {
+          paddingLeft: em(20, 14),
         },
         'ul > li': {
-          paddingLeft: em(22, 14),
-        },
-        'ul > li::before': {
-          height: em(5, 14),
-          width: em(5, 14),
-          top: `calc(${em(24 / 2, 14)} - ${em(2.5, 14)})`,
-          left: em(3, 14),
+          paddingLeft: em(2, 14),
         },
         '> ul > li p': {
           marginTop: em(8, 14),
@@ -290,20 +287,17 @@ let defaultModifiers = {
           marginTop: em(8, 16),
           marginBottom: em(8, 16),
         },
-        'ol > li': {
-          paddingLeft: em(28, 16),
+        ol: {
+          paddingLeft: em(20, 16),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(8, 16),
+        },
+        ul: {
+          paddingLeft: em(22, 16),
         },
         'ul > li': {
-          paddingLeft: em(28, 16),
-        },
-        'ul > li::before': {
-          width: em(6, 16),
-          height: em(6, 16),
-          top: `calc(${em(28 / 2, 16)} - ${em(3, 16)})`,
-          left: em(4, 16),
+          paddingLeft: em(6, 16),
         },
         '> ul > li p': {
           marginTop: em(12, 16),
@@ -475,20 +469,17 @@ let defaultModifiers = {
           marginTop: em(12, 18),
           marginBottom: em(12, 18),
         },
-        'ol > li': {
-          paddingLeft: em(30, 18),
+        ol: {
+          paddingLeft: em(20, 18),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(10, 18),
+        },
+        ul: {
+          paddingLeft: em(22, 18),
         },
         'ul > li': {
-          paddingLeft: em(30, 18),
-        },
-        'ul > li::before': {
-          width: em(6, 18),
-          height: em(6, 18),
-          top: `calc(${em(32 / 2, 18)} - ${em(3, 18)})`,
-          left: em(4, 18),
+          paddingLeft: em(8, 18),
         },
         '> ul > li p': {
           marginTop: em(16, 18),
@@ -660,20 +651,18 @@ let defaultModifiers = {
           marginTop: em(12, 20),
           marginBottom: em(12, 20),
         },
-        'ol > li': {
-          paddingLeft: em(36, 20),
+        // Fix this for marker
+        ol: {
+          paddingLeft: em(20, 20),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(16, 20),
+        },
+        ul: {
+          paddingLeft: em(24, 20),
         },
         'ul > li': {
-          paddingLeft: em(36, 20),
-        },
-        'ul > li::before': {
-          width: em(7, 20),
-          height: em(7, 20),
-          top: `calc(${em(36 / 2, 20)} - ${em(3.5, 20)})`,
-          left: em(5, 20),
+          paddingLeft: em(12, 20),
         },
         '> ul > li p': {
           marginTop: em(16, 20),
@@ -845,20 +834,17 @@ let defaultModifiers = {
           marginTop: em(12, 24),
           marginBottom: em(12, 24),
         },
-        'ol > li': {
-          paddingLeft: em(40, 24),
+        ol: {
+          paddingLeft: em(24, 24),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(16, 24),
+        },
+        ul: {
+          paddingLeft: em(28, 24),
         },
         'ul > li': {
-          paddingLeft: em(40, 24),
-        },
-        'ul > li::before': {
-          width: em(8, 24),
-          height: em(8, 24),
-          top: `calc(${em(40 / 2, 24)} - ${em(4, 24)})`,
-          left: em(6, 24),
+          paddingLeft: em(12, 24),
         },
         '> ul > li p': {
           marginTop: em(20, 24),
@@ -1284,50 +1270,45 @@ module.exports = {
           color: 'var(--tw-prose-bold)',
           fontWeight: '600',
         },
+        ol: {
+          listStyleType: 'decimal',
+        },
         'ol[type="A"]': {
-          '--list-counter-style': 'upper-alpha',
+          listStyleType: 'upper-alpha',
         },
         'ol[type="a"]': {
-          '--list-counter-style': 'lower-alpha',
+          listStyleType: 'lower-alpha',
         },
         'ol[type="A" s]': {
-          '--list-counter-style': 'upper-alpha',
+          listStyleType: 'upper-alpha',
         },
         'ol[type="a" s]': {
-          '--list-counter-style': 'lower-alpha',
+          listStyleType: 'lower-alpha',
         },
         'ol[type="I"]': {
-          '--list-counter-style': 'upper-roman',
+          listStyleType: 'upper-roman',
         },
         'ol[type="i"]': {
-          '--list-counter-style': 'lower-roman',
+          listStyleType: 'lower-roman',
         },
         'ol[type="I" s]': {
-          '--list-counter-style': 'upper-roman',
+          listStyleType: 'upper-roman',
         },
         'ol[type="i" s]': {
-          '--list-counter-style': 'lower-roman',
+          listStyleType: 'lower-roman',
         },
         'ol[type="1"]': {
-          '--list-counter-style': 'decimal',
+          listStyleType: 'decimal',
         },
-        'ol > li': {
-          position: 'relative',
+        ul: {
+          listStyleType: 'disc',
         },
-        'ol > li::before': {
-          content: 'counter(list-item, var(--list-counter-style, decimal)) "."',
-          position: 'absolute',
+        'ol > li::marker': {
           fontWeight: '400',
           color: 'var(--tw-prose-counters)',
         },
-        'ul > li': {
-          position: 'relative',
-        },
-        'ul > li::before': {
-          content: '""',
-          position: 'absolute',
-          backgroundColor: 'var(--tw-prose-bullets)',
-          borderRadius: '50%',
+        'ul > li::marker': {
+          color: 'var(--tw-prose-bullets)',
         },
         hr: {
           borderColor: 'var(--tw-prose-hr)',
