@@ -106,16 +106,16 @@ let defaultModifiers = {
           marginBottom: em(4, 14),
         },
         ol: {
-          paddingLeft: em(16, 14),
+          paddingLeft: em(22, 14),
         },
         'ol > li': {
           paddingLeft: em(6, 14),
         },
         ul: {
-          paddingLeft: em(20, 14),
+          paddingLeft: em(22, 14),
         },
         'ul > li': {
-          paddingLeft: em(2, 14),
+          paddingLeft: em(6, 14),
         },
         '> ul > li p': {
           marginTop: em(8, 14),
@@ -288,13 +288,13 @@ let defaultModifiers = {
           marginBottom: em(8, 16),
         },
         ol: {
-          paddingLeft: em(20, 16),
+          paddingLeft: em(26, 16),
         },
         'ol > li': {
-          paddingLeft: em(8, 16),
+          paddingLeft: em(6, 16),
         },
         ul: {
-          paddingLeft: em(22, 16),
+          paddingLeft: em(26, 16),
         },
         'ul > li': {
           paddingLeft: em(6, 16),
@@ -470,13 +470,13 @@ let defaultModifiers = {
           marginBottom: em(12, 18),
         },
         ol: {
-          paddingLeft: em(20, 18),
+          paddingLeft: em(28, 18),
         },
         'ol > li': {
-          paddingLeft: em(10, 18),
+          paddingLeft: em(8, 18),
         },
         ul: {
-          paddingLeft: em(22, 18),
+          paddingLeft: em(28, 18),
         },
         'ul > li': {
           paddingLeft: em(8, 18),
@@ -651,18 +651,17 @@ let defaultModifiers = {
           marginTop: em(12, 20),
           marginBottom: em(12, 20),
         },
-        // Fix this for marker
         ol: {
-          paddingLeft: em(20, 20),
+          paddingLeft: em(32, 20),
         },
         'ol > li': {
-          paddingLeft: em(16, 20),
+          paddingLeft: em(8, 20),
         },
         ul: {
-          paddingLeft: em(24, 20),
+          paddingLeft: em(32, 20),
         },
         'ul > li': {
-          paddingLeft: em(12, 20),
+          paddingLeft: em(8, 20),
         },
         '> ul > li p': {
           marginTop: em(16, 20),
@@ -835,16 +834,16 @@ let defaultModifiers = {
           marginBottom: em(12, 24),
         },
         ol: {
-          paddingLeft: em(24, 24),
+          paddingLeft: em(38, 24),
         },
         'ol > li': {
-          paddingLeft: em(16, 24),
+          paddingLeft: em(10, 24),
         },
         ul: {
-          paddingLeft: em(28, 24),
+          paddingLeft: em(38, 24),
         },
         'ul > li': {
-          paddingLeft: em(12, 24),
+          paddingLeft: em(10, 24),
         },
         '> ul > li p': {
           marginTop: em(20, 24),
