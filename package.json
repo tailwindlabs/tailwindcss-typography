@@ -26,7 +26,7 @@
     "start": "next start demo"
   },
   "peerDependencies": {
-    "tailwindcss": ">=3.0.0 || >= 3.0.0-alpha.1"
+    "tailwindcss": ">=3.0.0 || >= 3.0.0-alpha.1 || insiders"
   },
   "devDependencies": {
     "@mdx-js/loader": "^1.0.19",
@@ -38,18 +38,24 @@
     "dedent": "^0.7.0",
     "highlight.js": "^10.4.1",
     "jest": "^26.6.1",
-    "next": "^11.1.2",
+    "jest-diff": "^27.3.1",
+    "next": "^12.0.1",
     "postcss": "^8.2.3",
     "prettier": "^2.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "snapshot-diff": "^0.8.1",
-    "tailwindcss": "next"
+    "tailwindcss": "^0.0.0-insiders.ec1f7b0"
   },
   "dependencies": {
     "lodash.castarray": "^4.4.0",
     "lodash.isplainobject": "^4.0.6",
     "lodash.merge": "^4.6.2",
     "lodash.uniq": "^4.5.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest/customMatchers.js"
+    ]
   }
 }

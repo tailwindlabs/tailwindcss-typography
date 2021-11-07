@@ -1,5 +1,4 @@
 .next
 node_modules
-package-lock.json
 /demo/out
 coverage/

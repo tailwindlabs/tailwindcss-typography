@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import MarkdownSample from '../components/MarkdownSample.mdx'
+import MarkdownSampleShort from '../components/MarkdownSampleShort.mdx'
 
-export default function Index() {
+export default function Variants() {
   return (
-    <div className="antialiased text-gray-900">
+    <div className="antialiased text-gray-900 md:bg-gray-900 lg:bg-white">
       <Head>
         <title>Tailwind CSS Typography</title>
       </Head>
@@ -45,16 +45,20 @@ export default function Index() {
                 </a>
               </div>
             </div>
-            <div className="prose prose-sm sm:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl mx-auto">
-              <MarkdownSample />
+            <div
+              className="prose
+            marker:prose-ol:text-red-500
+
+            prose-bullets:bg-red-500
+            marker:prose-ul:text-red-500
+
+            prose-img:rounded-xl prose-img:shadow-xl prose-pre:bg-blue-900 prose-pre:text-pink-200 hover:prose-pre:font-bold prose-headings:text-pink-800 sm:prose-base md:prose-invert lg:prose-slate"
+            >
+              <MarkdownSampleShort />
             </div>
           </div>
         </article>
       </div>
     </div>
   )
-}
-
-export const config = {
-  unstable_runtimeJS: false,
 }

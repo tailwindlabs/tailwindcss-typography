@@ -1,5 +1,4 @@
 const colors = require('tailwindcss/colors')
-const { isUsableColor } = require('./utils')
 
 const round = (num) =>
   num
@@ -9,363 +8,7 @@ const round = (num) =>
 const rem = (px) => `${round(px / 16)}rem`
 const em = (px, base) => `${round(px / base)}em`
 
-module.exports = (theme) => ({
-  DEFAULT: {
-    css: [
-      {
-        color: theme('colors.gray.700', colors.gray[700]),
-        maxWidth: '65ch',
-        '[class~="lead"]': {
-          color: theme('colors.gray.600', colors.gray[600]),
-        },
-        a: {
-          color: theme('colors.gray.900', colors.gray[900]),
-          textDecoration: 'underline',
-          fontWeight: '500',
-        },
-        strong: {
-          color: theme('colors.gray.900', colors.gray[900]),
-          fontWeight: '600',
-        },
-        'ol[type="A"]': {
-          '--list-counter-style': 'upper-alpha',
-        },
-        'ol[type="a"]': {
-          '--list-counter-style': 'lower-alpha',
-        },
-        'ol[type="A" s]': {
-          '--list-counter-style': 'upper-alpha',
-        },
-        'ol[type="a" s]': {
-          '--list-counter-style': 'lower-alpha',
-        },
-        'ol[type="I"]': {
-          '--list-counter-style': 'upper-roman',
-        },
-        'ol[type="i"]': {
-          '--list-counter-style': 'lower-roman',
-        },
-        'ol[type="I" s]': {
-          '--list-counter-style': 'upper-roman',
-        },
-        'ol[type="i" s]': {
-          '--list-counter-style': 'lower-roman',
-        },
-        'ol[type="1"]': {
-          '--list-counter-style': 'decimal',
-        },
-        'ol > li': {
-          position: 'relative',
-        },
-        'ol > li::before': {
-          content: 'counter(list-item, var(--list-counter-style, decimal)) "."',
-          position: 'absolute',
-          fontWeight: '400',
-          color: theme('colors.gray.500', colors.gray[500]),
-        },
-        'ul > li': {
-          position: 'relative',
-        },
-        'ul > li::before': {
-          content: '""',
-          position: 'absolute',
-          backgroundColor: theme('colors.gray.300', colors.gray[300]),
-          borderRadius: '50%',
-        },
-        hr: {
-          borderColor: theme('colors.gray.200', colors.gray[200]),
-          borderTopWidth: 1,
-        },
-        blockquote: {
-          fontWeight: '500',
-          fontStyle: 'italic',
-          color: theme('colors.gray.900', colors.gray[900]),
-          borderLeftWidth: '0.25rem',
-          borderLeftColor: theme('colors.gray.200', colors.gray[200]),
-          quotes: '"\\201C""\\201D""\\2018""\\2019"',
-        },
-        'blockquote p:first-of-type::before': {
-          content: 'open-quote',
-        },
-        'blockquote p:last-of-type::after': {
-          content: 'close-quote',
-        },
-        h1: {
-          color: theme('colors.gray.900', colors.gray[900]),
-          fontWeight: '800',
-        },
-        'h1 strong': {
-          fontWeight: '900',
-        },
-        h2: {
-          color: theme('colors.gray.900', colors.gray[900]),
-          fontWeight: '700',
-        },
-        'h2 strong': {
-          fontWeight: '800',
-        },
-        h3: {
-          color: theme('colors.gray.900', colors.gray[900]),
-          fontWeight: '600',
-        },
-        'h3 strong': {
-          fontWeight: '700',
-        },
-        h4: {
-          color: theme('colors.gray.900', colors.gray[900]),
-          fontWeight: '600',
-        },
-        'h4 strong': {
-          fontWeight: '700',
-        },
-        'figure figcaption': {
-          color: theme('colors.gray.500', colors.gray[500]),
-        },
-        code: {
-          color: theme('colors.gray.900', colors.gray[900]),
-          fontWeight: '600',
-        },
-        'code::before': {
-          content: '"`"',
-        },
-        'code::after': {
-          content: '"`"',
-        },
-        'a code': {
-          color: theme('colors.gray.900', colors.gray[900]),
-        },
-        pre: {
-          color: theme('colors.gray.200', colors.gray[200]),
-          backgroundColor: theme('colors.gray.800', colors.gray[800]),
-          overflowX: 'auto',
-        },
-        'pre code': {
-          backgroundColor: 'transparent',
-          borderWidth: '0',
-          borderRadius: '0',
-          padding: '0',
-          fontWeight: '400',
-          color: 'inherit',
-          fontSize: 'inherit',
-          fontFamily: 'inherit',
-          lineHeight: 'inherit',
-        },
-        'pre code::before': {
-          content: 'none',
-        },
-        'pre code::after': {
-          content: 'none',
-        },
-        table: {
-          width: '100%',
-          tableLayout: 'auto',
-          textAlign: 'left',
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        thead: {
-          color: theme('colors.gray.900', colors.gray[900]),
-          fontWeight: '600',
-          borderBottomWidth: '1px',
-          borderBottomColor: theme('colors.gray.300', colors.gray[300]),
-        },
-        'thead th': {
-          verticalAlign: 'bottom',
-        },
-        'tbody tr': {
-          borderBottomWidth: '1px',
-          borderBottomColor: theme('colors.gray.200', colors.gray[200]),
-        },
-        'tbody tr:last-child': {
-          borderBottomWidth: '0',
-        },
-        'tbody td': {
-          verticalAlign: 'top',
-        },
-      },
-      {
-        fontSize: rem(16),
-        lineHeight: round(28 / 16),
-        p: {
-          marginTop: em(20, 16),
-          marginBottom: em(20, 16),
-        },
-        '[class~="lead"]': {
-          fontSize: em(20, 16),
-          lineHeight: round(32 / 20),
-          marginTop: em(24, 20),
-          marginBottom: em(24, 20),
-        },
-        blockquote: {
-          marginTop: em(32, 20),
-          marginBottom: em(32, 20),
-          paddingLeft: em(20, 20),
-        },
-        h1: {
-          fontSize: em(36, 16),
-          marginTop: '0',
-          marginBottom: em(32, 36),
-          lineHeight: round(40 / 36),
-        },
-        h2: {
-          fontSize: em(24, 16),
-          marginTop: em(48, 24),
-          marginBottom: em(24, 24),
-          lineHeight: round(32 / 24),
-        },
-        h3: {
-          fontSize: em(20, 16),
-          marginTop: em(32, 20),
-          marginBottom: em(12, 20),
-          lineHeight: round(32 / 20),
-        },
-        h4: {
-          marginTop: em(24, 16),
-          marginBottom: em(8, 16),
-          lineHeight: round(24 / 16),
-        },
-        img: {
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        video: {
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        figure: {
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
-        'figure figcaption': {
-          fontSize: em(14, 16),
-          lineHeight: round(20 / 14),
-          marginTop: em(12, 14),
-        },
-        code: {
-          fontSize: em(14, 16),
-        },
-        'h2 code': {
-          fontSize: em(21, 24),
-        },
-        'h3 code': {
-          fontSize: em(18, 20),
-        },
-        pre: {
-          fontSize: em(14, 16),
-          lineHeight: round(24 / 14),
-          marginTop: em(24, 14),
-          marginBottom: em(24, 14),
-          borderRadius: rem(6),
-          paddingTop: em(12, 14),
-          paddingRight: em(16, 14),
-          paddingBottom: em(12, 14),
-          paddingLeft: em(16, 14),
-        },
-        ol: {
-          marginTop: em(20, 16),
-          marginBottom: em(20, 16),
-        },
-        ul: {
-          marginTop: em(20, 16),
-          marginBottom: em(20, 16),
-        },
-        li: {
-          marginTop: em(8, 16),
-          marginBottom: em(8, 16),
-        },
-        'ol > li': {
-          paddingLeft: em(28, 16),
-        },
-        'ol > li::before': {
-          left: '0',
-        },
-        'ul > li': {
-          paddingLeft: em(28, 16),
-        },
-        'ul > li::before': {
-          width: em(6, 16),
-          height: em(6, 16),
-          top: `calc(${em(28 / 2, 16)} - ${em(3, 16)})`,
-          left: em(4, 16),
-        },
-        '> ul > li p': {
-          marginTop: em(12, 16),
-          marginBottom: em(12, 16),
-        },
-        '> ul > li > *:first-child': {
-          marginTop: em(20, 16),
-        },
-        '> ul > li > *:last-child': {
-          marginBottom: em(20, 16),
-        },
-        '> ol > li > *:first-child': {
-          marginTop: em(20, 16),
-        },
-        '> ol > li > *:last-child': {
-          marginBottom: em(20, 16),
-        },
-        'ul ul, ul ol, ol ul, ol ol': {
-          marginTop: em(12, 16),
-          marginBottom: em(12, 16),
-        },
-        hr: {
-          marginTop: em(48, 16),
-          marginBottom: em(48, 16),
-        },
-        'hr + *': {
-          marginTop: '0',
-        },
-        'h2 + *': {
-          marginTop: '0',
-        },
-        'h3 + *': {
-          marginTop: '0',
-        },
-        'h4 + *': {
-          marginTop: '0',
-        },
-        table: {
-          fontSize: em(14, 16),
-          lineHeight: round(24 / 14),
-        },
-        'thead th': {
-          paddingRight: em(8, 14),
-          paddingBottom: em(8, 14),
-          paddingLeft: em(8, 14),
-        },
-        'thead th:first-child': {
-          paddingLeft: '0',
-        },
-        'thead th:last-child': {
-          paddingRight: '0',
-        },
-        'tbody td': {
-          paddingTop: em(8, 14),
-          paddingRight: em(8, 14),
-          paddingBottom: em(8, 14),
-          paddingLeft: em(8, 14),
-        },
-        'tbody td:first-child': {
-          paddingLeft: '0',
-        },
-        'tbody td:last-child': {
-          paddingRight: '0',
-        },
-      },
-      {
-        '> :first-child': {
-          marginTop: '0',
-        },
-        '> :last-child': {
-          marginBottom: '0',
-        },
-      },
-    ],
-  },
+let defaultModifiers = {
   sm: {
     css: [
       {
@@ -425,7 +68,7 @@ module.exports = (theme) => ({
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(12, 14),
           lineHeight: round(16 / 12),
           marginTop: em(8, 12),
@@ -462,20 +105,17 @@ module.exports = (theme) => ({
           marginTop: em(4, 14),
           marginBottom: em(4, 14),
         },
-        'ol > li': {
+        ol: {
           paddingLeft: em(22, 14),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(6, 14),
+        },
+        ul: {
+          paddingLeft: em(22, 14),
         },
         'ul > li': {
-          paddingLeft: em(22, 14),
-        },
-        'ul > li::before': {
-          height: em(5, 14),
-          width: em(5, 14),
-          top: `calc(${em(24 / 2, 14)} - ${em(2.5, 14)})`,
-          left: em(3, 14),
+          paddingLeft: em(6, 14),
         },
         '> ul > li p': {
           marginTop: em(8, 14),
@@ -533,6 +173,188 @@ module.exports = (theme) => ({
           paddingRight: em(12, 12),
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
+        },
+        'tbody td:first-child': {
+          paddingLeft: '0',
+        },
+        'tbody td:last-child': {
+          paddingRight: '0',
+        },
+      },
+      {
+        '> :first-child': {
+          marginTop: '0',
+        },
+        '> :last-child': {
+          marginBottom: '0',
+        },
+      },
+    ],
+  },
+  base: {
+    css: [
+      {
+        fontSize: rem(16),
+        lineHeight: round(28 / 16),
+        p: {
+          marginTop: em(20, 16),
+          marginBottom: em(20, 16),
+        },
+        '[class~="lead"]': {
+          fontSize: em(20, 16),
+          lineHeight: round(32 / 20),
+          marginTop: em(24, 20),
+          marginBottom: em(24, 20),
+        },
+        blockquote: {
+          marginTop: em(32, 20),
+          marginBottom: em(32, 20),
+          paddingLeft: em(20, 20),
+        },
+        h1: {
+          fontSize: em(36, 16),
+          marginTop: '0',
+          marginBottom: em(32, 36),
+          lineHeight: round(40 / 36),
+        },
+        h2: {
+          fontSize: em(24, 16),
+          marginTop: em(48, 24),
+          marginBottom: em(24, 24),
+          lineHeight: round(32 / 24),
+        },
+        h3: {
+          fontSize: em(20, 16),
+          marginTop: em(32, 20),
+          marginBottom: em(12, 20),
+          lineHeight: round(32 / 20),
+        },
+        h4: {
+          marginTop: em(24, 16),
+          marginBottom: em(8, 16),
+          lineHeight: round(24 / 16),
+        },
+        img: {
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        video: {
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        figure: {
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        figcaption: {
+          fontSize: em(14, 16),
+          lineHeight: round(20 / 14),
+          marginTop: em(12, 14),
+        },
+        code: {
+          fontSize: em(14, 16),
+        },
+        'h2 code': {
+          fontSize: em(21, 24),
+        },
+        'h3 code': {
+          fontSize: em(18, 20),
+        },
+        pre: {
+          fontSize: em(14, 16),
+          lineHeight: round(24 / 14),
+          marginTop: em(24, 14),
+          marginBottom: em(24, 14),
+          borderRadius: rem(6),
+          paddingTop: em(12, 14),
+          paddingRight: em(16, 14),
+          paddingBottom: em(12, 14),
+          paddingLeft: em(16, 14),
+        },
+        ol: {
+          marginTop: em(20, 16),
+          marginBottom: em(20, 16),
+        },
+        ul: {
+          marginTop: em(20, 16),
+          marginBottom: em(20, 16),
+        },
+        li: {
+          marginTop: em(8, 16),
+          marginBottom: em(8, 16),
+        },
+        ol: {
+          paddingLeft: em(26, 16),
+        },
+        'ol > li': {
+          paddingLeft: em(6, 16),
+        },
+        ul: {
+          paddingLeft: em(26, 16),
+        },
+        'ul > li': {
+          paddingLeft: em(6, 16),
+        },
+        '> ul > li p': {
+          marginTop: em(12, 16),
+          marginBottom: em(12, 16),
+        },
+        '> ul > li > *:first-child': {
+          marginTop: em(20, 16),
+        },
+        '> ul > li > *:last-child': {
+          marginBottom: em(20, 16),
+        },
+        '> ol > li > *:first-child': {
+          marginTop: em(20, 16),
+        },
+        '> ol > li > *:last-child': {
+          marginBottom: em(20, 16),
+        },
+        'ul ul, ul ol, ol ul, ol ol': {
+          marginTop: em(12, 16),
+          marginBottom: em(12, 16),
+        },
+        hr: {
+          marginTop: em(48, 16),
+          marginBottom: em(48, 16),
+        },
+        'hr + *': {
+          marginTop: '0',
+        },
+        'h2 + *': {
+          marginTop: '0',
+        },
+        'h3 + *': {
+          marginTop: '0',
+        },
+        'h4 + *': {
+          marginTop: '0',
+        },
+        table: {
+          fontSize: em(14, 16),
+          lineHeight: round(24 / 14),
+        },
+        'thead th': {
+          paddingRight: em(8, 14),
+          paddingBottom: em(8, 14),
+          paddingLeft: em(8, 14),
+        },
+        'thead th:first-child': {
+          paddingLeft: '0',
+        },
+        'thead th:last-child': {
+          paddingRight: '0',
+        },
+        'tbody td': {
+          paddingTop: em(8, 14),
+          paddingRight: em(8, 14),
+          paddingBottom: em(8, 14),
+          paddingLeft: em(8, 14),
         },
         'tbody td:first-child': {
           paddingLeft: '0',
@@ -610,7 +432,7 @@ module.exports = (theme) => ({
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(16, 18),
           lineHeight: round(24 / 16),
           marginTop: em(16, 16),
@@ -647,20 +469,17 @@ module.exports = (theme) => ({
           marginTop: em(12, 18),
           marginBottom: em(12, 18),
         },
-        'ol > li': {
-          paddingLeft: em(30, 18),
+        ol: {
+          paddingLeft: em(28, 18),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(8, 18),
+        },
+        ul: {
+          paddingLeft: em(28, 18),
         },
         'ul > li': {
-          paddingLeft: em(30, 18),
-        },
-        'ul > li::before': {
-          width: em(6, 18),
-          height: em(6, 18),
-          top: `calc(${em(32 / 2, 18)} - ${em(3, 18)})`,
-          left: em(4, 18),
+          paddingLeft: em(8, 18),
         },
         '> ul > li p': {
           marginTop: em(16, 18),
@@ -795,7 +614,7 @@ module.exports = (theme) => ({
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(18, 20),
           lineHeight: round(28 / 18),
           marginTop: em(18, 18),
@@ -832,20 +651,17 @@ module.exports = (theme) => ({
           marginTop: em(12, 20),
           marginBottom: em(12, 20),
         },
-        'ol > li': {
-          paddingLeft: em(36, 20),
+        ol: {
+          paddingLeft: em(32, 20),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(8, 20),
+        },
+        ul: {
+          paddingLeft: em(32, 20),
         },
         'ul > li': {
-          paddingLeft: em(36, 20),
-        },
-        'ul > li::before': {
-          width: em(7, 20),
-          height: em(7, 20),
-          top: `calc(${em(36 / 2, 20)} - ${em(3.5, 20)})`,
-          left: em(5, 20),
+          paddingLeft: em(8, 20),
         },
         '> ul > li p': {
           marginTop: em(16, 20),
@@ -980,7 +796,7 @@ module.exports = (theme) => ({
           marginTop: '0',
           marginBottom: '0',
         },
-        'figure figcaption': {
+        figcaption: {
           fontSize: em(20, 24),
           lineHeight: round(32 / 20),
           marginTop: em(20, 20),
@@ -1017,20 +833,17 @@ module.exports = (theme) => ({
           marginTop: em(12, 24),
           marginBottom: em(12, 24),
         },
-        'ol > li': {
-          paddingLeft: em(40, 24),
+        ol: {
+          paddingLeft: em(38, 24),
         },
-        'ol > li::before': {
-          left: '0',
+        'ol > li': {
+          paddingLeft: em(10, 24),
+        },
+        ul: {
+          paddingLeft: em(38, 24),
         },
         'ul > li': {
-          paddingLeft: em(40, 24),
-        },
-        'ul > li::before': {
-          width: em(8, 24),
-          height: em(8, 24),
-          top: `calc(${em(40 / 2, 24)} - ${em(4, 24)})`,
-          left: em(6, 24),
+          paddingLeft: em(10, 24),
         },
         '> ul > li p': {
           marginTop: em(20, 24),
@@ -1107,22 +920,512 @@ module.exports = (theme) => ({
     ],
   },
 
-  // Add color modifiers
-  ...Object.entries(theme('colors')).reduce((reduced, [color, values]) => {
-    if (!isUsableColor(color, values)) {
-      return reduced
-    }
+  // Invert (for dark mode)
+  invert: {
+    css: {
+      '--tw-prose-body': 'var(--tw-prose-invert-body)',
+      '--tw-prose-headings': 'var(--tw-prose-invert-headings)',
+      '--tw-prose-lead': 'var(--tw-prose-invert-lead)',
+      '--tw-prose-links': 'var(--tw-prose-invert-links)',
+      '--tw-prose-bold': 'var(--tw-prose-invert-bold)',
+      '--tw-prose-counters': 'var(--tw-prose-invert-counters)',
+      '--tw-prose-bullets': 'var(--tw-prose-invert-bullets)',
+      '--tw-prose-hr': 'var(--tw-prose-invert-hr)',
+      '--tw-prose-quotes': 'var(--tw-prose-invert-quotes)',
+      '--tw-prose-quote-borders': 'var(--tw-prose-invert-quote-borders)',
+      '--tw-prose-captions': 'var(--tw-prose-invert-captions)',
+      '--tw-prose-code': 'var(--tw-prose-invert-code)',
+      '--tw-prose-pre-code': 'var(--tw-prose-invert-pre-code)',
+      '--tw-prose-pre-bg': 'var(--tw-prose-invert-pre-bg)',
+      '--tw-prose-th-borders': 'var(--tw-prose-invert-th-borders)',
+      '--tw-prose-td-borders': 'var(--tw-prose-invert-td-borders)',
+    },
+  },
 
-    return {
-      ...reduced,
-      [color]: {
-        css: [
-          {
-            a: { color: values[600] },
-            'a code': { color: values[600] },
-          },
-        ],
+  // Gray color themes
+
+  slate: {
+    css: {
+      '--tw-prose-body': colors.slate[700],
+      '--tw-prose-headings': colors.slate[900],
+      '--tw-prose-lead': colors.slate[600],
+      '--tw-prose-links': colors.slate[900],
+      '--tw-prose-bold': colors.slate[900],
+      '--tw-prose-counters': colors.slate[500],
+      '--tw-prose-bullets': colors.slate[300],
+      '--tw-prose-hr': colors.slate[200],
+      '--tw-prose-quotes': colors.slate[900],
+      '--tw-prose-quote-borders': colors.slate[200],
+      '--tw-prose-captions': colors.slate[500],
+      '--tw-prose-code': colors.slate[900],
+      '--tw-prose-pre-code': colors.slate[200],
+      '--tw-prose-pre-bg': colors.slate[800],
+      '--tw-prose-th-borders': colors.slate[300],
+      '--tw-prose-td-borders': colors.slate[200],
+      '--tw-prose-invert-body': colors.slate[300],
+      '--tw-prose-invert-headings': colors.white,
+      '--tw-prose-invert-lead': colors.slate[400],
+      '--tw-prose-invert-links': colors.white,
+      '--tw-prose-invert-bold': colors.white,
+      '--tw-prose-invert-counters': colors.slate[400],
+      '--tw-prose-invert-bullets': colors.slate[600],
+      '--tw-prose-invert-hr': colors.slate[700],
+      '--tw-prose-invert-quotes': colors.slate[100],
+      '--tw-prose-invert-quote-borders': colors.slate[700],
+      '--tw-prose-invert-captions': colors.slate[400],
+      '--tw-prose-invert-code': colors.white,
+      '--tw-prose-invert-pre-code': colors.slate[300],
+      '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+      '--tw-prose-invert-th-borders': colors.slate[600],
+      '--tw-prose-invert-td-borders': colors.slate[700],
+    },
+  },
+
+  gray: {
+    css: {
+      '--tw-prose-body': colors.gray[700],
+      '--tw-prose-headings': colors.gray[900],
+      '--tw-prose-lead': colors.gray[600],
+      '--tw-prose-links': colors.gray[900],
+      '--tw-prose-bold': colors.gray[900],
+      '--tw-prose-counters': colors.gray[500],
+      '--tw-prose-bullets': colors.gray[300],
+      '--tw-prose-hr': colors.gray[200],
+      '--tw-prose-quotes': colors.gray[900],
+      '--tw-prose-quote-borders': colors.gray[200],
+      '--tw-prose-captions': colors.gray[500],
+      '--tw-prose-code': colors.gray[900],
+      '--tw-prose-pre-code': colors.gray[200],
+      '--tw-prose-pre-bg': colors.gray[800],
+      '--tw-prose-th-borders': colors.gray[300],
+      '--tw-prose-td-borders': colors.gray[200],
+      '--tw-prose-invert-body': colors.gray[300],
+      '--tw-prose-invert-headings': colors.white,
+      '--tw-prose-invert-lead': colors.gray[400],
+      '--tw-prose-invert-links': colors.white,
+      '--tw-prose-invert-bold': colors.white,
+      '--tw-prose-invert-counters': colors.gray[400],
+      '--tw-prose-invert-bullets': colors.gray[600],
+      '--tw-prose-invert-hr': colors.gray[700],
+      '--tw-prose-invert-quotes': colors.gray[100],
+      '--tw-prose-invert-quote-borders': colors.gray[700],
+      '--tw-prose-invert-captions': colors.gray[400],
+      '--tw-prose-invert-code': colors.white,
+      '--tw-prose-invert-pre-code': colors.gray[300],
+      '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+      '--tw-prose-invert-th-borders': colors.gray[600],
+      '--tw-prose-invert-td-borders': colors.gray[700],
+    },
+  },
+
+  zinc: {
+    css: {
+      '--tw-prose-body': colors.zinc[700],
+      '--tw-prose-headings': colors.zinc[900],
+      '--tw-prose-lead': colors.zinc[600],
+      '--tw-prose-links': colors.zinc[900],
+      '--tw-prose-bold': colors.zinc[900],
+      '--tw-prose-counters': colors.zinc[500],
+      '--tw-prose-bullets': colors.zinc[300],
+      '--tw-prose-hr': colors.zinc[200],
+      '--tw-prose-quotes': colors.zinc[900],
+      '--tw-prose-quote-borders': colors.zinc[200],
+      '--tw-prose-captions': colors.zinc[500],
+      '--tw-prose-code': colors.zinc[900],
+      '--tw-prose-pre-code': colors.zinc[200],
+      '--tw-prose-pre-bg': colors.zinc[800],
+      '--tw-prose-th-borders': colors.zinc[300],
+      '--tw-prose-td-borders': colors.zinc[200],
+      '--tw-prose-invert-body': colors.zinc[300],
+      '--tw-prose-invert-headings': colors.white,
+      '--tw-prose-invert-lead': colors.zinc[400],
+      '--tw-prose-invert-links': colors.white,
+      '--tw-prose-invert-bold': colors.white,
+      '--tw-prose-invert-counters': colors.zinc[400],
+      '--tw-prose-invert-bullets': colors.zinc[600],
+      '--tw-prose-invert-hr': colors.zinc[700],
+      '--tw-prose-invert-quotes': colors.zinc[100],
+      '--tw-prose-invert-quote-borders': colors.zinc[700],
+      '--tw-prose-invert-captions': colors.zinc[400],
+      '--tw-prose-invert-code': colors.white,
+      '--tw-prose-invert-pre-code': colors.zinc[300],
+      '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+      '--tw-prose-invert-th-borders': colors.zinc[600],
+      '--tw-prose-invert-td-borders': colors.zinc[700],
+    },
+  },
+
+  neutral: {
+    css: {
+      '--tw-prose-body': colors.neutral[700],
+      '--tw-prose-headings': colors.neutral[900],
+      '--tw-prose-lead': colors.neutral[600],
+      '--tw-prose-links': colors.neutral[900],
+      '--tw-prose-bold': colors.neutral[900],
+      '--tw-prose-counters': colors.neutral[500],
+      '--tw-prose-bullets': colors.neutral[300],
+      '--tw-prose-hr': colors.neutral[200],
+      '--tw-prose-quotes': colors.neutral[900],
+      '--tw-prose-quote-borders': colors.neutral[200],
+      '--tw-prose-captions': colors.neutral[500],
+      '--tw-prose-code': colors.neutral[900],
+      '--tw-prose-pre-code': colors.neutral[200],
+      '--tw-prose-pre-bg': colors.neutral[800],
+      '--tw-prose-th-borders': colors.neutral[300],
+      '--tw-prose-td-borders': colors.neutral[200],
+      '--tw-prose-invert-body': colors.neutral[300],
+      '--tw-prose-invert-headings': colors.white,
+      '--tw-prose-invert-lead': colors.neutral[400],
+      '--tw-prose-invert-links': colors.white,
+      '--tw-prose-invert-bold': colors.white,
+      '--tw-prose-invert-counters': colors.neutral[400],
+      '--tw-prose-invert-bullets': colors.neutral[600],
+      '--tw-prose-invert-hr': colors.neutral[700],
+      '--tw-prose-invert-quotes': colors.neutral[100],
+      '--tw-prose-invert-quote-borders': colors.neutral[700],
+      '--tw-prose-invert-captions': colors.neutral[400],
+      '--tw-prose-invert-code': colors.white,
+      '--tw-prose-invert-pre-code': colors.neutral[300],
+      '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+      '--tw-prose-invert-th-borders': colors.neutral[600],
+      '--tw-prose-invert-td-borders': colors.neutral[700],
+    },
+  },
+
+  stone: {
+    css: {
+      '--tw-prose-body': colors.stone[700],
+      '--tw-prose-headings': colors.stone[900],
+      '--tw-prose-lead': colors.stone[600],
+      '--tw-prose-links': colors.stone[900],
+      '--tw-prose-bold': colors.stone[900],
+      '--tw-prose-counters': colors.stone[500],
+      '--tw-prose-bullets': colors.stone[300],
+      '--tw-prose-hr': colors.stone[200],
+      '--tw-prose-quotes': colors.stone[900],
+      '--tw-prose-quote-borders': colors.stone[200],
+      '--tw-prose-captions': colors.stone[500],
+      '--tw-prose-code': colors.stone[900],
+      '--tw-prose-pre-code': colors.stone[200],
+      '--tw-prose-pre-bg': colors.stone[800],
+      '--tw-prose-th-borders': colors.stone[300],
+      '--tw-prose-td-borders': colors.stone[200],
+      '--tw-prose-invert-body': colors.stone[300],
+      '--tw-prose-invert-headings': colors.white,
+      '--tw-prose-invert-lead': colors.stone[400],
+      '--tw-prose-invert-links': colors.white,
+      '--tw-prose-invert-bold': colors.white,
+      '--tw-prose-invert-counters': colors.stone[400],
+      '--tw-prose-invert-bullets': colors.stone[600],
+      '--tw-prose-invert-hr': colors.stone[700],
+      '--tw-prose-invert-quotes': colors.stone[100],
+      '--tw-prose-invert-quote-borders': colors.stone[700],
+      '--tw-prose-invert-captions': colors.stone[400],
+      '--tw-prose-invert-code': colors.white,
+      '--tw-prose-invert-pre-code': colors.stone[300],
+      '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+      '--tw-prose-invert-th-borders': colors.stone[600],
+      '--tw-prose-invert-td-borders': colors.stone[700],
+    },
+  },
+
+  // Link-only themes (for backward compatibility)
+
+  red: {
+    css: {
+      '--tw-prose-links': colors.red[600],
+      '--tw-prose-invert-links': colors.red[500],
+    },
+  },
+
+  orange: {
+    css: {
+      '--tw-prose-links': colors.orange[600],
+      '--tw-prose-invert-links': colors.orange[500],
+    },
+  },
+
+  amber: {
+    css: {
+      '--tw-prose-links': colors.amber[600],
+      '--tw-prose-invert-links': colors.amber[500],
+    },
+  },
+
+  yellow: {
+    css: {
+      '--tw-prose-links': colors.yellow[600],
+      '--tw-prose-invert-links': colors.yellow[500],
+    },
+  },
+
+  lime: {
+    css: {
+      '--tw-prose-links': colors.lime[600],
+      '--tw-prose-invert-links': colors.lime[500],
+    },
+  },
+
+  green: {
+    css: {
+      '--tw-prose-links': colors.green[600],
+      '--tw-prose-invert-links': colors.green[500],
+    },
+  },
+
+  emerald: {
+    css: {
+      '--tw-prose-links': colors.emerald[600],
+      '--tw-prose-invert-links': colors.emerald[500],
+    },
+  },
+
+  teal: {
+    css: {
+      '--tw-prose-links': colors.teal[600],
+      '--tw-prose-invert-links': colors.teal[500],
+    },
+  },
+
+  cyan: {
+    css: {
+      '--tw-prose-links': colors.cyan[600],
+      '--tw-prose-invert-links': colors.cyan[500],
+    },
+  },
+
+  sky: {
+    css: {
+      '--tw-prose-links': colors.sky[600],
+      '--tw-prose-invert-links': colors.sky[500],
+    },
+  },
+
+  blue: {
+    css: {
+      '--tw-prose-links': colors.blue[600],
+      '--tw-prose-invert-links': colors.blue[500],
+    },
+  },
+
+  indigo: {
+    css: {
+      '--tw-prose-links': colors.indigo[600],
+      '--tw-prose-invert-links': colors.indigo[500],
+    },
+  },
+
+  violet: {
+    css: {
+      '--tw-prose-links': colors.violet[600],
+      '--tw-prose-invert-links': colors.violet[500],
+    },
+  },
+
+  purple: {
+    css: {
+      '--tw-prose-links': colors.purple[600],
+      '--tw-prose-invert-links': colors.purple[500],
+    },
+  },
+
+  fuchsia: {
+    css: {
+      '--tw-prose-links': colors.fuchsia[600],
+      '--tw-prose-invert-links': colors.fuchsia[500],
+    },
+  },
+
+  pink: {
+    css: {
+      '--tw-prose-links': colors.pink[600],
+      '--tw-prose-invert-links': colors.pink[500],
+    },
+  },
+
+  rose: {
+    css: {
+      '--tw-prose-links': colors.rose[600],
+      '--tw-prose-invert-links': colors.rose[500],
+    },
+  },
+}
+
+module.exports = {
+  DEFAULT: {
+    css: [
+      {
+        color: 'var(--tw-prose-body)',
+        maxWidth: '65ch',
+        '[class~="lead"]': {
+          color: 'var(--tw-prose-lead)',
+        },
+        a: {
+          color: 'var(--tw-prose-links)',
+          textDecoration: 'underline',
+          fontWeight: '500',
+        },
+        strong: {
+          color: 'var(--tw-prose-bold)',
+          fontWeight: '600',
+        },
+        ol: {
+          listStyleType: 'decimal',
+        },
+        'ol[type="A"]': {
+          listStyleType: 'upper-alpha',
+        },
+        'ol[type="a"]': {
+          listStyleType: 'lower-alpha',
+        },
+        'ol[type="A" s]': {
+          listStyleType: 'upper-alpha',
+        },
+        'ol[type="a" s]': {
+          listStyleType: 'lower-alpha',
+        },
+        'ol[type="I"]': {
+          listStyleType: 'upper-roman',
+        },
+        'ol[type="i"]': {
+          listStyleType: 'lower-roman',
+        },
+        'ol[type="I" s]': {
+          listStyleType: 'upper-roman',
+        },
+        'ol[type="i" s]': {
+          listStyleType: 'lower-roman',
+        },
+        'ol[type="1"]': {
+          listStyleType: 'decimal',
+        },
+        ul: {
+          listStyleType: 'disc',
+        },
+        'ol > li::marker': {
+          fontWeight: '400',
+          color: 'var(--tw-prose-counters)',
+        },
+        'ul > li::marker': {
+          color: 'var(--tw-prose-bullets)',
+        },
+        hr: {
+          borderColor: 'var(--tw-prose-hr)',
+          borderTopWidth: 1,
+        },
+        blockquote: {
+          fontWeight: '500',
+          fontStyle: 'italic',
+          color: 'var(--tw-prose-quotes)',
+          borderLeftWidth: '0.25rem',
+          borderLeftColor: 'var(--tw-prose-quote-borders)',
+          quotes: '"\\201C""\\201D""\\2018""\\2019"',
+        },
+        'blockquote p:first-of-type::before': {
+          content: 'open-quote',
+        },
+        'blockquote p:last-of-type::after': {
+          content: 'close-quote',
+        },
+        h1: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '800',
+        },
+        'h1 strong': {
+          fontWeight: '900',
+        },
+        h2: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '700',
+        },
+        'h2 strong': {
+          fontWeight: '800',
+        },
+        h3: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '600',
+        },
+        'h3 strong': {
+          fontWeight: '700',
+        },
+        h4: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '600',
+        },
+        'h4 strong': {
+          fontWeight: '700',
+        },
+        // TODO: Figure out how to not need this, it's a merging issue
+        'figure > *': {},
+        figcaption: {
+          color: 'var(--tw-prose-captions)',
+        },
+        code: {
+          color: 'var(--tw-prose-code)',
+          fontWeight: '600',
+        },
+        'code::before': {
+          content: '"`"',
+        },
+        'code::after': {
+          content: '"`"',
+        },
+        'a code': {
+          color: 'var(--tw-prose-links)',
+        },
+        pre: {
+          color: 'var(--tw-prose-pre-code)',
+          backgroundColor: 'var(--tw-prose-pre-bg)',
+          overflowX: 'auto',
+          fontWeight: '400',
+        },
+        'pre code': {
+          backgroundColor: 'transparent',
+          borderWidth: '0',
+          borderRadius: '0',
+          padding: '0',
+          fontWeight: 'inherit',
+          color: 'inherit',
+          fontSize: 'inherit',
+          fontFamily: 'inherit',
+          lineHeight: 'inherit',
+        },
+        'pre code::before': {
+          content: 'none',
+        },
+        'pre code::after': {
+          content: 'none',
+        },
+        table: {
+          width: '100%',
+          tableLayout: 'auto',
+          textAlign: 'left',
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        thead: {
+          borderBottomWidth: '1px',
+          borderBottomColor: 'var(--tw-prose-th-borders)',
+        },
+        'thead th': {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '600',
+          verticalAlign: 'bottom',
+        },
+        'tbody tr': {
+          borderBottomWidth: '1px',
+          borderBottomColor: 'var(--tw-prose-td-borders)',
+        },
+        'tbody tr:last-child': {
+          borderBottomWidth: '0',
+        },
+        'tbody td': {
+          verticalAlign: 'baseline',
+        },
       },
-    }
-  }, {}),
-})
+      defaultModifiers.gray.css,
+      ...defaultModifiers.base.css,
+    ],
+  },
+  ...defaultModifiers,
+}
