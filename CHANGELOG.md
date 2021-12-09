@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.5.0] - 2021-12-09
+
 ## [0.5.0-alpha.3] - 2021-11-08
 
 ### Changes
@@ -96,7 +98,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0-alpha.3...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0-alpha.3...v0.5.0
 [0.5.0-alpha.3]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0-alpha.2...v0.5.0-alpha.3
 [0.5.0-alpha.2]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0-alpha.1...v0.5.0-alpha.2
 [0.5.0-alpha.1]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.4.1...v0.5.0-alpha.1
