@@ -803,3 +803,31 @@ test('element variants with custom class name', async () => {
     `)
   })
 })
+
+test.only("customizing defaults with multiple values does not result in invalid css", async () => {
+  let config = {
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose"></div>`,
+      },
+    ],
+    theme: {
+      typography: {
+        DEFAULT: {
+          css: {
+            textAlign: ['-webkit-match-parent', 'match-parent'],
+          }
+        }
+      }
+    },
+  }
+  return run(config).then((result) => {
+    // TODO: Fix this test. It should list both properties but there's a bug in tailwind that's overriding them.
+    expect(result.css).toMatchFormattedCss(css`
+      .prose {
+        text-align: match-parent;
+      }
+    `)
+  })
+})
