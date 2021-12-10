@@ -49,6 +49,10 @@ function configToCss(config = {}, { target, className, prefix }) {
       return [k, v]
     }
 
+    if (Array.isArray(v)) {
+      return [k, v]
+    }
+
     if (isObject(v)) {
       let nested = Object.values(v).some(isObject)
       if (nested) {
