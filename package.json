@@ -33,9 +33,6 @@
     "@mdx-js/mdx": "^1.6.6",
     "@next/mdx": "^8.1.0",
     "autoprefixer": "^10.2.1",
-    "clean-css": "^4.2.1",
-    "cssnano": "^4.1.10",
-    "dedent": "^0.7.0",
     "highlight.js": "^10.4.1",
     "jest": "^26.6.1",
     "jest-diff": "^27.3.1",
@@ -44,14 +41,12 @@
     "prettier": "^2.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "snapshot-diff": "^0.8.1",
     "tailwindcss": "^3.0.0-alpha.2"
   },
   "dependencies": {
     "lodash.castarray": "^4.4.0",
     "lodash.isplainobject": "^4.0.6",
-    "lodash.merge": "^4.6.2",
-    "lodash.uniq": "^4.5.0"
+    "lodash.merge": "^4.6.2"
   },
   "jest": {
     "setupFilesAfterEnv": [
