@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Remove `dist` folder and related dependencies ([#226](https://github.com/tailwindlabs/tailwindcss-typography/pull/226))
+
+### Fixed
+
 - Don't generate invalid CSS when given an array of property values ([#224](https://github.com/tailwindlabs/tailwindcss-typography/pull/224))
 
 ## [0.5.0] - 2021-12-09
