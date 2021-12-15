@@ -804,7 +804,7 @@ test('element variants with custom class name', async () => {
   })
 })
 
-test.only("customizing defaults with multiple values does not result in invalid css", async () => {
+test('customizing defaults with multiple values does not result in invalid css', async () => {
   let config = {
     plugins: [typographyPlugin()],
     content: [
@@ -817,9 +817,9 @@ test.only("customizing defaults with multiple values does not result in invalid 
         DEFAULT: {
           css: {
             textAlign: ['-webkit-match-parent', 'match-parent'],
-          }
-        }
-      }
+          },
+        },
+      },
     },
   }
   return run(config).then((result) => {
