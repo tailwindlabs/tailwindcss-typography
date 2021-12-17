@@ -1,6 +1,9 @@
 <p>
-  <a href="https://tailwindcss.com/" target="_blank">
-    <img alt="Tailwind CSS Typography" width="350" src="./.github/logo.svg">
+  <a href="https://tailwindcss.com/docs/typography-plugin#gh-light-mode-only" target="_blank">
+    <img src="./.github/logo-light.svg" alt="Tailwind CSS Typography" width="450" height="70">
+  </a>
+  <a href="https://tailwindcss.com/docs/typography-plugin#gh-dark-mode-only" target="_blank">
+    <img src="./.github/logo-dark.svg" alt="Tailwind CSS Typography" width="450" height="70">
   </a>
 </p>
 
