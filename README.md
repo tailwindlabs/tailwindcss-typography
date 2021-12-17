@@ -1,6 +1,8 @@
-<a href="https://tailwindcss.com/" target="_blank">
-  <img alt="Tailwind CSS Typography" width="350" src="./.github/logo.svg">
-</a>
+<p>
+  <a href="https://tailwindcss.com/" target="_blank">
+    <img alt="Tailwind CSS Typography" width="350" src="./.github/logo.svg">
+  </a>
+</p>
 
 A plugin that provides a set of `prose` classes you can use to add beautiful typographic defaults to any vanilla HTML you don't control, like HTML rendered from Markdown, or pulled from a CMS.
 
