@@ -3,9 +3,58 @@ const tailwind = require('tailwindcss')
 const postcss = require('postcss')
 const typographyPlugin = require('.')
 
+
 let html = String.raw
 let css = String.raw
 let javascript = String.raw
+
+const twVariables = css`
+      *,
+      ::before,
+      ::after {
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+      }`
 
 function run(config, plugin = tailwind) {
   let { currentTestName } = expect.getState()
@@ -76,7 +125,7 @@ test('specificity is reduced with :where', async () => {
   }
 
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(css`
+    expect(result.css).toMatchFormattedCss(twVariables + css`
       .prose {
         color: var(--tw-prose-body);
         max-width: 65ch;
@@ -205,7 +254,7 @@ test('modifiers', async () => {
   }
 
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(css`
+    expect(result.css).toMatchFormattedCss(twVariables + css`
       .prose {
         color: var(--tw-prose-body);
         max-width: 65ch;
@@ -327,7 +376,7 @@ test('legacy target', async () => {
   }
 
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(css`
+    expect(result.css).toMatchFormattedCss(twVariables + css`
       .prose {
         color: var(--tw-prose-body);
         max-width: 65ch;
@@ -419,7 +468,7 @@ test('custom class name', async () => {
   }
 
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(css`
+    expect(result.css).toMatchFormattedCss(twVariables + css`
       .markdown {
         color: var(--tw-prose-body);
         max-width: 65ch;
@@ -520,11 +569,7 @@ test('element variants', async () => {
     },
   }
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(css`
-      :is(:where(hr):not(:where([class~='not-prose'] *))) {
-        --tw-border-opacity: 1;
-        border-color: rgb(229 231 235 / var(--tw-border-opacity));
-      }
+    expect(result.css).toMatchFormattedCss(twVariables + css`
       .prose {
         color: var(--tw-prose-body);
       }
@@ -540,7 +585,7 @@ test('element variants', async () => {
       }
       .prose-headings\:underline
         :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-prose'] *))) {
-        text-decoration: underline;
+        text-decoration-line: underline;
       }
       .prose-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-prose'] *))) {
         font-style: italic;
@@ -692,11 +737,7 @@ test('element variants with custom class name', async () => {
     },
   }
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(css`
-      :is(:where(hr):not(:where([class~='not-markdown'] *))) {
-        --tw-border-opacity: 1;
-        border-color: rgb(229 231 235 / var(--tw-border-opacity));
-      }
+    expect(result.css).toMatchFormattedCss(twVariables + css`
       .markdown {
         color: var(--tw-prose-body);
       }
@@ -712,7 +753,7 @@ test('element variants with custom class name', async () => {
       }
       .markdown-headings\:underline
         :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-markdown'] *))) {
-        text-decoration: underline;
+        text-decoration-line: underline;
       }
       .markdown-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-markdown'] *))) {
         font-style: italic;
@@ -823,9 +864,9 @@ test('customizing defaults with multiple values does not result in invalid css',
     },
   }
   return run(config).then((result) => {
-    // TODO: Fix this test. It should list both properties but there's a bug in tailwind that's overriding them.
-    expect(result.css).toMatchFormattedCss(css`
+    expect(result.css).toMatchFormattedCss(twVariables + css`
       .prose {
+        text-align: -webkit-match-parent;
         text-align: match-parent;
       }
     `)
