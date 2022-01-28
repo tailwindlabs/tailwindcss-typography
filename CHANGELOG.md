@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.1] - 2022-01-28
+
 ### Added
 
 - Remove `dist` folder and related dependencies ([#226](https://github.com/tailwindlabs/tailwindcss-typography/pull/226))
@@ -32,7 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.4.1] - 2021-05-24
 
-### Fixed 
+### Fixed
 
 - Fix list-style modifier selectors ([#137](https://github.com/tailwindlabs/tailwindcss-typography/pull/137))
 
@@ -104,7 +106,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.1...HEAD
+[0.5.1]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0-alpha.3...v0.5.0
 [0.5.0-alpha.3]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0-alpha.2...v0.5.0-alpha.3
 [0.5.0-alpha.2]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.0-alpha.1...v0.5.0-alpha.2
