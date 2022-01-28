@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.5.1] - 2022-01-28
 
-### Added
+### Removed
 
 - Remove `dist` folder and related dependencies ([#226](https://github.com/tailwindlabs/tailwindcss-typography/pull/226))
 
