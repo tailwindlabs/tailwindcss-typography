@@ -1422,6 +1422,10 @@ module.exports = {
         'tbody td': {
           verticalAlign: 'baseline',
         },
+        tfoot: {
+          borderTopWidth: '1px',
+          borderTopColor: 'var(--tw-prose-th-borders)',
+        },
       },
       defaultModifiers.gray.css,
       ...defaultModifiers.base.css,
