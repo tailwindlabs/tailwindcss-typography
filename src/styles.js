@@ -168,16 +168,16 @@ let defaultModifiers = {
         'thead th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody td, tfoot td': {
           paddingTop: em(8, 12),
           paddingRight: em(12, 12),
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
         },
-        'tbody td:first-child': {
+        'tbody td:first-child, tfoot td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
       },
