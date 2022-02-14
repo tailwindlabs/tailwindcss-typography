@@ -5,7 +5,6 @@ const typographyPlugin = require('.')
 
 let html = String.raw
 let css = String.raw
-let javascript = String.raw
 
 function run(config, plugin = tailwind) {
   let { currentTestName } = expect.getState()
@@ -827,6 +826,57 @@ test('customizing defaults with multiple values does not result in invalid css',
     expect(result.css).toMatchFormattedCss(css`
       .prose {
         text-align: match-parent;
+      }
+    `)
+  })
+})
+
+it('should be possible to use nested syntax (&) when extending the config', () => {
+  let config = {
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose"></div>`,
+      },
+    ],
+    theme: {
+      extend: {
+        typography: {
+          DEFAULT: {
+            css: {
+              color: '#000',
+              a: {
+                color: '#888',
+                '&:hover': {
+                  color: '#ff0000',
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose {
+        color: #000;
+        max-width: 65ch;
+      }
+    `)
+
+    expect(result.css).toIncludeCss(css`
+      .prose :where(a):not(:where([class~='not-prose'] *)) {
+        color: #888;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+    `)
+
+    expect(result.css).toIncludeCss(css`
+      .prose :where(a):not(:where([class~='not-prose'] *)):hover {
+        color: #ff0000;
       }
     `)
   })
