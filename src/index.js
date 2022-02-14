@@ -56,7 +56,11 @@ function configToCss(config = {}, { target, className, prefix }) {
     if (isObject(v)) {
       let nested = Object.values(v).some(isObject)
       if (nested) {
-        return [k, Object.fromEntries(Object.entries(v).map(([k, v]) => updateSelector(k, v)))]
+        return [
+          inWhere(k, { className, prefix }),
+          v,
+          Object.fromEntries(Object.entries(v).map(([k, v]) => updateSelector(k, v))),
+        ]
       }
 
       return [inWhere(k, { className, prefix }), v]

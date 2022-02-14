@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Ensure nested selectors using `&:hover` work ([#246](https://github.com/tailwindlabs/tailwindcss-typography/pull/246))
+
 ## [0.5.1] - 2022-01-28
 
 ### Removed
