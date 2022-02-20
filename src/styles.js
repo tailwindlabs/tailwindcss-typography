@@ -96,23 +96,19 @@ let defaultModifiers = {
         ol: {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
+          paddingLeft: em(22, 14),
         },
         ul: {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
+          paddingLeft: em(22, 14),
         },
         li: {
           marginTop: em(4, 14),
           marginBottom: em(4, 14),
         },
-        ol: {
-          paddingLeft: em(22, 14),
-        },
         'ol > li': {
           paddingLeft: em(6, 14),
-        },
-        ul: {
-          paddingLeft: em(22, 14),
         },
         'ul > li': {
           paddingLeft: em(6, 14),
@@ -278,23 +274,19 @@ let defaultModifiers = {
         ol: {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
+          paddingLeft: em(26, 16),
         },
         ul: {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
+          paddingLeft: em(26, 16),
         },
         li: {
           marginTop: em(8, 16),
           marginBottom: em(8, 16),
         },
-        ol: {
-          paddingLeft: em(26, 16),
-        },
         'ol > li': {
           paddingLeft: em(6, 16),
-        },
-        ul: {
-          paddingLeft: em(26, 16),
         },
         'ul > li': {
           paddingLeft: em(6, 16),
@@ -460,23 +452,19 @@ let defaultModifiers = {
         ol: {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
+          paddingLeft: em(28, 18),
         },
         ul: {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
+          paddingLeft: em(28, 18),
         },
         li: {
           marginTop: em(12, 18),
           marginBottom: em(12, 18),
         },
-        ol: {
-          paddingLeft: em(28, 18),
-        },
         'ol > li': {
           paddingLeft: em(8, 18),
-        },
-        ul: {
-          paddingLeft: em(28, 18),
         },
         'ul > li': {
           paddingLeft: em(8, 18),
@@ -642,23 +630,19 @@ let defaultModifiers = {
         ol: {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
+          paddingLeft: em(32, 20),
         },
         ul: {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
+          paddingLeft: em(32, 20),
         },
         li: {
           marginTop: em(12, 20),
           marginBottom: em(12, 20),
         },
-        ol: {
-          paddingLeft: em(32, 20),
-        },
         'ol > li': {
           paddingLeft: em(8, 20),
-        },
-        ul: {
-          paddingLeft: em(32, 20),
         },
         'ul > li': {
           paddingLeft: em(8, 20),
@@ -824,23 +808,19 @@ let defaultModifiers = {
         ol: {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
+          paddingLeft: em(38, 24),
         },
         ul: {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
+          paddingLeft: em(38, 24),
         },
         li: {
           marginTop: em(12, 24),
           marginBottom: em(12, 24),
         },
-        ol: {
-          paddingLeft: em(38, 24),
-        },
         'ol > li': {
           paddingLeft: em(10, 24),
-        },
-        ul: {
-          paddingLeft: em(38, 24),
         },
         'ul > li': {
           paddingLeft: em(10, 24),
