@@ -3,58 +3,58 @@ const tailwind = require('tailwindcss')
 const postcss = require('postcss')
 const typographyPlugin = require('.')
 
-
 let html = String.raw
 let css = String.raw
 let javascript = String.raw
 
 const twVariables = css`
-      *,
-      ::before,
-      ::after {
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        --tw-pan-x: ;
-        --tw-pan-y: ;
-        --tw-pinch-zoom: ;
-        --tw-scroll-snap-strictness: proximity;
-        --tw-ordinal: ;
-        --tw-slashed-zero: ;
-        --tw-numeric-figure: ;
-        --tw-numeric-spacing: ;
-        --tw-numeric-fraction: ;
-        --tw-ring-inset: ;
-        --tw-ring-offset-width: 0px;
-        --tw-ring-offset-color: #fff;
-        --tw-ring-color: rgb(59 130 246 / 0.5);
-        --tw-ring-offset-shadow: 0 0 #0000;
-        --tw-ring-shadow: 0 0 #0000;
-        --tw-shadow: 0 0 #0000;
-        --tw-shadow-colored: 0 0 #0000;
-        --tw-blur: ;
-        --tw-brightness: ;
-        --tw-contrast: ;
-        --tw-grayscale: ;
-        --tw-hue-rotate: ;
-        --tw-invert: ;
-        --tw-saturate: ;
-        --tw-sepia: ;
-        --tw-drop-shadow: ;
-        --tw-backdrop-blur: ;
-        --tw-backdrop-brightness: ;
-        --tw-backdrop-contrast: ;
-        --tw-backdrop-grayscale: ;
-        --tw-backdrop-hue-rotate: ;
-        --tw-backdrop-invert: ;
-        --tw-backdrop-opacity: ;
-        --tw-backdrop-saturate: ;
-        --tw-backdrop-sepia: ;
-      }`
+  *,
+  ::before,
+  ::after {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+  }
+`
 
 function run(config, plugin = tailwind) {
   let { currentTestName } = expect.getState()
@@ -125,48 +125,51 @@ test('specificity is reduced with :where', async () => {
   }
 
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(twVariables + css`
-      .prose {
-        color: var(--tw-prose-body);
-        max-width: 65ch;
-      }
-      .prose :where([class~='lead']):not(:where([class~='not-prose'] *)) {
-        color: var(--tw-prose-lead);
-      }
-      .prose :where(strong):not(:where([class~='not-prose'] *)) {
-        color: var(--tw-prose-bold);
-        font-weight: 600;
-      }
-      .prose :where(ol[type='A']):not(:where([class~='not-prose'] *)) {
-        list-style-type: upper-alpha;
-      }
-      .prose :where(blockquote p:first-of-type):not(:where([class~='not-prose'] *))::before {
-        content: open-quote;
-      }
-      .prose :where(blockquote p:last-of-type):not(:where([class~='not-prose'] *))::after {
-        content: close-quote;
-      }
-      .prose :where(h4 strong):not(:where([class~='not-prose'] *)) {
-        font-weight: 700;
-      }
-      .prose :where(figure > *):not(:where([class~='not-prose'] *)) {
-        margin: 0;
-      }
-      .prose :where(ol > li):not(:where([class~='not-prose'] *))::marker {
-        font-weight: 400;
-        color: var(--tw-prose-counters);
-      }
-      .prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
-        margin-top: 16px;
-        margin-bottom: 16px;
-      }
-      .prose :where(code):not(:where([class~='not-prose'] *))::before {
-        content: '&#96;';
-      }
-      .prose :where(code):not(:where([class~='not-prose'] *))::after {
-        content: '&#96;';
-      }
-    `)
+    expect(result.css).toMatchFormattedCss(
+      twVariables +
+        css`
+          .prose {
+            color: var(--tw-prose-body);
+            max-width: 65ch;
+          }
+          .prose :where([class~='lead']):not(:where([class~='not-prose'] *)) {
+            color: var(--tw-prose-lead);
+          }
+          .prose :where(strong):not(:where([class~='not-prose'] *)) {
+            color: var(--tw-prose-bold);
+            font-weight: 600;
+          }
+          .prose :where(ol[type='A']):not(:where([class~='not-prose'] *)) {
+            list-style-type: upper-alpha;
+          }
+          .prose :where(blockquote p:first-of-type):not(:where([class~='not-prose'] *))::before {
+            content: open-quote;
+          }
+          .prose :where(blockquote p:last-of-type):not(:where([class~='not-prose'] *))::after {
+            content: close-quote;
+          }
+          .prose :where(h4 strong):not(:where([class~='not-prose'] *)) {
+            font-weight: 700;
+          }
+          .prose :where(figure > *):not(:where([class~='not-prose'] *)) {
+            margin: 0;
+          }
+          .prose :where(ol > li):not(:where([class~='not-prose'] *))::marker {
+            font-weight: 400;
+            color: var(--tw-prose-counters);
+          }
+          .prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+            margin-top: 16px;
+            margin-bottom: 16px;
+          }
+          .prose :where(code):not(:where([class~='not-prose'] *))::before {
+            content: '&#96;';
+          }
+          .prose :where(code):not(:where([class~='not-prose'] *))::after {
+            content: '&#96;';
+          }
+        `
+    )
   })
 })
 
@@ -254,74 +257,77 @@ test('modifiers', async () => {
   }
 
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(twVariables + css`
-      .prose {
-        color: var(--tw-prose-body);
-        max-width: 65ch;
-      }
-      .prose :where([class~='lead']):not(:where([class~='not-prose'] *)) {
-        color: var(--tw-prose-lead);
-      }
-      .prose :where(strong):not(:where([class~='not-prose'] *)) {
-        color: var(--tw-prose-bold);
-        font-weight: 600;
-      }
-      .prose :where(ol[type='A']):not(:where([class~='not-prose'] *)) {
-        list-style-type: upper-alpha;
-      }
-      .prose :where(blockquote p:first-of-type):not(:where([class~='not-prose'] *))::before {
-        content: open-quote;
-      }
-      .prose :where(blockquote p:last-of-type):not(:where([class~='not-prose'] *))::after {
-        content: close-quote;
-      }
-      .prose :where(h4 strong):not(:where([class~='not-prose'] *)) {
-        font-weight: 700;
-      }
-      .prose :where(figure > *):not(:where([class~='not-prose'] *)) {
-        margin: 0;
-      }
-      .prose :where(ol > li):not(:where([class~='not-prose'] *))::marker {
-        font-weight: 400;
-        color: var(--tw-prose-counters);
-      }
-      .prose :where(code):not(:where([class~='not-prose'] *))::before {
-        content: '&#96;';
-      }
-      .prose :where(code):not(:where([class~='not-prose'] *))::after {
-        content: '&#96;';
-      }
-      .prose-lg {
-        font-size: 18px;
-        line-height: 1.75;
-      }
-      .prose-lg :where(p):not(:where([class~='not-prose'] *)) {
-        margin-top: 24px;
-        margin-bottom: 24px;
-      }
-      .prose-lg :where([class~='lead']):not(:where([class~='not-prose'] *)) {
-        font-size: 22px;
-      }
-      .prose-lg :where(blockquote):not(:where([class~='not-prose'] *)) {
-        margin-top: 40px;
-        margin-bottom: 40px;
-      }
-      .prose-lg :where(h1):not(:where([class~='not-prose'] *)) {
-        font-size: 48px;
-        margin-top: 0;
-        margin-bottom: 40px;
-      }
-      .prose-lg :where(h2):not(:where([class~='not-prose'] *)) {
-        font-size: 30px;
-        margin-top: 56px;
-        margin-bottom: 32px;
-      }
-      .prose-lg :where(h3):not(:where([class~='not-prose'] *)) {
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 16px;
-      }
-    `)
+    expect(result.css).toMatchFormattedCss(
+      twVariables +
+        css`
+          .prose {
+            color: var(--tw-prose-body);
+            max-width: 65ch;
+          }
+          .prose :where([class~='lead']):not(:where([class~='not-prose'] *)) {
+            color: var(--tw-prose-lead);
+          }
+          .prose :where(strong):not(:where([class~='not-prose'] *)) {
+            color: var(--tw-prose-bold);
+            font-weight: 600;
+          }
+          .prose :where(ol[type='A']):not(:where([class~='not-prose'] *)) {
+            list-style-type: upper-alpha;
+          }
+          .prose :where(blockquote p:first-of-type):not(:where([class~='not-prose'] *))::before {
+            content: open-quote;
+          }
+          .prose :where(blockquote p:last-of-type):not(:where([class~='not-prose'] *))::after {
+            content: close-quote;
+          }
+          .prose :where(h4 strong):not(:where([class~='not-prose'] *)) {
+            font-weight: 700;
+          }
+          .prose :where(figure > *):not(:where([class~='not-prose'] *)) {
+            margin: 0;
+          }
+          .prose :where(ol > li):not(:where([class~='not-prose'] *))::marker {
+            font-weight: 400;
+            color: var(--tw-prose-counters);
+          }
+          .prose :where(code):not(:where([class~='not-prose'] *))::before {
+            content: '&#96;';
+          }
+          .prose :where(code):not(:where([class~='not-prose'] *))::after {
+            content: '&#96;';
+          }
+          .prose-lg {
+            font-size: 18px;
+            line-height: 1.75;
+          }
+          .prose-lg :where(p):not(:where([class~='not-prose'] *)) {
+            margin-top: 24px;
+            margin-bottom: 24px;
+          }
+          .prose-lg :where([class~='lead']):not(:where([class~='not-prose'] *)) {
+            font-size: 22px;
+          }
+          .prose-lg :where(blockquote):not(:where([class~='not-prose'] *)) {
+            margin-top: 40px;
+            margin-bottom: 40px;
+          }
+          .prose-lg :where(h1):not(:where([class~='not-prose'] *)) {
+            font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 40px;
+          }
+          .prose-lg :where(h2):not(:where([class~='not-prose'] *)) {
+            font-size: 30px;
+            margin-top: 56px;
+            margin-bottom: 32px;
+          }
+          .prose-lg :where(h3):not(:where([class~='not-prose'] *)) {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+          }
+        `
+    )
   })
 })
 
@@ -376,44 +382,47 @@ test('legacy target', async () => {
   }
 
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(twVariables + css`
-      .prose {
-        color: var(--tw-prose-body);
-        max-width: 65ch;
-      }
-      .prose [class~='lead'] {
-        color: var(--tw-prose-lead);
-      }
-      .prose strong {
-        color: var(--tw-prose-bold);
-        font-weight: 600;
-      }
-      .prose ol[type='A'] {
-        list-style-type: upper-alpha;
-      }
-      .prose blockquote p:first-of-type::before {
-        content: open-quote;
-      }
-      .prose blockquote p:last-of-type::after {
-        content: close-quote;
-      }
-      .prose h4 strong {
-        font-weight: 700;
-      }
-      .prose figure > * {
-        margin: 0;
-      }
-      .prose ol > li::marker {
-        font-weight: 400;
-        color: var(--tw-prose-counters);
-      }
-      .prose code::before {
-        content: '&#96;';
-      }
-      .prose code::after {
-        content: '&#96;';
-      }
-    `)
+    expect(result.css).toMatchFormattedCss(
+      twVariables +
+        css`
+          .prose {
+            color: var(--tw-prose-body);
+            max-width: 65ch;
+          }
+          .prose [class~='lead'] {
+            color: var(--tw-prose-lead);
+          }
+          .prose strong {
+            color: var(--tw-prose-bold);
+            font-weight: 600;
+          }
+          .prose ol[type='A'] {
+            list-style-type: upper-alpha;
+          }
+          .prose blockquote p:first-of-type::before {
+            content: open-quote;
+          }
+          .prose blockquote p:last-of-type::after {
+            content: close-quote;
+          }
+          .prose h4 strong {
+            font-weight: 700;
+          }
+          .prose figure > * {
+            margin: 0;
+          }
+          .prose ol > li::marker {
+            font-weight: 400;
+            color: var(--tw-prose-counters);
+          }
+          .prose code::before {
+            content: '&#96;';
+          }
+          .prose code::after {
+            content: '&#96;';
+          }
+        `
+    )
   })
 })
 
@@ -468,44 +477,49 @@ test('custom class name', async () => {
   }
 
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(twVariables + css`
-      .markdown {
-        color: var(--tw-prose-body);
-        max-width: 65ch;
-      }
-      .markdown :where([class~='lead']):not(:where([class~='not-markdown'] *)) {
-        color: var(--tw-prose-lead);
-      }
-      .markdown :where(strong):not(:where([class~='not-markdown'] *)) {
-        color: var(--tw-prose-bold);
-        font-weight: 600;
-      }
-      .markdown :where(ol[type='A']):not(:where([class~='not-markdown'] *)) {
-        list-style-type: upper-alpha;
-      }
-      .markdown :where(blockquote p:first-of-type):not(:where([class~='not-markdown'] *))::before {
-        content: open-quote;
-      }
-      .markdown :where(blockquote p:last-of-type):not(:where([class~='not-markdown'] *))::after {
-        content: close-quote;
-      }
-      .markdown :where(h4 strong):not(:where([class~='not-markdown'] *)) {
-        font-weight: 700;
-      }
-      .markdown :where(figure > *):not(:where([class~='not-markdown'] *)) {
-        margin: 0;
-      }
-      .markdown :where(ol > li):not(:where([class~='not-markdown'] *))::marker {
-        font-weight: 400;
-        color: var(--tw-prose-counters);
-      }
-      .markdown :where(code):not(:where([class~='not-markdown'] *))::before {
-        content: '&#96;';
-      }
-      .markdown :where(code):not(:where([class~='not-markdown'] *))::after {
-        content: '&#96;';
-      }
-    `)
+    expect(result.css).toMatchFormattedCss(
+      twVariables +
+        css`
+          .markdown {
+            color: var(--tw-prose-body);
+            max-width: 65ch;
+          }
+          .markdown :where([class~='lead']):not(:where([class~='not-markdown'] *)) {
+            color: var(--tw-prose-lead);
+          }
+          .markdown :where(strong):not(:where([class~='not-markdown'] *)) {
+            color: var(--tw-prose-bold);
+            font-weight: 600;
+          }
+          .markdown :where(ol[type='A']):not(:where([class~='not-markdown'] *)) {
+            list-style-type: upper-alpha;
+          }
+          .markdown
+            :where(blockquote p:first-of-type):not(:where([class~='not-markdown'] *))::before {
+            content: open-quote;
+          }
+          .markdown
+            :where(blockquote p:last-of-type):not(:where([class~='not-markdown'] *))::after {
+            content: close-quote;
+          }
+          .markdown :where(h4 strong):not(:where([class~='not-markdown'] *)) {
+            font-weight: 700;
+          }
+          .markdown :where(figure > *):not(:where([class~='not-markdown'] *)) {
+            margin: 0;
+          }
+          .markdown :where(ol > li):not(:where([class~='not-markdown'] *))::marker {
+            font-weight: 400;
+            color: var(--tw-prose-counters);
+          }
+          .markdown :where(code):not(:where([class~='not-markdown'] *))::before {
+            content: '&#96;';
+          }
+          .markdown :where(code):not(:where([class~='not-markdown'] *))::after {
+            content: '&#96;';
+          }
+        `
+    )
   })
 })
 
@@ -569,110 +583,114 @@ test('element variants', async () => {
     },
   }
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(twVariables + css`
-      .prose {
-        color: var(--tw-prose-body);
-      }
-      .prose :where([class~='lead']):not(:where([class~='not-prose'] *)) {
-        color: var(--tw-prose-lead);
-      }
-      .prose :where(strong):not(:where([class~='not-prose'] *)) {
-        color: var(--tw-prose-bold);
-        font-weight: 600;
-      }
-      .prose :where(h4 strong):not(:where([class~='not-prose'] *)) {
-        font-weight: 700;
-      }
-      .prose-headings\:underline
-        :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-prose'] *))) {
-        text-decoration-line: underline;
-      }
-      .prose-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-prose'] *))) {
-        font-style: italic;
-      }
-      .prose-h1\:text-3xl :is(:where(h1):not(:where([class~='not-prose'] *))) {
-        font-size: 1.875rem;
-        line-height: 2.25rem;
-      }
-      .prose-h2\:text-2xl :is(:where(h2):not(:where([class~='not-prose'] *))) {
-        font-size: 1.5rem;
-        line-height: 2rem;
-      }
-      .prose-h3\:text-xl :is(:where(h3):not(:where([class~='not-prose'] *))) {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-      }
-      .prose-h4\:text-lg :is(:where(h4):not(:where([class~='not-prose'] *))) {
-        font-size: 1.125rem;
-        line-height: 1.75rem;
-      }
-      .prose-p\:text-gray-700 :is(:where(p):not(:where([class~='not-prose'] *))) {
-        --tw-text-opacity: 1;
-        color: rgb(55 65 81 / var(--tw-text-opacity));
-      }
-      .prose-a\:font-bold :is(:where(a):not(:where([class~='not-prose'] *))) {
-        font-weight: 700;
-      }
-      .prose-blockquote\:italic :is(:where(blockquote):not(:where([class~='not-prose'] *))) {
-        font-style: italic;
-      }
-      .prose-figure\:mx-auto :is(:where(figure):not(:where([class~='not-prose'] *))) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .prose-figcaption\:opacity-75 :is(:where(figcaption):not(:where([class~='not-prose'] *))) {
-        opacity: 0.75;
-      }
-      .prose-strong\:font-medium :is(:where(strong):not(:where([class~='not-prose'] *))) {
-        font-weight: 500;
-      }
-      .prose-em\:italic :is(:where(em):not(:where([class~='not-prose'] *))) {
-        font-style: italic;
-      }
-      .prose-code\:font-mono :is(:where(code):not(:where([class~='not-prose'] *))) {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-          'Courier New', monospace;
-      }
-      .prose-pre\:font-mono :is(:where(pre):not(:where([class~='not-prose'] *))) {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-          'Courier New', monospace;
-      }
-      .prose-ol\:pl-6 :is(:where(ol):not(:where([class~='not-prose'] *))) {
-        padding-left: 1.5rem;
-      }
-      .prose-ul\:pl-8 :is(:where(ul):not(:where([class~='not-prose'] *))) {
-        padding-left: 2rem;
-      }
-      .prose-li\:my-4 :is(:where(li):not(:where([class~='not-prose'] *))) {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
-      .prose-table\:my-8 :is(:where(table):not(:where([class~='not-prose'] *))) {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-      .prose-thead\:border-red-300 :is(:where(thead):not(:where([class~='not-prose'] *))) {
-        --tw-border-opacity: 1;
-        border-color: rgb(252 165 165 / var(--tw-border-opacity));
-      }
-      .prose-tr\:border-red-200 :is(:where(tr):not(:where([class~='not-prose'] *))) {
-        --tw-border-opacity: 1;
-        border-color: rgb(254 202 202 / var(--tw-border-opacity));
-      }
-      .prose-th\:text-left :is(:where(th):not(:where([class~='not-prose'] *))) {
-        text-align: left;
-      }
-      .prose-img\:rounded-lg :is(:where(img):not(:where([class~='not-prose'] *))) {
-        border-radius: 0.5rem;
-      }
-      .prose-video\:my-12 :is(:where(video):not(:where([class~='not-prose'] *))) {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-      }
-      .prose-hr\:border-t-2 :is(:where(hr):not(:where([class~='not-prose'] *))) {
-        border-top-width: 2px;
-      }
-    `)
+    expect(result.css).toMatchFormattedCss(
+      twVariables +
+        css`
+          .prose {
+            color: var(--tw-prose-body);
+          }
+          .prose :where([class~='lead']):not(:where([class~='not-prose'] *)) {
+            color: var(--tw-prose-lead);
+          }
+          .prose :where(strong):not(:where([class~='not-prose'] *)) {
+            color: var(--tw-prose-bold);
+            font-weight: 600;
+          }
+          .prose :where(h4 strong):not(:where([class~='not-prose'] *)) {
+            font-weight: 700;
+          }
+          .prose-headings\:underline
+            :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-prose'] *))) {
+            text-decoration-line: underline;
+          }
+          .prose-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-prose'] *))) {
+            font-style: italic;
+          }
+          .prose-h1\:text-3xl :is(:where(h1):not(:where([class~='not-prose'] *))) {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+          }
+          .prose-h2\:text-2xl :is(:where(h2):not(:where([class~='not-prose'] *))) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+          .prose-h3\:text-xl :is(:where(h3):not(:where([class~='not-prose'] *))) {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+          }
+          .prose-h4\:text-lg :is(:where(h4):not(:where([class~='not-prose'] *))) {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+          }
+          .prose-p\:text-gray-700 :is(:where(p):not(:where([class~='not-prose'] *))) {
+            --tw-text-opacity: 1;
+            color: rgb(55 65 81 / var(--tw-text-opacity));
+          }
+          .prose-a\:font-bold :is(:where(a):not(:where([class~='not-prose'] *))) {
+            font-weight: 700;
+          }
+          .prose-blockquote\:italic :is(:where(blockquote):not(:where([class~='not-prose'] *))) {
+            font-style: italic;
+          }
+          .prose-figure\:mx-auto :is(:where(figure):not(:where([class~='not-prose'] *))) {
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .prose-figcaption\:opacity-75
+            :is(:where(figcaption):not(:where([class~='not-prose'] *))) {
+            opacity: 0.75;
+          }
+          .prose-strong\:font-medium :is(:where(strong):not(:where([class~='not-prose'] *))) {
+            font-weight: 500;
+          }
+          .prose-em\:italic :is(:where(em):not(:where([class~='not-prose'] *))) {
+            font-style: italic;
+          }
+          .prose-code\:font-mono :is(:where(code):not(:where([class~='not-prose'] *))) {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+              'Courier New', monospace;
+          }
+          .prose-pre\:font-mono :is(:where(pre):not(:where([class~='not-prose'] *))) {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+              'Courier New', monospace;
+          }
+          .prose-ol\:pl-6 :is(:where(ol):not(:where([class~='not-prose'] *))) {
+            padding-left: 1.5rem;
+          }
+          .prose-ul\:pl-8 :is(:where(ul):not(:where([class~='not-prose'] *))) {
+            padding-left: 2rem;
+          }
+          .prose-li\:my-4 :is(:where(li):not(:where([class~='not-prose'] *))) {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          }
+          .prose-table\:my-8 :is(:where(table):not(:where([class~='not-prose'] *))) {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+          }
+          .prose-thead\:border-red-300 :is(:where(thead):not(:where([class~='not-prose'] *))) {
+            --tw-border-opacity: 1;
+            border-color: rgb(252 165 165 / var(--tw-border-opacity));
+          }
+          .prose-tr\:border-red-200 :is(:where(tr):not(:where([class~='not-prose'] *))) {
+            --tw-border-opacity: 1;
+            border-color: rgb(254 202 202 / var(--tw-border-opacity));
+          }
+          .prose-th\:text-left :is(:where(th):not(:where([class~='not-prose'] *))) {
+            text-align: left;
+          }
+          .prose-img\:rounded-lg :is(:where(img):not(:where([class~='not-prose'] *))) {
+            border-radius: 0.5rem;
+          }
+          .prose-video\:my-12 :is(:where(video):not(:where([class~='not-prose'] *))) {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+          }
+          .prose-hr\:border-t-2 :is(:where(hr):not(:where([class~='not-prose'] *))) {
+            border-top-width: 2px;
+          }
+        `
+    )
   })
 })
 
@@ -737,111 +755,117 @@ test('element variants with custom class name', async () => {
     },
   }
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(twVariables + css`
-      .markdown {
-        color: var(--tw-prose-body);
-      }
-      .markdown :where([class~='lead']):not(:where([class~='not-markdown'] *)) {
-        color: var(--tw-prose-lead);
-      }
-      .markdown :where(strong):not(:where([class~='not-markdown'] *)) {
-        color: var(--tw-prose-bold);
-        font-weight: 600;
-      }
-      .markdown :where(h4 strong):not(:where([class~='not-markdown'] *)) {
-        font-weight: 700;
-      }
-      .markdown-headings\:underline
-        :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-markdown'] *))) {
-        text-decoration-line: underline;
-      }
-      .markdown-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-markdown'] *))) {
-        font-style: italic;
-      }
-      .markdown-h1\:text-3xl :is(:where(h1):not(:where([class~='not-markdown'] *))) {
-        font-size: 1.875rem;
-        line-height: 2.25rem;
-      }
-      .markdown-h2\:text-2xl :is(:where(h2):not(:where([class~='not-markdown'] *))) {
-        font-size: 1.5rem;
-        line-height: 2rem;
-      }
-      .markdown-h3\:text-xl :is(:where(h3):not(:where([class~='not-markdown'] *))) {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-      }
-      .markdown-h4\:text-lg :is(:where(h4):not(:where([class~='not-markdown'] *))) {
-        font-size: 1.125rem;
-        line-height: 1.75rem;
-      }
-      .markdown-p\:text-gray-700 :is(:where(p):not(:where([class~='not-markdown'] *))) {
-        --tw-text-opacity: 1;
-        color: rgb(55 65 81 / var(--tw-text-opacity));
-      }
-      .markdown-a\:font-bold :is(:where(a):not(:where([class~='not-markdown'] *))) {
-        font-weight: 700;
-      }
-      .markdown-blockquote\:italic :is(:where(blockquote):not(:where([class~='not-markdown'] *))) {
-        font-style: italic;
-      }
-      .markdown-figure\:mx-auto :is(:where(figure):not(:where([class~='not-markdown'] *))) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .markdown-figcaption\:opacity-75
-        :is(:where(figcaption):not(:where([class~='not-markdown'] *))) {
-        opacity: 0.75;
-      }
-      .markdown-strong\:font-medium :is(:where(strong):not(:where([class~='not-markdown'] *))) {
-        font-weight: 500;
-      }
-      .markdown-em\:italic :is(:where(em):not(:where([class~='not-markdown'] *))) {
-        font-style: italic;
-      }
-      .markdown-code\:font-mono :is(:where(code):not(:where([class~='not-markdown'] *))) {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-          'Courier New', monospace;
-      }
-      .markdown-pre\:font-mono :is(:where(pre):not(:where([class~='not-markdown'] *))) {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-          'Courier New', monospace;
-      }
-      .markdown-ol\:pl-6 :is(:where(ol):not(:where([class~='not-markdown'] *))) {
-        padding-left: 1.5rem;
-      }
-      .markdown-ul\:pl-8 :is(:where(ul):not(:where([class~='not-markdown'] *))) {
-        padding-left: 2rem;
-      }
-      .markdown-li\:my-4 :is(:where(li):not(:where([class~='not-markdown'] *))) {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
-      .markdown-table\:my-8 :is(:where(table):not(:where([class~='not-markdown'] *))) {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-      .markdown-thead\:border-red-300 :is(:where(thead):not(:where([class~='not-markdown'] *))) {
-        --tw-border-opacity: 1;
-        border-color: rgb(252 165 165 / var(--tw-border-opacity));
-      }
-      .markdown-tr\:border-red-200 :is(:where(tr):not(:where([class~='not-markdown'] *))) {
-        --tw-border-opacity: 1;
-        border-color: rgb(254 202 202 / var(--tw-border-opacity));
-      }
-      .markdown-th\:text-left :is(:where(th):not(:where([class~='not-markdown'] *))) {
-        text-align: left;
-      }
-      .markdown-img\:rounded-lg :is(:where(img):not(:where([class~='not-markdown'] *))) {
-        border-radius: 0.5rem;
-      }
-      .markdown-video\:my-12 :is(:where(video):not(:where([class~='not-markdown'] *))) {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-      }
-      .markdown-hr\:border-t-2 :is(:where(hr):not(:where([class~='not-markdown'] *))) {
-        border-top-width: 2px;
-      }
-    `)
+    expect(result.css).toMatchFormattedCss(
+      twVariables +
+        css`
+          .markdown {
+            color: var(--tw-prose-body);
+          }
+          .markdown :where([class~='lead']):not(:where([class~='not-markdown'] *)) {
+            color: var(--tw-prose-lead);
+          }
+          .markdown :where(strong):not(:where([class~='not-markdown'] *)) {
+            color: var(--tw-prose-bold);
+            font-weight: 600;
+          }
+          .markdown :where(h4 strong):not(:where([class~='not-markdown'] *)) {
+            font-weight: 700;
+          }
+          .markdown-headings\:underline
+            :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-markdown'] *))) {
+            text-decoration-line: underline;
+          }
+          .markdown-lead\:italic
+            :is(:where([class~='lead']):not(:where([class~='not-markdown'] *))) {
+            font-style: italic;
+          }
+          .markdown-h1\:text-3xl :is(:where(h1):not(:where([class~='not-markdown'] *))) {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+          }
+          .markdown-h2\:text-2xl :is(:where(h2):not(:where([class~='not-markdown'] *))) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+          .markdown-h3\:text-xl :is(:where(h3):not(:where([class~='not-markdown'] *))) {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+          }
+          .markdown-h4\:text-lg :is(:where(h4):not(:where([class~='not-markdown'] *))) {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+          }
+          .markdown-p\:text-gray-700 :is(:where(p):not(:where([class~='not-markdown'] *))) {
+            --tw-text-opacity: 1;
+            color: rgb(55 65 81 / var(--tw-text-opacity));
+          }
+          .markdown-a\:font-bold :is(:where(a):not(:where([class~='not-markdown'] *))) {
+            font-weight: 700;
+          }
+          .markdown-blockquote\:italic
+            :is(:where(blockquote):not(:where([class~='not-markdown'] *))) {
+            font-style: italic;
+          }
+          .markdown-figure\:mx-auto :is(:where(figure):not(:where([class~='not-markdown'] *))) {
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .markdown-figcaption\:opacity-75
+            :is(:where(figcaption):not(:where([class~='not-markdown'] *))) {
+            opacity: 0.75;
+          }
+          .markdown-strong\:font-medium :is(:where(strong):not(:where([class~='not-markdown'] *))) {
+            font-weight: 500;
+          }
+          .markdown-em\:italic :is(:where(em):not(:where([class~='not-markdown'] *))) {
+            font-style: italic;
+          }
+          .markdown-code\:font-mono :is(:where(code):not(:where([class~='not-markdown'] *))) {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+              'Courier New', monospace;
+          }
+          .markdown-pre\:font-mono :is(:where(pre):not(:where([class~='not-markdown'] *))) {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+              'Courier New', monospace;
+          }
+          .markdown-ol\:pl-6 :is(:where(ol):not(:where([class~='not-markdown'] *))) {
+            padding-left: 1.5rem;
+          }
+          .markdown-ul\:pl-8 :is(:where(ul):not(:where([class~='not-markdown'] *))) {
+            padding-left: 2rem;
+          }
+          .markdown-li\:my-4 :is(:where(li):not(:where([class~='not-markdown'] *))) {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          }
+          .markdown-table\:my-8 :is(:where(table):not(:where([class~='not-markdown'] *))) {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+          }
+          .markdown-thead\:border-red-300
+            :is(:where(thead):not(:where([class~='not-markdown'] *))) {
+            --tw-border-opacity: 1;
+            border-color: rgb(252 165 165 / var(--tw-border-opacity));
+          }
+          .markdown-tr\:border-red-200 :is(:where(tr):not(:where([class~='not-markdown'] *))) {
+            --tw-border-opacity: 1;
+            border-color: rgb(254 202 202 / var(--tw-border-opacity));
+          }
+          .markdown-th\:text-left :is(:where(th):not(:where([class~='not-markdown'] *))) {
+            text-align: left;
+          }
+          .markdown-img\:rounded-lg :is(:where(img):not(:where([class~='not-markdown'] *))) {
+            border-radius: 0.5rem;
+          }
+          .markdown-video\:my-12 :is(:where(video):not(:where([class~='not-markdown'] *))) {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+          }
+          .markdown-hr\:border-t-2 :is(:where(hr):not(:where([class~='not-markdown'] *))) {
+            border-top-width: 2px;
+          }
+        `
+    )
   })
 })
 
@@ -864,11 +888,14 @@ test('customizing defaults with multiple values does not result in invalid css',
     },
   }
   return run(config).then((result) => {
-    expect(result.css).toMatchFormattedCss(twVariables + css`
-      .prose {
-        text-align: -webkit-match-parent;
-        text-align: match-parent;
-      }
-    `)
+    expect(result.css).toMatchFormattedCss(
+      twVariables +
+        css`
+          .prose {
+            text-align: -webkit-match-parent;
+            text-align: match-parent;
+          }
+        `
+    )
   })
 })
