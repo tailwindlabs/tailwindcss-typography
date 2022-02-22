@@ -5,7 +5,6 @@ const typographyPlugin = require('.')
 
 let html = String.raw
 let css = String.raw
-let javascript = String.raw
 
 const twVariables = css`
   *,
