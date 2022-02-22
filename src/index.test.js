@@ -6,7 +6,7 @@ const typographyPlugin = require('.')
 let html = String.raw
 let css = String.raw
 
-const twVariables = css`
+let defaults = css`
   *,
   ::before,
   ::after {
@@ -125,7 +125,7 @@ test('specificity is reduced with :where', async () => {
 
   return run(config).then((result) => {
     expect(result.css).toMatchFormattedCss(
-      twVariables +
+      defaults +
         css`
           .prose {
             color: var(--tw-prose-body);
@@ -257,7 +257,7 @@ test('modifiers', async () => {
 
   return run(config).then((result) => {
     expect(result.css).toMatchFormattedCss(
-      twVariables +
+      defaults +
         css`
           .prose {
             color: var(--tw-prose-body);
@@ -382,7 +382,7 @@ test('legacy target', async () => {
 
   return run(config).then((result) => {
     expect(result.css).toMatchFormattedCss(
-      twVariables +
+      defaults +
         css`
           .prose {
             color: var(--tw-prose-body);
@@ -477,7 +477,7 @@ test('custom class name', async () => {
 
   return run(config).then((result) => {
     expect(result.css).toMatchFormattedCss(
-      twVariables +
+      defaults +
         css`
           .markdown {
             color: var(--tw-prose-body);
@@ -583,7 +583,7 @@ test('element variants', async () => {
   }
   return run(config).then((result) => {
     expect(result.css).toMatchFormattedCss(
-      twVariables +
+      defaults +
         css`
           .prose {
             color: var(--tw-prose-body);
@@ -755,7 +755,7 @@ test('element variants with custom class name', async () => {
   }
   return run(config).then((result) => {
     expect(result.css).toMatchFormattedCss(
-      twVariables +
+      defaults +
         css`
           .markdown {
             color: var(--tw-prose-body);
@@ -888,7 +888,7 @@ test('customizing defaults with multiple values does not result in invalid css',
   }
   return run(config).then((result) => {
     expect(result.css).toMatchFormattedCss(
-      twVariables +
+      defaults +
         css`
           .prose {
             text-align: -webkit-match-parent;
