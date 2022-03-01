@@ -164,16 +164,16 @@ let defaultModifiers = {
         'thead th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody td, tfoot td': {
           paddingTop: em(8, 12),
           paddingRight: em(12, 12),
           paddingBottom: em(8, 12),
           paddingLeft: em(12, 12),
         },
-        'tbody td:first-child': {
+        'tbody td:first-child, tfoot td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
       },
@@ -342,16 +342,16 @@ let defaultModifiers = {
         'thead th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody td, tfoot td': {
           paddingTop: em(8, 14),
           paddingRight: em(8, 14),
           paddingBottom: em(8, 14),
           paddingLeft: em(8, 14),
         },
-        'tbody td:first-child': {
+        'tbody td:first-child, tfoot td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
       },
@@ -520,16 +520,16 @@ let defaultModifiers = {
         'thead th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody td, tfoot td': {
           paddingTop: em(12, 16),
           paddingRight: em(12, 16),
           paddingBottom: em(12, 16),
           paddingLeft: em(12, 16),
         },
-        'tbody td:first-child': {
+        'tbody td:first-child, tfoot td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
       },
@@ -698,16 +698,16 @@ let defaultModifiers = {
         'thead th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody td, tfoot td': {
           paddingTop: em(16, 18),
           paddingRight: em(12, 18),
           paddingBottom: em(16, 18),
           paddingLeft: em(12, 18),
         },
-        'tbody td:first-child': {
+        'tbody td:first-child, tfoot td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
       },
@@ -876,16 +876,16 @@ let defaultModifiers = {
         'thead th:last-child': {
           paddingRight: '0',
         },
-        'tbody td': {
+        'tbody td, tfoot td': {
           paddingTop: em(16, 20),
           paddingRight: em(12, 20),
           paddingBottom: em(16, 20),
           paddingLeft: em(12, 20),
         },
-        'tbody td:first-child': {
+        'tbody td:first-child, tfoot td:first-child': {
           paddingLeft: '0',
         },
-        'tbody td:last-child': {
+        'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
       },
@@ -1401,6 +1401,13 @@ module.exports = {
         },
         'tbody td': {
           verticalAlign: 'baseline',
+        },
+        tfoot: {
+          borderTopWidth: '1px',
+          borderTopColor: 'var(--tw-prose-th-borders)',
+        },
+        'tfoot td': {
+          verticalAlign: 'top',
         },
       },
       defaultModifiers.gray.css,
