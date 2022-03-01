@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Added
+
+- Add styles for `tfoot` elements ([#243](https://github.com/tailwindlabs/tailwindcss-typography/pull/243))
 
 ## [0.5.2] - 2022-02-14
 
