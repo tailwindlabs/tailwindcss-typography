@@ -278,23 +278,19 @@ let defaultModifiers = {
         ol: {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
+          paddingLeft: em(26, 16),
         },
         ul: {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
+          paddingLeft: em(26, 16),
         },
         li: {
           marginTop: em(8, 16),
           marginBottom: em(8, 16),
         },
-        ol: {
-          paddingLeft: em(26, 16),
-        },
         'ol > li': {
           paddingLeft: em(6, 16),
-        },
-        ul: {
-          paddingLeft: em(26, 16),
         },
         'ul > li': {
           paddingLeft: em(6, 16),
