@@ -117,7 +117,7 @@ module.exports = plugin.withOptions(
         ['video'],
         ['hr'],
       ]) {
-        addVariant(`${className}-${name}`, target === 'legacy' ? '' : `& :is(${inWhere(selector, options)})`)
+        addVariant(`${className}-${name}`, target === 'legacy' ? `& ${selector}` : `& :is(${inWhere(selector, options)})`)
       }
 
       addComponents(
