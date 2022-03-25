@@ -335,7 +335,7 @@ test('modifiers', async () => {
 test('legacy target', async () => {
   let config = {
     plugins: [typographyPlugin({ target: 'legacy' })],
-    content: [{ raw: html`<div class="prose"></div>` }],
+    content: [{ raw: html`<div class="prose prose-h1:text-center"></div>` }],
     theme: {
       typography: {
         DEFAULT: {
@@ -422,6 +422,9 @@ test('legacy target', async () => {
         }
         .prose code::after {
           content: '&#96;';
+        }
+        .prose-h1\:text-center h1 {
+          text-align: center;
         }
       `
     )
