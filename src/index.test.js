@@ -609,9 +609,6 @@ test('element variants', async () => {
           :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-prose'] *))) {
           text-decoration-line: underline;
         }
-        .prose-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-prose'] *))) {
-          font-style: italic;
-        }
         .prose-h1\:text-3xl :is(:where(h1):not(:where([class~='not-prose'] *))) {
           font-size: 1.875rem;
           line-height: 2.25rem;
@@ -693,6 +690,9 @@ test('element variants', async () => {
         }
         .prose-hr\:border-t-2 :is(:where(hr):not(:where([class~='not-prose'] *))) {
           border-top-width: 2px;
+        }
+        .prose-lead\:italic :is(:where([class~="lead"]):not(:where([class~="not-prose"] *))) {
+          font-style: italic;
         }
       `
     )
@@ -781,9 +781,6 @@ test('element variants with custom class name', async () => {
           :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-markdown'] *))) {
           text-decoration-line: underline;
         }
-        .markdown-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-markdown'] *))) {
-          font-style: italic;
-        }
         .markdown-h1\:text-3xl :is(:where(h1):not(:where([class~='not-markdown'] *))) {
           font-size: 1.875rem;
           line-height: 2.25rem;
@@ -867,6 +864,9 @@ test('element variants with custom class name', async () => {
         }
         .markdown-hr\:border-t-2 :is(:where(hr):not(:where([class~='not-markdown'] *))) {
           border-top-width: 2px;
+        }
+        .markdown-lead\:italic :is(:where([class~="lead"]):not(:where([class~="not-markdown"] *))) {
+          font-style: italic;
         }
       `
     )
