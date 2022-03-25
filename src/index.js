@@ -91,7 +91,6 @@ module.exports = plugin.withOptions(
 
       for (let [name, selector = name] of [
         ['headings', 'h1, h2, h3, h4, th'],
-        ['lead', '[class~="lead"]'],
         ['h1'],
         ['h2'],
         ['h3'],
@@ -116,6 +115,7 @@ module.exports = plugin.withOptions(
         ['img'],
         ['video'],
         ['hr'],
+        ['lead', '[class~="lead"]'],
       ]) {
         addVariant(`${className}-${name}`, target === 'legacy' ? `& ${selector}` : `& :is(${inWhere(selector, options)})`)
       }
