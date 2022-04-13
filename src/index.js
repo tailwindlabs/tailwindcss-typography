@@ -89,8 +89,8 @@ module.exports = plugin.withOptions(
 
       let options = { className, prefix }
 
-      for (let [name, selector = name] of [
-        ['headings', 'h1, h2, h3, h4, th'],
+      for (let [name, ...selectors] of [
+        ['headings', 'h1', 'h2', 'h3', 'h4', 'th'],
         ['h1'],
         ['h2'],
         ['h3'],
@@ -117,7 +117,13 @@ module.exports = plugin.withOptions(
         ['hr'],
         ['lead', '[class~="lead"]'],
       ]) {
-        addVariant(`${className}-${name}`, target === 'legacy' ? `& ${selector}` : `& :is(${inWhere(selector, options)})`)
+        selectors = selectors.length === 0 ? [name] : selectors
+
+        let selector = target === 'legacy'
+          ? selectors.map(selector => `& ${selector}`)
+          : selectors.join(', ')
+
+        addVariant(`${className}-${name}`, target === 'legacy' ? selector : `& :is(${inWhere(selector, options)})`)
       }
 
       addComponents(
