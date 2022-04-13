@@ -335,7 +335,7 @@ test('modifiers', async () => {
 test('legacy target', async () => {
   let config = {
     plugins: [typographyPlugin({ target: 'legacy' })],
-    content: [{ raw: html`<div class="prose prose-h1:text-center"></div>` }],
+    content: [{ raw: html`<div class="prose prose-h1:text-center prose-headings:text-ellipsis"></div>` }],
     theme: {
       typography: {
         DEFAULT: {
@@ -422,6 +422,21 @@ test('legacy target', async () => {
         }
         .prose code::after {
           content: '&#96;';
+        }
+        .prose-headings\:text-ellipsis h1 {
+          text-overflow: ellipsis;
+        }
+        .prose-headings\:text-ellipsis h2 {
+          text-overflow: ellipsis;
+        }
+        .prose-headings\:text-ellipsis h3 {
+          text-overflow: ellipsis;
+        }
+        .prose-headings\:text-ellipsis h4 {
+          text-overflow: ellipsis;
+        }
+        .prose-headings\:text-ellipsis th {
+          text-overflow: ellipsis;
         }
         .prose-h1\:text-center h1 {
           text-align: center;
