@@ -158,7 +158,7 @@ test('specificity is reduced with :where', async () => {
           font-weight: 400;
           color: var(--tw-prose-counters);
         }
-        .prose > :where(ul > li p):not(:where([class~='not-prose'] *)) {
+        .prose :where(.prose > ul > li p):not(:where([class~='not-prose'] *)) {
           margin-top: 16px;
           margin-bottom: 16px;
         }
