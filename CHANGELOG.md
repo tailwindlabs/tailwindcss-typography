@@ -15,7 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix prose elements `legacy` mode ([#259](https://github.com/tailwindlabs/tailwindcss-typography/pull/259))
 - Allow `lead` class to override element styles ([#260](https://github.com/tailwindlabs/tailwindcss-typography/pull/260))
-- Fix generation of `prose-headings` variant  ([#264](https://github.com/tailwindlabs/tailwindcss-typography/pull/264))
+- Fix generation of `prose-headings` variant ([#264](https://github.com/tailwindlabs/tailwindcss-typography/pull/264))
+- Fix `figure` spacing ([#267](https://github.com/tailwindlabs/tailwindcss-typography/pull/267))
 
 ## [0.5.2] - 2022-02-14
 
