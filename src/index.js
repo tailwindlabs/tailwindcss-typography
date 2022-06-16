@@ -10,33 +10,30 @@ const computed = {
 
 function inWhere(selector, { className, prefix }) {
   let prefixedNot = prefix(`.not-${className}`).slice(1)
+  let selectorPrefix = selector.startsWith('>') ? `.${className} ` : ''
 
   if (selector.endsWith('::before')) {
-    if (selector.startsWith('>')) {
-      return `> :where(${selector.slice(2, -8)}):not(:where([class~="${prefixedNot}"] *))::before`
-    }
-    return `:where(${selector.slice(0, -8)}):not(:where([class~="${prefixedNot}"] *))::before`
+    return `:where(${selectorPrefix}${selector.slice(
+      0,
+      -8
+    )}):not(:where([class~="${prefixedNot}"] *))::before`
   }
 
   if (selector.endsWith('::after')) {
-    if (selector.startsWith('>')) {
-      return `> :where(${selector.slice(2, -7)}):not(:where([class~="${prefixedNot}"] *))::after`
-    }
-    return `:where(${selector.slice(0, -7)}):not(:where([class~="${prefixedNot}"] *))::after`
+    return `:where(${selectorPrefix}${selector.slice(
+      0,
+      -7
+    )}):not(:where([class~="${prefixedNot}"] *))::after`
   }
 
   if (selector.endsWith('::marker')) {
-    if (selector.startsWith('>')) {
-      return `> :where(${selector.slice(2, -8)}):not(:where([class~="${prefixedNot}"] *))::marker`
-    }
-    return `:where(${selector.slice(0, -8)}):not(:where([class~="${prefixedNot}"] *))::marker`
+    return `:where(${selectorPrefix}${selector.slice(
+      0,
+      -8
+    )}):not(:where([class~="${prefixedNot}"] *))::marker`
   }
 
-  if (selector.startsWith('>')) {
-    return `> :where(${selector.slice(2)}):not(:where([class~="${prefixedNot}"] *))`
-  }
-
-  return `:where(${selector}):not(:where([class~="${prefixedNot}"] *))`
+  return `:where(${selectorPrefix}${selector}):not(:where([class~="${prefixedNot}"] *))`
 }
 
 function isObject(value) {
