@@ -1335,7 +1335,8 @@ module.exports = {
         'h4 strong': {
           fontWeight: '700',
         },
-        // TODO: Figure out how to not need this, it's a merging issue
+        // TODO: Figure out how to not need these, it's a merging issue
+        img: {},
         'figure > *': {},
         figcaption: {
           color: 'var(--tw-prose-captions)',
