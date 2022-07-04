@@ -435,6 +435,12 @@ test('legacy target', async () => {
         .prose-headings\:text-ellipsis h4 {
           text-overflow: ellipsis;
         }
+        .prose-headings\:text-ellipsis h5 {
+          text-overflow: ellipsis;
+        }
+        .prose-headings\:text-ellipsis h6 {
+          text-overflow: ellipsis;
+        }
         .prose-headings\:text-ellipsis th {
           text-overflow: ellipsis;
         }
@@ -621,7 +627,7 @@ test('element variants', async () => {
           font-weight: 700;
         }
         .prose-headings\:underline
-          :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-prose'] *))) {
+          :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~='not-prose'] *))) {
           text-decoration-line: underline;
         }
         .prose-h1\:text-3xl :is(:where(h1):not(:where([class~='not-prose'] *))) {
@@ -793,7 +799,7 @@ test('element variants with custom class name', async () => {
           font-weight: 700;
         }
         .markdown-headings\:underline
-          :is(:where(h1, h2, h3, h4, th):not(:where([class~='not-markdown'] *))) {
+          :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~='not-markdown'] *))) {
           text-decoration-line: underline;
         }
         .markdown-h1\:text-3xl :is(:where(h1):not(:where([class~='not-markdown'] *))) {
@@ -966,6 +972,30 @@ it('should be possible to use nested syntax (&) when extending the config', () =
     expect(result.css).toIncludeCss(css`
       .prose :where(a):not(:where([class~='not-prose'] *)):hover {
         color: #ff0000;
+      }
+    `)
+  })
+})
+
+it('should be possible to specify custom h5 and h6 styles', () => {
+  let config = {
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose prose-h5:text-sm prose-h6:text-xl"></div>`,
+      },
+    ],
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose-h5\:text-sm :is(:where(h5):not(:where([class~='not-prose'] *))) {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .prose-h6\:text-xl :is(:where(h6):not(:where([class~='not-prose'] *))) {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
       }
     `)
   })
