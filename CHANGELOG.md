@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add styles for `tfoot` elements ([#243](https://github.com/tailwindlabs/tailwindcss-typography/pull/243))
+- Add `prose-h5` and `prose-h6` variants ([#273](https://github.com/tailwindlabs/tailwindcss-typography/pull/273))
 
 ## Fixed
 
@@ -18,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix generation of `prose-headings` variant ([#264](https://github.com/tailwindlabs/tailwindcss-typography/pull/264))
 - Fix `figure` spacing ([#267](https://github.com/tailwindlabs/tailwindcss-typography/pull/267))
 - Fix child combinator `:where` selectors ([#268](https://github.com/tailwindlabs/tailwindcss-typography/pull/267))
+- Fix `prose-headings` variant to include `h5` and `h6` elements ([#273](https://github.com/tailwindlabs/tailwindcss-typography/pull/273))
 
 ## [0.5.2] - 2022-02-14
 
