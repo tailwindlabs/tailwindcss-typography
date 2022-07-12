@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+- Update `strong` and `code` color styles to inherit from parent ([#276](https://github.com/tailwindlabs/tailwindcss-typography/pull/276))
 
 ## [0.5.3] - 2022-07-07
 
