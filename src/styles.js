@@ -1249,6 +1249,15 @@ module.exports = {
           color: 'var(--tw-prose-bold)',
           fontWeight: '600',
         },
+        'a strong': {
+          color: 'inherit',
+        },
+        'blockquote strong': {
+          color: 'inherit',
+        },
+        'thead th strong': {
+          color: 'inherit',
+        },
         ol: {
           listStyleType: 'decimal',
         },
@@ -1313,6 +1322,7 @@ module.exports = {
         },
         'h1 strong': {
           fontWeight: '900',
+          color: 'inherit',
         },
         h2: {
           color: 'var(--tw-prose-headings)',
@@ -1320,6 +1330,7 @@ module.exports = {
         },
         'h2 strong': {
           fontWeight: '800',
+          color: 'inherit',
         },
         h3: {
           color: 'var(--tw-prose-headings)',
@@ -1327,6 +1338,7 @@ module.exports = {
         },
         'h3 strong': {
           fontWeight: '700',
+          color: 'inherit',
         },
         h4: {
           color: 'var(--tw-prose-headings)',
@@ -1334,6 +1346,7 @@ module.exports = {
         },
         'h4 strong': {
           fontWeight: '700',
+          color: 'inherit',
         },
         // TODO: Figure out how to not need these, it's a merging issue
         img: {},
@@ -1352,7 +1365,25 @@ module.exports = {
           content: '"`"',
         },
         'a code': {
-          color: 'var(--tw-prose-links)',
+          color: 'inherit',
+        },
+        'h1 code': {
+          color: 'inherit',
+        },
+        'h2 code': {
+          color: 'inherit',
+        },
+        'h3 code': {
+          color: 'inherit',
+        },
+        'h4 code': {
+          color: 'inherit',
+        },
+        'blockquote code': {
+          color: 'inherit',
+        },
+        'thead th code': {
+          color: 'inherit',
         },
         pre: {
           color: 'var(--tw-prose-pre-code)',
