@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
 - Update `strong` and `code` color styles to inherit from parent ([#276](https://github.com/tailwindlabs/tailwindcss-typography/pull/276))
 
 ## [0.5.3] - 2022-07-07
@@ -16,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add styles for `tfoot` elements ([#243](https://github.com/tailwindlabs/tailwindcss-typography/pull/243))
 - Add `prose-h5` and `prose-h6` variants ([#273](https://github.com/tailwindlabs/tailwindcss-typography/pull/273))
 
-## Fixed
+### Fixed
 
 - Fix prose elements `legacy` mode ([#259](https://github.com/tailwindlabs/tailwindcss-typography/pull/259))
 - Allow `lead` class to override element styles ([#260](https://github.com/tailwindlabs/tailwindcss-typography/pull/260))
