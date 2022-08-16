@@ -1000,3 +1000,198 @@ it('should be possible to specify custom h5 and h6 styles', () => {
     `)
   })
 })
+
+it('should not break with multiple selectors with pseudo elements using variants', () => {
+  let config = {
+    darkMode: 'class',
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="dark:prose"></div>`,
+      },
+    ],
+    theme: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'ol li::before, ul li::before': {
+              color: 'red',
+            },
+          },
+        },
+      },
+    },
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .dark .dark\:prose :where(ol li, ul li):not(:where([class~="not-prose"] *))::before {
+        color: red;
+      }
+    `)
+  })
+})
+
+it('lifts all common, trailing pseudo elements when the same across all selectors', () => {
+  let config = {
+    darkMode: 'class',
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose dark:prose"></div>`,
+      },
+    ],
+    theme: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'ol li::marker::before, ul li::marker::before': {
+              color: 'red',
+            },
+          },
+        },
+      },
+    },
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose :where(ol li, ul li):not(:where([class~='not-prose'] *))::marker::before {
+        color: red;
+      }
+    `)
+
+    // TODO: The output here is a bug in tailwindcss variant selector rewriting
+    // IT should be ::marker::before
+    expect(result.css).toIncludeCss(css`
+      .dark .dark\:prose :where(ol li, ul li):not(:where([class~='not-prose'] *))::before::marker {
+        color: red;
+      }
+    `)
+  })
+})
+
+it('does not modify selectors with differing pseudo elements', () => {
+  let config = {
+    darkMode: 'class',
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose dark:prose"></div>`,
+      },
+    ],
+    theme: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'ol li::before, ul li::after': {
+              color: 'red',
+            },
+          },
+        },
+      },
+    },
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose :where(ol li::before, ul li::after):not(:where([class~='not-prose'] *)) {
+        color: red;
+      }
+    `)
+
+    // TODO: The output here is a bug in tailwindcss variant selector rewriting
+    expect(result.css).toIncludeCss(css`
+      .dark .dark\:prose :where(ol li, ul li):not(:where([class~='not-prose'] *))::before,
+      ::after {
+        color: red;
+      }
+    `)
+  })
+})
+
+it('lifts only the common, trailing pseudo elements from selectors', () => {
+  let config = {
+    darkMode: 'class',
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose dark:prose"></div>`,
+      },
+    ],
+    theme: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'ol li::scroll-thumb::before, ul li::scroll-track::before': {
+              color: 'red',
+            },
+          },
+        },
+      },
+    },
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose
+        :where(ol li::scroll-thumb, ul li::scroll-track):not(:where([class~='not-prose']
+            *))::before {
+        color: red;
+      }
+    `)
+
+    // TODO: The output here is a bug in tailwindcss variant selector rewriting
+    expect(result.css).toIncludeCss(css`
+      .dark .dark\:prose :where(ol li, ul li):not(:where([class~='not-prose'] *))::scroll-thumb,
+      ::scroll-track,
+      ::before {
+        color: red;
+      }
+    `)
+  })
+})
+
+it('ignores common non-trailing pseudo-elements in selectors', () => {
+  let config = {
+    darkMode: 'class',
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose dark:prose"></div>`,
+      },
+    ],
+    theme: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'ol li::before::scroll-thumb, ul li::before::scroll-track': {
+              color: 'red',
+            },
+          },
+        },
+      },
+    },
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose
+        :where(ol li::before::scroll-thumb, ul
+          li::before::scroll-track):not(:where([class~='not-prose'] *)) {
+        color: red;
+      }
+    `)
+
+    // TODO: The output here is a bug in tailwindcss variant selector rewriting
+    expect(result.css).toIncludeCss(css`
+      .dark
+        .dark\:prose
+        :where(ol li::scroll-thumb, ul li::scroll-track):not(:where([class~='not-prose']
+            *))::before,
+      ::before {
+        color: red;
+      }
+    `)
+  })
+})
