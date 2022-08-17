@@ -2,6 +2,7 @@ const plugin = require('tailwindcss/plugin')
 const merge = require('lodash.merge')
 const castArray = require('lodash.castarray')
 const styles = require('./styles')
+const { commonTrailingPseudos } = require('./utils')
 
 const computed = {
   // Reserved for future "magic properties", for example:
@@ -12,25 +13,11 @@ function inWhere(selector, { className, prefix }) {
   let prefixedNot = prefix(`.not-${className}`).slice(1)
   let selectorPrefix = selector.startsWith('>') ? `.${className} ` : ''
 
-  if (selector.endsWith('::before')) {
-    return `:where(${selectorPrefix}${selector.slice(
-      0,
-      -8
-    )}):not(:where([class~="${prefixedNot}"] *))::before`
-  }
+  // Parse the selector, if every component ends in the same pseudo element(s) then move it to the end
+  let [trailingPseudo, rebuiltSelector] = commonTrailingPseudos(selector)
 
-  if (selector.endsWith('::after')) {
-    return `:where(${selectorPrefix}${selector.slice(
-      0,
-      -7
-    )}):not(:where([class~="${prefixedNot}"] *))::after`
-  }
-
-  if (selector.endsWith('::marker')) {
-    return `:where(${selectorPrefix}${selector.slice(
-      0,
-      -8
-    )}):not(:where([class~="${prefixedNot}"] *))::marker`
+  if (trailingPseudo) {
+    return `:where(${selectorPrefix}${rebuiltSelector}):not(:where([class~="${prefixedNot}"] *))${trailingPseudo}`
   }
 
   return `:where(${selectorPrefix}${selector}):not(:where([class~="${prefixedNot}"] *))`
@@ -118,11 +105,13 @@ module.exports = plugin.withOptions(
       ]) {
         selectors = selectors.length === 0 ? [name] : selectors
 
-        let selector = target === 'legacy'
-          ? selectors.map(selector => `& ${selector}`)
-          : selectors.join(', ')
+        let selector =
+          target === 'legacy' ? selectors.map((selector) => `& ${selector}`) : selectors.join(', ')
 
-        addVariant(`${className}-${name}`, target === 'legacy' ? selector : `& :is(${inWhere(selector, options)})`)
+        addVariant(
+          `${className}-${name}`,
+          target === 'legacy' ? selector : `& :is(${inWhere(selector, options)})`
+        )
       }
 
       addComponents(
