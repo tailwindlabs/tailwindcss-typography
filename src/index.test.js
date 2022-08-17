@@ -335,7 +335,9 @@ test('modifiers', async () => {
 test('legacy target', async () => {
   let config = {
     plugins: [typographyPlugin({ target: 'legacy' })],
-    content: [{ raw: html`<div class="prose prose-h1:text-center prose-headings:text-ellipsis"></div>` }],
+    content: [
+      { raw: html`<div class="prose prose-h1:text-center prose-headings:text-ellipsis"></div>` },
+    ],
     theme: {
       typography: {
         DEFAULT: {
@@ -712,7 +714,7 @@ test('element variants', async () => {
         .prose-hr\:border-t-2 :is(:where(hr):not(:where([class~='not-prose'] *))) {
           border-top-width: 2px;
         }
-        .prose-lead\:italic :is(:where([class~="lead"]):not(:where([class~="not-prose"] *))) {
+        .prose-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-prose'] *))) {
           font-style: italic;
         }
       `
@@ -886,7 +888,7 @@ test('element variants with custom class name', async () => {
         .markdown-hr\:border-t-2 :is(:where(hr):not(:where([class~='not-markdown'] *))) {
           border-top-width: 2px;
         }
-        .markdown-lead\:italic :is(:where([class~="lead"]):not(:where([class~="not-markdown"] *))) {
+        .markdown-lead\:italic :is(:where([class~='lead']):not(:where([class~='not-markdown'] *))) {
           font-style: italic;
         }
       `
@@ -1025,7 +1027,7 @@ it('should not break with multiple selectors with pseudo elements using variants
 
   return run(config).then((result) => {
     expect(result.css).toIncludeCss(css`
-      .dark .dark\:prose :where(ol li, ul li):not(:where([class~="not-prose"] *))::before {
+      .dark .dark\:prose :where(ol li, ul li):not(:where([class~='not-prose'] *))::before {
         color: red;
       }
     `)
