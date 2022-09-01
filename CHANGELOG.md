@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+- Actually publish types ([a54c1a8](https://github.com/tailwindlabs/tailwindcss-typography/commit/a54c1a82a64efdf23aab57e62edaa369d1a857f1))
 
 ## [0.5.5] - 2022-09-01
 
