@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Added
+
+- Add typescript types ([#283](https://github.com/tailwindlabs/tailwindcss-typography/pull/283))
 
 ## [0.5.4] - 2022-07-12
 
