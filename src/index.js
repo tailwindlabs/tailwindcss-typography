@@ -11,7 +11,7 @@ const computed = {
 
 function inWhere(selector, { className, prefix }) {
   let prefixedNot = prefix(`.not-${className}`).slice(1)
-  let selectorPrefix = selector.startsWith('>') ? `.${className} ` : ''
+  let selectorPrefix = selector.startsWith('>') ? `[class~="${className}"] ` : ''
 
   // Parse the selector, if every component ends in the same pseudo element(s) then move it to the end
   let [trailingPseudo, rebuiltSelector] = commonTrailingPseudos(selector)
