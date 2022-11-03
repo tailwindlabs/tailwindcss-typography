@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Fixed
+
+- Don't generate all `prose` sizes when unused ([#284](https://github.com/tailwindlabs/tailwindcss-typography/pull/284/files))
 
 ## [0.5.7] - 2022-09-02
 

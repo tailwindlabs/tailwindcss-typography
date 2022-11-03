@@ -158,7 +158,7 @@ test('specificity is reduced with :where', async () => {
           font-weight: 400;
           color: var(--tw-prose-counters);
         }
-        .prose :where([class~='prose'] > ul > li p):not(:where([class~='not-prose'] *)) {
+        .prose :where(.prose > ul > li p):not(:where([class~='not-prose'] *)) {
           margin-top: 16px;
           margin-bottom: 16px;
         }
@@ -1211,12 +1211,35 @@ it('does not generate other prose sizes if they are not used', () => {
 
   return run(config).then((result) => {
     expect(result.css).toIncludeCss(css`
-      .prose :where([class~='prose'] > ul > li p):not(:where([class~='not-prose'] *)) {
+      .prose :where(.prose > ul > li p):not(:where([class~='not-prose'] *)) {
         margin-top: 0.75em;
         margin-bottom: 0.75em;
       }
     `)
 
     expect(result.css).not.toContain('.prose-sm')
+  })
+})
+
+it('correctly generates prose sizes in the where clause', () => {
+  let config = {
+    darkMode: 'class',
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose-sm"></div>`,
+      },
+    ],
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose-sm :where(.prose-sm > ul > li p):not(:where([class~='not-prose'] *)) {
+        margin-top: 0.5714286em;
+        margin-bottom: 0.5714286em;
+      }
+    `)
+
+    expect(result.css).not.toContain('.prose :where')
   })
 })
