@@ -158,7 +158,7 @@ test('specificity is reduced with :where', async () => {
           font-weight: 400;
           color: var(--tw-prose-counters);
         }
-        .prose :where(.prose > ul > li p):not(:where([class~='not-prose'] *)) {
+        .prose :where([class~='prose'] > ul > li p):not(:where([class~='not-prose'] *)) {
           margin-top: 16px;
           margin-bottom: 16px;
         }
@@ -1195,5 +1195,28 @@ it('ignores common non-trailing pseudo-elements in selectors', () => {
         color: red;
       }
     `)
+  })
+})
+
+it('does not generate other prose sizes if they are not used', () => {
+  let config = {
+    darkMode: 'class',
+    plugins: [typographyPlugin()],
+    content: [
+      {
+        raw: html`<div class="prose"></div>`,
+      },
+    ],
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose :where([class~='prose'] > ul > li p):not(:where([class~='not-prose'] *)) {
+        margin-top: 0.75em;
+        margin-bottom: 0.75em;
+      }
+    `)
+
+    expect(result.css).not.toContain('.prose-sm')
   })
 })
