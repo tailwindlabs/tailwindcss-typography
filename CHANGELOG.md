@@ -9,11 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.5.8] - 2022-11-07
+
+### Fixed
+
+- Fix selector when using a non-default class (e.g. `prose-sm`) ([#289](https://github.com/tailwindlabs/tailwindcss-typography/pull/289))
+
 ## [0.5.7] - 2022-09-02
 
 ### Fixed
 
-- Update TypeScript types ([#284](https://github.com/tailwindlabs/tailwindcss-typography/pull/284/files))
+- Update TypeScript types ([#284](https://github.com/tailwindlabs/tailwindcss-typography/pull/284))
 
 ## [0.5.6] - 2022-09-01
 
