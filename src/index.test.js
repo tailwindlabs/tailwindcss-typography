@@ -181,6 +181,89 @@ test('specificity is reduced with :where', async () => {
   })
 })
 
+test('variants', async () => {
+  let config = {
+    content: [{ raw: html`<div class="sm:prose hover:prose-lg lg:prose-lg"></div>` }],
+    theme: {
+      typography: {
+        DEFAULT: {
+          css: [
+            {
+              color: 'red',
+              p: {
+                color: 'lime',
+              },
+              '> ul > li': {
+                color: 'purple',
+              },
+            },
+          ],
+        },
+        lg: {
+          css: {
+            color: 'green',
+            p: {
+              color: 'tomato',
+            },
+            '> ul > li': {
+              color: 'blue',
+            },
+          },
+        },
+        xl: {
+          css: {
+            color: 'yellow',
+            '> ul > li': {
+              color: 'hotpink',
+            },
+          },
+        },
+      },
+    },
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toMatchFormattedCss(
+      css`
+        ${defaults}
+
+        .hover\:prose-lg:hover {
+          color: green;
+        }
+        .hover\:prose-lg:hover :where(p):not(:where([class~='not-prose'] *)) {
+          color: tomato;
+        }
+        .hover\:prose-lg:hover
+          :where(.hover\:prose-lg:hover > ul > li):not(:where([class~='not-prose'] *)) {
+          color: blue;
+        }
+        @media (min-width: 640px) {
+          .sm\:prose {
+            color: red;
+          }
+          .sm\:prose :where(p):not(:where([class~='not-prose'] *)) {
+            color: lime;
+          }
+          .sm\:prose :where(.sm\:prose > ul > li):not(:where([class~='not-prose'] *)) {
+            color: purple;
+          }
+        }
+        @media (min-width: 1024px) {
+          .lg\:prose-lg {
+            color: green;
+          }
+          .lg\:prose-lg :where(p):not(:where([class~='not-prose'] *)) {
+            color: tomato;
+          }
+          .lg\:prose-lg :where(.lg\:prose-lg > ul > li):not(:where([class~='not-prose'] *)) {
+            color: blue;
+          }
+        }
+      `
+    )
+  })
+})
+
 test('modifiers', async () => {
   let config = {
     content: [{ raw: html`<div class="prose prose-lg"></div>` }],
@@ -241,6 +324,9 @@ test('modifiers', async () => {
               blockquote: {
                 marginTop: '40px',
                 marginBottom: '40px',
+              },
+              '> ul > li': {
+                paddingLeft: '12px',
               },
               h1: {
                 fontSize: '48px',
@@ -319,6 +405,9 @@ test('modifiers', async () => {
         .prose-lg :where(blockquote):not(:where([class~='not-prose'] *)) {
           margin-top: 40px;
           margin-bottom: 40px;
+        }
+        .prose-lg :where(.prose-lg > ul > li):not(:where([class~='not-prose'] *)) {
+          padding-left: 12px;
         }
         .prose-lg :where(h1):not(:where([class~='not-prose'] *)) {
           font-size: 48px;

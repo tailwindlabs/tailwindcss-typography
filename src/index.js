@@ -9,9 +9,11 @@ const computed = {
   // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
 }
 
-function inWhere(selector, { className, prefix }) {
+function inWhere(selector, { className, modifier, prefix }) {
   let prefixedNot = prefix(`.not-${className}`).slice(1)
-  let selectorPrefix = selector.startsWith('>') ? `.${className} ` : ''
+  let selectorPrefix = selector.startsWith('>')
+    ? `${modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`} `
+    : ''
 
   // Parse the selector, if every component ends in the same pseudo element(s) then move it to the end
   let [trailingPseudo, rebuiltSelector] = commonTrailingPseudos(selector)
@@ -27,7 +29,7 @@ function isObject(value) {
   return typeof value === 'object' && value !== null
 }
 
-function configToCss(config = {}, { target, className, prefix }) {
+function configToCss(config = {}, { target, className, modifier, prefix }) {
   function updateSelector(k, v) {
     if (target === 'legacy') {
       return [k, v]
@@ -41,13 +43,13 @@ function configToCss(config = {}, { target, className, prefix }) {
       let nested = Object.values(v).some(isObject)
       if (nested) {
         return [
-          inWhere(k, { className, prefix }),
+          inWhere(k, { className, modifier, prefix }),
           v,
           Object.fromEntries(Object.entries(v).map(([k, v]) => updateSelector(k, v))),
         ]
       }
 
-      return [inWhere(k, { className, prefix }), v]
+      return [inWhere(k, { className, modifier, prefix }), v]
     }
 
     return [k, v]
@@ -121,6 +123,7 @@ module.exports = plugin.withOptions(
             {
               target,
               className,
+              modifier,
               prefix,
             }
           ),
