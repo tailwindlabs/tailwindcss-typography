@@ -1,6 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 const merge = require('lodash.merge')
 const castArray = require('lodash.castarray')
+const isPlainObject = require('lodash.isplainobject')
 const styles = require('./styles')
 const { commonTrailingPseudos } = require('./utils')
 
@@ -69,7 +70,7 @@ function configToCss(config = {}, { target, className, modifier, prefix }) {
 }
 
 module.exports = plugin.withOptions(
-  ({ className = 'prose', target = 'modern' } = {}) => {
+  ({ className = 'prose', target = 'modern', color, scale } = {}) => {
     return function ({ addVariant, addComponents, theme, prefix }) {
       let modifiers = theme('typography')
 
@@ -115,6 +116,20 @@ module.exports = plugin.withOptions(
           target === 'legacy' ? selector : `& :is(${inWhere(selector, options)})`
         )
       }
+
+      // Inject default gray/color scale
+      const safeColor =
+        isPlainObject(modifiers[color]) && isPlainObject(modifiers[color].css)
+          ? color
+          : 'gray'
+      modifiers.DEFAULT.css.push(modifiers[safeColor].css)
+
+      // Inject default type scale
+      const safeScale =
+        isPlainObject(modifiers[scale]) && Array.isArray(modifiers[scale].css)
+          ? scale
+          : 'base'
+      modifiers.DEFAULT.css.push(...modifiers[safeScale].css)
 
       addComponents(
         Object.keys(modifiers).map((modifier) => ({
