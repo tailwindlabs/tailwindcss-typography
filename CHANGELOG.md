@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.5.9] - 2023-01-10
+
+### Fixed
+
+- Ensure `p` styles are inserted before `.lead` styles ([#294](https://github.com/tailwindlabs/tailwindcss-typography/pull/294))
+
 ## [0.5.8] - 2022-11-07
 
 ### Fixed
