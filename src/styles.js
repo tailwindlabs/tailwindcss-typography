@@ -1237,6 +1237,8 @@ module.exports = {
       {
         color: 'var(--tw-prose-body)',
         maxWidth: '65ch',
+        // TODO: Figure out how to not need this, it's a merging issue
+        p: {},
         '[class~="lead"]': {
           color: 'var(--tw-prose-lead)',
         },

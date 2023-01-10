@@ -1294,3 +1294,31 @@ it('ignores common non-trailing pseudo-elements in selectors', () => {
     `)
   })
 })
+
+test('lead styles are inserted after paragraph styles', async () => {
+  let config = {
+    content: [{ raw: html`<div class="prose"></div>` }],
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(
+      css`
+        .prose {
+          color: var(--tw-prose-body);
+          max-width: 65ch;
+        }
+        .prose :where(p):not(:where([class~='not-prose'] *)) {
+          margin-top: 1.25em;
+          margin-bottom: 1.25em;
+        }
+        .prose :where([class~='lead']):not(:where([class~='not-prose'] *)) {
+          color: var(--tw-prose-lead);
+          font-size: 1.25em;
+          line-height: 1.6;
+          margin-top: 1.2em;
+          margin-bottom: 1.2em;
+        }
+      `
+    )
+  })
+})
