@@ -129,6 +129,15 @@ module.exports = plugin.withOptions(
           ),
         }))
       )
+
+      addComponents({
+        '@media print': {
+            '.prose': {
+                '--tw-prose-body': 'black',
+                '--tw-prose-headings': 'black',
+            }
+        },
+      })
     }
   },
   () => {
