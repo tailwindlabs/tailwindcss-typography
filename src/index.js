@@ -19,10 +19,10 @@ function inWhere(selector, { className, modifier, prefix }) {
   let [trailingPseudo, rebuiltSelector] = commonTrailingPseudos(selector)
 
   if (trailingPseudo) {
-    return `:where(${selectorPrefix}${rebuiltSelector}):not(:where([class~="${prefixedNot}"] *))${trailingPseudo}`
+    return `:where(${selectorPrefix}${rebuiltSelector}):not(:where(.${prefixedNot} *))${trailingPseudo}`
   }
 
-  return `:where(${selectorPrefix}${selector}):not(:where([class~="${prefixedNot}"] *))`
+  return `:where(${selectorPrefix}${selector}):not(:where(.${prefixedNot} *))`
 }
 
 function isObject(value) {
@@ -103,7 +103,7 @@ module.exports = plugin.withOptions(
         ['img'],
         ['video'],
         ['hr'],
-        ['lead', '[class~="lead"]'],
+        ['lead', '.lead'],
       ]) {
         selectors = selectors.length === 0 ? [name] : selectors
 
