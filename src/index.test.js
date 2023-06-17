@@ -326,7 +326,7 @@ test('modifiers', async () => {
                 marginBottom: '40px',
               },
               '> ul > li': {
-                paddingLeft: '12px',
+                paddingInlineStart: '12px',
               },
               h1: {
                 fontSize: '48px',
@@ -407,7 +407,7 @@ test('modifiers', async () => {
           margin-bottom: 40px;
         }
         .prose-lg :where(.prose-lg > ul > li):not(:where([class~='not-prose'] *)) {
-          padding-left: 12px;
+          padding-inline-start: 12px;
         }
         .prose-lg :where(h1):not(:where([class~='not-prose'] *)) {
           font-size: 48px;
@@ -756,8 +756,8 @@ test('element variants', async () => {
           font-style: italic;
         }
         .prose-figure\:mx-auto :is(:where(figure):not(:where([class~='not-prose'] *))) {
-          margin-left: auto;
-          margin-right: auto;
+          margin-inline-start: auto;
+          margin-inline-end: auto;
         }
         .prose-figcaption\:opacity-75 :is(:where(figcaption):not(:where([class~='not-prose'] *))) {
           opacity: 0.75;
@@ -777,10 +777,10 @@ test('element variants', async () => {
             'Courier New', monospace;
         }
         .prose-ol\:pl-6 :is(:where(ol):not(:where([class~='not-prose'] *))) {
-          padding-left: 1.5rem;
+          padding-inline-start: 1.5rem;
         }
         .prose-ul\:pl-8 :is(:where(ul):not(:where([class~='not-prose'] *))) {
-          padding-left: 2rem;
+          padding-inline-start: 2rem;
         }
         .prose-li\:my-4 :is(:where(li):not(:where([class~='not-prose'] *))) {
           margin-top: 1rem;
@@ -929,8 +929,8 @@ test('element variants with custom class name', async () => {
           font-style: italic;
         }
         .markdown-figure\:mx-auto :is(:where(figure):not(:where([class~='not-markdown'] *))) {
-          margin-left: auto;
-          margin-right: auto;
+          margin-inline-start: auto;
+          margin-inline-end: auto;
         }
         .markdown-figcaption\:opacity-75
           :is(:where(figcaption):not(:where([class~='not-markdown'] *))) {
@@ -951,10 +951,10 @@ test('element variants with custom class name', async () => {
             'Courier New', monospace;
         }
         .markdown-ol\:pl-6 :is(:where(ol):not(:where([class~='not-markdown'] *))) {
-          padding-left: 1.5rem;
+          padding-inline-start: 1.5rem;
         }
         .markdown-ul\:pl-8 :is(:where(ul):not(:where([class~='not-markdown'] *))) {
-          padding-left: 2rem;
+          padding-inline-start: 2rem;
         }
         .markdown-li\:my-4 :is(:where(li):not(:where([class~='not-markdown'] *))) {
           margin-top: 1rem;

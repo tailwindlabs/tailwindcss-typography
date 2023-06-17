@@ -27,7 +27,7 @@ let defaultModifiers = {
         blockquote: {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
-          paddingLeft: em(20, 18),
+          paddingInlineStart: em(20, 18),
         },
         h1: {
           fontSize: em(30, 14),
@@ -89,29 +89,29 @@ let defaultModifiers = {
           marginBottom: em(20, 12),
           borderRadius: rem(4),
           paddingTop: em(8, 12),
-          paddingRight: em(12, 12),
+          paddingInlineEnd: em(12, 12),
           paddingBottom: em(8, 12),
-          paddingLeft: em(12, 12),
+          paddingInlineStart: em(12, 12),
         },
         ol: {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
-          paddingLeft: em(22, 14),
+          paddingInlineStart: em(22, 14),
         },
         ul: {
           marginTop: em(16, 14),
           marginBottom: em(16, 14),
-          paddingLeft: em(22, 14),
+          paddingInlineStart: em(22, 14),
         },
         li: {
           marginTop: em(4, 14),
           marginBottom: em(4, 14),
         },
         'ol > li': {
-          paddingLeft: em(6, 14),
+          paddingInlineStart: em(6, 14),
         },
         'ul > li': {
-          paddingLeft: em(6, 14),
+          paddingInlineStart: em(6, 14),
         },
         '> ul > li p': {
           marginTop: em(8, 14),
@@ -154,27 +154,27 @@ let defaultModifiers = {
           lineHeight: round(18 / 12),
         },
         'thead th': {
-          paddingRight: em(12, 12),
+          paddingInlineEnd: em(12, 12),
           paddingBottom: em(8, 12),
-          paddingLeft: em(12, 12),
+          paddingInlineStart: em(12, 12),
         },
         'thead th:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'thead th:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
         'tbody td, tfoot td': {
           paddingTop: em(8, 12),
-          paddingRight: em(12, 12),
+          paddingInlineEnd: em(12, 12),
           paddingBottom: em(8, 12),
-          paddingLeft: em(12, 12),
+          paddingInlineStart: em(12, 12),
         },
         'tbody td:first-child, tfoot td:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'tbody td:last-child, tfoot td:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
       },
       {
@@ -205,7 +205,7 @@ let defaultModifiers = {
         blockquote: {
           marginTop: em(32, 20),
           marginBottom: em(32, 20),
-          paddingLeft: em(20, 20),
+          paddingInlineStart: em(20, 20),
         },
         h1: {
           fontSize: em(36, 16),
@@ -267,29 +267,29 @@ let defaultModifiers = {
           marginBottom: em(24, 14),
           borderRadius: rem(6),
           paddingTop: em(12, 14),
-          paddingRight: em(16, 14),
+          paddingInlineEnd: em(16, 14),
           paddingBottom: em(12, 14),
-          paddingLeft: em(16, 14),
+          paddingInlineStart: em(16, 14),
         },
         ol: {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
-          paddingLeft: em(26, 16),
+          paddingInlineStart: em(26, 16),
         },
         ul: {
           marginTop: em(20, 16),
           marginBottom: em(20, 16),
-          paddingLeft: em(26, 16),
+          paddingInlineStart: em(26, 16),
         },
         li: {
           marginTop: em(8, 16),
           marginBottom: em(8, 16),
         },
         'ol > li': {
-          paddingLeft: em(6, 16),
+          paddingInlineStart: em(6, 16),
         },
         'ul > li': {
-          paddingLeft: em(6, 16),
+          paddingInlineStart: em(6, 16),
         },
         '> ul > li p': {
           marginTop: em(12, 16),
@@ -332,27 +332,27 @@ let defaultModifiers = {
           lineHeight: round(24 / 14),
         },
         'thead th': {
-          paddingRight: em(8, 14),
+          paddingInlineEnd: em(8, 14),
           paddingBottom: em(8, 14),
-          paddingLeft: em(8, 14),
+          paddingInlineStart: em(8, 14),
         },
         'thead th:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'thead th:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
         'tbody td, tfoot td': {
           paddingTop: em(8, 14),
-          paddingRight: em(8, 14),
+          paddingInlineEnd: em(8, 14),
           paddingBottom: em(8, 14),
-          paddingLeft: em(8, 14),
+          paddingInlineStart: em(8, 14),
         },
         'tbody td:first-child, tfoot td:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'tbody td:last-child, tfoot td:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
       },
       {
@@ -383,7 +383,7 @@ let defaultModifiers = {
         blockquote: {
           marginTop: em(40, 24),
           marginBottom: em(40, 24),
-          paddingLeft: em(24, 24),
+          paddingInlineStart: em(24, 24),
         },
         h1: {
           fontSize: em(48, 18),
@@ -445,29 +445,29 @@ let defaultModifiers = {
           marginBottom: em(32, 16),
           borderRadius: rem(6),
           paddingTop: em(16, 16),
-          paddingRight: em(24, 16),
+          paddingInlineEnd: em(24, 16),
           paddingBottom: em(16, 16),
-          paddingLeft: em(24, 16),
+          paddingInlineStart: em(24, 16),
         },
         ol: {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
-          paddingLeft: em(28, 18),
+          paddingInlineStart: em(28, 18),
         },
         ul: {
           marginTop: em(24, 18),
           marginBottom: em(24, 18),
-          paddingLeft: em(28, 18),
+          paddingInlineStart: em(28, 18),
         },
         li: {
           marginTop: em(12, 18),
           marginBottom: em(12, 18),
         },
         'ol > li': {
-          paddingLeft: em(8, 18),
+          paddingInlineStart: em(8, 18),
         },
         'ul > li': {
-          paddingLeft: em(8, 18),
+          paddingInlineStart: em(8, 18),
         },
         '> ul > li p': {
           marginTop: em(16, 18),
@@ -510,27 +510,27 @@ let defaultModifiers = {
           lineHeight: round(24 / 16),
         },
         'thead th': {
-          paddingRight: em(12, 16),
+          paddingInlineEnd: em(12, 16),
           paddingBottom: em(12, 16),
-          paddingLeft: em(12, 16),
+          paddingInlineStart: em(12, 16),
         },
         'thead th:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'thead th:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
         'tbody td, tfoot td': {
           paddingTop: em(12, 16),
-          paddingRight: em(12, 16),
+          paddingInlineEnd: em(12, 16),
           paddingBottom: em(12, 16),
-          paddingLeft: em(12, 16),
+          paddingInlineStart: em(12, 16),
         },
         'tbody td:first-child, tfoot td:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'tbody td:last-child, tfoot td:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
       },
       {
@@ -561,7 +561,7 @@ let defaultModifiers = {
         blockquote: {
           marginTop: em(48, 30),
           marginBottom: em(48, 30),
-          paddingLeft: em(32, 30),
+          paddingInlineStart: em(32, 30),
         },
         h1: {
           fontSize: em(56, 20),
@@ -623,29 +623,29 @@ let defaultModifiers = {
           marginBottom: em(36, 18),
           borderRadius: rem(8),
           paddingTop: em(20, 18),
-          paddingRight: em(24, 18),
+          paddingInlineEnd: em(24, 18),
           paddingBottom: em(20, 18),
-          paddingLeft: em(24, 18),
+          paddingInlineStart: em(24, 18),
         },
         ol: {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
-          paddingLeft: em(32, 20),
+          paddingInlineStart: em(32, 20),
         },
         ul: {
           marginTop: em(24, 20),
           marginBottom: em(24, 20),
-          paddingLeft: em(32, 20),
+          paddingInlineStart: em(32, 20),
         },
         li: {
           marginTop: em(12, 20),
           marginBottom: em(12, 20),
         },
         'ol > li': {
-          paddingLeft: em(8, 20),
+          paddingInlineStart: em(8, 20),
         },
         'ul > li': {
-          paddingLeft: em(8, 20),
+          paddingInlineStart: em(8, 20),
         },
         '> ul > li p': {
           marginTop: em(16, 20),
@@ -688,27 +688,27 @@ let defaultModifiers = {
           lineHeight: round(28 / 18),
         },
         'thead th': {
-          paddingRight: em(12, 18),
+          paddingInlineEnd: em(12, 18),
           paddingBottom: em(16, 18),
-          paddingLeft: em(12, 18),
+          paddingInlineStart: em(12, 18),
         },
         'thead th:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'thead th:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
         'tbody td, tfoot td': {
           paddingTop: em(16, 18),
-          paddingRight: em(12, 18),
+          paddingInlineEnd: em(12, 18),
           paddingBottom: em(16, 18),
-          paddingLeft: em(12, 18),
+          paddingInlineStart: em(12, 18),
         },
         'tbody td:first-child, tfoot td:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'tbody td:last-child, tfoot td:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
       },
       {
@@ -739,7 +739,7 @@ let defaultModifiers = {
         blockquote: {
           marginTop: em(64, 36),
           marginBottom: em(64, 36),
-          paddingLeft: em(40, 36),
+          paddingInlineStart: em(40, 36),
         },
         h1: {
           fontSize: em(64, 24),
@@ -801,29 +801,29 @@ let defaultModifiers = {
           marginBottom: em(40, 20),
           borderRadius: rem(8),
           paddingTop: em(24, 20),
-          paddingRight: em(32, 20),
+          paddingInlineEnd: em(32, 20),
           paddingBottom: em(24, 20),
-          paddingLeft: em(32, 20),
+          paddingInlineStart: em(32, 20),
         },
         ol: {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
-          paddingLeft: em(38, 24),
+          paddingInlineStart: em(38, 24),
         },
         ul: {
           marginTop: em(32, 24),
           marginBottom: em(32, 24),
-          paddingLeft: em(38, 24),
+          paddingInlineStart: em(38, 24),
         },
         li: {
           marginTop: em(12, 24),
           marginBottom: em(12, 24),
         },
         'ol > li': {
-          paddingLeft: em(10, 24),
+          paddingInlineStart: em(10, 24),
         },
         'ul > li': {
-          paddingLeft: em(10, 24),
+          paddingInlineStart: em(10, 24),
         },
         '> ul > li p': {
           marginTop: em(20, 24),
@@ -866,27 +866,27 @@ let defaultModifiers = {
           lineHeight: round(28 / 20),
         },
         'thead th': {
-          paddingRight: em(12, 20),
+          paddingInlineEnd: em(12, 20),
           paddingBottom: em(16, 20),
-          paddingLeft: em(12, 20),
+          paddingInlineStart: em(12, 20),
         },
         'thead th:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'thead th:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
         'tbody td, tfoot td': {
           paddingTop: em(16, 20),
-          paddingRight: em(12, 20),
+          paddingInlineEnd: em(12, 20),
           paddingBottom: em(16, 20),
-          paddingLeft: em(12, 20),
+          paddingInlineStart: em(12, 20),
         },
         'tbody td:first-child, tfoot td:first-child': {
-          paddingLeft: '0',
+          paddingInlineStart: '0',
         },
         'tbody td:last-child, tfoot td:last-child': {
-          paddingRight: '0',
+          paddingInlineEnd: '0',
         },
       },
       {
