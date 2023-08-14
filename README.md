@@ -1,9 +1,10 @@
 <p>
-  <a href="https://tailwindcss.com/docs/typography-plugin#gh-light-mode-only" target="_blank">
-    <img src="./.github/logo-light.svg" alt="Tailwind CSS Typography" width="450" height="70">
-  </a>
-  <a href="https://tailwindcss.com/docs/typography-plugin#gh-dark-mode-only" target="_blank">
-    <img src="./.github/logo-dark.svg" alt="Tailwind CSS Typography" width="450" height="70">
+  <a href="https://tailwindcss.com/docs/typography-plugin" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailwindlabs/tailwindcss-typography/HEAD/.github/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailwindlabs/tailwindcss-typography/HEAD/.github/logo-light.svg">
+      <img alt="Tailwind CSS Typography" src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss-typography/HEAD/.github/logo-light.svg" width="450" height="70" style="max-width: 100%;">
+    </picture>
   </a>
 </p>
 
