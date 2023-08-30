@@ -56,6 +56,14 @@ let defaultModifiers = {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
         },
+        picture: {
+          marginTop: em(24, 14),
+          marginBottom: em(24, 14),
+        },
+        'picture > img': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
         video: {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
@@ -233,6 +241,14 @@ let defaultModifiers = {
         img: {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
+        },
+        picture: {
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        'picture > img': {
+          marginTop: '0',
+          marginBottom: '0',
         },
         video: {
           marginTop: em(32, 16),
@@ -412,6 +428,14 @@ let defaultModifiers = {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
         },
+        picture: {
+          marginTop: em(32, 18),
+          marginBottom: em(32, 18),
+        },
+        'picture > img': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
         video: {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
@@ -590,6 +614,14 @@ let defaultModifiers = {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
         },
+        picture: {
+          marginTop: em(40, 20),
+          marginBottom: em(40, 20),
+        },
+        'picture > img': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
         video: {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
@@ -767,6 +799,14 @@ let defaultModifiers = {
         img: {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
+        },
+        picture: {
+          marginTop: em(48, 24),
+          marginBottom: em(48, 24),
+        },
+        'picture > img': {
+          marginTop: '0',
+          marginBottom: '0',
         },
         video: {
           marginTop: em(48, 24),
@@ -1350,6 +1390,9 @@ module.exports = {
           color: 'inherit',
         },
         img: {}, // Required to maintain correct order when merging
+        picture: {
+          display: 'block',
+        },
         code: {
           color: 'var(--tw-prose-code)',
           fontWeight: '600',
