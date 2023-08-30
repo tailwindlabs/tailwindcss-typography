@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Fixed
+
+- Fix space between `<figcaption>` and `<pre>` ([#313](https://github.com/tailwindlabs/tailwindcss-typography/pull/313))
 
 ## [0.5.9] - 2023-01-10
 

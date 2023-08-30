@@ -60,19 +60,6 @@ let defaultModifiers = {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
         },
-        figure: {
-          marginTop: em(24, 14),
-          marginBottom: em(24, 14),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
-        figcaption: {
-          fontSize: em(12, 14),
-          lineHeight: round(16 / 12),
-          marginTop: em(8, 12),
-        },
         code: {
           fontSize: em(12, 14),
         },
@@ -176,6 +163,19 @@ let defaultModifiers = {
         'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
+        figure: {
+          marginTop: em(24, 14),
+          marginBottom: em(24, 14),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        figcaption: {
+          fontSize: em(12, 14),
+          lineHeight: round(16 / 12),
+          marginTop: em(8, 12),
+        },
       },
       {
         '> :first-child': {
@@ -237,19 +237,6 @@ let defaultModifiers = {
         video: {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
-        },
-        figure: {
-          marginTop: em(32, 16),
-          marginBottom: em(32, 16),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
-        figcaption: {
-          fontSize: em(14, 16),
-          lineHeight: round(20 / 14),
-          marginTop: em(12, 14),
         },
         code: {
           fontSize: em(14, 16),
@@ -354,6 +341,19 @@ let defaultModifiers = {
         'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
+        figure: {
+          marginTop: em(32, 16),
+          marginBottom: em(32, 16),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        figcaption: {
+          fontSize: em(14, 16),
+          lineHeight: round(20 / 14),
+          marginTop: em(12, 14),
+        },
       },
       {
         '> :first-child': {
@@ -415,19 +415,6 @@ let defaultModifiers = {
         video: {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
-        },
-        figure: {
-          marginTop: em(32, 18),
-          marginBottom: em(32, 18),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
-        figcaption: {
-          fontSize: em(16, 18),
-          lineHeight: round(24 / 16),
-          marginTop: em(16, 16),
         },
         code: {
           fontSize: em(16, 18),
@@ -532,6 +519,19 @@ let defaultModifiers = {
         'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
+        figure: {
+          marginTop: em(32, 18),
+          marginBottom: em(32, 18),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        figcaption: {
+          fontSize: em(16, 18),
+          lineHeight: round(24 / 16),
+          marginTop: em(16, 16),
+        },
       },
       {
         '> :first-child': {
@@ -593,19 +593,6 @@ let defaultModifiers = {
         video: {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
-        },
-        figure: {
-          marginTop: em(40, 20),
-          marginBottom: em(40, 20),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
-        figcaption: {
-          fontSize: em(18, 20),
-          lineHeight: round(28 / 18),
-          marginTop: em(18, 18),
         },
         code: {
           fontSize: em(18, 20),
@@ -710,6 +697,19 @@ let defaultModifiers = {
         'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
         },
+        figure: {
+          marginTop: em(40, 20),
+          marginBottom: em(40, 20),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        figcaption: {
+          fontSize: em(18, 20),
+          lineHeight: round(28 / 18),
+          marginTop: em(18, 18),
+        },
       },
       {
         '> :first-child': {
@@ -771,19 +771,6 @@ let defaultModifiers = {
         video: {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
-        },
-        figure: {
-          marginTop: em(48, 24),
-          marginBottom: em(48, 24),
-        },
-        'figure > *': {
-          marginTop: '0',
-          marginBottom: '0',
-        },
-        figcaption: {
-          fontSize: em(20, 24),
-          lineHeight: round(32 / 20),
-          marginTop: em(20, 20),
         },
         code: {
           fontSize: em(20, 24),
@@ -887,6 +874,19 @@ let defaultModifiers = {
         },
         'tbody td:last-child, tfoot td:last-child': {
           paddingRight: '0',
+        },
+        figure: {
+          marginTop: em(48, 24),
+          marginBottom: em(48, 24),
+        },
+        'figure > *': {
+          marginTop: '0',
+          marginBottom: '0',
+        },
+        figcaption: {
+          fontSize: em(20, 24),
+          lineHeight: round(32 / 20),
+          marginTop: em(20, 20),
         },
       },
       {
@@ -1237,8 +1237,7 @@ module.exports = {
       {
         color: 'var(--tw-prose-body)',
         maxWidth: '65ch',
-        // TODO: Figure out how to not need this, it's a merging issue
-        p: {},
+        p: {}, // Required to maintain correct order when merging
         '[class~="lead"]': {
           color: 'var(--tw-prose-lead)',
         },
@@ -1350,12 +1349,7 @@ module.exports = {
           fontWeight: '700',
           color: 'inherit',
         },
-        // TODO: Figure out how to not need these, it's a merging issue
-        img: {},
-        'figure > *': {},
-        figcaption: {
-          color: 'var(--tw-prose-captions)',
-        },
+        img: {}, // Required to maintain correct order when merging
         code: {
           color: 'var(--tw-prose-code)',
           fontWeight: '600',
@@ -1442,6 +1436,10 @@ module.exports = {
         },
         'tfoot td': {
           verticalAlign: 'top',
+        },
+        'figure > *': {}, // Required to maintain correct order when merging
+        figcaption: {
+          color: 'var(--tw-prose-captions)',
         },
       },
       defaultModifiers.gray.css,
