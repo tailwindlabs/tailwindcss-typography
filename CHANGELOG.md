@@ -169,7 +169,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.7...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.9...HEAD
+[0.5.9]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.8...v0.5.9
+[0.5.8]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.7...v0.5.8
 [0.5.7]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.6...v0.5.7
 [0.5.6]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.5...v0.5.6
 [0.5.5]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.4...v0.5.5
