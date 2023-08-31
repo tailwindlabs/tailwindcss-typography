@@ -1457,12 +1457,12 @@ module.exports = {
           display: 'block',
         },
         kbd: {
+          fontWeight: '500',
+          fontFamily: 'monospace',
           color: 'var(--tw-prose-kbd)',
           backgroundColor: 'var(--tw-prose-kbd-bg)',
           borderColor: 'var(--tw-prose-kbd-borders)',
           borderWidth: '1px',
-          fontFamily: 'monospace',
-          fontWeight: '500',
         },
         code: {
           color: 'var(--tw-prose-code)',
