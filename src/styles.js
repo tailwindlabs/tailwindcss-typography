@@ -71,6 +71,8 @@ let defaultModifiers = {
         kbd: {
           fontSize: em(12, 14),
           borderRadius: rem(3),
+          paddingRight: em(2, 16),
+          paddingLeft: em(2, 16),
         },
         code: {
           fontSize: em(12, 14),
@@ -261,6 +263,8 @@ let defaultModifiers = {
         kbd: {
           fontSize: em(14, 16),
           borderRadius: rem(4),
+          paddingRight: em(2, 16),
+          paddingLeft: em(2, 16),
         },
         code: {
           fontSize: em(14, 16),
@@ -451,6 +455,8 @@ let defaultModifiers = {
         kbd: {
           fontSize: em(16, 18),
           borderRadius: rem(4),
+          paddingRight: em(3, 18),
+          paddingLeft: em(3, 18),
         },
         code: {
           fontSize: em(16, 18),
@@ -641,6 +647,8 @@ let defaultModifiers = {
         kbd: {
           fontSize: em(18, 20),
           borderRadius: rem(5),
+          paddingRight: em(3, 20),
+          paddingLeft: em(3, 20),
         },
         code: {
           fontSize: em(18, 20),
@@ -831,6 +839,8 @@ let defaultModifiers = {
         kbd: {
           fontSize: em(20, 24),
           borderRadius: rem(5),
+          paddingRight: em(4, 24),
+          paddingLeft: em(4, 24),
         },
         code: {
           fontSize: em(20, 24),
@@ -1447,8 +1457,6 @@ module.exports = {
           display: 'block',
         },
         kbd: {
-          paddingLeft: rem(4),
-          paddingRight: rem(4),
           color: 'var(--tw-prose-kbd)',
           backgroundColor: 'var(--tw-prose-kbd-bg)',
           borderColor: 'var(--tw-prose-kbd-borders)',
