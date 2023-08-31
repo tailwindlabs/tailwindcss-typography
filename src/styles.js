@@ -77,10 +77,11 @@ let defaultModifiers = {
           marginBottom: em(24, 14),
         },
         kbd: {
+          fontSize: em(12, 14),
           borderRadius: rem(5),
-          paddingTop: em(3.75, 14),
+          paddingTop: em(2, 14),
           paddingRight: em(5, 14),
-          paddingBottom: em(3.75, 14),
+          paddingBottom: em(2, 14),
           paddingLeft: em(5, 14),
         },
         code: {
@@ -270,10 +271,11 @@ let defaultModifiers = {
           marginBottom: em(32, 16),
         },
         kbd: {
+          fontSize: em(14, 16),
           borderRadius: rem(5),
-          paddingTop: em(5.25, 16),
+          paddingTop: em(3, 16),
           paddingRight: em(6, 16),
-          paddingBottom: em(5.25, 16),
+          paddingBottom: em(3, 16),
           paddingLeft: em(6, 16),
         },
         code: {
@@ -463,10 +465,11 @@ let defaultModifiers = {
           marginBottom: em(32, 18),
         },
         kbd: {
+          fontSize: em(16, 18),
           borderRadius: rem(5),
-          paddingTop: em(5.25, 18),
+          paddingTop: em(4, 18),
           paddingRight: em(8, 18),
-          paddingBottom: em(5.25, 18),
+          paddingBottom: em(4, 18),
           paddingLeft: em(8, 18),
         },
         code: {
@@ -656,10 +659,11 @@ let defaultModifiers = {
           marginBottom: em(40, 20),
         },
         kbd: {
+          fontSize: em(18, 20),
           borderRadius: rem(5),
-          paddingTop: em(6.25, 20),
+          paddingTop: em(5, 20),
           paddingRight: em(8, 20),
-          paddingBottom: em(6.25, 20),
+          paddingBottom: em(5, 20),
           paddingLeft: em(8, 20),
         },
         code: {
@@ -849,6 +853,7 @@ let defaultModifiers = {
           marginBottom: em(48, 24),
         },
         kbd: {
+          fontSize: em(20, 24),
           borderRadius: rem(6),
           paddingTop: em(6, 24),
           paddingRight: em(8, 24),
