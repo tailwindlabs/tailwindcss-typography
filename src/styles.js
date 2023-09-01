@@ -7,6 +7,14 @@ const round = (num) =>
     .replace(/\.0$/, '')
 const rem = (px) => `${round(px / 16)}rem`
 const em = (px, base) => `${round(px / base)}em`
+const hexToRgb = (hex) => {
+  hex = hex.replace('#', '')
+  hex = hex.length === 3 ? hex.replace(/./g, '$&$&') : hex
+  const r = parseInt(hex.substring(0, 2), 16)
+  const g = parseInt(hex.substring(2, 4), 16)
+  const b = parseInt(hex.substring(4, 6), 16)
+  return `${r} ${g} ${b}`
+}
 
 let defaultModifiers = {
   sm: {
@@ -67,6 +75,14 @@ let defaultModifiers = {
         video: {
           marginTop: em(24, 14),
           marginBottom: em(24, 14),
+        },
+        kbd: {
+          fontSize: em(12, 14),
+          borderRadius: rem(5),
+          paddingTop: em(2, 14),
+          paddingRight: em(5, 14),
+          paddingBottom: em(2, 14),
+          paddingLeft: em(5, 14),
         },
         code: {
           fontSize: em(12, 14),
@@ -254,6 +270,14 @@ let defaultModifiers = {
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
+        kbd: {
+          fontSize: em(14, 16),
+          borderRadius: rem(5),
+          paddingTop: em(3, 16),
+          paddingRight: em(6, 16),
+          paddingBottom: em(3, 16),
+          paddingLeft: em(6, 16),
+        },
         code: {
           fontSize: em(14, 16),
         },
@@ -439,6 +463,14 @@ let defaultModifiers = {
         video: {
           marginTop: em(32, 18),
           marginBottom: em(32, 18),
+        },
+        kbd: {
+          fontSize: em(16, 18),
+          borderRadius: rem(5),
+          paddingTop: em(4, 18),
+          paddingRight: em(8, 18),
+          paddingBottom: em(4, 18),
+          paddingLeft: em(8, 18),
         },
         code: {
           fontSize: em(16, 18),
@@ -626,6 +658,14 @@ let defaultModifiers = {
           marginTop: em(40, 20),
           marginBottom: em(40, 20),
         },
+        kbd: {
+          fontSize: em(18, 20),
+          borderRadius: rem(5),
+          paddingTop: em(5, 20),
+          paddingRight: em(8, 20),
+          paddingBottom: em(5, 20),
+          paddingLeft: em(8, 20),
+        },
         code: {
           fontSize: em(18, 20),
         },
@@ -812,6 +852,14 @@ let defaultModifiers = {
           marginTop: em(48, 24),
           marginBottom: em(48, 24),
         },
+        kbd: {
+          fontSize: em(20, 24),
+          borderRadius: rem(6),
+          paddingTop: em(6, 24),
+          paddingRight: em(8, 24),
+          paddingBottom: em(6, 24),
+          paddingLeft: em(8, 24),
+        },
         code: {
           fontSize: em(20, 24),
         },
@@ -955,6 +1003,8 @@ let defaultModifiers = {
       '--tw-prose-quotes': colors.slate[900],
       '--tw-prose-quote-borders': colors.slate[200],
       '--tw-prose-captions': colors.slate[500],
+      '--tw-prose-kbd': colors.slate[900],
+      '--tw-prose-kbd-shadows': hexToRgb(colors.slate[900]),
       '--tw-prose-code': colors.slate[900],
       '--tw-prose-pre-code': colors.slate[200],
       '--tw-prose-pre-bg': colors.slate[800],
@@ -971,6 +1021,8 @@ let defaultModifiers = {
       '--tw-prose-invert-quotes': colors.slate[100],
       '--tw-prose-invert-quote-borders': colors.slate[700],
       '--tw-prose-invert-captions': colors.slate[400],
+      '--tw-prose-invert-kbd': colors.white,
+      '--tw-prose-invert-kbd-shadows': hexToRgb(colors.white),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.slate[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -992,6 +1044,8 @@ let defaultModifiers = {
       '--tw-prose-quotes': colors.gray[900],
       '--tw-prose-quote-borders': colors.gray[200],
       '--tw-prose-captions': colors.gray[500],
+      '--tw-prose-kbd': colors.gray[900],
+      '--tw-prose-kbd-shadows': hexToRgb(colors.gray[900]),
       '--tw-prose-code': colors.gray[900],
       '--tw-prose-pre-code': colors.gray[200],
       '--tw-prose-pre-bg': colors.gray[800],
@@ -1008,6 +1062,8 @@ let defaultModifiers = {
       '--tw-prose-invert-quotes': colors.gray[100],
       '--tw-prose-invert-quote-borders': colors.gray[700],
       '--tw-prose-invert-captions': colors.gray[400],
+      '--tw-prose-invert-kbd': colors.white,
+      '--tw-prose-invert-kbd-shadows': hexToRgb(colors.white),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.gray[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -1029,6 +1085,8 @@ let defaultModifiers = {
       '--tw-prose-quotes': colors.zinc[900],
       '--tw-prose-quote-borders': colors.zinc[200],
       '--tw-prose-captions': colors.zinc[500],
+      '--tw-prose-kbd': colors.zinc[900],
+      '--tw-prose-kbd-shadows': hexToRgb(colors.zinc[900]),
       '--tw-prose-code': colors.zinc[900],
       '--tw-prose-pre-code': colors.zinc[200],
       '--tw-prose-pre-bg': colors.zinc[800],
@@ -1045,6 +1103,8 @@ let defaultModifiers = {
       '--tw-prose-invert-quotes': colors.zinc[100],
       '--tw-prose-invert-quote-borders': colors.zinc[700],
       '--tw-prose-invert-captions': colors.zinc[400],
+      '--tw-prose-invert-kbd': colors.white,
+      '--tw-prose-invert-kbd-shadows': hexToRgb(colors.white),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.zinc[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -1066,6 +1126,8 @@ let defaultModifiers = {
       '--tw-prose-quotes': colors.neutral[900],
       '--tw-prose-quote-borders': colors.neutral[200],
       '--tw-prose-captions': colors.neutral[500],
+      '--tw-prose-kbd': colors.neutral[900],
+      '--tw-prose-kbd-shadows': hexToRgb(colors.neutral[900]),
       '--tw-prose-code': colors.neutral[900],
       '--tw-prose-pre-code': colors.neutral[200],
       '--tw-prose-pre-bg': colors.neutral[800],
@@ -1082,6 +1144,8 @@ let defaultModifiers = {
       '--tw-prose-invert-quotes': colors.neutral[100],
       '--tw-prose-invert-quote-borders': colors.neutral[700],
       '--tw-prose-invert-captions': colors.neutral[400],
+      '--tw-prose-invert-kbd': colors.white,
+      '--tw-prose-invert-kbd-shadows': hexToRgb(colors.white),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.neutral[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -1103,6 +1167,8 @@ let defaultModifiers = {
       '--tw-prose-quotes': colors.stone[900],
       '--tw-prose-quote-borders': colors.stone[200],
       '--tw-prose-captions': colors.stone[500],
+      '--tw-prose-kbd': colors.stone[900],
+      '--tw-prose-kbd-shadows': hexToRgb(colors.stone[900]),
       '--tw-prose-code': colors.stone[900],
       '--tw-prose-pre-code': colors.stone[200],
       '--tw-prose-pre-bg': colors.stone[800],
@@ -1119,6 +1185,8 @@ let defaultModifiers = {
       '--tw-prose-invert-quotes': colors.stone[100],
       '--tw-prose-invert-quote-borders': colors.stone[700],
       '--tw-prose-invert-captions': colors.stone[400],
+      '--tw-prose-invert-kbd': colors.white,
+      '--tw-prose-invert-kbd-shadows': hexToRgb(colors.white),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.stone[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -1262,6 +1330,8 @@ let defaultModifiers = {
       '--tw-prose-quotes': 'var(--tw-prose-invert-quotes)',
       '--tw-prose-quote-borders': 'var(--tw-prose-invert-quote-borders)',
       '--tw-prose-captions': 'var(--tw-prose-invert-captions)',
+      '--tw-prose-kbd': 'var(--tw-prose-invert-kbd)',
+      '--tw-prose-kbd-shadows': 'var(--tw-prose-invert-kbd-shadows)',
       '--tw-prose-code': 'var(--tw-prose-invert-code)',
       '--tw-prose-pre-code': 'var(--tw-prose-invert-pre-code)',
       '--tw-prose-pre-bg': 'var(--tw-prose-invert-pre-bg)',
@@ -1392,6 +1462,13 @@ module.exports = {
         img: {}, // Required to maintain correct order when merging
         picture: {
           display: 'block',
+        },
+        kbd: {
+          fontWeight: '500',
+          fontFamily: 'inherit',
+          color: 'var(--tw-prose-kbd)',
+          boxShadow:
+            '0 0 0 1px rgb(var(--tw-prose-kbd-shadows) / 10%), 0 3px 0 rgb(var(--tw-prose-kbd-shadows) / 10%)',
         },
         code: {
           color: 'var(--tw-prose-code)',
