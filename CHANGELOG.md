@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove typography styles from `not-prose` elements in addition to their children ([#301](https://github.com/tailwindlabs/tailwindcss-typography/pull/301))
 - Add `<picture>` styles ([#314](https://github.com/tailwindlabs/tailwindcss-typography/pull/314))
 - Fix `prose-invert` when used with colors in light mode ([#315](https://github.com/tailwindlabs/tailwindcss-typography/pull/315))
+- Add `<kbd>` styles ([#317](https://github.com/tailwindlabs/tailwindcss-typography/pull/317))
 
 ## [0.5.9] - 2023-01-10
 
