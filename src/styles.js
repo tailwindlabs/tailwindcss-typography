@@ -144,6 +144,17 @@ let defaultModifiers = {
           marginTop: em(8, 14),
           marginBottom: em(8, 14),
         },
+        dl: {
+          marginTop: em(16, 14),
+          marginBottom: em(16, 14),
+        },
+        dt: {
+          marginTop: em(16, 14),
+        },
+        dd: {
+          marginTop: em(4, 14),
+          paddingLeft: em(22, 14),
+        },
         hr: {
           marginTop: em(40, 14),
           marginBottom: em(40, 14),
@@ -337,6 +348,17 @@ let defaultModifiers = {
         'ul ul, ul ol, ol ul, ol ol': {
           marginTop: em(12, 16),
           marginBottom: em(12, 16),
+        },
+        dl: {
+          marginTop: em(20, 16),
+          marginBottom: em(20, 16),
+        },
+        dt: {
+          marginTop: em(20, 16),
+        },
+        dd: {
+          marginTop: em(8, 16),
+          paddingLeft: em(26, 16),
         },
         hr: {
           marginTop: em(48, 16),
@@ -532,6 +554,17 @@ let defaultModifiers = {
           marginTop: em(16, 18),
           marginBottom: em(16, 18),
         },
+        dl: {
+          marginTop: em(24, 18),
+          marginBottom: em(24, 18),
+        },
+        dt: {
+          marginTop: em(24, 18),
+        },
+        dd: {
+          marginTop: em(12, 18),
+          paddingLeft: em(28, 18),
+        },
         hr: {
           marginTop: em(56, 18),
           marginBottom: em(56, 18),
@@ -726,6 +759,17 @@ let defaultModifiers = {
           marginTop: em(16, 20),
           marginBottom: em(16, 20),
         },
+        dl: {
+          marginTop: em(24, 20),
+          marginBottom: em(24, 20),
+        },
+        dt: {
+          marginTop: em(24, 20),
+        },
+        dd: {
+          marginTop: em(12, 20),
+          paddingLeft: em(32, 20),
+        },
         hr: {
           marginTop: em(56, 20),
           marginBottom: em(56, 20),
@@ -919,6 +963,17 @@ let defaultModifiers = {
         'ul ul, ul ol, ol ul, ol ol': {
           marginTop: em(16, 24),
           marginBottom: em(16, 24),
+        },
+        dl: {
+          marginTop: em(32, 24),
+          marginBottom: em(32, 24),
+        },
+        dt: {
+          marginTop: em(32, 24),
+        },
+        dd: {
+          marginTop: em(12, 24),
+          paddingLeft: em(38, 24),
         },
         hr: {
           marginTop: em(72, 24),
@@ -1408,6 +1463,10 @@ module.exports = {
         },
         'ul > li::marker': {
           color: 'var(--tw-prose-bullets)',
+        },
+        dt: {
+          color: 'var(--tw-prose-headings)',
+          fontWeight: '600',
         },
         hr: {
           borderColor: 'var(--tw-prose-hr)',
