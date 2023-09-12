@@ -1402,7 +1402,9 @@ module.exports = {
       {
         color: 'var(--tw-prose-body)',
         maxWidth: '65ch',
-        p: {}, // Required to maintain correct order when merging
+        p: {
+          'text-wrap': 'pretty',
+        },
         '[class~="lead"]': {
           color: 'var(--tw-prose-lead)',
         },
@@ -1479,6 +1481,7 @@ module.exports = {
           borderLeftWidth: '0.25rem',
           borderLeftColor: 'var(--tw-prose-quote-borders)',
           quotes: '"\\201C""\\201D""\\2018""\\2019"',
+          'text-wrap': 'pretty',
         },
         'blockquote p:first-of-type::before': {
           content: 'open-quote',
@@ -1489,6 +1492,7 @@ module.exports = {
         h1: {
           color: 'var(--tw-prose-headings)',
           fontWeight: '800',
+          'text-wrap': 'pretty',
         },
         'h1 strong': {
           fontWeight: '900',
@@ -1497,6 +1501,7 @@ module.exports = {
         h2: {
           color: 'var(--tw-prose-headings)',
           fontWeight: '700',
+          'text-wrap': 'pretty',
         },
         'h2 strong': {
           fontWeight: '800',
@@ -1505,6 +1510,7 @@ module.exports = {
         h3: {
           color: 'var(--tw-prose-headings)',
           fontWeight: '600',
+          'text-wrap': 'pretty',
         },
         'h3 strong': {
           fontWeight: '700',
@@ -1513,6 +1519,7 @@ module.exports = {
         h4: {
           color: 'var(--tw-prose-headings)',
           fontWeight: '600',
+          'text-wrap': 'pretty',
         },
         'h4 strong': {
           fontWeight: '700',
@@ -1619,6 +1626,9 @@ module.exports = {
         'figure > *': {}, // Required to maintain correct order when merging
         figcaption: {
           color: 'var(--tw-prose-captions)',
+        },
+        li: {
+          'text-wrap': 'pretty',
         },
       },
       defaultModifiers.gray.css,
