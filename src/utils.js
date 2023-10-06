@@ -65,7 +65,6 @@ module.exports = {
       'paddingRight': 'paddingInlineEnd',
       'marginLeft': 'marginInlineStart',
       'marginRight': 'marginInlineEnd',
-      'left': 'right',
       // Add more mappings as needed
     };
 
