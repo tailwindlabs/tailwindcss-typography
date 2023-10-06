@@ -59,4 +59,30 @@ module.exports = {
 
     return [null, selector]
   },
+  convertRtlProperties(v) {
+    const ltrToRtlMapping = {
+      'paddingLeft': 'paddingInlineStart',
+      'paddingRight': 'paddingInlineEnd',
+      'marginLeft': 'marginInlineStart',
+      'marginRight': 'marginInlineEnd',
+      'left': 'right',
+      // Add more mappings as needed
+    };
+
+    if ((typeof v === 'object' && v !== null)) {
+      v = Object.entries(v).reduce((result, [key, value]) => {
+        // Check if there is a mapping for the current property
+        if (ltrToRtlMapping[key]) {
+          // If there is a mapping, use the mapped property name
+          result[ltrToRtlMapping[key]] = value;
+        } else {
+          // If there is no mapping, use the original property name
+          result[key] = value;
+        }
+        return result;
+      }, {});
+    }
+
+    return v
+  }
 }

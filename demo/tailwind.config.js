@@ -29,5 +29,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('../src/index.js')],
+  plugins: [require('../src/index.js')({rtl:true})],
 }

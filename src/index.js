@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin')
 const merge = require('lodash.merge')
 const castArray = require('lodash.castarray')
 const styles = require('./styles')
-const { commonTrailingPseudos } = require('./utils')
+const { commonTrailingPseudos, convertRtlProperties } = require('./utils')
 
 const computed = {
   // Reserved for future "magic properties", for example:
@@ -29,8 +29,12 @@ function isObject(value) {
   return typeof value === 'object' && value !== null
 }
 
-function configToCss(config = {}, { target, className, modifier, prefix }) {
+function configToCss(config = {}, { target, className, modifier, prefix, rtl }) {
   function updateSelector(k, v) {
+    if (rtl) {
+      v = convertRtlProperties(v)
+    } 
+
     if (target === 'legacy') {
       return [k, v]
     }
@@ -69,11 +73,11 @@ function configToCss(config = {}, { target, className, modifier, prefix }) {
 }
 
 module.exports = plugin.withOptions(
-  ({ className = 'prose', target = 'modern' } = {}) => {
+  ({ className = 'prose', target = 'modern', rtl = false } = {}) => {
     return function ({ addVariant, addComponents, theme, prefix }) {
       let modifiers = theme('typography')
 
-      let options = { className, prefix }
+      let options = { className, prefix , rtl}
 
       for (let [name, ...selectors] of [
         ['headings', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'th'],
@@ -125,6 +129,7 @@ module.exports = plugin.withOptions(
               className,
               modifier,
               prefix,
+              rtl
             }
           ),
         }))
