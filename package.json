@@ -28,7 +28,7 @@
     "start": "next start demo"
   },
   "peerDependencies": {
-    "tailwindcss": ">=3.0.0 || insiders"
+    "tailwindcss": ">=3.0.0"
   },
   "devDependencies": {
     "@mdx-js/loader": "^1.0.19",
