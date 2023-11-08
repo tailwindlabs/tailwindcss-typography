@@ -92,6 +92,7 @@ module.exports = plugin.withOptions(
         ['em'],
         ['code'],
         ['pre'],
+        ['mark'],
         ['ol'],
         ['ul'],
         ['li'],

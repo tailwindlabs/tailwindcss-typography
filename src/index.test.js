@@ -697,6 +697,7 @@ test('element variants', async () => {
             prose-em:italic
             prose-code:font-mono
             prose-pre:font-mono
+            prose-mark:font-mono
             prose-ol:pl-6
             prose-ul:pl-8
             prose-li:my-4
@@ -817,6 +818,11 @@ test('element variants', async () => {
           font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
             'Courier New', monospace;
         }
+        .prose-mark\:font-mono
+          :is(:where(mark):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+            'Courier New', monospace;
+        }
         .prose-ol\:pl-6 :is(:where(ol):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           padding-left: 1.5rem;
         }
@@ -891,6 +897,7 @@ test('element variants with custom class name', async () => {
             markdown-em:italic
             markdown-code:font-mono
             markdown-pre:font-mono
+            markdown-mark:font-mono
             markdown-ol:pl-6
             markdown-ul:pl-8
             markdown-li:my-4
@@ -1010,6 +1017,11 @@ test('element variants with custom class name', async () => {
         }
         .markdown-pre\:font-mono
           :is(:where(pre):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+            'Courier New', monospace;
+        }
+        .markdown-mark\:font-mono
+          :is(:where(mark):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
           font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
             'Courier New', monospace;
         }
