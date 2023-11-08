@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Add `<mark>` styles
+- Add `<mark>` styles ([#327](https://github.com/tailwindlabs/tailwindcss-typography/pull/327))
 
 ## [0.5.10] - 2023-09-05
 
