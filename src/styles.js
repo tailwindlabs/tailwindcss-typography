@@ -1533,12 +1533,6 @@ module.exports = {
           color: 'var(--tw-prose-code)',
           fontWeight: '600',
         },
-        'code::before': {
-          content: '"`"',
-        },
-        'code::after': {
-          content: '"`"',
-        },
         'a code': {
           color: 'inherit',
         },
