@@ -104,6 +104,7 @@ module.exports = plugin.withOptions(
         ['video'],
         ['hr'],
         ['lead', '[class~="lead"]'],
+        ['kbd'],
       ]) {
         selectors = selectors.length === 0 ? [name] : selectors
 

@@ -708,6 +708,7 @@ test('element variants', async () => {
             prose-img:rounded-lg
             prose-video:my-12
             prose-hr:border-t-2
+            prose-kbd:border-b-2
         "
         ></div>`,
       },
@@ -863,6 +864,10 @@ test('element variants', async () => {
           :is(:where([class~='lead']):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           font-style: italic;
         }
+        .prose-kbd\:border-b-2
+          :is(:where(kbd):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          border-bottom-width: 2px;
+        }
       `
     )
   })
@@ -902,6 +907,7 @@ test('element variants with custom class name', async () => {
             markdown-img:rounded-lg
             markdown-video:my-12
             markdown-hr:border-t-2
+            markdown-kbd:border-b-2
         "
         ></div>`,
       },
@@ -1062,6 +1068,10 @@ test('element variants with custom class name', async () => {
           :is(:where([class~='lead']):not(:where([class~='not-markdown'], [class~='not-markdown']
                 *))) {
           font-style: italic;
+        }
+        .markdown-kbd\:border-b-2
+          :is(:where(kbd):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
+          border-bottom-width: 2px;
         }
       `
     )

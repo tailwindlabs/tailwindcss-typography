@@ -181,6 +181,7 @@ Here's a complete list of available element modifiers:
 | `prose-img:{utility}`        | `img`                        |
 | `prose-video:{utility}`      | `video`                      |
 | `prose-hr:{utility}`         | `hr`                         |
+| `prose-kbd:{utility}`        | `kbd`                        |
 
 When stacking these modifiers with other modifiers like `hover`, you most likely want the other modifier to come first:
 
