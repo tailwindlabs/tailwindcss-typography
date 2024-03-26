@@ -25,7 +25,9 @@
     "dev": "next dev demo",
     "build": "next build demo",
     "export": "next export demo",
-    "start": "next start demo"
+    "start": "next start demo",
+    "release-channel": "node ./scripts/release-channel.js",
+    "release-notes": "node ./scripts/release-notes.js"
   },
   "peerDependencies": {
     "tailwindcss": ">=3.0.0 || insiders"
