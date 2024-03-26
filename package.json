@@ -9,7 +9,7 @@
     "src/*.d.ts",
     "dist/"
   ],
-  "repository": "https://github.com/tailwindcss/typography",
+  "repository": "https://github.com/tailwindlabs/tailwindcss-typography",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
