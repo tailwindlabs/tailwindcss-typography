@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+- Fix space between `<figcaption>` and `<video>` ([#339](https://github.com/tailwindlabs/tailwindcss-typography/pull/339))
 
 ## [0.5.10] - 2023-09-05
 
