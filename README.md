@@ -168,6 +168,7 @@ Here's a complete list of available element modifiers:
 | `prose-figcaption:{utility}` | `figcaption`                 |
 | `prose-strong:{utility}`     | `strong`                     |
 | `prose-em:{utility}`         | `em`                         |
+| `prose-kbd:{utility}`        | `kbd`                        |
 | `prose-code:{utility}`       | `code`                       |
 | `prose-pre:{utility}`        | `pre`                        |
 | `prose-ol:{utility}`         | `ol`                         |
