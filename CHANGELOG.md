@@ -7,7 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.5.11] - 2024-03-26
+
+### Added
+
 - Add `prose-kbd` modifier ([#340](https://github.com/tailwindlabs/tailwindcss-typography/pull/340))
+
+### Fixed
+
 - Fix space between `<figcaption>` and `<video>` ([#339](https://github.com/tailwindlabs/tailwindcss-typography/pull/339))
 
 ## [0.5.10] - 2023-09-05
@@ -176,7 +185,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.10...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.11...HEAD
+[0.5.11]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.10...v0.5.11
 [0.5.10]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.9...v0.5.10
 [0.5.9]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.8...v0.5.9
 [0.5.8]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.7...v0.5.8
