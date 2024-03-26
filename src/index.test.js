@@ -695,6 +695,7 @@ test('element variants', async () => {
             prose-figcaption:opacity-75
             prose-strong:font-medium
             prose-em:italic
+            prose-kbd:border-b-2
             prose-code:font-mono
             prose-pre:font-mono
             prose-ol:pl-6
@@ -807,6 +808,10 @@ test('element variants', async () => {
           :is(:where(em):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           font-style: italic;
         }
+        .prose-kbd\:border-b-2
+          :is(:where(kbd):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          border-bottom-width: 2px;
+        }
         .prose-code\:font-mono
           :is(:where(code):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
@@ -889,6 +894,7 @@ test('element variants with custom class name', async () => {
             markdown-figcaption:opacity-75
             markdown-strong:font-medium
             markdown-em:italic
+            markdown-kbd:border-b-2
             markdown-code:font-mono
             markdown-pre:font-mono
             markdown-ol:pl-6
@@ -1002,6 +1008,10 @@ test('element variants with custom class name', async () => {
         .markdown-em\:italic
           :is(:where(em):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
           font-style: italic;
+        }
+        .markdown-kbd\:border-b-2
+          :is(:where(kbd):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
+          border-bottom-width: 2px;
         }
         .markdown-code\:font-mono
           :is(:where(code):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
