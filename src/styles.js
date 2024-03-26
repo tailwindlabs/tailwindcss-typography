@@ -1522,6 +1522,7 @@ module.exports = {
         picture: {
           display: 'block',
         },
+        video: {}, // Required to maintain correct order when merging
         kbd: {
           fontWeight: '500',
           fontFamily: 'inherit',
