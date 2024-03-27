@@ -1587,7 +1587,7 @@ module.exports = {
         table: {
           width: '100%',
           tableLayout: 'auto',
-          textAlign: 'left',
+          textAlign: 'start',
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
