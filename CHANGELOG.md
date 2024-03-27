@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.5.12] - 2024-03-27
+
 ### Added
 
 - Use logical properties for better RTL support ([#323](https://github.com/tailwindlabs/tailwindcss-typography/pull/323))
@@ -187,7 +191,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.11...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.12...HEAD
+[0.5.12]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.11...v0.5.12
 [0.5.11]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.10...v0.5.11
 [0.5.10]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.9...v0.5.10
 [0.5.9]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.8...v0.5.9
