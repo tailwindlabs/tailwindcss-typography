@@ -91,6 +91,7 @@ module.exports = plugin.withOptions(
         ['strong'],
         ['em'],
         ['kbd'],
+        ['inline-code', ':not(pre)>code'],
         ['code'],
         ['pre'],
         ['ol'],
