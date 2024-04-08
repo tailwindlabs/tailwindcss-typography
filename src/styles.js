@@ -225,7 +225,7 @@ let defaultModifiers = {
   base: {
     css: [
       {
-        fontSize: rem(16),
+        fontSize: rem(8),
         lineHeight: round(28 / 16),
         p: {
           marginTop: em(20, 16),
