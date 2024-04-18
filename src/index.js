@@ -132,9 +132,10 @@ module.exports = plugin.withOptions(
       )
     }
   },
-  () => {
+  (args) => {
+    const className = args?.className || 'prose'
     return {
-      theme: { typography: styles },
+      theme: { typography: styles({ className }) },
     }
   }
 )
