@@ -128,16 +128,16 @@ let defaultModifiers = {
           marginTop: em(8, 14),
           marginBottom: em(8, 14),
         },
-        '> ul > li > *:first-child': {
+        '> ul > li > p:first-child': {
           marginTop: em(16, 14),
         },
-        '> ul > li > *:last-child': {
+        '> ul > li > p:last-child': {
           marginBottom: em(16, 14),
         },
-        '> ol > li > *:first-child': {
+        '> ol > li > p:first-child': {
           marginTop: em(16, 14),
         },
-        '> ol > li > *:last-child': {
+        '> ol > li > p:last-child': {
           marginBottom: em(16, 14),
         },
         'ul ul, ul ol, ol ul, ol ol': {
@@ -333,16 +333,16 @@ let defaultModifiers = {
           marginTop: em(12, 16),
           marginBottom: em(12, 16),
         },
-        '> ul > li > *:first-child': {
+        '> ul > li > p:first-child': {
           marginTop: em(20, 16),
         },
-        '> ul > li > *:last-child': {
+        '> ul > li > p:last-child': {
           marginBottom: em(20, 16),
         },
-        '> ol > li > *:first-child': {
+        '> ol > li > p:first-child': {
           marginTop: em(20, 16),
         },
-        '> ol > li > *:last-child': {
+        '> ol > li > p:last-child': {
           marginBottom: em(20, 16),
         },
         'ul ul, ul ol, ol ul, ol ol': {
@@ -538,16 +538,16 @@ let defaultModifiers = {
           marginTop: em(16, 18),
           marginBottom: em(16, 18),
         },
-        '> ul > li > *:first-child': {
+        '> ul > li > p:first-child': {
           marginTop: em(24, 18),
         },
-        '> ul > li > *:last-child': {
+        '> ul > li > p:last-child': {
           marginBottom: em(24, 18),
         },
-        '> ol > li > *:first-child': {
+        '> ol > li > p:first-child': {
           marginTop: em(24, 18),
         },
-        '> ol > li > *:last-child': {
+        '> ol > li > p:last-child': {
           marginBottom: em(24, 18),
         },
         'ul ul, ul ol, ol ul, ol ol': {
@@ -743,16 +743,16 @@ let defaultModifiers = {
           marginTop: em(16, 20),
           marginBottom: em(16, 20),
         },
-        '> ul > li > *:first-child': {
+        '> ul > li > p:first-child': {
           marginTop: em(24, 20),
         },
-        '> ul > li > *:last-child': {
+        '> ul > li > p:last-child': {
           marginBottom: em(24, 20),
         },
-        '> ol > li > *:first-child': {
+        '> ol > li > p:first-child': {
           marginTop: em(24, 20),
         },
-        '> ol > li > *:last-child': {
+        '> ol > li > p:last-child': {
           marginBottom: em(24, 20),
         },
         'ul ul, ul ol, ol ul, ol ol': {
@@ -948,16 +948,16 @@ let defaultModifiers = {
           marginTop: em(20, 24),
           marginBottom: em(20, 24),
         },
-        '> ul > li > *:first-child': {
+        '> ul > li > p:first-child': {
           marginTop: em(32, 24),
         },
-        '> ul > li > *:last-child': {
+        '> ul > li > p:last-child': {
           marginBottom: em(32, 24),
         },
-        '> ol > li > *:first-child': {
+        '> ol > li > p:first-child': {
           marginTop: em(32, 24),
         },
-        '> ol > li > *:last-child': {
+        '> ol > li > p:last-child': {
           marginBottom: em(32, 24),
         },
         'ul ul, ul ol, ol ul, ol ol': {
