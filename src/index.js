@@ -11,18 +11,22 @@ const computed = {
 
 function inWhere(selector, { className, modifier, prefix }) {
   let prefixedNot = prefix(`.not-${className}`).slice(1)
-  let selectorPrefix = selector.startsWith('>')
-    ? `${modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`} `
-    : ''
+  let combinator = ''
+
+  // Make sure leading '>' is pulled out of the `:where` pseudo we generate, because it's invalid in that context
+  if (selector.startsWith('>')) {
+    selector = selector.slice(1)
+    combinator = '>'
+  }
 
   // Parse the selector, if every component ends in the same pseudo element(s) then move it to the end
   let [trailingPseudo, rebuiltSelector] = commonTrailingPseudos(selector)
 
   if (trailingPseudo) {
-    return `:where(${selectorPrefix}${rebuiltSelector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] *))${trailingPseudo}`
+    return `${combinator}:where(${rebuiltSelector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] *))${trailingPseudo}`
   }
 
-  return `:where(${selectorPrefix}${selector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] *))`
+  return `${combinator}:where(${selector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] *))`
 }
 
 function isObject(value) {
