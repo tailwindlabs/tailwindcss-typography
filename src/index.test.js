@@ -170,8 +170,7 @@ test('specificity is reduced with :where', async () => {
           font-weight: 400;
           color: var(--tw-prose-counters);
         }
-        .prose
-          :where(.prose > ul > li p):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+        .prose > :where(ul > li p):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
           margin-top: 16px;
           margin-bottom: 16px;
         }
@@ -239,9 +238,7 @@ test('variants', async () => {
           color: tomato;
         }
         .hover\:prose-lg:hover
-          :where(.hover\:prose-lg:hover
-            > ul
-            > li):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+          > :where(ul > li):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
           color: blue;
         }
         @media (min-width: 640px) {
@@ -251,8 +248,7 @@ test('variants', async () => {
           .sm\:prose :where(p):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
             color: lime;
           }
-          .sm\:prose
-            :where(.sm\:prose > ul > li):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+          .sm\:prose > :where(ul > li):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
             color: purple;
           }
         }
@@ -264,8 +260,7 @@ test('variants', async () => {
             color: tomato;
           }
           .lg\:prose-lg
-            :where(.lg\:prose-lg > ul > li):not(:where([class~='not-prose'], [class~='not-prose']
-                *)) {
+            > :where(ul > li):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
             color: blue;
           }
         }
@@ -421,8 +416,7 @@ test('modifiers', async () => {
           margin-top: 40px;
           margin-bottom: 40px;
         }
-        .prose-lg
-          :where(.prose-lg > ul > li):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+        .prose-lg > :where(ul > li):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
           padding-left: 12px;
         }
         .prose-lg :where(h1):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
