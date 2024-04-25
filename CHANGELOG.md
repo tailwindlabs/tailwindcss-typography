@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Fixed
+
+- Don't apply margins to `<br>` elements contained in an `<li>` in FF ([#350](https://github.com/tailwindlabs/tailwindcss-typography/pull/350))
 
 ## [0.5.12] - 2024-03-27
 
