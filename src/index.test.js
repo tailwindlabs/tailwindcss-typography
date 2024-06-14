@@ -576,13 +576,13 @@ test('custom class name', async () => {
         DEFAULT: {
           css: [
             {
-              color: 'var(--tw-prose-body)',
+              color: 'var(--tw-markdown-body)',
               maxWidth: '65ch',
               '[class~="lead"]': {
-                color: 'var(--tw-prose-lead)',
+                color: 'var(--tw-markdown-lead)',
               },
               strong: {
-                color: 'var(--tw-prose-bold)',
+                color: 'var(--tw-markdown-bold)',
                 fontWeight: '600',
               },
               'ol[type="A"]': {
@@ -602,7 +602,7 @@ test('custom class name', async () => {
               },
               'ol > li::marker': {
                 fontWeight: '400',
-                color: 'var(--tw-prose-counters)',
+                color: 'var(--tw-markdown-counters)',
               },
               'code::before': {
                 content: '"&#96;"',
@@ -623,15 +623,15 @@ test('custom class name', async () => {
         ${defaults}
 
         .markdown {
-          color: var(--tw-prose-body);
+          color: var(--tw-markdown-body);
           max-width: 65ch;
         }
         .markdown
           :where([class~='lead']):not(:where([class~='not-markdown'], [class~='not-markdown'] *)) {
-          color: var(--tw-prose-lead);
+          color: var(--tw-markdown-lead);
         }
         .markdown :where(strong):not(:where([class~='not-markdown'], [class~='not-markdown'] *)) {
-          color: var(--tw-prose-bold);
+          color: var(--tw-markdown-bold);
           font-weight: 600;
         }
         .markdown
@@ -660,7 +660,7 @@ test('custom class name', async () => {
         .markdown
           :where(ol > li):not(:where([class~='not-markdown'], [class~='not-markdown'] *))::marker {
           font-weight: 400;
-          color: var(--tw-prose-counters);
+          color: var(--tw-markdown-counters);
         }
         .markdown
           :where(code):not(:where([class~='not-markdown'], [class~='not-markdown'] *))::before {
