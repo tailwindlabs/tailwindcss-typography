@@ -1587,7 +1587,6 @@ module.exports = {
         table: {
           width: '100%',
           tableLayout: 'auto',
-          textAlign: 'start',
           marginTop: em(32, 16),
           marginBottom: em(32, 16),
         },
@@ -1616,6 +1615,9 @@ module.exports = {
         },
         'tfoot td': {
           verticalAlign: 'top',
+        },
+        'th, td': {
+          textAlign: 'start',
         },
         'figure > *': {}, // Required to maintain correct order when merging
         figcaption: {
