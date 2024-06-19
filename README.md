@@ -23,7 +23,7 @@ To see what it looks like in action, check out our [live demo](https://play.tail
 Install the plugin from npm:
 
 ```shell
-npm install -D @tailwindcss/typography
+npm install @tailwindcss/typography
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
