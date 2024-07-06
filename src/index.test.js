@@ -701,6 +701,9 @@ test('element variants', async () => {
             prose-ol:pl-6
             prose-ul:pl-8
             prose-li:my-4
+            prose-dl:pl-6
+            prose-dt:pl-8
+            prose-dd:my-4
             prose-table:my-8
             prose-thead:border-red-300
             prose-tr:border-red-200
@@ -829,6 +832,16 @@ test('element variants', async () => {
           padding-left: 2rem;
         }
         .prose-li\:my-4 :is(:where(li):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        .prose-dl\:pl-6 :is(:where(dl):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
+          padding-left: 1.5rem;
+        }
+        .prose-dt\:pl-8 :is(:where(dt):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
+          padding-left: 2rem;
+        }
+        .prose-dd\:my-4 :is(:where(dd):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
           margin-top: 1rem;
           margin-bottom: 1rem;
         }
