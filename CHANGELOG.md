@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+- Fix table text alignment ([#346](https://github.com/tailwindlabs/tailwindcss-typography/pull/346))
 
 ## [0.5.13] - 2024-04-26
 
