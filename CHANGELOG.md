@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+- Update peer dependency versions to include Tailwind `4.0.0-alpha.20` with support for this plugin
 
 ## [0.5.14] - 2024-08-07
 
