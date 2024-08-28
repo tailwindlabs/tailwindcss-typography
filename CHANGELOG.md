@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Update peer dependency versions to include Tailwind `4.0.0-alpha.20` with support for this plugin ([#358](https://github.com/tailwindlabs/tailwindcss-typography/pull/358))
+### Fixed
+
+- Support installing with alpha versions of Tailwind CSS v4 ([#358](https://github.com/tailwindlabs/tailwindcss-typography/pull/358))
 
 ## [0.5.14] - 2024-08-07
+
+### Fixed
 
 - Fix table text alignment ([#346](https://github.com/tailwindlabs/tailwindcss-typography/pull/346))
 
