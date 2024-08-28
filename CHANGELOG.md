@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.5.15] - 2024-08-28
+
 ### Fixed
 
 - Support installing with alpha versions of Tailwind CSS v4 ([#358](https://github.com/tailwindlabs/tailwindcss-typography/pull/358))
@@ -205,7 +209,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.14...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.15...HEAD
+[0.5.15]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.14...v0.5.15
 [0.5.14]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.13...v0.5.14
 [0.5.13]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.12...v0.5.13
 [0.5.12]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.11...v0.5.12
