@@ -153,35 +153,36 @@ This makes it easy to do things like style links to match your brand, add a bord
 
 Here's a complete list of available element modifiers:
 
-| Modifier                     | Target                       |
-| ---------------------------- | ---------------------------- |
-| `prose-headings:{utility}`   | `h1`, `h2`, `h3`, `h4`, `th` |
-| `prose-lead:{utility}`       | `[class~="lead"]`            |
-| `prose-h1:{utility}`         | `h1`                         |
-| `prose-h2:{utility}`         | `h2`                         |
-| `prose-h3:{utility}`         | `h3`                         |
-| `prose-h4:{utility}`         | `h4`                         |
-| `prose-p:{utility}`          | `p`                          |
-| `prose-a:{utility}`          | `a`                          |
-| `prose-blockquote:{utility}` | `blockquote`                 |
-| `prose-figure:{utility}`     | `figure`                     |
-| `prose-figcaption:{utility}` | `figcaption`                 |
-| `prose-strong:{utility}`     | `strong`                     |
-| `prose-em:{utility}`         | `em`                         |
-| `prose-kbd:{utility}`        | `kbd`                        |
-| `prose-code:{utility}`       | `code`                       |
-| `prose-pre:{utility}`        | `pre`                        |
-| `prose-ol:{utility}`         | `ol`                         |
-| `prose-ul:{utility}`         | `ul`                         |
-| `prose-li:{utility}`         | `li`                         |
-| `prose-table:{utility}`      | `table`                      |
-| `prose-thead:{utility}`      | `thead`                      |
-| `prose-tr:{utility}`         | `tr`                         |
-| `prose-th:{utility}`         | `th`                         |
-| `prose-td:{utility}`         | `td`                         |
-| `prose-img:{utility}`        | `img`                        |
-| `prose-video:{utility}`      | `video`                      |
-| `prose-hr:{utility}`         | `hr`                         |
+| Modifier                      | Target                       |
+| ----------------------------- | ---------------------------- |
+| `prose-headings:{utility}`    | `h1`, `h2`, `h3`, `h4`, `th` |
+| `prose-lead:{utility}`        | `[class~="lead"]`            |
+| `prose-h1:{utility}`          | `h1`                         |
+| `prose-h2:{utility}`          | `h2`                         |
+| `prose-h3:{utility}`          | `h3`                         |
+| `prose-h4:{utility}`          | `h4`                         |
+| `prose-p:{utility}`           | `p`                          |
+| `prose-a:{utility}`           | `a`                          |
+| `prose-blockquote:{utility}`  | `blockquote`                 |
+| `prose-figure:{utility}`      | `figure`                     |
+| `prose-figcaption:{utility}`  | `figcaption`                 |
+| `prose-strong:{utility}`      | `strong`                     |
+| `prose-em:{utility}`          | `em`                         |
+| `prose-kbd:{utility}`         | `kbd`                        |
+| `prose-inline-code:{utility}` | `inline code`                |
+| `prose-code:{utility}`        | `code`                       |
+| `prose-pre:{utility}`         | `pre`                        |
+| `prose-ol:{utility}`          | `ol`                         |
+| `prose-ul:{utility}`          | `ul`                         |
+| `prose-li:{utility}`          | `li`                         |
+| `prose-table:{utility}`       | `table`                      |
+| `prose-thead:{utility}`       | `thead`                      |
+| `prose-tr:{utility}`          | `tr`                         |
+| `prose-th:{utility}`          | `th`                         |
+| `prose-td:{utility}`          | `td`                         |
+| `prose-img:{utility}`         | `img`                        |
+| `prose-video:{utility}`       | `video`                      |
+| `prose-hr:{utility}`          | `hr`                         |
 
 When stacking these modifiers with other modifiers like `hover`, you most likely want the other modifier to come first:
 
