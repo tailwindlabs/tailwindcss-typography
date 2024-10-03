@@ -9,7 +9,7 @@ const computed = {
   // bulletColor: (color) => ({ 'ul > li::before': { backgroundColor: color } }),
 }
 
-function inWhere(selector, { className, modifier, prefix }) {
+function inWhere(selector, { className, modifier, prefix, skip }) {
   let prefixedNot = prefix(`.not-${className}`).slice(1)
   let selectorPrefix = selector.startsWith('>')
     ? `${modifier === 'DEFAULT' ? `.${className}` : `.${className}-${modifier}`} `
@@ -18,18 +18,25 @@ function inWhere(selector, { className, modifier, prefix }) {
   // Parse the selector, if every component ends in the same pseudo element(s) then move it to the end
   let [trailingPseudo, rebuiltSelector] = commonTrailingPseudos(selector)
 
+  // Convert the specified class names that act as undo from typography style into attribute selectors.
+  let classesNot = skip
+    .map((className) => {
+      return `,[class~="${className}"], [class~="${className}"] *`
+    })
+    .join('')
+
   if (trailingPseudo) {
-    return `:where(${selectorPrefix}${rebuiltSelector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] *))${trailingPseudo}`
+    return `:where(${selectorPrefix}${rebuiltSelector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] * ${classesNot}))${trailingPseudo}`
   }
 
-  return `:where(${selectorPrefix}${selector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] *))`
+  return `:where(${selectorPrefix}${selector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] * ${classesNot}))`
 }
 
 function isObject(value) {
   return typeof value === 'object' && value !== null
 }
 
-function configToCss(config = {}, { target, className, modifier, prefix }) {
+function configToCss(config = {}, { target, className, modifier, prefix, skip }) {
   function updateSelector(k, v) {
     if (target === 'legacy') {
       return [k, v]
@@ -43,13 +50,13 @@ function configToCss(config = {}, { target, className, modifier, prefix }) {
       let nested = Object.values(v).some(isObject)
       if (nested) {
         return [
-          inWhere(k, { className, modifier, prefix }),
+          inWhere(k, { className, modifier, prefix, skip }),
           v,
           Object.fromEntries(Object.entries(v).map(([k, v]) => updateSelector(k, v))),
         ]
       }
 
-      return [inWhere(k, { className, modifier, prefix }), v]
+      return [inWhere(k, { className, modifier, prefix, skip }), v]
     }
 
     return [k, v]
@@ -69,11 +76,11 @@ function configToCss(config = {}, { target, className, modifier, prefix }) {
 }
 
 module.exports = plugin.withOptions(
-  ({ className = 'prose', target = 'modern' } = {}) => {
+  ({ className = 'prose', target = 'modern', skip = [] } = {}) => {
     return function ({ addVariant, addComponents, theme, prefix }) {
       let modifiers = theme('typography')
 
-      let options = { className, prefix }
+      let options = { className, prefix, skip }
 
       for (let [name, ...selectors] of [
         ['headings', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'th'],
@@ -126,6 +133,7 @@ module.exports = plugin.withOptions(
               className,
               modifier,
               prefix,
+              skip,
             }
           ),
         }))
