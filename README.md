@@ -169,7 +169,7 @@ Here's a complete list of available element modifiers:
 | `prose-strong:{utility}`      | `strong`                     |
 | `prose-em:{utility}`          | `em`                         |
 | `prose-kbd:{utility}`         | `kbd`                        |
-| `prose-inline-code:{utility}` | `inline code`                |
+| `prose-inline-code:{utility}` | `:not(pre)>code`                |
 | `prose-code:{utility}`        | `code`                       |
 | `prose-pre:{utility}`         | `pre`                        |
 | `prose-ol:{utility}`          | `ol`                         |
