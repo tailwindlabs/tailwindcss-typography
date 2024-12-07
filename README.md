@@ -80,6 +80,7 @@ Here are the classes that are generated using a totally default Tailwind CSS v2.
 | `prose-zinc`             | Zinc       |
 | `prose-neutral`          | Neutral    |
 | `prose-stone`            | Stone      |
+| `prose-inherit`          | Inherit    |
 
 Modifier classes are designed to be used with the [multi-class modifier pattern](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/#component-modifiers) and must be used in conjunction with the base `prose` class.
 
