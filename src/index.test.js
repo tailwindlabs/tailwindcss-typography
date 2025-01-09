@@ -707,6 +707,8 @@ test('element variants', async () => {
             prose-th:text-left
             prose-td:align-center
             prose-img:rounded-lg
+            prose-picture:rounded-lg
+            prose-images:rounded-lg
             prose-video:my-12
             prose-hr:border-t-2
         "
@@ -855,6 +857,14 @@ test('element variants', async () => {
           :is(:where(img):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           border-radius: 0.5rem;
         }
+        .prose-picture\:rounded-lg
+          :is(:where(picture):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          border-radius: 0.5rem;
+        }
+        .prose-images\:rounded-lg
+          :is(:where(img, picture > img):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          border-radius: 0.5rem;
+        }
         .prose-video\:my-12
           :is(:where(video):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           margin-top: 3rem;
@@ -906,6 +916,8 @@ test('element variants with custom class name', async () => {
             markdown-th:text-left
             markdown-td:align-center
             markdown-img:rounded-lg
+            markdown-picture:rounded-lg
+            markdown-images:rounded-lg
             markdown-video:my-12
             markdown-hr:border-t-2
         "
@@ -1057,6 +1069,14 @@ test('element variants with custom class name', async () => {
         }
         .markdown-img\:rounded-lg
           :is(:where(img):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
+          border-radius: 0.5rem;
+        }
+        .markdown-picture\:rounded-lg
+          :is(:where(picture):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
+          border-radius: 0.5rem;
+        }
+        .markdown-images\:rounded-lg
+          :is(:where(img, picture > img):not(:where([class~='not-markdown'], [class~='not-markdown'] *))) {
           border-radius: 0.5rem;
         }
         .markdown-video\:my-12

@@ -102,6 +102,8 @@ module.exports = plugin.withOptions(
         ['th'],
         ['td'],
         ['img'],
+        ['picture'],
+        ['img', 'picture > img'],
         ['video'],
         ['hr'],
         ['lead', '[class~="lead"]'],
