@@ -381,6 +381,30 @@ module.exports = {
 }
 ```
 
+Note that for certain keys the `theme` function can return a tuple (like for `theme('fontSize.lg')` for example. In these situations, you should make sure to grab the specific part of the tuple you need:
+
+```js {{ filename: 'tailwind.config.js' }}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            fontSize: theme('fontSize.base')[0],
+            // ...
+          },
+        },
+      }),
+    },
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+}
+```
+
 Customizations should be applied to a specific modifier like `DEFAULT` or `xl`, and must be added under the `css` property. Customizations are authored in the same [CSS-in-JS syntax](https://tailwindcss.com/docs/plugins#css-in-js-syntax) used to write Tailwind plugins.
 
 See [the default styles](https://github.com/tailwindlabs/tailwindcss-typography/blob/main/src/styles.js) for this plugin for more in-depth examples of configuring each modifier.
