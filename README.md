@@ -191,6 +191,35 @@ When stacking these modifiers with other modifiers like `hover`, you most likely
 
 Read the Tailwind CSS documentation on [ordering stacked modifiers](https://tailwindcss.com/docs/hover-focus-and-other-states#ordering-stacked-modifiers) to learn more.
 
+### Adding new modifiers
+
+You can add a new modifier by creating a new key in the `typography` section of your theme and providing your own styles under the `css` key:
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      typography: {
+        '3xl': {
+          css: {
+            fontSize: '1.875rem',
+            h1: {
+              fontSize: '4rem',
+            },
+            // ...
+          },
+        },
+      },
+    }
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+}
+```
+
 ### Overriding max-width
 
 Each size modifier comes with a baked in `max-width` designed to keep the content as readable as possible. This isn't always what you want though, and sometimes you'll want the content to just fill the width of its container.
