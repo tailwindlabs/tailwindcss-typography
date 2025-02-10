@@ -30,7 +30,7 @@ Then add the plugin to your main `style.css` file:
 
 ```diff
   @import "tailwindcss";
-+ @plugin "tailwindcss/typography";
++ @plugin "@tailwindcss/typography";
 ```
 
 ---
