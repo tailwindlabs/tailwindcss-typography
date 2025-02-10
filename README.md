@@ -26,19 +26,11 @@ Install the plugin from npm:
 npm install -D @tailwindcss/typography
 ```
 
-Then add the plugin to your `tailwind.config.js` file:
+Then add the plugin to your main `style.css` file:
 
-```js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  theme: {
-    // ...
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-    // ...
-  ],
-}
+```diff
+  @import "tailwindcss";
++ @plugin "tailwindcss/typography";
 ```
 
 ---
@@ -189,7 +181,7 @@ When stacking these modifiers with other modifiers like `hover`, you most likely
 <article class="prose prose-a:text-blue-600 hover:prose-a:text-blue-500">{{ markdown }}</article>
 ```
 
-Read the Tailwind CSS documentation on [ordering stacked modifiers](https://tailwindcss.com/docs/hover-focus-and-other-states#ordering-stacked-modifiers) to learn more.
+Read the Tailwind CSS documentation on [stacked modifiers](https://tailwindcss.com/docs/hover-focus-and-other-states) to learn more.
 
 ### Overriding max-width
 
@@ -234,7 +226,15 @@ Note that you can't nest new `prose` instances within a `not-prose` block at thi
 
 ### Adding custom color themes
 
-You can create your own color theme by adding a new key in the `typography` section of your `tailwind.config.js` file and providing your colors under the `css` key:
+To customize the color theme beyond simple CSS overrides, you can use the JavaScript based theme API. To do that, use the `@config` directive:
+
+```diff
+  @import "tailwindcss";
+  @plugin "@tailwindcss/typography";
++ @config "./tailwind.config.js";
+```
+
+You can then create your own color theme by adding a new `tailwind.config.js` file with the `typography` section and providing your colors under the `css` key:
 
 ```js {{ filename: 'tailwind.config.js' }}
 /** @type {import('tailwindcss').Config} */
@@ -244,47 +244,43 @@ module.exports = {
       typography: ({ theme }) => ({
         pink: {
           css: {
-            '--tw-prose-body': theme('colors.pink[800]'),
-            '--tw-prose-headings': theme('colors.pink[900]'),
-            '--tw-prose-lead': theme('colors.pink[700]'),
-            '--tw-prose-links': theme('colors.pink[900]'),
-            '--tw-prose-bold': theme('colors.pink[900]'),
-            '--tw-prose-counters': theme('colors.pink[600]'),
-            '--tw-prose-bullets': theme('colors.pink[400]'),
-            '--tw-prose-hr': theme('colors.pink[300]'),
-            '--tw-prose-quotes': theme('colors.pink[900]'),
-            '--tw-prose-quote-borders': theme('colors.pink[300]'),
-            '--tw-prose-captions': theme('colors.pink[700]'),
-            '--tw-prose-code': theme('colors.pink[900]'),
-            '--tw-prose-pre-code': theme('colors.pink[100]'),
-            '--tw-prose-pre-bg': theme('colors.pink[900]'),
-            '--tw-prose-th-borders': theme('colors.pink[300]'),
-            '--tw-prose-td-borders': theme('colors.pink[200]'),
-            '--tw-prose-invert-body': theme('colors.pink[200]'),
-            '--tw-prose-invert-headings': theme('colors.white'),
-            '--tw-prose-invert-lead': theme('colors.pink[300]'),
-            '--tw-prose-invert-links': theme('colors.white'),
-            '--tw-prose-invert-bold': theme('colors.white'),
-            '--tw-prose-invert-counters': theme('colors.pink[400]'),
-            '--tw-prose-invert-bullets': theme('colors.pink[600]'),
-            '--tw-prose-invert-hr': theme('colors.pink[700]'),
-            '--tw-prose-invert-quotes': theme('colors.pink[100]'),
-            '--tw-prose-invert-quote-borders': theme('colors.pink[700]'),
-            '--tw-prose-invert-captions': theme('colors.pink[400]'),
-            '--tw-prose-invert-code': theme('colors.white'),
-            '--tw-prose-invert-pre-code': theme('colors.pink[300]'),
+            '--tw-prose-body': 'var(--color-pink-800)'),
+            '--tw-prose-headings': 'var(--color-pink-900)'),
+            '--tw-prose-lead': 'var(--color-pink-700)'),
+            '--tw-prose-links': 'var(--color-pink-900)'),
+            '--tw-prose-bold': 'var(--color-pink-900)'),
+            '--tw-prose-counters': 'var(--color-pink-600)'),
+            '--tw-prose-bullets': 'var(--color-pink-400)'),
+            '--tw-prose-hr': 'var(--color-pink-300)'),
+            '--tw-prose-quotes': 'var(--color-pink-900)'),
+            '--tw-prose-quote-borders': 'var(--color-pink-300)'),
+            '--tw-prose-captions': 'var(--color-pink-700)'),
+            '--tw-prose-code': 'var(--color-pink-900)'),
+            '--tw-prose-pre-code': 'var(--color-pink-100)'),
+            '--tw-prose-pre-bg': 'var(--color-pink-900)'),
+            '--tw-prose-th-borders': 'var(--color-pink-300)'),
+            '--tw-prose-td-borders': 'var(--color-pink-200)'),
+            '--tw-prose-invert-body': 'var(--color-pink-200)'),
+            '--tw-prose-invert-headings': 'var(--color-white)',
+            '--tw-prose-invert-lead': 'var(--color-pink-300)'),
+            '--tw-prose-invert-links': 'var(--color-white)',
+            '--tw-prose-invert-bold': 'var(--color-white)',
+            '--tw-prose-invert-counters': 'var(--color-pink-400)'),
+            '--tw-prose-invert-bullets': 'var(--color-pink-600)'),
+            '--tw-prose-invert-hr': 'var(--color-pink-700)'),
+            '--tw-prose-invert-quotes': 'var(--color-pink-100)'),
+            '--tw-prose-invert-quote-borders': 'var(--color-pink-700)'),
+            '--tw-prose-invert-captions': 'var(--color-pink-400)'),
+            '--tw-prose-invert-code': 'var(--color-white)',
+            '--tw-prose-invert-pre-code': 'var(--color-pink-300)'),
             '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
-            '--tw-prose-invert-th-borders': theme('colors.pink[600]'),
-            '--tw-prose-invert-td-borders': theme('colors.pink[700]'),
+            '--tw-prose-invert-th-borders': 'var(--color-pink-600)'),
+            '--tw-prose-invert-td-borders': 'var(--color-pink-700)'),
           },
         },
       }),
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    // ...
-  ],
 }
 ```
 
@@ -294,18 +290,10 @@ See our internal [style definitions](https://github.com/tailwindlabs/tailwindcss
 
 If you need to use a class name other than `prose` for any reason, you can do so using the `className` option when registering the plugin:
 
-```js {{ filename: 'tailwind.config.js' }}
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  theme: {
-    // ...
-  },
-  plugins: [
-    require('@tailwindcss/typography')({
-      className: 'wysiwyg',
-    }),
-  ]
-  ...
+```css
+@import "tailwindcss";
+@plugin "@tailwindcss/typography" {
+  className: wysiwyg;
 }
 ```
 
@@ -327,7 +315,7 @@ Now every instance of `prose` in the default class names will be replaced by you
 
 ### Customizing the CSS
 
-If you want to customize the raw CSS generated by this plugin, add your overrides under the `typography` key in the `theme` section of your `tailwind.config.js` file:
+If you want to customize the raw CSS generated by this plugin, first follow the steps from [adding custom color themes](#adding-custom-color-themes) to set up a JavaScript based configuration API and then add your overrides under the `typography` key in the `theme` section of your `tailwind.config.js` file:
 
 ```js {{ filename: 'tailwind.config.js' }}
 /** @type {import('tailwindcss').Config} */
@@ -349,63 +337,30 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    // ...
-  ],
 }
 ```
 
-Like with all theme customizations in Tailwind, you can also define the `typography` key as a function if you need access to the `theme` helper:
+Like with all theme customizations in Tailwind, you can use CSS variables if you need access to access your theme configuration:
 
 ```js {{ filename: 'tailwind.config.js' }}
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
     extend: {
-      typography: (theme) => ({
+      typography: {
         DEFAULT: {
           css: {
-            color: theme('colors.gray.800'),
-
+            color: 'var(--color-gray-800)',
             // ...
           },
         },
-      }),
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    // ...
-  ],
 }
 ```
 
-Note that for certain keys the `theme` function can return a tuple (like for `theme('fontSize.lg')` for example. In these situations, you should make sure to grab the specific part of the tuple you need:
-
-```js {{ filename: 'tailwind.config.js' }}
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  theme: {
-    extend: {
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            fontSize: theme('fontSize.base')[0],
-            // ...
-          },
-        },
-      }),
-    },
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-    // ...
-  ],
-}
-```
-
-Customizations should be applied to a specific modifier like `DEFAULT` or `xl`, and must be added under the `css` property. Customizations are authored in the same [CSS-in-JS syntax](https://tailwindcss.com/docs/plugins#css-in-js-syntax) used to write Tailwind plugins.
+Customizations should be applied to a specific modifier like `DEFAULT` or `xl`, and must be added under the `css` property. Customizations are authored in the same [CSS-in-JS syntax](https://v3.tailwindcss.com/docs/plugins#css-in-js-syntax) used to write Tailwind v3 plugins.
 
 See [the default styles](https://github.com/tailwindlabs/tailwindcss-typography/blob/main/src/styles.js) for this plugin for more in-depth examples of configuring each modifier.
 
