@@ -16,6 +16,11 @@ The official Tailwind CSS Typography plugin provides a set of `prose` classes yo
 
 To see what it looks like in action, check out our [live demo](https://play.tailwindcss.com/uj1vGACRJA?layout=preview) on Tailwind Play.
 
+> [!NOTE]  
+> The plugin works fine with Tailwind CSS v4.0 as-is. You can still make use of a `tailwind.config.js` file to customize the CSS generated.
+>
+> We are hoping to do a CSS-only version in the near future once we've tackled all the post-v4 launch bugs.
+
 ---
 
 ## Installation
