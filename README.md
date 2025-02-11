@@ -175,7 +175,13 @@ Here's a complete list of available element modifiers:
 | `prose-video:{utility}`      | `video`                      |
 | `prose-hr:{utility}`         | `hr`                         |
 
-When stacking these modifiers with other modifiers like `hover`, you most likely want the other modifier to come first:
+When stacking these modifiers with other modifiers like `hover`, you most likely want the other modifier to come last:
+
+```html
+<article class="prose prose-a:text-blue-600 prose-a:hover:text-blue-500">{{ markdown }}</article>
+```
+
+If you are still using in Tailwind CSS v3, the modifier order is the opposite:
 
 ```html
 <article class="prose prose-a:text-blue-600 hover:prose-a:text-blue-500">{{ markdown }}</article>
