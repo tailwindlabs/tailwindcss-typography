@@ -1470,7 +1470,7 @@ module.exports = {
         },
         hr: {
           borderColor: 'var(--tw-prose-hr)',
-          borderTopWidth: 1,
+          borderTopWidth: '1px',
         },
         blockquote: {
           fontWeight: '500',
