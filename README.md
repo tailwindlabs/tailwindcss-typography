@@ -33,6 +33,18 @@ Then add the plugin to your main `style.css` file:
 + @plugin "@tailwindcss/typography";
 ```
 
+**or,** if using ESM in a `tailwind.config.ts` file:
+
+```ts
+import tailwindcssTypography from '@tailwindcss/typography'
+
+export default {
+  theme: {
+    // ...
+  },
+  plugins: [tailwindcssTypography], // Import under whatever name that you want ☝️.
+}
+```
 ---
 
 ## Basic usage
