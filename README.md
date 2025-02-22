@@ -247,7 +247,7 @@ You can then create your own color theme by adding a new `tailwind.config.js` fi
 module.exports = {
   theme: {
     extend: {
-      typography: ({ theme }) => ({
+      typography: () => ({
         pink: {
           css: {
             '--tw-prose-body': 'var(--color-pink-800)',
