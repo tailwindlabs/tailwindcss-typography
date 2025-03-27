@@ -33,6 +33,9 @@ Then add the plugin to your main `style.css` file:
 + @plugin "@tailwindcss/typography";
 ```
 
+> [!NOTE]
+> [Tailwind v3 installation instructions](https://github.com/tailwindlabs/tailwindcss-typography/blob/d1e6421d4c07c15b3e1db6b6b10549df96fb129d/README.md)
+
 ---
 
 ## Basic usage
