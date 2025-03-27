@@ -1870,42 +1870,42 @@
 }
 
 @utility prose-gray {
-  --tw-prose-body: #374151;
-  --tw-prose-headings: #111827;
-  --tw-prose-lead: #4b5563;
-  --tw-prose-links: #111827;
-  --tw-prose-bold: #111827;
-  --tw-prose-counters: #6b7280;
-  --tw-prose-bullets: #d1d5db;
-  --tw-prose-hr: #e5e7eb;
-  --tw-prose-quotes: #111827;
-  --tw-prose-quote-borders: #e5e7eb;
-  --tw-prose-captions: #6b7280;
-  --tw-prose-kbd: #111827;
-  --tw-prose-kbd-shadows: 17 24 39;
-  --tw-prose-code: #111827;
-  --tw-prose-pre-code: #e5e7eb;
-  --tw-prose-pre-bg: #1f2937;
-  --tw-prose-th-borders: #d1d5db;
-  --tw-prose-td-borders: #e5e7eb;
-  --tw-prose-invert-body: #d1d5db;
-  --tw-prose-invert-headings: #fff;
-  --tw-prose-invert-lead: #9ca3af;
-  --tw-prose-invert-links: #fff;
-  --tw-prose-invert-bold: #fff;
-  --tw-prose-invert-counters: #9ca3af;
-  --tw-prose-invert-bullets: #4b5563;
-  --tw-prose-invert-hr: #374151;
-  --tw-prose-invert-quotes: #f3f4f6;
-  --tw-prose-invert-quote-borders: #374151;
-  --tw-prose-invert-captions: #9ca3af;
-  --tw-prose-invert-kbd: #fff;
-  --tw-prose-invert-kbd-shadows: 255 255 255;
-  --tw-prose-invert-code: #fff;
-  --tw-prose-invert-pre-code: #d1d5db;
+  --tw-prose-body: --theme(--color-gray-700, initial);
+  --tw-prose-headings: --theme(--color-gray-900, initial);
+  --tw-prose-lead: --theme(--color-gray-600, initial);
+  --tw-prose-links: --theme(--color-gray-900, initial);
+  --tw-prose-bold: --theme(--color-gray-900, initial);
+  --tw-prose-counters: --theme(--color-gray-500, initial);
+  --tw-prose-bullets: --theme(--color-gray-300, initial);
+  --tw-prose-hr: --theme(--color-gray-200, initial);
+  --tw-prose-quotes: --theme(--color-gray-900, initial);
+  --tw-prose-quote-borders: --theme(--color-gray-200, initial);
+  --tw-prose-captions: --theme(--color-gray-500, initial);
+  --tw-prose-kbd: --theme(--color-gray-900, initial);
+  --tw-prose-kbd-shadows: --theme(--color-gray-900, initial);
+  --tw-prose-code: --theme(--color-gray-900, initial);
+  --tw-prose-pre-code: --theme(--color-gray-200, initial);
+  --tw-prose-pre-bg: --theme(--color-gray-800, initial);
+  --tw-prose-th-borders: --theme(--color-gray-300, initial);
+  --tw-prose-td-borders: --theme(--color-gray-200, initial);
+  --tw-prose-invert-body: --theme(--color-gray-300, initial);
+  --tw-prose-invert-headings: --theme(--color-white, initial);
+  --tw-prose-invert-lead: --theme(--color-gray-400, initial);
+  --tw-prose-invert-links: --theme(--color-white, initial);
+  --tw-prose-invert-bold: --theme(--color-white, initial);
+  --tw-prose-invert-counters: --theme(--color-gray-400, initial);
+  --tw-prose-invert-bullets: --theme(--color-gray-600, initial);
+  --tw-prose-invert-hr: --theme(--color-gray-700, initial);
+  --tw-prose-invert-quotes: --theme(--color-gray-100, initial);
+  --tw-prose-invert-quote-borders: --theme(--color-gray-700, initial);
+  --tw-prose-invert-captions: --theme(--color-gray-400, initial);
+  --tw-prose-invert-kbd: --theme(--color-white, initial);
+  --tw-prose-invert-kbd-shadows: --theme(--color-white, initial);
+  --tw-prose-invert-code: --theme(--color-white, initial);
+  --tw-prose-invert-pre-code: --theme(--color-gray-300, initial);
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
-  --tw-prose-invert-th-borders: #4b5563;
-  --tw-prose-invert-td-borders: #374151;
+  --tw-prose-invert-th-borders: --theme(--color-gray-600, initial);
+  --tw-prose-invert-td-borders: --theme(--color-gray-700, initial);
 }
 
 @utility prose-zinc {

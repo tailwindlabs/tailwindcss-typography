@@ -1,5 +1,5 @@
 const path = require('path')
-const tailwind = require('tailwindcss')
+const tailwind = require('tailwindcss@3')
 const postcss = require('postcss')
 const typographyPlugin = require('.')
 
