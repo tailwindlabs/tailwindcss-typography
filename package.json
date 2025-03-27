@@ -4,6 +4,7 @@
   "description": "A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
+  "style": "src/index.css",
   "files": [
     "src/*.js",
     "src/*.d.ts",
