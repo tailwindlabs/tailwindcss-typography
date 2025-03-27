@@ -1,68 +1,68 @@
-@custom-variant prose-headings (& :is(h1, h2, h3, h4, th));
-@custom-variant prose-lead (& :is([class~="lead"]));
-@custom-variant prose-h1 (& :is(h1));
-@custom-variant prose-h2 (& :is(h2));
-@custom-variant prose-h3 (& :is(h3));
-@custom-variant prose-h4 (& :is(h4));
-@custom-variant prose-p (& :is(p));
-@custom-variant prose-a (& :is(a));
-@custom-variant prose-blockquote (& :is(blockquote));
-@custom-variant prose-figure (& :is(figure));
-@custom-variant prose-figcaption (& :is(figcaption));
-@custom-variant prose-strong (& :is(strong));
-@custom-variant prose-em (& :is(em));
-@custom-variant prose-kbd (& :is(kbd));
-@custom-variant prose-code (& :is(code));
-@custom-variant prose-pre (& :is(pre));
-@custom-variant prose-ol (& :is(ol));
-@custom-variant prose-ul (& :is(ul));
-@custom-variant prose-li (& :is(li));
-@custom-variant prose-table (& :is(table));
-@custom-variant prose-thead (& :is(thead));
-@custom-variant prose-tr (& :is(tr));
-@custom-variant prose-th (& :is(th));
-@custom-variant prose-td (& :is(td));
-@custom-variant prose-img (& :is(img));
-@custom-variant prose-video (& :is(video));
-@custom-variant prose-hr (& :is(hr));
+@custom-variant prose-headings (& :is(h1, h2, h3, h4, th):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-lead (& :is([class~="lead"]):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-h1 (& :is(h1):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-h2 (& :is(h2):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-h3 (& :is(h3):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-h4 (& :is(h4):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-p (& :is(p):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-a (& :is(a):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-blockquote (& :is(blockquote):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-figure (& :is(figure):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-figcaption (& :is(figcaption):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-strong (& :is(strong):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-em (& :is(em):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-kbd (& :is(kbd):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-code (& :is(code):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-pre (& :is(pre):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-ol (& :is(ol):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-ul (& :is(ul):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-li (& :is(li):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-table (& :is(table):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-thead (& :is(thead):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-tr (& :is(tr):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-th (& :is(th):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-td (& :is(td):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-img (& :is(img):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-video (& :is(video):not(:where([class~='not-prose'], [class~='not-prose'] *)));
+@custom-variant prose-hr (& :is(hr):not(:where([class~='not-prose'], [class~='not-prose'] *)));
 
 @utility prose {
-  --tw-prose-body: #374151;
-  --tw-prose-headings: #111827;
-  --tw-prose-lead: #4b5563;
-  --tw-prose-links: #111827;
-  --tw-prose-bold: #111827;
-  --tw-prose-counters: #6b7280;
-  --tw-prose-bullets: #d1d5db;
-  --tw-prose-hr: #e5e7eb;
-  --tw-prose-quotes: #111827;
-  --tw-prose-quote-borders: #e5e7eb;
-  --tw-prose-captions: #6b7280;
-  --tw-prose-kbd: #111827;
-  --tw-prose-kbd-shadows: 17 24 39;
-  --tw-prose-code: #111827;
-  --tw-prose-pre-code: #e5e7eb;
-  --tw-prose-pre-bg: #1f2937;
-  --tw-prose-th-borders: #d1d5db;
-  --tw-prose-td-borders: #e5e7eb;
-  --tw-prose-invert-body: #d1d5db;
-  --tw-prose-invert-headings: #fff;
-  --tw-prose-invert-lead: #9ca3af;
-  --tw-prose-invert-links: #fff;
-  --tw-prose-invert-bold: #fff;
-  --tw-prose-invert-counters: #9ca3af;
-  --tw-prose-invert-bullets: #4b5563;
-  --tw-prose-invert-hr: #374151;
-  --tw-prose-invert-quotes: #f3f4f6;
-  --tw-prose-invert-quote-borders: #374151;
-  --tw-prose-invert-captions: #9ca3af;
-  --tw-prose-invert-kbd: #fff;
-  --tw-prose-invert-kbd-shadows: 255 255 255;
-  --tw-prose-invert-code: #fff;
-  --tw-prose-invert-pre-code: #d1d5db;
+  --tw-prose-body: --theme(--color-gray-700, initial);
+  --tw-prose-headings: --theme(--color-gray-900, initial);
+  --tw-prose-lead: --theme(--color-gray-600, initial);
+  --tw-prose-links: --theme(--color-gray-900, initial);
+  --tw-prose-bold: --theme(--color-gray-900, initial);
+  --tw-prose-counters: --theme(--color-gray-500, initial);
+  --tw-prose-bullets: --theme(--color-gray-300, initial);
+  --tw-prose-hr: --theme(--color-gray-200, initial);
+  --tw-prose-quotes: --theme(--color-gray-900, initial);
+  --tw-prose-quote-borders: --theme(--color-gray-200, initial);
+  --tw-prose-captions: --theme(--color-gray-500, initial);
+  --tw-prose-kbd: --theme(--color-gray-900, initial);
+  --tw-prose-kbd-shadows: --theme(--color-gray-900, initial);
+  --tw-prose-code: --theme(--color-gray-900, initial);
+  --tw-prose-pre-code: --theme(--color-gray-200, initial);
+  --tw-prose-pre-bg: --theme(--color-gray-800, initial);
+  --tw-prose-th-borders: --theme(--color-gray-300, initial);
+  --tw-prose-td-borders: --theme(--color-gray-200, initial);
+  --tw-prose-invert-body: --theme(--color-gray-300, initial);
+  --tw-prose-invert-headings: --theme(--color-white, initial);
+  --tw-prose-invert-lead: --theme(--color-gray-400, initial);
+  --tw-prose-invert-links: --theme(--color-white, initial);
+  --tw-prose-invert-bold: --theme(--color-white, initial);
+  --tw-prose-invert-counters: --theme(--color-gray-400, initial);
+  --tw-prose-invert-bullets: --theme(--color-gray-600, initial);
+  --tw-prose-invert-hr: --theme(--color-gray-700, initial);
+  --tw-prose-invert-quotes: --theme(--color-gray-100, initial);
+  --tw-prose-invert-quote-borders: --theme(--color-gray-700, initial);
+  --tw-prose-invert-captions: --theme(--color-gray-400, initial);
+  --tw-prose-invert-kbd: --theme(--color-white, initial);
+  --tw-prose-invert-kbd-shadows: --theme(--color-white, initial);
+  --tw-prose-invert-code: --theme(--color-white, initial);
+  --tw-prose-invert-pre-code: --theme(--color-gray-300, initial);
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
-  --tw-prose-invert-th-borders: #4b5563;
-  --tw-prose-invert-td-borders: #374151;
+  --tw-prose-invert-th-borders: --theme(--color-gray-600, initial);
+  --tw-prose-invert-td-borders: --theme(--color-gray-700, initial);
 
   font-size: 1rem;
   line-height: 1.75;
@@ -268,8 +268,8 @@
       font-weight: 500;
       font-family: inherit;
       color: var(--tw-prose-kbd);
-      box-shadow: 0 0 0 1px rgb(var(--tw-prose-kbd-shadows) / 10%),
-        0 3px 0 rgb(var(--tw-prose-kbd-shadows) / 10%);
+      box-shadow: 0 0 0 1px --alpha(var(--tw-prose-kbd-shadows) / 10%),
+        0 3px 0 --alpha(var(--tw-prose-kbd-shadows) / 10%);
       font-size: 0.875em;
       border-radius: 0.3125rem;
       padding-top: 0.1875em;
@@ -523,4 +523,1614 @@
       margin-bottom: 0;
     }
   }
+}
+
+/* Size modifiers */
+
+@utility prose-sm {
+  font-size: 0.875rem;
+  line-height: 1.7142857;
+
+  :not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(p) {
+      margin-top: 1.1428571em;
+      margin-bottom: 1.1428571em;
+    }
+
+    &:where([class~='lead']) {
+      font-size: 1.2857143em;
+      line-height: 1.5555556;
+      margin-top: 0.8888889em;
+      margin-bottom: 0.8888889em;
+    }
+
+    &:where(blockquote) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+      padding-inline-start: 1.1111111em;
+    }
+
+    &:where(h1) {
+      font-size: 2.1428571em;
+      margin-top: 0;
+      margin-bottom: 0.8em;
+      line-height: 1.2;
+    }
+
+    &:where(h2) {
+      font-size: 1.4285714em;
+      margin-top: 1.6em;
+      margin-bottom: 0.8em;
+      line-height: 1.4;
+    }
+
+    &:where(h3) {
+      font-size: 1.2857143em;
+      margin-top: 1.5555556em;
+      margin-bottom: 0.4444444em;
+      line-height: 1.5555556;
+    }
+
+    &:where(h4) {
+      margin-top: 1.4285714em;
+      margin-bottom: 0.5714286em;
+      line-height: 1.4285714;
+    }
+
+    &:where(img) {
+      margin-top: 1.7142857em;
+      margin-bottom: 1.7142857em;
+    }
+
+    &:where(picture) {
+      margin-top: 1.7142857em;
+      margin-bottom: 1.7142857em;
+    }
+
+    &:where(picture > img) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(video) {
+      margin-top: 1.7142857em;
+      margin-bottom: 1.7142857em;
+    }
+
+    &:where(kbd) {
+      font-size: 0.8571429em;
+      border-radius: 0.3125rem;
+      padding-top: 0.1428571em;
+      padding-inline-end: 0.3571429em;
+      padding-bottom: 0.1428571em;
+      padding-inline-start: 0.3571429em;
+    }
+
+    &:where(code) {
+      font-size: 0.8571429em;
+    }
+
+    &:where(h2 code) {
+      font-size: 0.9em;
+    }
+
+    &:where(h3 code) {
+      font-size: 0.8888889em;
+    }
+
+    &:where(pre) {
+      font-size: 0.8571429em;
+      line-height: 1.6666667;
+      margin-top: 1.6666667em;
+      margin-bottom: 1.6666667em;
+      border-radius: 0.25rem;
+      padding-top: 0.6666667em;
+      padding-inline-end: 1em;
+      padding-bottom: 0.6666667em;
+      padding-inline-start: 1em;
+    }
+
+    &:where(ol) {
+      margin-top: 1.1428571em;
+      margin-bottom: 1.1428571em;
+      padding-inline-start: 1.5714286em;
+    }
+
+    &:where(ul) {
+      margin-top: 1.1428571em;
+      margin-bottom: 1.1428571em;
+      padding-inline-start: 1.5714286em;
+    }
+
+    &:where(li) {
+      margin-top: 0.2857143em;
+      margin-bottom: 0.2857143em;
+    }
+
+    &:where(ol > li) {
+      padding-inline-start: 0.4285714em;
+    }
+
+    &:where(ul > li) {
+      padding-inline-start: 0.4285714em;
+    }
+
+    &:where(.prose-sm > ul > li p) {
+      margin-top: 0.5714286em;
+      margin-bottom: 0.5714286em;
+    }
+
+    &:where(.prose-sm > ul > li > p:first-child) {
+      margin-top: 1.1428571em;
+    }
+
+    &:where(.prose-sm > ul > li > p:last-child) {
+      margin-bottom: 1.1428571em;
+    }
+
+    &:where(.prose-sm > ol > li > p:first-child) {
+      margin-top: 1.1428571em;
+    }
+
+    &:where(.prose-sm > ol > li > p:last-child) {
+      margin-bottom: 1.1428571em;
+    }
+
+    &:where(ul ul, ul ol, ol ul, ol ol) {
+      margin-top: 0.5714286em;
+      margin-bottom: 0.5714286em;
+    }
+
+    &:where(dl) {
+      margin-top: 1.1428571em;
+      margin-bottom: 1.1428571em;
+    }
+
+    &:where(dt) {
+      margin-top: 1.1428571em;
+    }
+
+    &:where(dd) {
+      margin-top: 0.2857143em;
+      padding-inline-start: 1.5714286em;
+    }
+
+    &:where(hr) {
+      margin-top: 2.8571429em;
+      margin-bottom: 2.8571429em;
+    }
+
+    &:where(hr + *) {
+      margin-top: 0;
+    }
+
+    &:where(h2 + *) {
+      margin-top: 0;
+    }
+
+    &:where(h3 + *) {
+      margin-top: 0;
+    }
+
+    &:where(h4 + *) {
+      margin-top: 0;
+    }
+
+    &:where(table) {
+      font-size: 0.8571429em;
+      line-height: 1.5;
+    }
+
+    &:where(thead th) {
+      padding-inline-end: 1em;
+      padding-bottom: 0.6666667em;
+      padding-inline-start: 1em;
+    }
+
+    &:where(thead th:first-child) {
+      padding-inline-start: 0;
+    }
+
+    &:where(thead th:last-child) {
+      padding-inline-end: 0;
+    }
+
+    &:where(tbody td, tfoot td) {
+      padding-top: 0.6666667em;
+      padding-inline-end: 1em;
+      padding-bottom: 0.6666667em;
+      padding-inline-start: 1em;
+    }
+
+    &:where(tbody td:first-child, tfoot td:first-child) {
+      padding-inline-start: 0;
+    }
+
+    &:where(tbody td:last-child, tfoot td:last-child) {
+      padding-inline-end: 0;
+    }
+
+    &:where(figure) {
+      margin-top: 1.7142857em;
+      margin-bottom: 1.7142857em;
+    }
+
+    &:where(figure > *) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(figcaption) {
+      font-size: 0.8571429em;
+      line-height: 1.3333333;
+      margin-top: 0.6666667em;
+    }
+
+    &:where(.prose-sm > :first-child) {
+      margin-top: 0;
+    }
+
+    &:where(.prose-sm > :last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@utility prose-base {
+  font-size: 1rem;
+  line-height: 1.75;
+
+  :not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(p) {
+      margin-top: 1.25em;
+      margin-bottom: 1.25em;
+    }
+
+    &:where([class~='lead']) {
+      font-size: 1.25em;
+      line-height: 1.6;
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
+    }
+
+    &:where(blockquote) {
+      margin-top: 1.6em;
+      margin-bottom: 1.6em;
+      padding-inline-start: 1em;
+    }
+
+    &:where(h1) {
+      font-size: 2.25em;
+      margin-top: 0;
+      margin-bottom: 0.8888889em;
+      line-height: 1.1111111;
+    }
+
+    &:where(h2) {
+      font-size: 1.5em;
+      margin-top: 2em;
+      margin-bottom: 1em;
+      line-height: 1.3333333;
+    }
+
+    &:where(h3) {
+      font-size: 1.25em;
+      margin-top: 1.6em;
+      margin-bottom: 0.6em;
+      line-height: 1.6;
+    }
+
+    &:where(h4) {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+    }
+
+    &:where(img) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(picture) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(picture > img) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(video) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(kbd) {
+      font-size: 0.875em;
+      border-radius: 0.3125rem;
+      padding-top: 0.1875em;
+      padding-inline-end: 0.375em;
+      padding-bottom: 0.1875em;
+      padding-inline-start: 0.375em;
+    }
+
+    &:where(code) {
+      font-size: 0.875em;
+    }
+
+    &:where(h2 code) {
+      font-size: 0.875em;
+    }
+
+    &:where(h3 code) {
+      font-size: 0.9em;
+    }
+
+    &:where(pre) {
+      font-size: 0.875em;
+      line-height: 1.7142857;
+      margin-top: 1.7142857em;
+      margin-bottom: 1.7142857em;
+      border-radius: 0.375rem;
+      padding-top: 0.8571429em;
+      padding-inline-end: 1.1428571em;
+      padding-bottom: 0.8571429em;
+      padding-inline-start: 1.1428571em;
+    }
+
+    &:where(ol) {
+      margin-top: 1.25em;
+      margin-bottom: 1.25em;
+      padding-inline-start: 1.625em;
+    }
+
+    &:where(ul) {
+      margin-top: 1.25em;
+      margin-bottom: 1.25em;
+      padding-inline-start: 1.625em;
+    }
+
+    &:where(li) {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    &:where(ol > li) {
+      padding-inline-start: 0.375em;
+    }
+
+    &:where(ul > li) {
+      padding-inline-start: 0.375em;
+    }
+
+    .prose-base :where(.prose-base > ul > li p) {
+      margin-top: 0.75em;
+      margin-bottom: 0.75em;
+    }
+
+    .prose-base
+      :where(.prose-base > ul > li > p:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-top: 1.25em;
+    }
+
+    .prose-base
+      :where(.prose-base > ul > li > p:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-bottom: 1.25em;
+    }
+
+    .prose-base
+      :where(.prose-base > ol > li > p:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-top: 1.25em;
+    }
+
+    .prose-base
+      :where(.prose-base > ol > li > p:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-bottom: 1.25em;
+    }
+
+    .prose-base
+      :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0.75em;
+      margin-bottom: 0.75em;
+    }
+
+    &:where(dl):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 1.25em;
+      margin-bottom: 1.25em;
+    }
+
+    &:where(dt):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 1.25em;
+    }
+
+    &:where(dd):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0.5em;
+      padding-inline-start: 1.625em;
+    }
+
+    &:where(hr):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+
+    &:where(hr + *):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0;
+    }
+
+    &:where(h2 + *):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0;
+    }
+
+    &:where(h3 + *):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0;
+    }
+
+    &:where(h4 + *):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0;
+    }
+
+    &:where(table):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      font-size: 0.875em;
+      line-height: 1.7142857;
+    }
+
+    &:where(thead th):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      padding-inline-end: 0.5714286em;
+      padding-bottom: 0.5714286em;
+      padding-inline-start: 0.5714286em;
+    }
+
+    .prose-base
+      :where(thead th:first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      padding-inline-start: 0;
+    }
+
+    .prose-base
+      :where(thead th:last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      padding-inline-end: 0;
+    }
+
+    .prose-base
+      :where(tbody td, tfoot td):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      padding-top: 0.5714286em;
+      padding-inline-end: 0.5714286em;
+      padding-bottom: 0.5714286em;
+      padding-inline-start: 0.5714286em;
+    }
+
+    .prose-base
+      :where(tbody td:first-child, tfoot td:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      padding-inline-start: 0;
+    }
+
+    .prose-base
+      :where(tbody td:last-child, tfoot td:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      padding-inline-end: 0;
+    }
+
+    &:where(figure):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(figure > *):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(figcaption):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      font-size: 0.875em;
+      line-height: 1.4285714;
+      margin-top: 0.8571429em;
+    }
+
+    .prose-base
+      :where(.prose-base > :first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0;
+    }
+
+    .prose-base
+      :where(.prose-base > :last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@utility prose-lg {
+  font-size: 1.125rem;
+  line-height: 1.7777778;
+
+  :not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(p) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+    }
+
+    &:where([class~='lead']) {
+      font-size: 1.2222222em;
+      line-height: 1.4545455;
+      margin-top: 1.0909091em;
+      margin-bottom: 1.0909091em;
+    }
+
+    &:where(blockquote) {
+      margin-top: 1.6666667em;
+      margin-bottom: 1.6666667em;
+      padding-inline-start: 1em;
+    }
+
+    &:where(h1) {
+      font-size: 2.6666667em;
+      margin-top: 0;
+      margin-bottom: 0.8333333em;
+      line-height: 1;
+    }
+
+    &:where(h2) {
+      font-size: 1.6666667em;
+      margin-top: 1.8666667em;
+      margin-bottom: 1.0666667em;
+      line-height: 1.3333333;
+    }
+
+    &:where(h3) {
+      font-size: 1.3333333em;
+      margin-top: 1.6666667em;
+      margin-bottom: 0.6666667em;
+      line-height: 1.5;
+    }
+
+    &:where(h4) {
+      margin-top: 1.7777778em;
+      margin-bottom: 0.4444444em;
+      line-height: 1.5555556;
+    }
+
+    &:where(img) {
+      margin-top: 1.7777778em;
+      margin-bottom: 1.7777778em;
+    }
+
+    &:where(picture) {
+      margin-top: 1.7777778em;
+      margin-bottom: 1.7777778em;
+    }
+
+    &:where(picture > img) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(video) {
+      margin-top: 1.7777778em;
+      margin-bottom: 1.7777778em;
+    }
+
+    &:where(kbd) {
+      font-size: 0.8888889em;
+      border-radius: 0.3125rem;
+      padding-top: 0.2222222em;
+      padding-inline-end: 0.4444444em;
+      padding-bottom: 0.2222222em;
+      padding-inline-start: 0.4444444em;
+    }
+
+    &:where(code) {
+      font-size: 0.8888889em;
+    }
+
+    &:where(h2 code) {
+      font-size: 0.8666667em;
+    }
+
+    &:where(h3 code) {
+      font-size: 0.875em;
+    }
+
+    &:where(pre) {
+      font-size: 0.8888889em;
+      line-height: 1.75;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border-radius: 0.375rem;
+      padding-top: 1em;
+      padding-inline-end: 1.5em;
+      padding-bottom: 1em;
+      padding-inline-start: 1.5em;
+    }
+
+    &:where(ol) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+      padding-inline-start: 1.5555556em;
+    }
+
+    &:where(ul) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+      padding-inline-start: 1.5555556em;
+    }
+
+    &:where(li) {
+      margin-top: 0.6666667em;
+      margin-bottom: 0.6666667em;
+    }
+
+    &:where(ol > li) {
+      padding-inline-start: 0.4444444em;
+    }
+
+    &:where(ul > li) {
+      padding-inline-start: 0.4444444em;
+    }
+
+    .prose-lg :where(.prose-lg > ul > li p) {
+      margin-top: 0.8888889em;
+      margin-bottom: 0.8888889em;
+    }
+
+    .prose-lg
+      :where(.prose-lg > ul > li > p:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-top: 1.3333333em;
+    }
+
+    .prose-lg
+      :where(.prose-lg > ul > li > p:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-bottom: 1.3333333em;
+    }
+
+    .prose-lg
+      :where(.prose-lg > ol > li > p:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-top: 1.3333333em;
+    }
+
+    .prose-lg
+      :where(.prose-lg > ol > li > p:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-bottom: 1.3333333em;
+    }
+
+    .prose-lg :where(ul ul, ul ol, ol ul, ol ol) {
+      margin-top: 0.8888889em;
+      margin-bottom: 0.8888889em;
+    }
+
+    &:where(dl) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+    }
+
+    &:where(dt) {
+      margin-top: 1.3333333em;
+    }
+
+    &:where(dd) {
+      margin-top: 0.6666667em;
+      padding-inline-start: 1.5555556em;
+    }
+
+    &:where(hr) {
+      margin-top: 3.1111111em;
+      margin-bottom: 3.1111111em;
+    }
+
+    &:where(hr + *) {
+      margin-top: 0;
+    }
+
+    &:where(h2 + *) {
+      margin-top: 0;
+    }
+
+    &:where(h3 + *) {
+      margin-top: 0;
+    }
+
+    &:where(h4 + *) {
+      margin-top: 0;
+    }
+
+    &:where(table) {
+      font-size: 0.8888889em;
+      line-height: 1.5;
+    }
+
+    &:where(thead th) {
+      padding-inline-end: 0.75em;
+      padding-bottom: 0.75em;
+      padding-inline-start: 0.75em;
+    }
+
+    .prose-lg :where(thead th:first-child) {
+      padding-inline-start: 0;
+    }
+
+    .prose-lg :where(thead th:last-child) {
+      padding-inline-end: 0;
+    }
+
+    &:where(tbody td, tfoot td) {
+      padding-top: 0.75em;
+      padding-inline-end: 0.75em;
+      padding-bottom: 0.75em;
+      padding-inline-start: 0.75em;
+    }
+
+    .prose-lg
+      :where(tbody td:first-child, tfoot td:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      padding-inline-start: 0;
+    }
+
+    .prose-lg
+      :where(tbody td:last-child, tfoot td:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      padding-inline-end: 0;
+    }
+
+    &:where(figure):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 1.7777778em;
+      margin-bottom: 1.7777778em;
+    }
+
+    &:where(figure > *):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(figcaption):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      font-size: 0.8888889em;
+      line-height: 1.5;
+      margin-top: 1em;
+    }
+
+    .prose-lg
+      :where(.prose-lg > :first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-top: 0;
+    }
+
+    .prose-lg
+      :where(.prose-lg > :last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@utility prose-xl {
+  font-size: 1.25rem;
+  line-height: 1.8;
+
+  :not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(p) {
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
+    }
+
+    &:where([class~='lead']) {
+      font-size: 1.2em;
+      line-height: 1.5;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    &:where(blockquote) {
+      margin-top: 1.6em;
+      margin-bottom: 1.6em;
+      padding-inline-start: 1.0666667em;
+    }
+
+    &:where(h1) {
+      font-size: 2.8em;
+      margin-top: 0;
+      margin-bottom: 0.8571429em;
+      line-height: 1;
+    }
+
+    &:where(h2) {
+      font-size: 1.8em;
+      margin-top: 1.5555556em;
+      margin-bottom: 0.8888889em;
+      line-height: 1.1111111;
+    }
+
+    &:where(h3) {
+      font-size: 1.5em;
+      margin-top: 1.6em;
+      margin-bottom: 0.6666667em;
+      line-height: 1.3333333;
+    }
+
+    &:where(h4) {
+      margin-top: 1.8em;
+      margin-bottom: 0.6em;
+      line-height: 1.6;
+    }
+
+    &:where(img) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(picture) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(picture > img) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(video) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(kbd) {
+      font-size: 0.9em;
+      border-radius: 0.3125rem;
+      padding-top: 0.25em;
+      padding-inline-end: 0.4em;
+      padding-bottom: 0.25em;
+      padding-inline-start: 0.4em;
+    }
+
+    &:where(code) {
+      font-size: 0.9em;
+    }
+
+    &:where(h2 code) {
+      font-size: 0.8611111em;
+    }
+
+    &:where(h3 code) {
+      font-size: 0.9em;
+    }
+
+    &:where(pre) {
+      font-size: 0.9em;
+      line-height: 1.7777778;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border-radius: 0.5rem;
+      padding-top: 1.1111111em;
+      padding-inline-end: 1.3333333em;
+      padding-bottom: 1.1111111em;
+      padding-inline-start: 1.3333333em;
+    }
+
+    &:where(ol) {
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
+      padding-inline-start: 1.6em;
+    }
+
+    &:where(ul) {
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
+      padding-inline-start: 1.6em;
+    }
+
+    &:where(li) {
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+    }
+
+    &:where(ol > li) {
+      padding-inline-start: 0.4em;
+    }
+
+    &:where(ul > li) {
+      padding-inline-start: 0.4em;
+    }
+
+    &:where(.prose-xl > ul > li p) {
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
+    }
+
+    &:where(.prose-xl > ul > li > p:first-child) {
+      margin-top: 1.2em;
+    }
+
+    &:where(.prose-xl > ul > li > p:last-child) {
+      margin-bottom: 1.2em;
+    }
+
+    &:where(.prose-xl > ol > li > p:first-child) {
+      margin-top: 1.2em;
+    }
+
+    &:where(.prose-xl > ol > li > p:last-child) {
+      margin-bottom: 1.2em;
+    }
+
+    &:where(ul ul, ul ol, ol ul, ol ol) {
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
+    }
+
+    &:where(dl) {
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
+    }
+
+    &:where(dt) {
+      margin-top: 1.2em;
+    }
+
+    &:where(dd) {
+      margin-top: 0.6em;
+      padding-inline-start: 1.6em;
+    }
+
+    &:where(hr) {
+      margin-top: 2.8em;
+      margin-bottom: 2.8em;
+    }
+
+    &:where(hr + *) {
+      margin-top: 0;
+    }
+
+    &:where(h2 + *) {
+      margin-top: 0;
+    }
+
+    &:where(h3 + *) {
+      margin-top: 0;
+    }
+
+    &:where(h4 + *) {
+      margin-top: 0;
+    }
+
+    &:where(table) {
+      font-size: 0.9em;
+      line-height: 1.5555556;
+    }
+
+    &:where(thead th) {
+      padding-inline-end: 0.6666667em;
+      padding-bottom: 0.8888889em;
+      padding-inline-start: 0.6666667em;
+    }
+
+    &:where(thead th:first-child) {
+      padding-inline-start: 0;
+    }
+
+    &:where(thead th:last-child) {
+      padding-inline-end: 0;
+    }
+
+    &:where(tbody td, tfoot td) {
+      padding-top: 0.8888889em;
+      padding-inline-end: 0.6666667em;
+      padding-bottom: 0.8888889em;
+      padding-inline-start: 0.6666667em;
+    }
+
+    &:where(tbody td:first-child, tfoot td:first-child) {
+      padding-inline-start: 0;
+    }
+
+    &:where(tbody td:last-child, tfoot td:last-child) {
+      padding-inline-end: 0;
+    }
+
+    &:where(figure) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(figure > *) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(figcaption) {
+      font-size: 0.9em;
+      line-height: 1.5555556;
+      margin-top: 1em;
+    }
+
+    &:where(.prose-xl > :first-child) {
+      margin-top: 0;
+    }
+
+    &:where(.prose-xl > :last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@utility prose-2xl {
+  font-size: 1.5rem;
+  line-height: 1.6666667;
+
+  :not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(p) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+    }
+
+    &:where([class~='lead']) {
+      font-size: 1.25em;
+      line-height: 1.4666667;
+      margin-top: 1.0666667em;
+      margin-bottom: 1.0666667em;
+    }
+
+    &:where(blockquote) {
+      margin-top: 1.7777778em;
+      margin-bottom: 1.7777778em;
+      padding-inline-start: 1.1111111em;
+    }
+
+    &:where(h1) {
+      font-size: 2.6666667em;
+      margin-top: 0;
+      margin-bottom: 0.875em;
+      line-height: 1;
+    }
+
+    &:where(h2) {
+      font-size: 2em;
+      margin-top: 1.5em;
+      margin-bottom: 0.8333333em;
+      line-height: 1.0833333;
+    }
+
+    &:where(h3) {
+      font-size: 1.5em;
+      margin-top: 1.5555556em;
+      margin-bottom: 0.6666667em;
+      line-height: 1.2222222;
+    }
+
+    &:where(h4) {
+      margin-top: 1.6666667em;
+      margin-bottom: 0.6666667em;
+      line-height: 1.5;
+    }
+
+    &:where(img) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(picture) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(picture > img) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(video) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(kbd) {
+      font-size: 0.8333333em;
+      border-radius: 0.375rem;
+      padding-top: 0.25em;
+      padding-inline-end: 0.3333333em;
+      padding-bottom: 0.25em;
+      padding-inline-start: 0.3333333em;
+    }
+
+    &:where(code) {
+      font-size: 0.8333333em;
+    }
+
+    &:where(h2 code) {
+      font-size: 0.875em;
+    }
+
+    &:where(h3 code) {
+      font-size: 0.8888889em;
+    }
+
+    &:where(pre) {
+      font-size: 0.8333333em;
+      line-height: 1.8;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border-radius: 0.5rem;
+      padding-top: 1.2em;
+      padding-inline-end: 1.6em;
+      padding-bottom: 1.2em;
+      padding-inline-start: 1.6em;
+    }
+
+    &:where(ol) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+      padding-inline-start: 1.5833333em;
+    }
+
+    &:where(ul) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+      padding-inline-start: 1.5833333em;
+    }
+
+    &:where(li) {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    &:where(ol > li) {
+      padding-inline-start: 0.4166667em;
+    }
+
+    &:where(ul > li) {
+      padding-inline-start: 0.4166667em;
+    }
+
+    &:where(.prose-2xl > ul > li p) {
+      margin-top: 0.8333333em;
+      margin-bottom: 0.8333333em;
+    }
+
+    &:where(.prose-2xl > ul > li > p:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-top: 1.3333333em;
+    }
+
+    &:where(.prose-2xl > ul > li > p:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-bottom: 1.3333333em;
+    }
+
+    &:where(.prose-2xl > ol > li > p:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-top: 1.3333333em;
+    }
+
+    &:where(.prose-2xl > ol > li > p:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      margin-bottom: 1.3333333em;
+    }
+
+    &:where(ul ul, ul ol, ol ul, ol ol) {
+      margin-top: 0.6666667em;
+      margin-bottom: 0.6666667em;
+    }
+
+    &:where(dl) {
+      margin-top: 1.3333333em;
+      margin-bottom: 1.3333333em;
+    }
+
+    &:where(dt) {
+      margin-top: 1.3333333em;
+    }
+
+    &:where(dd) {
+      margin-top: 0.5em;
+      padding-inline-start: 1.5833333em;
+    }
+
+    &:where(hr) {
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+
+    &:where(hr + *) {
+      margin-top: 0;
+    }
+
+    &:where(h2 + *) {
+      margin-top: 0;
+    }
+
+    &:where(h3 + *) {
+      margin-top: 0;
+    }
+
+    &:where(h4 + *) {
+      margin-top: 0;
+    }
+
+    &:where(table) {
+      font-size: 0.8333333em;
+      line-height: 1.4;
+    }
+
+    &:where(thead th) {
+      padding-inline-end: 0.6em;
+      padding-bottom: 0.8em;
+      padding-inline-start: 0.6em;
+    }
+
+    &:where(thead th:first-child) {
+      padding-inline-start: 0;
+    }
+
+    &:where(thead th:last-child) {
+      padding-inline-end: 0;
+    }
+
+    &:where(tbody td, tfoot td) {
+      padding-top: 0.8em;
+      padding-inline-end: 0.6em;
+      padding-bottom: 0.8em;
+      padding-inline-start: 0.6em;
+    }
+
+    &:where(tbody td:first-child, tfoot td:first-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      padding-inline-start: 0;
+    }
+
+    &:where(tbody td:last-child, tfoot td:last-child):not(
+        :where([class~='not-prose'], [class~='not-prose'] *)
+      ) {
+      padding-inline-end: 0;
+    }
+
+    &:where(figure) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    &:where(figure > *) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:where(figcaption) {
+      font-size: 0.8333333em;
+      line-height: 1.6;
+      margin-top: 1em;
+    }
+
+    &:where(.prose-2xl > :first-child) {
+      margin-top: 0;
+    }
+
+    &:where(.prose-2xl > :last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Gray color themes */
+
+@utility prose-slate {
+  --tw-prose-body: #334155;
+  --tw-prose-headings: #0f172a;
+  --tw-prose-lead: #475569;
+  --tw-prose-links: #0f172a;
+  --tw-prose-bold: #0f172a;
+  --tw-prose-counters: #64748b;
+  --tw-prose-bullets: #cbd5e1;
+  --tw-prose-hr: #e2e8f0;
+  --tw-prose-quotes: #0f172a;
+  --tw-prose-quote-borders: #e2e8f0;
+  --tw-prose-captions: #64748b;
+  --tw-prose-kbd: #0f172a;
+  --tw-prose-kbd-shadows: 15 23 42;
+  --tw-prose-code: #0f172a;
+  --tw-prose-pre-code: #e2e8f0;
+  --tw-prose-pre-bg: #1e293b;
+  --tw-prose-th-borders: #cbd5e1;
+  --tw-prose-td-borders: #e2e8f0;
+  --tw-prose-invert-body: #cbd5e1;
+  --tw-prose-invert-headings: #fff;
+  --tw-prose-invert-lead: #94a3b8;
+  --tw-prose-invert-links: #fff;
+  --tw-prose-invert-bold: #fff;
+  --tw-prose-invert-counters: #94a3b8;
+  --tw-prose-invert-bullets: #475569;
+  --tw-prose-invert-hr: #334155;
+  --tw-prose-invert-quotes: #f1f5f9;
+  --tw-prose-invert-quote-borders: #334155;
+  --tw-prose-invert-captions: #94a3b8;
+  --tw-prose-invert-kbd: #fff;
+  --tw-prose-invert-kbd-shadows: 255 255 255;
+  --tw-prose-invert-code: #fff;
+  --tw-prose-invert-pre-code: #cbd5e1;
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: #475569;
+  --tw-prose-invert-td-borders: #334155;
+}
+
+@utility prose-gray {
+  --tw-prose-body: #374151;
+  --tw-prose-headings: #111827;
+  --tw-prose-lead: #4b5563;
+  --tw-prose-links: #111827;
+  --tw-prose-bold: #111827;
+  --tw-prose-counters: #6b7280;
+  --tw-prose-bullets: #d1d5db;
+  --tw-prose-hr: #e5e7eb;
+  --tw-prose-quotes: #111827;
+  --tw-prose-quote-borders: #e5e7eb;
+  --tw-prose-captions: #6b7280;
+  --tw-prose-kbd: #111827;
+  --tw-prose-kbd-shadows: 17 24 39;
+  --tw-prose-code: #111827;
+  --tw-prose-pre-code: #e5e7eb;
+  --tw-prose-pre-bg: #1f2937;
+  --tw-prose-th-borders: #d1d5db;
+  --tw-prose-td-borders: #e5e7eb;
+  --tw-prose-invert-body: #d1d5db;
+  --tw-prose-invert-headings: #fff;
+  --tw-prose-invert-lead: #9ca3af;
+  --tw-prose-invert-links: #fff;
+  --tw-prose-invert-bold: #fff;
+  --tw-prose-invert-counters: #9ca3af;
+  --tw-prose-invert-bullets: #4b5563;
+  --tw-prose-invert-hr: #374151;
+  --tw-prose-invert-quotes: #f3f4f6;
+  --tw-prose-invert-quote-borders: #374151;
+  --tw-prose-invert-captions: #9ca3af;
+  --tw-prose-invert-kbd: #fff;
+  --tw-prose-invert-kbd-shadows: 255 255 255;
+  --tw-prose-invert-code: #fff;
+  --tw-prose-invert-pre-code: #d1d5db;
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: #4b5563;
+  --tw-prose-invert-td-borders: #374151;
+}
+
+@utility prose-zinc {
+  --tw-prose-body: #3f3f46;
+  --tw-prose-headings: #18181b;
+  --tw-prose-lead: #52525b;
+  --tw-prose-links: #18181b;
+  --tw-prose-bold: #18181b;
+  --tw-prose-counters: #71717a;
+  --tw-prose-bullets: #d4d4d8;
+  --tw-prose-hr: #e4e4e7;
+  --tw-prose-quotes: #18181b;
+  --tw-prose-quote-borders: #e4e4e7;
+  --tw-prose-captions: #71717a;
+  --tw-prose-kbd: #18181b;
+  --tw-prose-kbd-shadows: 24 24 27;
+  --tw-prose-code: #18181b;
+  --tw-prose-pre-code: #e4e4e7;
+  --tw-prose-pre-bg: #27272a;
+  --tw-prose-th-borders: #d4d4d8;
+  --tw-prose-td-borders: #e4e4e7;
+  --tw-prose-invert-body: #d4d4d8;
+  --tw-prose-invert-headings: #fff;
+  --tw-prose-invert-lead: #a1a1aa;
+  --tw-prose-invert-links: #fff;
+  --tw-prose-invert-bold: #fff;
+  --tw-prose-invert-counters: #a1a1aa;
+  --tw-prose-invert-bullets: #52525b;
+  --tw-prose-invert-hr: #3f3f46;
+  --tw-prose-invert-quotes: #f4f4f5;
+  --tw-prose-invert-quote-borders: #3f3f46;
+  --tw-prose-invert-captions: #a1a1aa;
+  --tw-prose-invert-kbd: #fff;
+  --tw-prose-invert-kbd-shadows: 255 255 255;
+  --tw-prose-invert-code: #fff;
+  --tw-prose-invert-pre-code: #d4d4d8;
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: #52525b;
+  --tw-prose-invert-td-borders: #3f3f46;
+}
+
+@utility prose-neutral {
+  --tw-prose-body: #404040;
+  --tw-prose-headings: #171717;
+  --tw-prose-lead: #525252;
+  --tw-prose-links: #171717;
+  --tw-prose-bold: #171717;
+  --tw-prose-counters: #737373;
+  --tw-prose-bullets: #d4d4d4;
+  --tw-prose-hr: #e5e5e5;
+  --tw-prose-quotes: #171717;
+  --tw-prose-quote-borders: #e5e5e5;
+  --tw-prose-captions: #737373;
+  --tw-prose-kbd: #171717;
+  --tw-prose-kbd-shadows: 23 23 23;
+  --tw-prose-code: #171717;
+  --tw-prose-pre-code: #e5e5e5;
+  --tw-prose-pre-bg: #262626;
+  --tw-prose-th-borders: #d4d4d4;
+  --tw-prose-td-borders: #e5e5e5;
+  --tw-prose-invert-body: #d4d4d4;
+  --tw-prose-invert-headings: #fff;
+  --tw-prose-invert-lead: #a3a3a3;
+  --tw-prose-invert-links: #fff;
+  --tw-prose-invert-bold: #fff;
+  --tw-prose-invert-counters: #a3a3a3;
+  --tw-prose-invert-bullets: #525252;
+  --tw-prose-invert-hr: #404040;
+  --tw-prose-invert-quotes: #f5f5f5;
+  --tw-prose-invert-quote-borders: #404040;
+  --tw-prose-invert-captions: #a3a3a3;
+  --tw-prose-invert-kbd: #fff;
+  --tw-prose-invert-kbd-shadows: 255 255 255;
+  --tw-prose-invert-code: #fff;
+  --tw-prose-invert-pre-code: #d4d4d4;
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: #525252;
+  --tw-prose-invert-td-borders: #404040;
+}
+
+@utility prose-stone {
+  --tw-prose-body: #44403c;
+  --tw-prose-headings: #1c1917;
+  --tw-prose-lead: #57534e;
+  --tw-prose-links: #1c1917;
+  --tw-prose-bold: #1c1917;
+  --tw-prose-counters: #78716c;
+  --tw-prose-bullets: #d6d3d1;
+  --tw-prose-hr: #e7e5e4;
+  --tw-prose-quotes: #1c1917;
+  --tw-prose-quote-borders: #e7e5e4;
+  --tw-prose-captions: #78716c;
+  --tw-prose-kbd: #1c1917;
+  --tw-prose-kbd-shadows: 28 25 23;
+  --tw-prose-code: #1c1917;
+  --tw-prose-pre-code: #e7e5e4;
+  --tw-prose-pre-bg: #292524;
+  --tw-prose-th-borders: #d6d3d1;
+  --tw-prose-td-borders: #e7e5e4;
+  --tw-prose-invert-body: #d6d3d1;
+  --tw-prose-invert-headings: #fff;
+  --tw-prose-invert-lead: #a8a29e;
+  --tw-prose-invert-links: #fff;
+  --tw-prose-invert-bold: #fff;
+  --tw-prose-invert-counters: #a8a29e;
+  --tw-prose-invert-bullets: #57534e;
+  --tw-prose-invert-hr: #44403c;
+  --tw-prose-invert-quotes: #f5f5f4;
+  --tw-prose-invert-quote-borders: #44403c;
+  --tw-prose-invert-captions: #a8a29e;
+  --tw-prose-invert-kbd: #fff;
+  --tw-prose-invert-kbd-shadows: 255 255 255;
+  --tw-prose-invert-code: #fff;
+  --tw-prose-invert-pre-code: #d6d3d1;
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: #57534e;
+  --tw-prose-invert-td-borders: #44403c;
+}
+
+/* Link-only themes (for backward compatibility) */
+
+@utility prose-red {
+  --tw-prose-links: --theme(--color-red-600, initial);
+  --tw-prose-invert-links: --theme(--color-red-500, initial);
+}
+
+@utility prose-orange {
+  --tw-prose-links: --theme(--color-orange-600, initial);
+  --tw-prose-invert-links: --theme(--color-orange-500, initial);
+}
+
+@utility prose-amber {
+  --tw-prose-links: --theme(--color-amber-600, initial);
+  --tw-prose-invert-links: --theme(--color-amber-500, initial);
+}
+
+@utility prose-yellow {
+  --tw-prose-links: --theme(--color-yellow-600, initial);
+  --tw-prose-invert-links: --theme(--color-yellow-500, initial);
+}
+
+@utility prose-lime {
+  --tw-prose-links: --theme(--color-lime-600, initial);
+  --tw-prose-invert-links: --theme(--color-lime-500, initial);
+}
+
+@utility prose-green {
+  --tw-prose-links: --theme(--color-green-600, initial);
+  --tw-prose-invert-links: --theme(--color-green-500, initial);
+}
+
+@utility prose-emerald {
+  --tw-prose-links: --theme(--color-emerald-600, initial);
+  --tw-prose-invert-links: --theme(--color-emerald-500, initial);
+}
+
+@utility prose-teal {
+  --tw-prose-links: --theme(--color-teal-600, initial);
+  --tw-prose-invert-links: --theme(--color-teal-500, initial);
+}
+
+@utility prose-cyan {
+  --tw-prose-links: --theme(--color-cyan-600, initial);
+  --tw-prose-invert-links: --theme(--color-cyan-500, initial);
+}
+
+@utility prose-sky {
+  --tw-prose-links: --theme(--color-sky-600, initial);
+  --tw-prose-invert-links: --theme(--color-sky-500, initial);
+}
+
+@utility prose-blue {
+  --tw-prose-links: --theme(--color-blue-600, initial);
+  --tw-prose-invert-links: --theme(--color-blue-500, initial);
+}
+
+@utility prose-indigo {
+  --tw-prose-links: --theme(--color-indigo-600, initial);
+  --tw-prose-invert-links: --theme(--color-indigo-500, initial);
+}
+
+@utility prose-violet {
+  --tw-prose-links: --theme(--color-violet-600, initial);
+  --tw-prose-invert-links: --theme(--color-violet-500, initial);
+}
+
+@utility prose-purple {
+  --tw-prose-links: --theme(--color-purple-600, initial);
+  --tw-prose-invert-links: --theme(--color-purple-500, initial);
+}
+
+@utility prose-fuchsia {
+  --tw-prose-links: --theme(--color-fuchsia-600, initial);
+  --tw-prose-invert-links: --theme(--color-fuchsia-500, initial);
+}
+
+@utility prose-pink {
+  --tw-prose-links: --theme(--color-pink-600, initial);
+  --tw-prose-invert-links: --theme(--color-pink-500, initial);
+}
+
+@utility prose-rose {
+  --tw-prose-links: --theme(--color-rose-600, initial);
+  --tw-prose-invert-links: --theme(--color-rose-500, initial);
+}
+
+/* Invert (for dark mode) */
+
+@utility prose-invert {
+  --tw-prose-body: var(--tw-prose-invert-body);
+  --tw-prose-headings: var(--tw-prose-invert-headings);
+  --tw-prose-lead: var(--tw-prose-invert-lead);
+  --tw-prose-links: var(--tw-prose-invert-links);
+  --tw-prose-bold: var(--tw-prose-invert-bold);
+  --tw-prose-counters: var(--tw-prose-invert-counters);
+  --tw-prose-bullets: var(--tw-prose-invert-bullets);
+  --tw-prose-hr: var(--tw-prose-invert-hr);
+  --tw-prose-quotes: var(--tw-prose-invert-quotes);
+  --tw-prose-quote-borders: var(--tw-prose-invert-quote-borders);
+  --tw-prose-captions: var(--tw-prose-invert-captions);
+  --tw-prose-kbd: var(--tw-prose-invert-kbd);
+  --tw-prose-kbd-shadows: var(--tw-prose-invert-kbd-shadows);
+  --tw-prose-code: var(--tw-prose-invert-code);
+  --tw-prose-pre-code: var(--tw-prose-invert-pre-code);
+  --tw-prose-pre-bg: var(--tw-prose-invert-pre-bg);
+  --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
+  --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
 }
