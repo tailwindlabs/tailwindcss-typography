@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Include unit in `hr` border-width value ([#379](https://github.com/tailwindlabs/tailwindcss-typography/pull/379)
+- Support installing with release versions of Tailwind CSS v4 ([#389](https://github.com/tailwindlabs/tailwindcss-typography/pull/389))
 
 ## [0.5.16] - 2025-01-07
 
