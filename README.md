@@ -33,6 +33,19 @@ Then add the plugin to your main `style.css` file:
 + @plugin "@tailwindcss/typography";
 ```
 
+If you are still using Tailwind CSS v3, add the plugin to your tailwind.config.js file:
+
+// tailwind.config.js
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ...
+  ],
+}
+
 ---
 
 ## Basic usage
