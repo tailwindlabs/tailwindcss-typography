@@ -181,6 +181,9 @@ Here's a complete list of available element modifiers:
 | `prose-ol:{utility}`         | `ol`                         |
 | `prose-ul:{utility}`         | `ul`                         |
 | `prose-li:{utility}`         | `li`                         |
+| `prose-dl:{utility}`         | `dl`                         |
+| `prose-dt:{utility}`         | `dt`                         |
+| `prose-dd:{utiddty}`         | `dd`                         |
 | `prose-table:{utility}`      | `table`                      |
 | `prose-thead:{utility}`      | `thead`                      |
 | `prose-tr:{utility}`         | `tr`                         |
