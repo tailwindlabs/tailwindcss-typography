@@ -1421,3 +1421,21 @@ test('lead styles are inserted after paragraph styles', async () => {
     )
   })
 })
+
+test('should be possible to undo the typography style using specified class names', async () => {
+  let config = {
+    plugins: [typographyPlugin({ skip: ['class-name-1', 'class-name-2'] })],
+    content: [{ raw: html`<div class="prose"></div>` }],
+  }
+
+  return run(config).then((result) => {
+    expect(result.css).toIncludeCss(css`
+      .prose
+        :where(ul > li):not(:where([class~='not-prose'], [class~='not-prose']
+            *, [class~='class-name-1'], [class~='class-name-1']
+            *, [class~='class-name-2'], [class~='class-name-2'] *))::marker {
+        color: var(--tw-prose-bullets);
+      }
+    `)
+  })
+})

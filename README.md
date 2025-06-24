@@ -245,6 +245,23 @@ If you have a block of markup embedded in some content that shouldn't inherit th
 
 Note that you can't nest new `prose` instances within a `not-prose` block at this time.
 
+You can also specify a list of classes that will act like `not-prose` by using the `skip` option.
+
+```js {{ filename: 'tailwind.config.js' }}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/typography')({
+      skip: ['my-component']
+    }),
+  ]
+  ...
+}
+```
+
 ### Adding custom color themes
 
 To customize the color theme beyond simple CSS overrides, you can use the JavaScript based theme API. To do that, use the `@config` directive:
