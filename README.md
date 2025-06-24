@@ -187,6 +187,8 @@ Here's a complete list of available element modifiers:
 | `prose-th:{utility}`         | `th`                         |
 | `prose-td:{utility}`         | `td`                         |
 | `prose-img:{utility}`        | `img`                        |
+| `prose-picture:{utility}`    | `picture`                    |
+| `prose-images:{utility}`     | `img`, `picture`             |
 | `prose-video:{utility}`      | `video`                      |
 | `prose-hr:{utility}`         | `hr`                         |
 
