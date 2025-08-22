@@ -245,6 +245,8 @@ If you have a block of markup embedded in some content that shouldn't inherit th
 
 Note that you can't nest new `prose` instances within a `not-prose` block at this time.
 
+Even when using a prefix for your utilities `not-prose` should not have a prefix.
+
 ### Adding custom color themes
 
 To customize the color theme beyond simple CSS overrides, you can use the JavaScript based theme API. To do that, use the `@config` directive:
