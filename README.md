@@ -245,7 +245,7 @@ If you have a block of markup embedded in some content that shouldn't inherit th
 
 Note that you can't nest new `prose` instances within a `not-prose` block at this time.
 
-If using a `prefix(...)`, use `not-prose` without the prefix.
+Even when using a prefix for your utilities `not-prose` should not have a prefix.
 
 ### Adding custom color themes
 
