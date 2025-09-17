@@ -1,9 +1,67 @@
-const isPlainObject = require('lodash.isplainobject')
-
 const parser = require('postcss-selector-parser')
 const parseSelector = parser()
 
+function isObject(value) {
+  return typeof value === 'object' && value !== null
+}
+
+function isPlainObject(value) {
+  if (typeof value !== 'object' || value === null) {
+    return false
+  }
+
+  if (Object.prototype.toString.call(value) !== '[object Object]') {
+    return false
+  }
+
+  if (Object.getPrototypeOf(value) === null) {
+    return true
+  }
+
+  let proto = value
+  while (Object.getPrototypeOf(proto) !== null) {
+    proto = Object.getPrototypeOf(proto)
+  }
+
+  return Object.getPrototypeOf(value) === proto
+}
+
+function merge(target, ...sources) {
+  if (!sources.length) return target
+  const source = sources.shift()
+
+  if (isObject(target) && isObject(source)) {
+    for (const key in source) {
+      if (Array.isArray(source[key])) {
+        if (!target[key]) target[key] = []
+        source[key].forEach((item, index) => {
+          if (isPlainObject(item) && isPlainObject(target[key][index])) {
+            target[key][index] = merge(target[key][index], item)
+          } else {
+            target[key][index] = item
+          }
+        })
+      } else if (isPlainObject(source[key])) {
+        if (!target[key]) target[key] = {}
+        merge(target[key], source[key])
+      } else {
+        target[key] = source[key]
+      }
+    }
+  }
+
+  return merge(target, ...sources)
+}
+
+function castArray(value) {
+  return Array.isArray(value) ? value : [value]
+}
+
 module.exports = {
+  isObject,
+  isPlainObject,
+  merge,
+  castArray,
   isUsableColor(color, values) {
     return isPlainObject(values) && color !== 'gray' && values[600]
   },
