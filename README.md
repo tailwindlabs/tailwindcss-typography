@@ -187,6 +187,7 @@ Here's a complete list of available element modifiers:
 | `prose-th:{utility}`         | `th`                         |
 | `prose-td:{utility}`         | `td`                         |
 | `prose-img:{utility}`        | `img`                        |
+| `prose-picture:{utility}`    | `picture`                    |
 | `prose-video:{utility}`      | `video`                      |
 | `prose-hr:{utility}`         | `hr`                         |
 
@@ -345,9 +346,9 @@ See our internal [style definitions](https://github.com/tailwindlabs/tailwindcss
 If you need to use a class name other than `prose` for any reason, you can do so using the `className` option when registering the plugin:
 
 ```css
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "@tailwindcss/typography" {
-  className: wysiwyg;
+  classname: wysiwyg;
 }
 ```
 

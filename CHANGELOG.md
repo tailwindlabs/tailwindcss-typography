@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `prose-picture` modifier ([#367](https://github.com/tailwindlabs/tailwindcss-typography/pull/367))
+
 ### Fixed
 
 - Include unit in `hr` border-width value ([#379](https://github.com/tailwindlabs/tailwindcss-typography/pull/379)
