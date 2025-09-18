@@ -7,14 +7,21 @@ const round = (num) =>
     .replace(/\.0$/, '')
 const rem = (px) => `${round(px / 16)}rem`
 const em = (px, base) => `${round(px / base)}em`
-const isHex = (hex) => /^#[0-9A-F]{6}$/i.test(hex)
-const hexToRgb = (hex) => {
-  hex = hex.replace('#', '')
+const opacity = (color, opacity) => {
+  // In v3, the colors are hex encoded and a previous typography plugin version
+  // only handled these values. We keep the old behavior for backward
+  // compatibility with v3 codebases but use color-mix for any other color
+  // values.
+  hex = color.replace('#', '')
   hex = hex.length === 3 ? hex.replace(/./g, '$&$&') : hex
   const r = parseInt(hex.substring(0, 2), 16)
   const g = parseInt(hex.substring(2, 4), 16)
   const b = parseInt(hex.substring(4, 6), 16)
-  return `${r} ${g} ${b}`
+
+  if (Number.isNaN(r) || Number.isNaN(g) || Number.isNaN(b)) {
+    return `color-mix(in oklab, ${color} ${opacity}, transparent)`
+  }
+  return `rgb(${r}, ${g}, ${b} / ${opacity})`
 }
 
 let defaultModifiers = {
@@ -1060,9 +1067,7 @@ let defaultModifiers = {
       '--tw-prose-quote-borders': colors.slate[200],
       '--tw-prose-captions': colors.slate[500],
       '--tw-prose-kbd': colors.slate[900],
-      '--tw-prose-kbd-shadows': isHex(colors.slate[900])
-        ? `rgb(${hexToRgb(colors.slate[900])} / 10%)`
-        : colors.slate[900].replace(")", " / .1)"),
+      '--tw-prose-kbd-shadows': opacity(colors.slate[900], '10%'),
       '--tw-prose-code': colors.slate[900],
       '--tw-prose-pre-code': colors.slate[200],
       '--tw-prose-pre-bg': colors.slate[800],
@@ -1080,7 +1085,7 @@ let defaultModifiers = {
       '--tw-prose-invert-quote-borders': colors.slate[700],
       '--tw-prose-invert-captions': colors.slate[400],
       '--tw-prose-invert-kbd': colors.white,
-      '--tw-prose-invert-kbd-shadows': `rgb(${hexToRgb(colors.white)} / 10%)`,
+      '--tw-prose-invert-kbd-shadows': opacity(colors.white, '10%'),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.slate[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -1103,9 +1108,7 @@ let defaultModifiers = {
       '--tw-prose-quote-borders': colors.gray[200],
       '--tw-prose-captions': colors.gray[500],
       '--tw-prose-kbd': colors.gray[900],
-      '--tw-prose-kbd-shadows': isHex(colors.gray[900])
-        ? `rgb(${hexToRgb(colors.gray[900])} / 10%)`
-        : colors.gray[900].replace(")", " / .1)"),
+      '--tw-prose-kbd-shadows': opacity(colors.gray[900], '10%'),
       '--tw-prose-code': colors.gray[900],
       '--tw-prose-pre-code': colors.gray[200],
       '--tw-prose-pre-bg': colors.gray[800],
@@ -1123,7 +1126,7 @@ let defaultModifiers = {
       '--tw-prose-invert-quote-borders': colors.gray[700],
       '--tw-prose-invert-captions': colors.gray[400],
       '--tw-prose-invert-kbd': colors.white,
-      '--tw-prose-invert-kbd-shadows': `rgb(${hexToRgb(colors.white)} / 10%)`,
+      '--tw-prose-invert-kbd-shadows': opacity(colors.white, '10%'),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.gray[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -1146,9 +1149,7 @@ let defaultModifiers = {
       '--tw-prose-quote-borders': colors.zinc[200],
       '--tw-prose-captions': colors.zinc[500],
       '--tw-prose-kbd': colors.zinc[900],
-      '--tw-prose-kbd-shadows': isHex(colors.zinc[900])
-        ? `rgb(${hexToRgb(colors.zinc[900])} / 10%)`
-        : colors.zinc[900].replace(")", " / .1)"),
+      '--tw-prose-kbd-shadows': opacity(colors.zinc[900], '10%'),
       '--tw-prose-code': colors.zinc[900],
       '--tw-prose-pre-code': colors.zinc[200],
       '--tw-prose-pre-bg': colors.zinc[800],
@@ -1166,7 +1167,7 @@ let defaultModifiers = {
       '--tw-prose-invert-quote-borders': colors.zinc[700],
       '--tw-prose-invert-captions': colors.zinc[400],
       '--tw-prose-invert-kbd': colors.white,
-      '--tw-prose-invert-kbd-shadows': `rgb(${hexToRgb(colors.white)} / 10%)`,
+      '--tw-prose-invert-kbd-shadows': opacity(colors.white, '10%'),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.zinc[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -1189,9 +1190,7 @@ let defaultModifiers = {
       '--tw-prose-quote-borders': colors.neutral[200],
       '--tw-prose-captions': colors.neutral[500],
       '--tw-prose-kbd': colors.neutral[900],
-      '--tw-prose-kbd-shadows': isHex(colors.neutral[900])
-        ? `rgb(${hexToRgb(colors.neutral[900])} / 10%)`
-        : colors.neutral[900].replace(")", " / .1)"),
+      '--tw-prose-kbd-shadows': opacity(colors.neutral[900], '10%'),
       '--tw-prose-code': colors.neutral[900],
       '--tw-prose-pre-code': colors.neutral[200],
       '--tw-prose-pre-bg': colors.neutral[800],
@@ -1209,7 +1208,7 @@ let defaultModifiers = {
       '--tw-prose-invert-quote-borders': colors.neutral[700],
       '--tw-prose-invert-captions': colors.neutral[400],
       '--tw-prose-invert-kbd': colors.white,
-      '--tw-prose-invert-kbd-shadows': `rgb(${hexToRgb(colors.white)} / 10%)`,
+      '--tw-prose-invert-kbd-shadows': opacity(colors.white, '10%'),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.neutral[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
@@ -1232,9 +1231,7 @@ let defaultModifiers = {
       '--tw-prose-quote-borders': colors.stone[200],
       '--tw-prose-captions': colors.stone[500],
       '--tw-prose-kbd': colors.stone[900],
-      '--tw-prose-kbd-shadows': isHex(colors.stone[900])
-        ? `rgb(${hexToRgb(colors.stone[900])} / 10%)`
-        : colors.stone[900].replace(")", " / .1)"),
+      '--tw-prose-kbd-shadows': opacity(colors.stone[900], '10%'),
       '--tw-prose-code': colors.stone[900],
       '--tw-prose-pre-code': colors.stone[200],
       '--tw-prose-pre-bg': colors.stone[800],
@@ -1252,7 +1249,7 @@ let defaultModifiers = {
       '--tw-prose-invert-quote-borders': colors.stone[700],
       '--tw-prose-invert-captions': colors.stone[400],
       '--tw-prose-invert-kbd': colors.white,
-      '--tw-prose-invert-kbd-shadows': `rgb(${hexToRgb(colors.white)} / 10%)`,
+      '--tw-prose-invert-kbd-shadows': opacity(colors.white, '10%'),
       '--tw-prose-invert-code': colors.white,
       '--tw-prose-invert-pre-code': colors.stone[300],
       '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
