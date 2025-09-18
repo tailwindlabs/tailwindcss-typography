@@ -707,6 +707,7 @@ test('element variants', async () => {
             prose-th:text-left
             prose-td:align-center
             prose-img:rounded-lg
+            prose-picture:my-8
             prose-video:my-12
             prose-hr:border-t-2
         "
@@ -854,6 +855,11 @@ test('element variants', async () => {
         .prose-img\:rounded-lg
           :is(:where(img):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           border-radius: 0.5rem;
+        }
+        .prose-picture\:my-8
+          :is(:where(picture):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
         }
         .prose-video\:my-12
           :is(:where(video):not(:where([class~='not-prose'], [class~='not-prose'] *))) {

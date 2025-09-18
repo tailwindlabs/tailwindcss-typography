@@ -97,7 +97,6 @@ module.exports = plugin.withOptions(
         ['td'],
         ['img'],
         ['picture'],
-        ['images', 'img', 'picture'],
         ['video'],
         ['hr'],
         ['lead', '[class~="lead"]'],
@@ -134,4 +133,3 @@ module.exports = plugin.withOptions(
     }
   }
 )
-
