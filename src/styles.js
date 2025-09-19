@@ -12,7 +12,7 @@ const opacity = (color, opacity) => {
   // only handled these values. We keep the old behavior for backward
   // compatibility with v3 codebases but use color-mix for any other color
   // values.
-  hex = color.replace('#', '')
+  let hex = color.replace('#', '')
   hex = hex.length === 3 ? hex.replace(/./g, '$&$&') : hex
   const r = parseInt(hex.substring(0, 2), 16)
   const g = parseInt(hex.substring(2, 4), 16)
