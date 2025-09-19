@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [0.5.18] - 2025-09-19
+
+### Fixed
+
+- Fixed undefined variable error ([#403](https://github.com/tailwindlabs/tailwindcss-typography/pull/403))
+
 ## [0.5.17] - 2025-09-19
 
 ### Added
@@ -231,7 +237,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.17...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.18...HEAD
+[0.5.18]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.17...v0.5.18
 [0.5.17]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.16...v0.5.17
 [0.5.16]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.15...v0.5.16
 [0.5.15]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.14...v0.5.15
