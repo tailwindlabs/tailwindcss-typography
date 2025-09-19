@@ -7,13 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.5.17] - 2025-09-19
+
 ### Added
 
+- Add modifiers for description list elements ([#357](https://github.com/tailwindlabs/tailwindcss-typography/pull/357))
 - Add `prose-picture` modifier ([#367](https://github.com/tailwindlabs/tailwindcss-typography/pull/367))
 
 ### Fixed
 
-- Include unit in `hr` border-width value ([#379](https://github.com/tailwindlabs/tailwindcss-typography/pull/379)
+- Include unit in `hr` border-width value ([#379](https://github.com/tailwindlabs/tailwindcss-typography/pull/379))
 - Ensure `<kbd>` styles work with Tailwind CSS v4 ([#387](https://github.com/tailwindlabs/tailwindcss-typography/pull/387))
 
 ### Changed
@@ -226,7 +231,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.16...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.17...HEAD
+[0.5.17]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.16...v0.5.17
 [0.5.16]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.15...v0.5.16
 [0.5.15]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.14...v0.5.15
 [0.5.14]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.13...v0.5.14
