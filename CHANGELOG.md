@@ -7,7 +7,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Fixed
+
+- Fixed broken color styles ([#405](https://github.com/tailwindlabs/tailwindcss-typography/pull/405))
+
+## [0.5.18] - 2025-09-19
+
+### Fixed
+
+- Fixed undefined variable error ([#403](https://github.com/tailwindlabs/tailwindcss-typography/pull/403))
+
+## [0.5.17] - 2025-09-19
+
+### Added
+
+- Add modifiers for description list elements ([#357](https://github.com/tailwindlabs/tailwindcss-typography/pull/357))
+- Add `prose-picture` modifier ([#367](https://github.com/tailwindlabs/tailwindcss-typography/pull/367))
+
+### Fixed
+
+- Include unit in `hr` border-width value ([#379](https://github.com/tailwindlabs/tailwindcss-typography/pull/379))
+- Ensure `<kbd>` styles work with Tailwind CSS v4 ([#387](https://github.com/tailwindlabs/tailwindcss-typography/pull/387))
+
+### Changed
+
+- Remove lodash dependencies ([#402](https://github.com/tailwindlabs/tailwindcss-typography/pull/402))
+
+## [0.5.16] - 2025-01-07
+
+### Fixed
+
+- Support installing with beta versions of Tailwind CSS v4 ([#365](https://github.com/tailwindlabs/tailwindcss-typography/pull/365))
+
+## [0.5.15] - 2024-08-28
+
+### Fixed
+
+- Support installing with alpha versions of Tailwind CSS v4 ([#358](https://github.com/tailwindlabs/tailwindcss-typography/pull/358))
+
+## [0.5.14] - 2024-08-07
+
+### Fixed
+
+- Fix table text alignment ([#346](https://github.com/tailwindlabs/tailwindcss-typography/pull/346))
+
+## [0.5.13] - 2024-04-26
+
+### Fixed
+
+- Don't apply margins to `<br>` elements contained in an `<li>` in FF ([#350](https://github.com/tailwindlabs/tailwindcss-typography/pull/350))
 
 ## [0.5.12] - 2024-03-27
 
@@ -191,7 +239,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.12...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.18...HEAD
+[0.5.18]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.17...v0.5.18
+[0.5.17]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.16...v0.5.17
+[0.5.16]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.15...v0.5.16
+[0.5.15]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.14...v0.5.15
+[0.5.14]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.13...v0.5.14
+[0.5.13]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.12...v0.5.13
 [0.5.12]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.11...v0.5.12
 [0.5.11]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.10...v0.5.11
 [0.5.10]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.9...v0.5.10

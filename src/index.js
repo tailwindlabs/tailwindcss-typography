@@ -1,8 +1,6 @@
 const plugin = require('tailwindcss/plugin')
-const merge = require('lodash.merge')
-const castArray = require('lodash.castarray')
 const styles = require('./styles')
-const { commonTrailingPseudos } = require('./utils')
+const { commonTrailingPseudos, isObject, isPlainObject, merge, castArray } = require('./utils')
 
 const computed = {
   // Reserved for future "magic properties", for example:
@@ -23,10 +21,6 @@ function inWhere(selector, { className, modifier, prefix }) {
   }
 
   return `:where(${selectorPrefix}${selector}):not(:where([class~="${prefixedNot}"],[class~="${prefixedNot}"] *))`
-}
-
-function isObject(value) {
-  return typeof value === 'object' && value !== null
 }
 
 function configToCss(config = {}, { target, className, modifier, prefix }) {
@@ -97,12 +91,16 @@ module.exports = plugin.withOptions(
         ['ol'],
         ['ul'],
         ['li'],
+        ['dl'],
+        ['dt'],
+        ['dd'],
         ['table'],
         ['thead'],
         ['tr'],
         ['th'],
         ['td'],
         ['img'],
+        ['picture'],
         ['video'],
         ['hr'],
         ['lead', '[class~="lead"]'],

@@ -6,9 +6,6 @@ on:
     tags:
       - 'v*'
 
-env:
-  CI: true
-
 permissions:
   contents: read
 
@@ -21,34 +18,23 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18]
+        node-version: [22]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
-
-      - name: Use cached node_modules
-        id: cache
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: nodeModules-${{ hashFiles('./package-lock.json') }}-${{ matrix.node-version }}
+          cache: 'npm'
 
       - name: Install dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
         run: npm install
-        env:
-          CI: true
 
       - name: Test
         run: npm test
-        env:
-          CI: true
 
       - name: Resolve version
         id: vars

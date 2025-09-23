@@ -702,12 +702,16 @@ test('element variants', async () => {
             prose-ol:pl-6
             prose-ul:pl-8
             prose-li:my-4
+            prose-dl:pl-6
+            prose-dt:pl-8
+            prose-dd:my-4
             prose-table:my-8
             prose-thead:border-red-300
             prose-tr:border-red-200
             prose-th:text-left
             prose-td:align-center
             prose-img:rounded-lg
+            prose-picture:my-8
             prose-video:my-12
             prose-hr:border-t-2
         "
@@ -838,6 +842,16 @@ test('element variants', async () => {
           margin-top: 1rem;
           margin-bottom: 1rem;
         }
+        .prose-dl\:pl-6 :is(:where(dl):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
+          padding-left: 1.5rem;
+        }
+        .prose-dt\:pl-8 :is(:where(dt):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
+          padding-left: 2rem;
+        }
+        .prose-dd\:my-4 :is(:where(dd):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
         .prose-table\:my-8
           :is(:where(table):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           margin-top: 2rem;
@@ -860,6 +874,11 @@ test('element variants', async () => {
         .prose-img\:rounded-lg
           :is(:where(img):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           border-radius: 0.5rem;
+        }
+        .prose-picture\:my-8
+          :is(:where(picture):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
         }
         .prose-video\:my-12
           :is(:where(video):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
