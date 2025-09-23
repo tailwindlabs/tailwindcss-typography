@@ -14,14 +14,16 @@ const opacity = (color, opacity) => {
   // values.
   let hex = color.replace('#', '')
   hex = hex.length === 3 ? hex.replace(/./g, '$&$&') : hex
-  const r = parseInt(hex.substring(0, 2), 16)
-  const g = parseInt(hex.substring(2, 4), 16)
-  const b = parseInt(hex.substring(4, 6), 16)
+
+  let r = parseInt(hex.substring(0, 2), 16)
+  let g = parseInt(hex.substring(2, 4), 16)
+  let b = parseInt(hex.substring(4, 6), 16)
 
   if (Number.isNaN(r) || Number.isNaN(g) || Number.isNaN(b)) {
     return `color-mix(in oklab, ${color} ${opacity}, transparent)`
   }
-  return `rgb(${r}, ${g}, ${b} / ${opacity})`
+
+  return `rgb(${r} ${g} ${b} / ${opacity})`
 }
 
 let defaultModifiers = {

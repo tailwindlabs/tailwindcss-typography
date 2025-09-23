@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Fixed
+
+- Fixed broken color styles ([#405](https://github.com/tailwindlabs/tailwindcss-typography/pull/405))
 
 ## [0.5.18] - 2025-09-19
 
