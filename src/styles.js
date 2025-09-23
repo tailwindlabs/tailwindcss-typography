@@ -23,7 +23,7 @@ const opacity = (color, opacity) => {
     return `color-mix(in oklab, ${color} ${opacity}, transparent)`
   }
 
-  return `rgb(${r}, ${g}, ${b} / ${opacity})`
+  return `rgb(${r} ${g} ${b} / ${opacity})`
 }
 
 let defaultModifiers = {
