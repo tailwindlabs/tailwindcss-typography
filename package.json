@@ -1,6 +1,6 @@
 {
   "name": "@tailwindcss/typography",
-  "version": "0.5.18",
+  "version": "0.5.19",
   "description": "A Tailwind CSS plugin for automatically styling plain HTML content with beautiful typographic defaults.",
   "main": "src/index.js",
   "types": "src/index.d.ts",

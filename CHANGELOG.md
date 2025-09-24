@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.5.19] - 2025-09-24
+
 ### Fixed
 
 - Fixed broken color styles ([#405](https://github.com/tailwindlabs/tailwindcss-typography/pull/405))
@@ -239,7 +243,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.18...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.19...HEAD
+[0.5.19]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.18...v0.5.19
 [0.5.18]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.17...v0.5.18
 [0.5.17]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.16...v0.5.17
 [0.5.16]: https://github.com/tailwindlabs/tailwindcss-typography/compare/v0.5.15...v0.5.16
