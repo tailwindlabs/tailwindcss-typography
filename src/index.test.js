@@ -696,6 +696,7 @@ test('element variants', async () => {
             prose-strong:font-medium
             prose-em:italic
             prose-kbd:border-b-2
+            prose-inline-code:px-4
             prose-code:font-mono
             prose-pre:font-mono
             prose-ol:pl-6
@@ -815,6 +816,11 @@ test('element variants', async () => {
         .prose-kbd\:border-b-2
           :is(:where(kbd):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
           border-bottom-width: 2px;
+        }
+        .prose-inline-code\:px-4
+          :is(:where(:not(pre) > code):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
+          padding-left: 1rem;
+          padding-right: 1rem;
         }
         .prose-code\:font-mono
           :is(:where(code):not(:where([class~='not-prose'], [class~='not-prose'] *))) {
