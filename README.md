@@ -351,7 +351,7 @@ If you need to use a class name other than `prose` for any reason, you can do so
 ```css
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography" {
-  classname: wysiwyg;
+  className: wysiwyg;
 }
 ```
 
