@@ -904,41 +904,36 @@
       padding-inline-start: 0.375em;
     }
 
-    .prose-base :where(.prose-base > ul > li p) {
+    &:where(.prose-base > ul > li p) {
       margin-top: 0.75em;
       margin-bottom: 0.75em;
     }
 
-    .prose-base
-      :where(.prose-base > ul > li > p:first-child):not(
+    &:where(.prose-base > ul > li > p:first-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       margin-top: 1.25em;
     }
 
-    .prose-base
-      :where(.prose-base > ul > li > p:last-child):not(
+    &:where(.prose-base > ul > li > p:last-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       margin-bottom: 1.25em;
     }
 
-    .prose-base
-      :where(.prose-base > ol > li > p:first-child):not(
+    &:where(.prose-base > ol > li > p:first-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       margin-top: 1.25em;
     }
 
-    .prose-base
-      :where(.prose-base > ol > li > p:last-child):not(
+    &:where(.prose-base > ol > li > p:last-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       margin-bottom: 1.25em;
     }
 
-    .prose-base
-      :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(ul ul, ul ol, ol ul, ol ol):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
       margin-top: 0.75em;
       margin-bottom: 0.75em;
     }
@@ -989,33 +984,28 @@
       padding-inline-start: 0.5714286em;
     }
 
-    .prose-base
-      :where(thead th:first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(thead th:first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
       padding-inline-start: 0;
     }
 
-    .prose-base
-      :where(thead th:last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(thead th:last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
       padding-inline-end: 0;
     }
 
-    .prose-base
-      :where(tbody td, tfoot td):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(tbody td, tfoot td):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
       padding-top: 0.5714286em;
       padding-inline-end: 0.5714286em;
       padding-bottom: 0.5714286em;
       padding-inline-start: 0.5714286em;
     }
 
-    .prose-base
-      :where(tbody td:first-child, tfoot td:first-child):not(
+    &:where(tbody td:first-child, tfoot td:first-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       padding-inline-start: 0;
     }
 
-    .prose-base
-      :where(tbody td:last-child, tfoot td:last-child):not(
+    &:where(tbody td:last-child, tfoot td:last-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       padding-inline-end: 0;
@@ -1037,13 +1027,11 @@
       margin-top: 0.8571429em;
     }
 
-    .prose-base
-      :where(.prose-base > :first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(.prose-base > :first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
       margin-top: 0;
     }
 
-    .prose-base
-      :where(.prose-base > :last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(.prose-base > :last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
       margin-bottom: 0;
     }
   }
@@ -1177,40 +1165,36 @@
       padding-inline-start: 0.4444444em;
     }
 
-    .prose-lg :where(.prose-lg > ul > li p) {
+    &:where(.prose-lg > ul > li p) {
       margin-top: 0.8888889em;
       margin-bottom: 0.8888889em;
     }
 
-    .prose-lg
-      :where(.prose-lg > ul > li > p:first-child):not(
+    &:where(.prose-lg > ul > li > p:first-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       margin-top: 1.3333333em;
     }
 
-    .prose-lg
-      :where(.prose-lg > ul > li > p:last-child):not(
+    &:where(.prose-lg > ul > li > p:last-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       margin-bottom: 1.3333333em;
     }
 
-    .prose-lg
-      :where(.prose-lg > ol > li > p:first-child):not(
+    &:where(.prose-lg > ol > li > p:first-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       margin-top: 1.3333333em;
     }
 
-    .prose-lg
-      :where(.prose-lg > ol > li > p:last-child):not(
+    &:where(.prose-lg > ol > li > p:last-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       margin-bottom: 1.3333333em;
     }
 
-    .prose-lg :where(ul ul, ul ol, ol ul, ol ol) {
+    &:where(ul ul, ul ol, ol ul, ol ol) {
       margin-top: 0.8888889em;
       margin-bottom: 0.8888889em;
     }
@@ -1261,11 +1245,11 @@
       padding-inline-start: 0.75em;
     }
 
-    .prose-lg :where(thead th:first-child) {
+    &:where(thead th:first-child) {
       padding-inline-start: 0;
     }
 
-    .prose-lg :where(thead th:last-child) {
+    &:where(thead th:last-child) {
       padding-inline-end: 0;
     }
 
@@ -1276,15 +1260,13 @@
       padding-inline-start: 0.75em;
     }
 
-    .prose-lg
-      :where(tbody td:first-child, tfoot td:first-child):not(
+    &:where(tbody td:first-child, tfoot td:first-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       padding-inline-start: 0;
     }
 
-    .prose-lg
-      :where(tbody td:last-child, tfoot td:last-child):not(
+    &:where(tbody td:last-child, tfoot td:last-child):not(
         :where([class~='not-prose'], [class~='not-prose'] *)
       ) {
       padding-inline-end: 0;
@@ -1306,13 +1288,11 @@
       margin-top: 1em;
     }
 
-    .prose-lg
-      :where(.prose-lg > :first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(.prose-lg > :first-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
       margin-top: 0;
     }
 
-    .prose-lg
-      :where(.prose-lg > :last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+    &:where(.prose-lg > :last-child):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
       margin-bottom: 0;
     }
   }
