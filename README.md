@@ -183,7 +183,7 @@ Here's a complete list of available element modifiers:
 | `prose-li:{utility}`         | `li`                         |
 | `prose-dl:{utility}`         | `dl`                         |
 | `prose-dt:{utility}`         | `dt`                         |
-| `prose-dd:{utiddty}`         | `dd`                         |
+| `prose-dd:{utility}`         | `dd`                         |
 | `prose-table:{utility}`      | `table`                      |
 | `prose-thead:{utility}`      | `thead`                      |
 | `prose-tr:{utility}`         | `tr`                         |
