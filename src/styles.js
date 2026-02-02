@@ -1418,6 +1418,11 @@ module.exports = {
         },
         a: {
           color: 'var(--tw-prose-links)',
+          textDecoration: 'none',
+          fontWeight: '500',
+        },
+        'a[href]': {
+          color: 'var(--tw-prose-links)',
           textDecoration: 'underline',
           fontWeight: '500',
         },
