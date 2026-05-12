@@ -1,6 +1,8 @@
 name: Release
 
 on:
+  push:
+    branches: [main]
   release:
     types: [published]
 
@@ -17,10 +19,10 @@ jobs:
         node-version: [22]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
@@ -32,11 +34,20 @@ jobs:
       - name: Test
         run: npm test
 
-      - name: Calculate environment variables
+      - name: Resolve release metadata
         run: |
-          echo "RELEASE_CHANNEL=$(npm run release-channel --silent)" >> $GITHUB_ENV
+          if [ "${{ github.event_name }}" = "release" ]; then
+            echo "RELEASE_KIND=release" >> $GITHUB_ENV
+            echo "RELEASE_CHANNEL=$(npm run release-channel --silent)" >> $GITHUB_ENV
+          else
+            echo "RELEASE_KIND=insiders" >> $GITHUB_ENV
+            echo "INSIDERS_VERSION=0.0.0-insiders.$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+            echo "RELEASE_CHANNEL=insiders" >> $GITHUB_ENV
+          fi
+
+      - name: Version based on commit
+        if: env.RELEASE_KIND == 'insiders'
+        run: npm version "$INSIDERS_VERSION" --force --no-git-tag-version
 
       - name: Publish
-        run: npm publish --provenance --tag ${{ env.RELEASE_CHANNEL }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --provenance --tag "$RELEASE_CHANNEL"
