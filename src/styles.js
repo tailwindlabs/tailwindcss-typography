@@ -1528,6 +1528,24 @@ module.exports = {
           fontWeight: '700',
           color: 'inherit',
         },
+        "h1 a": {
+          fontWeight: "inherit",
+        },
+        "h2 a": {
+          fontWeight: "inherit",
+        },
+        "h3 a": {
+          fontWeight: "inherit",
+        },
+        "h4 a": {
+          fontWeight: "inherit",
+        },
+        "h5 a": {
+          fontWeight: "inherit",
+        },
+        "h6 a": {
+          fontWeight: "inherit",
+        },
         img: {}, // Required to maintain correct order when merging
         picture: {
           display: 'block',
