@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Fixed
+
+- Update `postcss-selector-parser` to v7.1.6 to resolve [GHSA-rj75-hqrm-r3gf](https://github.com/advisories/GHSA-rj75-hqrm-r3gf) ([#429](https://github.com/tailwindlabs/tailwindcss-typography/pull/429))
 
 ## [0.5.20] - 2026-06-08
 
